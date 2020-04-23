@@ -112,7 +112,7 @@ _CopyCardNameAndLevel_HalfwidthText:
 	ld a, " "
 	ld [hli], a
 	dec b
-	ld a, "L"
+	ld a, "n"
 	ld [hli], a
 	dec b
 	ld a, "v"
@@ -1795,7 +1795,7 @@ InputPlayerName: ; (6:67a3)
 	ld [wNamingScreenCursorY], a
 	ld a, $09
 	ld [wd005], a
-	ld a, $06
+	ld a, $07
 	ld [wNamingScreenKeyboardHeight], a
 	ld a, $0f
 	ld [wceaa], a
@@ -1815,7 +1815,7 @@ InputPlayerName: ; (6:67a3)
 	call Func_1aa07
 	ld a, 6
 	ld [wNamingScreenCursorX], a
-	ld a, 5
+	ld a, 7
 	ld [wNamingScreenCursorY], a
 	call Func_1aa23
 	jr .loop
@@ -3058,73 +3058,73 @@ KeyboardData_Deck: ; (6:7019)
 	db $04, $02, "A"
 	db $06, $02, "J"
 	db $08, $02, "S"
-	db $0a, $02, "?"
-	db $0c, $02, "4"
-	db $0e, $02, $02
-	db $10, $0f, $01
+	db $0a, $02, "a"
+	db $0c, $02, "j"
+	db $0e, $02, "s"
+	db $10, $02, "-"
 
 	db $04, $04, "B"
 	db $06, $04, "K"
 	db $08, $04, "T"
-	db $0a, $04, "&"
-	db $0c, $04, "5"
-	db $0e, $04, $02
-	db $10, $0f, $01
+	db $0a, $04, "b"
+	db $0c, $04, "k"
+	db $0e, $04, "t"
+	db $10, $04, "+"
 
 	db $04, $06, "C"
 	db $06, $06, "L"
 	db $08, $06, "U"
-	db $0a, $06, "+"
-	db $0c, $06, "6"
-	db $0e, $06, $02
-	db $10, $0f, $01
+	db $0a, $06, "c"
+	db $0c, $06, "l"
+	db $0e, $06, "u"
+	db $10, $06, "'"
 
 	db $04, $08, "D"
 	db $06, $08, "M"
 	db $08, $08, "V"
-	db $0a, $08, "-"
-	db $0c, $08, "7"
-	db $0e, $08, $02
-	db $10, $0f, $01
+	db $0a, $08, "d"
+	db $0c, $08, "m"
+	db $0e, $08, "v"
+	db $10, $08, "”"
 
 	db $04, $0a, "E"
 	db $06, $0a, "N"
 	db $08, $0a, "W"
-	db $0a, $0a, "'"
-	db $0c, $0a, "8"
-	db $0e, $0a, $02
-	db $10, $0f, $01
+	db $0a, $0a, "e"
+	db $0c, $0a, "n"
+	db $0e, $0a, "w"
+	db $10, $0a, "?"
 
 	db $04, $0c, "F"
 	db $06, $0c, "O"
 	db $08, $0c, "X"
-	db $0a, $0c, "0"
-	db $0c, $0c, "9"
-	db $0e, $0c, $02
+	db $0a, $0c, "f"
+	db $0c, $0c, "o"
+	db $0e, $0c, "x"
 	db $10, $0f, $01
 
 	db $04, $0e, "G"
 	db $06, $0e, "P"
 	db $08, $0e, "Y"
-	db $0a, $0e, "1"
-	db $0c, $0e, " "
-	db $0e, $0e, $02
+	db $0a, $0e, "g"
+	db $0c, $0e, "p"
+	db $0e, $0e, "y"
 	db $10, $0f, $01
 
 	db $04, $10, "H"
 	db $06, $10, "Q"
 	db $08, $10, "Z"
-	db $0a, $10, "2"
-	db $0c, $10, " "
-	db $0e, $10, $02
+	db $0a, $10, "h"
+	db $0c, $10, "q"
+	db $0e, $10, "z"
 	db $10, $0f, $01
 
 	db $04, $12, "I"
 	db $06, $12, "R"
-	db $08, $12, "!"
-	db $0a, $12, "3"
-	db $0c, $12, " "
-	db $0e, $12, $02
+	db $08, $12, " "
+	db $0a, $12, "i"
+	db $0c, $12, "r"
+	db $0e, $12, "!"
 	db $10, $0f, $01
 
 ; unknown data.
@@ -3298,7 +3298,3 @@ Func_1bae4: ; 1bae4 (6:7ae4)
 	pop af
 	scf
 	ret
-
-rept $508
-	db $ff
-endr

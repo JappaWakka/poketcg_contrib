@@ -1,7 +1,326 @@
+GrassEnergyName: ; 57397 (15:7397)
+	text "Gras Energie"
+	done
+
+GrassEnergyDescription: ; 573a5 (15:73a5)
+	text "Levert 1 <GRASS> Energie."
+	done
+
+FireEnergyName: ; 573bc (15:73bc)
+	text "Vuur Energie"
+	done
+
+FireEnergyDescription: ; 573c9 (15:73c9)
+	text "Levert 1 <FIRE> Energie."
+	done
+
+WaterEnergyName: ; 573e0 (15:73e0)
+	text "Water Energie"
+	done
+
+WaterEnergyDescription: ; 573ee (15:73ee)
+	text "Levert 1 <WATER> Energie."
+	done
+
+LightningEnergyName: ; 57405 (15:7405)
+	text "Bliksem Energie"
+	done
+
+LightningEnergyDescription: ; 57417 (15:7417)
+	text "Levert 1 <LIGHTNING> Energie."
+	done
+
+FightingEnergyName: ; 5742e (15:742e)
+	text "Vecht Energie"
+	done
+
+FightingEnergyDescription: ; 5743f (15:743f)
+	text "Levert 1 <FIGHTING> Energie."
+	done
+
+PsychicEnergyName: ; 57456 (15:7456)
+	text "Psychische Energie"
+	done
+
+PsychicEnergyDescription: ; 57466 (15:7466)
+	text "Levert 1 <PSYCHIC> Energie."
+	done
+
+DoubleColorlessEnergyName: ; 5747d (15:747d)
+	text "Dubbele Kleurloze Energie"
+	done
+
+DoubleColorlessEnergyDescription: ; 57496 (15:7496)
+	text "Levert <COLORLESS><COLORLESS> Energie."
+	line "(Telt niet als een Basis-Energiekaart.)"
+	line "Kleurloze Energie kan niet worden gebruikt"
+	line "als om gekleurde Energiekosten te betalen."
+	line "(Elk type Energie kan worden gebruikt"
+	line "als om Kleurloze Energiekosten te betalen.)"
+	done
+
+BulbasaurName: ; 57552 (15:7552)
+	text "Bulbasaur"
+	done
+
+LeechSeedName: ; 5755d (15:755d)
+	text "IP-onttrekkend zaadje"
+	done
+
+BulbasaursLeechSeedDescription: ; 57569 (15:7569)
+	text "Tenzij alle schade van deze Aanval"
+	line "wordt voorkomen, mag je 1"
+	line "Schadeteller van Bulbasaur"
+	line "verwijderen."
+	done
+
+SeedName: ; 575cb (15:75cb)
+	text "Zaad-"
+	done
+
+BulbasaurDescription: ; 575d1 (15:75d1)
+	text "Bij zijn geboorte is er een vreemd"
+	line "zaadje op zijn rug gepoot. Daaruit"
+	line "is een plant ontkiemd die nu"
+	line "samen met deze Pokémon groeit."
+	done
+
+IvysaurName: ; 5763b (15:763b)
+	text "Ivysaur"
+	done
+
+VineWhipName: ; 57644 (15:7644)
+	text "Roedeslag"
+	done
+
+PoisonPowderName: ; 5764f (15:764f)
+	text "Gifpoeder"
+	done
+
+InflictPoisonDescription: ; 5765d (15:765d)
+	text "De Verdedigende Pokémon is nu"
+	line "Vergiftigd."
+	done
+
+IvysaurDescription: ; 57685 (15:7685)
+	text "Als de bloembol op zijn rug groter"
+	line "wordt, lijkt de Pokémon het vermogen"
+	line "te verliezen om op zijn achterbenen"
+	line "te staan."
+	done
+
+VenusaurName: ; 576ee (15:76ee)
+	text "Venusaur"
+	done
+
+SolarPowerName: ; 576f8 (15:76f8)
+	text "Zonne-energie"
+	done
+
+SolarPowerDescription: ; 57705 (15:7705)
+	text "Eenmaal tijdens je beurt (vóór je"
+	line "Aanval), mag je deze kracht gebruiken."
+	line "Je Actieve Pokémon en de Verdedigende"
+	line "Pokémon zijn niet langer In Slaap,"
+	line "Verward, Verlamd, of Vergiftigd."
+	done
+
+SolarPowerDescriptionCont: ; 577b0 (15:77b0)
+	text "Deze kracht kan niet worden gebruikt"
+	line "als Venusaur In Slaap, Verward, of"
+	line "Verlamd is."
+	done
+
+MegaDrainName: ; 577f9 (15:77f9)
+	text "Enorme absorbering"
+	done
+
+VenusaursMegaDrainDescription: ; 57805 (15:7805)
+	text "Verwijder een aantal Schadetellers van"
+	line "Venusaur gelijk aan de helft van de"
+	line "schade die gedaan is aan de Verdedigende"
+	line "Pokémon (na het toepassen van Zwakte en"
+	line "Weerstand) (naar boven afgerond naar de"
+	line "dichtsbijzijnde 10)."
+	done
+
+VenusaursMegaDrainDescriptionCont: ; 578b7 (15:78b7)
+	text "Als Venusaur minder Schadetellers"
+	line "heeft dan dat, verwijder ze dan"
+	line "allemaal."
+	done
+
+Venusaur1Description: ; 578fd (15:78fd)
+	text "De bloem op zijn rug vangt zonlicht op."
+	line "Het zonlicht wordt dan geabsorbeerd"
+	line "en gebruikt voor energie."
+	done
+
+EnergyTransName: ; 57960 (15:7960)
+	text "Energietransfer"
+	done
+
+EnergyTransDescription: ; 5796e (15:796e)
+	text "Je mag zo vaak als je wilt tijdens je"
+	line "beurt (vóór je Aanval) 1 <GRASS> Ener-"
+	line "giekaart pakken die gehecht is aan"
+	line "1 van je Pokémon en hem aan een andere"
+	line "Pokémon hechten. Deze kracht kan niet"
+	line "worden gebruikt als Venusaur In Slaap"
+	line "Verward of Verlamd is."
+	done
+
+SolarBeamName: ; 57a51 (15:7a51)
+	text "Zonnestraal"
+	done
+
+Venusaur2Description: ; 57a5c (15:7a5c)
+	text "De plant op zijn rug bloeit als het"
+	line "zonne-energie absorbeert. Hij blijft"
+	line "in beweging op zoek naar zonlicht."
+	done
+
+CaterpieName: ; 57ab9 (15:7ab9)
+	text "Caterpie"
+	done
+
+StringShotName: ; 57ac3 (15:7ac3)
+	text "Bindschot"
+	done
+
+MayInflictParalysisDescription: ; 57ad0 (15:7ad0)
+	text "Gooi een munt op. Als het kop is, is"
+	line "de Verdedigende Pokémon nu Verlamd."
+	done
+
+WormName: ; 57b10 (15:7b10)
+	text "Worm-"
+	done
+
+CaterpieDescription: ; 57b16 (15:7b16)
+	text "Zijn korte voetjes hebben een"
+	line "zuignap aan hun uiteinde"
+	line "waardoor hij onvermoeibaar tegen"
+	line "hellingen en muren op kan kruipen."
+	done
+
+MetapodName: ; 57b78 (15:7b78)
+	text "Metapod"
+	done
+
+StiffenName: ; 57b81 (15:7b81)
+	text "Verstijving"
+	done
+
+MetapodsStiffenDescription: ; 57b8a (15:7b8a)
+	text "Gooi een munt op. Als het kop is,"
+	line "voorkomt deze Aanval alle schade"
+	line "die aan Metapod wordt gedaan tijdens"
+	line "je tegenstander's volgende beurt."
+	line "(Alle andere gevolgen van Aanvallen"
+	line "blijven gewoon geldig.)"
+	done
+
+StunSporeName: ; 57c14 (15:7c14)
+	text "Verdoofspoor"
+	done
+
+CocoonName: ; 57c20 (15:7c20)
+	text "Cocon-"
+	done
+
+MetapodDescription: ; 57c28 (15:7c28)
+	text "Hij is kwetsbaar voor Aanvallen"
+	line "omdat zijn schaal zacht is, waardoor"
+	line "zijn zwakke, tere lichaam wordt"
+	line "blootgesteld."
+	done
+
+ButterfreeName: ; 57c82 (15:7c82)
+	text "Butterfree"
+	done
+
+WhirlwindName: ; 57c8e (15:7c8e)
+	text "Wervelwind"
+	done
+
+WhirlwindDescription: ; 57c99 (15:7c99)
+	text "Als je tegenstander Pokémon op de"
+	line "Bank heeft, kiest hij of zij daar"
+	line "1 van en verwisselt deze met de"
+	line "Verdedigende Pokémon. (Doe de"
+	line "schade vóór het verwisselen van"
+	line "de Pokémon.)"
+	done
+
+ButterfreesMegaDrainDescription: ; 57d3a (15:7d3a)
+	text "Verwijder een aantal Schadetellers van"
+	line "Butterfree gelijk aan de helft van de"
+	line "schade die gedaan is aan de Verdedigende"
+	line "Pokémon (na het toepassen van Zwakte en"
+	line "Weerstand) (naar boven afgerond naar de"
+	line "dichtsbijzijnde 10)."
+	done
+
+ButterfreesMegaDrainDescriptionCont: ; 57dee (15:7dee)
+	text "Als Butterfree minder Schadetellers"
+	line "heeft dan dat, verwijder ze dan"
+	line "allemaal."
+	done
+
+ButterflyName: ; 57e36 (15:7e36)
+	text "Vlinder-"
+	done
+
+ButterfreeDescription: ; 57e41 (15:7e41)
+	text "In de strijd flappert hij met zijn"
+	line "vleugels met hoge snelheid om zwaar"
+	line "giftig stof in de lucht te brengen."
+	done
+	
+WeedleName: ; 57e99 (15:7e99)
+	text "Weedle"
+	done
+
+PoisonStingName: ; 57ea1 (15:7ea1)
+	text "Gifsteek"
+	done
+
+MayInflictPoisonDescription: ; 57eaf (15:7eaf)
+	text "Gooi een munt op. Als het kop is, is"
+	line "de Verdedigende Pokémon nu"
+	line "Vergiftigd."
+	done
+
+HairyBugName: ; 57eee (15:7eee)
+	text "Harige Insect-"
+	done
+
+WeedleDescription: ; 57ef9 (15:7ef9)
+	text "Wordt vaak gevonden in wouden,"
+	line "waar hij bladeren eet. Hij heeft"
+	line "een scherpe, giftige stekel"
+	line "op zijn hoofd."
+	done
+
+KakunaName: ; 57f4f (15:7f4f)
+	text "Kakuna"
+	done
+
+KakunasStiffenDescription: ; 57f57 (15:7f57)
+	text "Gooi een munt op. Als het kop is,"
+	line "voorkomt deze Aanval alle schade"
+	line "die aan Kakuna wordt gedaan tijdens"
+	line "je Tegenstander's volgende beurt."
+	line "(Alle andere gevolgen van Aanvallen"
+	line "blijven gewoon geldig.)"
+	done
+
 KakunaDescription: ; 58000 (16:4000)
-	text "Almost incapable of moving, this"
-	line "Pokémon can only harden its shell to"
-	line "protect itself from predators."
+	text "Omdat hij zich bijna niet kan"
+	line "bewegen, kan deze Pokémon alleen"
+	line "zijn schaal verharden om zichzelf"
+	line "tegen roofdieren te beschermen."
 	done
 
 BeedrillName: ; 58066 (16:4066)
@@ -9,22 +328,22 @@ BeedrillName: ; 58066 (16:4066)
 	done
 
 TwineedleName: ; 58070 (16:4070)
-	text "Twineedle"
+	text "Dubbelnaald"
 	done
 
 DoubleAttackX30Description: ; 5807b (16:407b)
-	text "Flip 2 coins. This attack does 30"
-	line "damage times the number of heads."
+	text "Gooi 2 munten op. Deze Aanval doet"
+	line "30 schade maal het aantal keren kop."
 	done
 
 PoisonBeeName: ; 580c0 (16:40c0)
-	text "Poison Bee"
+	text "Gifbij-"
 	done
 
 BeedrillDescription: ; 580cc (16:40cc)
-	text "Flies at high speed and attacks"
-	line "using the large, venomous stingers"
-	line "on its forelegs and tail."
+	text "Vliegt op hoge snelheid en valt aan"
+	line "met behulp van de grote, giftige"
+	line "stekels op zijn voorpoten en staart."
 	done
 
 EkansName: ; 5812a (16:412a)
@@ -58,7 +377,7 @@ TerrorStrikeName: ; 581ad (16:41ad)
 	done
 
 TerrorStrikeDescription: ; 581bc (16:41bc)
-	text "Flip a coin. If heads and if your"
+	text "Gooi een munt op. If heads and if your"
 	line "opponent has any Benched Pokémon,"
 	line "he or she chooses 1 of them and"
 	line "switches it with the Defending"
@@ -85,35 +404,37 @@ NidoranFName: ; 582e5 (16:42e5)
 	text "Nidoran♀"
 	done
 
-FurySweepesName: ; 582ef (16:42ef)
-	text "Fury Swipes"
+FurySwipesName: ; 582ef (16:42ef)
+	text "Furieslag"
 	done
 
 TripleAttackX10Description: ; 582fc (16:42fc)
-	text "Flip 3 coins. This attack does 10"
-	line "damage times the number of heads."
+	text "Gooi 3 munten op. Deze Aanval doet"
+	line "10 schade maal het aantal keren kop."
 	done
 
 CallForFamilyName: ; 58341 (16:4341)
-	text "Call for Family"
+	text "Roep om familie"
 	done
 
 NidoranFsCallForFamilyDescription: ; 58352 (16:4352)
-	text "Search your deck for a Basic Pokémon"
-	line "named Nidoran♀ or Nidoran♂ and put"
-	line "it onto your Bench. Shuffle your"
-	line "deck afterward. (You can't use this"
-	line "attack if your Bench is full.)"
+	text "Zoek in je deck naar een Basis-"
+	line "Pokémon met de naam Nidoran♀ of"
+	line "Nidoran♂ en plaats deze op je Bank."
+	line "Schud hierna je deck. (Je kunt"
+	line "deze Aanval niet gebruiken als"
+	line "je Bank vol is.)"
 	done
 
 PoisonPinName: ; 583ff (16:43ff)
-	text "Poison Pin"
+	text "Gifstekel-"
 	done
 
 NidoranFDescription: ; 5840b (16:440b)
-	text "Although small, its venomous barbs"
-	line "make this Pokémon dangerous."
-	line "The female has smaller horns."
+	text "Alhoewel zij klein is, maken haar"
+	line "giftige stekels deze Pokémon."
+	line "gevaarlijk. Het vrouwtje heeft"
+	line "kleinere horens."
 	done
 
 NidorinaName: ; 5846a (16:446a)
@@ -121,22 +442,23 @@ NidorinaName: ; 5846a (16:446a)
 	done
 
 SupersonicName: ; 58474 (16:4474)
-	text "Supersonic"
+	text "Supersonisch"
 	done
 
 MayInflictConfusionDescription: ; 58480 (16:4480)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon is now Confused."
+	text "Gooi een munt op. Als het kop is, is"
+	line "de Verdedigende Pokémon nu Verward."
 	done
 
 DoubleKickName: ; 584bf (16:44bf)
-	text "Double Kick"
+	text "Dubbelschop"
 	done
 
 NidorinaDescription: ; 584cc (16:44cc)
-	text "The female's horn develops slowly."
-	line "Prefers physical attacks such as"
-	line "clawing and biting."
+	text "De hoorn van het vrouwtje ontwikkelt"
+	line "zich langzaam. Geeft de voorkeur aan"
+	line "fysieke aanvallen zoals klauwen"
+	line "en bijten."
 	done
 
 NidoqueenName: ; 58525 (16:4525)
@@ -144,26 +466,28 @@ NidoqueenName: ; 58525 (16:4525)
 	done
 
 BoyfriendsName: ; 58530 (16:4530)
-	text "Boyfriends"
+	text "Vriendjes"
 	done
 
 BoyfriendsDescription: ; 5853c (16:453c)
-	text "Does 20 damage plus 20 more damage"
-	line "for each Nidoking you have in play."
+	text "Doet 20 schade plus nog eens 20"
+	line "schade voor elke Nidoking die je"
+	line "in het spel hebt."
 	done
 
 MegaPunchName: ; 58584 (16:4584)
-	text "Mega Punch"
+	text "Megaslag"
 	done
 
 DrillName: ; 58590 (16:4590)
-	text "Drill"
+	text "Boor-"
 	done
 
 NidoqueenDescription: ; 58597 (16:4597)
-	text "Its hard scales provide strong"
-	line "protection. It uses its hefty bulk"
-	line "to execute powerful moves."
+	text "Haar harde schubben vormen een uit-"
+	line "stekende bescherming. Zij gebruikt"
+	line "haar grote omvang om krachtige"
+	line "aanvalsmanoeuvres uit te voeren."
 	done
 
 NidoranMName: ; 585f5 (16:45f5)
@@ -171,18 +495,18 @@ NidoranMName: ; 585f5 (16:45f5)
 	done
 
 HornHazardName: ; 585ff (16:45ff)
-	text "Horn Hazard"
+	text "Hoorngevaar"
 	done
 
 MayDoNothingDescription: ; 5860c (16:460c)
-	text "Flip a coin. If tails, this attack"
-	line "does nothing."
+	text "Gooi een munt op. Als het munt"
+	line "is, doet deze Aanval niets."
 	done
 
 NidoranMDescription: ; 5863e (16:463e)
-	text "Stiffens its ears to sense danger."
-	line "The larger, more powerful of its"
-	line "horns secretes venom."
+	text "Verstijft zijn oren om gevaar op"
+	line "te kunnen vangen. De grotere,"
+	line "krachtigere hoorn scheidt gif af."
 	done
 
 NidorinoName: ; 58699 (16:4699)
@@ -190,13 +514,13 @@ NidorinoName: ; 58699 (16:4699)
 	done
 
 HornDrillName: ; 586a3 (16:46a3)
-	text "Horn Drill"
+	text "Hoornboor"
 	done
 
 NidorinoDescription: ; 586af (16:46af)
-	text "An aggressive Pokémon that is quick"
-	line "to attack. The horn on its head"
-	line "secretes a powerful venom."
+	text "Een agressieve Pokémon die snel"
+	line "aanvalt. De hoorn op zijn kop"
+	line "scheidt een krachtig gif af."
 	done
 
 NidokingName: ; 5870f (16:470f)
@@ -204,33 +528,34 @@ NidokingName: ; 5870f (16:470f)
 	done
 
 ThrashName: ; 58719 (16:4719)
-	text "Thrash"
+	text "Afranselen"
 	done
 
 ThrashDescriptipn: ; 58721 (16:4721)
-	text "Flip a coin. If heads, this attack"
-	line "does 30 damage plus 10 more damage;"
-	line "if tails, this attack does 30 damage"
-	line "and Nidoking does 10 damage to"
-	line "itself."
+	text "Gooi een munt op. Als het kop is,"
+	line "doet deze Aanval 30 schade plus nog"
+	line "eens 10 schade; als het munt is,"
+	line "doet deze Aanval 30 schade en doet"
+	line "Nidoking 10 schade aan zichzelf."
 	done
 
 ToxicName: ; 587b5 (16:47b5)
-	text "Toxic"
+	text "Vergif"
 	done
 
 ToxicDescription: ; 587bc (16:47bc)
-	text "The Defending Pokémon is now"
-	line "Poisoned. It now takes 20 Poison"
-	line "damage instead of 10 after each"
-	line "player's turn (even if it was"
-	line "already Poisoned)."
+	text "De Verdedigende Pokémon is nu"
+	line "Vergiftigd. Hij lijdt nu 20"
+	line "Vergifschade in plaats van 10 na"
+	line "de beurt van elke speler (zelfs"
+	line "als hij al eerder Vergiftigd was)."
 	done
 
 NidokingDescription: ; 5884c (16:484c)
-	text "Uses its powerful tail in battle to"
-	line "smash, constrict, then break its"
-	line "prey's bones."
+	text "Gebruikt tijdens een gevecht zijn"
+	line "krachtige staart om zijn slachtoffer"
+	line "te vermorzelen, te verstikken en"
+	line "vervolgens zijn botten te breken."
 	done
 
 ZubatName: ; 588a0 (16:48a0)
@@ -238,26 +563,28 @@ ZubatName: ; 588a0 (16:48a0)
 	done
 
 LeechLifeName: ; 588a7 (16:48a7)
-	text "Leech Life"
+	text "Onttrek leven"
 	done
 
 ZubatsLeechLifeDescription: ; 588b3 (16:48b3)
-	text "Remove a number of damage counters"
-	line "from Zubat equal to the damage done"
-	line "to the Defending Pokémon (after"
-	line "applying Weakness and Resistance)."
-	line "If Zubat has fewer damage counters"
-	line "than that, remove all of them."
+	text "Verwijder een aantal Schadetellers"
+	line "van Zubat gelijk aan de schade die"
+	line "gedaan is aan de Verdedigende"
+	line "Pokémon (na het toepassen van"
+	line "Zwakte en Weerstand). Als Zubat"
+	line "minder Schadetellers heeft dan"
+	line "dat, verwijder ze dan allemaal."
 	done
 
 BatName: ; 58980 (16:4980)
-	text "Bat"
+	text "Vleermuis-"
 	done
 
 ZubatDescription: ; 58985 (16:4985)
-	text "Forms colonies in perpetually dark"
-	line "places. Uses ultrasonic waves to"
-	line "identify and approach targets."
+	text "Vormt kolonies in plaatsen die"
+	line "eeuwig duister blijven. Gebruikt"
+	line "ultrasone golven om zijn doelwit"
+	line "te herkennen en te benaderen."
 	done
 
 GolbatName: ; 589e9 (16:49e9)
@@ -265,22 +592,24 @@ GolbatName: ; 589e9 (16:49e9)
 	done
 
 WingAttackName: ; 589f1 (16:49f1)
-	text "Wing Attack"
+	text "Vleugelaanval"
 	done
 
 GolbatsLeechLifeDescription: ; 589fe (16:49fe)
-	text "Remove a number of damage counters"
-	line "from Golbat equal to the damage done"
-	line "to the Defending Pokémon (after"
-	line "applying Weakness and Resistance)."
-	line "If Golbat has fewer damage counters"
-	line "than that, remove all of them."
+	text "Verwijder een aantal Schadetellers"
+	line "van Golbat gelijk aan de schade die"
+	line "gedaan is aan de Verdedigende"
+	line "Pokémon (na het toepassen van"
+	line "Zwakte en Weerstand). Als Golbat"
+	line "minder Schadetellers heeft dan"
+	line "dat, verwijder ze dan allemaal."
 	done
 
 GolbatDescription: ; 58acd (16:4acd)
-	text "Once it strikes, it will not stop"
-	line "draining energy from the victim even"
-	line "if it gets too heavy to fly."
+	text "Als hij een keer toeslaat, houdt hij"
+	line "niet op energie aan zijn slachtoffer"
+	line "te onttrekken, zelfs niet wanneer"
+	line "hij te zwaar wordt om te vliegen."
 	done
 
 OddishName: ; 58b32 (16:4b32)
@@ -339,7 +668,7 @@ HealName: ; 58d17 (16:4d17)
 
 HealDescription: ; 58d1d (16:4d1d)
 	text "Once during your turn (before your"
-	line "attack), you may flip a coin. If"
+	line "attack), you may Gooi een munt op. If"
 	line "heads, remove 1 damage counter from"
 	line "1 of your Pokémon. This power can't"
 	line "be used if Vileplume is Asleep,"
@@ -372,7 +701,7 @@ ParasName: ; 58ed2 (16:4ed2)
 	done
 
 ScratchName: ; 58ed9 (16:4ed9)
-	text "Scratch"
+	text "Krab"
 	done
 
 SporeName: ; 58ee2 (16:4ee2)
@@ -380,7 +709,8 @@ SporeName: ; 58ee2 (16:4ee2)
 	done
 
 InflictSleepDescription: ; 58ee9 (16:4ee9)
-	text "The Defending Pokémon is now Asleep."
+	text "De Verdedigende Pokémon is nu"
+	line "In Slaap."
 	done
 
 MushroomName: ; 58f0f (16:4f0f)
@@ -398,7 +728,7 @@ ParasectName: ; 58f7d (16:4f7d)
 	done
 
 SlashName: ; 58f87 (16:4f87)
-	text "Slash"
+	text "Hak"
 	done
 
 ParasectDescription: ; 58f8e (16:4f8e)
@@ -443,19 +773,19 @@ ShiftDescription: ; 59146 (16:5146)
 	line "attack), you may change the type of"
 	line "Venomoth to the type of any other"
 	line "Pokémon in play other than"
-	line "Colorless."
-	line "This power can't be used if Venomoth"
+	line "Colorless. Deze kracht kan niet"
+	line "worden gebruikt als Venomoth"
 	line "is Asleep, Confused, or Paralyzed."
 	done
 
 VenomPowderName: ; 5921e (16:521e)
-	text "Venom Powder"
+	text "Gifpoeder"
 	done
 
 VenomPowderDescription: ; 5922c (16:522c)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon is now Confused and"
-	line "Poisoned."
+	text "Gooi een munt op. Als het kop is,"
+	line "is de Verdedigende Pokémon nu"
+	line "Verward en Vergiftigd."
 	done
 
 PoisonmothName: ; 59278 (16:5278)
@@ -473,11 +803,12 @@ BellsproutName: ; 592e5 (16:52e5)
 	done
 
 BellsproutsCallForFamilyDescription: ; 592f1 (16:52f1)
-	text "Search your deck for a Basic Pokémon"
-	line "named Bellsprout and put it onto"
-	line "your Bench. Shuffle your deck"
-	line "afterward. (You can't use this"
-	line "attack if your Bench is full.)"
+	text "Zoek in je deck naar een Basis-"
+	line "Pokémon met de naam Bellsprout"
+	line "en plaats deze op je Bank. Schud"
+	line "hierna je deck. (Je kunt deze"
+	line "Aanval niet gebruiken als je"
+	line "Bank vol is.)"
 	done
 
 BellsproutDescription: ; 59394 (16:5394)
@@ -524,9 +855,10 @@ AcidName: ; 594fd (16:54fd)
 	done
 
 VictreebelsAcidDescription: ; 59503 (16:5503)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon can't retreat during your"
-	line "opponent's next turn."
+	text "Gooi een munt op. Als het kop is,"
+	line "kan de Verdedigende Pokémon niet"
+	line "Terugtrekken tijdens je"
+	line "tegenstander's volgende beurt."
 	done
 
 VictreebelDescription: ; 59561 (16:5561)
@@ -590,7 +922,7 @@ ExeggcuteName: ; 597b1 (16:57b1)
 	done
 
 HypnosisName: ; 597bc (16:57bc)
-	text "Hypnosis"
+	text "Hypnose-"
 	done
 
 ExeggcutesLeechSeedDescription: ; 597c6 (16:57c6)
@@ -623,7 +955,7 @@ TeleportDescription: ; 59896 (16:5896)
 	done
 
 BigEggsplosionName: ; 598c8 (16:58c8)
-	text "Big Eggsplosion"
+	text "Grote eisplosie"
 	done
 
 BigEggsplosionDescription: ; 598d9 (16:58d9)
@@ -653,9 +985,11 @@ FoulGasName: ; 599d5 (16:59d5)
 	done
 
 FoulGasDescription: ; 599df (16:59df)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon is now Poisoned; if tails,"
-	line "it is now Confused."
+	text "Gooi een munt op. Als het kop is,"
+	line "is de Verdedigende Pokémon"
+	line "nu Vergiftigd; als het munt is,"
+	line "is de Verdedigende Pokémon"
+	line "nu Verward."
 	done
 
 PoisonGasName: ; 59a3c (16:5a3c)
@@ -677,7 +1011,7 @@ SmogName: ; 59ab8 (16:5ab8)
 	done
 
 SelfdestructName: ; 59abe (16:5abe)
-	text "Selfdestruct"
+	text "Zelfvernietiging"
 	done
 
 WeezingsSelfdestructDescription: ; 59acc (16:5acc)
@@ -699,27 +1033,29 @@ TangelaName: ; 59bbe (16:5bbe)
 	done
 
 BindName: ; 59bc7 (16:5bc7)
-	text "Bind"
+	text "Koppelen"
 	done
 
 VineName: ; 59bcd (16:5bcd)
-	text "Vine"
+	text "Klimplant-"
 	done
 
 Tangela1Description: ; 59bd3 (16:5bd3)
-	text "Its whole body is swathed with wide"
-	line "vines that are similar to seaweed."
-	line "These vines shake as it walks."
+	text "Zijn hele lichaam is gewikkeld in"
+	line "brede strengen die veel op zeewier"
+	line "lijken. Als hij loopt, schudden"
+	line "deze strengen."
 	done
 
 PoisonWhipName: ; 59c3a (16:5c3a)
-	text "Poison Whip"
+	text "Gifzweepslag"
 	done
 
 Tangela2Description: ; 59c47 (16:5c47)
-	text "Its identity is obscured by masses"
-	line "of thick, blue vines. The vines are"
-	line "said to never stop growing."
+	text "Zijn identiteit wordt verhuld door"
+	line "grote hoeveelheden dikke blauwe"
+	line "strengen. Er wordt gezegd dat de"
+	line "strengen nooit stoppen met groeien."
 	done
 
 ScytherName: ; 59cab (16:5cab)
@@ -751,7 +1087,7 @@ PinsirName: ; 59d75 (16:5d75)
 	done
 
 IronGripName: ; 59d7d (16:5d7d)
-	text "Irongrip"
+	text "IJzeren Greep"
 	done
 
 GuillotineName: ; 59d87 (16:5d87)
@@ -759,13 +1095,14 @@ GuillotineName: ; 59d87 (16:5d87)
 	done
 
 StagbeetleName: ; 59d93 (16:5d93)
-	text "Stagbeetle"
+	text "Vliegend-Hert-"
 	done
 
 PinsirDescription: ; 59d9f (16:5d9f)
-	text "If it fails to crush the victim in"
-	line "its pincers, it will swing its"
-	line "victim around and toss it hard."
+	text "Als hij zijn slachtoffer niet in"
+	line "zijn scharen kan verbrijzelen,"
+	line "slingert hij hem in het rond"
+	line "en gooit hij hem hard neer."
 	done
 
 CharmanderName: ; 59e02 (16:5e02)
@@ -773,24 +1110,24 @@ CharmanderName: ; 59e02 (16:5e02)
 	done
 
 EmberName: ; 59e0e (16:5e0e)
-	text "Ember"
+	text "Sintel"
 	done
 
 EmberDescription: ; 59e15 (16:5e15)
-	text "Discard 1 <FIRE> Energy card attached to"
-	line "Charmander in order to use this"
-	line "attack."
+	text "Om deze Aanval te kunnen gebruiken"
+	line "moet je 1 aan Charmander gehechte"
+	line "<FIRE> Energiekaart weggooien."
 	done
 
 LizardName: ; 59e63 (16:5e63)
-	text "Lizard"
+	text "Hagedis-"
 	done
 
 CharmanderDescription: ; 59e6b (16:5e6b)
-	text "Obviously prefers hot places. If it"
-	line "gets caught in the rain, steam is"
-	line "said to spout from the tip of its"
-	line "tail."
+	text "Geeft uiteraard de voorkeur aan hete"
+	line "plekken. Ze zeggen dat er stoom"
+	line "uit de punt van zijn staart spuit"
+	line "als hij in de regen terecht komt."
 	done
 
 CharmeleonName: ; 59eda (16:5eda)
@@ -798,23 +1135,23 @@ CharmeleonName: ; 59eda (16:5eda)
 	done
 
 FlamethrowerName: ; 59ee6 (16:5ee6)
-	text "Flamethrower"
+	text "Vlammenwerper"
 	done
 
 CharmeleonsFlamethrowerDescription: ; 59ef4 (16:5ef4)
-	text "Discard 1 <FIRE> Energy card attached to"
-	line "Charmeleon in order to use this"
-	line "attack."
+	text "Om deze Aanval te kunnen gebruiken"
+	line "moet je 1 aan Charmeleon gehechte"
+	line "<FIRE> Energiekaart weggooien."
 	done
 
 FlameName: ; 59f42 (16:5f42)
-	text "Flame"
+	text "Vlam-"
 	done
 
 CharmeleonDescription: ; 59f49 (16:5f49)
-	text "When it swings its burning tail, it"
-	line "raises the temperature to unbearably"
-	line "high levels."
+	text "Als hij met zijn brandende staart"
+	line "zwaait, stijgt de temperatuur tot"
+	line "een ondraaglijke hoogte"
 	done
 
 CharizardName: ; 59fa0 (16:5fa0)
@@ -822,33 +1159,34 @@ CharizardName: ; 59fa0 (16:5fa0)
 	done
 
 EnergyBurnName: ; 59fab (16:5fab)
-	text "Energy Burn"
+	text "Energieverbranding"
 	done
 
 EnergyBurnDescription: ; 59fb8 (16:5fb8)
-	text "As often as you like during your"
-	line "turn (before your attack), you may"
-	line "turn all Energy attached to"
-	line "Charizard into <FIRE> Energy for the"
-	line "rest of the turn. This power can't"
-	line "be used if Charizard is Asleep,"
-	line "Confused, or Paralyzed."
+	text "Je mag zo vaak als je wilt tijdens"
+	line "je beurt (vóór je Aanval) alle aan"
+	line "Charizard gehechte Energie omzetten"
+	line "naar <FIRE> Energie voor de rest van"
+	line "je beurt. Deze kracht kan niet"
+	line "worden gebruikt als Charizard"
+	line "In Slaap, Verward, of Verlamd is."
 	done
 
 FireSpinName: ; 5a095 (16:6095)
-	text "Fire Spin"
+	text "Vuurdraak"
 	done
 
 FireSpinDescription: ; 5a0a0 (16:60a0)
-	text "Discard 2 Energy cards attached to"
-	line "Charizard in order to use this"
-	line "attack."
+	text "Om deze Aanval te kunnen gebruiken,"
+	line "moet je 2 aan Charizard gehechte"
+	line "Energiekaarten weggooien."
 	done
 
 CharizardDescription: ; 5a0eb (16:60eb)
-	text "Spits fire that is hot enough to"
-	line "melt boulders. Known to"
-	line "unintentionally cause forest fires."
+	text "Spuwt vuur dat heet genoeg is om"
+	line "rotsblokken te laten smelten. Staat"
+	line "erom bekend dat hij onopzettelijk"
+	line "bosbranden veroorzaakt."
 	done
 
 VulpixName: ; 5a149 (16:6149)
@@ -856,7 +1194,7 @@ VulpixName: ; 5a149 (16:6149)
 	done
 
 ConfuseRayName: ; 5a151 (16:6151)
-	text "Confuse Ray"
+	text "Verwarstraal"
 	done
 
 FoxName: ; 5a15e (16:615e)
@@ -869,11 +1207,11 @@ VulpixDescription: ; 5a163 (16:6163)
 	line "tip as it grows older."
 	done
 
-NinetailsName: ; 5a1c0 (16:61c0)
-	text "Ninetails"
+NinetalesName: ; 5a1c0 (16:61c0)
+	text "Ninetales"
 	done
 
-NinetailsLureDescription: ; 5a1cb (16:61cb)
+NinetalesLureDescription: ; 5a1cb (16:61cb)
 	text "If your opponent has any Benched"
 	line "Pokémon, choose 1 of them and switch"
 	line "it with the Defending Pokémon."
@@ -884,12 +1222,12 @@ FireBlastName: ; 5a231 (16:6231)
 	done
 
 FireBlastDescription: ; 5a23d (16:623d)
-	text "Discard 1 <FIRE> Energy card attached"
+	text "Discard 1 <FIRE> Energiekaart attached"
 	line "to Ninetales in order to use this"
 	line "attack."
 	done
 
-Ninetails1Description: ; 5a28a (16:628a)
+Ninetales1Description: ; 5a28a (16:628a)
 	text "Very smart and very vengeful."
 	line "Grabbing one of its many tails could"
 	line "result in a 1,000-year curse."
@@ -924,7 +1262,7 @@ DancingEmbersDescription: ; 5a441 (16:6441)
 	line "damage times the number of heads."
 	done
 
-Ninetails2Description: ; 5a486 (16:6486)
+Ninetales2Description: ; 5a486 (16:6486)
 	text "According to an enduring legend,"
 	line "9 noble heroes were united and"
 	line "reincarnated as this."
@@ -935,17 +1273,18 @@ GrowlitheName: ; 5a4dd (16:64dd)
 	done
 
 FlareName: ; 5a4e8 (16:64e8)
-	text "Flare"
+	text "Steekvlam"
 	done
 
 PuppyName: ; 5a4ef (16:64ef)
-	text "Puppy"
+	text "Puppy-"
 	done
 
 GrowlitheDescription: ; 5a4f6 (16:64f6)
-	text "Very protective of its territory."
-	line "It will bark and bite to repel"
-	line "intruders from its space."
+	text "Gaat tot het uiterste om zijn"
+	line "terrein te beschermen. Hij zal"
+	line "blaffen en bijten om indringers"
+	line "van zijn grondgebied te verjagen."
 	done
 
 ArcanineName: ; 5a552 (16:6552)
@@ -953,56 +1292,61 @@ ArcanineName: ; 5a552 (16:6552)
 	done
 
 QuickAttackName: ; 5a55c (16:655c)
-	text "Quick Attack"
+	text "Snelle Aanval"
 	done
 
 QuickAttackDescription: ; 5a56a (16:656a)
-	text "Flip a coin. If heads, this attack"
-	line "does 10 damage plus 20 more damage;"
-	line "if tails, this attack does 10"
-	line "damage."
+	text "Gooi een munt op. Als het kop"
+	line "is, doet deze Aanval 10 schade"
+	line "plus nog eens 20 schade; als"
+	line "het munt is, doet deze Aanval"
+	line "10 schade."
 	done
 
 FlamesOfRageName: ; 5a5d8 (16:65d8)
-	text "Flames of Rage"
+	text "Vlammen van woede"
 	done
 
 FlamesOfRageDescription: ; 5a5e8 (16:65e8)
-	text "Discard 2 <FIRE> Energy cards attached"
-	line "to Arcanine in order to use this"
-	line "attack. This attack does 40 damage"
-	line "plus 10 more damage for each damage"
-	line "counter on Arcanine."
+	text "Om deze Aanval te kunnen gebruiken,"
+	line "moet je 2 aan Arcanine gehechte <FIRE>"
+	line "Energiekaarten weggooien. Deze"
+	line "Aanval doet 40 schade plus nog"
+	line "eens 10 schade voor elke"
+	line "Schadeteller op Arcanine."
 	done
 
 LegendaryName: ; 5a689 (16:6689)
-	text "Legendary"
+	text "Legendarische"
 	done
 
 Arcanine1Description: ; 5a694 (16:6694)
-	text "A legendary Pokémon famous for its"
-	line "beauty. It looks almost as if it"
-	line "flies when it runs."
+	text "Een Pokémon die al een lange tijd"
+	line "bewonderd wordt om zijn schoonheid."
+	line "Wanneer hij rent, lijkt het bijna"
+	line "alsof hij vliegt."
 	done
 
 ArcaninesFlamethrowerDescription: ; 5a6ed (16:66ed)
-	text "Discard 1 <FIRE> Energy card attached to"
-	line "Arcanine in order to use this"
-	line "attack."
+	text "Om deze Aanval te kunnen gebruiken,"
+	line "moet je 1 aan Arcanine gehechte <FIRE>"
+	line "Energiekaart weggooien."
 	done
 
 TakeDownName: ; 5a739 (16:6739)
-	text "Take Down"
+	text "Haal neer"
 	done
 
 TakeDownDescription: ; 5a744 (16:6744)
-	text "Arcanine does 30 damage to itself."
+	text "Arcanine doet 30 schade aan"
+	line "zichzelf."
 	done
 
 Arcanine2Description: ; 5a768 (16:6768)
-	text "A Pokémon that has been long admired"
-	line "for its beauty. It runs gracefully,"
-	line "as if on wings."
+	text "Een Pokémon die al een lange tijd"
+	line "bewonderd wordt om zijn schoonheid."
+	line "Hij rent sierlijk, alsof hij"
+	line "vleugels heeft."
 	done
 
 PonytaName: ; 5a7c2 (16:67c2)
@@ -1010,21 +1354,21 @@ PonytaName: ; 5a7c2 (16:67c2)
 	done
 
 SmashKickName: ; 5a7ca (16:67ca)
-	text "Smash Kick"
+	text "Verpletterende Schop"
 	done
 
 FlameTailName: ; 5a7d6 (16:67d6)
-	text "Flame Tail"
+	text "Vlammenstaart"
 	done
 
 FireHorseName: ; 5a7e2 (16:67e2)
-	text "Fire Horse"
+	text "Vuurpaard-"
 	done
 
 PonytaDescription: ; 5a7ee (16:67ee)
-	text "Its hooves are 10 times harder than"
-	line "diamonds. It can trample anything"
-	line "flat in moments."
+	text "Zijn hoeven zijn 10 keer zo hard"
+	line "als diamant. Hij kan in enkele"
+	line "ogenblikken alles plattrappen."
 	done
 
 RapidashName: ; 5a846 (16:6846)
@@ -1036,27 +1380,29 @@ StompName: ; 5a850 (16:6850)
 	done
 
 StompDescription: ; 5a857 (16:6857)
-	text "Flip a coin. If heads, this attack"
-	line "does 20 damage plus 10 more damage;"
-	line "if tails, this attack does 20"
-	line "damage."
+	text "Gooi een munt op. Als het kop is,"
+	line "doet deze Aanval 20 schade plus"
+	line "nog eens 10 schade; als het munt"
+	line "is, doet deze Aanval 20 schade."
 	done
 
 AgilityName: ; 5a8c5 (16:68c5)
-	text "Agility"
+	text "Behendigheid"
 	done
 
 RapidashsAgilityDescription: ; 5a8ce (16:68ce)
-	text "Flip a coin. If heads, during your"
-	line "opponent's next turn, prevent all"
-	line "effects of attacks, including"
-	line "damage, done to Rapidash."
+	text "Gooi een munt op. Als het kop is,"
+	line "voorkom dan tijdens je"
+	line "tegenstander's volgende beurt alle"
+	line "gevolgen van Aanvallen, inclusief"
+	line "schade, toegebracht aan Rapidash."
 	done
 
 RapidashDescription: ; 5a94c (16:694c)
-	text "Very competitive, this Pokémon will"
-	line "chase anything that moves fast in"
-	line "the hopes of racing it."
+	text "Omdat hij graag wedijvert, zal"
+	line "deze Pokémon alles najagen wat"
+	line "snel loopt in de hoop ertegen"
+	line "te kunnen racen."
 	done
 
 MagmarName: ; 5a9ab (16:69ab)
@@ -1064,530 +1410,70 @@ MagmarName: ; 5a9ab (16:69ab)
 	done
 
 FirePunchName: ; 5a9b3 (16:69b3)
-	text "Fire Punch"
+	text "Vuurslag"
 	done
 
 FirePunchDescription: ; 5a9bf (16:69bf)
-	text "Discard 1 <FIRE> Energy card attached to"
-	line "Magmar in order to use this attack."
+	text "Om deze Aanval te kunnen gebruiken,"
+	line "moet je 1 aan Magmar gehechte <FIRE>"
+	line "Energiekaart weggooien."
 	done
 
 SpitfireName: ; 5aa09 (16:6a09)
-	text "Spitfire"
+	text "Vuurspuwende"
 	done
 
 Magmar1Description: ; 5aa13 (16:6a13)
-	text "Its body always burns with an orange"
-	line "glow that enables it to hide"
-	line "perfectly among flames."
+	text "Zijn lijft gloeit altijd met een"
+	line "oranje gloed waardoor hij zich"
+	line "uitstekend tussen de vlammen"
+	line "kan verbergen."
 	done
 
 SmokescreenName: ; 5aa6e (16:6a6e)
-	text "Smokescreen"
+	text "Rookgordijn"
 	done
 
 MagmarsSmokescreenDescription: ; 5aa7b (16:6a7b)
-	text "If the Defending Pokémon tries to"
-	line "attack during your opponent's next"
-	line "turn, your opponent flips a coin. If"
-	line "tails, that attack does nothing."
+	text "Als de Verdedigende Pokémon tijdens"
+	line "je tegenstander's volgende beurt"
+	line "probeert Aan te Vallen, gooit je"
+	line "tegenstander een munt op. Als het"
+	line "munt is, doet die Aanval niets."
 	done
 
 Magmar2Description: ; 5ab07 (16:6b07)
-	text "Found at the mouths of volcanoes and"
-	line "extremely hard to spot. There are"
-	line "very few instances of capturing this"
-	line "Pokémon."
-	done
-
-FlareonName: ; 5ab7d (16:6b7d)
-	text "Flareon"
+	text "Te vinden bij de monden van vulkanen"
+	line "en erg moeilijk in het vizier te"
+	line "krijgen. Deze Pokémon is maar in"
+	line "weinig gevallen gevangen."
 	done
 
 EeveeName: ; 5ab86 (16:6b86)
 	text "Eevee"
 	done
 
-BiteName: ; 5ab8d (16:6b8d)
-	text "Bite"
+TailWagName: ; 62d8a (18:6d8a)
+	text "Kwispel"
 	done
 
-RageName: ; 5ab93 (16:6b93)
-	text "Rage"
+TailWagDescription: ; 62d94 (18:6d94)
+	text "Gooi een munt op. Als het kop is,"
+	line "kan de Verdedigende Pokémon Eevee"
+	line "niet aanvallen tijdens je"
+	line "tegenstander's volgende beurt. (Het"
+	line "op de Bank plaatsen of evolueren van"
+	line "een van beide Pokémon beëindigt"
+	line "dit effect.)"
 	done
 
-FlareonsRageDescription: ; 5ab99 (16:6b99)
-	text "Does 10 damage plus 10 more damage"
-	line "for each damage counter on Flareon."
+EvolutionName: ; 62e2f (18:6e2f)
+	text "Evolutie-"
 	done
 
-Flareon1Description: ; 5abe1 (16:6be1)
-	text "It has a flame chamber inside its"
-	line "body. It inhales, then blows out"
-	line "fire that is over 3,000 degrees."
-	done
-
-FlareonsFlamethrowerDescription: ; 5ac46 (16:6c46)
-	text "Discard 1 <FIRE> Energy card attached to"
-	line "Flareon in order to use this attack."
-	done
-
-Flareon2Description: ; 5ac91 (16:6c91)
-	text "When storing thermal energy in its"
-	line "body, its temperature could soar to"
-	line "over 1,600 degrees."
-	done
-
-MoltresName: ; 5aced (16:6ced)
-	text "Moltres"
-	done
-
-WildfireName: ; 5acf6 (16:6cf6)
-	text "Wildfire"
-	done
-
-WildfireDescription: ; 5ad00 (16:6d00)
-	text "You may discard any number of <FIRE>"
-	line "Energy cards attached to Moltres"
-	line "when you use this attack. If you do,"
-	line "discard that many cards from the top"
-	line "of your opponent's deck."
-	done
-
-DiveBombName: ; 5ada6 (16:6da6)
-	text "Dive Bomb"
-	done
-
-Moltres1Description: ; 5adb1 (16:6db1)
-	text "Known as the legendary bird of fire."
-	line "Every flap of its wings creates a"
-	line "dazzling flash of flames."
-	done
-
-FiregiverName: ; 5ae13 (16:6e13)
-	text "Firegiver"
-	done
-
-FiregiverDescription: ; 5ae1e (16:6e1e)
-	text "When you put Moltres into play"
-	line "during your turn (not during"
-	line "set-up), put from 1 to 4 (chosen at"
-	line "random) <FIRE> Energy cards from your"
-	line "deck into your hand. Shuffle your"
-	line "deck afterward."
-	done
-
-Moltres2Description: ; 5aed3 (16:6ed3)
-	text "A legendary bird Pokémon. As it"
-	line "flaps its flaming wings, even the"
-	line "night sky will turn red."
-	done
-
-SquirtleName: ; 5af2f (16:6f2f)
-	text "Squirtle"
-	done
-
-BubbleName: ; 5af39 (16:6f39)
-	text "Bubble"
-	done
-
-WithdrawName: ; 5af41 (16:6f41)
-	text "Withdraw"
-	done
-
-SquirtlesWithdrawDescription: ; 5af4b (16:6f4b)
-	text "Flip a coin. If heads, prevent all"
-	line "damage done to Squirtle during your"
-	line "opponent's next turn. (Any other"
-	line "effects of attacks still happen.)"
-	done
-
-TinyTurtleName: ; 5afd6 (16:6fd6)
-	text "Tiny Turtle"
-	done
-
-SquirtleDescription: ; 5afe3 (16:6fe3)
-	text "After birth, its back swells and"
-	line "hardens into a shell. It powerfully"
-	line "sprays foam from its mouth."
-	done
-
-WartortleName: ; 5b045 (16:7045)
-	text "Wartortle"
-	done
-
-WartortlesWithdrawDescription: ; 5b050 (16:7050)
-	text "Flip a coin. If heads, prevent all"
-	line "damage done to Wartortle during your"
-	line "opponent's next turn. (Any other"
-	line "effects of attacks still happen.)"
-	done
-
-TurtleName: ; 5b0dc (16:70dc)
-	text "Turtle"
-	done
-
-WartortleDescription: ; 5b0e4 (16:70e4)
-	text "Often hides in water to stalk unwary"
-	line "prey. When swimming quickly, it"
-	line "moves its ears to maintain balance."
-	done
-
-BlastoiseName: ; 5b14e (16:714e)
-	text "Blastoise"
-	done
-
-RainDanceName: ; 5b159 (16:7159)
-	text "Rain Dance"
-	done
-
-RainDanceDescription: ; 5b165 (16:7165)
-	text "As often as you like during your"
-	line "turn (before your attack), you may"
-	line "attach 1 <WATER> Energy card to 1 of"
-	line "your <WATER> Pokémon. (This doesn't use"
-	line "up your 1 Energy card attachment"
-	line "for the turn.)"
-	done
-
-RainDanceDescriptionCont: ; 5b21d (16:721d)
-	text "This power can't be used if"
-	line "Blastoise is Asleep, Confused, or"
-	line "Paralyzed."
-	done
-
-HydroPumpName: ; 5b267 (16:7267)
-	text "Hydro Pump"
-	done
-
-HydroPumpDescription: ; 5b273 (16:7273)
-	text "Does 40 damage plus 10 more damage"
-	line "for each <WATER> Energy attached to"
-	line "Blastoise but not used to pay for"
-	line "this attack's Energy cost. You can't"
-	line "add more than 20 damage in this way."
-	done
-
-ShellfishName: ; 5b322 (16:7322)
-	text "Shellfish"
-	done
-
-BlastoiseDescription: ; 5b32d (16:732d)
-	text "A brutal Pokémon with pressurized"
-	line "water jets on its shell. They are"
-	line "used for high-speed tackles."
-	done
-
-PsyduckName: ; 5b38f (16:738f)
-	text "Psyduck"
-	done
-
-HeadacheName: ; 5b398 (16:7398)
-	text "Headache"
-	done
-
-HeadacheDescription: ; 5b3a2 (16:73a2)
-	text "Your opponent can't play Trainer"
-	line "cards during his or her next turn."
-	done
-
-DuckName: ; 5b3e7 (16:73e7)
-	text "Duck"
-	done
-
-PsyduckDescription: ; 5b3ed (16:73ed)
-	text "While lulling its enemies with its"
-	line "vacant look, this wily Pokémon will"
-	line "use psychokinetic powers."
-	done
-
-GolduckName: ; 5b44f (16:744f)
-	text "Golduck"
-	done
-
-PsyshockName: ; 5b458 (16:7458)
-	text "Psyshock"
-	done
-
-HyperBeamName: ; 5b462 (16:7462)
-	text "Hyper Beam"
-	done
-
-Discard1EnergyFromTargetDescription: ; 5b46e (16:746e)
-	text "If the Defending Pokémon has any"
-	line "Energy cards attached to it, choose"
-	line "1 of them and discard it."
-	done
-
-GolduckDescription: ; 5b4ce (16:74ce)
-	text "Often seen swimming elegantly by"
-	line "lake shores. It is often mistaken"
-	line "for the Japanese monster, Kappa."
-	done
-
-PoliwagName: ; 5b533 (16:7533)
-	text "Poliwag"
-	done
-
-WaterGunName: ; 5b53c (16:753c)
-	text "Water Gun"
-	done
-
-PoliwagsWaterGunDescription: ; 5b547 (16:7547)
-	text "Does 10 damage plus 10 more damage"
-	line "for each <WATER> Energy attached to"
-	line "Poliwag but not used to pay for"
-	line "this attack's Energy cost. You can't"
-	line "add more than 20 damage in this way."
-	done
-
-TadpoleName: ; 5b5f4 (16:75f4)
-	text "Tadpole"
-	done
-
-PoliwagDescription: ; 5b5fd (16:75fd)
-	text "Its newly grown legs prevent it"
-	line "from running. It appears to prefer"
-	line "swimming over trying to stand."
-	done
-
-PoliwhirlName: ; 5b660 (16:7660)
-	text "Poliwhirl"
-	done
-
-AmnesiaName: ; 5b66b (16:766b)
-	text "Amnesia"
-	done
-
-PoliwhirlsAmnesiaDescription: ; 5b674 (16:7674)
-	text "Choose 1 of the Defending Pokémon's"
-	line "attacks. That Pokémon can't use that"
-	line "attack during your opponent's next"
-	line "turn."
-	done
-
-DoubleslapName: ; 5b6e7 (16:76e7)
-	text "Doubleslap"
-	done
-
-PoliwhirlsDescription: ; 5b6f3 (16:76f3)
-	text "Capable of living in or out of"
-	line "water. When out of water, it sweats"
-	line "to keep its body slimy."
-	done
-
-PoliwrathName: ; 5b74f (16:774f)
-	text "Poliwrath"
-	done
-
-PoliwrathsWaterGunDescription: ; 5b75a (16:775a)
-	text "Does 30 damage plus 10 more damage"
-	line "for each <WATER> Energy attached to"
-	line "Poliwrath but not used to pay for"
-	line "this attack's Energy cost. You"
-	line "can't add more than 20 damage in"
-	line "this way."
-	done
-
-WhirlpoolName: ; 5b809 (16:7809)
-	text "Whirlpool"
-	done
-
-PoliwrathDescription: ; 5b814 (16:7814)
-	text "An adept swimmer at both the front"
-	line "crawl and breaststroke. Easily"
-	line "overtakes the best human swimmers."
-	done
-
-TentacoolName: ; 5b87a (16:787a)
-	text "Tentacool"
-	done
-
-CowardiceName: ; 5b885 (16:7885)
-	text "Cowardice"
-	done
-
-CowardiceDescription: ; 5b890 (16:7890)
-	text "At any time during your turn"
-	line "(before your attack), you may return"
-	line "Tentacool to your hand. (Discard all"
-	line "cards attached to Tentacool.) This"
-	line "power can't be used the turn you put"
-	line "Tentacool into play or if Tentacool"
-	line "is Asleep, Confused, or Paralyzed."
-	done
-
-JellyfishName: ; 5b987 (16:7987)
-	text "Jellyfish"
-	done
-
-TentacoolDescription: ; 5b992 (16:7992)
-	text "Drifts in shallow seas. Anglers who"
-	line "hook them by accident are often"
-	line "punished by its stinging acid."
-	done
-
-TentacruelName: ; 5b9f6 (16:79f6)
-	text "Tentacruel"
-	done
-
-JellyfishStingName: ; 5ba02 (16:7a02)
-	text "Jellyfish Sting"
-	done
-
-TentacruelDescription: ; 5ba13 (16:7a13)
-	text "The tentacles are normally kept"
-	line "short. On hunts, they are extended"
-	line "to ensnare and immobilize prey."
-	done
-
-SeelName: ; 5ba77 (16:7a77)
-	text "Seel"
-	done
-
-HeadbuttName: ; 5ba7d (16:7a7d)
-	text "Headbutt"
-	done
-
-SeaLionName: ; 5ba87 (16:7a87)
-	text "Sea Lion"
-	done
-
-SeelDescription: ; 5ba91 (16:7a91)
-	text "The protruding horn on its head is"
-	line "very hard. This horn is used for"
-	line "bashing through thick ice."
-	done
-
-DewgongName: ; 5baf1 (16:7af1)
-	text "Dewgong"
-	done
-
-AuroraBeamName: ; 5bafa (16:7afa)
-	text "Aurora Beam"
-	done
-
-IceBeamName: ; 5bb07 (16:7b07)
-	text "Ice Beam"
-	done
-
-DewgongDescription: ; 5bb11 (16:7b11)
-	text "Stores thermal energy in its body."
-	line "Swims at a steady 8 knots even in"
-	line "intensely cold waters."
-	done
-
-ShellderName: ; 5bb6e (16:7b6e)
-	text "Shellder"
-	done
-
-HideInShellName: ; 5bb78 (16:7b78)
-	text "Hide in Shell"
-	done
-
-HideInShellDescription: ; 5bb87 (16:7b87)
-	text "Flip a coin. If heads, prevent all"
-	line "damage done to Shellder during your"
-	line "opponent's next turn. (Any other"
-	line "effects of attacks still happen.)"
-	done
-
-BivalveName: ; 5bc12 (16:7c12)
-	text "Bivalve"
-	done
-
-ShellderDescription: ; 5bc1b (16:7c1b)
-	text "Its hard shell repels any kind of"
-	line "attack. It is vulnerable only when"
-	line "its shell is open."
-	done
-
-CloysterName: ; 5bc74 (16:7c74)
-	text "Cloyster"
-	done
-
-ClampName: ; 5bc7e (16:7c7e)
-	text "Clamp"
-	done
-
-ClampDescription: ; 5bc85 (16:7c85)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon is now Paralyzed. If tails,"
-	line "this attack does nothing (not even"
-	line "damage)."
-	done
-
-SpikeCannonName: ; 5bcfb (16:7cfb)
-	text "Spike Cannon"
-	done
-
-CloysterDescription: ; 5bd09 (16:7d09)
-	text "When attacked, it launches its horns"
-	line "in quick volleys. Its innards have"
-	line "never been seen."
-	done
-
-KrabbyName: ; 5bd63 (16:7d63)
-	text "Krabby"
-	done
-
-KrabbysCallForFamilyDescription: ; 5bd6b (16:7d6b)
-	text "Search your deck for a Basic Pokémon"
-	line "named Krabby and put it onto your"
-	line "Bench. Shuffle your deck afterward."
-	line "(You can't use this attack if your"
-	line "Bench is full.)"
-	done
-
-RiverCrabName: ; 5be0a (16:7e0a)
-	text "River Crab"
-	done
-
-KrabbyDescription: ; 5be16 (16:7e16)
-	text "Its pincers are not only powerful"
-	line "weapons, they are used for balance"
-	line "when walking sideways."
-	done
-
-KinglerName: ; 5be73 (16:7e73)
-	text "Kingler"
-	done
-
-FlailName: ; 5be7c (16:7e7c)
-	text "Flail"
-	done
-
-KinglersFlailDescription: ; 5be83 (16:7e83)
-	text "Does 10 damage times the number of"
-	line "damage counters on Kingler."
-	done
-
-CrabhammerName: ; 5bec3 (16:7ec3)
-	text "Crabhammer"
-	done
-
-PincerName: ; 5becf (16:7ecf)
-	text "Pincer"
-	done
-
-KinglerDescription: ; 5bed7 (16:7ed7)
-	text "The large pincer has 10,000"
-	line "horsepower of crushing power."
-	line "However, its huge size makes it"
-	line "unwieldy to use."
-	done
-
-HorseaName: ; 5bf43 (16:7f43)
-	text "Horsea"
-	done
-
-OpponentAttackMayDoNothingDescription: ; 5bf4b (16:7f4b)
-	text "If the Defending Pokémon tries to"
-	line "attack during your opponent's next"
-	line "turn, your opponent flips a coin."
-	line "If tails, that attack does nothing."
-	done
-
-DragonName: ; 5bfd7 (16:7fd7)
-	text "Dragon"
+EeveeDescription: ; 62e3a (18:6e3a)
+	text "Zijn genetische code is onregel-"
+	line "matig. Hij zou kunnen muteren als"
+	line "hij wordt blootgesteld aan"
+	line "elementaire gesteenten."
 	done

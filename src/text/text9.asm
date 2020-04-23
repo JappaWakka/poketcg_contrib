@@ -1,3 +1,189 @@
+Text0728: ; 53368 (14:7368)
+	text "Hello, <RAMNAME>."
+	line "Welcome."
+	line "There aren't any cards I want "
+	line "or can trade at the moment."
+	line "Let's trade some other time."
+	line "If you like, please feel free to"
+	line "read some of the books I wrote."
+	line "I believe they will be helpful!"
+	done
+
+Text0729: ; 53435 (14:7435)
+	text "Hello, <RAMNAME>."
+	line "I guess you're here because you"
+	line "heard the rumor that I'm looking"
+	line "for a Clefable..."
+	line "I'm thinking about trading"
+	line "my Surfing Pikachu for it."
+	line "Do you have a Clefable?"
+	done
+
+Text072a: ; 534e1 (14:74e1)
+	text "Hello, <RAMNAME>."
+	line "Are you enjoying the "
+	line "Pokémon Trading Card Game?"
+	line "By the way, I'm looking for a "
+	line "Clefable..."
+	line "I'm thinking about trading"
+	line "my Surfing Pikachu for it."
+	line "Do you have a Clefable?"
+	done
+
+Text072b: ; 53596 (14:7596)
+	text "Would you like to trade cards?"
+	done
+
+Text072c: ; 535b6 (14:75b6)
+	text "Alright."
+	line "I understand..."
+	line "Please trade with me"
+	line "some other time..."
+	done
+
+Text072d: ; 535f8 (14:75f8)
+	text "I appreciate your interest,"
+	line "but you don't own that card."
+	line "Please trade with me"
+	line "some other time..."
+	done
+
+Text072e: ; 5365a (14:765a)
+	text "Hmm, I see all the Clefable cards "
+	line "you own are in your Deck."
+	line "I can't very well take a card"
+	line "you are using in duels."
+	line "Please trade with me"
+	line "some other time..."
+	done
+
+Text072f: ; 536f6 (14:76f6)
+	text "Oh wonderful!"
+	line "Then without delay..."
+	done
+
+Text0730: ; 5371b (14:771b)
+	text "<RAMNAME> traded a Clefable"
+	line "for a Surfing Pikachu!"
+	done
+
+Text0731: ; 53747 (14:7747)
+	text "Thank you for this Clefable."
+	line "You've been a great help!"
+	done
+
+Text0732: ; 5377f (14:777f)
+	text "Hello, <RAMNAME>."
+	line "I suppose you're here because you"
+	line "heard that I was looking for"
+	line "a Ditto this time..."
+	line "I'm thinking about trading"
+	line "my Flying Pikachu for one."
+	line "Do you have a Ditto?"
+	done
+
+Text0733: ; 53829 (14:7829)
+	text "Hello, <RAMNAME>. "
+	line "Are you enjoying the"
+	line "Pokémon Trading Card Game?"
+	line "I'm looking for a Ditto"
+	line "this time..."
+	line "I'm thinking about trading"
+	line "my Flying Pikachu for one."
+	line "Do you have a Ditto?"
+	done
+
+Text0734: ; 538d5 (14:78d5)
+	text "Hmmm..."
+	line "I see you don't have a Ditto card."
+	line "I will only trade my"
+	line "Flying Pikachu for a Ditto."
+	line "Please trade with me"
+	line "some other time..."
+	done
+
+Text0735: ; 5395a (14:795a)
+	text "Hmmm...I see all your Ditto cards"
+	line "are in your Deck."
+	line "I can't very well take a card"
+	line "you are using in duels."
+	line "Please trade with me"
+	line "some other time..."
+	done
+
+Text0736: ; 539ed (14:79ed)
+	text "<RAMNAME> traded a Ditto"
+	line "for a Flying Pikachu!"
+	done
+
+Text0737: ; 53a15 (14:7a15)
+	text "Thank you for this Ditto."
+	line "You've been a great help!"
+	done
+
+Text0738: ; 53a4a (14:7a4a)
+	text "Hello, <RAMNAME>."
+	line "You're really current on the news!"
+	line "I'm looking for a Chansey this "
+	line "time! I'm thinking about trading"
+	line "my Surfing Pikachu for it."
+	line "This one has a different "
+	line "illustration than the last one."
+	line "Do you have a Chansey?"
+	done
+
+Text0739: ; 53b25 (14:7b25)
+	text "Hello, <RAMNAME>. "
+	line "Are you enjoying the"
+	line "Pokémon Trading Card Game?"
+	line "I'm looking for a Chansey"
+	line "this time! I'm thinking about "
+	line "trading my Surfing Pikachu for "
+	line "one. This one has a different "
+	line "illustration than the last one."
+	line "Do you have a Chansey to trade?"
+	done
+
+Text073a: ; 53c19 (14:7c19)
+	text "Hmmm..."
+	line "I see you don't have a Chansey."
+	line "Please trade with me"
+	line "some other time..."
+	done
+
+Text073b: ; 53c6a (14:7c6a)
+	text "Hmmm...I see all your Chansey"
+	line "are in your Deck."
+	line "I can't very well take a card"
+	line "you are using in duels."
+	line "Please trade with me"
+	line "some other time..."
+	done
+
+Text073c: ; 53cf9 (14:7cf9)
+	text "<RAMNAME> traded a Chansey"
+	line "for a Surfing Pikachu!"
+	done
+
+Text073d: ; 53d24 (14:7d24)
+	text "Thank you for this Chansey."
+	line "You've been a great help!"
+	done
+
+
+Text073e: ; 53d5b (14:7d5b)
+	text "Oh! Congratulations, <RAMNAME>!"
+	line "I heard the news! You've finally "
+	line "inherited the Legendary Pokémon "
+	line "Cards! Don't worry, I'm not going "
+	line "to ask you to trade them to me."
+	line "Besides, it would be a waste "
+	line "not to use the Legendary Cards "
+	line "for dueling. Make sure your "
+	line "Duels are worthy of"
+	line "the Legendary Pokémon Cards."
+	done
+
 Text073f: ; 54000 (15:4000)
 	text "Who?"
 	line "Oh! It's you, <RAMNAME>..."
@@ -58,7 +244,7 @@ Text0744: ; 5434c (15:434c)
 
 Text0745: ; 543ec (15:43ec)
 	text "Umm... Umm..."
-	line "Do you know ISHIHARA?"
+	line "Do you know Ishihara?"
 	line "He lives in the house on the cape"
 	line "to the northwest."
 	line "He's a very famous Card Collector!"
@@ -67,7 +253,7 @@ Text0745: ; 543ec (15:43ec)
 
 Text0746: ; 54487 (15:4487)
 	text "Umm... Umm..."
-	line "ISHIHARA wants to trade"
+	line "Ishihara wants to trade"
 	line "a very rare card."
 	line "If I had a card, I'd go and trade"
 	line "with him myself."
@@ -75,29 +261,29 @@ Text0746: ; 54487 (15:4487)
 
 Text0747: ; 544f3 (15:44f3)
 	text "Umm... Umm..."
-	line "ISHIHARA wants to trade"
+	line "Ishihara wants to trade"
 	line "another very rare card."
 	line "I wish I could trade cards"
-	line "like ISHIHARA."
+	line "like Ishihara."
 	done
 
 Text0748: ; 5455c (15:455c)
 	text "Umm... Umm..."
-	line "ISHIHARA wants to trade a"
+	line "Ishihara wants to trade a"
 	line "very, very, very rare card!"
 	line "I wish I could trade, so I could"
-	line "meet ISHIHARA."
+	line "meet Ishihara."
 	done
 
 Text0749: ; 545d1 (15:45d1)
 	text "Umm... Umm..."
-	line "Did you meet ISHIHARA?"
+	line "Did you meet Ishihara?"
 	line "I wish I could be like him."
 	done
 
 Text074a: ; 54613 (15:4613)
 	text "Umm... Umm..."
-	line "ISHIHARA left on a trip"
+	line "Ishihara left on a trip"
 	line "in search of a really rare card."
 	line "I wish I could have gone with him..."
 	done
@@ -416,7 +602,7 @@ Text0781: ; 5557a (15:557a)
 	line "The Legendary Cards"
 	line "will belong to me!"
 	line "How about it?"
-	line "Would you like to duel me?"
+	line "Would you like to Duel me?"
 	done
 
 Text0782: ; 55621 (15:5621)
@@ -425,7 +611,7 @@ Text0782: ; 55621 (15:5621)
 	line "The Legendary Cards will eventually"
 	line "belong to me!"
 	line "How about it?"
-	line "Would you like to duel me?"
+	line "Would you like to Duel me?"
 	done
 
 Text0783: ; 5569c (15:569c)
@@ -434,7 +620,7 @@ Text0783: ; 5569c (15:569c)
 	done
 
 Text0784: ; 556bc (15:56bc)
-	text "Would you like to duel Matthew?"
+	text "Would you like to Duel Matthew?"
 	done
 
 Text0785: ; 556dd (15:56dd)
@@ -479,7 +665,7 @@ Text078b: ; 5587a (15:587a)
 Text078c: ; 55890 (15:5890)
 	text "Oh! Excuse me!"
 	line "Did you hear?"
-	line "ISHIHARA who lives on the cape"
+	line "Ishihara who lives on the cape"
 	line "to the northwest..."
 	line "He owns 10,000 cards!"
 	line "He probably even has rare cards!"
@@ -489,7 +675,7 @@ Text078d: ; 55918 (15:5918)
 	text "Oh! Excuse me!"
 	line "Did you hear?"
 	line "It's the talk of the town"
-	line "that ISHIHARA wishes to trade"
+	line "that Ishihara wishes to trade"
 	line "a very rare card."
 	line "Maybe I'll visit him myself!"
 	done
@@ -497,7 +683,7 @@ Text078d: ; 55918 (15:5918)
 Text078e: ; 5599d (15:599d)
 	text "Oh! Excuse me!"
 	line "Did you hear?"
-	line "Everyone's saying that ISHIHARA"
+	line "Everyone's saying that Ishihara"
 	line "wishes to trade a very rare card!"
 	line "Maybe you should go visit him."
 	done
@@ -505,7 +691,7 @@ Text078e: ; 5599d (15:599d)
 Text078f: ; 55a1c (15:5a1c)
 	text "Oh! Excuse me!"
 	line "Did you hear?"
-	line "ISHIHARA wishes to trade"
+	line "Ishihara wishes to trade"
 	line "a very rare card again!"
 	line "Maybe you should go visit him."
 	done
@@ -520,7 +706,7 @@ Text0790: ; 55a8a (15:5a8a)
 Text0791: ; 55aea (15:5aea)
 	text "Oh! Excuse me!"
 	line "Did you hear?"
-	line "It seems ISHIHARA left on a "
+	line "It seems Ishihara left on a "
 	line "trip in search of a rare card!"
 	line "They say he's not coming back"
 	line "for a while!"
@@ -536,7 +722,7 @@ Text0792: ; 55b6f (15:5b6f)
 Text0793: ; 55bc8 (15:5bc8)
 	text "I lost to Matthew again!"
 	line "I can't win, no matter how many "
-	line "times I duel against him!"
+	line "times I Duel against him!"
 	line "He's probably going to inherit"
 	line "the Legendary Pokémon Cards!"
 	line "What? You already inherited"
@@ -557,7 +743,7 @@ Text0795: ; 55d30 (15:5d30)
 	text "I'm carving a statue of a Pokémon"
 	line "out of this Rock!"
 	line "What? You want to Duel?"
-	line "Alright. You want to duel now?"
+	line "Alright. You want to Duel now?"
 	done
 
 Text0796: ; 55d9c (15:5d9c)
@@ -687,7 +873,7 @@ Text07aa: ; 562ee (15:62ee)
 
 Text07ab: ; 56351 (15:6351)
 	text "Yes!"
-	line "Our last duel was wonderful!"
+	line "Our last Duel was wonderful!"
 	line "You wish to have another"
 	line "wonderful duel?"
 	done
@@ -709,7 +895,7 @@ Text07ae: ; 56409 (15:6409)
 
 Text07af: ; 56449 (15:6449)
 	text "I look forward to the day"
-	line "when we duel again!"
+	line "when we Duel again!"
 	done
 
 Text07b0: ; 56478 (15:6478)
@@ -1007,7 +1193,7 @@ Text07d3: ; 57027 (15:7027)
 	done
 
 Text07d4: ; 5705e (15:705e)
-	text "  Challenge Machine  "
+	text "  Uitdagingsmachine  "
 	done
 
 Text07d5: ; 57075 (15:7075)
@@ -1103,23 +1289,23 @@ ConsecutiveWinRecordIncreasedText: ; 572ee (15:72ee)
 	done
 
 Text07e9: ; 5731a (15:731a)
-	text "Club Member"
+	text "Clublid"
 	done
 
 Text07ea: ; 57327 (15:7327)
-	text "Club Master"
+	text "Clubmeester"
 	done
 
 Text07eb: ; 57334 (15:7334)
-	text "TECH"
+	text "Techneut"
 	done
 
 Text07ec: ; 5733a (15:733a)
-	text "Strange Life-form"
+	text "Vreemde Levensvorm"
 	done
 
 Text07ed: ; 5734d (15:734d)
-	text "Grand Master"
+	text "Grootmeester"
 	done
 
 Text07ee: ; 5735b (15:735b)
@@ -1176,312 +1362,4 @@ Text07fa: ; 57389 (15:7389)
 
 Text07fb: ; 57390 (15:7390)
 	textfw3 "【", "<GRASS>", "】"
-	done
-
-GrassEnergyName: ; 57397 (15:7397)
-	text "Grass Energy"
-	done
-
-GrassEnergyDescription: ; 573a5 (15:73a5)
-	text "Provides 1 <GRASS> Energy."
-	done
-
-FireEnergyName: ; 573bc (15:73bc)
-	text "Fire Energy"
-	done
-
-FireEnergyDescription: ; 573c9 (15:73c9)
-	text "Provides 1 <FIRE> Energy."
-	done
-
-WaterEnergyName: ; 573e0 (15:73e0)
-	text "Water Energy"
-	done
-
-WaterEnergyDescription: ; 573ee (15:73ee)
-	text "Provides 1 <WATER> Energy."
-	done
-
-LightningEnergyName: ; 57405 (15:7405)
-	text "Lightning Energy"
-	done
-
-LightningEnergyDescription: ; 57417 (15:7417)
-	text "Provides 1 <LIGHTNING> Energy."
-	done
-
-FightingEnergyName: ; 5742e (15:742e)
-	text "Fighting Energy"
-	done
-
-FightingEnergyDescription: ; 5743f (15:743f)
-	text "Provides 1 <FIGHTING> Energy."
-	done
-
-PsychicEnergyName: ; 57456 (15:7456)
-	text "Psychic Energy"
-	done
-
-PsychicEnergyDescription: ; 57466 (15:7466)
-	text "Provides 1 <PSYCHIC> Energy."
-	done
-
-DoubleColorlessEnergyName: ; 5747d (15:747d)
-	text "Double Colorless Energy"
-	done
-
-DoubleColorlessEnergyDescription: ; 57496 (15:7496)
-	text "Provides <COLORLESS><COLORLESS> Energy. (Doesn't"
-	line "count as a basic Energy card.) "
-	line "Colorless Energy can't be used to"
-	line "pay colored Energy costs. (Any type"
-	line "of Energy can be used to pay"
-	line "Colorless Energy costs.)"
-	done
-
-BulbasaurName: ; 57552 (15:7552)
-	text "Bulbasaur"
-	done
-
-LeechSeedName: ; 5755d (15:755d)
-	text "Leech Seed"
-	done
-
-BulbasaursLeechSeedDescription: ; 57569 (15:7569)
-	text "Unless all damage from this attack"
-	line "is prevented, you may remove 1"
-	line "damage counter from Bulbasaur."
-	done
-
-SeedName: ; 575cb (15:75cb)
-	text "Seed"
-	done
-
-BulbasaurDescription: ; 575d1 (15:75d1)
-	text "A strange seed was planted on its"
-	line "back at birth. Thus, a plant"
-	line "sprouted and now grows with this"
-	line "Pokémon."
-	done
-
-IvysaurName: ; 5763b (15:763b)
-	text "Ivysaur"
-	done
-
-VineWhipName: ; 57644 (15:7644)
-	text "Vine Whip"
-	done
-
-PoisonPowderName: ; 5764f (15:764f)
-	text "Poisonpowder"
-	done
-
-InflictPoisonDescription: ; 5765d (15:765d)
-	text "The Defending Pokémon is now"
-	line "Poisoned."
-	done
-
-IvysaurDescription: ; 57685 (15:7685)
-	text "When the bulb on its back grows"
-	line "large, the Pokémon seems to lose the"
-	line "ability to stand on its hind legs."
-	done
-
-VenusaurName: ; 576ee (15:76ee)
-	text "Venusaur"
-	done
-
-SolarPowerName: ; 576f8 (15:76f8)
-	text "Solar Power"
-	done
-
-SolarPowerDescription: ; 57705 (15:7705)
-	text "Once during your turn (before your"
-	line "attack), you may use this power."
-	line "Your Active Pokémon and the"
-	line "Defending Pokémon are no longer"
-	line "Asleep, Confused, Paralyzed, or"
-	line "Poisoned."
-	done
-
-SolarPowerDescriptionCont: ; 577b0 (15:77b0)
-	text "This power can't be used if"
-	line "Venusaur is Asleep, Confused,"
-	line "or Paralyzed."
-	done
-
-MegaDrainName: ; 577f9 (15:77f9)
-	text "Mega Drain"
-	done
-
-VenusaursMegaDrainDescription: ; 57805 (15:7805)
-	text "Remove a number of damage counters"
-	line "from Venusaur equal to half the"
-	line "damage done to the Defending Pokémon"
-	line "(after applying Weakness and"
-	line "Resistance) (rounded up to the"
-	line "nearest 10)."
-	done
-
-VenusaursMegaDrainDescriptionCont: ; 578b7 (15:78b7)
-	text "If Venusaur has fewer damage"
-	line "counters than that, remove all of"
-	line "them."
-	done
-
-Venusaur1Description: ; 578fd (15:78fd)
-	text "The flower on its back catches"
-	line "the sun's rays. The sunlight is then"
-	line "absorbed and used for energy."
-	done
-
-EnergyTransName: ; 57960 (15:7960)
-	text "Energy Trans"
-	done
-
-EnergyTransDescription: ; 5796e (15:796e)
-	text "As often as you like during your"
-	line "turn (before your attack), you may"
-	line "take 1 <GRASS> Energy card attached to 1"
-	line "of your Pokémon and attach it to a"
-	line "different one. This power can't be"
-	line "used if Venusaur is Asleep,"
-	line "Confused, or Paralyzed."
-	done
-
-SolarBeamName: ; 57a51 (15:7a51)
-	text "Solarbeam"
-	done
-
-Venusaur2Description: ; 57a5c (15:7a5c)
-	text "This plant blooms when it is"
-	line "absorbing solar energy. It stays on"
-	line "the move to seek sunlight."
-	done
-
-CaterpieName: ; 57ab9 (15:7ab9)
-	text "Caterpie"
-	done
-
-StringShotName: ; 57ac3 (15:7ac3)
-	text "String Shot"
-	done
-
-MayInflictParalysisDescription: ; 57ad0 (15:7ad0)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon is now Paralyzed."
-	done
-
-WormName: ; 57b10 (15:7b10)
-	text "Worm"
-	done
-
-CaterpieDescription: ; 57b16 (15:7b16)
-	text "Its short feet are tipped with"
-	line "suction pads that enable it to"
-	line "tirelessly climb slopes and walls."
-	done
-
-MetapodName: ; 57b78 (15:7b78)
-	text "Metapod"
-	done
-
-StiffenName: ; 57b81 (15:7b81)
-	text "Stiffen"
-	done
-
-MetapodsStiffenDescription: ; 57b8a (15:7b8a)
-	text "Flip a coin. If heads, prevent all"
-	line "damage done to Metapod during your"
-	line "opponent's next turn. (Any other"
-	line "effects of attacks still happen.)"
-	done
-
-StunSporeName: ; 57c14 (15:7c14)
-	text "Stun Spore"
-	done
-
-CocoonName: ; 57c20 (15:7c20)
-	text "Cocoon"
-	done
-
-MetapodDescription: ; 57c28 (15:7c28)
-	text "It is vulnerable to attack because"
-	line "its shell is soft, exposing its weak"
-	line "and tender body."
-	done
-
-ButterfreeName: ; 57c82 (15:7c82)
-	text "Butterfree"
-	done
-
-WhirlwindName: ; 57c8e (15:7c8e)
-	text "Whirlwind"
-	done
-
-WhirlwindDescription: ; 57c99 (15:7c99)
-	text "If your opponent has any Benched"
-	line "Pokémon, he or she chooses 1 of them"
-	line "and switches it with the Defending"
-	line "Pokémon. (Do the damage before"
-	line "switching the Pokémon.)"
-	done
-
-ButterfreesMegaDrainDescription: ; 57d3a (15:7d3a)
-	text "Remove a number of damage counters"
-	line "from Butterfree equal to half the"
-	line "damage done to the Defending Pokémon"
-	line "(after applying Weakness and"
-	line "Resistance) (rounded up to the"
-	line "nearest 10)."
-	done
-
-ButterfreesMegaDrainDescriptionCont: ; 57dee (15:7dee)
-	text "If Butterfree has fewer damage"
-	line "counters than that, remove all of"
-	line "them."
-	done
-
-ButterflyName: ; 57e36 (15:7e36)
-	text "Butterfly"
-	done
-
-ButterfreeDescription: ; 57e41 (15:7e41)
-	text "In battle, it flaps its wings at"
-	line "high speed to release highly toxic"
-	line "dust into the air."
-	done
-
-WeedleName: ; 57e99 (15:7e99)
-	text "Weedle"
-	done
-
-PoisonStingName: ; 57ea1 (15:7ea1)
-	text "Poison Sting"
-	done
-
-MayInflictPoisonDescription: ; 57eaf (15:7eaf)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon is now Poisoned."
-	done
-
-HairyBugName: ; 57eee (15:7eee)
-	text "Hairy Bug"
-	done
-
-WeedleDescription: ; 57ef9 (15:7ef9)
-	text "Often found in forests, eating"
-	line "leaves. It has a sharp, venomous"
-	line "stinger on its head."
-	done
-
-KakunaName: ; 57f4f (15:7f4f)
-	text "Kakuna"
-	done
-
-KakunasStiffenDescription: ; 57f57 (15:7f57)
-	text "Flip a coin. If heads, prevent all"
-	line "damage done to Kakuna during your"
-	line "opponent's next turn. (Any other"
-	line "effects of attacks still happen.)"
 	done

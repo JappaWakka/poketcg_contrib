@@ -6269,9 +6269,9 @@ LoadDuelCoinTossResultTiles: ; 210f (0:210f)
 
 ; load the tiles of the text characters used with TX_SYMBOL
 LoadSymbolsFont: ; 2119 (0:2119)
-	ld hl, SymbolsFont - $4000
+	ld hl, SymbolsDuel - $4000
 	ld de, v0Tiles2 ; destination
-	ld b, (DuelCardHeaderGraphics - SymbolsFont) / TILE_SIZE ; number of tiles
+	ld b, (DuelCardHeaderGraphics - SymbolsDuel) / TILE_SIZE ; number of tiles
 ;	fallthrough
 
 ; if hl ≤ $3fff
@@ -6279,7 +6279,7 @@ LoadSymbolsFont: ; 2119 (0:2119)
 ; if $4000 ≤ hl ≤ $7fff
 ;   copy b tiles from Gfx2:hl to de
 CopyFontsOrDuelGraphicsTiles: ; 2121 (0:2121)
-	ld a, BANK(Fonts); BANK(DuelGraphics)
+	ld a, BANK(DuelGraphics); BANK(DuelGraphics)
 	call BankpushROM
 	ld c, TILE_SIZE
 	call CopyGfxData
@@ -6289,7 +6289,7 @@ CopyFontsOrDuelGraphicsTiles: ; 2121 (0:2121)
 
 ; this function copies gfx data into sram
 Func_212f: ; 212f (0:212f)
-	ld hl, SymbolsFont - $4000
+	ld hl, SymbolsDuel - $4000
 	ld de, $a400
 	ld b, $30
 	call CopyFontsOrDuelGraphicsTiles
@@ -7546,12 +7546,12 @@ HandleDuelMenuInput: ; 271a (0:271a)
 ; 0x278d
 
 DuelMenuCursorCoords: ; 278d (0:278d)
-	db  2, 14 ; Hand
-	db  2, 16 ; Attack
-	db  8, 14 ; Check
-	db  8, 16 ; Pkmn Power
-	db 14, 14 ; Retreat
-	db 14, 16 ; Done
+	db  1, 14 ; Hand
+	db  1, 16 ; Attack
+	db  6, 14 ; Check
+	db  6, 16 ; Pkmn Power
+	db 13, 14 ; Retreat
+	db 13, 16 ; Done
 
 ; print the items of a list of cards (hand cards in a duel, cards from a booster pack...)
 ; and initialize the parameters of the list given:

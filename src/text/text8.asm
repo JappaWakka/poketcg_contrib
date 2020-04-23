@@ -1,3 +1,199 @@
+Text0664: ; 4f574 (13:7574)
+	text "Hi, <RAMNAME>."
+	line "So you've finally come this far?"
+	line "I've already won 5 Medals!"
+	line "By the time you win your 8th Medal,"
+	line "I will have inherited the"
+	line "Legendary Pokémon Cards!"
+	line "I'll catch you later!"
+	line "See ya! Ha ha ha ha ha ha!"
+	done
+
+Text0665: ; 4f640 (13:7640)
+	text "The Legendary Pokémon Cards are "
+	line "the ultimate cards. Everyone wants "
+	line "to inherit the Legendary Cards - "
+	line "that's why we play against so many "
+	line "different people. I just lost a "
+	line "duel, so I can't play right now."
+	done
+
+Text0666: ; 4f70e (13:770e)
+	text "Did you hear?"
+	line "Someone inherited the Legendary"
+	line "Pokémon Cards! Whomever it is,"
+	line "he must be really cool if he "
+	line "can defeat the Grand Masters!"
+	done
+
+Text0667: ; 4f798 (13:7798)
+	text "I dropped all my cards, so I'm"
+	line "putting them in order here!"
+	done
+
+Text0668: ; 4f7d4 (13:77d4)
+	text "Huh? What am I doing?"
+	line "I'm building a Deck!"
+	done
+
+Text0669: ; 4f800 (13:7800)
+	text "What do you think Murray's doing"
+	line "over there in the corner?"
+	line "He's thinking about how to "
+	line "Duel using his new cards."
+	line "We strive to better ourselves"
+	line "here at the Psychic Club."
+	done
+
+Text066a: ; 4f8aa (13:78aa)
+	text "You still haven't won any Medals."
+	line "You aren't qualified to Duel me."
+	line "Go to some other Club and win"
+	line "a Medal first!"
+	done
+
+Text066b: ; 4f91b (13:791b)
+	text "I see you've won a Medal."
+	line "Then I will Duel with you."
+	done
+
+Text066c: ; 4f951 (13:7951)
+	text "Murray finally came up with a new "
+	line "strategy. He's in a very good mood,"
+	line "so he'll probably Duel you now."
+	line "By the way,"
+	line "Would you Duel me?"
+	done
+
+Text066d: ; 4f9d8 (13:79d8)
+	text "Would you like to Duel Daniel?"
+	done
+
+Text066e: ; 4f9f8 (13:79f8)
+	text "Are you afraid to duel?"
+	line "Well, not that I care!"
+	done
+
+Text066f: ; 4fa28 (13:7a28)
+	text "Let's play with 4 Prizes."
+	line "OK, here we go!"
+	done
+
+Text0670: ; 4fa53 (13:7a53)
+	text "You're no ordinary player if "
+	line "you can defeat me!"
+	done
+
+Text0671: ; 4fa85 (13:7a85)
+	text "Next time we play, I'm going "
+	line "to win!"
+	done
+
+Text0672: ; 4faac (13:7aac)
+	text "You're still not good enough"
+	line "to defeat me!"
+	line "I'll Duel you any time you want."
+	done
+
+Text0673: ; 4faf9 (13:7af9)
+	text "I can see the future..."
+	line "You cannot defeat me."
+	line "But if you win 2 Medals, maybe..."
+	line "Then..."
+	line "I would Duel you..."
+	done
+
+Text0674: ; 4fb66 (13:7b66)
+	text "You've won quite a few Medals."
+	line "OK...Let's duel."
+	line "But I see the future..."
+	line "You will lose..."
+	done
+
+Text0675: ; 4fbc0 (13:7bc0)
+	text "Would you like to Duel Stephanie?"
+	done
+
+Text0676: ; 4fbe3 (13:7be3)
+	text "Yes, I understand."
+	line "Losing is scary, isn't it?"
+	done
+
+Text0677: ; 4fc12 (13:7c12)
+	text "OK, a single Match with 4 Prizes!"
+	line "Here we go!"
+	done
+
+Text0678: ; 4fc41 (13:7c41)
+	text "I can't believe my prediction"
+	line "was wrong..."
+	done
+
+Text0679: ; 4fc6d (13:7c6d)
+	text "I see a vision..."
+	line "You're dueling me again."
+	done
+
+Text067a: ; 4fc99 (13:7c99)
+	text "I told you that you would lose..."
+	line "I have the ability to foretell"
+	line "the future! I see a vision... "
+	line "You're dueling me again!"
+	done
+
+Text067b: ; 4fd13 (13:7d13)
+	text "Let me see... if this happens..."
+	line "then that... so... ummm..."
+	done
+
+Text067c: ; 4fd50 (13:7d50)
+	text "Club Master Murray doesn't listen"
+	line "to what people are saying!"
+	done
+
+Text067d: ; 4fd8e (13:7d8e)
+	text "Hi, I'm Murray, Master of the "
+	line "Psychic Club. You're the one "
+	line "who's visiting the Clubs to win "
+	line "the Medals. How do I know this?"
+	line "Because I'm Psychic!"
+	line "OK, let me test my new card"
+	line "strategy... against your deck!"
+	line "Are you ready?"
+	done
+
+Text067e: ; 4fe6c (13:7e6c)
+	text "Hi! It's you again."
+	line "Are you ready for a duel?"
+	done
+
+Text067f: ; 4fe9b (13:7e9b)
+	text "Would you like to Duel Murray?"
+	done
+
+Text0680: ; 4febb (13:7ebb)
+	text "OK. Come back when you're ready."
+	done
+
+Text0681: ; 4fedd (13:7edd)
+	text "When you Duel me, it's for 6 Prizes."
+	line "Shall we start then!?!"
+	done
+
+Text0682: ; 4ff1a (13:7f1a)
+	text "Huh!?! I lost!"
+	line "Hmmmm..."
+	line "Well, you must be pretty good if"
+	line "you're trying to inherit"
+	line "the Legendary Pokémon Cards."
+	line "Here, take this Psychic Medal."
+	done
+
+Text0683: ; 4ffa9 (13:7fa9)
+	text "And here, take this"
+	line "LABORATORY Booster Pack!"
+	done
+
 Text0684: ; 50000 (14:4000)
 	text "I'll think of a new strategy,"
 	line "so come see me again!"
@@ -17,7 +213,7 @@ Text0686: ; 500df (14:40df)
 	line "I just came up with a new card"
 	line "strategy and was looking for"
 	line "someone to test it on."
-	line "You'll duel with me, of course,"
+	line "You'll Duel with me, of course,"
 	line "won't you?"
 	done
 
@@ -82,7 +278,7 @@ Text068e: ; 5044a (14:444a)
 	done
 
 Text068f: ; 504df (14:44df)
-	text "Would you like to duel Jessica?"
+	text "Would you like to Duel Jessica?"
 	done
 
 Text0690: ; 50500 (14:4500)
@@ -116,46 +312,46 @@ Text0694: ; 505a8 (14:45a8)
 Text0695: ; 505f8 (14:45f8)
 	text "Do you know the empty house on"
 	line "the cape to the northwest?"
-	line "That's ISHIHARA's house!"
+	line "That's Ishihara's house!"
 	line "Isn't it nice to have friends?"
 	done
 
 Text0696: ; 5066b (14:466b)
-	text "My friend, ISHIHARA, wants to"
+	text "My friend, Ishihara, wants to"
 	line "trade cards."
 	line "Why don't you go visit him "
 	line "sometime."
 	done
 
 Text0697: ; 506bd (14:46bd)
-	text "My friend, ISHIHARA, owns "
+	text "My friend, Ishihara, owns "
 	line "really rare cards."
 	line "Why don't you go visit him "
 	line "sometime?"
 	done
 
 Text0698: ; 50712 (14:4712)
-	text "I heard my friend, ISHIHARA, "
+	text "I heard my friend, Ishihara, "
 	line "gave someone a card."
 	line "Why don't you go visit him "
 	line "sometime?"
 	done
 
 Text0699: ; 5076c (14:476c)
-	text "ISHIHARA's my friend."
+	text "Ishihara's my friend."
 	line "Isn't it nice to have friends?"
 	done
 
 Text069a: ; 507a2 (14:47a2)
-	text "ISHIHARA's my friend."
+	text "Ishihara's my friend."
 	line "Isn't it nice to have friends?"
 	done
 
 Text069b: ; 507d8 (14:47d8)
 	text "Energy! Energy!"
-	line "Energy cards are very important!"
+	line "Energiekaarten are very important!"
 	line "Come back and see me when you"
-	line "collect a lot of Energy cards!"
+	line "collect a lot of Energiekaarten!"
 	line "Then..."
 	line "I'll let you in on a secret!"
 	done
@@ -164,7 +360,7 @@ Text069c: ; 5086c (14:486c)
 	text "When you build a lot of decks,"
 	line "you start to run out of Energy "
 	line "cards. Please give me your Energy "
-	line "cards! Give me all the Energy cards "
+	line "cards! Give me all the Energiekaarten "
 	line "that aren't in your Deck!!!"
 	line "Gimme, Gimme! Gimme all of 'em!!!"
 	done
@@ -181,7 +377,7 @@ Text069e: ; 5094a (14:494a)
 	done
 
 Text069f: ; 50988 (14:4988)
-	text "All your Energy cards are"
+	text "All your Energiekaarten are"
 	line "in your Deck..."
 	line "Then I can't ask for them."
 	line "Bye!"
@@ -189,7 +385,7 @@ Text069f: ; 50988 (14:4988)
 
 Text06a0: ; 509d3 (14:49d3)
 	text "<RAMNAME> lost all "
-	line "his Energy cards!"
+	line "his Energiekaarten!"
 	done
 
 Text06a1: ; 509f2 (14:49f2)
@@ -239,7 +435,7 @@ Text06a5: ; 50bc0 (14:4bc0)
 	done
 
 Text06a6: ; 50c49 (14:4c49)
-	text "Would you like to duel John?"
+	text "Would you like to Duel John?"
 	done
 
 Text06a7: ; 50c67 (14:4c67)
@@ -273,11 +469,11 @@ Text06ac: ; 50d8b (14:4d8b)
 	text "Hey! Does everyone have the fever?"
 	line "Do you have the fever?"
 	line "If you have Pokémon fever,"
-	line "duel with me!!!"
+	line "Duel with me!!!"
 	done
 
 Text06ad: ; 50df1 (14:4df1)
-	text "Would you like to duel Adam?"
+	text "Would you like to Duel Adam?"
 	done
 
 Text06ae: ; 50e0f (14:4e0f)
@@ -287,7 +483,7 @@ Text06ae: ; 50e0f (14:4e0f)
 
 Text06af: ; 50e45 (14:4e45)
 	text "A single Match with 4 Prizes!"
-	line "Come on, duel me!"
+	line "Come on, Duel me!"
 	done
 
 Text06b0: ; 50e76 (14:4e76)
@@ -296,14 +492,14 @@ Text06b0: ; 50e76 (14:4e76)
 	done
 
 Text06b1: ; 50ea9 (14:4ea9)
-	text "Let's duel again!"
+	text "Let's Duel again!"
 	line "See ya!!!"
 	done
 
 Text06b2: ; 50ec6 (14:4ec6)
 	text "Yeah! I won!"
 	line "Am I Hot or what!?!"
-	line "Let's duel again!"
+	line "Let's Duel again!"
 	line "See ya!!"
 	done
 
@@ -333,13 +529,13 @@ Text06b7: ; 50fe1 (14:4fe1)
 	done
 
 Text06b8: ; 51012 (14:5012)
-	text "Let's duel again!"
+	text "Let's Duel again!"
 	line "Come on, people, say Fire Pokémon!"
 	done
 
 Text06b9: ; 51048 (14:5048)
 	text "That was a great Duel!"
-	line "Let's duel again! Fire Pokémon!"
+	line "Let's Duel again! Fire Pokémon!"
 	done
 
 Text06ba: ; 51080 (14:5080)
@@ -347,7 +543,7 @@ Text06ba: ; 51080 (14:5080)
 	line "So, you are collecting Medals"
 	line "to inherit the Legendary Cards?"
 	line "What!?! You have almost no cards!"
-	line "If you wish to duel me, go collect "
+	line "If you wish to Duel me, go collect "
 	line "more cards!"
 	done
 
@@ -356,7 +552,7 @@ Text06bb: ; 51131 (14:5131)
 	line "You still need to collect more"
 	line "cards if you wish to inherit"
 	line "the Legendary Pokémon Cards!"
-	line "If you wish to duel me, go collect "
+	line "If you wish to Duel me, go collect "
 	line "more cards!"
 	done
 
@@ -378,7 +574,7 @@ Text06bd: ; 512c6 (14:52c6)
 	done
 
 Text06be: ; 51327 (14:5327)
-	text "Would you like to duel Ken?"
+	text "Would you like to Duel Ken?"
 	done
 
 Text06bf: ; 51344 (14:5344)
@@ -406,7 +602,7 @@ Text06c2: ; 51408 (14:5408)
 	done
 
 Text06c3: ; 5147e (14:547e)
-	text "Let's play a heated duel again!"
+	text "Let's play a heated Duel again!"
 	line "See you later!!!"
 	done
 
@@ -430,14 +626,14 @@ Text06c6: ; 51583 (14:5583)
 	done
 
 Text06c7: ; 515bf (14:55bf)
-	text "A 1-match duel for 6 Prizes!"
+	text "A 1-match Duel for 6 Prizes!"
 	line "Let us start the Duel!"
 	done
 
 Text06c8: ; 515f4 (14:55f4)
 	text "Greetings."
 	line "Welcome to the Battle Center!"
-	line "Would you like to duel a friend?"
+	line "Would you like to Duel a friend?"
 	done
 
 Text06c9: ; 5163f (14:563f)
@@ -552,11 +748,11 @@ Text06d8: ; 51a6f (14:5a6f)
 
 Text06d9: ; 51b2e (14:5b2e)
 	text "Hi, <RAMNAME>."
-	line "Would you duel me?"
+	line "Would you Duel me?"
 	done
 
 Text06da: ; 51b49 (14:5b49)
-	text "Would you like to duel Michael?"
+	text "Would you like to Duel Michael?"
 	done
 
 Text06db: ; 51b6a (14:5b6a)
@@ -609,7 +805,7 @@ Text06e1: ; 51d9b (14:5d9b)
 	done
 
 Text06e2: ; 51e6e (14:5e6e)
-	text "Would you like to duel Brittany?"
+	text "Would you like to Duel Brittany?"
 	done
 
 Text06e3: ; 51e90 (14:5e90)
@@ -638,7 +834,7 @@ Text06e7: ; 51f15 (14:5f15)
 
 Text06e8: ; 51f43 (14:5f43)
 	text "Oh, by the way, Nikki is visiting"
-	line "ISHIHARA's house."
+	line "Ishihara's house."
 	line "You'll probably find her there."
 	done
 
@@ -856,7 +1052,7 @@ Text070a: ; 528ed (14:68ed)
 
 Text070b: ; 52935 (14:6935)
 	text "I believe Nikki is at "
-	line "ISHIHARA's house."
+	line "Ishihara's house."
 	line "Maybe you should go meet her there,"
 	line "since she's late getting back."
 	done
@@ -882,15 +1078,15 @@ Text070e: ; 52abf (14:6abf)
 	text "Oh!"
 	line "It's you again."
 	line "If you don't mind,"
-	line "would you duel with me?"
+	line "would you Duel with me?"
 	done
 
 Text070f: ; 52aff (14:6aff)
-	text "Would you like to duel Heather?"
+	text "Would you like to Duel Heather?"
 	done
 
 Text0710: ; 52b20 (14:6b20)
-	text "I'll be glad to duel you"
+	text "I'll be glad to Duel you"
 	line "any time you like."
 	done
 
@@ -915,14 +1111,14 @@ Text0714: ; 52bb4 (14:6bb4)
 
 Text0715: ; 52bd0 (14:6bd0)
 	text "Nikki is visiting"
-	line "ISHIHARA."
+	line "Ishihara."
 	line "Why don't you go see her"
-	line "at ISHIHARA's house."
+	line "at Ishihara's house."
 	done
 
 Text0716: ; 52c1b (14:6c1b)
 	text "Well, that wasn't much of a Duel!"
-	line "I'll be glad to duel you"
+	line "I'll be glad to Duel you"
 	line "any time you like."
 	done
 
@@ -946,7 +1142,7 @@ Text0719: ; 52d1a (14:6d1a)
 	done
 
 Text071a: ; 52d3e (14:6d3e)
-	text "Would you like to duel Nikki?"
+	text "Would you like to Duel Nikki?"
 	done
 
 Text071b: ; 52d5d (14:6d5d)
@@ -995,10 +1191,10 @@ Text0721: ; 52f90 (14:6f90)
 	done
 
 Text0722: ; 52fa8 (14:6fa8)
-	text "My duel with you was..."
+	text "My Duel with you was..."
 	line "quite fun!"
 	line "Please allow me"
-	line "to duel you again!"
+	line "to Duel you again!"
 	done
 
 Text0723: ; 52fef (14:6fef)
@@ -1016,7 +1212,7 @@ Text0723: ; 52fef (14:6fef)
 	done
 
 Text0724: ; 5312e (14:712e)
-	text "Thank you very much, ISHIHARA."
+	text "Thank you very much, Ishihara."
 	line "Your books were very helpful!"
 	line "You are indeed the Number 1"
 	line "Pokémon Trading Card Collector."
@@ -1030,13 +1226,13 @@ Text0725: ; 531a8 (14:71a8)
 	done
 
 Text0726: ; 5320c (14:720c)
-	text "Thank you very much, ISHIHARA."
+	text "Thank you very much, Ishihara."
 	line "If you will excuse me..."
 	done
 
 Text0727: ; 53245 (14:7245)
 	text "Hello, nice to meet you."
-	line "I'm ISHIHARA."
+	line "I'm Ishihara."
 	line "I'm a Pokémon Card Collector."
 	line "I love collecting cards."
 	line "I see you also love"
@@ -1047,189 +1243,4 @@ Text0727: ; 53245 (14:7245)
 	line "If you're playing with the cards,"
 	line "Please read some of the books here."
 	line "I believe they will be helpful."
-	done
-
-Text0728: ; 53368 (14:7368)
-	text "Hello, <RAMNAME>."
-	line "Welcome."
-	line "There aren't any cards I want "
-	line "or can trade at the moment."
-	line "Let's trade some other time."
-	line "If you like, please feel free to"
-	line "read some of the books I wrote."
-	line "I believe they will be helpful!"
-	done
-
-Text0729: ; 53435 (14:7435)
-	text "Hello, <RAMNAME>."
-	line "I guess you're here because you"
-	line "heard the rumor that I'm looking"
-	line "for a Clefable..."
-	line "I'm thinking about trading"
-	line "my Surfing Pikachu for it."
-	line "Do you have a Clefable?"
-	done
-
-Text072a: ; 534e1 (14:74e1)
-	text "Hello, <RAMNAME>."
-	line "Are you enjoying the "
-	line "Pokémon Trading Card Game?"
-	line "By the way, I'm looking for a "
-	line "Clefable..."
-	line "I'm thinking about trading"
-	line "my Surfing Pikachu for it."
-	line "Do you have a Clefable?"
-	done
-
-Text072b: ; 53596 (14:7596)
-	text "Would you like to trade cards?"
-	done
-
-Text072c: ; 535b6 (14:75b6)
-	text "Alright."
-	line "I understand..."
-	line "Please trade with me"
-	line "some other time..."
-	done
-
-Text072d: ; 535f8 (14:75f8)
-	text "I appreciate your interest,"
-	line "but you don't own that card."
-	line "Please trade with me"
-	line "some other time..."
-	done
-
-Text072e: ; 5365a (14:765a)
-	text "Hmm, I see all the Clefable cards "
-	line "you own are in your Deck."
-	line "I can't very well take a card"
-	line "you are using in duels."
-	line "Please trade with me"
-	line "some other time..."
-	done
-
-Text072f: ; 536f6 (14:76f6)
-	text "Oh wonderful!"
-	line "Then without delay..."
-	done
-
-Text0730: ; 5371b (14:771b)
-	text "<RAMNAME> traded a Clefable"
-	line "for a Surfing Pikachu!"
-	done
-
-Text0731: ; 53747 (14:7747)
-	text "Thank you for this Clefable."
-	line "You've been a great help!"
-	done
-
-Text0732: ; 5377f (14:777f)
-	text "Hello, <RAMNAME>."
-	line "I suppose you're here because you"
-	line "heard that I was looking for"
-	line "a Ditto this time..."
-	line "I'm thinking about trading"
-	line "my Flying Pikachu for one."
-	line "Do you have a Ditto?"
-	done
-
-Text0733: ; 53829 (14:7829)
-	text "Hello, <RAMNAME>. "
-	line "Are you enjoying the"
-	line "Pokémon Trading Card Game?"
-	line "I'm looking for a Ditto"
-	line "this time..."
-	line "I'm thinking about trading"
-	line "my Flying Pikachu for one."
-	line "Do you have a Ditto?"
-	done
-
-Text0734: ; 538d5 (14:78d5)
-	text "Hmmm..."
-	line "I see you don't have a Ditto card."
-	line "I will only trade my"
-	line "Flying Pikachu for a Ditto."
-	line "Please trade with me"
-	line "some other time..."
-	done
-
-Text0735: ; 5395a (14:795a)
-	text "Hmmm...I see all your Ditto cards"
-	line "are in your Deck."
-	line "I can't very well take a card"
-	line "you are using in duels."
-	line "Please trade with me"
-	line "some other time..."
-	done
-
-Text0736: ; 539ed (14:79ed)
-	text "<RAMNAME> traded a Ditto"
-	line "for a Flying Pikachu!"
-	done
-
-Text0737: ; 53a15 (14:7a15)
-	text "Thank you for this Ditto."
-	line "You've been a great help!"
-	done
-
-Text0738: ; 53a4a (14:7a4a)
-	text "Hello, <RAMNAME>."
-	line "You're really current on the news!"
-	line "I'm looking for a Chansey this "
-	line "time! I'm thinking about trading"
-	line "my Surfing Pikachu for it."
-	line "This one has a different "
-	line "illustration than the last one."
-	line "Do you have a Chansey?"
-	done
-
-Text0739: ; 53b25 (14:7b25)
-	text "Hello, <RAMNAME>. "
-	line "Are you enjoying the"
-	line "Pokémon Trading Card Game?"
-	line "I'm looking for a Chansey"
-	line "this time! I'm thinking about "
-	line "trading my Surfing Pikachu for "
-	line "one. This one has a different "
-	line "illustration than the last one."
-	line "Do you have a Chansey to trade?"
-	done
-
-Text073a: ; 53c19 (14:7c19)
-	text "Hmmm..."
-	line "I see you don't have a Chansey."
-	line "Please trade with me"
-	line "some other time..."
-	done
-
-Text073b: ; 53c6a (14:7c6a)
-	text "Hmmm...I see all your Chansey"
-	line "are in your Deck."
-	line "I can't very well take a card"
-	line "you are using in duels."
-	line "Please trade with me"
-	line "some other time..."
-	done
-
-Text073c: ; 53cf9 (14:7cf9)
-	text "<RAMNAME> traded a Chansey"
-	line "for a Surfing Pikachu!"
-	done
-
-Text073d: ; 53d24 (14:7d24)
-	text "Thank you for this Chansey."
-	line "You've been a great help!"
-	done
-
-Text073e: ; 53d5b (14:7d5b)
-	text "Oh! Congratulations, <RAMNAME>!"
-	line "I heard the news! You've finally "
-	line "inherited the Legendary Pokémon "
-	line "Cards! Don't worry, I'm not going "
-	line "to ask you to trade them to me."
-	line "Besides, it would be a waste "
-	line "not to use the Legendary Cards "
-	line "for dueling. Make sure your "
-	line "Duels are worthy of"
-	line "the Legendary Pokémon Cards."
 	done

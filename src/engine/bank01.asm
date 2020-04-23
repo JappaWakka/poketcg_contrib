@@ -12,7 +12,7 @@ GameLoop: ; 4000 (1:4000)
 	ld a, [s0a009]
 	ld [wSkipDelayAllowed], a
 	call DisableSRAM
-	ld a, 1
+	ld a, 0
 	ld [wUppercaseHalfWidthLetters], a
 	ei
 	farcall CommentedOut_1a6cc
@@ -3162,12 +3162,12 @@ Unknown_54e2: ; 54e2 (1:54e2)
 
 DuelMenuData: ; 54e9 (1:54e9)
 	; x, y, text id
-	textitem 3,  14, HandText
-	textitem 9,  14, CheckText
-	textitem 15, 14, RetreatText
-	textitem 3,  16, AttackText
-	textitem 9,  16, PKMNPowerText
-	textitem 15, 16, DoneText
+	textitem 2,  14, HandText
+	textitem 7,  14, CheckText
+	textitem 14, 14, RetreatText
+	textitem 2,  16, AttackText
+	textitem 7,  16, PKMNPowerText
+	textitem 14, 16, DoneText
 	db $ff
 ; 0x5502
 
@@ -4465,7 +4465,7 @@ DisplayCardPage_PokemonOverview: ; 5b7d (1:5b7d)
 	; print the retreat cost (some amount of colorless energies) at 8,14
 	inc c
 	inc c ; 14
-	ld b, 8
+	ld b, 12
 	ld a, [wLoadedCard1RetreatCost]
 	ld e, a
 	inc e
@@ -4497,7 +4497,7 @@ DisplayCardPage_PokemonOverview: ; 5b7d (1:5b7d)
 	ld e, a
 .got_wr
 	ld a, d
-	ld b, 8
+	ld b, 12
 	call PrintCardPageWeaknessesOrResistances
 	inc c ; 16
 	ld a, e

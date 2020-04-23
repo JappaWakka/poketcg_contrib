@@ -1,7 +1,7 @@
 EffectCommands: ; 186f7 (6:46f7)
 ; Each move has a two-byte effect pointer (move's 7th param) that points to one of these structures.
 ; Similarly, trainer cards have a two-byte pointer (7th param) to one of these structures, which determines the card's function.
-; Energy cards also point to one of these, but their data is just $00.
+; Energiekaarten also point to one of these, but their data is just $00.
 ;	db EFFECTCMDTYPE_* ($01 - $0a)
 ;	dw Function
 ;	...
@@ -187,7 +187,7 @@ NidoqueenBoyfriendsEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $4998
 	db  $00
 
-NidoranFFurySweepesEffectCommands:
+NidoranFFurySwipesEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $49c6
 	dbw EFFECTCMDTYPE_AI, $49be
 	db  $00
@@ -395,7 +395,7 @@ PsyduckHeadacheEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $500e
 	db  $00
 
-PsyduckFurySweepesEffectCommands:
+PsyduckFurySwipesEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $501e
 	dbw EFFECTCMDTYPE_AI, $5016
 	db  $00
@@ -583,14 +583,14 @@ RapidashAgilityEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $5413
 	db  $00
 
-NinetailsLureEffectCommands:
+NinetalesLureEffectCommands:
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, $5425
 	dbw EFFECTCMDTYPE_AFTER_DAMAGE, $544f
 	dbw EFFECTCMDTYPE_REQUIRE_SELECTION, $5430
 	dbw EFFECTCMDTYPE_UNKNOWN_08, $5449
 	db  $00
 
-NinetailsFireBlastEffectCommands:
+NinetalesFireBlastEffectCommands:
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_1, $5463
 	dbw EFFECTCMDTYPE_INITIAL_EFFECT_2, $5471
 	dbw EFFECTCMDTYPE_DISCARD_ENERGY, $5479
@@ -672,11 +672,11 @@ FlareonRageEffectCommands:
 	dbw EFFECTCMDTYPE_AI, $5638
 	db  $00
 
-NinetailsMixUpEffectCommands:
+NinetalesMixUpEffectCommands:
 	dbw EFFECTCMDTYPE_AFTER_DAMAGE, $5647
 	db  $00
 
-NinetailsDancingEmbersEffectCommands:
+NinetalesDancingEmbersEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $56ab
 	dbw EFFECTCMDTYPE_AI, $56a3
 	db  $00
@@ -894,7 +894,7 @@ OnixHardenEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $6075
 	db  $00
 
-PrimeapeFurySweepesEffectCommands:
+PrimeapeFurySwipesEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $6083
 	dbw EFFECTCMDTYPE_AI, $607b
 	db  $00
@@ -974,7 +974,7 @@ SandshrewSandAttackEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $626b
 	db  $00
 
-SandslashFurySweepesEffectCommands:
+SandslashFurySwipesEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $6279
 	dbw EFFECTCMDTYPE_AI, $6271
 	db  $00
