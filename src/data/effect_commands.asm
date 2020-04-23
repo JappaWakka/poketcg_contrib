@@ -1,7 +1,7 @@
 EffectCommands: ; 186f7 (6:46f7)
 ; Each move has a two-byte effect pointer (move's 7th param) that points to one of these structures.
 ; Similarly, trainer cards have a two-byte pointer (7th param) to one of these structures, which determines the card's function.
-; Energiekaarten also point to one of these, but their data is just $00.
+; Energy Cards also point to one of these, but their data is just $00.
 ;	db EFFECTCMDTYPE_* ($01 - $0a)
 ;	dw Function
 ;	...
