@@ -531,7 +531,7 @@ ThrashName: ; 58719 (16:4719)
 	text "Afranselen"
 	done
 
-ThrashDescriptipn: ; 58721 (16:4721)
+ThrashDescription: ; 58721 (16:4721)
 	text "Gooi een munt op. Als het kop is,"
 	line "doet deze Aanval 30 schade plus nog"
 	line "eens 10 schade; als het munt is,"

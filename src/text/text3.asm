@@ -1253,65 +1253,65 @@ Text033e: ; 3e834 (f:6834)
 	line "Sluit Menu"
 	done
 
-Text033f: ; 3e85f (f:685f)
+PlayerStatusNameText: ; 3e85f (f:685f)
 	text "Naam <RAMNAME>"
 	done
 
-Text0340: ; 3e867 (f:6867)
+PlayerStatusAlbumText: ; 3e867 (f:6867)
 	text "Kaarten        "
 	half2full
 	textfw0 "/"
 	done
 
-Text0341: ; 3e87b (f:687b)
-	text "Spelduur         "
+PlayerStatusPlayTimeText: ; 3e87b (f:687b)
+	text "Spelduur          "
 	half2full
 	textfw3 ":"
 	done
 
-Text0342: ; 3e892 (f:6892)
+PlayerDiaryTitleText: ; 3e892 (f:6892)
 	text "<RAMNAME>'s dagboek"
 	done
 
-Text0343: ; 3e89d (f:689d)
+PlayerDiaryMedalsWonText: ; 3e89d (f:689d)
 	text "Gewonnen Medailles"
 	done
 
-Text0344: ; 3e8b1 (f:68b1)
+PlayerDiarySaveQuestionText: ; 3e8b1 (f:68b1)
 	text "Wil je je dagboek bijwerken?"
 	done
 
-Text0345: ; 3e8d2 (f:68d2)
+PlayerDiarySaveConfirmText: ; 3e8d2 (f:68d2)
 	text "<RAMNAME> heeft"
 	line "in het dagboek geschreven."
 	done
 
-Text0346: ; 3e8e9 (f:68e9)
+PlayerDiarySaveCancelText: ; 3e8e9 (f:68e9)
 	text "Er is niks in het dagboek"
 	line "geschreven."
 	done
 
-Text0347: ; 3e90e (f:690e)
+PlayerStatusMedalsTitleText: ; 3e90e (f:690e)
 	text "Master Medals"
 	done
 
-Text0348: ; 3e91d (f:691d)
+ConfigMenuTitleText: ; 3e91d (f:691d)
 	text "           Change Settings"
 	done
 
-Text0349: ; 3e939 (f:6939)
+ConfigMenuMessageSpeedText: ; 3e939 (f:6939)
 	text "Message Speed"
 	line ""
 	line "   Slow   1   2   3   4   5   Fast"
 	done
 
-Text034a: ; 3e96c (f:696c)
+ConfigMenuDuelAnimationText: ; 3e96c (f:696c)
 	text "Duel Animation"
 	line ""
 	line "  Show All    Skip Some       None"
 	done
 
-Text034b: ; 3e9a0 (f:69a0)
+ConfigMenuExitText: ; 3e9a0 (f:69a0)
 	text "   Exit Settings"
 	done
 
@@ -1797,7 +1797,7 @@ Text03a7: ; 3f643 (f:7643)
 	done
 
 Text03a8: ; 3f644 (f:7644)
-	text "COLOSSEUM"
+	text "STADION"
 	done
 
 Text03a9: ; 3f64f (f:764f)
@@ -1973,7 +1973,7 @@ Text03d3: ; 3f7a2 (f:77a2)
 	done
 
 Text03d4: ; 3f7a7 (f:77a7)
-	text "COURTNEY"
+	text "Courtney"
 	done
 
 Text03d5: ; 3f7b1 (f:77b1)
