@@ -36,7 +36,7 @@ TextOffsets:: ; 34000 (d:4000)
 	textpointer EnergyCardText                                                   ; 0x0020
 	textpointer Text0021                                                         ; 0x0021
 	textpointer Text0022                                                         ; 0x0022
-	textpointer NoPokemonOnTheBenchText                                          ;  0x0023
+	textpointer NoPokemonOnTheBenchText                                          ; 0x0023
 	textpointer UnableDueToSleepText                                             ; 0x0024
 	textpointer UnableDueToParalysisText                                         ; 0x0025
 	textpointer Received10DamageDueToPoisonText                                  ; 0x0026
@@ -2991,4 +2991,4 @@ TextOffsets:: ; 34000 (d:4000)
 	textpointer GamblerDescription                                               ; 0x0bab
 	textpointer RecycleName                                                      ; 0x0bac
 	textpointer RecycleDescription                                               ; 0x0bad
-	textpointer HypnosisAttackName						                          ; Made this because I don't want HypnosisName to be used as both a category and an attack name
+	textpointer HypnosisAttackName						                         ; Made this because I don't want HypnosisName to be used as both a category and an attack name
