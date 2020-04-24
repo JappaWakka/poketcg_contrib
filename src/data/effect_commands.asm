@@ -187,7 +187,7 @@ NidoqueenBoyfriendsEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $4998
 	db  $00
 
-NidoranFFurySweepesEffectCommands:
+NidoranFFurySwipesEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $49c6
 	dbw EFFECTCMDTYPE_AI, $49be
 	db  $00
@@ -395,7 +395,7 @@ PsyduckHeadacheEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $500e
 	db  $00
 
-PsyduckFurySweepesEffectCommands:
+PsyduckFurySwipesEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $501e
 	dbw EFFECTCMDTYPE_AI, $5016
 	db  $00
@@ -894,7 +894,7 @@ OnixHardenEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $6075
 	db  $00
 
-PrimeapeFurySweepesEffectCommands:
+PrimeapeFurySwipesEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $6083
 	dbw EFFECTCMDTYPE_AI, $607b
 	db  $00
@@ -974,7 +974,7 @@ SandshrewSandAttackEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $626b
 	db  $00
 
-SandslashFurySweepesEffectCommands:
+SandslashFurySwipesEffectCommands:
 	dbw EFFECTCMDTYPE_BEFORE_DAMAGE, $6279
 	dbw EFFECTCMDTYPE_AI, $6271
 	db  $00
