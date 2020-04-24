@@ -90,39 +90,39 @@ TypesOfCardsText: ; 363c0 (d:63c0)
 	text "Soorten kaarten"
 	done
 
-TypeGrassPokemonText: ; 363d0 (d:63d0)
+GrassPokemonText: ; 363d0 (d:63d0)
 	text "Gras-Pokémon"
 	done
 
-TypeFirePokemonText: ; 363df (d:63df)
+FirePokemonText: ; 363df (d:63df)
 	text "Vuur-Pokémon"
 	done
 
-TypeWaterPokemonText: ; 363ed (d:63ed)
+WaterPokemonText: ; 363ed (d:63ed)
 	text "Water-Pokémon"
 	done
 
-TypeLightningPokemonText: ; 363fc (d:63fc)
+LightningPokemonText: ; 363fc (d:63fc)
 	text "Bliksem-Pokémon"
 	done
 
-TypeFightingPokemonText: ; 3640f (d:640f)
+FightingPokemonText: ; 3640f (d:640f)
 	text "Vecht-Pokémon"
 	done
 
-TypePsychicPokemonText: ; 36421 (d:6421)
+PsychicPokemonText: ; 36421 (d:6421)
 	text "Psychische Pokémon"
 	done
 
-TypeColorlessPokemonText: ; 36432 (d:6432)
+ColorlessPokemonText: ; 36432 (d:6432)
 	text "Kleurloze Pokémon"
 	done
 
-TypeTrainerCardText: ; 36445 (d:6445)
+TrainerCardText: ; 36445 (d:6445)
 	text "Trainerkaart"
 	done
 
-TypeEnergyCardText: ; 36453 (d:6453)
+EnergyCardText: ; 36453 (d:6453)
 	text "Energiekaart"
 	done
 
@@ -260,11 +260,11 @@ MayOnlyAttachOneEnergyCardText: ; 366d9 (d:66d9)
 	line "per beurt."
 	done
 
-UsePkMnPowerQuestionText: ; 36706 (d:6706)
+UseThisPokemonPowerText: ; 36706 (d:6706)
 	text "Deze Pokémon-Kracht gebruiken?"
 	done
 
-PkMnPowerSelectNotRequiredText: ; 3671f (d:671f)
+PokemonPowerSelectNotRequiredText: ; 3671f (d:671f)
 	text "Je hoeft de Pokémon-Kracht niet"
 	line "te selecteren om hem te gebruiken."
 	done
@@ -350,7 +350,7 @@ ChooseNextActivePokemonText: ; 368be (d:68be)
 	line "Kies de volgende Pokémon."
 	done
 
-PressSTARTWhenReadyText: ; 36903 (d:6903)
+PressStartWhenReadyText: ; 36903 (d:6903)
 	text "Druk op START"
 	line "als je klaar bent."
 	done
@@ -618,7 +618,7 @@ Text0089: ; 36f5a (d:6f5a)
 	textfw0 " ", " ", " ", " ", " ", " ", " ", " ", " ", " "
 	done
 
-SelectCpuOpponentText: ; 36f65 (d:6f65)
+SelectComputerOpponentText: ; 36f65 (d:6f65)
 	text "Kies een Computertegenstander."
 	done
 
