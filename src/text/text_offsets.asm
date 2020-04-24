@@ -2123,7 +2123,7 @@ TextOffsets::                                                                   
 	textpointer CobraName                                                                   ; 0x0848
 	textpointer ArbokDescription                                                            ; 0x0849
 	textpointer NidoranFName                                                                ; 0x084a
-	textpointer FurySweepesName                                                             ; 0x084b
+	textpointer FurySwipesName                                                             ; 0x084b
 	textpointer TripleAttackX10Description                                                  ; 0x084c
 	textpointer CallForFamilyName                                                           ; 0x084d
 	textpointer NidoranFsCallForFamilyDescription                                           ; 0x084e
@@ -2279,17 +2279,17 @@ TextOffsets::                                                                   
 	textpointer ConfuseRayName                                                              ; 0x08e4
 	textpointer FoxName                                                                     ; 0x08e5
 	textpointer VulpixDescription                                                           ; 0x08e6
-	textpointer NinetailsName                                                               ; 0x08e7
-	textpointer NinetailsLureDescription                                                    ; 0x08e8
+	textpointer NinetalesName                                                               ; 0x08e7
+	textpointer NinetalesLureDescription                                                    ; 0x08e8
 	textpointer FireBlastName                                                               ; 0x08e9
 	textpointer FireBlastDescription                                                        ; 0x08ea
-	textpointer Ninetails1Description                                                       ; 0x08eb
+	textpointer Ninetales1Description                                                       ; 0x08eb
 	textpointer MixUpName                                                                   ; 0x08ec
 	textpointer MixUpDescription                                                            ; 0x08ed
 	textpointer MixUpDescriptionCont                                                        ; 0x08ee
 	textpointer DancingEmbersName                                                           ; 0x08ef
 	textpointer DancingEmbersDescription                                                    ; 0x08f0
-	textpointer Ninetails2Description                                                       ; 0x08f1
+	textpointer Ninetales2Description                                                       ; 0x08f1
 	textpointer GrowlitheName                                                               ; 0x08f2
 	textpointer FlareName                                                                   ; 0x08f3
 	textpointer PuppyName                                                                   ; 0x08f4
