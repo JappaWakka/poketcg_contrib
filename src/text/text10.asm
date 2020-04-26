@@ -742,22 +742,23 @@ VenonatName: ; 58ff5 (16:4ff5)
 	done
 
 VenonatLeechLifeDescription: ; 58ffe (16:4ffe)
-	text "Remove a number of damage counters"
-	line "from Venonat equal to the damage"
-	line "done to the Defending Pokémon (after"
-	line "applying Weakness and Resistance)."
-	line "If Venonat has fewer damage counters"
-	line "than that, remove all of them."
+	text "Verwijder een aantal Schadetellers"
+	line "van Venonat gelijk aan de schade"
+	line "die gedaan is aan de Verdedigende"
+	line "Pokémon (na het toepassen van"
+	line "Zwakte en Weerstand). Als Venonat"
+	line "minder Schadetellers heeft dan"
+	line "verwijder ze dan allemaal."
 	done
 
 InsectName: ; 590cf (16:50cf)
-	text "Insect"
+	text "Insect-"
 	done
 
 VenonatDescription: ; 590d7 (16:50d7)
-	text "Lives in the shadows of tall trees"
-	line "where it eats insects."
-	line "It is attracted by light at night."
+	text "Leeft in de schaduwen van hoge bomen"
+	line "waar hij insecten eet. Hij wordt"
+	line "'s nachts aangetrokken door licht."
 	done
 
 VenomothName: ; 59135 (16:5135)
@@ -765,17 +766,17 @@ VenomothName: ; 59135 (16:5135)
 	done
 
 ShiftName: ; 5913f (16:513f)
-	text "Shift"
+	text "Verander"
 	done
 
 ShiftDescription: ; 59146 (16:5146)
-	text "Once during your turn (before your"
-	line "attack), you may change the type of"
-	line "Venomoth to the type of any other"
-	line "Pokémon in play other than"
-	line "Colorless. Deze kracht kan niet"
-	line "worden gebruikt als Venomoth"
-	line "is Asleep, Confused, or Paralyzed."
+	text "Je mag één keer tijdens je beurt"
+	line "(vóór je aanval) het type van"
+	line "Venomoth veranderen naar het type"
+	line "van een andere Pokémon in het spel"
+	line "die niet <COLORLESS> is. Deze kracht kan"
+	line "niet worden gebruikt als Venomoth"
+	line "In Slaap, Verward, of Verlamd is."
 	done
 
 VenomPowderName: ; 5921e (16:521e)
@@ -789,13 +790,14 @@ VenomPowderDescription: ; 5922c (16:522c)
 	done
 
 PoisonmothName: ; 59278 (16:5278)
-	text "Poisonmoth"
+	text "Gifmot-"
 	done
 
 VenomothDescription: ; 59284 (16:5284)
-	text "The dust-like scales covering its"
-	line "wings are color coded to indicate"
-	line "the kinds of poison it has."
+	text "De stofachtige schubben die zijn"
+	line "vleugels bedekken zijn gecodeerd"
+	line "met kleuren om de soorten vergif"
+	line "die hij heeft aan te geven."
 	done
 
 BellsproutName: ; 592e5 (16:52e5)

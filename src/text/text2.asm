@@ -151,26 +151,25 @@ Text0112: ; 3860a (e:460a)
 	done
 
 Text0113: ; 38647 (e:4647)
-	text "Choose the Pokémon whose color you"
-	line "wish to change with Color change."
+	text "Kies een Pokémon waarvan je"
+	line "het type wilt veranderen door"
+	line "middel van de Pokémon-Kracht"
+	line "Verander."
 	done
 
 Text0114: ; 3868d (e:468d)
-	text "Changed the Weakness of"
-	line ""
-	text "<RAMTEXT> to <RAMTEXT>."
+	text "De Zwakte van <RAMTEXT>"
+	line "is veranderd naar <RAMTEXT>."
 	done
 
 Text0115: ; 386af (e:46af)
-	text "Changed the Resistance of"
-	line ""
-	text "<RAMTEXT> to <RAMTEXT>."
+	text "De Weerstand van <RAMTEXT>"
+	line "is veranderd naar <RAMTEXT>."
 	done
 
 Text0116: ; 386d3 (e:46d3)
-	text "Changed the color of"
-	line ""
-	text "<RAMTEXT> to <RAMTEXT>."
+	text "Het type van <RAMTEXT>"
+	line "is veranderd naar <RAMTEXT>."
 	done
 
 Text0117: ; 386f2 (e:46f2)
@@ -182,124 +181,129 @@ DrawCardsFromTheDeckText: ; 3870e (e:470e)
 	done
 
 CannotDrawCardBecauseNoCardsInDeckText: ; 3872d (e:472d)
-	text "Cannot draw a card because"
-	line "there are no cards in the Deck."
+	text "Kan geen kaart pakken omdat"
+	line "er geen kaarten meer in"
+	line "het Deck zitten."
 	done
 
 Text011a: ; 38769 (e:4769)
-	text "Choose a Pokémon on the Bench"
-	line "to give damage to."
+	text "Kies een Pokémon op de Bank"
+	line "om schade aan te doen."
 	done
 
 Text011b: ; 3879b (e:479b)
-	text "Choose up to 3 Pokémon on the"
-	line "Bench to give damage to."
+	text "Kies tot 3 Pokémon op de"
+	line "Bank om schade aan te doen."
 	done
 
 Text011c: ; 387d3 (e:47d3)
-	text "Choose 1 Basic Energiekaart"
-	line "from the Deck."
+	text "Kies 1 Basis-Energiekaart"
+	line "uit je Deck."
 	done
 
 Text011d: ; 387fe (e:47fe)
-	text "Choose a Pokémon to attach"
-	line "the Energiekaart to."
+	text "Kies een Pokémon om de"
+	line "Energiekaart aan te hechten."
 	done
 
 Text011e: ; 3882e (e:482e)
-	text "Choose and Discard"
-	line "1 Fire Energiekaart."
+	text "Kies 1 <FIRE> Energiekaart"
+	line "om weg te gooien."
 	done
 
 Text011f: ; 38856 (e:4856)
-	text "Choose and Discard"
-	line "2 Fire Energiekaarten."
+	text "Kies 2 <FIRE> Energiekaarten"
+	line "om weg te gooien."
 	done
 
 Text0120: ; 3887f (e:487f)
-	text "Discard from opponent's Deck as many"
-	line "Fire Energiekaarten as were discarded."
+	text "Gooi zoveel kaarten van het Deck"
+	line "van de tegenstander weg als er"
+	line "<FIRE> Energiekaarten weggegooid zijn."
 	done
 
 Text0121: ; 388ca (e:48ca)
-	text "Choose and Discard"
-	line "2 Energiekaarten."
+	text "Kies 2 Energiekaarten"
+	line "om weg te gooien."
 	done
 
 Text0122: ; 388ee (e:48ee)
-	text "Choose a Krabby"
-	line "from the Deck."
+	text "Kies een Krabby"
+	line "uit je Deck."
 	done
 
 Text0123: ; 3890e (e:490e)
-	text "Choose and Discard an Energiekaart"
-	line "from the opponent's Active Pokémon."
+	text "Kies een Energiekaart die gehecht"
+	line "is aan de Actieve Pokémon van de"
+	line "tegenstander om weg te gooien."
 	done
 
 Text0124: ; 38955 (e:4955)
-	text "Choose the Attack the opponent will"
-	line "not be able to use on the next turn."
+	text "Kies de Aanval die de tegenstander"
+	line "niet zal kunnen gebruiken tijdens"
+	line "zijn of haar volgende beurt."
 	done
 
 Text0125: ; 3899f (e:499f)
-	text "Choose a Basic Fighting Pokémon"
-	line "from the Deck."
+	text "Kies een Basis-Vecht-Pokémon"
+	line "uit je Deck."
 	done
 
 Text0126: ; 389cf (e:49cf)
-	text "Choose an Oddish"
-	line "from the Deck."
+	text "Kies een Oddish"
+	line "uit je Deck."
 	done
 
 Text0127: ; 389f0 (e:49f0)
-	text "Choose an Oddish"
+	text "Kies een Oddish"
 	done
 
 Text0128: ; 38a02 (e:4a02)
-	text "Choose a Krabby."
+	text "Kies een Krabby."
 	done
 
 Text0129: ; 38a14 (e:4a14)
-	text "Choose a Basic"
+	text "Kies een Basis-"
 	line "Energiekaart."
 	done
 
 Text012a: ; 38a31 (e:4a31)
-	text "Choose a Nidoran♀ or a"
-	line "Nidoran♂ from the Deck."
+	text "Kies een Nidoran♀ of een"
+	line "Nidoran♂ uit je Deck."
 	done
 
 Text012b: ; 38a61 (e:4a61)
-	text "Choose a Nidoran♀"
-	line "or a Nidoran♂."
+	text "Kies een Nidoran♀"
+	line "or een Nidoran♂."
 	done
 
 Text012c: ; 38a83 (e:4a83)
-	text "Choose a Basic"
-	line "Fighting Pokémon"
+	text "Kies een Basis-"
+	line "Vecht-Pokémon"
 	done
 
 Text012d: ; 38aa4 (e:4aa4)
-	text "Procedure for Energy Transfer:"
+	text "Hoe je Energietransfer gebruikt:"
 	line ""
-	line "1. Choose the Pokémon to move Grass"
-	line "   Energy from.  Press the A Button."
+	line "1. Kies de Pokémon om de <GRASS> Energie"
+	line "   van te verplaatsen. Druk op de"
+	line "   A-knop."
 	line ""
-	line "2. Choose the Pokémon to move the"
-	line "   energy to and press the A Button."
+	line "2. Kies de Pokémon om de Energie aan"
+	line "   te hechten en druk op de A-knop."
 	line ""
-	line "3. Repeat steps 1 and 2."
+	line "3. Herhaal stappen 1 en 2."
 	line ""
-	line "4. Press the B Button to end."
+	line "4. Druk op de B-knop om te stoppen."
 	done
 
 Text012e: ; 38b8f (e:4b8f)
-	text "Choose a Bellsprout"
-	line "from the Deck."
+	text "Kies een Bellsprout"
+	line "uit je Deck."
 	done
 
 Text012f: ; 38bb3 (e:4bb3)
-	text "Choose a Bellsprout."
+	text "Kies een Bellsprout."
 	done
 
 Text0130: ; 38bc9 (e:4bc9)

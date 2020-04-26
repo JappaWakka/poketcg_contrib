@@ -325,7 +325,7 @@ CowardiceDescription: ; 5b890 (16:7890)
 	line "cards attached to Tentacool.) This"
 	line "power can't be used the turn you put"
 	line "Tentacool into play or if Tentacool"
-	line "is Asleep, Confused, or Paralyzed."
+	line "In Slaap, Verward, of Verlamd is."
 	done
 
 JellyfishName: ; 5b987 (16:7987)

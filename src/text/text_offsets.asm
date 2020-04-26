@@ -2496,11 +2496,13 @@ TextOffsets::                                                                   
 	textpointer Pikachu2Description                                                         ; 0x09bd
 	textpointer GrowlName                                                                   ; 0x09be
 	textpointer GrowlDescription                                                            ; 0x09bf
+	textpointer GrowlDescriptionCont
 	textpointer ThundershockName                                                            ; 0x09c0
 	textpointer Pikachu3Description                                                         ; 0x09c1
 	textpointer FlyingPikachuName                                                           ; 0x09c2
 	textpointer FlyName                                                                     ; 0x09c3
 	textpointer FlyDescription                                                              ; 0x09c4
+	textpointer FlyDescriptionCont
 	textpointer FlyingPikachuDescription                                                    ; 0x09c5
 	textpointer SurfingPikachuName                                                          ; 0x09c6
 	textpointer SurfName                                                                    ; 0x09c7

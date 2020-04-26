@@ -258,11 +258,12 @@ Text04a3: ; 44630 (11:4630)
 
 Text04a4: ; 4464d (11:464d)
 	text "Hecht Energiekaarten aan je Pokémon"
-	line "om ze de kracht te geven die ze nodig"
-	line "hebben om aan te vallen. Kies een"
-	line "Energiekaart uit je Hand en hecht"
-	line "hem aan een Pokémon. je mag maar"
-	line "1 Energiekaart per beurt hechten."
+	line "om ze de kracht te geven die ze"
+	line "nodig hebben om aan te vallen. Kies"
+	line "een Energiekaart uit je Hand en"
+	line "hecht hem aan een Pokémon. je mag"
+	line "maar 1 Energiekaart per"
+	line "beurt hechten."
 	done
 
 Text04a5: ; 44710 (11:4710)

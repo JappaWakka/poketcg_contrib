@@ -173,7 +173,7 @@ PeekDescription: ; 5e7f4 (17:67f4)
 
 PeekDescriptionCont: ; 5e8b8 (17:68b8)
 	text "Deze kracht kan niet worden gebruikt Mankey"
-	line "is Asleep, Confused, or Paralyzed."
+	line "In Slaap, Verward, of Verlamd is."
 	done
 
 PigMonkeyName: ; 5e8ff (17:68ff)
@@ -737,7 +737,7 @@ DamageSwapDescription: ; 60000 (18:4000)
 	line "Pokémon to another as long as you"
 	line "don't Knock Out that Pokémon."
 	line "Deze kracht kan niet worden gebruikt Alakazam"
-	line "is Asleep, Confused, or Paralyzed."
+	line "In Slaap, Verward, of Verlamd is."
 	done
 
 AlakazamDescription: ; 600f2 (18:40f2)
@@ -1016,7 +1016,7 @@ InvisibleWallDescription: ; 60c20 (18:4c20)
 
 InvisibleWallDescriptionCont: ; 60cd8 (18:4cd8)
 	text "Deze kracht kan niet worden gebruikt Mr. Mime"
-	line "is Asleep, Confused, or Paralyzed."
+	line "In Slaap, Verward, of Verlamd is."
 	done
 
 MeditateName: ; 60d21 (18:4d21)

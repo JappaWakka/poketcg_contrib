@@ -458,34 +458,34 @@ PorygonName: ; 62e9d (18:6e9d)
 	done
 
 Conversion1Name: ; 62ea6 (18:6ea6)
-	text "Conversion 1"
+	text "Conversie 1"
 	done
 
 Conversion1Description: ; 62eb4 (18:6eb4)
-	text "If the Defending Pokémon has a"
-	line "Weakness, you may change it to a"
-	line "type of your choice other than"
-	line "Colorless."
+	text "Als de Verdedigende Pokémon een"
+	line "Zwakte heeft, mag je deze"
+	line "veranderen naar een type van"
+	line "jouw keuze, behalve Kleurloos."
 	done
 
 Conversion2Name: ; 62f1f (18:6f1f)
-	text "Conversion 2"
+	text "Conversie 2"
 	done
 
 Conversion2Description: ; 62f2d (18:6f2d)
-	text "Change Porygon's Resistance to a"
-	line "type of your choice other than"
-	line "Colorless."
+	text "Verander Porygon's Weerstand"
+	line "naar een type van jouw keuze,"
+	line "behalve Kleurloos."
 	done
 
 VirtualName: ; 62f79 (18:6f79)
-	text "Virtual"
+	text "Virtuele"
 	done
 
 PorygonDescription: ; 62f82 (18:6f82)
-	text "A Pokémon that consists entirely of"
-	line "programming code. Capable of moving"
-	line "freely in cyberspace."
+	text "Een Pokémon die helemaal uit"
+	line "programmacode bestaat. Kan zich in"
+	line "cyberspace vrijelijk bewegen."
 	done
 
 SnorlaxName: ; 62fe1 (18:6fe1)
