@@ -1,3 +1,46 @@
+Text0472: ; 4364c (10:764c)
+	text "I was just saying which "
+	line "Grand Master is the best."
+	line "I think Steve is the best player."
+	done
+
+Text0473: ; 436a2 (10:76a2)
+	text "I can't believe Steve the Grand"
+	line "Master could lose!"
+	line "Who could have defeated Steve?"
+	done
+
+Text0474: ; 436f5 (10:76f5)
+	text "The best player among the Grand"
+	line "Masters is Rod, since he's the"
+	line "leader of the Grand Masters."
+	done
+
+Text0475: ; 43752 (10:7752)
+	text "I can't believe Rod, the leader of"
+	line "the Grand Masters, was defeated!?!"
+	line "Could this mean the Legendary"
+	line "Pokémon Cards have been passed on?"
+	done
+
+Text0476: ; 437da (10:77da)
+	text "If I were just a few years younger,"
+	line "I'd be dueling with you kids, too."
+	done
+
+Text0477: ; 43822 (10:7822)
+	text "I am Mitch, Master of the"
+	line "Fighting Club!"
+	line "I have to warn you that you will"
+	line "be unable to defeat me!"
+	line "If you wish to Duel with me,"
+	line "you must defeat my pupils first!"
+	line "My pupils are training at "
+	line "other Clubs!"
+	line "Go see if you can defeat all"
+	line "3 of my pupils!"
+	done
+
 Text0478: ; 43918 (10:7918)
 	text "If you wish to Duel me, you "
 	line "must defeat my pupils first!"
@@ -32,7 +75,7 @@ Text047b: ; 43acb (10:7acb)
 	done
 
 Text047c: ; 43b54 (10:7b54)
-	text "Would you like to Duel Mitch?"
+	text "Wil je Dueleren met Mitch?"
 	done
 
 Text047d: ; 43b73 (10:7b73)
@@ -120,7 +163,7 @@ Text048a: ; 43f61 (10:7f61)
 	done
 
 Text048b: ; 43fd9 (10:7fd9)
-	text "Would you like to Duel Chris?"
+	text "Wil je Dueleren met Chris?"
 	done
 
 Text048c: ; 44000 (11:4000)
@@ -156,7 +199,7 @@ Text0491: ; 44113 (11:4113)
 	done
 
 Text0492: ; 44163 (11:4163)
-	text "Would you like to Duel Michael?"
+	text "Wil je Dueleren met Michael?"
 	done
 
 Text0493: ; 44184 (11:4184)
@@ -191,7 +234,7 @@ Text0498: ; 44262 (11:4262)
 	done
 
 Text0499: ; 442c3 (11:42c3)
-	text "Would you like to Duel Jessica?"
+	text "Wil je Dueleren met Jessica?"
 	done
 
 Text049a: ; 442e4 (11:42e4)
@@ -980,48 +1023,4 @@ Text050a: ; 47442 (11:7442)
 	line "Challenge Cup, you will receive "
 	line "a Promotional Card! Please join "
 	line "us for this competition."
-	done
-
-Text050b: ; 474fd (11:74fd)
-	text "Greetings! Welcome to the "
-	line "Challenge Hall! This is where the"
-	line "the Challenge Cup is held. The "
-	line "Challenge Cup may start at any"
-	line "time, so please visit the "
-	line "Challenge Hall often."
-	done
-
-Text050c: ; 475ab (11:75ab)
-	text "Greetings! Welcome to the "
-	line "Challenge Hall! Defeat 3 "
-	line "opponents here, and you shall be "
-	line "presented with a wonderful gift!"
-	line "Please join in the competition!"
-	done
-
-Text050d: ; 47644 (11:7644)
-	text "Most unfortunate, <RAMNAME>."
-	line "Once you enter, you won't be able"
-	line "to re-enter for some time. "
-	line "Please try again another day."
-	done
-
-Text050e: ; 476b6 (11:76b6)
-	text "Congratulations, <RAMNAME>!"
-	line "You received a card!"
-	line "Please join us for the next "
-	line "Challenge Cup, too."
-	done
-
-Text050f: ; 47711 (11:7711)
-	text "I won't lose to any"
-	line "whipper-snapper!"
-	line "I'm going to win this "
-	line "Challenge Cup!"
-	done
-
-Text0510: ; 4775d (11:775d)
-	text "I work at the Challenge Cup"
-	line "as the HOST."
-	line "I can't wait to get up on stage!"
 	done

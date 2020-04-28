@@ -548,7 +548,7 @@ StartSuddenDeathMatchText: ; 36e05 (d:6e05)
 PrizesLeftActivePokemonCardsInDeckText: ; 36e2e (d:6e2e)
 	text "Prijskaarten"
 	line "Actieve Pokémon"
-	line "Deck kaarten"
+	line "Deck-kaarten"
 	done
 
 NoneText: ; 36e58 (d:6e58)

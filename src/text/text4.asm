@@ -1,3 +1,115 @@
+Text03e8: ; 3f82a (f:782a)
+	text "<Lv>60 MEWTWO "
+	done
+
+Text03e9: ; 3f838 (f:7838)
+	text "<Lv>8 MEW "
+	done
+
+Text03ea: ; 3f842 (f:7842)
+	text "<Lv>34 ARCANINE"
+	done
+
+Text03eb: ; 3f851 (f:7851)
+	text "<Lv>16 PIKACHU"
+	done
+
+Text03ec: ; 3f85f (f:785f)
+	text "<Lv>13 SURFING PIKACHU"
+	done
+
+Text03ed: ; 3f875 (f:7875)
+	text "<Lv>20 ELECTABUZZ"
+	done
+
+Text03ee: ; 3f886 (f:7886)
+	text "<Lv>9 SLOWPOKE"
+	done
+
+Text03ef: ; 3f894 (f:7894)
+	text "<Lv>12 JIGGLYPUFF"
+	done
+
+Text03f0: ; 3f8a5 (f:78a5)
+	text "<Lv>68 ZAPDOS"
+	done
+
+Text03f1: ; 3f8b2 (f:78b2)
+	text "<Lv>37 MOLTRES"
+	done
+
+Text03f2: ; 3f8c0 (f:78c0)
+	text "<Lv>37 ARTICUNO"
+	done
+
+Text03f3: ; 3f8cf (f:78cf)
+	text "<Lv>41 DRAGONITE"
+	done
+
+Text03f4: ; 3f8df (f:78df)
+	text "Super Energy Retrieval"
+	done
+
+Text03f5: ; 3f8f7 (f:78f7)
+	text "<Lv>12 FLYING PIKACHU"
+	done
+
+Text03f6: ; 3f90c (f:790c)
+	text "Lightning & Fire Deck"
+	done
+
+Text03f7: ; 3f923 (f:7923)
+	text "Water & Fighting Deck"
+	done
+
+Text03f8: ; 3f93a (f:793a)
+	text "Grass & Psychic Deck"
+	done
+
+Text03f9: ; 3f950 (f:7950)
+	text "Please select the Deck"
+	line "you wish to Duel against."
+	done
+
+Text03fa: ; 3f982 (f:7982)
+	text "Charmander & Vrienden Deck"
+	done
+
+Text03fb: ; 3f99d (f:799d)
+	text "Squirtle & Vrienden Deck"
+	done
+
+Text03fc: ; 3f9b6 (f:79b6)
+	text "Bulbasaur & Vrienden Deck"
+	done
+
+Text03fd: ; 3f9d0 (f:79d0)
+	text "Kies het deck dat je wilt."
+	done
+
+Text03fe: ; 3f9f2 (f:79f2)
+	text "Hoi, <RAMNAME>. Waar kan"
+	line "ik je mee van dienst zijn?"
+	done
+
+Text03ff: ; 3fa0e (f:7a0e)
+	text "Normaal duel"
+	line "Oefenen"
+	line "Regels"
+	line "Niets"
+	done
+
+Text0400: ; 3fa32 (f:7a32)
+	text "Energie"
+	line "Aanvallen"
+	line "Terug Trekken"
+	line "Pokémon Evolueren"
+	line "Pokémon-Krachten"
+	line "Je beurt doorgeven"
+	line "Winnen en Verliezen"
+	line "Alles is duidelijk"
+	done
+
 Text0401: ; 3faaa (f:7aaa)
 	text "<RAMNAME>,"
 	line "It's me, Doctor Mason."
@@ -513,7 +625,7 @@ Text042c: ; 42087 (10:6087)
 	done
 
 Text042d: ; 420e4 (10:60e4)
-	text "Would you like to Duel Sara?"
+	text "Wil je Dueleren met Sara?"
 	done
 
 Text042e: ; 42102 (10:6102)
@@ -553,7 +665,7 @@ Text0433: ; 42279 (10:6279)
 	done
 
 Text0434: ; 422d6 (10:62d6)
-	text "Would you like to Duel Amanda?"
+	text "Wil je Dueleren met Amanda?"
 	done
 
 Text0435: ; 422f6 (10:62f6)
@@ -617,7 +729,7 @@ Text043e: ; 425b8 (10:65b8)
 	done
 
 Text043f: ; 425d6 (10:65d6)
-	text "Would you like to Duel Joshua?"
+	text "Wil je Dueleren met Joshua?"
 	done
 
 Text0440: ; 425f6 (10:65f6)
@@ -716,7 +828,7 @@ Text044f: ; 429bd (10:69bd)
 	done
 
 Text0450: ; 429f0 (10:69f0)
-	text "Would you like to Duel Amy?"
+	text "Wil je Dueleren met Amy?"
 	done
 
 Text0451: ; 42a0d (10:6a0d)
@@ -896,7 +1008,7 @@ Text0468: ; 43325 (10:7325)
 	done
 
 Text0469: ; 43391 (10:7391)
-	text "Would you like to Duel Imakuni??"
+	text "Wil je Dueleren met Imakuni??"
 	done
 
 Text046a: ; 433b3 (10:73b3)
@@ -949,47 +1061,3 @@ Text0471: ; 435a7 (10:75a7)
 	line "  La di da la di da..."
 	line "... You dance weird!"
 	done
-
-Text0472: ; 4364c (10:764c)
-	text "I was just saying which "
-	line "Grand Master is the best."
-	line "I think Steve is the best player."
-	done
-
-Text0473: ; 436a2 (10:76a2)
-	text "I can't believe Steve the Grand"
-	line "Master could lose!"
-	line "Who could have defeated Steve?"
-	done
-
-Text0474: ; 436f5 (10:76f5)
-	text "The best player among the Grand"
-	line "Masters is Rod, since he's the"
-	line "leader of the Grand Masters."
-	done
-
-Text0475: ; 43752 (10:7752)
-	text "I can't believe Rod, the leader of"
-	line "the Grand Masters, was defeated!?!"
-	line "Could this mean the Legendary"
-	line "Pokémon Cards have been passed on?"
-	done
-
-Text0476: ; 437da (10:77da)
-	text "If I were just a few years younger,"
-	line "I'd be dueling with you kids, too."
-	done
-
-Text0477: ; 43822 (10:7822)
-	text "I am Mitch, Master of the"
-	line "Fighting Club!"
-	line "I have to warn you that you will"
-	line "be unable to defeat me!"
-	line "If you wish to Duel with me,"
-	line "you must defeat my pupils first!"
-	line "My pupils are training at "
-	line "other Clubs!"
-	line "Go see if you can defeat all"
-	line "3 of my pupils!"
-	done
-	

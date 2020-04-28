@@ -1,3 +1,167 @@
+Text070f: ; 52aff (14:6aff)
+	text "Wil je Dueleren met Heather?"
+	done
+
+Text0710: ; 52b20 (14:6b20)
+	text "I'll be glad to Duel you"
+	line "any time you like."
+	done
+
+Text0711: ; 52b4d (14:6b4d)
+	text "Are 4 Prizes OK?"
+	line "Let's begin!"
+	done
+
+Text0712: ; 52b6c (14:6b6c)
+	text "I can't believe"
+	line "I could lose..."
+	done
+
+Text0713: ; 52b8d (14:6b8d)
+	text "I can't believe"
+	line "I would lose again..."
+	done
+
+Text0714: ; 52bb4 (14:6bb4)
+	text "I need to practice more..."
+	done
+
+Text0715: ; 52bd0 (14:6bd0)
+	text "Nikki is visiting"
+	line "Ishihara."
+	line "Why don't you go see her"
+	line "at Ishihara's house."
+	done
+
+Text0716: ; 52c1b (14:6c1b)
+	text "Well, that wasn't much of a Duel!"
+	line "I'll be glad to Duel you"
+	line "any time you like."
+	done
+
+Text0717: ; 52c6a (14:6c6a)
+	text "I wonder if your last win "
+	line "was just luck?"
+	line "I will be glad to Duel you"
+	line "any time you like."
+	done
+
+Text0718: ; 52cc3 (14:6cc3)
+	text "I'm Nikki, the Master of the"
+	line "Grass Club."
+	line "I'm sorry I kept you waiting."
+	line "Shall we duel?"
+	done
+
+Text0719: ; 52d1a (14:6d1a)
+	text "Hello, <RAMNAME>."
+	line "Did you come for a Duel?"
+	done
+
+Text071a: ; 52d3e (14:6d3e)
+	text "Wil je Dueleren met Nikki?"
+	done
+
+Text071b: ; 52d5d (14:6d5d)
+	text "Oh...You do not wish to duel?"
+	line "I'll be here at the Club for "
+	line "a while, so please come by "
+	line "any time you like."
+	done
+
+Text071c: ; 52dc9 (14:6dc9)
+	text "Then why don't you stop and "
+	line "gaze at our flowers for a while."
+	line "Looking at beautiful flowers"
+	line "makes you feel so serene."
+	done
+
+Text071d: ; 52e3f (14:6e3f)
+	text "Shall we play with 6 Prizes?"
+	line "Please go easy on me."
+	done
+
+Text071e: ; 52e73 (14:6e73)
+	text "We'll play with 6 Prizes, as usual."
+	line "Please go easy on me."
+	done
+
+Text071f: ; 52eae (14:6eae)
+	text "Oh, no! I lost!"
+	line "Well, you truly are skilled."
+	line "Maybe one day you will inherit"
+	line "the Legendary Pokémon Cards."
+	line "Please allow me to give you"
+	line "this Grass Medal."
+	done
+
+Text0720: ; 52f46 (14:6f46)
+	text "Oh, no!"
+	line "How could I lose?"
+	line "Please allow me to give you"
+	line "this Booster Pack."
+	done
+
+Text0721: ; 52f90 (14:6f90)
+	text "Please"
+	line "take this, too."
+	done
+
+Text0722: ; 52fa8 (14:6fa8)
+	text "My Duel with you was..."
+	line "quite fun!"
+	line "Please allow me"
+	line "to Duel you again!"
+	done
+
+Text0723: ; 52fef (14:6fef)
+	text "I am Nikki, the Grass Club "
+	line "Master. What? You were looking "
+	line "for me? Oh my..."
+	line "I'm very sorry to keep you waiting."
+	line "I was doing a little research here."
+	line "I assume you would like to Duel?"
+	line "I only Duel at the Club."
+	line "I'm sorry, but could you meet me"
+	line "at the Grass Club?"
+	line "I will head back to the Grass Club"
+	line "and wait for you there."
+	done
+
+Text0724: ; 5312e (14:712e)
+	text "Thank you very much, Ishihara."
+	line "Your books were very helpful!"
+	line "You are indeed the Number 1"
+	line "Pokémon Trading Card Collector."
+	done
+
+Text0725: ; 531a8 (14:71a8)
+	text "Oh, no!"
+	line "You give me too much credit..."
+	line "If you need to research anything,"
+	line "please come see me again!"
+	done
+
+Text0726: ; 5320c (14:720c)
+	text "Thank you very much, Ishihara."
+	line "If you will excuse me..."
+	done
+
+Text0727: ; 53245 (14:7245)
+	text "Hello, nice to meet you."
+	line "I'm Ishihara."
+	line "I'm a Pokémon Card Collector."
+	line "I love collecting cards."
+	line "I see you also love"
+	line "Pokémon Cards."
+	line "Please come see me again."
+	line "We must trade some sometime."
+	line "OH!"
+	line "If you're playing with the cards,"
+	line "Please read some of the books here."
+	line "I believe they will be helpful."
+	done
+
 Text0728: ; 53368 (14:7368)
 	text "Hello, <RAMNAME>."
 	line "Welcome."
@@ -214,7 +378,7 @@ Text0740: ; 54223 (15:4223)
 	done
 
 Text0741: ; 54245 (15:4245)
-	text "Would you like to Duel Ronald?"
+	text "Wil je Dueleren met Ronald?"
 	done
 
 Text0742: ; 54265 (15:4265)
@@ -332,7 +496,7 @@ Text0750: ; 54884 (15:4884)
 	done
 
 Text0751: ; 54932 (15:4932)
-	text "Would you like to Duel David?"
+	text "Wil je Dueleren met David?"
 	done
 
 Text0752: ; 54951 (15:4951)
@@ -364,12 +528,12 @@ Text0757: ; 54a4b (15:4a4b)
 	line "at the Science Club, especially"
 	line "Science Pokémon Cards! Science"
 	line "Pokémon are exceedingly strong."
-	line "Would you like to Duel against"
+	line "Wil je Dueleren tegen"
 	line "my Science Pokémon Deck?"
 	done
 
 Text0758: ; 54b02 (15:4b02)
-	text "Would you like to Duel Erik?"
+	text "Wil je Dueleren met Erik?"
 	done
 
 Text0759: ; 54b20 (15:4b20)
@@ -406,7 +570,7 @@ Text075e: ; 54c10 (15:4c10)
 	done
 
 Text075f: ; 54cb3 (15:4cb3)
-	text "Would you like to Duel Rick?"
+	text "Wil je Dueleren met Rick?"
 	done
 
 Text0760: ; 54cd1 (15:4cd1)
@@ -487,7 +651,7 @@ Text076c: ; 5500e (15:500e)
 	done
 
 Text076d: ; 550bf (15:50bf)
-	text "Would you like to Duel Joseph?"
+	text "Wil je Dueleren met Joseph?"
 	done
 
 Text076e: ; 550df (15:50df)
@@ -565,7 +729,7 @@ Text077a: ; 553bf (15:53bf)
 	done
 
 Text077b: ; 55427 (15:5427)
-	text "Would you like to Duel Chris?"
+	text "Wil je Dueleren met Chris?"
 	done
 
 Text077c: ; 55446 (15:5446)
@@ -602,25 +766,25 @@ Text0781: ; 5557a (15:557a)
 	line "The Legendary Cards"
 	line "will belong to me!"
 	line "How about it?"
-	line "Would you like to Duel me?"
+	line "Wil je met me Dueleren?"
 	done
 
 Text0782: ; 55621 (15:5621)
-	text "Hi, <RAMNAME>."
-	line "Would you like to duel?"
-	line "The Legendary Cards will eventually"
-	line "belong to me!"
-	line "How about it?"
-	line "Would you like to Duel me?"
+	text "Hoi, <RAMNAME>."
+	line "Heb je zin in een Duel?"
+	line "De Legendarische Kaarten zullen"
+	line "binnenkort toch van mij zijn!"
+	line "Dus wat denk je ervan?"
+	line "Wil je met me Dueleren?"
 	done
 
 Text0783: ; 5569c (15:569c)
 	text "Hi, <RAMNAME>."
-	line "Would you like to duel?"
+	line "Wil je Dueleren?"
 	done
 
 Text0784: ; 556bc (15:56bc)
-	text "Would you like to Duel Matthew?"
+	text "Wil je Dueleren met Matthew?"
 	done
 
 Text0785: ; 556dd (15:56dd)
@@ -747,7 +911,7 @@ Text0795: ; 55d30 (15:5d30)
 	done
 
 Text0796: ; 55d9c (15:5d9c)
-	text "Would you like to Duel Ryan?"
+	text "Wil je Dueleren met Ryan?"
 	done
 
 Text0797: ; 55dba (15:5dba)
@@ -788,7 +952,7 @@ Text079c: ; 55eda (15:5eda)
 	done
 
 Text079d: ; 55f57 (15:5f57)
-	text "Would you like to Duel Andrew?"
+	text "Wil je Dueleren met Andrew?"
 	done
 
 Text079e: ; 55f77 (15:5f77)
@@ -829,7 +993,7 @@ Text07a3: ; 5606c (15:606c)
 	done
 
 Text07a4: ; 56143 (15:6143)
-	text "Would you like to Duel Gene?"
+	text "Wil je Dueleren met Gene?"
 	done
 
 Text07a5: ; 56161 (15:6161)
@@ -903,463 +1067,4 @@ Text07b0: ; 56478 (15:6478)
 	line "But better luck next time!"
 	line "I look forward to the day"
 	line "when we Duel again!"
-	done
-
-Text07b1: ; 564db (15:64db)
-	text ""
-	line "        Pokémon Trading Card Game "
-	line "                  Staff"
-	done
-
-Text07b2: ; 56518 (15:6518)
-	text ""
-	line "                Producers"
-	line ""
-	line ""
-	line "           Tsunekazu Ishihara"
-	line "            Shinichi Nakamoto"
-	line "             Takehiro Izushi"
-	done
-
-Text07b3: ; 5658f (15:658f)
-	text ""
-	line "                Director"
-	line ""
-	line ""
-	line "                Koji Arai"
-	done
-
-Text07b4: ; 565c6 (15:65c6)
-	text ""
-	line "               Programmers"
-	line ""
-	line ""
-	line "             Masahiro Tobita"
-	line "             Satoshi Mikami"
-	line "             Masaki Tsumori"
-	done
-
-Text07b5: ; 5663a (15:663a)
-	text ""
-	line "           GB Graphic Designers"
-	line ""
-	line ""
-	line "             Kazuhiko Nonaka"
-	line "             Yasuhiro Fujii"
-	line "           Tsuguyuki Yamamoto"
-	done
-
-Text07b6: ; 566b5 (15:66b5)
-	text "            Yasuhiro Ichizawa"
-	line "              Miwa Matsuda"
-	line "             Norihiro Kanie"
-	done
-
-Text07b7: ; 5670b (15:670b)
-	text "             Kazushi Kousaka"
-	line "              Hiromi Sugiue"
-	line "           Katsuhisa Nishikawa"
-	done
-
-Text07b8: ; 56764 (15:6764)
-	text ""
-	line "                  Music"
-	line ""
-	line ""
-	line "            Ichiro Shimakura"
-	done
-
-Text07b9: ; 5679d (15:679d)
-	text ""
-	line "              Sound Effects"
-	line ""
-	line ""
-	line "              Masato Aihara"
-	done
-
-Text07ba: ; 567d9 (15:67d9)
-	text ""
-	line "             Sound Director"
-	line ""
-	line ""
-	line "            Toshiaki Takimoto"
-	done
-
-Text07bb: ; 56817 (15:6817)
-	text ""
-	line "          Sound System Support"
-	line ""
-	line ""
-	line "           Katsunori Takahashi"
-	line "               Hideki Oka"
-	done
-
-Text07bc: ; 56873 (15:6873)
-	text ""
-	line "            Card Game Creator"
-	line ""
-	line ""
-	line "             Takumi Akabane"
-	done
-
-Text07bd: ; 568b1 (15:68b1)
-	text ""
-	line "            Card Game Creator"
-	line ""
-	line ""
-	line "             Kouichi Oyama"
-	done
-
-Text07be: ; 568ee (15:68ee)
-	text ""
-	line "            Card Game Creator"
-	line ""
-	line ""
-	line "              Akihiko Miura"
-	done
-
-Text07bf: ; 5692c (15:692c)
-	text ""
-	line "            Card Illustrators"
-	line ""
-	line ""
-	line "              Ken Sugimori"
-	line "             Mitsuhiro Arita"
-	line "             Keiji Kinebuchi"
-	line "             Kagemaru Himeno"
-	done
-
-Text07c0: ; 569c0 (15:69c0)
-	text "             Tomoaki Imakuni"
-	line "               Miki Tanaka"
-	line "              Toshinao Aoki"
-	line "              Benimaru Ito"
-	done
-
-Text07c1: ; 56a30 (15:6a30)
-	text ""
-	line "         Special Appearances by"
-	line ""
-	line ""
-	line "             Hiroko Ohashi"
-	line "             Masako Uchiyama"
-	done
-
-Text07c2: ; 56a8c (15:6a8c)
-	text "             Kunimi Kawamura"
-	line "                Imakuni?"
-	done
-
-Text07c3: ; 56ac3 (15:6ac3)
-	text ""
-	line "             US COORDINATION"
-	line "           NINTENDO OF AMERICA"
-	line ""
-	line ""
-	line "               GAIL TILDEN"
-	line "              HIRO NAKAMURA"
-	done
-
-Text07c4: ; 56b3a (15:6b3a)
-	text "              KENJI OKUBO"
-	line "             WILLIAM TRINEN"
-	done
-
-Text07c5: ; 56b71 (15:6b71)
-	text ""
-	line "             US COORDINATION"
-	line "           Wizards of the Coast"
-	line "          Pokémon Templating Team"
-	line ""
-	line ""
-	line "            Robert Gutschera"
-	line "             Jessica Beaven"
-	done
-
-Text07c6: ; 56c0d (15:6c0d)
-	text "             Paul Peterson"
-	line "            Michael G. Ryan"
-	line "               Tom Wylie"
-	done
-
-Text07c7: ; 56c5e (15:6c5e)
-	text ""
-	line "            TRANSLATION/DRAFT"
-	line ""
-	line ""
-	line "               BILL RITCH"
-	done
-
-Text07c8: ; 56c9a (15:6c9a)
-	text ""
-	line "                Mastering"
-	line ""
-	line ""
-	line "             Tetsuya Komatsu"
-	done
-
-Text07c9: ; 56cd5 (15:6cd5)
-	text ""
-	line "             Manual Creation"
-	line ""
-	line ""
-	line "              Haruki Mitani"
-	done
-
-Text07ca: ; 56d12 (15:6d12)
-	text ""
-	line "           Manual Illustrations"
-	line ""
-	line ""
-	line "             Kagemaru Himeno"
-	done
-
-Text07cb: ; 56d53 (15:6d53)
-	text ""
-	line "          Pokémon Original Story"
-	line ""
-	line ""
-	line "             Satoshi Tajiri"
-	line ""
-	done
-
-Text07cc: ; 56d95 (15:6d95)
-	text ""
-	line "       Created In Cooperation With"
-	line ""
-	line ""
-	line "              Shinji Hatano"
-	line "             Satoshi Yamato"
-	line "             Takahiro Harada"
-	done
-
-Text07cd: ; 56e11 (15:6e11)
-	text ""
-	line "          With Cooperation from"
-	line ""
-	line ""
-	line "             Yoshio Motosako"
-	line "             Hiroyuki Mikami"
-	line "              Keigo Yasuda"
-	done
-
-Text07ce: ; 56e8a (15:6e8a)
-	text "            Yusuke Kurushima"
-	line "           Nobuchika Takahashi"
-	line "             Junko Igarashi"
-	line "              Yukiko Tomita"
-	done
-
-Text07cf: ; 56eff (15:6eff)
-	text "              Mari Matsuda"
-	line "             Moto Yamaguchi"
-	line "              Shigeru Sato"
-	line "             Chiaki Nishiki"
-	done
-
-Text07d0: ; 56f6e (15:6f6e)
-	text ""
-	line "             Project Manager"
-	line ""
-	line ""
-	line "            Yasutaka Kakiseko"
-	done
-
-Text07d1: ; 56fad (15:6fad)
-	text ""
-	line "               Supervisor"
-	line ""
-	line ""
-	line ""
-	line "              Hiroshi Kudo"
-	done
-
-Text07d2: ; 56fe7 (15:6fe7)
-	text ""
-	line "           Executive Producer"
-	line ""
-	line ""
-	line ""
-	line "            Hiroshi Yamauchi"
-	done
-
-Text07d3: ; 57027 (15:7027)
-	text ""
-	line "               Created by"
-	line ""
-	line ""
-	line ""
-	line "                 Hudson"
-	done
-
-Text07d4: ; 5705e (15:705e)
-	text "  Uitdagingsmachine  "
-	done
-
-Text07d5: ; 57075 (15:7075)
-	text "<RAMNAME>'s Score"
-	done
-
-Text07d6: ; 57080 (15:7080)
-	text "Defeated 5 opponents      time(s)."
-	done
-
-Text07d7: ; 570a4 (15:70a4)
-	text "Present Consecutive Wins"
-	done
-
-Text07d8: ; 570be (15:70be)
-	text "Maximum Consecutive Wins"
-	line "    [ <RAMTEXT>  ]"
-	done
-
-Text07d9: ; 570e3 (15:70e3)
-	text "Wins"
-	done
-
-Text07da: ; 570e9 (15:70e9)
-	text "<RAMNAME> <RAMNUM> Consecutive Wins!"
-	line ""
-	text "<RAMNUM> opponent is <RAMTEXT>."
-	done
-
-Text07db: ; 57112 (15:7112)
-	text "<RAMNUM> opponent is <RAMTEXT>."
-	done
-
-Text07dc: ; 57124 (15:7124)
-	text "Would you like to begin the Duel?"
-	done
-
-Text07dd: ; 57147 (15:7147)
-	text "If you quit the Duel,"
-	line "Your Consecutive Wins will end."
-	done
-
-Text07de: ; 5717e (15:717e)
-	text "Would you like to quit the Duel?"
-	done
-
-Text07df: ; 571a0 (15:71a0)
-	text "Play the Challenge Machine?"
-	done
-
-Text07e0: ; 571bd (15:71bd)
-	text "OK,"
-	line "Let us choose your opponent."
-	done
-
-Text07e1: ; 571df (15:71df)
-	text "You lost to the <RAMNUM> opponent,"
-	line "<RAMTEXT>!"
-	done
-
-Text07e2: ; 571ff (15:71ff)
-	text "<RAMNAME>'s consecutive wins"
-	line "ended at <RAMNUM>."
-	done
-
-Text07e3: ; 57221 (15:7221)
-	text "We await your next challenge."
-	done
-
-Text07e4: ; 57240 (15:7240)
-	text "Your opponents for this game:"
-	done
-
-Text07e5: ; 5725f (15:725f)
-	text "Congratulations!"
-	line "You won against <RAMNUM> opponents!"
-	done
-
-DefeatedFiveOpponentsText: ; 5728e (15:728e)
-	text "Congratulations!"
-	line "You defeated 5 opponents!"
-	done
-
-Text07e7: ; 572ba (15:72ba)
-	text "<RAMNAME> successfully defeated "
-	line "5 opponents "
-	text "<RAMNUM> time(s)!!!"
-	done
-
-ConsecutiveWinRecordIncreasedText: ; 572ee (15:72ee)
-	text "<RAMNAME>'s consecutive win"
-	line "record increased to <RAMNUM>!"
-	done
-
-Text07e9: ; 5731a (15:731a)
-	text "Clublid"
-	done
-
-Text07ea: ; 57327 (15:7327)
-	text "Clubmeester"
-	done
-
-Text07eb: ; 57334 (15:7334)
-	text "Techneut"
-	done
-
-Text07ec: ; 5733a (15:733a)
-	text "Vreemde Levensvorm"
-	done
-
-Text07ed: ; 5734d (15:734d)
-	text "Grootmeester"
-	done
-
-Text07ee: ; 5735b (15:735b)
-	textfw0 "1"
-	done
-
-Text07ef: ; 5735d (15:735d)
-	textfw0 "2"
-	done
-
-Text07f0: ; 5735f (15:735f)
-	textfw0 "3"
-	done
-
-Text07f1: ; 57361 (15:7361)
-	textfw0 "4"
-	done
-
-Text07f2: ; 57363 (15:7363)
-	textfw0 "5"
-	done
-
-Text07f3: ; 57365 (15:7365)
-	textfw0 " "
-	done
-
-Text07f4: ; 57367 (15:7367)
-	textfw3 "☆"
-	done
-
-Text07f5: ; 5736a (15:736a)
-	textfw3 "★"
-	done
-
-Text07f6: ; 5736d (15:736d)
-	textfw3 "【", "<FIRE>", "】"
-	done
-
-Text07f7: ; 57374 (15:7374)
-	textfw3 "【", "<LIGHTNING>", "】"
-	done
-
-Text07f8: ; 5737b (15:737b)
-	textfw3 "【", "<WATER>", "】"
-	done
-
-Text07f9: ; 57382 (15:7382)
-	textfw3 "【", "<FIGHTING>", "】"
-	done
-
-Text07fa: ; 57389 (15:7389)
-	textfw3 "【", "<PSYCHIC>", "】"
-	done
-
-Text07fb: ; 57390 (15:7390)
-	textfw3 "【", "<GRASS>", "】"
 	done

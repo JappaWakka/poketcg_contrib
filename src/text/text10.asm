@@ -1,3 +1,462 @@
+Text07b1: ; 564db (15:64db)
+	text ""
+	line "        Pokémon Trading Card Game "
+	line "                  Staff"
+	done
+
+Text07b2: ; 56518 (15:6518)
+	text ""
+	line "                Producers"
+	line ""
+	line ""
+	line "           Tsunekazu Ishihara"
+	line "            Shinichi Nakamoto"
+	line "             Takehiro Izushi"
+	done
+
+Text07b3: ; 5658f (15:658f)
+	text ""
+	line "                Director"
+	line ""
+	line ""
+	line "                Koji Arai"
+	done
+
+Text07b4: ; 565c6 (15:65c6)
+	text ""
+	line "               Programmers"
+	line ""
+	line ""
+	line "             Masahiro Tobita"
+	line "             Satoshi Mikami"
+	line "             Masaki Tsumori"
+	done
+
+Text07b5: ; 5663a (15:663a)
+	text ""
+	line "           GB Graphic Designers"
+	line ""
+	line ""
+	line "             Kazuhiko Nonaka"
+	line "             Yasuhiro Fujii"
+	line "           Tsuguyuki Yamamoto"
+	done
+
+Text07b6: ; 566b5 (15:66b5)
+	text "            Yasuhiro Ichizawa"
+	line "              Miwa Matsuda"
+	line "             Norihiro Kanie"
+	done
+
+Text07b7: ; 5670b (15:670b)
+	text "             Kazushi Kousaka"
+	line "              Hiromi Sugiue"
+	line "           Katsuhisa Nishikawa"
+	done
+
+Text07b8: ; 56764 (15:6764)
+	text ""
+	line "                  Music"
+	line ""
+	line ""
+	line "            Ichiro Shimakura"
+	done
+
+Text07b9: ; 5679d (15:679d)
+	text ""
+	line "              Sound Effects"
+	line ""
+	line ""
+	line "              Masato Aihara"
+	done
+
+Text07ba: ; 567d9 (15:67d9)
+	text ""
+	line "             Sound Director"
+	line ""
+	line ""
+	line "            Toshiaki Takimoto"
+	done
+
+Text07bb: ; 56817 (15:6817)
+	text ""
+	line "          Sound System Support"
+	line ""
+	line ""
+	line "           Katsunori Takahashi"
+	line "               Hideki Oka"
+	done
+
+Text07bc: ; 56873 (15:6873)
+	text ""
+	line "            Card Game Creator"
+	line ""
+	line ""
+	line "             Takumi Akabane"
+	done
+
+Text07bd: ; 568b1 (15:68b1)
+	text ""
+	line "            Card Game Creator"
+	line ""
+	line ""
+	line "             Kouichi Oyama"
+	done
+
+Text07be: ; 568ee (15:68ee)
+	text ""
+	line "            Card Game Creator"
+	line ""
+	line ""
+	line "              Akihiko Miura"
+	done
+
+Text07bf: ; 5692c (15:692c)
+	text ""
+	line "            Card Illustrators"
+	line ""
+	line ""
+	line "              Ken Sugimori"
+	line "             Mitsuhiro Arita"
+	line "             Keiji Kinebuchi"
+	line "             Kagemaru Himeno"
+	done
+
+Text07c0: ; 569c0 (15:69c0)
+	text "             Tomoaki Imakuni"
+	line "               Miki Tanaka"
+	line "              Toshinao Aoki"
+	line "              Benimaru Ito"
+	done
+
+Text07c1: ; 56a30 (15:6a30)
+	text ""
+	line "         Special Appearances by"
+	line ""
+	line ""
+	line "             Hiroko Ohashi"
+	line "             Masako Uchiyama"
+	done
+
+Text07c2: ; 56a8c (15:6a8c)
+	text "             Kunimi Kawamura"
+	line "                Imakuni?"
+	done
+
+Text07c3: ; 56ac3 (15:6ac3)
+	text ""
+	line "             US COORDINATION"
+	line "           NINTENDO OF AMERICA"
+	line ""
+	line ""
+	line "               GAIL TILDEN"
+	line "              HIRO NAKAMURA"
+	done
+
+Text07c4: ; 56b3a (15:6b3a)
+	text "              KENJI OKUBO"
+	line "             WILLIAM TRINEN"
+	done
+
+Text07c5: ; 56b71 (15:6b71)
+	text ""
+	line "             US COORDINATION"
+	line "           Wizards of the Coast"
+	line "          Pokémon Templating Team"
+	line ""
+	line ""
+	line "            Robert Gutschera"
+	line "             Jessica Beaven"
+	done
+
+Text07c6: ; 56c0d (15:6c0d)
+	text "             Paul Peterson"
+	line "            Michael G. Ryan"
+	line "               Tom Wylie"
+	done
+
+Text07c7: ; 56c5e (15:6c5e)
+	text ""
+	line "            TRANSLATION/DRAFT"
+	line ""
+	line ""
+	line "               BILL RITCH"
+	done
+
+Text07c8: ; 56c9a (15:6c9a)
+	text ""
+	line "                Mastering"
+	line ""
+	line ""
+	line "             Tetsuya Komatsu"
+	done
+
+Text07c9: ; 56cd5 (15:6cd5)
+	text ""
+	line "             Manual Creation"
+	line ""
+	line ""
+	line "              Haruki Mitani"
+	done
+
+Text07ca: ; 56d12 (15:6d12)
+	text ""
+	line "           Manual Illustrations"
+	line ""
+	line ""
+	line "             Kagemaru Himeno"
+	done
+
+Text07cb: ; 56d53 (15:6d53)
+	text ""
+	line "          Pokémon Original Story"
+	line ""
+	line ""
+	line "             Satoshi Tajiri"
+	line ""
+	done
+
+Text07cc: ; 56d95 (15:6d95)
+	text ""
+	line "       Created In Cooperation With"
+	line ""
+	line ""
+	line "              Shinji Hatano"
+	line "             Satoshi Yamato"
+	line "             Takahiro Harada"
+	done
+
+Text07cd: ; 56e11 (15:6e11)
+	text ""
+	line "          With Cooperation from"
+	line ""
+	line ""
+	line "             Yoshio Motosako"
+	line "             Hiroyuki Mikami"
+	line "              Keigo Yasuda"
+	done
+
+Text07ce: ; 56e8a (15:6e8a)
+	text "            Yusuke Kurushima"
+	line "           Nobuchika Takahashi"
+	line "             Junko Igarashi"
+	line "              Yukiko Tomita"
+	done
+
+Text07cf: ; 56eff (15:6eff)
+	text "              Mari Matsuda"
+	line "             Moto Yamaguchi"
+	line "              Shigeru Sato"
+	line "             Chiaki Nishiki"
+	done
+
+Text07d0: ; 56f6e (15:6f6e)
+	text ""
+	line "             Project Manager"
+	line ""
+	line ""
+	line "            Yasutaka Kakiseko"
+	done
+
+Text07d1: ; 56fad (15:6fad)
+	text ""
+	line "               Supervisor"
+	line ""
+	line ""
+	line ""
+	line "              Hiroshi Kudo"
+	done
+
+Text07d2: ; 56fe7 (15:6fe7)
+	text ""
+	line "           Executive Producer"
+	line ""
+	line ""
+	line ""
+	line "            Hiroshi Yamauchi"
+	done
+
+Text07d3: ; 57027 (15:7027)
+	text ""
+	line "               Created by"
+	line ""
+	line ""
+	line ""
+	line "                 Hudson"
+	done
+
+Text07d4: ; 5705e (15:705e)
+	text "  Uitdagingsmachine  "
+	done
+
+Text07d5: ; 57075 (15:7075)
+	text "<RAMNAME>'s Score"
+	done
+
+Text07d6: ; 57080 (15:7080)
+	text "Defeated 5 opponents      time(s)."
+	done
+
+Text07d7: ; 570a4 (15:70a4)
+	text "Present Consecutive Wins"
+	done
+
+Text07d8: ; 570be (15:70be)
+	text "Maximum Consecutive Wins"
+	line "    [ <RAMTEXT>  ]"
+	done
+
+Text07d9: ; 570e3 (15:70e3)
+	text "Wins"
+	done
+
+Text07da: ; 570e9 (15:70e9)
+	text "<RAMNAME> <RAMNUM> Consecutive Wins!"
+	line ""
+	text "<RAMNUM> opponent is <RAMTEXT>."
+	done
+
+Text07db: ; 57112 (15:7112)
+	text "<RAMNUM> opponent is <RAMTEXT>."
+	done
+
+Text07dc: ; 57124 (15:7124)
+	text "Would you like to begin the Duel?"
+	done
+
+Text07dd: ; 57147 (15:7147)
+	text "If you quit the Duel,"
+	line "Your Consecutive Wins will end."
+	done
+
+Text07de: ; 5717e (15:717e)
+	text "Would you like to quit the Duel?"
+	done
+
+Text07df: ; 571a0 (15:71a0)
+	text "Play the Challenge Machine?"
+	done
+
+Text07e0: ; 571bd (15:71bd)
+	text "OK,"
+	line "Let us choose your opponent."
+	done
+
+Text07e1: ; 571df (15:71df)
+	text "You lost to the <RAMNUM> opponent,"
+	line "<RAMTEXT>!"
+	done
+
+Text07e2: ; 571ff (15:71ff)
+	text "<RAMNAME>'s consecutive wins"
+	line "ended at <RAMNUM>."
+	done
+
+Text07e3: ; 57221 (15:7221)
+	text "We await your next challenge."
+	done
+
+Text07e4: ; 57240 (15:7240)
+	text "Your opponents for this game:"
+	done
+
+Text07e5: ; 5725f (15:725f)
+	text "Congratulations!"
+	line "You won against <RAMNUM> opponents!"
+	done
+
+DefeatedFiveOpponentsText: ; 5728e (15:728e)
+	text "Congratulations!"
+	line "You defeated 5 opponents!"
+	done
+
+Text07e7: ; 572ba (15:72ba)
+	text "<RAMNAME> successfully defeated "
+	line "5 opponents "
+	text "<RAMNUM> time(s)!!!"
+	done
+
+ConsecutiveWinRecordIncreasedText: ; 572ee (15:72ee)
+	text "<RAMNAME>'s consecutive win"
+	line "record increased to <RAMNUM>!"
+	done
+
+Text07e9: ; 5731a (15:731a)
+	text "Clublid"
+	done
+
+Text07ea: ; 57327 (15:7327)
+	text "Clubmeester"
+	done
+
+Text07eb: ; 57334 (15:7334)
+	text "Techneut"
+	done
+
+Text07ec: ; 5733a (15:733a)
+	text "Vreemde Levensvorm"
+	done
+
+Text07ed: ; 5734d (15:734d)
+	text "Grootmeester"
+	done
+
+Text07ee: ; 5735b (15:735b)
+	textfw0 "1"
+	done
+
+Text07ef: ; 5735d (15:735d)
+	textfw0 "2"
+	done
+
+Text07f0: ; 5735f (15:735f)
+	textfw0 "3"
+	done
+
+Text07f1: ; 57361 (15:7361)
+	textfw0 "4"
+	done
+
+Text07f2: ; 57363 (15:7363)
+	textfw0 "5"
+	done
+
+Text07f3: ; 57365 (15:7365)
+	textfw0 " "
+	done
+
+Text07f4: ; 57367 (15:7367)
+	textfw3 "☆"
+	done
+
+Text07f5: ; 5736a (15:736a)
+	textfw3 "★"
+	done
+
+Text07f6: ; 5736d (15:736d)
+	textfw3 "【", "<FIRE>", "】"
+	done
+
+Text07f7: ; 57374 (15:7374)
+	textfw3 "【", "<LIGHTNING>", "】"
+	done
+
+Text07f8: ; 5737b (15:737b)
+	textfw3 "【", "<WATER>", "】"
+	done
+
+Text07f9: ; 57382 (15:7382)
+	textfw3 "【", "<FIGHTING>", "】"
+	done
+
+Text07fa: ; 57389 (15:7389)
+	textfw3 "【", "<PSYCHIC>", "】"
+	done
+
+Text07fb: ; 57390 (15:7390)
+	textfw3 "【", "<GRASS>", "】"
+	done
+
 GrassEnergyName: ; 57397 (15:7397)
 	text "Gras Energie"
 	done
@@ -119,10 +578,11 @@ SolarPowerName: ; 576f8 (15:76f8)
 
 SolarPowerDescription: ; 57705 (15:7705)
 	text "Eenmaal tijdens je beurt (vóór je"
-	line "Aanval), mag je deze kracht gebruiken."
-	line "Je Actieve Pokémon en de Verdedigende"
-	line "Pokémon zijn niet langer In Slaap,"
-	line "Verward, Verlamd, of Vergiftigd."
+	line "Aanval), mag je deze kracht"
+	line "gebruiken. Je Actieve Pokémon en"
+	line "de Verdedigende Pokémon zijn niet"
+	line "langer In Slaap, Verward, Verlamd,"
+	line "of Vergiftigd."
 	done
 
 SolarPowerDescriptionCont: ; 577b0 (15:77b0)
@@ -136,11 +596,12 @@ MegaDrainName: ; 577f9 (15:77f9)
 	done
 
 VenusaursMegaDrainDescription: ; 57805 (15:7805)
-	text "Verwijder een aantal Schadetellers van"
-	line "Venusaur gelijk aan de helft van de"
-	line "schade die gedaan is aan de Verdedigende"
-	line "Pokémon (na het toepassen van Zwakte en"
-	line "Weerstand) (naar boven afgerond naar de"
+	text "Verwijder een aantal Schadetellers"
+	line "van Venusaur gelijk aan de helft"
+	line "van de schade die gedaan is aan"
+	line "de Verdedigende Pokémon (na het"
+	line "toepassen van Zwakte en Weerstand)"
+	line "(naar boven afgerond naar de"
 	line "dichtsbijzijnde 10)."
 	done
 
@@ -151,9 +612,10 @@ VenusaursMegaDrainDescriptionCont: ; 578b7 (15:78b7)
 	done
 
 Venusaur1Description: ; 578fd (15:78fd)
-	text "De bloem op zijn rug vangt zonlicht op."
-	line "Het zonlicht wordt dan geabsorbeerd"
-	line "en gebruikt voor energie."
+	text "De bloem op zijn rug vangt zonlicht"
+	line "op. Het zonlicht wordt dan"
+	line "geabsorbeerd en gebruikt voor"
+	line "energie."
 	done
 
 EnergyTransName: ; 57960 (15:7960)
@@ -161,13 +623,17 @@ EnergyTransName: ; 57960 (15:7960)
 	done
 
 EnergyTransDescription: ; 5796e (15:796e)
-	text "Je mag zo vaak als je wilt tijdens je"
-	line "beurt (vóór je Aanval) 1 <GRASS> Ener-"
-	line "giekaart pakken die gehecht is aan"
-	line "1 van je Pokémon en hem aan een andere"
-	line "Pokémon hechten. Deze kracht kan niet"
-	line "worden gebruikt als Venusaur In Slaap"
-	line "Verward of Verlamd is."
+	text "Je mag zo vaak als je wilt tijdens"
+	line "je beurt (vóór je Aanval) 1 <GRASS>"
+	line "Energiekaart pakken die gehecht"
+	line "is aan 1 van je Pokémon en hem"
+	line "aan een andere Pokémon hechten."
+	done
+	
+EnergyTransDescriptionCont:
+	text "Deze kracht kan niet worden gebruikt"
+	line "als Venusaur In Slaap, Verward, of"
+	line "Verlamd is."
 	done
 
 SolarBeamName: ; 57a51 (15:7a51)
@@ -1105,377 +1571,4 @@ PinsirDescription: ; 59d9f (16:5d9f)
 	line "zijn scharen kan verbrijzelen,"
 	line "slingert hij hem in het rond"
 	line "en gooit hij hem hard neer."
-	done
-
-CharmanderName: ; 59e02 (16:5e02)
-	text "Charmander"
-	done
-
-EmberName: ; 59e0e (16:5e0e)
-	text "Sintel"
-	done
-
-EmberDescription: ; 59e15 (16:5e15)
-	text "Om deze Aanval te kunnen gebruiken"
-	line "moet je 1 aan Charmander gehechte"
-	line "<FIRE> Energiekaart weggooien."
-	done
-
-LizardName: ; 59e63 (16:5e63)
-	text "Hagedis-"
-	done
-
-CharmanderDescription: ; 59e6b (16:5e6b)
-	text "Geeft uiteraard de voorkeur aan hete"
-	line "plekken. Ze zeggen dat er stoom"
-	line "uit de punt van zijn staart spuit"
-	line "als hij in de regen terecht komt."
-	done
-
-CharmeleonName: ; 59eda (16:5eda)
-	text "Charmeleon"
-	done
-
-FlamethrowerName: ; 59ee6 (16:5ee6)
-	text "Vlammenwerper"
-	done
-
-CharmeleonsFlamethrowerDescription: ; 59ef4 (16:5ef4)
-	text "Om deze Aanval te kunnen gebruiken"
-	line "moet je 1 aan Charmeleon gehechte"
-	line "<FIRE> Energiekaart weggooien."
-	done
-
-FlameName: ; 59f42 (16:5f42)
-	text "Vlam-"
-	done
-
-CharmeleonDescription: ; 59f49 (16:5f49)
-	text "Als hij met zijn brandende staart"
-	line "zwaait, stijgt de temperatuur tot"
-	line "een ondraaglijke hoogte"
-	done
-
-CharizardName: ; 59fa0 (16:5fa0)
-	text "Charizard"
-	done
-
-EnergyBurnName: ; 59fab (16:5fab)
-	text "Energieverbranding"
-	done
-
-EnergyBurnDescription: ; 59fb8 (16:5fb8)
-	text "Je mag zo vaak als je wilt tijdens"
-	line "je beurt (vóór je Aanval) alle aan"
-	line "Charizard gehechte Energie omzetten"
-	line "naar <FIRE> Energie voor de rest van"
-	line "je beurt. Deze kracht kan niet"
-	line "worden gebruikt als Charizard"
-	line "In Slaap, Verward, of Verlamd is."
-	done
-
-FireSpinName: ; 5a095 (16:6095)
-	text "Vuurdraak"
-	done
-
-FireSpinDescription: ; 5a0a0 (16:60a0)
-	text "Om deze Aanval te kunnen gebruiken,"
-	line "moet je 2 aan Charizard gehechte"
-	line "Energiekaarten weggooien."
-	done
-
-CharizardDescription: ; 5a0eb (16:60eb)
-	text "Spuwt vuur dat heet genoeg is om"
-	line "rotsblokken te laten smelten. Staat"
-	line "erom bekend dat hij onopzettelijk"
-	line "bosbranden veroorzaakt."
-	done
-
-VulpixName: ; 5a149 (16:6149)
-	text "Vulpix"
-	done
-
-ConfuseRayName: ; 5a151 (16:6151)
-	text "Verwarstraal"
-	done
-
-FoxName: ; 5a15e (16:615e)
-	text "Fox"
-	done
-
-VulpixDescription: ; 5a163 (16:6163)
-	text "At the time of birth, it has just"
-	line "one tail. Its tail splits from the"
-	line "tip as it grows older."
-	done
-
-NinetalesName: ; 5a1c0 (16:61c0)
-	text "Ninetales"
-	done
-
-NinetalesLureDescription: ; 5a1cb (16:61cb)
-	text "If your opponent has any Benched"
-	line "Pokémon, choose 1 of them and switch"
-	line "it with the Defending Pokémon."
-	done
-
-FireBlastName: ; 5a231 (16:6231)
-	text "Fire Blast"
-	done
-
-FireBlastDescription: ; 5a23d (16:623d)
-	text "Discard 1 <FIRE> Energiekaart attached"
-	line "to Ninetales in order to use this"
-	line "attack."
-	done
-
-Ninetales1Description: ; 5a28a (16:628a)
-	text "Very smart and very vengeful."
-	line "Grabbing one of its many tails could"
-	line "result in a 1,000-year curse."
-	done
-
-MixUpName: ; 5a2ec (16:62ec)
-	text "Mix-Up"
-	done
-
-MixUpDescription: ; 5a2f4 (16:62f4)
-	text "If your opponent has any Basic"
-	line "Pokémon or Evolution cards in his"
-	line "or her hand, your opponent shuffles"
-	line "them into his or her deck. Then,"
-	line "your opponent puts an equal number"
-	line "of Basic Pokémon or Evolution cards"
-	line "chosen at random from his or"
-	done
-
-MixUpDescriptionCont: ; 5a3df (16:63df)
-	text "her deck into his or her hand. Your"
-	line "opponent shuffles his or her deck"
-	line "afterward."
-	done
-
-DancingEmbersName: ; 5a431 (16:6431)
-	text "Dancing Embers"
-	done
-
-DancingEmbersDescription: ; 5a441 (16:6441)
-	text "Flip 8 coins. This attack does 10"
-	line "damage times the number of heads."
-	done
-
-Ninetales2Description: ; 5a486 (16:6486)
-	text "According to an enduring legend,"
-	line "9 noble heroes were united and"
-	line "reincarnated as this."
-	done
-
-GrowlitheName: ; 5a4dd (16:64dd)
-	text "Growlithe"
-	done
-
-FlareName: ; 5a4e8 (16:64e8)
-	text "Steekvlam"
-	done
-
-PuppyName: ; 5a4ef (16:64ef)
-	text "Puppy-"
-	done
-
-GrowlitheDescription: ; 5a4f6 (16:64f6)
-	text "Gaat tot het uiterste om zijn"
-	line "terrein te beschermen. Hij zal"
-	line "blaffen en bijten om indringers"
-	line "van zijn grondgebied te verjagen."
-	done
-
-ArcanineName: ; 5a552 (16:6552)
-	text "Arcanine"
-	done
-
-QuickAttackName: ; 5a55c (16:655c)
-	text "Snelle Aanval"
-	done
-
-QuickAttackDescription: ; 5a56a (16:656a)
-	text "Gooi een munt op. Als het kop"
-	line "is, doet deze Aanval 10 schade"
-	line "plus nog eens 20 schade; als"
-	line "het munt is, doet deze Aanval"
-	line "10 schade."
-	done
-
-FlamesOfRageName: ; 5a5d8 (16:65d8)
-	text "Vlammen van woede"
-	done
-
-FlamesOfRageDescription: ; 5a5e8 (16:65e8)
-	text "Om deze Aanval te kunnen gebruiken,"
-	line "moet je 2 aan Arcanine gehechte <FIRE>"
-	line "Energiekaarten weggooien. Deze"
-	line "Aanval doet 40 schade plus nog"
-	line "eens 10 schade voor elke"
-	line "Schadeteller op Arcanine."
-	done
-
-LegendaryName: ; 5a689 (16:6689)
-	text "Legendarische"
-	done
-
-Arcanine1Description: ; 5a694 (16:6694)
-	text "Een Pokémon die al een lange tijd"
-	line "bewonderd wordt om zijn schoonheid."
-	line "Wanneer hij rent, lijkt het bijna"
-	line "alsof hij vliegt."
-	done
-
-ArcaninesFlamethrowerDescription: ; 5a6ed (16:66ed)
-	text "Om deze Aanval te kunnen gebruiken,"
-	line "moet je 1 aan Arcanine gehechte <FIRE>"
-	line "Energiekaart weggooien."
-	done
-
-TakeDownName: ; 5a739 (16:6739)
-	text "Haal neer"
-	done
-
-TakeDownDescription: ; 5a744 (16:6744)
-	text "Arcanine doet 30 schade aan"
-	line "zichzelf."
-	done
-
-Arcanine2Description: ; 5a768 (16:6768)
-	text "Een Pokémon die al een lange tijd"
-	line "bewonderd wordt om zijn schoonheid."
-	line "Hij rent sierlijk, alsof hij"
-	line "vleugels heeft."
-	done
-
-PonytaName: ; 5a7c2 (16:67c2)
-	text "Ponyta"
-	done
-
-SmashKickName: ; 5a7ca (16:67ca)
-	text "Verpletterende Schop"
-	done
-
-FlameTailName: ; 5a7d6 (16:67d6)
-	text "Vlammenstaart"
-	done
-
-FireHorseName: ; 5a7e2 (16:67e2)
-	text "Vuurpaard-"
-	done
-
-PonytaDescription: ; 5a7ee (16:67ee)
-	text "Zijn hoeven zijn 10 keer zo hard"
-	line "als diamant. Hij kan in enkele"
-	line "ogenblikken alles plattrappen."
-	done
-
-RapidashName: ; 5a846 (16:6846)
-	text "Rapidash"
-	done
-
-StompName: ; 5a850 (16:6850)
-	text "Stomp"
-	done
-
-StompDescription: ; 5a857 (16:6857)
-	text "Gooi een munt op. Als het kop is,"
-	line "doet deze Aanval 20 schade plus"
-	line "nog eens 10 schade; als het munt"
-	line "is, doet deze Aanval 20 schade."
-	done
-
-AgilityName: ; 5a8c5 (16:68c5)
-	text "Behendigheid"
-	done
-
-RapidashsAgilityDescription: ; 5a8ce (16:68ce)
-	text "Gooi een munt op. Als het kop is,"
-	line "voorkom dan tijdens je"
-	line "tegenstander's volgende beurt alle"
-	line "gevolgen van Aanvallen, inclusief"
-	line "schade, toegebracht aan Rapidash."
-	done
-
-RapidashDescription: ; 5a94c (16:694c)
-	text "Omdat hij graag wedijvert, zal"
-	line "deze Pokémon alles najagen wat"
-	line "snel loopt in de hoop ertegen"
-	line "te kunnen racen."
-	done
-
-MagmarName: ; 5a9ab (16:69ab)
-	text "Magmar"
-	done
-
-FirePunchName: ; 5a9b3 (16:69b3)
-	text "Vuurslag"
-	done
-
-FirePunchDescription: ; 5a9bf (16:69bf)
-	text "Om deze Aanval te kunnen gebruiken,"
-	line "moet je 1 aan Magmar gehechte <FIRE>"
-	line "Energiekaart weggooien."
-	done
-
-SpitfireName: ; 5aa09 (16:6a09)
-	text "Vuurspuwende"
-	done
-
-Magmar1Description: ; 5aa13 (16:6a13)
-	text "Zijn lijft gloeit altijd met een"
-	line "oranje gloed waardoor hij zich"
-	line "uitstekend tussen de vlammen"
-	line "kan verbergen."
-	done
-
-SmokescreenName: ; 5aa6e (16:6a6e)
-	text "Rookgordijn"
-	done
-
-MagmarsSmokescreenDescription: ; 5aa7b (16:6a7b)
-	text "Als de Verdedigende Pokémon tijdens"
-	line "je tegenstander's volgende beurt"
-	line "probeert Aan te Vallen, gooit je"
-	line "tegenstander een munt op. Als het"
-	line "munt is, doet die Aanval niets."
-	done
-
-Magmar2Description: ; 5ab07 (16:6b07)
-	text "Te vinden bij de monden van vulkanen"
-	line "en erg moeilijk in het vizier te"
-	line "krijgen. Deze Pokémon is maar in"
-	line "weinig gevallen gevangen."
-	done
-
-EeveeName: ; 5ab86 (16:6b86)
-	text "Eevee"
-	done
-
-TailWagName: ; 62d8a (18:6d8a)
-	text "Kwispel"
-	done
-
-TailWagDescription: ; 62d94 (18:6d94)
-	text "Gooi een munt op. Als het kop is,"
-	line "kan de Verdedigende Pokémon Eevee"
-	line "niet aanvallen tijdens je"
-	line "tegenstander's volgende beurt. (Het"
-	line "op de Bank plaatsen of evolueren van"
-	line "een van beide Pokémon beëindigt"
-	line "dit effect.)"
-	done
-
-EvolutionName: ; 62e2f (18:6e2f)
-	text "Evolutie-"
-	done
-
-EeveeDescription: ; 62e3a (18:6e3a)
-	text "Zijn genetische code is onregel-"
-	line "matig. Hij zou kunnen muteren als"
-	line "hij wordt blootgesteld aan"
-	line "elementaire gesteenten."
 	done

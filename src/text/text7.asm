@@ -1,27 +1,73 @@
+Text05c9: ; 4b43e (12:743e)
+	text "Om je spel op te slaan, druk je op"
+	line "START en kies je Dagboek in het"
+	line "Menu. Je kunt trouwens allerlei"
+	line "dingen doen met die Computer daar."
+	line "Je kan er zelfs de e-mails van"
+	line "Dr. Mason op lezen!"
+	done
+
+Text05ca: ; 4b4ea (12:74ea)
+	text "This is the Challenge Machine"
+	line "created by Dr. Mason!"
+	line "The Challenge Machine is a "
+	line "Pokémon Card Dueling Machine. "
+	line "The rules of the game are simple: "
+	line "choose 1 deck with which you must"
+	line "Duel 5 computer opponents!"
+	line "If you can defeat the 5 "
+	line "opponents, you win! You can also "
+	line "play to extend your winning "
+	line "streak! Build a deck and "
+	line "give it a try, <RAMNAME>!"
+	done
+
+Text05cb: ; 4b63e (12:763e)
+	text "Oké, laten we beginnen met het"
+	line "oefen-Deck. Luister naar Dr. Mason"
+	line "en volg zijn instructies op."
+	done
+
+Text05cc: ; 4b694 (12:7694)
+	text "Wil je oefenen met Sam?"
+	done
+
+Text05cd: ; 4b6a8 (12:76a8)
+	text "Wees niet bang om opnieuw te"
+	line "oefenen als er iets is dat je"
+	line "niet begrijpt, oké?"
+	done
+
+Text05ce: ; 4b6ee (12:76ee)
+	text "Oké, laten we een Duel houden met"
+	line "2 Prijskaarten en het oefen-Deck!"
+	done
+
 Text05cf: ; 4b71b (12:771b)
-	text "Would you like to Duel Sam?"
+	text "Wil je Dueleren met Sam?"
 	done
 
 Text05d0: ; 4b738 (12:7738)
-	text "Come see me any time."
-	line "The basics are very important!"
+	text "Je mag altijd naar me toe komen."
+	line "De basis leren is belangrijk!"
 	done
 
 Text05d1: ; 4b76e (12:776e)
-	text "You're getting the hang of it!"
+	text "Juist! Je hebt het onder de knie!"
 	done
 
 Text05d2: ; 4b78e (12:778e)
-	text "Keep this up, and you should be able"
-	line "to win some duels!"
+	text "Hou dit vol, en je zal snel nog"
+	line "meer Duels gaan winnen!"
 	done
 
 Text05d3: ; 4b7c7 (12:77c7)
-	text "You need to practice more."
-	line "If you think things through,"
-	line "you should be able to win."
-	line "Why don't you practice "
-	line "a little more?"
+	text "Je moet nog wat meer oefenen."
+	line "Als je meer ervaring hebt en"
+	line "goed blijft nadenken zal je"
+	line "meer Duellen gaan winnen."
+	line "Waarom oefenen we niet"
+	line "wat meer?"
 	done
 
 Text05d4: ; 4b842 (12:7842)
@@ -32,7 +78,7 @@ Text05d4: ; 4b842 (12:7842)
 	done
 
 Text05d5: ; 4b8a7 (12:78a7)
-	text "Waar wil je iets over vragen?"
+	text "Waar wil je iets over weten?"
 	done
 
 Text05d6: ; 4b8c8 (12:78c8)
@@ -421,7 +467,7 @@ Text05fd: ; 4d466 (13:5466)
 	done
 
 Text05fe: ; 4d4e2 (13:54e2)
-	text "Would you like to Duel Aaron?"
+	text "Wil je Dueleren met Aaron?"
 	done
 
 Text05ff: ; 4d501 (13:5501)
@@ -604,7 +650,7 @@ Text061b: ; 4dca0 (13:5ca0)
 	done
 
 Text061c: ; 4dd25 (13:5d25)
-	text "Would you like to Duel Jennifer?"
+	text "Wil je Dueleren met Jennifer?"
 	done
 
 Text061d: ; 4dd47 (13:5d47)
@@ -639,7 +685,7 @@ Text0622: ; 4de1a (13:5e1a)
 	done
 
 Text0623: ; 4de9d (13:5e9d)
-	text "Would you like to Duel Nicholas?"
+	text "Wil je Dueleren met Nicholas?"
 	done
 
 Text0624: ; 4debf (13:5ebf)
@@ -687,7 +733,7 @@ Text062b: ; 4e097 (13:6097)
 	done
 
 Text062c: ; 4e0da (13:60da)
-	text "Would you like to Duel Brandon?"
+	text "Wil je Dueleren met Brandon?"
 	done
 
 Text062d: ; 4e0fb (13:60fb)
@@ -738,7 +784,7 @@ Text0634: ; 4e2cc (13:62cc)
 	done
 
 Text0635: ; 4e326 (13:6326)
-	text "Would you like to Duel Isaac?"
+	text "Wil je Dueleren met Isaac?"
 	done
 
 Text0636: ; 4e345 (13:6345)
@@ -960,11 +1006,11 @@ Text0654: ; 4ef34 (13:6f34)
 	line "It doesn't have any weaknesses, "
 	line "and it's difficult for opponents'"
 	line "attacks to cause damage!"
-	line "Would you like to Duel me?"
+	line "Wil je met me Dueleren?"
 	done
 
 Text0655: ; 4effe (13:6ffe)
-	text "Would you like to Duel Robert?"
+	text "Wil je Dueleren met Robert?"
 	done
 
 Text0656: ; 4f01e (13:701e)
@@ -991,71 +1037,4 @@ Text065a: ; 4f0f7 (13:70f7)
 	text "I told you my Ghost Deck was "
 	line "strong! Please Duel me again "
 	line "sometime, OK?  Bye!"
-	done
-
-Text065b: ; 4f148 (13:7148)
-	text "I don't like people who think"
-	line "too highly of themselves."
-	line "That's why I don't like the "
-	line "members of the Psychic Club."
-	line "I wish I could knock them off their"
-	line "high horses!"
-	line "Would you try to defeat Murray,"
-	line "the Psychic Club Master?"
-	line "If you defeat Murray, I'll give you"
-	line "something really valuable!"
-	done
-
-Text065c: ; 4f264 (13:7264)
-	text "Grant the old man's wish?"
-	done
-
-Text065d: ; 4f27f (13:727f)
-	text "I understand..."
-	line "Murray is very skilled."
-	line "Defeating Murray is no "
-	line "easy task."
-	done
-
-Text065e: ; 4f2cb (13:72cb)
-	text "Good!"
-	line "I'll be waiting here for you!"
-	done
-
-Text065f: ; 4f2f0 (13:72f0)
-	text "I see you still can't defeat "
-	line "Murray. He's very skilled, but "
-	line "don't give up! I'm pulling for "
-	line "you! If you defeat Murray, I'll "
-	line "give you something very valuable."
-	done
-
-Text0660: ; 4f392 (13:7392)
-	text "I'm not very fond of people who"
-	line "think too highly of themselves."
-	line "That's why I don't like the "
-	line "members of the Psychic Club."
-	line "Hey!?! Is that the Psychic Medal?"
-	line "Did you defeat Murray!?!"
-	line "I feel so much better!"
-	line "Here, let me give you this"
-	line "Mewtwo card!"
-	done
-
-Text0661: ; 4f487 (13:7487)
-	text "What? Is that the Psychic Medal?"
-	line "Did you defeat Murray!?!"
-	line "I feel so much better!"
-	line "Here, let me give you this"
-	line "Mewtwo card."
-	done
-
-Text0662: ; 4f501 (13:7501)
-	text "Thank you for defeating Murray!"
-	done
-
-Text0663: ; 4f522 (13:7522)
-	text "I feel so much better since you"
-	line "defeated Murray!"
-	line "Thank you for defeating Murray!"
 	done

@@ -1,3 +1,59 @@
+Text0235: ; 3bac4 (e:7ac4)
+	text "Er is maar 1 Deck, dus dit"
+	line "Deck kan niet ontmanteld worden."
+	done
+
+Text0236: ; 3bafe (e:7afe)
+	text "Er zitten geen Basis-Pokémon"
+	line "in dit Deck!"
+	done
+
+Text0237: ; 3bb28 (e:7b28)
+	text "Je moet een Basis-Pokémon"
+	line "in je Deck stoppen!"
+	done
+
+Text0238: ; 3bb57 (e:7b57)
+	text "Dit is geen Deck met 60 kaarten!"
+	done
+
+Text0239: ; 3bb73 (e:7b73)
+	text "Er moeten 60 kaarten in je"
+	line "Deck zitten!"
+	done
+
+Text023a: ; 3bb94 (e:7b94)
+	text "Terug gaan naar het origineel?"
+	done
+
+Text023b: ; 3bbb7 (e:7bb7)
+	text "Dit Deck opslaan?"
+	done
+
+Text023c: ; 3bbc8 (e:7bc8)
+	text "Stoppen met het Deck aanpassen?"
+	done
+
+Text023d: ; 3bbe2 (e:7be2)
+	text "Dit Deck ontmantelen?"
+	done
+
+Text023e: ; 3bbf8 (e:7bf8)
+	text "Geen kaarten gekozen."
+	done
+
+YourPokemonText: ; 3bc0a (e:7c0a)
+	text "Jouw Pokémon"
+	done
+
+YourDiscardPileText2: ; 3bc18 (e:7c18)
+	text "Jouw Weggooistapel"
+	done
+
+YourHandText: ; 3bc2b (e:7c2b)
+	text "Jouw Hand"
+	done
+
 Text0242: ; 3bc36 (e:7c36)
 	text "Naar jouw Speelveld"
 	done
@@ -88,7 +144,7 @@ Text0257: ; 3bd9a (e:7d9a)
 	done
 
 Text0258: ; 3bdaf (e:7daf)
-	text "Welk Kaartbestand bekijken?"
+	text "Welk kaartbestand wil je bekijken?"
 	done
 
 Text0259: ; 3bdc6 (e:7dc6)
@@ -1264,7 +1320,7 @@ PlayerStatusAlbumText: ; 3e867 (f:6867)
 	done
 
 PlayerStatusPlayTimeText: ; 3e87b (f:687b)
-	text "Spelduur          "
+	text "Speeltijd         "
 	half2full
 	textfw3 ":"
 	done
@@ -1274,7 +1330,7 @@ PlayerDiaryTitleText: ; 3e892 (f:6892)
 	done
 
 PlayerDiaryMedalsWonText: ; 3e89d (f:689d)
-	text "Gewonnen Medailles"
+	text "Meestermedailles"
 	done
 
 PlayerDiarySaveQuestionText: ; 3e8b1 (f:68b1)
@@ -1292,27 +1348,28 @@ PlayerDiarySaveCancelText: ; 3e8e9 (f:68e9)
 	done
 
 PlayerStatusMedalsTitleText: ; 3e90e (f:690e)
-	text "Master Medals"
+	text "Meestermedailles"
 	done
 
 ConfigMenuTitleText: ; 3e91d (f:691d)
-	text "           Change Settings"
+	text "          Instellingenmenu"
 	done
 
 ConfigMenuMessageSpeedText: ; 3e939 (f:6939)
-	text "Message Speed"
+	text "Hoe snel moet de tekst in beeld komen?"
 	line ""
-	line "   Slow   1   2   3   4   5   Fast"
+	line "  Sloom   1   2   3   4   5   Snel"
 	done
 
 ConfigMenuDuelAnimationText: ; 3e96c (f:696c)
-	text "Duel Animation"
+	text "Hoeveel van de Duel-animaties afspelen?"
 	line ""
 	line "  Show All    Skip Some       None"
+	line "  Alle        Sommige         Geen"
 	done
 
 ConfigMenuExitText: ; 3e9a0 (f:69a0)
-	text "   Exit Settings"
+	text "   Instellingen verlaten"
 	done
 
 Text034c: ; 3e9b2 (f:69b2)
@@ -1340,45 +1397,45 @@ Text0350: ; 3ea2b (f:6a2b)
 	done
 
 Text0351: ; 3ea3a (f:6a3a)
-	text "Card Album"
-	line "Read Mail"
-	line "Glossary"
-	line "Print"
-	line "Shut Down"
+	text "Kaartalbum"
+	line "Lees mail"
+	line "Trefwoorden"
+	line "Printen"
+	line "Afsluiten"
 	done
 
 TurnedPCOnText: ; 3ea69 (f:6a69)
 	text "<RAMNAME>"
-	line "turned the PC on!"
+	line "startte de PC op!"
 	done
 
 TurnedPCOffText: ; 3ea7e (f:6a7e)
 	text "<RAMNAME>"
-	line "turned the PC off!"
+	line "sloot de PC af!"
 	done
 
 Text0354: ; 3ea94 (f:6a94)
-	text "Send Card"
-	line "Receive Card"
-	line "Send Deck Configuration"
-	line "Receive Deck Configuration"
-	line "Exit"
+	text "Stuur kaart"
+	line "Ontvang kaart"
+	line "Stuur Deckconstructie"
+	line "Ontvang Deckconstructie"
+	line "Stoppen"
 	done
 
 Text0355: ; 3eae4 (f:6ae4)
-	text "Send Card"
+	text "Stuur kaart"
 	done
 
 Text0356: ; 3eaef (f:6aef)
-	text "Receive Card"
+	text "Ontvang kaart"
 	done
 
 Text0357: ; 3eafd (f:6afd)
-	text "Send Deck Configuration"
+	text "Stuur Deckconstructie"
 	done
 
 Text0358: ; 3eb16 (f:6b16)
-	text "Receive Deck Configuration"
+	text "Ontvang Deckconstructie"
 	done
 
 Text0359: ; 3eb32 (f:6b32)
@@ -1386,7 +1443,7 @@ Text0359: ; 3eb32 (f:6b32)
 	done
 
 Text035a: ; 3eb3e (f:6b3e)
-	text "Which mail would you like to read?"
+	text "Welke e-mail wil je lezen?"
 	done
 
 Text035b: ; 3eb62 (f:6b62)
@@ -1482,15 +1539,15 @@ Text036f: ; 3ec74 (f:6c74)
 
 Text0370: ; 3ecb9 (f:6cb9)
 	text "  <RAMNAME>  <RAMTEXT>"
-	line "      Gewonnen Medailles "
+	line " Gewonnen Meestermedailles "
 	half2full
 	textfw0 "<RAMNUM>"
 	text ""
-	line "      Album           "
+	line " Kaartenalbum         "
 	half2full
 	textfw0 "/"
 	text ""
-	line "      Spelduur         "
+	line " Tijd gespeeld         "
 	half2full
 	textfw3 ":"
 	text ""
@@ -1656,18 +1713,18 @@ Text0386: ; 3f2f1 (f:72f1)
 	done
 
 ReceivedBoosterPackText: ; 3f308 (f:7308)
-	text "<RAMNAME> received a Booster"
-	line "Pack: <RAMTEXT>."
+	text "<RAMNAME> ontving een"
+	line "Uitbreidingspakje: <RAMTEXT>!"
 	done
 
 AndAnotherBoosterPackText: ; 3f327 (f:7327)
-	text "...And another Booster Pack:"
-	line "<RAMTEXT>."
+	text "...en nog een Uitbreidings-"
+	line "pakje: <RAMTEXT>!"
 	done
 
 CheckedCardsInBoosterPackText: ; 3f348 (f:7348)
-	text "<RAMNAME> checked the cards"
-	line "in the Booster Pack!!"
+	text "<RAMNAME> bekeek de kaarten"
+	line "in het Uitbreidingspakje!"
 	done
 
 Text038a: ; 3f373 (f:7373)
@@ -2050,116 +2107,4 @@ Text03e6: ; 3f81c (f:781c)
 
 Text03e7: ; 3f823 (f:7823)
 	text "Aaron"
-	done
-
-Text03e8: ; 3f82a (f:782a)
-	text "<Lv>60 MEWTWO "
-	done
-
-Text03e9: ; 3f838 (f:7838)
-	text "<Lv>8 MEW "
-	done
-
-Text03ea: ; 3f842 (f:7842)
-	text "<Lv>34 ARCANINE"
-	done
-
-Text03eb: ; 3f851 (f:7851)
-	text "<Lv>16 PIKACHU"
-	done
-
-Text03ec: ; 3f85f (f:785f)
-	text "<Lv>13 SURFING PIKACHU"
-	done
-
-Text03ed: ; 3f875 (f:7875)
-	text "<Lv>20 ELECTABUZZ"
-	done
-
-Text03ee: ; 3f886 (f:7886)
-	text "<Lv>9 SLOWPOKE"
-	done
-
-Text03ef: ; 3f894 (f:7894)
-	text "<Lv>12 JIGGLYPUFF"
-	done
-
-Text03f0: ; 3f8a5 (f:78a5)
-	text "<Lv>68 ZAPDOS"
-	done
-
-Text03f1: ; 3f8b2 (f:78b2)
-	text "<Lv>37 MOLTRES"
-	done
-
-Text03f2: ; 3f8c0 (f:78c0)
-	text "<Lv>37 ARTICUNO"
-	done
-
-Text03f3: ; 3f8cf (f:78cf)
-	text "<Lv>41 DRAGONITE"
-	done
-
-Text03f4: ; 3f8df (f:78df)
-	text "Super Energy Retrieval"
-	done
-
-Text03f5: ; 3f8f7 (f:78f7)
-	text "<Lv>12 FLYING PIKACHU"
-	done
-
-Text03f6: ; 3f90c (f:790c)
-	text "Lightning & Fire Deck"
-	done
-
-Text03f7: ; 3f923 (f:7923)
-	text "Water & Fighting Deck"
-	done
-
-Text03f8: ; 3f93a (f:793a)
-	text "Grass & Psychic Deck"
-	done
-
-Text03f9: ; 3f950 (f:7950)
-	text "Please select the Deck"
-	line "you wish to Duel against."
-	done
-
-Text03fa: ; 3f982 (f:7982)
-	text "Charmander & Vrienden Deck"
-	done
-
-Text03fb: ; 3f99d (f:799d)
-	text "Squirtle & Vrienden Deck"
-	done
-
-Text03fc: ; 3f9b6 (f:79b6)
-	text "Bulbasaur & Vrienden Deck"
-	done
-
-Text03fd: ; 3f9d0 (f:79d0)
-	text "Kies het deck dat je wilt."
-	done
-
-Text03fe: ; 3f9f2 (f:79f2)
-	text "Hi, <RAMNAME>."
-	line "How can I help you?"
-	done
-
-Text03ff: ; 3fa0e (f:7a0e)
-	text "Normal Duel"
-	line "Practice"
-	line "Rules"
-	line "Nothing"
-	done
-
-Text0400: ; 3fa32 (f:7a32)
-	text "Energie"
-	line "Aanvallen"
-	line "Terug Trekken"
-	line "Pokémon Evolueren"
-	line "Pokémon-Krachten"
-	line "Je beurt doorgeven"
-	line "Winnen en Verliezen"
-	line "Alles is duidelijk"
 	done

@@ -1,3 +1,376 @@
+CharmanderName: ; 59e02 (16:5e02)
+	text "Charmander"
+	done
+
+EmberName: ; 59e0e (16:5e0e)
+	text "Sintel"
+	done
+
+EmberDescription: ; 59e15 (16:5e15)
+	text "Om deze Aanval te kunnen gebruiken"
+	line "moet je 1 aan Charmander gehechte"
+	line "<FIRE> Energiekaart weggooien."
+	done
+
+LizardName: ; 59e63 (16:5e63)
+	text "Hagedis-"
+	done
+
+CharmanderDescription: ; 59e6b (16:5e6b)
+	text "Geeft uiteraard de voorkeur aan hete"
+	line "plekken. Ze zeggen dat er stoom"
+	line "uit de punt van zijn staart spuit"
+	line "als hij in de regen terecht komt."
+	done
+
+CharmeleonName: ; 59eda (16:5eda)
+	text "Charmeleon"
+	done
+
+FlamethrowerName: ; 59ee6 (16:5ee6)
+	text "Vlammenwerper"
+	done
+
+CharmeleonsFlamethrowerDescription: ; 59ef4 (16:5ef4)
+	text "Om deze Aanval te kunnen gebruiken"
+	line "moet je 1 aan Charmeleon gehechte"
+	line "<FIRE> Energiekaart weggooien."
+	done
+
+FlameName: ; 59f42 (16:5f42)
+	text "Vlam-"
+	done
+
+CharmeleonDescription: ; 59f49 (16:5f49)
+	text "Als hij met zijn brandende staart"
+	line "zwaait, stijgt de temperatuur tot"
+	line "een ondraaglijke hoogte"
+	done
+
+CharizardName: ; 59fa0 (16:5fa0)
+	text "Charizard"
+	done
+
+EnergyBurnName: ; 59fab (16:5fab)
+	text "Energieverbranding"
+	done
+
+EnergyBurnDescription: ; 59fb8 (16:5fb8)
+	text "Je mag zo vaak als je wilt tijdens"
+	line "je beurt (vóór je Aanval) alle aan"
+	line "Charizard gehechte Energie omzetten"
+	line "naar <FIRE> Energie voor de rest van"
+	line "je beurt. Deze kracht kan niet"
+	line "worden gebruikt als Charizard"
+	line "In Slaap, Verward, of Verlamd is."
+	done
+
+FireSpinName: ; 5a095 (16:6095)
+	text "Vuurdraak"
+	done
+
+FireSpinDescription: ; 5a0a0 (16:60a0)
+	text "Om deze Aanval te kunnen gebruiken,"
+	line "moet je 2 aan Charizard gehechte"
+	line "Energiekaarten weggooien."
+	done
+
+CharizardDescription: ; 5a0eb (16:60eb)
+	text "Spuwt vuur dat heet genoeg is om"
+	line "rotsblokken te laten smelten. Staat"
+	line "erom bekend dat hij onopzettelijk"
+	line "bosbranden veroorzaakt."
+	done
+
+VulpixName: ; 5a149 (16:6149)
+	text "Vulpix"
+	done
+
+ConfuseRayName: ; 5a151 (16:6151)
+	text "Verwarstraal"
+	done
+
+FoxName: ; 5a15e (16:615e)
+	text "Fox"
+	done
+
+VulpixDescription: ; 5a163 (16:6163)
+	text "At the time of birth, it has just"
+	line "one tail. Its tail splits from the"
+	line "tip as it grows older."
+	done
+
+NinetalesName: ; 5a1c0 (16:61c0)
+	text "Ninetales"
+	done
+
+NinetalesLureDescription: ; 5a1cb (16:61cb)
+	text "If your opponent has any Benched"
+	line "Pokémon, choose 1 of them and switch"
+	line "it with the Defending Pokémon."
+	done
+
+FireBlastName: ; 5a231 (16:6231)
+	text "Fire Blast"
+	done
+
+FireBlastDescription: ; 5a23d (16:623d)
+	text "Discard 1 <FIRE> Energiekaart attached"
+	line "to Ninetales in order to use this"
+	line "attack."
+	done
+
+Ninetales1Description: ; 5a28a (16:628a)
+	text "Very smart and very vengeful."
+	line "Grabbing one of its many tails could"
+	line "result in a 1,000-year curse."
+	done
+
+MixUpName: ; 5a2ec (16:62ec)
+	text "Mix-Up"
+	done
+
+MixUpDescription: ; 5a2f4 (16:62f4)
+	text "If your opponent has any Basic"
+	line "Pokémon or Evolution cards in his"
+	line "or her hand, your opponent shuffles"
+	line "them into his or her deck. Then,"
+	line "your opponent puts an equal number"
+	line "of Basic Pokémon or Evolution cards"
+	line "chosen at random from his or"
+	done
+
+MixUpDescriptionCont: ; 5a3df (16:63df)
+	text "her deck into his or her hand. Your"
+	line "opponent shuffles his or her deck"
+	line "afterward."
+	done
+
+DancingEmbersName: ; 5a431 (16:6431)
+	text "Dancing Embers"
+	done
+
+DancingEmbersDescription: ; 5a441 (16:6441)
+	text "Flip 8 coins. This attack does 10"
+	line "damage times the number of heads."
+	done
+
+Ninetales2Description: ; 5a486 (16:6486)
+	text "According to an enduring legend,"
+	line "9 noble heroes were united and"
+	line "reincarnated as this."
+	done
+
+GrowlitheName: ; 5a4dd (16:64dd)
+	text "Growlithe"
+	done
+
+FlareName: ; 5a4e8 (16:64e8)
+	text "Steekvlam"
+	done
+
+PuppyName: ; 5a4ef (16:64ef)
+	text "Puppy-"
+	done
+
+GrowlitheDescription: ; 5a4f6 (16:64f6)
+	text "Gaat tot het uiterste om zijn"
+	line "terrein te beschermen. Hij zal"
+	line "blaffen en bijten om indringers"
+	line "van zijn grondgebied te verjagen."
+	done
+
+ArcanineName: ; 5a552 (16:6552)
+	text "Arcanine"
+	done
+
+QuickAttackName: ; 5a55c (16:655c)
+	text "Snelle Aanval"
+	done
+
+QuickAttackDescription: ; 5a56a (16:656a)
+	text "Gooi een munt op. Als het kop"
+	line "is, doet deze Aanval 10 schade"
+	line "plus nog eens 20 schade; als"
+	line "het munt is, doet deze Aanval"
+	line "10 schade."
+	done
+
+FlamesOfRageName: ; 5a5d8 (16:65d8)
+	text "Vlammen van woede"
+	done
+
+FlamesOfRageDescription: ; 5a5e8 (16:65e8)
+	text "Om deze Aanval te kunnen gebruiken,"
+	line "moet je 2 aan Arcanine gehechte <FIRE>"
+	line "Energiekaarten weggooien. Deze"
+	line "Aanval doet 40 schade plus nog"
+	line "eens 10 schade voor elke"
+	line "Schadeteller op Arcanine."
+	done
+
+LegendaryName: ; 5a689 (16:6689)
+	text "Legendarische"
+	done
+
+Arcanine1Description: ; 5a694 (16:6694)
+	text "Een Pokémon die al een lange tijd"
+	line "bewonderd wordt om zijn schoonheid."
+	line "Wanneer hij rent, lijkt het bijna"
+	line "alsof hij vliegt."
+	done
+
+ArcaninesFlamethrowerDescription: ; 5a6ed (16:66ed)
+	text "Om deze Aanval te kunnen gebruiken,"
+	line "moet je 1 aan Arcanine gehechte <FIRE>"
+	line "Energiekaart weggooien."
+	done
+
+TakeDownName: ; 5a739 (16:6739)
+	text "Haal neer"
+	done
+
+TakeDownDescription: ; 5a744 (16:6744)
+	text "Arcanine doet 30 schade aan"
+	line "zichzelf."
+	done
+
+Arcanine2Description: ; 5a768 (16:6768)
+	text "Een Pokémon die al een lange tijd"
+	line "bewonderd wordt om zijn schoonheid."
+	line "Hij rent sierlijk, alsof hij"
+	line "vleugels heeft."
+	done
+
+PonytaName: ; 5a7c2 (16:67c2)
+	text "Ponyta"
+	done
+
+SmashKickName: ; 5a7ca (16:67ca)
+	text "Verpletterende Schop"
+	done
+
+FlameTailName: ; 5a7d6 (16:67d6)
+	text "Vlammenstaart"
+	done
+
+FireHorseName: ; 5a7e2 (16:67e2)
+	text "Vuurpaard-"
+	done
+
+PonytaDescription: ; 5a7ee (16:67ee)
+	text "Zijn hoeven zijn 10 keer zo hard"
+	line "als diamant. Hij kan in enkele"
+	line "ogenblikken alles plattrappen."
+	done
+
+RapidashName: ; 5a846 (16:6846)
+	text "Rapidash"
+	done
+
+StompName: ; 5a850 (16:6850)
+	text "Stomp"
+	done
+
+StompDescription: ; 5a857 (16:6857)
+	text "Gooi een munt op. Als het kop is,"
+	line "doet deze Aanval 20 schade plus"
+	line "nog eens 10 schade; als het munt"
+	line "is, doet deze Aanval 20 schade."
+	done
+
+AgilityName: ; 5a8c5 (16:68c5)
+	text "Behendigheid"
+	done
+
+RapidashsAgilityDescription: ; 5a8ce (16:68ce)
+	text "Gooi een munt op. Als het kop is,"
+	line "voorkom dan tijdens je"
+	line "tegenstander's volgende beurt alle"
+	line "gevolgen van Aanvallen, inclusief"
+	line "schade, toegebracht aan Rapidash."
+	done
+
+RapidashDescription: ; 5a94c (16:694c)
+	text "Omdat hij graag wedijvert, zal"
+	line "deze Pokémon alles najagen wat"
+	line "snel loopt in de hoop ertegen"
+	line "te kunnen racen."
+	done
+
+MagmarName: ; 5a9ab (16:69ab)
+	text "Magmar"
+	done
+
+FirePunchName: ; 5a9b3 (16:69b3)
+	text "Vuurslag"
+	done
+
+FirePunchDescription: ; 5a9bf (16:69bf)
+	text "Om deze Aanval te kunnen gebruiken,"
+	line "moet je 1 aan Magmar gehechte <FIRE>"
+	line "Energiekaart weggooien."
+	done
+
+SpitfireName: ; 5aa09 (16:6a09)
+	text "Vuurspuwende"
+	done
+
+Magmar1Description: ; 5aa13 (16:6a13)
+	text "Zijn lijft gloeit altijd met een"
+	line "oranje gloed waardoor hij zich"
+	line "uitstekend tussen de vlammen"
+	line "kan verbergen."
+	done
+
+SmokescreenName: ; 5aa6e (16:6a6e)
+	text "Rookgordijn"
+	done
+
+MagmarsSmokescreenDescription: ; 5aa7b (16:6a7b)
+	text "Als de Verdedigende Pokémon tijdens"
+	line "je tegenstander's volgende beurt"
+	line "probeert Aan te Vallen, gooit je"
+	line "tegenstander een munt op. Als het"
+	line "munt is, doet die Aanval niets."
+	done
+
+Magmar2Description: ; 5ab07 (16:6b07)
+	text "Te vinden bij de monden van vulkanen"
+	line "en erg moeilijk in het vizier te"
+	line "krijgen. Deze Pokémon is maar in"
+	line "weinig gevallen gevangen."
+	done
+
+EeveeName: ; 5ab86 (16:6b86)
+	text "Eevee"
+	done
+
+TailWagName: ; 62d8a (18:6d8a)
+	text "Kwispel"
+	done
+
+TailWagDescription: ; 62d94 (18:6d94)
+	text "Gooi een munt op. Als het kop is,"
+	line "kan de Verdedigende Pokémon Eevee"
+	line "niet aanvallen tijdens je"
+	line "tegenstander's volgende beurt. (Het"
+	line "op de Bank plaatsen of evolueren van"
+	line "een van beide Pokémon beëindigt"
+	line "dit effect.)"
+	done
+
+EvolutionName: ; 62e2f (18:6e2f)
+	text "Evolutie-"
+	done
+
+EeveeDescription: ; 62e3a (18:6e3a)
+	text "Zijn genetische code is onregel-"
+	line "matig. Hij zou kunnen muteren als"
+	line "hij wordt blootgesteld aan"
+	line "elementaire gesteenten."
+	done
+
 FlareonName: ; 5ab7d (16:6b7d)
 	text "Flareon"
 	done
@@ -970,300 +1343,4 @@ SurfingPikachuDescription: ; 5d2d2 (17:52d2)
 	text "Tijdens een zomer werd er een"
 	line "groep Pikachu gespot die de golven"
 	line "bereden bij het lokale strand."
-	done
-
-RaichuName: ; 5d321 (17:5321)
-	text "Raichu"
-	done
-
-RaichusAgilityDescription: ; 5d329 (17:5329)
-	text "Gooi een munt op. Als het kop is,"
-	line "voorkom dan tijdens je"
-	line "tegenstander's volgende beurt alle"
-	line "gevolgen van Aanvallen, inclusief"
-	line "schade, die aan Raichu worden"
-	line "toegebracht."
-	done
-
-ThunderName: ; 5d3a5 (17:53a5)
-	text "Donder"
-	done
-
-RaichusThunderDescription: ; 5d3ae (17:53ae)
-	text "Gooi een munt op. Als het munt is,"
-	line "doet Raichu 30 schade aan zichzelf."
-	done
-
-Raichu1Description: ; 5d3e7 (17:53e7)
-	text "Zijn lange staart fungeert als een"
-	line "aarde om zichzelf te beschermen"
-	line "tegen zijn eigen"
-	line "hoogspanningsenergie."
-	done
-
-GigashockName: ; 5d43c (17:543c)
-	text "Gigaschok"
-	done
-
-GigashockDescription: ; 5d447 (17:5447)
-	text "Kies 3 van je tegenstander's Pokémon"
-	line "op de Bank en deze Aanval doet aan"
-	line "elk van hen 10 schade. (Pas geen"
-	line "Zwakte en Weerstand toe op de Poké-"
-	line "mon op de Bank.) Als je tegenstander"
-	line "minder dan 3 Pokémon op de Bank heeft,"
-	line "doe dan aan elk van deze de schade."
-	done
-
-Raichu2Description: ; 5d531 (17:5531)
-	text "Zijn lange staart fungeert als een"
-	line "aarde om zichzelf te beschermen"
-	line "tegen zijn eigen"
-	line "hoogspanningsenergie."
-	done
-
-MagnemiteName: ; 5d586 (17:5586)
-	text "Magnemite"
-	done
-
-ThunderWaveName: ; 5d591 (17:5591)
-	text "Dondergolf"
-	done
-
-MagnemitesSelfdestructDescription: ; 5d59f (17:559f)
-	text "Doet 10 schade aan elke Pokémon op"
-	line "de Bank van elke speler. (Pas geen"
-	line "Zwakte en Weerstand toe op de"
-	line "Pokémon op de Bank.) Magnemite"
-	line "doet 40 schade aan zichzelf."
-	done
-
-MagnetName: ; 5d636 (17:5636)
-	text "Magneet-"
-	done
-
-Magnemite1Description: ; 5d63e (17:563e)
-	text "Gebruikt anti-zwaartekracht om"
-	line "in de lucht te blijven. Verschijnt"
-	line "zonder waarschuwing en gebruikt"
-	line "aanvallen zoals Dondergolf."
-	done
-
-MagneticStormName: ; 5d6a0 (17:56a0)
-	text "Magnetische Storm"
-	done
-
-MagneticStormDescription: ; 5d6b0 (17:56b0)
-	text "Verwijder alle Energiekaarten die"
-	line "gehecht zijn aan al je Pokémon, en"
-	line "hecht de Energiekaarten daarna weer"
-	line "aan je Pokémon, op willekeurige"
-	line "wijze verdeeld."
-	done
-
-Magnemite2Description: ; 5d70f (17:570f)
-	text "Hij is geboren met het vermogen om"
-	line "de zwaartekracht tegen te gaan. Hij"
-	line "zweeft in de lucht op krachtige"
-	line "electromanetische golven."
-	done
-
-MagnetonName: ; 5d76e (17:576e)
-	text "Magneton"
-	done
-
-Magneton1sSelfdestructDescription: ; 5d778 (17:5778)
-	text "Doet 20 schade aan elke Pokémon op"
-	line "de Bank van elke speler. (Pas geen"
-	line "Zwakte en Weerstand toe op de"
-	line "Pokémon op de Bank.) Magneton"
-	line "doet 80 schade aan zichzelf."
-	done
-
-Magneton1Description: ; 5d80e (17:580e)
-	text "Wordt gevormd door verschillende"
-	line "met elkaar verbonden Magnemites."
-	line "Verschijnt vaak als de"
-	line "zonnevlekken opvlammen."
-	done
-
-SonicboomName: ; 5d86b (17:586b)
-	text "Supersone knal"
-	done
-
-SonicboomDescription: ; 5d876 (17:5876)
-	text "Pas geen Zwakte of Weerstand toe"
-	line "voor deze Aanval. (Alle andere"
-	line "gevolgen die na het toepassen van"
-	line "Zwakte en Weerstand zouden"
-	line "gebeuren blijven gewoon geldig.))"
-	done
-
-Magneton2sSelfdestructDescription: ; 5d907 (17:5907)
-	text "Doet 20 schade aan elke Pokémon op"
-	line "de Bank van elke speler. (Pas geen"
-	line "Zwakte en Weerstand toe op de"
-	line "Pokémon op de Bank.) Magneton"
-	line "doet 100 schade aan zichzelf."
-	done
-
-Magneton2Description: ; 5d99e (17:599e)
-	text "Wordt gevormd door verschillende"
-	line "met elkaar verbonden Magnemites."
-	line "Verschijnt vaak als de"
-	line "zonnevlekken opvlammen."
-	done
-
-VoltorbName: ; 5d9fc (17:59fc)
-	text "Voltorb"
-	done
-
-BallName: ; 5da05 (17:5a05)
-	text "Ball"
-	done
-
-VoltorbDescription: ; 5da0b (17:5a0b)
-	text "Usually found in power plants."
-	line "Easily mistaken for a Poke Ball, it"
-	line "has zapped many people."
-	done
-
-ElectrodeName: ; 5da67 (17:5a67)
-	text "Electrode"
-	done
-
-EnergySpikeName: ; 5da72 (17:5a72)
-	text "Energy Spike"
-	done
-
-EnergySpikeDescription: ; 5da80 (17:5a80)
-	text "Search your deck for a basic Energy"
-	line "card and attach it to 1 of your"
-	line "Pokémon. Shuffle your deck"
-	line "afterward."
-	done
-
-Electrode1Description: ; 5daeb (17:5aeb)
-	text "Stores electrical energy inside its"
-	line "body. Even the slightest shock could"
-	line "trigger a huge explosion."
-	done
-
-ChainLightningName: ; 5db4f (17:5b4f)
-	text "Chain Lightning"
-	done
-
-ChainLightningDescription: ; 5db60 (17:5b60)
-	text "If the Defending Pokémon isn't"
-	line "Colorless, this attack does 10"
-	line "damage to each Benched Pokémon of"
-	line "the same type as the Defending"
-	line "Pokémon (including your own)."
-	done
-
-Electrode2Description: ; 5dbfe (17:5bfe)
-	text "It stores electrical energy under"
-	line "very high pressure. It often"
-	line "explodes with little or no"
-	line "provocation."
-	done
-
-ElectabuzzName: ; 5dc66 (17:5c66)
-	text "Electabuzz"
-	done
-
-LightScreenName: ; 5dc72 (17:5c72)
-	text "Lichtscherm"
-	done
-
-LightScreenDescription: ; 5dc80 (17:5c80)
-	text "Wanneer een Aanval tijdens je"
-	line "tegenstander's volgende beurt schade"
-	line "doet aan Electabuzz (na het"
-	line "toepassen van Zwakte en Weerstand),"
-	line "doet die Aanval slechts de helft"
-	line "van de schade aan Electabuzz"
-	done
-
-LightScreenDescriptionCont: ; 5dd4f (17:5d4f)
-	text "(naar beneden afgerond naar de"
-	line "dichtstbijzijnde 10). (Alle"
-	line "andere gevolgen van Aanvallen"
-	line "blijven gewoon geldig.)"
-	done
-
-ElectabuzzsQuickAttackDescription: ; 5dd7d (17:5d7d)
-	text "Gooi een munt op. Als het kop is,"
-	line "doet deze Aanval 10 schade plus"
-	line "nog eens 20 schade; als het munt"
-	line "is, doet deze Aanval 10 schade."
-	done
-
-ElectricName: ; 5ddec (17:5dec)
-	text "Elektrische"
-	done
-
-Electabuzz1Description: ; 5ddf6 (17:5df6)
-	text "Een wilde Pokémon met een kort"
-	line "lontje. Hij kan kleuren"
-	line "onderscheiden en hij vindt de"
-	line "kleur rood leuk."
-	done
-
-ThunderpunchName: ; 5de55 (17:5e55)
-	text "Donderslag"
-	done
-
-ThunderpunchDescription: ; 5de63 (17:5e63)
-	text "Gooi een munt op. Als het kop is,"
-	line "doet deze Aanval 30 schade plus nog"
-	line "eens 10 schade. Als het munt is,"
-	line "doet deze Aanval 30 schade en"
-	line "doet Electabuzz 10 schade aan"
-	line "zichzelf."
-	done
-
-Electabuzz2Description: ; 5def9 (17:5ef9)
-	text "Hoewel hij gewoonlijk te vinden is"
-	line "in de buurt van energiecentrales,"
-	line "kan hij afdwalen en enorme stroom-"
-	line "storingen veroorzaken in steden."
-	done
-
-JolteonName: ; 5df54 (17:5f54)
-	text "Jolteon"
-	done
-
-DoubleAttackX20Description: ; 5df5d (17:5f5d)
-	text "Flip 2 coins. This attack does 20"
-	line "damage times the number of heads."
-	done
-
-StunNeedleName: ; 5dfa2 (17:5fa2)
-	text "Stun Needle"
-	done
-
-LightningName: ; 5dfaf (17:5faf)
-	text "Lightning"
-	done
-
-Jolteon1Description: ; 5dfba (17:5fba)
-	text "A sensitive Pokémon that easily"
-	line "becomes sad or angry. Every time"
-	line "its mood changes, it charges power."
-	done
-
-PinMissileName: ; 5e020 (17:6020)
-	text "Pin Missile"
-	done
-
-QuadrupleAttackX20Description: ; 5e02d (17:602d)
-	text "Gooi 4 munten op. Deze aanval doet"
-	line "20 schade maal het aantal keren kop."
-	done
-
-Jolteon2Description: ; 5e072 (17:6072)
-	text "It accumulates negative ions from"
-	line "the atmosphere to blast out 10,000-"
-	line "volt lightning bolts."
 	done

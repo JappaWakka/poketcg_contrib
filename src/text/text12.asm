@@ -1,3 +1,299 @@
+RaichuName: ; 5d321 (17:5321)
+	text "Raichu"
+	done
+
+RaichusAgilityDescription: ; 5d329 (17:5329)
+	text "Gooi een munt op. Als het kop is,"
+	line "voorkom dan tijdens je"
+	line "tegenstander's volgende beurt alle"
+	line "gevolgen van Aanvallen, inclusief"
+	line "schade, die aan Raichu worden"
+	line "toegebracht."
+	done
+
+ThunderName: ; 5d3a5 (17:53a5)
+	text "Donder"
+	done
+
+RaichusThunderDescription: ; 5d3ae (17:53ae)
+	text "Gooi een munt op. Als het munt is,"
+	line "doet Raichu 30 schade aan zichzelf."
+	done
+
+Raichu1Description: ; 5d3e7 (17:53e7)
+	text "Zijn lange staart fungeert als een"
+	line "aarde om zichzelf te beschermen"
+	line "tegen zijn eigen"
+	line "hoogspanningsenergie."
+	done
+
+GigashockName: ; 5d43c (17:543c)
+	text "Gigaschok"
+	done
+
+GigashockDescription: ; 5d447 (17:5447)
+	text "Kies 3 van je tegenstander's Pokémon"
+	line "op de Bank en deze Aanval doet aan"
+	line "elk van hen 10 schade. (Pas geen"
+	line "Zwakte en Weerstand toe op de Poké-"
+	line "mon op de Bank.) Als je tegenstander"
+	line "minder dan 3 Pokémon op de Bank heeft,"
+	line "doe dan aan elk van deze de schade."
+	done
+
+Raichu2Description: ; 5d531 (17:5531)
+	text "Zijn lange staart fungeert als een"
+	line "aarde om zichzelf te beschermen"
+	line "tegen zijn eigen"
+	line "hoogspanningsenergie."
+	done
+
+MagnemiteName: ; 5d586 (17:5586)
+	text "Magnemite"
+	done
+
+ThunderWaveName: ; 5d591 (17:5591)
+	text "Dondergolf"
+	done
+
+MagnemitesSelfdestructDescription: ; 5d59f (17:559f)
+	text "Doet 10 schade aan elke Pokémon op"
+	line "de Bank van elke speler. (Pas geen"
+	line "Zwakte en Weerstand toe op de"
+	line "Pokémon op de Bank.) Magnemite"
+	line "doet 40 schade aan zichzelf."
+	done
+
+MagnetName: ; 5d636 (17:5636)
+	text "Magneet-"
+	done
+
+Magnemite1Description: ; 5d63e (17:563e)
+	text "Gebruikt anti-zwaartekracht om"
+	line "in de lucht te blijven. Verschijnt"
+	line "zonder waarschuwing en gebruikt"
+	line "aanvallen zoals Dondergolf."
+	done
+
+MagneticStormName: ; 5d6a0 (17:56a0)
+	text "Magnetische Storm"
+	done
+
+MagneticStormDescription: ; 5d6b0 (17:56b0)
+	text "Verwijder alle Energiekaarten die"
+	line "gehecht zijn aan al je Pokémon, en"
+	line "hecht de Energiekaarten daarna weer"
+	line "aan je Pokémon, op willekeurige"
+	line "wijze verdeeld."
+	done
+
+Magnemite2Description: ; 5d70f (17:570f)
+	text "Hij is geboren met het vermogen om"
+	line "de zwaartekracht tegen te gaan. Hij"
+	line "zweeft in de lucht op krachtige"
+	line "electromanetische golven."
+	done
+
+MagnetonName: ; 5d76e (17:576e)
+	text "Magneton"
+	done
+
+Magneton1sSelfdestructDescription: ; 5d778 (17:5778)
+	text "Doet 20 schade aan elke Pokémon op"
+	line "de Bank van elke speler. (Pas geen"
+	line "Zwakte en Weerstand toe op de"
+	line "Pokémon op de Bank.) Magneton"
+	line "doet 80 schade aan zichzelf."
+	done
+
+Magneton1Description: ; 5d80e (17:580e)
+	text "Wordt gevormd door verschillende"
+	line "met elkaar verbonden Magnemites."
+	line "Verschijnt vaak als de"
+	line "zonnevlekken opvlammen."
+	done
+
+SonicboomName: ; 5d86b (17:586b)
+	text "Supersone knal"
+	done
+
+SonicboomDescription: ; 5d876 (17:5876)
+	text "Pas geen Zwakte of Weerstand toe"
+	line "voor deze Aanval. (Alle andere"
+	line "gevolgen die na het toepassen van"
+	line "Zwakte en Weerstand zouden"
+	line "gebeuren blijven gewoon geldig.))"
+	done
+
+Magneton2sSelfdestructDescription: ; 5d907 (17:5907)
+	text "Doet 20 schade aan elke Pokémon op"
+	line "de Bank van elke speler. (Pas geen"
+	line "Zwakte en Weerstand toe op de"
+	line "Pokémon op de Bank.) Magneton"
+	line "doet 100 schade aan zichzelf."
+	done
+
+Magneton2Description: ; 5d99e (17:599e)
+	text "Wordt gevormd door verschillende"
+	line "met elkaar verbonden Magnemites."
+	line "Verschijnt vaak als de"
+	line "zonnevlekken opvlammen."
+	done
+
+VoltorbName: ; 5d9fc (17:59fc)
+	text "Voltorb"
+	done
+
+BallName: ; 5da05 (17:5a05)
+	text "Ball"
+	done
+
+VoltorbDescription: ; 5da0b (17:5a0b)
+	text "Usually found in power plants."
+	line "Easily mistaken for a Poke Ball, it"
+	line "has zapped many people."
+	done
+
+ElectrodeName: ; 5da67 (17:5a67)
+	text "Electrode"
+	done
+
+EnergySpikeName: ; 5da72 (17:5a72)
+	text "Energy Spike"
+	done
+
+EnergySpikeDescription: ; 5da80 (17:5a80)
+	text "Search your deck for a basic Energy"
+	line "card and attach it to 1 of your"
+	line "Pokémon. Shuffle your deck"
+	line "afterward."
+	done
+
+Electrode1Description: ; 5daeb (17:5aeb)
+	text "Stores electrical energy inside its"
+	line "body. Even the slightest shock could"
+	line "trigger a huge explosion."
+	done
+
+ChainLightningName: ; 5db4f (17:5b4f)
+	text "Chain Lightning"
+	done
+
+ChainLightningDescription: ; 5db60 (17:5b60)
+	text "If the Defending Pokémon isn't"
+	line "Colorless, this attack does 10"
+	line "damage to each Benched Pokémon of"
+	line "the same type as the Defending"
+	line "Pokémon (including your own)."
+	done
+
+Electrode2Description: ; 5dbfe (17:5bfe)
+	text "It stores electrical energy under"
+	line "very high pressure. It often"
+	line "explodes with little or no"
+	line "provocation."
+	done
+
+ElectabuzzName: ; 5dc66 (17:5c66)
+	text "Electabuzz"
+	done
+
+LightScreenName: ; 5dc72 (17:5c72)
+	text "Lichtscherm"
+	done
+
+LightScreenDescription: ; 5dc80 (17:5c80)
+	text "Wanneer een Aanval tijdens je"
+	line "tegenstander's volgende beurt schade"
+	line "doet aan Electabuzz (na het"
+	line "toepassen van Zwakte en Weerstand),"
+	line "doet die Aanval slechts de helft"
+	line "van de schade aan Electabuzz"
+	done
+
+LightScreenDescriptionCont: ; 5dd4f (17:5d4f)
+	text "(naar beneden afgerond naar de"
+	line "dichtstbijzijnde 10). (Alle"
+	line "andere gevolgen van Aanvallen"
+	line "blijven gewoon geldig.)"
+	done
+
+ElectabuzzsQuickAttackDescription: ; 5dd7d (17:5d7d)
+	text "Gooi een munt op. Als het kop is,"
+	line "doet deze Aanval 10 schade plus"
+	line "nog eens 20 schade; als het munt"
+	line "is, doet deze Aanval 10 schade."
+	done
+
+ElectricName: ; 5ddec (17:5dec)
+	text "Elektrische"
+	done
+
+Electabuzz1Description: ; 5ddf6 (17:5df6)
+	text "Een wilde Pokémon met een kort"
+	line "lontje. Hij kan kleuren"
+	line "onderscheiden en hij vindt de"
+	line "kleur rood leuk."
+	done
+
+ThunderpunchName: ; 5de55 (17:5e55)
+	text "Donderslag"
+	done
+
+ThunderpunchDescription: ; 5de63 (17:5e63)
+	text "Gooi een munt op. Als het kop is,"
+	line "doet deze Aanval 30 schade plus nog"
+	line "eens 10 schade. Als het munt is,"
+	line "doet deze Aanval 30 schade en"
+	line "doet Electabuzz 10 schade aan"
+	line "zichzelf."
+	done
+
+Electabuzz2Description: ; 5def9 (17:5ef9)
+	text "Hoewel hij gewoonlijk te vinden is"
+	line "in de buurt van energiecentrales,"
+	line "kan hij afdwalen en enorme stroom-"
+	line "storingen veroorzaken in steden."
+	done
+
+JolteonName: ; 5df54 (17:5f54)
+	text "Jolteon"
+	done
+
+DoubleAttackX20Description: ; 5df5d (17:5f5d)
+	text "Flip 2 coins. This attack does 20"
+	line "damage times the number of heads."
+	done
+
+StunNeedleName: ; 5dfa2 (17:5fa2)
+	text "Stun Needle"
+	done
+
+LightningName: ; 5dfaf (17:5faf)
+	text "Lightning"
+	done
+
+Jolteon1Description: ; 5dfba (17:5fba)
+	text "A sensitive Pokémon that easily"
+	line "becomes sad or angry. Every time"
+	line "its mood changes, it charges power."
+	done
+
+PinMissileName: ; 5e020 (17:6020)
+	text "Pin Missile"
+	done
+
+QuadrupleAttackX20Description: ; 5e02d (17:602d)
+	text "Gooi 4 munten op. Deze aanval doet"
+	line "20 schade maal het aantal keren kop."
+	done
+
+Jolteon2Description: ; 5e072 (17:6072)
+	text "It accumulates negative ions from"
+	line "the atmosphere to blast out 10,000-"
+	line "volt lightning bolts."
+	done
+
 ZapdosName: ; 5e0cf (17:60cf)
 	text "Zapdos"
 	done
@@ -975,363 +1271,4 @@ DrowzeeDescription: ; 60ad8 (18:4ad8)
 	line "vervolgens hun dromen op. Wordt soms"
 	line "wel eens ziek omdat hij slechte"
 	line "dromen eet."
-	done
-
-HypnoName: ; 60b37 (18:4b37)
-	text "Hypno"
-	done
-
-ProphecyName: ; 60b3e (18:4b3e)
-	text "Voorspelling"
-	done
-
-ProphecyDescription: ; 60b48 (18:4b48)
-	text "Bekijk tot 3 kaarten van de bovenkant"
-	line "van het deck van elke speler en leg"
-	line "ze in de volgorde die je wilt."
-	done
-
-HypnoDescription: ; 60ba4 (18:4ba4)
-	text "Als hij de ogen kruist met een vijand,"
-	line "gebruikt hij een mengsel van psychische"
-	line "tactieken zoals Hypnose en Verwarring."
-	done
-
-MrMimeName: ; 60c06 (18:4c06)
-	text "Mr. Mime"
-	done
-
-InvisibleWallName: ; 60c10 (18:4c10)
-	text "Invisible Wall"
-	done
-
-InvisibleWallDescription: ; 60c20 (18:4c20)
-	text "Whenever an attack (including your"
-	line "own) does 30 or more damage to Mr."
-	line "Mime (after applying Weakness and"
-	line "Resistance), prevent that damage."
-	line "(Any other effects of attacks still"
-	line "happen.)"
-	done
-
-InvisibleWallDescriptionCont: ; 60cd8 (18:4cd8)
-	text "Deze kracht kan niet worden gebruikt Mr. Mime"
-	line "In Slaap, Verward, of Verlamd is."
-	done
-
-MeditateName: ; 60d21 (18:4d21)
-	text "Mediteren"
-	done
-
-MrMimesMeditateDescription: ; 60d2b (18:4d2b)
-	text "Doet 10 schade plus nog eens 10"
-	line "schade voor elke Schadeteller"
-	line "op de Verdedigende Pokémon."
-	done
-
-BarrierName: ; 60d81 (18:4d81)
-	text "Barrière"
-	done
-
-MrMimeDescription: ; 60d8a (18:4d8a)
-	text "If interrupted while miming, it will"
-	line "slap around the enemy with its broad"
-	line "hands."
-	done
-
-JynxName: ; 60ddc (18:4ddc)
-	text "Jynx"
-	done
-
-DoubleAttackX10Description: ; 60de2 (18:4de2)
-	text "Gooi 2 munten op. Deze Aanval doet"
-	line "10 schade maal het aantal keren kop."
-	done
-
-JynxsMeditateDescription: ; 60e27 (18:4e27)
-	text "Doet 20 schade plus nog eens 10"
-	line "schade voor elke Schadeteller"
-	line "op de Verdedigende Pokémon."
-	done
-
-HumanShapeName: ; 60e7d (18:4e7d)
-	text "Menselijk gevormde"
-	done
-
-JynxDescription: ; 60e8a (18:4e8a)
-	text "Enkel door te mediteren, lanceert"
-	line "de Pokémon een krachtige psychische"
-	line "energieaanval."
-	done
-
-MewtwoName: ; 60ed8 (18:4ed8)
-	text "Mewtwo"
-	done
-
-PsychicName: ; 60ee0 (18:4ee0)
-	text "Psychic"
-	done
-
-PsychicDescription: ; 60ee9 (18:4ee9)
-	text "Does 10 damage plus 10 more damage"
-	line "for each Energiekaart attached to the"
-	line "Defending Pokémon."
-	done
-
-BarrierDescription: ; 60f45 (18:4f45)
-	text "Discard 1 <PSYCHIC> Energiekaart attached to"
-	line "Mewtwo in order to use this attack."
-	line "During your opponent's next turn,"
-	line "prevent all effects of attacks,"
-	line "including damage, done to Mewtwo."
-	done
-
-GeneticName: ; 60ff3 (18:4ff3)
-	text "Genetic"
-	done
-
-Mewtwo1Description: ; 60ffc (18:4ffc)
-	text "A scientist created this Pokémon"
-	line "after years of horrific"
-	line "gene-splicing and DNA engineering"
-	line "experiments."
-	done
-
-EnergyAbsorptionName: ; 61065 (18:5065)
-	text "Energy Absorption"
-	done
-
-EnergyAbsorptionDescription: ; 61078 (18:5078)
-	text "Choose up to 2 Energiekaarten from"
-	line "your Weggooistapel and attach them"
-	line "to Mewtwo."
-	done
-
-PsyburnName: ; 610c7 (18:50c7)
-	text "Psyburn"
-	done
-
-Mewtwo2Description: ; 610d0 (18:50d0)
-	text "Years of genetic experiments"
-	line "resulted in the creation of this"
-	line "never-before-seen violent Pokémon."
-	done
-
-MewName: ; 61132 (18:5132)
-	text "Mew"
-	done
-
-NeutralizingShieldName: ; 61137 (18:5137)
-	text "Neutraliserend Schild"
-	done
-
-NeutralizingShieldDescription: ; 6114c (18:514c)
-	text "Prevent all effects of attacks,"
-	line "including damage, done to Mew by"
-	line "evolved Pokémon (excluding your"
-	line "own). This power stops working while"
-	line "Mew In Slaap, Verward, of"
-	line "Verlamd is."
-	done
-
-NewSpeciesName: ; 611fa (18:51fa)
-	text "New Species"
-	done
-
-Mew1Description: ; 61207 (18:5207)
-	text "So rare that it is still said to be"
-	line "a mirage by many experts. Only a few"
-	line "people have seen it worldwide."
-	done
-
-MysteryAttackName: ; 61270 (18:5270)
-	text "Mystery Attack"
-	done
-
-MysteryAttackDescription: ; 61280 (18:5280)
-	text "Does a random amount of damage to"
-	line "the Defending Pokémon and may cause"
-	line "a random effect to the Defending"
-	line "Pokémon."
-	done
-
-Mew2Description: ; 612f1 (18:52f1)
-	text "When viewed through a microscope, "
-	line "this Pokémon's short, fine, delicate"
-	line "hair can be seen."
-	done
-
-PsywaveName: ; 6134c (18:534c)
-	text "Psywave"
-	done
-
-PsywaveDescription: ; 61355 (18:5355)
-	text "Does 10 damage times the number of"
-	line "Energiekaarten attached to the"
-	line "Defending Pokémon."
-	done
-
-DevolutionBeamName: ; 613a9 (18:53a9)
-	text "Devolution Beam"
-	done
-
-DevolutionBeamDescription: ; 613ba (18:53ba)
-	text "Choose an evolved Pokémon (Your"
-	line "own or your opponent's). Return"
-	line "the highest stage evolution card"
-	line "on that Pokémon to Its player's"
-	line "hand."
-	done
-
-PidgeyName: ; 61442 (18:5442)
-	text "Pidgey"
-	done
-
-TinyBirdName: ; 6144a (18:544a)
-	text "Tiny Bird"
-	done
-
-PidgeyDescription: ; 61455 (18:5455)
-	text "A common sight in forests and woods."
-	line "It flaps its wings at ground level"
-	line "to kick up blinding sand."
-	done
-
-PidgeottoName: ; 614b8 (18:54b8)
-	text "Pidgeotto"
-	done
-
-MirrorMoveName: ; 614c3 (18:54c3)
-	text "Spiegelaanval"
-	done
-
-PidgeottosMirrorMoveDescription: ; 614d0 (18:54d0)
-	text "If Pidgeotto was attacked last turn,"
-	line "do the final result of that attack"
-	line "on Pidgeotto to the Defending"
-	line "Pokémon."
-	done
-
-BirdName: ; 61540 (18:5540)
-	text "Bird"
-	done
-
-PidgeottoDescription: ; 61546 (18:5546)
-	text "Very protective of its sprawling"
-	line "territory, this Pokémon will"
-	line "fiercely peck at any intruder."
-	done
-
-PidgeotName: ; 615a4 (18:55a4)
-	text "Pidgeot"
-	done
-
-SlicingWindName: ; 615ad (18:55ad)
-	text "Slicing Wind"
-	done
-
-SlicingWildDescription: ; 615bb (18:55bb)
-	text "Does 30 damage to 1 of your"
-	line "opponent's Pokémon chosen at random."
-	line "Don't apply Weakness and Resistance"
-	line "for this attack. (Any other effects"
-	line "that would happen after applying"
-	line "Weakness and Resistance still"
-	line "happen.)"
-	done
-
-GaleName: ; 6168d (18:568d)
-	text "Gale"
-	done
-
-GaleDescription: ; 61693 (18:5693)
-	text "Switch Pidgeot with 1 of your"
-	line "Benched Pokémon chosen at random."
-	line "If your opponent has any Benched"
-	line "Pokémon, switch the Defending"
-	line "Pokémon with 1 of them chosen at"
-	line "random. (Do the damage before"
-	line "switching the Pokémon.)"
-	done
-
-Pidgeot1Description: ; 6176a (18:576a)
-	text "This Pokémon flies at Mach 2 speed,"
-	line "seeking prey. Its large talons are"
-	line "feared as wicked weapons."
-	done
-
-HurricaneName: ; 617cc (18:57cc)
-	text "Hurricane"
-	done
-
-HurricaneDescription: ; 617d7 (18:57d7)
-	text "Unless this attack Knocks Out the"
-	line "Defending Pokémon, return the"
-	line "Defending Pokémon and all cards"
-	line "attached to it to your opponent's"
-	line "hand."
-	done
-
-Pidgeot2Description: ; 61860 (18:5860)
-	text "When hunting, it skims the surface"
-	line "of water at high speed to pick off"
-	line "unwary prey such as Magikarp."
-	done
-
-RattataName: ; 618c5 (18:58c5)
-	text "Rattata"
-	done
-
-RatName: ; 618ce (18:58ce)
-	text "Rat"
-	done
-
-RattataDescription: ; 618d3 (18:58d3)
-	text "Bijt alles wanneer hij aanvalt."
-	line "Hij is klein, snel en veelgezien"
-	line "op allerlei plekken."
-	done
-
-RaticateName: ; 6192f (18:592f)
-	text "Raticate"
-	done
-
-SuperFangName: ; 61939 (18:5939)
-	text "Superknauw"
-	done
-
-SuperFangDescription: ; 61945 (18:5945)
-	text "De schade die deze Aanval doet aan"
-	line "de Verdedigende Pokémon is gelijk"
-	line "aan de helft van de resterende IP"
-	line "van de Verdedigende Pokémon (naar"
-	line "boven afgerond naar de"
-	line "dichtsbijzijnde 10)."
-	done
-
-RaticateDescription: ; 619be (18:59be)
-	text "Gebruikt zijn snorharen om zijn"
-	line "evenwicht te bewaren. Hij lijkt"
-	line "langzamer te bewegen"
-	line "als ze worden afgeknipt."
-	done
-
-SpearowName: ; 61a18 (18:5a18)
-	text "Spearow"
-	done
-
-PeckName: ; 61a21 (18:5a21)
-	text "Peck"
-	done
-
-SpearowsMirrorMoveDescription: ; 61a27 (18:5a27)
-	text "If Spearow was attacked last turn,"
-	line "do the final result of that attack"
-	line "on Spearow to the Defending Pokémon."
-	done
-
-SpearowDescription: ; 61a93 (18:5a93)
-	text "Eats bugs in grassy areas. It has to"
-	line "flap its short wings at high speed"
-	line "to stay airborne."
 	done

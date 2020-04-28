@@ -2496,13 +2496,11 @@ TextOffsets::                                                                   
 	textpointer Pikachu2Description                                                         ; 0x09bd
 	textpointer GrowlName                                                                   ; 0x09be
 	textpointer GrowlDescription                                                            ; 0x09bf
-	textpointer GrowlDescriptionCont
 	textpointer ThundershockName                                                            ; 0x09c0
 	textpointer Pikachu3Description                                                         ; 0x09c1
 	textpointer FlyingPikachuName                                                           ; 0x09c2
 	textpointer FlyName                                                                     ; 0x09c3
 	textpointer FlyDescription                                                              ; 0x09c4
-	textpointer FlyDescriptionCont
 	textpointer FlyingPikachuDescription                                                    ; 0x09c5
 	textpointer SurfingPikachuName                                                          ; 0x09c6
 	textpointer SurfName                                                                    ; 0x09c7
@@ -2992,4 +2990,7 @@ TextOffsets::                                                                   
 	textpointer GamblerDescription                                                          ; 0x0bab
 	textpointer RecycleName                                                                 ; 0x0bac
 	textpointer RecycleDescription                                                          ; 0x0bad
-		textpointer HypnosisAttackName						                                ; Made this because I don't want HypnosisName to be used as both a category and an attack name
+	textpointer EnergyTransDescriptionCont                                                  ; Dutch description was too long
+	textpointer GrowlDescriptionCont                                                        ; Dutch description was too long
+	textpointer FlyDescriptionCont                                                          ; Dutch description was too long
+	textpointer HypnosisAttackName                                                          ; Made this because I don't want HypnosisName to be used as both a category and an attack name

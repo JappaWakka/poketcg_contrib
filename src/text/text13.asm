@@ -1,3 +1,362 @@
+HypnoName: ; 60b37 (18:4b37)
+	text "Hypno"
+	done
+
+ProphecyName: ; 60b3e (18:4b3e)
+	text "Voorspelling"
+	done
+
+ProphecyDescription: ; 60b48 (18:4b48)
+	text "Bekijk tot 3 kaarten van de bovenkant"
+	line "van het deck van elke speler en leg"
+	line "ze in de volgorde die je wilt."
+	done
+
+HypnoDescription: ; 60ba4 (18:4ba4)
+	text "Als hij de ogen kruist met een vijand,"
+	line "gebruikt hij een mengsel van psychische"
+	line "tactieken zoals Hypnose en Verwarring."
+	done
+
+MrMimeName: ; 60c06 (18:4c06)
+	text "Mr. Mime"
+	done
+
+InvisibleWallName: ; 60c10 (18:4c10)
+	text "Invisible Wall"
+	done
+
+InvisibleWallDescription: ; 60c20 (18:4c20)
+	text "Whenever an attack (including your"
+	line "own) does 30 or more damage to Mr."
+	line "Mime (after applying Weakness and"
+	line "Resistance), prevent that damage."
+	line "(Any other effects of attacks still"
+	line "happen.)"
+	done
+
+InvisibleWallDescriptionCont: ; 60cd8 (18:4cd8)
+	text "Deze kracht kan niet worden gebruikt Mr. Mime"
+	line "In Slaap, Verward, of Verlamd is."
+	done
+
+MeditateName: ; 60d21 (18:4d21)
+	text "Mediteren"
+	done
+
+MrMimesMeditateDescription: ; 60d2b (18:4d2b)
+	text "Doet 10 schade plus nog eens 10"
+	line "schade voor elke Schadeteller"
+	line "op de Verdedigende Pokémon."
+	done
+
+BarrierName: ; 60d81 (18:4d81)
+	text "Barrière"
+	done
+
+MrMimeDescription: ; 60d8a (18:4d8a)
+	text "If interrupted while miming, it will"
+	line "slap around the enemy with its broad"
+	line "hands."
+	done
+
+JynxName: ; 60ddc (18:4ddc)
+	text "Jynx"
+	done
+
+DoubleAttackX10Description: ; 60de2 (18:4de2)
+	text "Gooi 2 munten op. Deze Aanval doet"
+	line "10 schade maal het aantal keren kop."
+	done
+
+JynxsMeditateDescription: ; 60e27 (18:4e27)
+	text "Doet 20 schade plus nog eens 10"
+	line "schade voor elke Schadeteller"
+	line "op de Verdedigende Pokémon."
+	done
+
+HumanShapeName: ; 60e7d (18:4e7d)
+	text "Menselijk gevormde"
+	done
+
+JynxDescription: ; 60e8a (18:4e8a)
+	text "Enkel door te mediteren, lanceert"
+	line "de Pokémon een krachtige psychische"
+	line "energieaanval."
+	done
+
+MewtwoName: ; 60ed8 (18:4ed8)
+	text "Mewtwo"
+	done
+
+PsychicName: ; 60ee0 (18:4ee0)
+	text "Psychic"
+	done
+
+PsychicDescription: ; 60ee9 (18:4ee9)
+	text "Does 10 damage plus 10 more damage"
+	line "for each Energiekaart attached to the"
+	line "Defending Pokémon."
+	done
+
+BarrierDescription: ; 60f45 (18:4f45)
+	text "Discard 1 <PSYCHIC> Energiekaart attached to"
+	line "Mewtwo in order to use this attack."
+	line "During your opponent's next turn,"
+	line "prevent all effects of attacks,"
+	line "including damage, done to Mewtwo."
+	done
+
+GeneticName: ; 60ff3 (18:4ff3)
+	text "Genetic"
+	done
+
+Mewtwo1Description: ; 60ffc (18:4ffc)
+	text "A scientist created this Pokémon"
+	line "after years of horrific"
+	line "gene-splicing and DNA engineering"
+	line "experiments."
+	done
+
+EnergyAbsorptionName: ; 61065 (18:5065)
+	text "Energy Absorption"
+	done
+
+EnergyAbsorptionDescription: ; 61078 (18:5078)
+	text "Choose up to 2 Energiekaarten from"
+	line "your Weggooistapel and attach them"
+	line "to Mewtwo."
+	done
+
+PsyburnName: ; 610c7 (18:50c7)
+	text "Psyburn"
+	done
+
+Mewtwo2Description: ; 610d0 (18:50d0)
+	text "Years of genetic experiments"
+	line "resulted in the creation of this"
+	line "never-before-seen violent Pokémon."
+	done
+
+MewName: ; 61132 (18:5132)
+	text "Mew"
+	done
+
+NeutralizingShieldName: ; 61137 (18:5137)
+	text "Neutraliserend Schild"
+	done
+
+NeutralizingShieldDescription: ; 6114c (18:514c)
+	text "Prevent all effects of attacks,"
+	line "including damage, done to Mew by"
+	line "evolved Pokémon (excluding your"
+	line "own). This power stops working while"
+	line "Mew In Slaap, Verward, of"
+	line "Verlamd is."
+	done
+
+NewSpeciesName: ; 611fa (18:51fa)
+	text "New Species"
+	done
+
+Mew1Description: ; 61207 (18:5207)
+	text "So rare that it is still said to be"
+	line "a mirage by many experts. Only a few"
+	line "people have seen it worldwide."
+	done
+
+MysteryAttackName: ; 61270 (18:5270)
+	text "Mystery Attack"
+	done
+
+MysteryAttackDescription: ; 61280 (18:5280)
+	text "Does a random amount of damage to"
+	line "the Defending Pokémon and may cause"
+	line "a random effect to the Defending"
+	line "Pokémon."
+	done
+
+Mew2Description: ; 612f1 (18:52f1)
+	text "When viewed through a microscope, "
+	line "this Pokémon's short, fine, delicate"
+	line "hair can be seen."
+	done
+
+PsywaveName: ; 6134c (18:534c)
+	text "Psywave"
+	done
+
+PsywaveDescription: ; 61355 (18:5355)
+	text "Does 10 damage times the number of"
+	line "Energiekaarten attached to the"
+	line "Defending Pokémon."
+	done
+
+DevolutionBeamName: ; 613a9 (18:53a9)
+	text "Devolution Beam"
+	done
+
+DevolutionBeamDescription: ; 613ba (18:53ba)
+	text "Choose an evolved Pokémon (Your"
+	line "own or your opponent's). Return"
+	line "the highest stage evolution card"
+	line "on that Pokémon to Its player's"
+	line "hand."
+	done
+
+PidgeyName: ; 61442 (18:5442)
+	text "Pidgey"
+	done
+
+TinyBirdName: ; 6144a (18:544a)
+	text "Tiny Bird"
+	done
+
+PidgeyDescription: ; 61455 (18:5455)
+	text "A common sight in forests and woods."
+	line "It flaps its wings at ground level"
+	line "to kick up blinding sand."
+	done
+
+PidgeottoName: ; 614b8 (18:54b8)
+	text "Pidgeotto"
+	done
+
+MirrorMoveName: ; 614c3 (18:54c3)
+	text "Spiegelaanval"
+	done
+
+PidgeottosMirrorMoveDescription: ; 614d0 (18:54d0)
+	text "If Pidgeotto was attacked last turn,"
+	line "do the final result of that attack"
+	line "on Pidgeotto to the Defending"
+	line "Pokémon."
+	done
+
+BirdName: ; 61540 (18:5540)
+	text "Bird"
+	done
+
+PidgeottoDescription: ; 61546 (18:5546)
+	text "Very protective of its sprawling"
+	line "territory, this Pokémon will"
+	line "fiercely peck at any intruder."
+	done
+
+PidgeotName: ; 615a4 (18:55a4)
+	text "Pidgeot"
+	done
+
+SlicingWindName: ; 615ad (18:55ad)
+	text "Slicing Wind"
+	done
+
+SlicingWildDescription: ; 615bb (18:55bb)
+	text "Does 30 damage to 1 of your"
+	line "opponent's Pokémon chosen at random."
+	line "Don't apply Weakness and Resistance"
+	line "for this attack. (Any other effects"
+	line "that would happen after applying"
+	line "Weakness and Resistance still"
+	line "happen.)"
+	done
+
+GaleName: ; 6168d (18:568d)
+	text "Gale"
+	done
+
+GaleDescription: ; 61693 (18:5693)
+	text "Switch Pidgeot with 1 of your"
+	line "Benched Pokémon chosen at random."
+	line "If your opponent has any Benched"
+	line "Pokémon, switch the Defending"
+	line "Pokémon with 1 of them chosen at"
+	line "random. (Do the damage before"
+	line "switching the Pokémon.)"
+	done
+
+Pidgeot1Description: ; 6176a (18:576a)
+	text "This Pokémon flies at Mach 2 speed,"
+	line "seeking prey. Its large talons are"
+	line "feared as wicked weapons."
+	done
+
+HurricaneName: ; 617cc (18:57cc)
+	text "Hurricane"
+	done
+
+HurricaneDescription: ; 617d7 (18:57d7)
+	text "Unless this attack Knocks Out the"
+	line "Defending Pokémon, return the"
+	line "Defending Pokémon and all cards"
+	line "attached to it to your opponent's"
+	line "hand."
+	done
+
+Pidgeot2Description: ; 61860 (18:5860)
+	text "When hunting, it skims the surface"
+	line "of water at high speed to pick off"
+	line "unwary prey such as Magikarp."
+	done
+
+RattataName: ; 618c5 (18:58c5)
+	text "Rattata"
+	done
+
+RatName: ; 618ce (18:58ce)
+	text "Rat"
+	done
+
+RattataDescription: ; 618d3 (18:58d3)
+	text "Bijt alles wanneer hij aanvalt."
+	line "Hij is klein, snel en veelgezien"
+	line "op allerlei plekken."
+	done
+
+RaticateName: ; 6192f (18:592f)
+	text "Raticate"
+	done
+
+SuperFangName: ; 61939 (18:5939)
+	text "Superknauw"
+	done
+
+SuperFangDescription: ; 61945 (18:5945)
+	text "De schade die deze Aanval doet aan"
+	line "de Verdedigende Pokémon is gelijk"
+	line "aan de helft van de resterende IP"
+	line "van de Verdedigende Pokémon (naar"
+	line "boven afgerond naar de"
+	line "dichtsbijzijnde 10)."
+	done
+
+RaticateDescription: ; 619be (18:59be)
+	text "Gebruikt zijn snorharen om zijn"
+	line "evenwicht te bewaren. Hij lijkt"
+	line "langzamer te bewegen"
+	line "als ze worden afgeknipt."
+	done
+
+SpearowName: ; 61a18 (18:5a18)
+	text "Spearow"
+	done
+
+PeckName: ; 61a21 (18:5a21)
+	text "Peck"
+	done
+
+SpearowsMirrorMoveDescription: ; 61a27 (18:5a27)
+	text "If Spearow was attacked last turn,"
+	line "do the final result of that attack"
+	line "on Spearow to the Defending Pokémon."
+	done
+
+SpearowDescription: ; 61a93 (18:5a93)
+	text "Eats bugs in grassy areas. It has to"
+	line "flap its short wings at high speed"
+	line "to stay airborne."
+	done
+
 FearowName: ; 61aee (18:5aee)
 	text "Fearow"
 	done

@@ -307,37 +307,38 @@ Text012f: ; 38bb3 (e:4bb3)
 	done
 
 Text0130: ; 38bc9 (e:4bc9)
-	text "Choose a Pokémon to remove"
-	line "the Damage counter from."
+	text "Kies een Pokémon om de"
+	line "Schadeteller van te verwijderen."
 	done
 
 Text0131: ; 38bfe (e:4bfe)
-	text "Procedure for Curse:"
+	text "Hoe je Vervloeken gebruikt:"
 	line ""
-	line "1. Choose a Pokémon to move the"
-	line "   Damage counter from and press"
-	line "   the A Button."
+	line "1. Kies een Pokémon om de"
+	line "   Schadeteller van te ver-"
+	line "   plaatsen en druk op de A-knop."
 	line ""
-	line "2. Choose a Pokémon to move the"
-	line "   Damage counter to and press"
-	line "   the A Button."
+	line "2. Kies een Pokémon om de Schade-"
+	line "   teller naartoe te verplaatsen"
+	line "   en druk op de A-knop."
 	line ""
-	line "3. Press the B Button to cancel."
+	line "3. Druk op de B-knop om te stoppen."
 	done
 
 Text0132: ; 38cda (e:4cda)
-	text "Choose 2 Energiekaarten from the"
-	line "Weggooistapelto attach to a Pokémon."
+	text "Kies 2 Energiekaarten uit je"
+	line "Weggooistapel om aan"
+	line "een Pokémon te hechten."
 	done
 
 Text0133: ; 38d1e (e:4d1e)
-	text "Choose 2 Energiekaarten from the"
-	line "Weggooistapel for your Hand."
+	text "Kies 2 Energiekaarten uit je"
+	line "Weggooistapel om in je"
+	line "Hand te nemen."
 	done
 
 Text0134: ; 38d5a (e:4d5a)
-	text "Choose an Energy"
-	line "card."
+	text "Kies een Energiekaart."
 	done
 
 Text0135: ; 38d72 (e:4d72)
@@ -853,7 +854,7 @@ Text0195: ; 39f03 (e:5f03)
 	done
 
 Text0196: ; 39f21 (e:5f21)
-	text "Booster Pakje"
+	text "Uitbreidingspakjes"
 	done
 
 Text0197: ; 39f2f (e:5f2f)
@@ -1684,60 +1685,4 @@ Text0233: ; 3bab8 (e:7ab8)
 
 Text0234: ; 3babe (e:7abe)
 	text "Naam"
-	done
-
-Text0235: ; 3bac4 (e:7ac4)
-	text "Er is maar 1 Deck, dus dit"
-	line "Deck kan niet ontmanteld worden."
-	done
-
-Text0236: ; 3bafe (e:7afe)
-	text "Er zitten geen Basis-Pokémon"
-	line "in dit Deck!"
-	done
-
-Text0237: ; 3bb28 (e:7b28)
-	text "Je moet een Basi-Pokémon"
-	line "in je Deck stoppen!"
-	done
-
-Text0238: ; 3bb57 (e:7b57)
-	text "Dit is geen Deck met 60 kaarten!"
-	done
-
-Text0239: ; 3bb73 (e:7b73)
-	text "Er moeten 60 kaarten in je"
-	line "Deck zitten!"
-	done
-
-Text023a: ; 3bb94 (e:7b94)
-	text "Terug gaan naar het origineel?"
-	done
-
-Text023b: ; 3bbb7 (e:7bb7)
-	text "Dit Deck opslaan?"
-	done
-
-Text023c: ; 3bbc8 (e:7bc8)
-	text "Stoppen met het Deck aanpassen?"
-	done
-
-Text023d: ; 3bbe2 (e:7be2)
-	text "Dit Deck ontmantelen?"
-	done
-
-Text023e: ; 3bbf8 (e:7bf8)
-	text "Geen kaarten gekozen."
-	done
-
-YourPokemonText: ; 3bc0a (e:7c0a)
-	text "Jouw Pokémon"
-	done
-
-YourDiscardPileText2: ; 3bc18 (e:7c18)
-	text "Jouw Weggooistapel"
-	done
-
-YourHandText: ; 3bc2b (e:7c2b)
-	text "Jouw Hand"
 	done

@@ -1,3 +1,70 @@
+Text065b: ; 4f148 (13:7148)
+	text "I don't like people who think"
+	line "too highly of themselves."
+	line "That's why I don't like the "
+	line "members of the Psychic Club."
+	line "I wish I could knock them off their"
+	line "high horses!"
+	line "Would you try to defeat Murray,"
+	line "the Psychic Club Master?"
+	line "If you defeat Murray, I'll give you"
+	line "something really valuable!"
+	done
+
+Text065c: ; 4f264 (13:7264)
+	text "Grant the old man's wish?"
+	done
+
+Text065d: ; 4f27f (13:727f)
+	text "I understand..."
+	line "Murray is very skilled."
+	line "Defeating Murray is no "
+	line "easy task."
+	done
+
+Text065e: ; 4f2cb (13:72cb)
+	text "Good!"
+	line "I'll be waiting here for you!"
+	done
+
+Text065f: ; 4f2f0 (13:72f0)
+	text "I see you still can't defeat "
+	line "Murray. He's very skilled, but "
+	line "don't give up! I'm pulling for "
+	line "you! If you defeat Murray, I'll "
+	line "give you something very valuable."
+	done
+
+Text0660: ; 4f392 (13:7392)
+	text "I'm not very fond of people who"
+	line "think too highly of themselves."
+	line "That's why I don't like the "
+	line "members of the Psychic Club."
+	line "Hey!?! Is that the Psychic Medal?"
+	line "Did you defeat Murray!?!"
+	line "I feel so much better!"
+	line "Here, let me give you this"
+	line "Mewtwo card!"
+	done
+
+Text0661: ; 4f487 (13:7487)
+	text "What? Is that the Psychic Medal?"
+	line "Did you defeat Murray!?!"
+	line "I feel so much better!"
+	line "Here, let me give you this"
+	line "Mewtwo card."
+	done
+
+Text0662: ; 4f501 (13:7501)
+	text "Thank you for defeating Murray!"
+	done
+
+Text0663: ; 4f522 (13:7522)
+	text "I feel so much better since you"
+	line "defeated Murray!"
+	line "Thank you for defeating Murray!"
+	done
+
 Text0664: ; 4f574 (13:7574)
 	text "Hi, <RAMNAME>."
 	line "So you've finally come this far?"
@@ -66,7 +133,7 @@ Text066c: ; 4f951 (13:7951)
 	done
 
 Text066d: ; 4f9d8 (13:79d8)
-	text "Would you like to Duel Daniel?"
+	text "Wil je Dueleren met Daniel?"
 	done
 
 Text066e: ; 4f9f8 (13:79f8)
@@ -111,7 +178,7 @@ Text0674: ; 4fb66 (13:7b66)
 	done
 
 Text0675: ; 4fbc0 (13:7bc0)
-	text "Would you like to Duel Stephanie?"
+	text "Wil je Dueleren met Stephanie?"
 	done
 
 Text0676: ; 4fbe3 (13:7be3)
@@ -168,7 +235,7 @@ Text067e: ; 4fe6c (13:7e6c)
 	done
 
 Text067f: ; 4fe9b (13:7e9b)
-	text "Would you like to Duel Murray?"
+	text "Wil je Dueleren met Murray?"
 	done
 
 Text0680: ; 4febb (13:7ebb)
@@ -278,7 +345,7 @@ Text068e: ; 5044a (14:444a)
 	done
 
 Text068f: ; 504df (14:44df)
-	text "Would you like to Duel Jessica?"
+	text "Wil je Dueleren met Jessica?"
 	done
 
 Text0690: ; 50500 (14:4500)
@@ -435,7 +502,7 @@ Text06a5: ; 50bc0 (14:4bc0)
 	done
 
 Text06a6: ; 50c49 (14:4c49)
-	text "Would you like to Duel John?"
+	text "Wil je Dueleren met John?"
 	done
 
 Text06a7: ; 50c67 (14:4c67)
@@ -473,7 +540,7 @@ Text06ac: ; 50d8b (14:4d8b)
 	done
 
 Text06ad: ; 50df1 (14:4df1)
-	text "Would you like to Duel Adam?"
+	text "Wil je Dueleren met Adam?"
 	done
 
 Text06ae: ; 50e0f (14:4e0f)
@@ -510,7 +577,7 @@ Text06b3: ; 50f03 (14:4f03)
 	done
 
 Text06b4: ; 50f60 (14:4f60)
-	text "Would you like to Duel Jonathan?"
+	text "Wil je Dueleren met Jonathan?"
 	done
 
 Text06b5: ; 50f82 (14:4f82)
@@ -574,7 +641,7 @@ Text06bd: ; 512c6 (14:52c6)
 	done
 
 Text06be: ; 51327 (14:5327)
-	text "Would you like to Duel Ken?"
+	text "Wil je Dueleren met Ken?"
 	done
 
 Text06bf: ; 51344 (14:5344)
@@ -633,7 +700,7 @@ Text06c7: ; 515bf (14:55bf)
 Text06c8: ; 515f4 (14:55f4)
 	text "Greetings."
 	line "Welcome to the Battle Center!"
-	line "Would you like to Duel a friend?"
+	line "Wil je Dueleren met een vriend?"
 	done
 
 Text06c9: ; 5163f (14:563f)
@@ -752,7 +819,7 @@ Text06d9: ; 51b2e (14:5b2e)
 	done
 
 Text06da: ; 51b49 (14:5b49)
-	text "Would you like to Duel Michael?"
+	text "Wil je Dueleren met Michael?"
 	done
 
 Text06db: ; 51b6a (14:5b6a)
@@ -805,7 +872,7 @@ Text06e1: ; 51d9b (14:5d9b)
 	done
 
 Text06e2: ; 51e6e (14:5e6e)
-	text "Would you like to Duel Brittany?"
+	text "Wil je Dueleren met Brittany?"
 	done
 
 Text06e3: ; 51e90 (14:5e90)
@@ -1025,7 +1092,7 @@ Text0705: ; 527b0 (14:67b0)
 	done
 
 Text0706: ; 52812 (14:6812)
-	text "Would you like to Duel Kristin?"
+	text "Wil je Dueleren met Kristin?"
 	done
 
 Text0707: ; 52833 (14:6833)
@@ -1079,168 +1146,4 @@ Text070e: ; 52abf (14:6abf)
 	line "It's you again."
 	line "If you don't mind,"
 	line "would you Duel with me?"
-	done
-
-Text070f: ; 52aff (14:6aff)
-	text "Would you like to Duel Heather?"
-	done
-
-Text0710: ; 52b20 (14:6b20)
-	text "I'll be glad to Duel you"
-	line "any time you like."
-	done
-
-Text0711: ; 52b4d (14:6b4d)
-	text "Are 4 Prizes OK?"
-	line "Let's begin!"
-	done
-
-Text0712: ; 52b6c (14:6b6c)
-	text "I can't believe"
-	line "I could lose..."
-	done
-
-Text0713: ; 52b8d (14:6b8d)
-	text "I can't believe"
-	line "I would lose again..."
-	done
-
-Text0714: ; 52bb4 (14:6bb4)
-	text "I need to practice more..."
-	done
-
-Text0715: ; 52bd0 (14:6bd0)
-	text "Nikki is visiting"
-	line "Ishihara."
-	line "Why don't you go see her"
-	line "at Ishihara's house."
-	done
-
-Text0716: ; 52c1b (14:6c1b)
-	text "Well, that wasn't much of a Duel!"
-	line "I'll be glad to Duel you"
-	line "any time you like."
-	done
-
-Text0717: ; 52c6a (14:6c6a)
-	text "I wonder if your last win "
-	line "was just luck?"
-	line "I will be glad to Duel you"
-	line "any time you like."
-	done
-
-Text0718: ; 52cc3 (14:6cc3)
-	text "I'm Nikki, the Master of the"
-	line "Grass Club."
-	line "I'm sorry I kept you waiting."
-	line "Shall we duel?"
-	done
-
-Text0719: ; 52d1a (14:6d1a)
-	text "Hello, <RAMNAME>."
-	line "Did you come for a Duel?"
-	done
-
-Text071a: ; 52d3e (14:6d3e)
-	text "Would you like to Duel Nikki?"
-	done
-
-Text071b: ; 52d5d (14:6d5d)
-	text "Oh...You do not wish to duel?"
-	line "I'll be here at the Club for "
-	line "a while, so please come by "
-	line "any time you like."
-	done
-
-Text071c: ; 52dc9 (14:6dc9)
-	text "Then why don't you stop and "
-	line "gaze at our flowers for a while."
-	line "Looking at beautiful flowers"
-	line "makes you feel so serene."
-	done
-
-Text071d: ; 52e3f (14:6e3f)
-	text "Shall we play with 6 Prizes?"
-	line "Please go easy on me."
-	done
-
-Text071e: ; 52e73 (14:6e73)
-	text "We'll play with 6 Prizes, as usual."
-	line "Please go easy on me."
-	done
-
-Text071f: ; 52eae (14:6eae)
-	text "Oh, no! I lost!"
-	line "Well, you truly are skilled."
-	line "Maybe one day you will inherit"
-	line "the Legendary Pokémon Cards."
-	line "Please allow me to give you"
-	line "this Grass Medal."
-	done
-
-Text0720: ; 52f46 (14:6f46)
-	text "Oh, no!"
-	line "How could I lose?"
-	line "Please allow me to give you"
-	line "this Booster Pack."
-	done
-
-Text0721: ; 52f90 (14:6f90)
-	text "Please"
-	line "take this, too."
-	done
-
-Text0722: ; 52fa8 (14:6fa8)
-	text "My Duel with you was..."
-	line "quite fun!"
-	line "Please allow me"
-	line "to Duel you again!"
-	done
-
-Text0723: ; 52fef (14:6fef)
-	text "I am Nikki, the Grass Club "
-	line "Master. What? You were looking "
-	line "for me? Oh my..."
-	line "I'm very sorry to keep you waiting."
-	line "I was doing a little research here."
-	line "I assume you would like to Duel?"
-	line "I only Duel at the Club."
-	line "I'm sorry, but could you meet me"
-	line "at the Grass Club?"
-	line "I will head back to the Grass Club"
-	line "and wait for you there."
-	done
-
-Text0724: ; 5312e (14:712e)
-	text "Thank you very much, Ishihara."
-	line "Your books were very helpful!"
-	line "You are indeed the Number 1"
-	line "Pokémon Trading Card Collector."
-	done
-
-Text0725: ; 531a8 (14:71a8)
-	text "Oh, no!"
-	line "You give me too much credit..."
-	line "If you need to research anything,"
-	line "please come see me again!"
-	done
-
-Text0726: ; 5320c (14:720c)
-	text "Thank you very much, Ishihara."
-	line "If you will excuse me..."
-	done
-
-Text0727: ; 53245 (14:7245)
-	text "Hello, nice to meet you."
-	line "I'm Ishihara."
-	line "I'm a Pokémon Card Collector."
-	line "I love collecting cards."
-	line "I see you also love"
-	line "Pokémon Cards."
-	line "Please come see me again."
-	line "We must trade some sometime."
-	line "OH!"
-	line "If you're playing with the cards,"
-	line "Please read some of the books here."
-	line "I believe they will be helpful."
 	done
