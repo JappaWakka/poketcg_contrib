@@ -1124,7 +1124,8 @@ Text00ee: ; 37eb8 (d:7eb8)
 	line "Als het kop is, is de Aanval succesvol!"
 	done
 
-Text00ef: ; 37eea (d:7eea)
+
+TrainerCardSuccessCheckText: ; 37eea (d:7eea)
 	text "Trainerkaart succes-controle!"
 	line "Als het kop is, is hij succesvol!"
 	done
