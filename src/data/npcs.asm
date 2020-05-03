@@ -121,7 +121,7 @@ Data_119dd:
 	db $01
 	db $02
 	db $00
-	db $26
+	db $0e ; Dr. Mason's Palette
 	db $00
 	dw $5727 ; Pointer to NPC Data
 	db $ac
