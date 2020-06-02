@@ -172,7 +172,7 @@ IshiharaData:
 	db $04
 	db $22
 	db $00
-	dw Script_Ishihara ; Pointer to Script
+	dw Script_ISHIHARA ; Pointer to Script
 	tx Text03ae
 	db $00
 	db $00

@@ -1,27 +1,81 @@
+Text05d7: ; 4ba32 (12:7a32)
+	text "Pokémon damage defending Pokémon "
+	line "by attacking. Pokémon need Energy "
+	line "cards in order to attack."
+	line "For example, the Energy required "
+	line "for Seaking's Waterfall is <WATER><COLORLESS>."
+	line "<WATER><COLORLESS> stands for 1 Water Energy "
+	line "card and another Energy card of "
+	line "any type. The Energy required "
+	line "differs according to the attack."
+	done
+
+Text05d8: ; 4bb56 (12:7b56)
+	text "To switch your Active Pokémon"
+	line "with a Bench Pokémon, choose "
+	line "the Retreat command. If the "
+	line "Active Pokémon is in danger,"
+	line "move it back to your Bench."
+	line "Energy is required in order"
+	line "to Retreat. The number of "
+	line "Energy cards required varies,"
+	line "depending on the Pokémon."
+	done
+
+Text05d9: ; 4bc58 (12:7c58)
+	text "There are 3 types of Pokémon cards:"
+	line "Basic Pokémon, Stage 1 Pokémon and "
+	line "Stage 2 Pokémon. Squirtle is a "
+	line "Basic, Wartortle a Stage 1 and "
+	line "Blastoise a Stage 2 Pokémon."
+	line "Basic Pokémon are the only cards"
+	line "that can be put directly into play."
+	line "A Basic Pokémon in play can be"
+	line "evolved to a Stage 1 Pokémon. A"
+	line "Stage 1 Pokémon in the Play Area "
+	line "can then be evolved to a Stage 2 "
+	line "Pokémon. Therefore, Squirtle is "
+	line "needed in order to play Wartortle,"
+	line "and Wartortle is needed in"
+	line "order to play Blastoise."
+	done
+
+Text05da: ; 4be3e (12:7e3e)
+	text "Some Pokémon have special"
+	line "abilities called Pokémon Powers."
+	line "Some Pokémon Powers are used as"
+	line "soon as the Pokémon is played,"
+	line "while others must be used by"
+	line "choosing the PKMN Power command."
+	line "There are many different Pokémon"
+	line "Powers, so read each card's text"
+	line "carefully."
+	done
+
 Text05db: ; 4c000 (13:4000)
 	text "Your Turn ends after you Attack."
 	line "If you do not have enough energy"
 	line "to attack, or if your Active Pokémon"
 	line "cannot move due to Paralysis or"
 	line "Sleep, you can end your turn by"
-	line "choosing the DONE command."
+	line "choosing the Done command."
 	line "This will cause your turn to end"
 	line "and your opponent's turn to begin."
-	line "You should choose DONE if you are "
+	line "You should choose Done if you are "
 	line "unable to do anything."
 	done
 
 Text05dc: ; 4c141 (13:4141)
 	text "Generally, the win or loss of a "
-	line "duel is decided by prizes."
+	line "Duel is decided by Prizes."
 	line "Prizes are cards that you may"
-	line "draw when you knock out one of"
+	line "draw when you Knock Out one of"
 	line "your opponent's Pokémon."
 	line "You win if you Knock Out as many"
 	line "of your opponent's Pokémon as there"
 	line "are Prizes to be drawn. You "
-	line "will lose the duel if you have"
-	line "no cards in your deck at the start "
+	line "will lose the Duel if you have"
+	line "no cards in your Deck at the start "
 	line "of your turn or if there are "
 	line "no Pokémon in your Play Area,"
 	line "so be careful!"
@@ -40,29 +94,29 @@ Text05dd: ; 4c2c4 (13:42c4)
 
 Text05de: ; 4c3cd (13:43cd)
 	text "First, learning how to use your "
-	line "deck is very important. Duel "
+	line "Deck is very important. Duel "
 	line "against many people to check your "
 	line "Deck's performance. The Auto Deck "
 	line "Machines are handy when you want "
-	line "to rebuild your deck. If you "
+	line "to rebuild your Deck. If you "
 	line "have the required cards, it "
 	line "will automatically build a Deck "
 	line "for you. Collect new cards to "
-	line "build new decks!"
+	line "build new Decks!"
 	done
 
 Text05df: ; 4c501 (13:4501)
 	text "Are you getting the hang of the"
 	line "Pokémon Trading Card Game?"
-	line "How about building a deck yourself?"
+	line "How about building a Deck yourself?"
 	line "It's a great feeling to win with "
-	line "a deck you built on your own."
+	line "a Deck you built on your own."
 	done
 
 Text05e0: ; 4c5a1 (13:45a1)
 	text "So, did you build your own Deck?"
 	line "The strength or weakness of your"
-	line "deck depends only on how you play!"
+	line "Deck depends only on how you play!"
 	line "In other words, it all depends on"
 	line "the skill of the player! You must "
 	line "become a skilled Card Master!"
@@ -100,7 +154,7 @@ Text05e3: ; 4c86f (13:486f)
 	line "the Pokémon Trading Card Game?"
 	line "So you, too, finally want to "
 	line "start playing the card game. "
-	line "Well, dueling is more fun than "
+	line "Well, Dueling is more fun than "
 	line "just collecting cards!"
 	line "First, you should try playing "
 	line "with a Practice Deck. "
@@ -116,7 +170,7 @@ Text05e4: ; 4c9d7 (13:49d7)
 	done
 
 Text05e5: ; 4c9f2 (13:49f2)
-	text "OK!"
+	text "Okay!"
 	line "Let's give it a try!"
 	done
 
@@ -131,7 +185,7 @@ Text05e7: ; 4ca2a (13:4a2a)
 	done
 
 Text05e8: ; 4ca52 (13:4a52)
-	text "OK, <RAMNAME>."
+	text "Okay, <RAMNAME>."
 	line "What do you want to ask about?"
 	done
 
@@ -151,7 +205,7 @@ Text05ea: ; 4ca87 (13:4a87)
 	line "It might be easier if you read the"
 	line "Pokémon Trading Card Game"
 	line "Instruction Booklet while we play. "
-	line "OK then, let's start your "
+	line "Okay then, let's start your "
 	line "practice game!"
 	done
 
@@ -159,9 +213,9 @@ Text05eb: ; 4cbfe (13:4bfe)
 	text "Basically, this is how the Pokémon "
 	line "Trading Card Game is played:"
 	line "It's a game in which you try to "
-	line "knock out as many of your "
+	line "Knock Out as many of your "
 	line "opponent's Pokémon as there are "
-	line "prizes. That's the gist of it..."
+	line "Prizes. That's the gist of it..."
 	done
 
 Text05ec: ; 4ccbe (13:4cbe)
@@ -169,12 +223,12 @@ Text05ec: ; 4ccbe (13:4cbe)
 	done
 
 Text05ed: ; 4cce1 (13:4ce1)
-	text "OK. Then let's begin another"
+	text "Okay. Then let's begin another"
 	line "practice game!"
 	done
 
 Text05ee: ; 4cd0e (13:4d0e)
-	text "OK, but if there's anything "
+	text "Okay, but if there's anything "
 	line "you don't understand, it's"
 	line "a good idea to practice again."
 	done
@@ -191,7 +245,7 @@ Text05ef: ; 4cd66 (13:4d66)
 	done
 
 Text05f0: ; 4ce5a (13:4e5a)
-	text "Now then, let's build your deck."
+	text "Now then, let's build your Deck."
 	line "Did you bring your cards?"
 	done
 
@@ -212,7 +266,7 @@ Text05f3: ; 4cf12 (13:4f12)
 	done
 
 Text05f4: ; 4cf18 (13:4f18)
-	text "OK, a <RAMTEXT>!"
+	text "Okay, a <RAMTEXT>!"
 	line "Here are the remaining cards!"
 	done
 
@@ -225,7 +279,7 @@ Text05f5: ; 4cf40 (13:4f40)
 	done
 
 Text05f6: ; 4cf67 (13:4f67)
-	text "You should duel with many different "
+	text "You should Duel with many different "
 	line "people. Why don't you go to one of "
 	line "the Card Clubs. There are many "
 	line "people playing at the Clubs."
@@ -247,27 +301,27 @@ Text05f8: ; 4d0a1 (13:50a1)
 	line "to this game!"
 	line "Were you able to build all the Decks"
 	line "here in this Auto Deck Machine?"
-	line "There are as many duels as there"
-	line "are decks to duel with! Keep "
-	line "dueling with Pokémon Trading Cards!"
+	line "There are as many Duels as there"
+	line "are Decks to Duel with! Keep "
+	line "Dueling with Pokémon Trading Cards!"
 	done
 
 Text05f9: ; 4d1af (13:51af)
 	text "This machine is the Deck"
 	line "Save Machine. You can save the"
 	line "configurations of your modified"
-	line "decks in this machine. Once you"
-	line "save a deck, this machine can"
+	line "Decks in this machine. Once you"
+	line "save a Deck, this machine can"
 	line "rebuild it for you any time,"
 	line "as long as you have the necessary"
 	line "cards. When you build a great"
-	line "deck, you should save it here."
+	line "Deck, you should save it here."
 	done
 
 Text05fa: ; 4d2c2 (13:52c2)
 	text "Congratulations on inheriting"
 	line "the Legendary Pokémon Cards!!!"
-	line "Please save your deck in this"
+	line "Please save your Deck in this"
 	line "Deck Save Machine - "
 	line "the Deck with the Legendary "
 	line "Pokémon Cards!!!"
@@ -280,7 +334,7 @@ Text05fb: ; 4d361 (13:5361)
 	line "Club Masters! Place the Medals "
 	line "here after you win them."
 	line "Then you'll be able to build"
-	line "new decks!!!"
+	line "new Decks!!!"
 	done
 
 Text05fc: ; 4d423 (13:5423)
@@ -290,15 +344,15 @@ Text05fc: ; 4d423 (13:5423)
 	done
 
 Text05fd: ; 4d466 (13:5466)
-	text "Ho-ho! Won't you duel me to"
-	line "test your deck?"
+	text "Ho-ho! Won't you Duel me to"
+	line "test your Deck?"
 	line "If you win, I'll give you"
 	line "a Booster Pack - but it only "
 	line "contains Energy cards."
 	done
 
 Text05fe: ; 4d4e2 (13:54e2)
-	text "Would you like to duel Aaron?"
+	text "Would you like to Duel Aaron?"
 	done
 
 Text05ff: ; 4d501 (13:5501)
@@ -307,8 +361,8 @@ Text05ff: ; 4d501 (13:5501)
 	done
 
 Text0600: ; 4d531 (13:5531)
-	text "Ho-ho! Please choose the deck"
-	line "you wish to duel against."
+	text "Ho-ho! Please choose the Deck"
+	line "you wish to Duel against."
 	done
 
 Text0601: ; 4d56a (13:556a)
@@ -316,8 +370,8 @@ Text0601: ; 4d56a (13:556a)
 	done
 
 Text0602: ; 4d574 (13:5574)
-	text "Ho-ho! OK, let's start a "
-	line "4-prize match!"
+	text "Ho-ho! Okay, let's start a "
+	line "4-Prize Match!"
 	done
 
 Text0603: ; 4d59e (13:559e)
@@ -374,7 +428,7 @@ Text060d: ; 4d74b (13:574b)
 Text060e: ; 4d767 (13:5767)
 	text "Greetings!"
 	line "Welcome to the Lightning Club!"
-	line "At this club, we use decks made up"
+	line "At this Club, we use Decks made up"
 	line "mostly of Lightning Pokémon."
 	line "Would you like to get charged up"
 	line "with us?"
@@ -433,7 +487,7 @@ Text0615: ; 4da6d (13:5a6d)
 	text "You're gonna trade me your"
 	line ""
 	text "<Lv>35 Electabuzz? Way cool, kid!"
-	line "OK, I'll trade you my"
+	line "Okay, I'll trade you my"
 	line ""
 	text "<Lv>20 Electabuzz for it!"
 	done
@@ -476,12 +530,12 @@ Text061b: ; 4dca0 (13:5ca0)
 	text "Isn't Pikachu totally cute?"
 	line "My heart skips a beat whenever"
 	line "I see those cute little eyes!"
-	line "Hey, do you want to duel my "
+	line "Hey, do you want to Duel my "
 	line "Pikachu Deck?"
 	done
 
 Text061c: ; 4dd25 (13:5d25)
-	text "Would you like to duel Jennifer?"
+	text "Would you like to Duel Jennifer?"
 	done
 
 Text061d: ; 4dd47 (13:5d47)
@@ -490,7 +544,7 @@ Text061d: ; 4dd47 (13:5d47)
 	done
 
 Text061e: ; 4dd83 (13:5d83)
-	text "OK then! Let's play with 4 Prizes!"
+	text "Okay then! Let's play with 4 Prizes!"
 	done
 
 Text061f: ; 4dda7 (13:5da7)
@@ -512,11 +566,11 @@ Text0622: ; 4de1a (13:5e1a)
 	line "the opponent's Bench!"
 	line "Lightning Pokémon are the toughest"
 	line "Pokémon! How about it?"
-	line "You want to duel me?"
+	line "You want to Duel me?"
 	done
 
 Text0623: ; 4de9d (13:5e9d)
-	text "Would you like to duel Nicholas?"
+	text "Would you like to Duel Nicholas?"
 	done
 
 Text0624: ; 4debf (13:5ebf)
@@ -525,7 +579,7 @@ Text0624: ; 4debf (13:5ebf)
 	done
 
 Text0625: ; 4def6 (13:5ef6)
-	text "OK! Let's start!"
+	text "Okay! Let's start!"
 	line "1 Match with 4 Prizes!"
 	done
 
@@ -559,7 +613,7 @@ Text062a: ; 4e076 (13:6076)
 	done
 
 Text062b: ; 4e097 (13:6097)
-	text "What? a Pokémon Trading Card duel?"
+	text "What? a Pokémon Trading Card Duel?"
 	line "I'll be glad to Duel any time!"
 	done
 
@@ -568,12 +622,12 @@ Text062c: ; 4e0da (13:60da)
 	done
 
 Text062d: ; 4e0fb (13:60fb)
-	text "Oh, OK."
+	text "Oh, okay."
 	line "I'll Duel you any time."
 	done
 
 Text062e: ; 4e11c (13:611c)
-	text "OK, 4 Prizes!"
+	text "Okay, 4 Prizes!"
 	line "Ready? Let's do it!"
 	done
 
@@ -583,7 +637,7 @@ Text062f: ; 4e13f (13:613f)
 	done
 
 Text0630: ; 4e179 (13:6179)
-	text "I'll duel you any time!"
+	text "I'll Duel you any time!"
 	line "Come see me again!"
 	done
 
@@ -615,7 +669,7 @@ Text0634: ; 4e2cc (13:62cc)
 	done
 
 Text0635: ; 4e326 (13:6326)
-	text "Would you like to duel Isaac?"
+	text "Would you like to Duel Isaac?"
 	done
 
 Text0636: ; 4e345 (13:6345)
@@ -644,7 +698,7 @@ Text0639: ; 4e444 (13:6444)
 
 Text063a: ; 4e46d (13:646d)
 	text "I'm going to polish my card skills,"
-	line "so come duel again."
+	line "so come Duel again."
 	done
 
 Text063b: ; 4e4a6 (13:64a6)
@@ -765,7 +819,7 @@ Text064b: ; 4eb4f (13:6b4f)
 	text "So you won the second Medal?"
 	line "You must have been really lucky!"
 	line "I'll see how good you really are!"
-	line "Come on, let's duel!"
+	line "Come on, let's Duel!"
 	line "We'll play with 6 Prizes!"
 	line "If you win, I'll give you a really"
 	line "rare card!"
@@ -837,20 +891,20 @@ Text0654: ; 4ef34 (13:6f34)
 	line "It doesn't have any weaknesses, "
 	line "and it's difficult for opponents'"
 	line "attacks to cause damage!"
-	line "Would you like to duel me?"
+	line "Would you like to Duel me?"
 	done
 
 Text0655: ; 4effe (13:6ffe)
-	text "Would you like to duel Robert?"
+	text "Would you like to Duel Robert?"
 	done
 
 Text0656: ; 4f01e (13:701e)
 	text "Oh, man! You're boring!"
-	line "Won't anyone duel me?"
+	line "Won't anyone Duel me?"
 	done
 
 Text0657: ; 4f04d (13:704d)
-	text "A single match with 4 prizes!"
+	text "A single Match with 4 Prizes!"
 	line "Come on, my precious ghosts!"
 	line "Let's make his Pokémon disappear!"
 	done
@@ -861,13 +915,13 @@ Text0658: ; 4f0ab (13:70ab)
 
 Text0659: ; 4f0cc (13:70cc)
 	text "I won't lose next time!"
-	line "Let's duel again!"
+	line "Let's Duel again!"
 	done
 
 Text065a: ; 4f0f7 (13:70f7)
 	text "I told you my Ghost Deck was "
 	line "strong! Please Duel me again "
-	line "sometime, OK?  Bye!"
+	line "sometime, okay?  Bye!"
 	done
 
 Text065b: ; 4f148 (13:7148)
@@ -954,7 +1008,7 @@ Text0665: ; 4f640 (13:7640)
 	line "to inherit the Legendary Cards - "
 	line "that's why we play against so many "
 	line "different people. I just lost a "
-	line "duel, so I can't play right now."
+	line "Duel, so I can't play right now."
 	done
 
 Text0666: ; 4f70e (13:770e)
@@ -979,14 +1033,14 @@ Text0669: ; 4f800 (13:7800)
 	text "What do you think Murray's doing"
 	line "over there in the corner?"
 	line "He's thinking about how to "
-	line "duel using his new cards."
+	line "Duel using his new cards."
 	line "We strive to better ourselves"
 	line "here at the Psychic Club."
 	done
 
 Text066a: ; 4f8aa (13:78aa)
 	text "You still haven't won any Medals."
-	line "You aren't qualified to duel me."
+	line "You aren't qualified to Duel me."
 	line "Go to some other Club and win"
 	line "a Medal first!"
 	done
@@ -999,136 +1053,21 @@ Text066b: ; 4f91b (13:791b)
 Text066c: ; 4f951 (13:7951)
 	text "Murray finally came up with a new "
 	line "strategy. He's in a very good mood,"
-	line "so he'll probably duel you now."
+	line "so he'll probably Duel you now."
 	line "By the way,"
-	line "Would you duel me?"
+	line "Would you Duel me?"
 	done
 
 Text066d: ; 4f9d8 (13:79d8)
-	text "Would you like to duel Daniel?"
+	text "Would you like to Duel Daniel?"
 	done
 
 Text066e: ; 4f9f8 (13:79f8)
-	text "Are you afraid to duel?"
+	text "Are you afraid to Duel?"
 	line "Well, not that I care!"
 	done
 
 Text066f: ; 4fa28 (13:7a28)
 	text "Let's play with 4 Prizes."
-	line "OK, here we go!"
-	done
-
-Text0670: ; 4fa53 (13:7a53)
-	text "You're no ordinary player if "
-	line "you can defeat me!"
-	done
-
-Text0671: ; 4fa85 (13:7a85)
-	text "Next time we play, I'm going "
-	line "to win!"
-	done
-
-Text0672: ; 4faac (13:7aac)
-	text "You're still not good enough"
-	line "to defeat me!"
-	line "I'll Duel you any time you want."
-	done
-
-Text0673: ; 4faf9 (13:7af9)
-	text "I can see the future..."
-	line "You cannot defeat me."
-	line "But if you win 2 Medals, maybe..."
-	line "Then..."
-	line "I would Duel you..."
-	done
-
-Text0674: ; 4fb66 (13:7b66)
-	text "You've won quite a few Medals."
-	line "OK...Let's duel."
-	line "But I see the future..."
-	line "You will lose..."
-	done
-
-Text0675: ; 4fbc0 (13:7bc0)
-	text "Would you like to duel Stephanie?"
-	done
-
-Text0676: ; 4fbe3 (13:7be3)
-	text "Yes, I understand."
-	line "Losing is scary, isn't it?"
-	done
-
-Text0677: ; 4fc12 (13:7c12)
-	text "OK, a single Match with 4 Prizes!"
-	line "Here we go!"
-	done
-
-Text0678: ; 4fc41 (13:7c41)
-	text "I can't believe my prediction"
-	line "was wrong..."
-	done
-
-Text0679: ; 4fc6d (13:7c6d)
-	text "I see a vision..."
-	line "You're dueling me again."
-	done
-
-Text067a: ; 4fc99 (13:7c99)
-	text "I told you that you would lose..."
-	line "I have the ability to foretell"
-	line "the future! I see a vision... "
-	line "You're dueling me again!"
-	done
-
-Text067b: ; 4fd13 (13:7d13)
-	text "Let me see... if this happens..."
-	line "then that... so... ummm..."
-	done
-
-Text067c: ; 4fd50 (13:7d50)
-	text "Club Master Murray doesn't listen"
-	line "to what people are saying!"
-	done
-
-Text067d: ; 4fd8e (13:7d8e)
-	text "Hi, I'm Murray, Master of the "
-	line "Psychic Club. You're the one "
-	line "who's visiting the Clubs to win "
-	line "the Medals. How do I know this?"
-	line "Because I'm Psychic!"
-	line "OK, let me test my new card"
-	line "strategy... against your deck!"
-	line "Are you ready?"
-	done
-
-Text067e: ; 4fe6c (13:7e6c)
-	text "Hi! It's you again."
-	line "Are you ready for a duel?"
-	done
-
-Text067f: ; 4fe9b (13:7e9b)
-	text "Would you like to duel Murray?"
-	done
-
-Text0680: ; 4febb (13:7ebb)
-	text "OK. Come back when you're ready."
-	done
-
-Text0681: ; 4fedd (13:7edd)
-	text "When you duel me, it's for 6 Prizes."
-	line "Shall we start then!?!"
-	done
-
-Text0682: ; 4ff1a (13:7f1a)
-	text "Huh!?! I lost!"
-	line "Hmmmm..."
-	line "Well, you must be pretty good if"
-	line "you're trying to inherit"
-	line "the Legendary Pokémon Cards."
-	line "Here, take this Psychic Medal."
-	done
-
-Text0683: ; 4ffa9 (13:7fa9)
-	text "And here, take this"
-	line "LABORATORY Booster Pack!"
+	line "Okay, here we go!"
 	done

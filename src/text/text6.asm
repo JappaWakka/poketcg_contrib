@@ -1,7 +1,70 @@
+Text051b: ; 47bb6 (11:7bb6)
+	text "Hi, <RAMNAME>."
+	line "What are you doing here?"
+	done
+
+Text051c: ; 47bd7 (11:7bd7)
+	text "The Challenge Cup is over! I"
+	line "defeated 3 opponents and won"
+	line "the Prize - <Lv>60 Mewtwo!"
+	line "I guess you could try entering"
+	line "the next Challenge Cup, but "
+	line "you won't have a chance since "
+	line "I'll win that one, too!"
+	line "See ya! Ha ha ha ha ha ha!"
+	done
+
+Text051d: ; 47cb9 (11:7cb9)
+	text "Hey, <RAMNAME>."
+	line "We meet again."
+	done
+
+Text051e: ; 47cd1 (11:7cd1)
+	text "No matter who enters the Challenge"
+	line "Cup, I'll be the winner! "
+	line ""
+	text "<Lv>8 Mew, this Cup's Prize, will "
+	line "belong to me! Why don't you just"
+	line "give up and go home!"
+	line "See ya! Ha ha ha ha ha ha!"
+	done
+
+Text051f: ; 47d82 (11:7d82)
+	text "Hey, it's <RAMNAME> - the"
+	line "loser of the Challenge Cup!"
+	done
+
+Text0520: ; 47db1 (11:7db1)
+	text "That was a close one for me!"
+	line "I lost to the third opponent!"
+	line "But I'll win the next Challenge "
+	line "Cup! And of course, I'll pulverize "
+	line "you! See ya! Ha ha ha ha ha!"
+	done
+
+Text0521: ; 47e4f (11:7e4f)
+	text "Hey, isn't that <RAMNAME>?"
+	line "Late as always!"
+	done
+
+Text0522: ; 47e73 (11:7e73)
+	text "The Challenge Cup is already"
+	line "over! What? Who won?"
+	line "Who do you expect!?! Me, of "
+	line "course! The Prize belongs to"
+	line "me! <Lv>8 Mew! See ya!"
+	line "Ha ha ha ha ha ha!"
+	done
+
+Text0523: ; 47f08 (11:7f08)
+	text "Hey, <RAMNAME>!"
+	line "What are you doing here?"
+	done
+
 Text0524: ; 48000 (12:4000)
 	text "The Challenge Cup is over already! "
 	line "Too bad you couldn't enter!"
-	line "The prize belongs to me! <Lv>8 Mew!"
+	line "The Prize belongs to me! <Lv>8 Mew!"
 	line "You really should enter the next"
 	line "Challenge Cup! But then again, "
 	line "why bother, since I'll also win "
@@ -23,7 +86,7 @@ Text0526: ; 4814f (12:414f)
 
 Text0527: ; 4817f (12:417f)
 	text "The last Challenge Cup was "
-	line "a blast! The prize was really"
+	line "a blast! The Prize was really"
 	line "cool too! Challenge Cups are "
 	line "the best! I wonder when the "
 	line "next one will be?"
@@ -73,8 +136,8 @@ Text052d: ; 48444 (12:4444)
 	done
 
 Text052e: ; 48495 (12:4495)
-	text "The game will be a 1-match "
-	line "duel with 4 prizes! We are "
+	text "The game will be a 1-Match "
+	line "Duel with 4 Prizes! We are "
 	line "now accepting entrants here."
 	line "Wouldn't you like to enter?"
 	done
@@ -108,8 +171,8 @@ Text0534: ; 485c6 (12:45c6)
 
 Text0535: ; 485e0 (12:45e0)
 	text "There will be 4 Prizes!"
-	line "OK!!"
-	line "Let the duel begin!"
+	line "Okay!!"
+	line "Let the Duel begin!"
 	done
 
 Text0536: ; 48612 (12:4612)
@@ -204,26 +267,26 @@ Text0543: ; 4897f (12:497f)
 	done
 
 Text0544: ; 489b6 (12:49b6)
-	text "With that, let the third match "
+	text "With that, let the third Match "
 	line "begin!"
 	done
 
 Text0545: ; 489de (12:49de)
-	text "Are your decks ready?"
+	text "Are your Decks ready?"
 	done
 
 Text0546: ; 489f5 (12:49f5)
-	text "Prepare your deck?"
+	text "Prepare your Deck?"
 	done
 
 Text0547: ; 48a09 (12:4a09)
 	text "Well then, <RAMNAME>!"
-	line "Let the second match begin!"
+	line "Let the second Match begin!"
 	done
 
 Text0548: ; 48a34 (12:4a34)
 	text "Well, <RAMNAME>, let the third,"
-	line "and final, match begin!"
+	line "and final, Match begin!"
 	done
 
 Text0549: ; 48a65 (12:4a65)
@@ -268,7 +331,7 @@ Text0550: ; 48b73 (12:4b73)
 	done
 
 Text0551: ; 48b9f (12:4b9f)
-	text "<RAMNAME>, your prize"
+	text "<RAMNAME>, your Prize"
 	line "is <RAMTEXT>!"
 	done
 
@@ -360,7 +423,7 @@ Text055f: ; 48ff9 (12:4ff9)
 	done
 
 Text0560: ; 49040 (12:5040)
-	text "You played a wonderful match!"
+	text "You played a wonderful Match!"
 	line "The Legendary Cards seem pleased"
 	line "to be passed on to you"
 	line ""
@@ -369,7 +432,7 @@ Text0560: ; 49040 (12:5040)
 	done
 
 Text0561: ; 490c6 (12:50c6)
-	text "You played a wonderful match!"
+	text "You played a wonderful Match!"
 	line "The Legendary Cards seem pleased"
 	line "to be passed on to you."
 	done
@@ -474,14 +537,14 @@ Text0572: ; 49592 (12:5592)
 	done
 
 Text0573: ; 495bb (12:55bb)
-	text "First, you must duel Courtney!"
+	text "First, you must Duel Courtney!"
 	done
 
 Text0574: ; 495db (12:55db)
 	text "Hm-hmmm...I, Courtney, the Fire "
 	line "Queen, shall be your first "
 	line "opponent! We shall see if you can "
-	line "take the heat. A 6-prizes match! "
+	line "take the heat. A 6-Prizes Match! "
 	line "Hm-hmm-hmm...Let's go to it!"
 	done
 
@@ -530,7 +593,7 @@ Text057b: ; 498b8 (12:58b8)
 	done
 
 Text057c: ; 498e6 (12:58e6)
-	text "<RAMNAME>! Next, you must duel "
+	text "<RAMNAME>! Next, you must Duel "
 	line "Steve!"
 	done
 
@@ -604,27 +667,27 @@ Text0588: ; 49b7b (12:5b7b)
 Text0589: ; 49ba9 (12:5ba9)
 	text "I, Jack, am your third opponent."
 	line "You shall not be able to defeat"
-	line "my splendid deck!"
+	line "my splendid Deck!"
 	line "Come! I shall prove it to you!"
 	done
 
 Text058a: ; 49c1c (12:5c1c)
-	text "I shall duel you with my splendid "
-	line "deck! I shan't lose this time!"
+	text "I shall Duel you with my splendid "
+	line "Deck! I shan't lose this time!"
 	done
 
 Text058b: ; 49c5f (12:5c5f)
 	text "<RAMNAME>,"
-	line "have you readied your deck?"
+	line "have you readied your Deck?"
 	done
 
 Text058c: ; 49c7f (12:5c7f)
-	text "Prepare for the duel?"
+	text "Prepare for the Duel?"
 	done
 
 Text058d: ; 49c96 (12:5c96)
 	text "Very well then!"
-	line "Let us begin the duel!"
+	line "Let us begin the Duel!"
 	done
 
 Text058e: ; 49cbe (12:5cbe)
@@ -636,18 +699,18 @@ Text058f: ; 49ce7 (12:5ce7)
 	text "What did I tell you?"
 	line "There was absolutely no way you "
 	line "could have defeated my"
-	line "splendid deck!"
+	line "splendid Deck!"
 	done
 
 Text0590: ; 49d44 (12:5d44)
 	text "What did I tell you?"
 	line "There was no way you could have "
-	line "defeated my splendid deck!"
+	line "defeated my splendid Deck!"
 	done
 
 Text0591: ; 49d96 (12:5d96)
 	text "I simply can't believe my "
-	line "splendid deck could lose..."
+	line "splendid Deck could lose..."
 	line "It is a mortifying thought, "
 	line "but it appears you are better "
 	line "than I. Very well! Now"
@@ -656,13 +719,13 @@ Text0591: ; 49d96 (12:5d96)
 
 Text0592: ; 49e3a (12:5e3a)
 	text "I simply can't believe my "
-	line "splendid deck could lose..."
+	line "splendid Deck could lose..."
 	line "It would appear that you are "
 	line "a true Master..."
 	done
 
 Text0593: ; 49ea1 (12:5ea1)
-	text "Spectacular dueling! I, Rod,"
+	text "Spectacular Dueling! I, Rod,"
 	line "will be your next opponent!"
 	done
 
@@ -672,17 +735,17 @@ Text0594: ; 49edb (12:5edb)
 	done
 
 Text0595: ; 49f0e (12:5f0e)
-	text "This is your final duel!"
+	text "This is your final Duel!"
 	line "Show me what you're made of!"
 	done
 
 Text0596: ; 49f45 (12:5f45)
 	text "If you win this Duel, I will "
-	line "allow you to duel Ronald!"
+	line "allow you to Duel Ronald!"
 	done
 
 Text0597: ; 49f7e (12:5f7e)
-	text "This is your final duel!"
+	text "This is your final Duel!"
 	line "Show me what you're made of!"
 	done
 
@@ -696,12 +759,12 @@ Text0599: ; 49fce (12:5fce)
 	done
 
 Text059a: ; 49fe5 (12:5fe5)
-	text "Then let's begin the final duel - "
-	line "a 1-match duel for 6 Prizes!!!"
+	text "Then let's begin the final Duel - "
+	line "a 1-Match Duel for 6 Prizes!!!"
 	done
 
 Text059b: ; 4a028 (12:6028)
-	text "A 1-match duel for 6 prizes!!"
+	text "A 1-Match Duel for 6 Prizes!!"
 	done
 
 Text059c: ; 4a047 (12:6047)
@@ -734,7 +797,7 @@ Text059f: ; 4a11a (12:611a)
 
 Text05a0: ; 4a1e1 (12:61e1)
 	text "Congratulations, <RAMNAME>!"
-	line "You're a master duelist!!!"
+	line "You're a Master Duelist!!!"
 	line "But..."
 	done
 
@@ -742,16 +805,16 @@ Text05a1: ; 4a218 (12:6218)
 	text "We have a problem..."
 	line "There is another who has "
 	line "defeated us..."
-	line "You must duel him..."
+	line "You must Duel him..."
 	done
 
 Text05a2: ; 4a26c (12:626c)
-	text "You must duel Ronald again."
+	text "You must Duel Ronald again."
 	done
 
 Text05a3: ; 4a289 (12:6289)
 	text "Congratulations, <RAMNAME>!"
-	line "You're a master duelist!"
+	line "You're a Master Duelist!"
 	done
 
 Text05a4: ; 4a2b7 (12:62b7)
@@ -774,7 +837,7 @@ Text05a6: ; 4a369 (12:6369)
 	line "the right to inherit the "
 	line "Legendary Pokémon Cards!"
 	line "Ronald! <RAMNAME>!"
-	line "You two must duel to determine who "
+	line "You two must Duel to determine who "
 	line "will inherit the Legendary Pokémon "
 	line "Cards. So say the Rules!"
 	done
@@ -801,8 +864,8 @@ Text05aa: ; 4a4b3 (12:64b3)
 	done
 
 Text05ab: ; 4a4ca (12:64ca)
-	text "OK, Then let's begin this "
-	line "ultimate duel!"
+	text "Okay, Then let's begin this "
+	line "ultimate Duel!"
 	done
 
 Text05ac: ; 4a4f5 (12:64f5)
@@ -814,7 +877,7 @@ Text05ac: ; 4a4f5 (12:64f5)
 	done
 
 Text05ad: ; 4a559 (12:6559)
-	text "It's a 1-match duel with 6-prizes!"
+	text "It's a 1-Match Duel with 6-Prizes!"
 	line "Let it begin!"
 	done
 
@@ -894,7 +957,7 @@ Text05b9: ; 4a8d2 (12:68d2)
 	line "  A true Pokémon Card Master is"
 	line "  one who has the skill to use"
 	line "  the abilities of the different"
-	line "  cards and the courage to duel"
+	line "  cards and the courage to Duel"
 	line "  powerful opponents. And most"
 	line "  of all, the ability to love the"
 	line "  Pokémon Trading Card Game"
@@ -924,7 +987,7 @@ Text05bc: ; 4ab23 (12:6b23)
 	line "  A true Pokémon Card Master"
 	line "  is one who has the skill to use"
 	line "  the abilities of the different"
-	line "  cards and the courage to duel"
+	line "  cards and the courage to Duel"
 	line "  powerful opponents. And above"
 	line "  all, the ability to love the"
 	line "  Pokémon Trading Card Game no"
@@ -940,7 +1003,7 @@ Text05bd: ; 4ad20 (12:6d20)
 Text05be: ; 4ad53 (12:6d53)
 	text "The 8 Club Masters each own a"
 	line "Master Medal."
-	line "The secret of each Club's deck is"
+	line "The secret of each Club's Deck is"
 	line "encrypted in its Master Medal."
 	line "Once you get a Master Medal, go"
 	line "to the computer room in back."
@@ -957,13 +1020,13 @@ Text05bf: ; 4ae4d (12:6e4d)
 	line "It is rumored that it's in the "
 	line "Hall of Honor at Pokémon Dome."
 	line "It supposedly holds the secret "
-	line "to a very powerful deck!"
+	line "to a very powerful Deck!"
 	done
 
 Text05c0: ; 4af26 (12:6f26)
 	text "Excuse me, but you don't seem "
 	line "to have many Energy cards."
-	line "Building a deck must be difficult "
+	line "Building a Deck must be difficult "
 	line "with so few Energy cards."
 	line "Here, take these!"
 	done
@@ -983,7 +1046,7 @@ Text05c3: ; 4afe5 (12:6fe5)
 	line "the Legendary Pokémon Cards?"
 	line "If you want the Legendary Cards,"
 	line "you must defeat the Grand Masters."
-	line "To duel the Grand Masters, you"
+	line "To Duel the Grand Masters, you"
 	line "must first get the Master Medals."
 	line "The 8 Masters of the Card Clubs"
 	line "each have a Master Medal. Go to"
@@ -1005,7 +1068,7 @@ Text05c5: ; 4b17c (12:717c)
 	line "The cards differ depending on"
 	line "the Booster Pack you receive. "
 	line "The type of Booster Pack differs"
-	line "depending on who you duel, "
+	line "depending on who you Duel, "
 	line "so choose your opponents well."
 	done
 
@@ -1014,7 +1077,7 @@ Text05c6: ; 4b274 (12:7274)
 	line "the Legendary Pokémon Cards,"
 	line ""
 	text "<RAMNAME>! Now you should try"
-	line "dueling different people using the"
+	line "Dueling different people using the"
 	line "cards you inherited. I'm sure "
 	line "you'll have a good time!"
 	done
@@ -1050,17 +1113,17 @@ Text05ca: ; 4b4ea (12:74ea)
 	line "The Challenge Machine is a "
 	line "Pokémon Card Dueling Machine. "
 	line "The rules of the game are simple: "
-	line "choose 1 deck with which you must"
-	line "duel 5 computer opponents!"
+	line "choose 1 Deck with which you must"
+	line "Duel 5 computer opponents!"
 	line "If you can defeat the 5 "
 	line "opponents, you win! You can also "
 	line "play to extend your winning "
-	line "streak! Build a deck and "
+	line "streak! Build a Deck and "
 	line "give it a try, <RAMNAME>!"
 	done
 
 Text05cb: ; 4b63e (12:763e)
-	text "OK, let's start using the practice"
+	text "Okay, let's start using the practice"
 	line "Deck. Listen and follow Dr. Mason's"
 	line "instructions."
 	done
@@ -1075,12 +1138,12 @@ Text05cd: ; 4b6a8 (12:76a8)
 	done
 
 Text05ce: ; 4b6ee (12:76ee)
-	text "OK, a 2-Prize duel using"
-	line "the practice deck!"
+	text "Okay, a 2-Prize Duel using"
+	line "the practice Deck!"
 	done
 
 Text05cf: ; 4b71b (12:771b)
-	text "Would you like to duel Sam?"
+	text "Would you like to Duel Sam?"
 	done
 
 Text05d0: ; 4b738 (12:7738)
@@ -1094,7 +1157,7 @@ Text05d1: ; 4b76e (12:776e)
 
 Text05d2: ; 4b78e (12:778e)
 	text "Keep this up, and you should be able"
-	line "to win some duels!"
+	line "to win some Duels!"
 	done
 
 Text05d3: ; 4b7c7 (12:77c7)
@@ -1130,58 +1193,4 @@ Text05d6: ; 4b8c8 (12:78c8)
 	line "depends on the Pokémon."
 	line "Be sure to learn which Pokémon "
 	line "require which type of Energy!"
-	done
-
-Text05d7: ; 4ba32 (12:7a32)
-	text "Pokémon damage defending Pokémon "
-	line "by attacking. Pokémon need Energy "
-	line "cards in order to attack."
-	line "For example, the energy required "
-	line "for Seaking's Waterfall is <WATER><COLORLESS>."
-	line "<WATER><COLORLESS> stands for 1 Water Energy "
-	line "card and another Energy card of "
-	line "any type. The energy required "
-	line "differs according to the attack."
-	done
-
-Text05d8: ; 4bb56 (12:7b56)
-	text "To switch your Active Pokémon"
-	line "with a Bench Pokémon, choose "
-	line "the Retreat command. If the "
-	line "Active Pokémon is in danger,"
-	line "move it back to your Bench."
-	line "Energy is required in order"
-	line "to Retreat. The number of "
-	line "Energy cards required varies,"
-	line "depending on the Pokémon."
-	done
-
-Text05d9: ; 4bc58 (12:7c58)
-	text "There are 3 types of Pokémon cards:"
-	line "Basic Pokémon, Stage 1 Pokémon and "
-	line "Stage 2 Pokémon. Squirtle is a "
-	line "Basic, Wartortle a Stage 1 and "
-	line "Blastoise a Stage 2 Pokémon."
-	line "Basic Pokémon are the only cards"
-	line "that can be put directly into play."
-	line "A Basic Pokémon in play can be"
-	line "evolved to a Stage 1 Pokémon. A"
-	line "Stage 1 Pokémon in the Play Area "
-	line "can then be evolved to a Stage 2 "
-	line "Pokémon. Therefore, Squirtle is "
-	line "needed in order to play Wartortle,"
-	line "and Wartortle is needed in"
-	line "order to play Blastoise."
-	done
-
-Text05da: ; 4be3e (12:7e3e)
-	text "Some Pokémon have special"
-	line "abilities called Pokémon Powers."
-	line "Some Pokémon Powers are used as"
-	line "soon as the Pokémon is played,"
-	line "while others must be used by"
-	line "choosing the PKMN Power command."
-	line "There are many different Pokémon"
-	line "Powers, so read each card's text"
-	line "carefully."
 	done

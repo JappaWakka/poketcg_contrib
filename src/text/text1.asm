@@ -184,7 +184,7 @@ NoEnergyCardsText: ; 36576 (d:6576)
 	done
 
 IsThisOKText: ; 36588 (d:6588)
-	text "Is this OK?"
+	text "Is this Okay?"
 	done
 
 YesOrNoText: ; 36595 (d:6595)
@@ -271,7 +271,7 @@ PokemonPowerSelectNotRequiredText: ; 3671f (d:671f)
 	done
 
 DiscardDescription: ; 36757 (d:6757)
-	text "You may discard this card during"
+	text "You may Discard this card during"
 	line "your turn."
 	line "It will be counted as a Knock Out"
 	line "(This Discard is not"
@@ -342,7 +342,7 @@ DamageToSelfDueToConfusionText: ; 3686c (d:686c)
 
 ChooseEnergyCardToDiscardText: ; 36891 (d:6891)
 	text "Choose the Energy card"
-	line "you wish to discard."
+	line "you wish to Discard."
 	done
 
 ChooseNextActivePokemonText: ; 368be (d:68be)
@@ -455,7 +455,7 @@ Drew7CardsText: ; 36b9a (d:6b9a)
 	done
 
 DeckHasXCardsText: ; 36bab (d:6bab)
-	text "<RAMNAME>'s deck has <RAMNUM> cards."
+	text "<RAMNAME>'s Deck has <RAMNUM> cards."
 	done
 
 ChooseBasicPkmnToPlaceInArenaText: ; 36bc2 (d:6bc2)

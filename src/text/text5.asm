@@ -1,10 +1,72 @@
+Text0481: ; 43cda (10:7cda)
+	text "I hope to Duel someone "
+	line "like you again someday!"
+	done
+
+Text0482: ; 43d0b (10:7d0b)
+	text "You may have been able to defeat"
+	line "my pupils, but you still are not"
+	line "experienced enough to defeat me!"
+	line "Come back after you've trained more!"
+	done
+
+Text0483: ; 43d94 (10:7d94)
+	text "You wish to Duel the"
+	line "Fighting Club Master again?"
+	done
+
+Text0484: ; 43dc6 (10:7dc6)
+	text "Oh, okay."
+	line "I'd like to Duel again, though."
+	done
+
+Text0485: ; 43def (10:7def)
+	text "As before, we'll play with 6 Prizes."
+	line "Come show me what you've got!"
+	done
+
+Text0486: ; 43e33 (10:7e33)
+	text "Another utter defeat!"
+	line "Here, take this!"
+	done
+
+Text0487: ; 43e5b (10:7e5b)
+	text "I'd like to Duel someone "
+	line "like you again!"
+	done
+
+Text0488: ; 43e86 (10:7e86)
+	text "You must train harder!"
+	line "I'll be waiting!"
+	done
+
+Text0489: ; 43eaf (10:7eaf)
+	text "I lost to you before at the Rock"
+	line "Club, but not this time!"
+	line "I'm going to train to become"
+	line "an even better player!"
+	line "But before I can start my training"
+	line "again, I must defeat you first!"
+	done
+
+Text048a: ; 43f61 (10:7f61)
+	text "I'm going to train to become"
+	line "an even better player!"
+	line "But before I can start my training"
+	line "again, I must defeat you first!"
+	done
+
+Text048b: ; 43fd9 (10:7fd9)
+	text "Would you like to Duel Chris?"
+	done
+
 Text048c: ; 44000 (11:4000)
 	text "You're just going to turn "
 	line "and run!?! You chicken!"
 	done
 
 Text048d: ; 44034 (11:4034)
-	text "A 1-match duel with 4 prizes!"
+	text "A 1-Match Duel with 4 Prizes!"
 	line "Let's do it!"
 	done
 
@@ -31,16 +93,16 @@ Text0491: ; 44113 (11:4113)
 	done
 
 Text0492: ; 44163 (11:4163)
-	text "Would you like to duel Michael?"
+	text "Would you like to Duel Michael?"
 	done
 
 Text0493: ; 44184 (11:4184)
-	text "OK. But do duel me "
+	text "Okay. But do Duel me "
 	line "again sometime."
 	done
 
 Text0494: ; 441a9 (11:41a9)
-	text "OK, a 1-match duel with 4 prizes!"
+	text "Okay, a 1-Match Duel with 4 Prizes!"
 	line "Let's do it!"
 	done
 
@@ -62,20 +124,20 @@ Text0498: ; 44262 (11:4262)
 	text "Training is so boring..."
 	line "Why anyone would want to?"
 	line "Hey, it's you!"
-	line "Do you want to duel me again?"
+	line "Do you want to Duel me again?"
 	done
 
 Text0499: ; 442c3 (11:42c3)
-	text "Would you like to duel Jessica?"
+	text "Would you like to Duel Jessica?"
 	done
 
 Text049a: ; 442e4 (11:42e4)
-	text "Well, OK."
+	text "Well, okay."
 	line "I'm busy anyway!"
 	done
 
 Text049b: ; 44300 (11:4300)
-	text "OK! A 1-match duel with 4 prizes!"
+	text "Okay! A 1-Match Duel with 4 Prizes!"
 	line "Let's go to it!"
 	done
 
@@ -96,16 +158,16 @@ Text049e: ; 4437a (11:437a)
 	done
 
 Text049f: ; 443d6 (11:43d6)
-	text "What is a deck?"
+	text "What is a Deck?"
 	done
 
 Text04a0: ; 443e7 (11:43e7)
-	text "A deck is the set of Pokémon cards"
-	line "used in duels."
-	line "A deck consists of 60 cards."
+	text "A Deck is the set of Pokémon cards"
+	line "used in Duels."
+	line "A Deck consists of 60 cards."
 	line "Only 4 of the same card are"
-	line "allowed in a deck. Create your "
-	line "own deck to play the game."
+	line "allowed in a Deck. Create your "
+	line "own Deck to play the game."
 	line "These are the basic rules of the"
 	line "Pokémon Trading Card Game."
 	done
@@ -133,7 +195,7 @@ Text04a3: ; 44630 (11:4630)
 
 Text04a4: ; 4464d (11:464d)
 	text "Attach Energy cards to your Pokémon"
-	line "to give them the energy they need to"
+	line "to give them the Energy they need to"
 	line "attack. Choose an Energy card from "
 	line "your hand and attach it to a"
 	line "Pokémon. You may attach only "
@@ -147,7 +209,7 @@ Text04a5: ; 44710 (11:4710)
 Text04a6: ; 4472e (11:472e)
 	text "Trainer cards are one-shot cards"
 	line "that can be used once and are "
-	line "then discarded. You can play as "
+	line "then Discarded. You can play as "
 	line "many Trainer cards as you like "
 	line "during your turn."
 	done
@@ -158,15 +220,15 @@ Text04a7: ; 447c2 (11:47c2)
 
 Text04a8: ; 447e2 (11:47e2)
 	text "When a Pokémon loses all of "
-	line "its HP, the Pokémon is knocked out. "
+	line "its HP, the Pokémon is Knocked Out. "
 	line "Place it and all attached Energy "
-	line "cards in the discard pile."
-	line "Each time you knock out 1 "
+	line "cards in the Discard pile."
+	line "Each time you Knock Out 1 "
 	line "of your opponent's Pokémon, "
-	line "you draw 1 of your prize cards "
+	line "you draw 1 of your Prize Cards "
 	line "and place it in your hand. "
 	line "When you've taken all "
-	line "of your prizes, you win the game."
+	line "of your Prizes, you win the game."
 	done
 
 Text04a9: ; 4490f (11:490f)
@@ -175,7 +237,7 @@ Text04a9: ; 4490f (11:490f)
 
 Text04aa: ; 4492f (11:492f)
 	text "You also win if your opponent's"
-	line "deck is out of cards at the start"
+	line "Deck is out of cards at the start"
 	line "of your opponent's turn. Be "
 	line "careful not to run out of cards!"
 	done
@@ -187,8 +249,8 @@ Text04ab: ; 449b0 (11:49b0)
 Text04ac: ; 449d0 (11:49d0)
 	text "You also win if your opponent has"
 	line "no Pokémon left on the bench"
-	line "after you have knocked out his or"
-	line "her active Pokémon. Be sure to "
+	line "after you have Knocked Out his or"
+	line "her Active Pokémon. Be sure to "
 	line "keep enough Pokémon on your bench."
 	done
 
@@ -253,7 +315,7 @@ Text04b6: ; 44db9 (11:4db9)
 	line "That way, you'll be able to give"
 	line "major damage to your opponent's "
 	line "Active and Benched Pokémon without "
-	line "your Pokémon getting knocked out."
+	line "your Pokémon getting Knocked Out."
 	done
 
 Text04b7: ; 44e85 (11:4e85)
@@ -263,7 +325,7 @@ Text04b7: ; 44e85 (11:4e85)
 Text04b8: ; 44e92 (11:4e92)
 	text "You can use Alakazam's Damage Swap"
 	line "to move damage counters off of a"
-	line "Pokémon that is almost knocked out,"
+	line "Pokémon that is almost Knocked Out,"
 	line "or you can create a combo by"
 	line "combining it with Chansey and"
 	line "Scoop Up. Keep moving damage "
@@ -313,7 +375,7 @@ Text04be: ; 451b0 (11:51b0)
 	line "kind of cards they are."
 	line "I'm off to search for someone "
 	line "who will give me these cards!"
-	line "                        ISHIHARA"
+	line "                        Ishihara"
 	done
 
 Text04bf: ; 452bb (11:52bb)
@@ -359,7 +421,7 @@ Text04c4: ; 45515 (11:5515)
 	line "Dodrio's Retreat Aid decreases the "
 	line "number of Energy cards required to"
 	line "retreat. If you retreat right away,"
-	line "your Pokémon won't get knocked out!"
+	line "your Pokémon won't get Knocked Out!"
 	done
 
 Text04c5: ; 45628 (11:5628)
@@ -396,7 +458,7 @@ Text04ca: ; 4579e (11:579e)
 	line "single card, you are able to"
 	line "attach 2 Energies at once."
 	line "But be careful because the "
-	line "energy is colorless."
+	line "Energy is colorless."
 	done
 
 Text04cb: ; 45846 (11:5846)
@@ -420,7 +482,7 @@ Text04ce: ; 458f9 (11:58f9)
 	line "time against Stage 2 Pokémon,"
 	line "as many Stage 2 Pokémon are"
 	line "resistant to Fighting Pokémon."
-	line "Try to knock out your opponent's"
+	line "Try to Knock Out your opponent's"
 	line "Pokémon before they evolve."
 	done
 
@@ -437,7 +499,7 @@ Text04d0: ; 459c1 (11:59c1)
 	line "and Stage 2 Evolution cards can"
 	line "only be used on Basic Pokémon."
 	line "Make sure you have enough"
-	line "Basic Pokémon in your deck!"
+	line "Basic Pokémon in your Deck!"
 	done
 
 Text04d1: ; 45ad5 (11:5ad5)
@@ -471,13 +533,13 @@ Text04d5: ; 45c65 (11:5c65)
 	done
 
 Text04d6: ; 45c6f (11:5c6f)
-	text "When a Pokémon is paralyzed, it"
+	text "When a Pokémon is Paralyzed, it"
 	line "is unable to do anything."
 	line "It cannot retreat, attack or use"
 	line "Pokémon Power, but the player may"
 	line "use any cards in his or her hand."
 	line "Paralysis lasts until the end of "
-	line "the paralyzed player's turn. "
+	line "the Paralyzed player's turn. "
 	line "Paralysis can be healed with"
 	line "Full Heal and Evolution cards."
 	done
@@ -505,7 +567,7 @@ Text04da: ; 45e37 (11:5e37)
 	line "There is also the Double Colorless"
 	line "Energy card."
 	line "You may include as many Energy "
-	line "cards as you like in your deck,"
+	line "cards as you like in your Deck,"
 	line "but you may only include 4"
 	line "Double Colorless Energy cards."
 	done
@@ -543,9 +605,9 @@ Text04df: ; 46115 (11:6115)
 	done
 
 Text04e0: ; 4611d (11:611d)
-	text "When your Pokémon is poisoned, it"
+	text "When your Pokémon is Poisoned, it"
 	line "will continue to lose HP."
-	line "The poisoned Pokémon will lose"
+	line "The Poisoned Pokémon will lose"
 	line "10 HP at the end of each player's "
 	line "turn. To heal a Poisoned Pokémon,"
 	line "you may retreat it to the Bench"
@@ -584,14 +646,14 @@ Text04e5: ; 463d5 (11:63d5)
 	done
 
 Text04e6: ; 463dc (11:63dc)
-	text "When a Pokémon is asleep,"
+	text "When a Pokémon is Asleep,"
 	line "it is unable to do anything."
 	line "It cannot attack, retreat or use"
 	line "Pokémon Power. A coin will be "
 	line "flipped at the end of each player's "
 	line "turn. If the coin comes up heads, "
 	line "the Pokémon will wake up. If it's"
-	line "tails, the Pokémon remains asleep."
+	line "tails, the Pokémon remains Asleep."
 	line "Use Full Heal to wake it up!"
 	done
 
@@ -601,7 +663,7 @@ Text04e7: ; 464fe (11:64fe)
 
 Text04e8: ; 4650d (11:650d)
 	text "Some Pokémon have special "
-	line "abilities called Pokémon Power."
+	line "abilities called Pokémon Powers."
 	line "They are very powerful abilities!"
 	line "They can be used before attacking, "
 	line "even if the Pokémon with the "
@@ -620,7 +682,7 @@ Text04ea: ; 46627 (11:6627)
 	line "Strong against Rock Pokémon."
 	line "Weak against Psychic Pokémon."
 	line "Many cards have attacks with "
-	line "poison and sleep effects."
+	line "Poison and Sleep effects."
 	line "Require Grass Energy cards"
 	line "to attack."
 	done
@@ -678,9 +740,9 @@ Text04f2: ; 469d1 (11:69d1)
 	text "Many Fire Pokémon attacks require"
 	line "that an Energy card be removed."
 	line "Be sure to include many Energy"
-	line "cards in decks with Fire Pokémon."
+	line "cards in Decks with Fire Pokémon."
 	line "It might be wise to also include"
-	line "Energy Retrieval in your deck."
+	line "Energy Retrieval in your Deck."
 	done
 
 Text04f3: ; 46a95 (11:6a95)
@@ -706,7 +768,7 @@ Text04f6: ; 46b70 (11:6b70)
 	line "to use. They can attack with "
 	line "any type of Energy card, so"
 	line "you can include them in any type"
-	line "of deck. There are many Colorless "
+	line "of Deck. There are many Colorless "
 	line "Pokémon, so check them all out!"
 	done
 
@@ -772,7 +834,7 @@ Text04ff: ; 46fb8 (11:6fb8)
 Text0500: ; 46fd9 (11:6fd9)
 	text "The third Legendary Pokémon Card"
 	line "is <Lv>37 Articuno. Its Quickfreeze"
-	line "will paralyze opponents' Pokémon"
+	line "will Paralyze opponents' Pokémon"
 	line "when the card is put in play!"
 	line "Also, Ice Breath is a powerful"
 	line "Attack! Grand Master Jack,"
@@ -813,8 +875,8 @@ Text0506: ; 47265 (11:7265)
 	text "There are a total of 8 Master Medals"
 	line "owned by the Club Masters. It is "
 	line "said that the secret of their Club's"
-	line "deck is encrypted in the Master "
-	line "Medals. Some say the medals were "
+	line "Deck is encrypted in the Master "
+	line "Medals. Some say the Medals were "
 	line "a gift from the Grand Masters."
 	done
 
@@ -901,7 +963,7 @@ Text0512: ; 47821 (11:7821)
 	text "Hey now! It's the Challenge Cup!"
 	line "Hey now! Gonna give it a try!"
 	line "Hey now! Gonna beat 3 people!"
-	line "Hey now! Watch me win the prize!"
+	line "Hey now! Watch me win the Prize!"
 	done
 
 Text0513: ; 478a0 (11:78a0)
@@ -925,7 +987,7 @@ Text0515: ; 47984 (11:7984)
 
 Text0516: ; 479a4 (11:79a4)
 	text "I'm the one who's going to"
-	line "defeat 3 opponents! The prize, "
+	line "defeat 3 opponents! The Prize, "
 	line ""
 	text "<Lv>60 Mewtwo, belongs to me!"
 	line "You just sit tight and watch me win!"
@@ -954,69 +1016,6 @@ Text0519: ; 47b25 (11:7b25)
 Text051a: ; 47b47 (11:7b47)
 	text "The Challenge Cup is over! I"
 	line "defeated 3 opponents and won"
-	line "the prize - <Lv>60 Mewtwo!"
+	line "the Prize - <Lv>60 Mewtwo!"
 	line "See ya! Ha ha ha ha ha ha!"
-	done
-
-Text051b: ; 47bb6 (11:7bb6)
-	text "Hi, <RAMNAME>."
-	line "What are you doing here?"
-	done
-
-Text051c: ; 47bd7 (11:7bd7)
-	text "The Challenge Cup is over! I"
-	line "defeated 3 opponents and won"
-	line "the prize - <Lv>60 Mewtwo!"
-	line "I guess you could try entering"
-	line "the next Challenge Cup, but "
-	line "you won't have a chance since "
-	line "I'll win that one, too!"
-	line "See ya! Ha ha ha ha ha ha!"
-	done
-
-Text051d: ; 47cb9 (11:7cb9)
-	text "Hey, <RAMNAME>."
-	line "We meet again."
-	done
-
-Text051e: ; 47cd1 (11:7cd1)
-	text "No matter who enters the Challenge"
-	line "Cup, I'll be the winner! "
-	line ""
-	text "<Lv>8 Mew, this Cup's prize, will "
-	line "belong to me! Why don't you just"
-	line "give up and go home!"
-	line "See ya! Ha ha ha ha ha ha!"
-	done
-
-Text051f: ; 47d82 (11:7d82)
-	text "Hey, it's <RAMNAME> - the"
-	line "loser of the Challenge Cup!"
-	done
-
-Text0520: ; 47db1 (11:7db1)
-	text "That was a close one for me!"
-	line "I lost to the third opponent!"
-	line "But I'll win the next Challenge "
-	line "Cup! And of course, I'll pulverize "
-	line "you! See ya! Ha ha ha ha ha!"
-	done
-
-Text0521: ; 47e4f (11:7e4f)
-	text "Hey, isn't that <RAMNAME>?"
-	line "Late as always!"
-	done
-
-Text0522: ; 47e73 (11:7e73)
-	text "The Challenge Cup is already"
-	line "over! What? Who won?"
-	line "Who do you expect!?! Me, of "
-	line "course! The prize belongs to"
-	line "me! <Lv>8 Mew! See ya!"
-	line "Ha ha ha ha ha ha!"
-	done
-
-Text0523: ; 47f08 (11:7f08)
-	text "Hey, <RAMNAME>!"
-	line "What are you doing here?"
 	done

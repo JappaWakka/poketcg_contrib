@@ -214,7 +214,7 @@ Text011f: ; 38856 (e:4856)
 
 Text0120: ; 3887f (e:487f)
 	text "Discard from opponent's Deck as many"
-	line "Fire Energy cards as were discarded."
+	line "Fire Energy cards as were Discarded."
 	done
 
 Text0121: ; 388ca (e:48ca)
@@ -282,7 +282,7 @@ Text012d: ; 38aa4 (e:4aa4)
 	line "   Energy from.  Press the A Button."
 	line ""
 	line "2. Choose the Pokémon to move the"
-	line "   energy to and press the A Button."
+	line "   Energy to and press the A Button."
 	line ""
 	line "3. Repeat steps 1 and 2."
 	line ""
@@ -915,13 +915,13 @@ DrawSevenCardsPracticeDuelText: ; 3a12d (e:612d)
 	line "as your Active Pokémon,"
 	line "so you can choose either Goldeen"
 	line "or Staryu."
-	line "For our practice duel,"
+	line "For our practice Duel,"
 	line "choose Goldeen."
 	done
 
 ChooseGoldeenPracticeDuelText: ; 3a204 (e:6204)
 	text "Choose Goldeen for this"
-	line "practice duel, OK?"
+	line "practice Duel, okay?"
 	done
 
 PutPokemonOnBenchPracticeDuelText: ; 3a230 (e:6230)
@@ -937,7 +937,7 @@ PutPokemonOnBenchPracticeDuelText: ; 3a230 (e:6230)
 
 ChooseStaryuPracticeDuelText: ; 3a2f6 (e:62f6)
 	text "Choose Staryu for this"
-	line "practice duel, OK?"
+	line "practice Duel, okay?"
 	done
 
 PressBToFinishPracticeDuelText: ; 3a321 (e:6321)
@@ -1230,7 +1230,7 @@ SamTurn4DrMason1PracticeDuelText: ; 3b242 (e:7242)
 	line "You now have Drowzee and Staryu"
 	line "on your Bench."
 	line "Choose Staryu as the Active Pokémon"
-	line "for this practice duel."
+	line "for this practice Duel."
 	done
 
 SamTurn4DrMason2PracticeDuelText: ; 3b2ec (e:72ec)
@@ -1242,7 +1242,7 @@ SamTurn4DrMason2PracticeDuelText: ; 3b2ec (e:72ec)
 
 SelectStaryuPracticeDuelText: ; 3b35a (e:735a)
 	text "Select Staryu for this practice,"
-	line "OK?"
+	line "Okay?"
 	done
 
 LetsPlayTheGamePracticeDuelText: ; 3b380 (e:7380)
@@ -1492,11 +1492,11 @@ Text0214: ; 3b799 (e:7799)
 	done
 
 FeetText: ; 3b7b6 (e:77b6)
-	textfw3 "'"
+	text ". "
 	done
 
 InchesText: ; 3b7b9 (e:77b9)
-	textfw3 "”"
+	text " m."
 	done
 
 YourDiscardPileText: ; 3b7bc (e:77bc)
@@ -1600,15 +1600,15 @@ NamingScreenKeyboardText: ; 3b97b (e:797b)
 	done
 	
 NewDeckText: ; 3ba03 (e:7a03)
-	text "New deck"
+	text "New Deck"
 	done
 
 PleaseSelectDeckText: ; 3ba0d (e:7a0d)
-	text "Please select deck."
+	text "Please select Deck."
 	done
 
 Text0225: ; 3ba22 (e:7a22)
-	text "Modify deck"
+	text "Modify Deck"
 	done
 
 Text0226: ; 3ba2f (e:7a2f)
@@ -1616,7 +1616,7 @@ Text0226: ; 3ba2f (e:7a2f)
 	done
 
 Text0227: ; 3ba3c (e:7a3c)
-	text "Select deck"
+	text "Select Deck"
 	done
 
 Text0228: ; 3ba49 (e:7a49)
@@ -1629,7 +1629,7 @@ Text0229: ; 3ba51 (e:7a51)
 
 ChosenAsDuelingDeckText: ; 3ba55 (e:7a55)
 	text "<RAMTEXT> was"
-	line "chosen as the dueling deck!"
+	line "chosen as the Dueling Deck!"
 	done
 
 Text022b: ; 3ba78 (e:7a78)
@@ -1688,7 +1688,7 @@ Text0237: ; 3bb28 (e:7b28)
 	done
 
 Text0238: ; 3bb57 (e:7b57)
-	text "This isn't a 60-card deck!"
+	text "This isn't a 60-card Deck!"
 	done
 
 Text0239: ; 3bb73 (e:7b73)
@@ -1891,7 +1891,7 @@ Text0268: ; 3bf29 (e:7f29)
 	done
 
 Text0269: ; 3bf46 (e:7f46)
-	text "Choose a deck to dismantle."
+	text "Choose a Deck to dismantle."
 	done
 
 Text026a: ; 3bf63 (e:7f63)

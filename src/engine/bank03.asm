@@ -3488,7 +3488,7 @@ Preload_IshiharaInIshiharasHouse: ; db3d (3:5b3d)
 	cp $08
 	ret
 
-Script_Ishihara: ; db4a (3:5b4a)
+Script_ISHIHARA: ; db4a (3:5b4a)
 	start_script
 	run_command ScriptCommand_MaxOutFlagValue
 	db EVENT_FLAG_1D

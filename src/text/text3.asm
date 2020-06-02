@@ -22,7 +22,7 @@ Text0271: ; 3c082 (f:4082)
 	done
 
 Text0272: ; 3c098 (f:4098)
-	text "OK if this file is deleted?"
+	text "Okay if this file is deleted?"
 	done
 
 Text0273: ; 3c0b5 (f:40b5)
@@ -125,7 +125,7 @@ Text0286: ; 3c3d3 (f:43d3)
 	done
 
 Text0287: ; 3c3eb (f:43eb)
-	text "Received a deck configuration"
+	text "Received a Deck configuration"
 	line "from  <RAMTEXT>!"
 	done
 
@@ -455,7 +455,7 @@ Text02d4: ; 3cb7b (f:4b7b)
 	done
 
 Text02d5: ; 3cbbb (f:4bbb)
-	text "A deck of Pokémon that use Lightning"
+	text "A Deck of Pokémon that use Lightning"
 	line "Energy to zap opponents."
 	done
 
@@ -823,7 +823,7 @@ Text0316: ; 3ddbe (f:5dbe)
 	line "Trainer Cards are played during"
 	line "your turn by following the"
 	line "instructions on the card and then"
-	line "discarding it."
+	line "Discarding it."
 	line "You may use as many Trainer Cards"
 	line "as you like."
 	done
@@ -897,7 +897,7 @@ Text031d: ; 3e3c8 (f:63c8)
 	line "your Active Pokémon."
 	line "The amount of Energy required to"
 	line "Retreat differs for each Pokémon."
-	line "To Retreat, you must discard"
+	line "To Retreat, you must Discard"
 	line "Energy equal to the Retreat Cost"
 	line "of the retreating Pokémon."
 	done
@@ -947,7 +947,7 @@ Text0323: ; 3e660 (f:6660)
 	done
 
 Text0324: ; 3e676 (f:6676)
-	text "  ISHIHARA's House  "
+	text "  Ishihara's House  "
 	done
 
 Text0325: ; 3e68c (f:668c)
@@ -1082,7 +1082,7 @@ PlayerStatusPlayTimeText: ; 3e87b (f:687b)
 	done
 
 PlayerDiaryTitleText: ; 3e892 (f:6892)
-	text "<RAMNAME>'s diary"
+	text "<RAMNAME>'s Diary"
 	done
 
 PlayerDiaryMedalsWonText: ; 3e89d (f:689d)
@@ -1090,17 +1090,17 @@ PlayerDiaryMedalsWonText: ; 3e89d (f:689d)
 	done
 
 PlayerDiarySaveQuestionText: ; 3e8b1 (f:68b1)
-	text "Would you like to keep a diary?"
+	text "Would you like to keep a Diary?"
 	done
 
 PlayerDiarySaveConfirmText: ; 3e8d2 (f:68d2)
 	text "<RAMNAME>"
-	line "wrote in the diary."
+	line "wrote in the Diary."
 	done
 
 PlayerDiarySaveCancelText: ; 3e8e9 (f:68e9)
 	text "Nothing was recorded "
-	line "in the diary."
+	line "in the Diary."
 	done
 
 PlayerStatusMedalsTitleText: ; 3e90e (f:690e)
@@ -1270,24 +1270,24 @@ Text036b: ; 3ec03 (f:6c03)
 	done
 
 Text036c: ; 3ec0c (f:6c0c)
-	text "NEW GAME"
+	text "New Game"
 	done
 
 Text036d: ; 3ec16 (f:6c16)
-	text "CARD POP!"
-	line "CONTINUE FROM DIARY"
-	line "NEW GAME"
+	text "Card Pop!"
+	line "Continue from Diary"
+	line "New Game"
 	done
 
 Text036e: ; 3ec3e (f:6c3e)
-	text "CARD POP!"
-	line "CONTINUE FROM DIARY"
+	text "Card Pop!"
+	line "Continue from Diary"
 	line "New Game"
-	line "CONTINUE DUEL"
+	line "Continue Duel"
 	done
 
 Text036f: ; 3ec74 (f:6c74)
-	text "When you CARD POP! with a friend,"
+	text "When you Card Pop! with a friend,"
 	line "you will each receive a new card!"
 	done
 
@@ -1314,7 +1314,7 @@ Text0371: ; 3ed14 (f:6d14)
 
 Text0372: ; 3ed28 (f:6d28)
 	text "The Game will continue from "
-	line "the point in the duel at"
+	line "the point in the Duel at"
 	line "which the power was turned OFF."
 	done
 
@@ -1325,7 +1325,7 @@ Text0373: ; 3ed7f (f:6d7f)
 	done
 
 Text0374: ; 3eddc (f:6ddc)
-	text "OK to delete the data?"
+	text "Okay to delete the data?"
 	done
 
 Text0375: ; 3edf4 (f:6df4)
@@ -1334,11 +1334,11 @@ Text0375: ; 3edf4 (f:6df4)
 
 Text0376: ; 3ee0b (f:6e0b)
 	text "Data exists from when the power "
-	line "was turned OFF during a duel."
-	line "Choose CONTINUE DUEL on the"
-	line "Main Menu to continue the duel."
+	line "was turned OFF during a Duel."
+	line "Choose Continue Duel on the"
+	line "Main Menu to continue the Duel."
 	line "If you continue now, the heading,"
-	line "CONTINUE DUEL, will be"
+	line "Continue Duel, will be"
 	line "deleted, and the game will start"
 	line "from the point when you last "
 	line "wrote in the Diary."
@@ -1348,7 +1348,7 @@ Text0376: ; 3ee0b (f:6e0b)
 	done
 
 Text0377: ; 3ef50 (f:6f50)
-	text "CONTINUE FROM DIARY?"
+	text "Continue From Diary?"
 	done
 
 Text0378: ; 3ef66 (f:6f66)
@@ -1375,29 +1375,29 @@ Text0379: ; 3efc3 (f:6fc3)
 	done
 
 Text037a: ; 3f147 (f:7147)
-	text "POWER ON"
-	line "DUEL MODE"
-	line "CONTINUE FROM DIARY"
-	line "CGB TEST"
-	line "SGB FRAME"
-	line "STANDARD BG CHARACTER"
-	line "LOOK AT SPR"
-	line "V EFFECT"
-	line "CREATE BOOSTER PACK"
-	line "CREDITS"
-	line "QUIT"
+	text "Power On"
+	line "Duel Mode"
+	line "Continue From Diary"
+	line "Cgb Test"
+	line "Sgb Frame"
+	line "Standard BG Character"
+	line "Look At SPR"
+	line "V Effect"
+	line "Create Booster Pack"
+	line "Credits"
+	line "Quit"
 	done
 
 Text037b: ; 3f1ce (f:71ce)
-	text "NORMAL DUEL"
-	line "SKIP"
+	text "Normal Duel"
+	line "Skip"
 	done
 
 Text037c: ; 3f1e0 (f:71e0)
-	text "COLOSSEUM"
-	line "EVOLUTION"
-	line "MYSTERY"
-	line "LABORATORY"
+	text "Colosseum"
+	line "Evolution"
+	line "Mystery"
+	line "Laboratory"
 	line "Energy"
 	done
 
@@ -1605,19 +1605,19 @@ Text03a7: ; 3f643 (f:7643)
 	done
 
 Text03a8: ; 3f644 (f:7644)
-	text "COLOSSEUM"
+	text "Colosseum"
 	done
 
-Text03a9: ; 3f64f (f:764f)
-	text "EVOLUTION"
+Text03a9: ; 3f64f (F:764f)
+	text "Evolution"
 	done
 
-Text03aa: ; 3f65a (f:765a)
-	text "MYSTERY"
+Text03aa: ; 3f65a (F:765a)
+	text "Mystery"
 	done
 
-Text03ab: ; 3f663 (f:7663)
-	text "LABORATORY"
+Text03ab: ; 3f663 (F:7663)
+	text "Laboratory"
 	done
 
 Text03ac: ; 3f66f (f:766f)
@@ -1629,7 +1629,7 @@ Text03ad: ; 3f67a (f:767a)
 	done
 
 Text03ae: ; 3f682 (f:7682)
-	text "ISHIHARA"
+	text "Ishihara"
 	done
 
 Text03af: ; 3f68c (f:768c)
@@ -1637,7 +1637,7 @@ Text03af: ; 3f68c (f:768c)
 	done
 
 Text03b0: ; 3f696 (f:7696)
-	text "CLERK"
+	text "Clerk"
 	done
 
 Text03b1: ; 3f69d (f:769d)
@@ -1645,11 +1645,11 @@ Text03b1: ; 3f69d (f:769d)
 	done
 
 Text03b2: ; 3f6a2 (f:76a2)
-	text "TECH"
+	text "Tech"
 	done
 
 Text03b3: ; 3f6a8 (f:76a8)
-	text "CLERK"
+	text "Clerk"
 	done
 
 Text03b4: ; 3f6af (f:76af)
@@ -1781,7 +1781,7 @@ Text03d3: ; 3f7a2 (f:77a2)
 	done
 
 Text03d4: ; 3f7a7 (f:77a7)
-	text "COURTNEY"
+	text "Courtney"
 	done
 
 Text03d5: ; 3f7b1 (f:77b1)
@@ -1805,11 +1805,11 @@ Text03d9: ; 3f7c8 (f:77c8)
 	done
 
 Text03da: ; 3f7cf (f:77cf)
-	text "CHAP"
+	text "Chap"
 	done
 
 Text03db: ; 3f7d5 (f:77d5)
-	text "GAL"
+	text "Gal"
 	done
 
 Text03dc: ; 3f7da (f:77da)
@@ -1825,7 +1825,7 @@ Text03de: ; 3f7e7 (f:77e7)
 	done
 
 Text03df: ; 3f7ec (f:77ec)
-	text "HOST"
+	text "Host"
 	done
 
 Text03e0: ; 3f7f2 (f:77f2)
@@ -1861,51 +1861,51 @@ Text03e7: ; 3f823 (f:7823)
 	done
 
 Text03e8: ; 3f82a (f:782a)
-	text "<Lv>60 MEWTWO "
+	text "<Lv>60 Mewtwo "
 	done
 
 Text03e9: ; 3f838 (f:7838)
-	text "<Lv>8 MEW "
+	text "<Lv>8 Mew "
 	done
 
 Text03ea: ; 3f842 (f:7842)
-	text "<Lv>34 ARCANINE"
+	text "<Lv>34 Arcanine"
 	done
 
 Text03eb: ; 3f851 (f:7851)
-	text "<Lv>16 PIKACHU"
+	text "<Lv>16 Pikachu"
 	done
 
 Text03ec: ; 3f85f (f:785f)
-	text "<Lv>13 SURFING PIKACHU"
+	text "<Lv>13 Surfing Pikachu"
 	done
 
 Text03ed: ; 3f875 (f:7875)
-	text "<Lv>20 ELECTABUZZ"
+	text "<Lv>20 Electabuzz"
 	done
 
 Text03ee: ; 3f886 (f:7886)
-	text "<Lv>9 SLOWPOKE"
+	text "<Lv>9 Slowpoke"
 	done
 
 Text03ef: ; 3f894 (f:7894)
-	text "<Lv>12 JIGGLYPUFF"
+	text "<Lv>12 Jigglypuff"
 	done
 
 Text03f0: ; 3f8a5 (f:78a5)
-	text "<Lv>68 ZAPDOS"
+	text "<Lv>68 Zapdos"
 	done
 
 Text03f1: ; 3f8b2 (f:78b2)
-	text "<Lv>37 MOLTRES"
+	text "<Lv>37 Moltres"
 	done
 
 Text03f2: ; 3f8c0 (f:78c0)
-	text "<Lv>37 ARTICUNO"
+	text "<Lv>37 Articuno"
 	done
 
 Text03f3: ; 3f8cf (f:78cf)
-	text "<Lv>41 DRAGONITE"
+	text "<Lv>41 Dragonite"
 	done
 
 Text03f4: ; 3f8df (f:78df)
@@ -1913,7 +1913,7 @@ Text03f4: ; 3f8df (f:78df)
 	done
 
 Text03f5: ; 3f8f7 (f:78f7)
-	text "<Lv>12 FLYING PIKACHU"
+	text "<Lv>12 Flying Pikachu"
 	done
 
 Text03f6: ; 3f90c (f:790c)
@@ -1934,15 +1934,15 @@ Text03f9: ; 3f950 (f:7950)
 	done
 
 Text03fa: ; 3f982 (f:7982)
-	text "CHARMANDER & Friends Deck"
+	text "Charmander & Friends Deck"
 	done
 
 Text03fb: ; 3f99d (f:799d)
-	text "SQUIRTLE & Friends Deck"
+	text "Squirtle & Friends Deck"
 	done
 
 Text03fc: ; 3f9b6 (f:79b6)
-	text "BULBASAUR & Friends Deck"
+	text "Bulbasaur & Friends Deck"
 	done
 
 Text03fd: ; 3f9d0 (f:79d0)
@@ -1980,21 +1980,21 @@ Text0401: ; 3faaa (f:7aaa)
 	line "I have some information for you"
 	line "about Booster Packs. "
 	line "If you want to collect the same"
-	line "cards, duel the same person many"
+	line "cards, Duel the same person many"
 	line "times to get a particular Booster"
 	line "Pack! By doing so, you will be able "
 	line "to collect the same cards, making it"
 	line "easier for you to build your Deck."
 	line "Another method for collecting "
-	line "cards is to use CARD POP!"
-	line "When you and a friend use CARD POP!,"
+	line "cards is to use Card Pop!"
+	line "When you and a friend use Card Pop!,"
 	line "you will each receive a new card!"
-	line "Once you POP! with a certain"
-	line "friend, you won't be able to POP!"
+	line "Once you Pop! with a certain"
+	line "friend, you won't be able to Pop!"
 	line "with that friend again, so find "
 	line "many friends who own the Pokémon "
 	line "Trading Card Game for Game Boy,"
-	line "and CARD POP! with them to"
+	line "and Card Pop! with them to"
 	line "get new cards!"
 	line "Oh, here's something for you..."
 	done
@@ -2013,12 +2013,12 @@ Text0403: ; 3fe10 (f:7e10)
 	text "<RAMNAME>,"
 	line "It's me, Doctor Mason."
 	line "I have some information for you"
-	line "about Mitch's deck - he's "
+	line "about Mitch's Deck - he's "
 	line "the Master of the Fighting Club."
 	line "His First-Strike Deck is built"
 	line "for a quick attack, but it's"
 	line "weak against Psychic Pokémon!"
-	line "I suggest you duel him using"
+	line "I suggest you Duel him using"
 	line "the Deck from the Psychic Medal"
 	line "Deck Machine."
 	line "Here's a Booster Pack for you..."

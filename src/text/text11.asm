@@ -1,3 +1,277 @@
+GolduckDescription: ; 5b4ce (16:74ce)
+	text "Often seen swimming elegantly by"
+	line "lake shores. It is often mistaken"
+	line "for the Japanese monster, Kappa."
+	done
+
+PoliwagName: ; 5b533 (16:7533)
+	text "Poliwag"
+	done
+
+WaterGunName: ; 5b53c (16:753c)
+	text "Water Gun"
+	done
+
+PoliwagsWaterGunDescription: ; 5b547 (16:7547)
+	text "Does 10 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Poliwag but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
+	done
+
+TadpoleName: ; 5b5f4 (16:75f4)
+	text "Tadpole"
+	done
+
+PoliwagDescription: ; 5b5fd (16:75fd)
+	text "Its newly grown legs prevent it"
+	line "from running. It appears to prefer"
+	line "swimming over trying to stand."
+	done
+
+PoliwhirlName: ; 5b660 (16:7660)
+	text "Poliwhirl"
+	done
+
+AmnesiaName: ; 5b66b (16:766b)
+	text "Amnesia"
+	done
+
+PoliwhirlsAmnesiaDescription: ; 5b674 (16:7674)
+	text "Choose 1 of the Defending Pokémon's"
+	line "attacks. That Pokémon can't use that"
+	line "attack during your opponent's next"
+	line "turn."
+	done
+
+DoubleslapName: ; 5b6e7 (16:76e7)
+	text "Doubleslap"
+	done
+
+PoliwhirlsDescription: ; 5b6f3 (16:76f3)
+	text "Capable of living in or out of"
+	line "water. When out of water, it sweats"
+	line "to keep its body slimy."
+	done
+
+PoliwrathName: ; 5b74f (16:774f)
+	text "Poliwrath"
+	done
+
+PoliwrathsWaterGunDescription: ; 5b75a (16:775a)
+	text "Does 30 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Poliwrath but not used to pay for"
+	line "this attack's Energy cost. You"
+	line "can't add more than 20 damage in"
+	line "this way."
+	done
+
+WhirlpoolName: ; 5b809 (16:7809)
+	text "Whirlpool"
+	done
+
+PoliwrathDescription: ; 5b814 (16:7814)
+	text "An adept swimmer at both the front"
+	line "crawl and breaststroke. Easily"
+	line "overtakes the best human swimmers."
+	done
+
+TentacoolName: ; 5b87a (16:787a)
+	text "Tentacool"
+	done
+
+CowardiceName: ; 5b885 (16:7885)
+	text "Cowardice"
+	done
+
+CowardiceDescription: ; 5b890 (16:7890)
+	text "At any time during your turn"
+	line "(before your attack), you may return"
+	line "Tentacool to your hand. (Discard all"
+	line "cards attached to Tentacool.) This"
+	line "power can't be used the turn you put"
+	line "Tentacool into play or if Tentacool"
+	line "is Asleep, Confused, or Paralyzed."
+	done
+
+JellyfishName: ; 5b987 (16:7987)
+	text "Jellyfish"
+	done
+
+TentacoolDescription: ; 5b992 (16:7992)
+	text "Drifts in shallow seas. Anglers who"
+	line "hook them by accident are often"
+	line "punished by its stinging acid."
+	done
+
+TentacruelName: ; 5b9f6 (16:79f6)
+	text "Tentacruel"
+	done
+
+JellyfishStingName: ; 5ba02 (16:7a02)
+	text "Jellyfish Sting"
+	done
+
+TentacruelDescription: ; 5ba13 (16:7a13)
+	text "The tentacles are normally kept"
+	line "short. On hunts, they are extended"
+	line "to ensnare and immobilize prey."
+	done
+
+SeelName: ; 5ba77 (16:7a77)
+	text "Seel"
+	done
+
+HeadbuttName: ; 5ba7d (16:7a7d)
+	text "Headbutt"
+	done
+
+SeaLionName: ; 5ba87 (16:7a87)
+	text "Sea Lion"
+	done
+
+SeelDescription: ; 5ba91 (16:7a91)
+	text "The protruding horn on its head is"
+	line "very hard. This horn is used for"
+	line "bashing through thick ice."
+	done
+
+DewgongName: ; 5baf1 (16:7af1)
+	text "Dewgong"
+	done
+
+AuroraBeamName: ; 5bafa (16:7afa)
+	text "Aurora Beam"
+	done
+
+IceBeamName: ; 5bb07 (16:7b07)
+	text "Ice Beam"
+	done
+
+DewgongDescription: ; 5bb11 (16:7b11)
+	text "Stores thermal energy in its body."
+	line "Swims at a steady 8 knots even in"
+	line "intensely cold waters."
+	done
+
+ShellderName: ; 5bb6e (16:7b6e)
+	text "Shellder"
+	done
+
+HideInShellName: ; 5bb78 (16:7b78)
+	text "Hide in Shell"
+	done
+
+HideInShellDescription: ; 5bb87 (16:7b87)
+	text "Flip a coin. If heads, prevent all"
+	line "damage done to Shellder during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen.)"
+	done
+
+BivalveName: ; 5bc12 (16:7c12)
+	text "Bivalve"
+	done
+
+ShellderDescription: ; 5bc1b (16:7c1b)
+	text "Its hard shell repels any kind of"
+	line "attack. It is vulnerable only when"
+	line "its shell is open."
+	done
+
+CloysterName: ; 5bc74 (16:7c74)
+	text "Cloyster"
+	done
+
+ClampName: ; 5bc7e (16:7c7e)
+	text "Clamp"
+	done
+
+ClampDescription: ; 5bc85 (16:7c85)
+	text "Flip a coin. If heads, the Defending"
+	line "Pokémon is now Paralyzed. If tails,"
+	line "this attack does nothing (not even"
+	line "damage)."
+	done
+
+SpikeCannonName: ; 5bcfb (16:7cfb)
+	text "Spike Cannon"
+	done
+
+CloysterDescription: ; 5bd09 (16:7d09)
+	text "When attacked, it launches its horns"
+	line "in quick volleys. Its innards have"
+	line "never been seen."
+	done
+
+KrabbyName: ; 5bd63 (16:7d63)
+	text "Krabby"
+	done
+
+KrabbysCallForFamilyDescription: ; 5bd6b (16:7d6b)
+	text "Search your Deck for a Basic Pokémon"
+	line "named Krabby and put it onto your"
+	line "Bench. Shuffle your Deck afterward."
+	line "(You can't use this attack if your"
+	line "Bench is full.)"
+	done
+
+RiverCrabName: ; 5be0a (16:7e0a)
+	text "River Crab"
+	done
+
+KrabbyDescription: ; 5be16 (16:7e16)
+	text "Its pincers are not only powerful"
+	line "weapons, they are used for balance"
+	line "when walking sideways."
+	done
+
+KinglerName: ; 5be73 (16:7e73)
+	text "Kingler"
+	done
+
+FlailName: ; 5be7c (16:7e7c)
+	text "Flail"
+	done
+
+KinglersFlailDescription: ; 5be83 (16:7e83)
+	text "Does 10 damage times the number of"
+	line "damage counters on Kingler."
+	done
+
+CrabhammerName: ; 5bec3 (16:7ec3)
+	text "Crabhammer"
+	done
+
+PincerName: ; 5becf (16:7ecf)
+	text "Pincer"
+	done
+
+KinglerDescription: ; 5bed7 (16:7ed7)
+	text "The large pincer has 10,000"
+	line "horsepower of crushing power."
+	line "However, its huge size makes it"
+	line "unwieldy to use."
+	done
+
+HorseaName: ; 5bf43 (16:7f43)
+	text "Horsea"
+	done
+
+OpponentAttackMayDoNothingDescription: ; 5bf4b (16:7f4b)
+	text "If the Defending Pokémon tries to"
+	line "attack during your opponent's next"
+	line "turn, your opponent flips a coin."
+	line "If tails, that attack does nothing."
+	done
+
+DragonName: ; 5bfd7 (16:7fd7)
+	text "Dragon"
+	done
+
+
 HorseaDescription: ; 5c000 (17:4000)
 	text "Known to shoot down flying bugs with"
 	line "precision blasts of ink from the"
@@ -592,9 +866,9 @@ EnergySpikeName: ; 5da72 (17:5a72)
 	done
 
 EnergySpikeDescription: ; 5da80 (17:5a80)
-	text "Search your deck for a basic Energy"
+	text "Search your Deck for a basic Energy"
 	line "card and attach it to 1 of your"
-	line "Pokémon. Shuffle your deck"
+	line "Pokémon. Shuffle your Deck"
 	line "afterward."
 	done
 
@@ -880,7 +1154,7 @@ PeekDescription: ; 5e7f4 (17:67f4)
 	text "Once during your turn (before your"
 	line "attack), you may look at one of the"
 	line "following: the top card of either"
-	line "player's deck, a random card from"
+	line "player's Deck, a random card from"
 	line "your opponent's hand, or one of"
 	line "either player's Prizes."
 	done
@@ -1097,334 +1371,4 @@ OnixDescription: ; 5f129 (17:7129)
 	text "As it grows, the stone portions of"
 	line "its body harden to become similar"
 	line "to a diamond, though colored black."
-	done
-
-CuboneName: ; 5f193 (17:7193)
-	text "Cubone"
-	done
-
-SnivelName: ; 5f19b (17:719b)
-	text "Snivel"
-	done
-
-SnivelDescription: ; 5f1a3 (17:71a3)
-	text "If the Defending Pokémon attacks"
-	line "Cubone during your opponent's next"
-	line "turn, any damage done by the attack"
-	line "is reduced by 20 (after applying"
-	line "Weakness and Resistance). (Benching"
-	line "or evolving either Pokémon ends this"
-	line "effect.)"
-	done
-
-CubonesRageDescription: ; 5f27f (17:727f)
-	text "Does 10 damage plus 10 more damage"
-	line "for each damage counter on Cubone."
-	done
-
-LonelyName: ; 5f2c6 (17:72c6)
-	text "Lonely"
-	done
-
-CuboneDescription: ; 5f2ce (17:72ce)
-	text "Because it never removes its skull"
-	line "helmet, no one has ever seen this"
-	line "Pokémon's real face."
-	done
-
-MarowakName: ; 5f329 (17:7329)
-	text "Marowak"
-	done
-
-BonemerangName: ; 5f332 (17:7332)
-	text "Bonemerang"
-	done
-
-CallforFriendName: ; 5f33e (17:733e)
-	text "Call for Friend"
-	done
-
-CallforFriendDescription: ; 5f34f (17:734f)
-	text "Search your deck for a <FIGHTING> Basic"
-	line "Pokémon card and put it onto your"
-	line "Bench. Shuffle your deck afterward."
-	line "(You can't use this attack if your"
-	line "Bench is full.)"
-	done
-
-BonekeeperName: ; 5f3e9 (17:73e9)
-	text "Bonekeeper"
-	done
-
-Marowak1Description: ; 5f3f5 (17:73f5)
-	text "The bone it holds is its key weapon."
-	line "It throws the bone skillfully like"
-	line "a boomerang to K.O. targets."
-	done
-
-BoneAttackName: ; 5f45b (17:745b)
-	text "Bone Attack"
-	done
-
-BoneAttackDescription: ; 5f468 (17:7468)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon can't attack during your"
-	line "opponent's next turn."
-	done
-
-WailName: ; 5f4c5 (17:74c5)
-	text "Wail"
-	done
-
-WailDescription: ; 5f4cb (17:74cb)
-	text "Each player fills his or her Bench"
-	line "with Basic Pokémon chosen at random"
-	line "from his or her deck. If a player"
-	line "has fewer Basic Pokémon than that in"
-	line "his or deck, he or she chooses all"
-	line "of them. Each player shuffles his"
-	line "or her deck afterward."
-	done
-
-Marowak2Description: ; 5f5b6 (17:75b6)
-	text "Small and weak, this Pokémon is"
-	line "adept with its bone club. It has"
-	line "grown more vicious over the ages."
-	done
-
-HitmonleeName: ; 5f61a (17:761a)
-	text "Hitmonlee"
-	done
-
-StretchKickName: ; 5f625 (17:7625)
-	text "Stretch Kick"
-	done
-
-StretchKickDescription: ; 5f633 (17:7633)
-	text "If your opponent has any Benched"
-	line "Pokémon, choose 1 of them and this"
-	line "attack does 20 damage to it."
-	line "(Don't apply Weakness and"
-	line "Resistance for Benched Pokémon.)"
-	done
-
-HighJumpKickName: ; 5f6d0 (17:76d0)
-	text "High Jump Kick"
-	done
-
-KickingName: ; 5f6e0 (17:76e0)
-	text "Kicking"
-	done
-
-HitmonleeDescription: ; 5f6e9 (17:76e9)
-	text "When in a hurry, its legs lengthen"
-	line "progressively. It runs smoothly with"
-	line "extra long, loping strides."
-	done
-
-HitmonchanName: ; 5f74e (17:774e)
-	text "Hitmonchan"
-	done
-
-JabName: ; 5f75a (17:775a)
-	text "Jab"
-	done
-
-SpecialPunch: ; 5f75f (17:775f)
-	text "Special Punch"
-	done
-
-PunchingName: ; 5f76e (17:776e)
-	text "Punching"
-	done
-
-HitmonchanDescription: ; 5f778 (17:7778)
-	text "While seeming to do nothing, it"
-	line "fires punches in lightning-fast"
-	line "volleys that are impossible to see."
-	done
-
-RhyhornName: ; 5f7dd (17:77dd)
-	text "Rhyhorn"
-	done
-
-LeerName: ; 5f7e6 (17:77e6)
-	text "Leer"
-	done
-
-LeerDescription: ; 5f7ec (17:77ec)
-	text "Flip a coin. If heads, the Defending"
-	line "Pokémon can't attack Rhyhorn during"
-	line "your opponent's next turn."
-	line "(Benching or evolving either Pokémon"
-	line "ends this effect.)"
-	done
-
-SpikeName: ; 5f889 (17:7889)
-	text "Spike"
-	done
-
-RhyhornDescription: ; 5f890 (17:7890)
-	text "Its massive bones are 1,000 times"
-	line "harder than human bones. It can"
-	line "easily knock a trailer flying."
-	done
-
-RhydonName: ; 5f8f2 (17:78f2)
-	text "Rhydon"
-	done
-
-RamName: ; 5f8fa (17:78fa)
-	text "Ram"
-	done
-
-RamDescription: ; 5f8ff (17:78ff)
-	text "Rhydon does 20 damage to itself."
-	line "If your opponent has any Benched"
-	line "Pokémon, he or she chooses 1 of them"
-	line "and switches it with the Defending"
-	line "Pokémon.(Do the damage before"
-	line "switching the Pokémon."
-	done
-
-RamDescriptionCont: ; 5f9bf (17:79bf)
-	text "Switch the Pokémon even if Rhydon"
-	line "is Knocked Out.)"
-	done
-
-RhydonDescription: ; 5f9f3 (17:79f3)
-	text "Protected by an armor-like hide, it"
-	line "is capable of living in molten lava"
-	line "of 3600 degrees."
-	done
-
-KabutoName: ; 5fa4d (17:7a4d)
-	text "Kabuto"
-	done
-
-KabutoArmorName: ; 5fa55 (17:7a55)
-	text "Kabuto Armor"
-	done
-
-KabutoArmorDescription: ; 5fa63 (17:7a63)
-	text "Whenever an attack (even your own)"
-	line "does damage to Kabuto (after"
-	line "applying Weakness and Resistance),"
-	line "that attack only does half the"
-	line "damage to Kabuto (rounded down to"
-	line "the nearest 10)."
-	done
-
-KabutoArmorDescriptionCont: ; 5fb19 (17:7b19)
-	text "(Any other effects of attacks still"
-	line "happen.) This power stops working"
-	line "while Kabuto is Asleep, Confused,"
-	line "or Paralyzed."
-	done
-
-KabutoDescription: ; 5fb90 (17:7b90)
-	text "A Pokémon that was resurrected from"
-	line "a fossil found in what was once the"
-	line "ocean floor eons ago."
-	done
-
-KabutopsName: ; 5fbef (17:7bef)
-	text "Kabutops"
-	done
-
-SharpSickleName: ; 5fbf9 (17:7bf9)
-	text "Sharp Sickle"
-	done
-
-AbsorbName: ; 5fc07 (17:7c07)
-	text "Absorb"
-	done
-
-AbsorbDescription: ; 5fc0f (17:7c0f)
-	text "Remove a number of damage counters"
-	line "from Kabutops equal to half the"
-	line "damage done to the Defending"
-	line "Pokémon (after applying Weakness"
-	line "and Resistance)"
-	line "(rounded up to the nearest 10)."
-	done
-
-AbsorbDescriptionCont: ; 5fcc1 (17:7cc1)
-	text "If Kabutops has fewer damage"
-	line "counters than that, remove all of"
-	line "them."
-	done
-
-KabutopsDescription: ; 5fd07 (17:7d07)
-	text "Its sleek shape is perfect for"
-	line "swimming. It slashes prey with its"
-	line "claws and drains the body fluids."
-	done
-
-AerodactylName: ; 5fd6c (17:7d6c)
-	text "Aerodactyl"
-	done
-
-PrehistoricPowerName: ; 5fd78 (17:7d78)
-	text "Prehistoric Power"
-	done
-
-PrehistoricPowerDescription: ; 5fd8b (17:7d8b)
-	text "No more Evolution cards can be"
-	line "played. This power stops working"
-	line "while Aerodactyl is Asleep,"
-	line "Confused, or Paralyzed."
-	done
-
-FossilName: ; 5fe00 (17:7e00)
-	text "Fossil"
-	done
-
-AerodactylDescription: ; 5fe08 (17:7e08)
-	text "A ferocious prehistoric Pokémon that"
-	line "goes for the enemy's throat with its"
-	line "serrated saw-like fangs."
-	done
-
-AbraName: ; 5fe6c (17:7e6c)
-	text "Abra"
-	done
-
-PsiName: ; 5fe72 (17:7e72)
-	text "Psi"
-	done
-
-AbraDescription: ; 5fe77 (17:7e77)
-	text "Using its ability to read minds, it"
-	line "will identify impending danger and"
-	line "teleport to safety."
-	done
-
-KadabraName: ; 5fed3 (17:7ed3)
-	text "Kadabra"
-	done
-
-KadabrasRecoverDescription: ; 5fedc (17:7edc)
-	text "Discard 1 <PSYCHIC> Energy card attached to"
-	line "Kadabra in order to use this attack."
-	line "Remove all damage counters from"
-	line "Kadabra."
-	done
-
-SuperPsiName: ; 5ff50 (17:7f50)
-	text "Super Psy"
-	done
-
-KadabraDescription: ; 5ff5b (17:7f5b)
-	text "It emits special alpha waves from"
-	line "its body that induce headaches even"
-	line "to those just nearby."
-	done
-
-AlakazamName: ; 5ffb8 (17:7fb8)
-	text "Alakazam"
-	done
-
-DamageSwapName: ; 5ffc2 (17:7fc2)
-	text "Damage Swap"
 	done
