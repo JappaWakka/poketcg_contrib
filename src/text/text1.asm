@@ -212,7 +212,7 @@ Text0034: ; 365c7 (d:65c7)
 	done
 
 PokemonsAttackText: ; 365d8 (d:65d8)
-	text "<RAMTEXT>'s"
+	text "<RAMTEXT> used"
 	line ""
 	text "<RAMTEXT>!"
 	done

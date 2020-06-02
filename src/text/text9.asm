@@ -1213,7 +1213,7 @@ Text07ea: ; 57327 (15:7327)
 	done
 
 Text07eb: ; 57334 (15:7334)
-	text "TECH"
+	text "Tech"
 	done
 
 Text07ec: ; 5733a (15:733a)
