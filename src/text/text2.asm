@@ -751,8 +751,8 @@ ThereWasNoEffectFromConfusionText: ; 39c35 (e:5c35)
 	done
 
 ThereWasNoEffectFromPoisonConfusionText: ; 39c5a (e:5c5a)
-	text "There was no effet"
-	line "from Poison, Confusion."
+	text "There was no effect from"
+	line "Poison or Confusion."
 	done
 
 Text0184: ; 39c86 (e:5c86)
@@ -825,13 +825,13 @@ ReceivedLegendaryCardText: ; 39e53 (e:5e53)
 	done
 
 ReceivedPromotionalFlyingPikachuText: ; 39e75 (e:5e75)
-	text "<RAMNAME> received a Promotinal"
-	line "card Flyin' Pikachu!"
+	text "<RAMNAME> received a Promotional"
+	line "card Flying Pikachu!"
 	done
 
 ReceivedPromotionalSurfingPikachuText: ; 39ea3 (e:5ea3)
 	text "<RAMNAME> received a Promotional"
-	line "card Surfin' Pikachu!"
+	line "card Surfing Pikachu!"
 	done
 
 Text0194: ; 39ed3 (e:5ed3)
