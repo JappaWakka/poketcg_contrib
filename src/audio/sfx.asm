@@ -400,7 +400,7 @@ SFX_7: ; fc202 (3f:4202)
 	ld h, [hl]
 	ld l, a
 	ld a, $0
-	ld [rNR30], a
+	ldh [rNR30], a
 	ld b, d
 	ld de, $ff30
 .asm_fc215
@@ -414,7 +414,7 @@ SFX_7: ; fc202 (3f:4202)
 	ld a, $1
 	ld [wMusicWaveChange], a
 	ld a, $80
-	ld [rNR30], a
+	ldh [rNR30], a
 	ld b, $0
 	pop hl
 	jp Func_fc094
@@ -474,21 +474,21 @@ SFX_end: ; fc249 (3f:4249)
 Func_fc26c: ; fc26c (3f:426c)
 	xor a
 	ld [wde53], a
-	ld [wdd83], a
+	ld [wSfxPriority], a
 	ld a, $80
 	ld [wCurSfxID], a
 	ret
 
 Func_fc279: ; fc279 (3f:4279)
 	ld a, $8
-	ld a, [rNR12]
-	ld a, [rNR22]
-	ld a, [rNR32]
-	ld a, [rNR42]
+	ldh a, [rNR12]
+	ldh a, [rNR22]
+	ldh a, [rNR32]
+	ldh a, [rNR42]
 	ld a, $80
-	ld a, [rNR14]
-	ld a, [rNR24]
-	ld a, [rNR44]
+	ldh a, [rNR14]
+	ldh a, [rNR24]
+	ldh a, [rNR44]
 	xor a
 	ld [wdd8c], a
 	ret
@@ -593,7 +593,3 @@ INCLUDE "audio/sfx/sfx_5c.asm"
 INCLUDE "audio/sfx/sfx_5d.asm"
 INCLUDE "audio/sfx/sfx_5e.asm"
 INCLUDE "audio/sfx/sfx_5f.asm"
-
-rept $c1
-	db $ff
-endr

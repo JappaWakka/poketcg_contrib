@@ -7,30 +7,30 @@ LOADED_NPC_MAX EQU $08
 	const LOADED_NPC_COORD_X
 	const LOADED_NPC_COORD_Y
 	const LOADED_NPC_DIRECTION
-	const LOADED_NPC_FIELD_05
-	const LOADED_NPC_FIELD_06
-	const LOADED_NPC_FIELD_07
-	const LOADED_NPC_FIELD_08
-	const LOADED_NPC_FIELD_09
-	const LOADED_NPC_FIELD_0A
+	const LOADED_NPC_FLAGS
+	const LOADED_NPC_ANIM
+	const LOADED_NPC_DIRECTION_BACKUP
+	const LOADED_NPC_MOVEMENT_STEP
+	const LOADED_NPC_MOVEMENT_PTR
+const_value = const_value+1
 	const LOADED_NPC_FIELD_0B
 LOADED_NPC_LENGTH EQU const_value
 
 ; npc_struct constants
 	const_def
-	const NPC_TRAINER_ID
-	const NPC_DATA_FIELD_01 ; 01-03 Seem to relate to sprites
-	const NPC_DATA_FIELD_02
-	const NPC_DATA_FIELD_03
-	const NPC_DATA_FIELD_04
-	const NPC_DATA_OWSEQUENCE_PTR
+	const NPC_DATA_ID
+	const NPC_DATA_SPRITE_ID
+	const NPC_DATA_ANIM
+	const NPC_DATA_ANIM_CGB
+	const NPC_DATA_FLAGS
+	const NPC_DATA_SCRIPT_PTR
 const_value = const_value+1
 	const NPC_DATA_NAME_TEXT
 const_value = const_value+1
-	const NPC_DATA_BATTLE_PICTURE
-	const NPC_DATA_FIELD_0A
-	const NPC_DATA_FIELD_0B
-	const NPC_DATA_FIELD_0C
+	const NPC_DATA_DUELIST_PICTURE
+	const NPC_DATA_DECK_ID
+	const NPC_DATA_DUEL_THEME_ID
+	const NPC_DATA_MATCH_START_ID
 NPC_DATA_LENGTH EQU const_value
 
 	const_def 1
@@ -75,14 +75,15 @@ NPC_DATA_LENGTH EQU const_value
 	const JESSICA_PIC   ; $27
 	const STEPHANIE_PIC ; $28
 	const AARON_PIC     ; $29
+	const LINK_OPP_PIC  ; $2a
 
 	const_def 1
 	const NPC_DRMASON                     ; $01
 	const NPC_RONALD1                     ; $02
 	const NPC_ISHIHARA                    ; $03
 	const NPC_IMAKUNI                     ; $04
-const_value = const_value+1 ; DRMASON duplicate
-const_value = const_value+1 ; DRMASON duplicate
+	const NPC_05                          ; $05 (unused)
+	const NPC_06                          ; $06 (unused)
 	const NPC_SAM                         ; $07
 	const NPC_TECH1                       ; $08
 	const NPC_TECH2                       ; $09
@@ -186,10 +187,19 @@ const_value = const_value+1 ; DRMASON duplicate
 	const NPC_LEGENDARY_CARD_BOTTOM_LEFT  ; $6b
 	const NPC_LEGENDARY_CARD_BOTTOM_RIGHT ; $6c
 	const NPC_LEGENDARY_CARD_RIGHT_SPARK  ; $6d
-	const NPC_11F49                       ; $6e
-const_value = const_value+1 ; NPC_11F49 duplicate
+	const NPC_6E                          ; $6e (unused)
+	const NPC_6F                          ; $6f (unused)
 	const NPC_MURRAY2                     ; $70
 	const NPC_RONALD2                     ; $71
 	const NPC_RONALD3                     ; $72
-const_value = const_value+1 ; NPC_11f49 duplicate
+	const NPC_PLAYER_CREDITS              ; $73
 
+; flags in LOADED_NPC_FLAGS
+	const_def 4
+	const NPC_FLAG_DIRECTIONLESS_F ; $4
+	const NPC_FLAG_MOVING_F        ; $5
+	const NPC_FLAG_UNKNOWN_F       ; $6
+
+NPC_FLAG_DIRECTIONLESS EQU 1 << NPC_FLAG_DIRECTIONLESS_F
+NPC_FLAG_MOVING        EQU 1 << NPC_FLAG_MOVING_F
+NPC_FLAG_UNKNOWN       EQU 1 << NPC_FLAG_UNKNOWN_F

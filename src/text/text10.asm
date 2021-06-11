@@ -85,7 +85,7 @@ NidoranFName: ; 582e5 (16:42e5)
 	text "Nidoran♀"
 	done
 
-FurySweepesName: ; 582ef (16:42ef)
+FurySwipesName: ; 582ef (16:42ef)
 	text "Fury Swipes"
 	done
 
@@ -1591,3 +1591,5 @@ OpponentAttackMayDoNothingDescription: ; 5bf4b (16:7f4b)
 DragonName: ; 5bfd7 (16:7fd7)
 	text "Dragon"
 	done
+
+	ds $21

@@ -49,3 +49,33 @@ OWMODE_MAP            EQU 0
 OWMODE_MOVE           EQU 1
 OWMODE_START_SCRIPT   EQU 2
 OWMODE_SCRIPT         EQU 3
+
+; max number of player names that
+; can be written to sCardPopNameList
+CARDPOP_NAME_LIST_MAX_ELEMS EQU 16
+CARDPOP_NAME_LIST_SIZE EQUS "CARDPOP_NAME_LIST_MAX_ELEMS * NAME_BUFFER_LENGTH"
+
+NUM_CHALLENGE_MACHINE_OPPONENTS EQU 5
+
+; commands transmitted through IR to be
+; executed by the other device
+; (see ExecuteReceivedIRCommands)
+	const_def
+	const IRCMD_CLOSE             ; $0
+	const IRCMD_RETURN_WO_CLOSING ; $1
+	const IRCMD_TRANSMIT_DATA     ; $2
+	const IRCMD_RECEIVE_DATA      ; $3
+	const IRCMD_CALL_FUNCTION     ; $4
+NUM_IR_COMMANDS EQU const_value
+
+; parameters for IR communication
+; (see InitIRCommunications)
+	const_def 1
+	const IRPARAM_CARD_POP    ; $1
+	const IRPARAM_SEND_CARDS  ; $2
+	const IRPARAM_SEND_DECK   ; $3
+
+NULL EQU $0000
+
+FALSE EQU 0
+TRUE  EQU 1

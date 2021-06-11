@@ -8,7 +8,7 @@ MasonLabObjects: ; 13b04 (3:7b04)
 	db NORTH, 18, 2
 	dw PrintInteractableObjectText
 	tx Text04a0
-	tx Text049f
+	tx WhatIsADeckText
 
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -41,117 +41,117 @@ MasonLabObjects: ; 13b04 (3:7b04)
 	tx Text04ab
 
 	db NORTH, 2, 2
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db $ff
 
- 
+
 DeckMachineRoomObjects: ; 13b4d (3:7b4d)
 	db NORTH, 2, 2
 	dw Script_d932
-	tx Text041b
-	tx Text041a
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 4, 2
 	dw Script_d932
-	tx Text041b
-	tx Text041a
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 2
-	dw $593f
-	tx Text041b
-	tx Text041a
+	dw Script_d93f
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 8, 2
-	dw $593f
-	tx Text041b
-	tx Text041a
+	dw Script_d93f
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 10, 2
-	dw $5995
-	tx Text041b
-	tx Text041a
+	dw Script_d995
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 12, 2
-	dw $5995
-	tx Text041b
-	tx Text041a
+	dw Script_d995
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 14, 2
-	dw $59c2
-	tx Text041b
-	tx Text041a
+	dw Script_d9c2
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 16, 2
-	dw $59c2
-	tx Text041b
-	tx Text041a
+	dw Script_d9c2
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 18, 2
-	dw $59ef
-	tx Text041b
-	tx Text041a
+	dw Script_d9ef
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 20, 2
-	dw $59ef
-	tx Text041b
-	tx Text041a
+	dw Script_d9ef
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 14, 10
-	dw $5a1c
-	tx Text041b
-	tx Text041a
+	dw Script_da1c
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 16, 10
-	dw $5a1c
-	tx Text041b
-	tx Text041a
+	dw Script_da1c
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 18, 10
-	dw $5a49
-	tx Text041b
-	tx Text041a
+	dw Script_da49
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 20, 10
-	dw $5a49
-	tx Text041b
-	tx Text041a
+	dw Script_da49
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 14, 18
-	dw $5a76
-	tx Text041b
-	tx Text041a
+	dw Script_da76
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 16, 18
-	dw $5a76
-	tx Text041b
-	tx Text041a
+	dw Script_da76
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 18, 18
-	dw $5aa3
-	tx Text041b
-	tx Text041a
+	dw Script_daa3
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 20, 18
-	dw $5aa3
-	tx Text041b
-	tx Text041a
+	dw Script_daa3
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 2, 18
-	dw $5ad0
-	tx Text041b
-	tx Text041a
+	dw Script_dad0
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 4, 18
-	dw $5ad0
-	tx Text041b
-	tx Text041a
+	dw Script_dad0
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db $ff
 
- 
+
 IshiharasHouseObjects: ; 13c02 (3:7c02)
 	db NORTH, 6, 2
 	dw PrintInteractableObjectText
@@ -215,7 +215,7 @@ IshiharasHouseObjects: ; 13c02 (3:7c02)
 
 	db $ff
 
- 
+
 FightingClubLobbyObjects: ; 13c6f (3:7c6f)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -233,23 +233,23 @@ FightingClubLobbyObjects: ; 13c6f (3:7c6f)
 	tx Text04c9
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 RockClubLobbyObjects: ; 13ca6 (3:7ca6)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -267,23 +267,23 @@ RockClubLobbyObjects: ; 13ca6 (3:7ca6)
 	tx Text04cf
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 WaterClubLobbyObjects: ; 13cdd (3:7cdd)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -301,23 +301,23 @@ WaterClubLobbyObjects: ; 13cdd (3:7cdd)
 	tx Text04d5
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 LightningClubLobbyObjects: ; 13d14 (3:7d14)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -335,23 +335,23 @@ LightningClubLobbyObjects: ; 13d14 (3:7d14)
 	tx Text04db
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 GrassClubLobbyObjects: ; 13d4b (3:7d4b)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -369,23 +369,23 @@ GrassClubLobbyObjects: ; 13d4b (3:7d4b)
 	tx Text04e1
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 PsychicClubLobbyObjects: ; 13d82 (3:7d82)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -403,23 +403,23 @@ PsychicClubLobbyObjects: ; 13d82 (3:7d82)
 	tx Text04e7
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 ScienceClubLobbyObjects: ; 13db9 (3:7db9)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -437,23 +437,23 @@ ScienceClubLobbyObjects: ; 13db9 (3:7db9)
 	tx Text04ed
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 FireClubLobbyObjects: ; 13df0 (3:7df0)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -471,23 +471,23 @@ FireClubLobbyObjects: ; 13df0 (3:7df0)
 	tx Text04f3
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 ChallengeHallLobbyObjects: ; 13e27 (3:7e27)
 	db NORTH, 20, 2
 	dw PrintInteractableObjectText
@@ -505,23 +505,23 @@ ChallengeHallLobbyObjects: ; 13e27 (3:7e27)
 	tx Text04f9
 
 	db NORTH, 2, 8
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 6, 6
 	dw Script_fc52
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db NORTH, 10, 6
 	dw Func_fc7a
-	tx Text041b
-	tx Text03b0
+	tx PlaceholderMessageText
+	tx ClerkNPCName
 
 	db $ff
 
- 
+
 PokemonDomeEntranceObjects: ; 13e5e (3:7e5e)
 	db NORTH, 2, 2
 	dw PrintInteractableObjectText
@@ -537,7 +537,6 @@ PokemonDomeEntranceObjects: ; 13e5e (3:7e5e)
 	dw PrintInteractableObjectText
 	tx Text0500
 	tx Text04ff
-
 
 	db NORTH, 2, 8
 	dw PrintInteractableObjectText
@@ -565,46 +564,44 @@ PokemonDomeEntranceObjects: ; 13e5e (3:7e5e)
 	tx Text0507
 
 	db NORTH, 22, 0
-	dw $76af
+	dw Script_f6af
 	tx Text0558
 	tx Text0509
 
 	db NORTH, 24, 0
-	dw $76af
+	dw Script_f6af
 	tx Text0558
 	tx Text0509
 
 	db NORTH, 28, 2
-	dw PC_c7ea
-	tx Text041b
-	tx Text041a
+	dw PCMenu
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db $ff
 
- 
+
 HallOfHonorObjects: ; 13ec2 (3:7ec2)
 	; Legendary Cards
 	db NORTH, 10, 10
 	dw Script_fbf1
-	dw $0000
-	dw $0000
+	dw NULL
+	dw NULL
 
 	; Legendary Cards
 	db NORTH, 12, 10
 	dw Script_fbf1
-	dw $0000
-	dw $0000
+	dw NULL
+	dw NULL
 
 	db NORTH, 10, 2
-	dw $7be1
-	tx Text041b
-	tx Text041a
+	dw Script_fbe1
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db NORTH, 12, 2
-	dw $7be1
-	tx Text041b
-	tx Text041a
+	dw Script_fbe1
+	tx PlaceholderMessageText
+	tx PokemonTradingCards101Text
 
 	db $ff
-
- 

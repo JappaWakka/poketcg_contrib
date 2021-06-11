@@ -48,7 +48,7 @@ When naming a function, it should be concise but also capture the purpose and co
 * ``OpenNonTurnHolderDiscardPileScreen``
 * ``LoadCardDataToBuffer1_FromCardID``
 * ``LoadCardDataToBuffer1_FromDeckIndex``
-* ``CheckIfEnoughEnergiesToMove``
+* ``CheckIfEnoughEnergiesToAttack``
 * ``CheckIfEnoughEnergiesOfType``
 
 Sometimes a function is the most top-level function of this kind, so it can be given a very direct name that suggests it, like:
@@ -70,7 +70,6 @@ Another common case is functions that are declared in the home bank for accessib
 CopyCardNameAndLevel: ; 29f5 (0:29f5)
 	farcall _CopyCardNameAndLevel
 	ret
-; 0x29fa  
  ```
 ## Data labels
 
@@ -134,13 +133,13 @@ CopyLine: ; 1ea5 (0:1ea5)
 ```
 
 ```
-; check if a pokemon card has enough energy attached to it in order to use a move
+; check if a pokemon card has enough energy attached to it in order to use an attack
 ; input:
 ;   d = deck index of card (0 to 59)
 ;   e = attack index (0 or 1)
 ;   wAttachedEnergies and wTotalAttachedEnergies
 ; returns: carry if not enough energy, nc if enough energy.
-_CheckIfEnoughEnergiesToMove: ; 48ac (1:48ac)
+_CheckIfEnoughEnergiesToAttack: ; 48ac (1:48ac)
 ```
 
 ```
@@ -203,7 +202,6 @@ DuelHorizontalSeparatorTileData: ; 5199 (1:5199)
 	db 9, 6, $33, $34, 0
 	db 9, 7, $35, $36, $37, $37, $37, $37, $37, $37, $37, $37, $37, 0
 	db $ff
-; 0x51c0
 ```
 
 
@@ -221,7 +219,7 @@ When naming WRAM addresses that belong to the same context or feature, try to ma
 wLoadedCard1:: ; cc24
 	card_data_struct wLoadedCard1
 wLoadedCard2:: ; cc65
-	card_data_struct wLoadedCard2	
+	card_data_struct wLoadedCard2
 ```
 
 Lastly, adding some line of commentary to the memory address is helpful when just the name itself doesn't quite tell the whole story. Usually, this is done to clarify where the memory address is used, or to explain which kind of different values it may hold and perhaps what each of them means (or just to mention the support of specific values, such as $00 or $ff). If the RAM address is supposed to hold a value that maps directly to some group of already defined constants, this is the perfect place to indicate it. Adding commentary to an address that contains a bit field is also particularly useful to describe what each bit means, since that's not doable with just the address name.

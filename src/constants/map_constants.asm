@@ -34,6 +34,21 @@
 	const POKEMON_DOME            ; $20
 	const HALL_OF_HONOR           ; $21
 
+; overworld map selections
+	const_def 1
+	const OWMAP_MASON_LABORATORY ; $01
+	const OWMAP_ISHIHARAS_HOUSE  ; $02
+	const OWMAP_FIGHTING_CLUB    ; $03
+	const OWMAP_ROCK_CLUB        ; $04
+	const OWMAP_WATER_CLUB       ; $05
+	const OWMAP_LIGHTNING_CLUB   ; $06
+	const OWMAP_GRASS_CLUB       ; $07
+	const OWMAP_PSYCHIC_CLUB     ; $08
+	const OWMAP_SCIENCE_CLUB     ; $09
+	const OWMAP_FIRE_CLUB        ; $0A
+	const OWMAP_CHALLENGE_HALL   ; $0B
+	const OWMAP_POKEMON_DOME     ; $0C
+	const OWMAP_MYSTERY_HOUSE    ; $0D for OverworldMapNames
 
 ; Size of map data. See data/npc_map_data.asm and data/map_objects.asm
 ; for more info on what these represent
@@ -50,3 +65,30 @@ MAP_SCRIPT_LOAD_MAP      EQU $08
 MAP_SCRIPT_AFTER_DUEL    EQU $0a
 MAP_SCRIPT_MOVED_PLAYER  EQU $0c
 MAP_SCRIPT_CLOSE_TEXTBOX EQU $0e
+
+; map palettes for use in SGB mode
+	const_def 1
+	const MAP_SGB_PALS_1  ; $1
+	const MAP_SGB_PALS_2  ; $2
+	const MAP_SGB_PALS_3  ; $3
+	const MAP_SGB_PALS_4  ; $4
+	const MAP_SGB_PALS_5  ; $5
+	const MAP_SGB_PALS_6  ; $6
+	const MAP_SGB_PALS_7  ; $7
+	const MAP_SGB_PALS_8  ; $8
+	const MAP_SGB_PALS_9  ; $9
+	const MAP_SGB_PALS_10 ; $a
+
+	const_def 0
+	const MAP_EVENT_POKEMON_DOME_DOOR      ; $0
+	const MAP_EVENT_HALL_OF_HONOR_DOOR     ; $1
+	const MAP_EVENT_FIGHTING_DECK_MACHINE  ; $2
+	const MAP_EVENT_ROCK_DECK_MACHINE      ; $3
+	const MAP_EVENT_WATER_DECK_MACHINE     ; $4
+	const MAP_EVENT_LIGHTNING_DECK_MACHINE ; $5
+	const MAP_EVENT_GRASS_DECK_MACHINE     ; $6
+	const MAP_EVENT_PSYCHIC_DECK_MACHINE   ; $7
+	const MAP_EVENT_SCIENCE_DECK_MACHINE   ; $8
+	const MAP_EVENT_FIRE_DECK_MACHINE      ; $9
+	const MAP_EVENT_CHALLENGE_MACHINE      ; $a
+NUM_MAP_EVENTS EQU const_value
