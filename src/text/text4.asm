@@ -1,93 +1,93 @@
-Text03e8: ; 3f82a (f:782a)
+MewtwoTradeCardName: ; 3f82a (f:782a)
 	text "<Lv>60 MEWTWO "
 	done
 
-Text03e9: ; 3f838 (f:7838)
+MewTradeCardName: ; 3f838 (f:7838)
 	text "<Lv>8 MEW "
 	done
 
-Text03ea: ; 3f842 (f:7842)
+ArcanineTradeCardName: ; 3f842 (f:7842)
 	text "<Lv>34 ARCANINE"
 	done
 
-Text03eb: ; 3f851 (f:7851)
+PikachuTradeCardName: ; 3f851 (f:7851)
 	text "<Lv>16 PIKACHU"
 	done
 
-Text03ec: ; 3f85f (f:785f)
+SurfingPikachuTradeCardName: ; 3f85f (f:785f)
 	text "<Lv>13 SURFING PIKACHU"
 	done
 
-Text03ed: ; 3f875 (f:7875)
+ElectabuzzTradeCardName: ; 3f875 (f:7875)
 	text "<Lv>20 ELECTABUZZ"
 	done
 
-Text03ee: ; 3f886 (f:7886)
+SlowpokeTradeCardName: ; 3f886 (f:7886)
 	text "<Lv>9 SLOWPOKE"
 	done
 
-Text03ef: ; 3f894 (f:7894)
+JigglypuffTradeCardName: ; 3f894 (f:7894)
 	text "<Lv>12 JIGGLYPUFF"
 	done
 
-Text03f0: ; 3f8a5 (f:78a5)
+ZapdosLegendaryCardName: ; 3f8a5 (f:78a5)
 	text "<Lv>68 ZAPDOS"
 	done
 
-Text03f1: ; 3f8b2 (f:78b2)
+MoltresLegendaryCardName: ; 3f8b2 (f:78b2)
 	text "<Lv>37 MOLTRES"
 	done
 
-Text03f2: ; 3f8c0 (f:78c0)
+ArticunoLegendaryCardName: ; 3f8c0 (f:78c0)
 	text "<Lv>37 ARTICUNO"
 	done
 
-Text03f3: ; 3f8cf (f:78cf)
+DragoniteLegendaryCardName: ; 3f8cf (f:78cf)
 	text "<Lv>41 DRAGONITE"
 	done
 
-Text03f4: ; 3f8df (f:78df)
+SuperEnergyRetrievalTradeCardName: ; 3f8df (f:78df)
 	text "Super Energy Retrieval"
 	done
 
-Text03f5: ; 3f8f7 (f:78f7)
+FlyingPikachuTradeCardName: ; 3f8f7 (f:78f7)
 	text "<Lv>12 FLYING PIKACHU"
 	done
 
-Text03f6: ; 3f90c (f:790c)
+LightningAndFireDeckChoiceText: ; 3f90c (f:790c)
 	text "Lightning & Fire Deck"
 	done
 
-Text03f7: ; 3f923 (f:7923)
+WaterAndFightingDeckChoiceText: ; 3f923 (f:7923)
 	text "Water & Fighting Deck"
 	done
 
-Text03f8: ; 3f93a (f:793a)
+GrassAndPsychicDeckChoiceText: ; 3f93a (f:793a)
 	text "Grass & Psychic Deck"
 	done
 
-Text03f9: ; 3f950 (f:7950)
+SelectDeckToDuelText: ; 3f950 (f:7950)
 	text "Please select the Deck"
 	line "you wish to Duel against."
 	done
 
-Text03fa: ; 3f982 (f:7982)
+CharmanderAndFriendsDeckChoiceText: ; 3f982 (f:7982)
 	text "Charmander & Vrienden Deck"
 	done
 
-Text03fb: ; 3f99d (f:799d)
+SquirtleAndFriendsDeckChoiceText: ; 3f99d (f:799d)
 	text "Squirtle & Vrienden Deck"
 	done
 
-Text03fc: ; 3f9b6 (f:79b6)
+BulbasaurAndFriendsDeckChoiceText: ; 3f9b6 (f:79b6)
 	text "Bulbasaur & Vrienden Deck"
 	done
 
-Text03fd: ; 3f9d0 (f:79d0)
+SelectDeckToTakeText: ; 3f9d0 (f:79d0)
 	text "Kies het deck dat je wilt."
 	done
 
-Text03fe: ; 3f9f2 (f:79f2)
+HowCanIHelpText: ; 3f9f2 (f:79f2)
 	text "Hoi, <RAMNAME>. Waar kan"
 	line "ik je mee van dienst zijn?"
 	done
@@ -491,11 +491,11 @@ Text0419: ; 41965 (10:5965)
 	line "attached Booster Pack."
 	done
 
-Text041a: ; 4199b (10:599b)
+PokemonTradingCards101Text: ; 4199b (10:599b)
 	text "”Pokémon Trading Cards 101”"
 	done
 
-Text041b: ; 419b8 (10:59b8)
+PlaceholderMessageText: ; 419b8 (10:59b8)
 	text "This message is not in yet!"
 	done
 
@@ -509,7 +509,7 @@ Text041c: ; 419d5 (10:59d5)
 	line "just to collect them."
 	done
 
-Text041d: ; 41a74 (10:5a74)
+Gal1WantToTrade1Text: ; 41a74 (10:5a74)
 	text "We don't use Fire Pokémon cards"
 	line "here at the Water Club."
 	line "I have this rare Arcanine, but"
@@ -518,17 +518,17 @@ Text041d: ; 41a74 (10:5a74)
 	line "mind trading it for my Arcanine?"
 	done
 
-Text041e: ; 41b1d (10:5b1d)
+Gal1WantToTrade2Text: ; 41b1d (10:5b1d)
 	text "Hi! We meet again!"
 	line "Have you decided to trade your"
 	line "Lapras for my rare Arcanine?"
 	done
 
-Text041f: ; 41b6d (10:5b6d)
+Gal1WouldYouLikeToTradeText: ; 41b6d (10:5b6d)
 	text "Would you like to trade?"
 	done
 
-Text0420: ; 41b87 (10:5b87)
+Gal1DeclinedTradeText: ; 41b87 (10:5b87)
 	text "Aw, you're not going to"
 	line "trade with me?"
 	line "Well, that's too bad..."
@@ -536,13 +536,13 @@ Text0420: ; 41b87 (10:5b87)
 	line "come look for me."
 	done
 
-Text0421: ; 41bf6 (10:5bf6)
+Gal1DontOwnCardText: ; 41bf6 (10:5bf6)
 	text "Hey! What are you trying to pull?"
 	line "You don't have a Lapras!?!"
 	line "Come see me when you get a Lapras."
 	done
 
-Text0422: ; 41c57 (10:5c57)
+Gal1CardInDeckText: ; 41c57 (10:5c57)
 	text "OK! Let's trade your Lapras"
 	line "for my Arcanine..."
 	line "Oh! I see your Lapras"
@@ -553,23 +553,23 @@ Text0422: ; 41c57 (10:5c57)
 	line ""
 	done
 
-Text0423: ; 41cf7 (10:5cf7)
+Gal1LetsTradeText: ; 41cf7 (10:5cf7)
 	text "OK then, let's trade your"
 	line "Lapras for my Arcanine."
 	done
 
-Text0424: ; 41d2a (10:5d2a)
+Gal1TradeCompleteText: ; 41d2a (10:5d2a)
 	text "<RAMNAME> traded a Lapras"
 	line "for an Arcanine!"
 	done
 
-Text0425: ; 41d4e (10:5d4e)
+Gal1ThanksText: ; 41d4e (10:5d4e)
 	text "Thanks, <RAMNAME>!"
 	line "I'll take good care"
 	line "of this Lapras."
 	done
 
-Text0426: ; 41d7e (10:5d7e)
+Gal1AfterTradeText: ; 41d7e (10:5d7e)
 	text "Hey! You're the one who"
 	line "gave me your Lapras!"
 	line "I'm taking good care of"

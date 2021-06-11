@@ -1,37 +1,52 @@
 ; rst vectors
 SECTION "rst00", ROM0
 	ret
+	ds 7
 SECTION "rst08", ROM0
 	ret
+	ds 7
 SECTION "rst10", ROM0
 	ret
+	ds 7
 SECTION "rst18", ROM0
 	jp Bank1Call
+	ds 5
 SECTION "rst20", ROM0
 	jp RST20
+	ds 5
 SECTION "rst28", ROM0
 	jp FarCall
+	ds 5
 SECTION "rst30", ROM0
 	ret
+	ds 7
 SECTION "rst38", ROM0
 	ret
+	ds 7
 
 ; interrupts
 SECTION "vblank", ROM0
 	jp VBlankHandler
+	ds 5
 SECTION "lcdc", ROM0
 	call wLCDCFunctionTrampoline
 	reti
+	ds 4
 SECTION "timer", ROM0
 	jp TimerHandler
+	ds 5
 SECTION "serial", ROM0
 	jp SerialHandler
+	ds 5
 SECTION "joypad", ROM0
 	reti
+	ds $9f
 
 SECTION "romheader", ROM0
 	nop
 	jp Start
+
+	ds $4c
 
 SECTION "start", ROM0
 Start: ; 0150 (0:0150)
@@ -39,8 +54,8 @@ Start: ; 0150 (0:0150)
 	ld sp, $fffe
 	push af
 	xor a
-	ld [rIF], a
-	ld [rIE], a
+	ldh [rIF], a
+	ldh [rIE], a
 	call ZeroRAM
 	ld a, $1
 	call BankswitchROM
@@ -87,16 +102,16 @@ VBlankHandler: ; 019b (0:019b)
 .no_oam_copy
 	; flush scaling/windowing parameters
 	ldh a, [hSCX]
-	ld [rSCX], a
+	ldh [rSCX], a
 	ldh a, [hSCY]
-	ld [rSCY], a
+	ldh [rSCY], a
 	ldh a, [hWX]
-	ld [rWX], a
+	ldh [rWX], a
 	ldh a, [hWY]
-	ld [rWY], a
+	ldh [rWY], a
 	; flush LCDC
 	ld a, [wLCDC]
-	ld [rLCDC], a
+	ldh [rLCDC], a
 	ei
 	call wVBlankFunctionTrampoline
 	call FlushPalettesIfRequested
@@ -186,17 +201,17 @@ SetupTimer: ; 0241 (0:0241)
 	ld b, -68 ; Value for Normal Speed
 	call CheckForCGB
 	jr c, .set_timer
-	ld a, [rKEY1]
+	ldh a, [rKEY1]
 	and $80
 	jr z, .set_timer
 	ld b, $100 - 2 * 68 ; Value for CGB Double Speed
 .set_timer
 	ld a, b
-	ld [rTMA], a
+	ldh [rTMA], a
 	ld a, TAC_16384_HZ
-	ld [rTAC], a
+	ldh [rTAC], a
 	ld a, TAC_START | TAC_16384_HZ
-	ld [rTAC], a
+	ldh [rTAC], a
 	ret
 
 ; return carry if not CGB
@@ -231,36 +246,36 @@ EnableLCD: ; 0277 (0:0277)
 	ret nz               ; assert that LCD is off
 	or LCDC_ON           ;
 	ld [wLCDC], a        ;
-	ld [rLCDC], a        ; turn LCD on
+	ldh [rLCDC], a       ; turn LCD on
 	ld a, FLUSH_ALL_PALS
 	ld [wFlushPaletteFlags], a
 	ret
 
 ; wait for vblank, then turn LCD off
 DisableLCD: ; 028a (0:028a)
-	ld a, [rLCDC]        ;
+	ldh a, [rLCDC]       ;
 	bit LCDC_ENABLE_F, a ;
 	ret z                ; assert that LCD is on
-	ld a, [rIE]
+	ldh a, [rIE]
 	ld [wIE], a
 	res INT_VBLANK, a    ;
-	ld [rIE], a          ; disable vblank interrupt
+	ldh [rIE], a         ; disable vblank interrupt
 .wait_vblank
-	ld a, [rLY]          ;
+	ldh a, [rLY]         ;
 	cp LY_VBLANK         ;
 	jr nz, .wait_vblank  ; wait for vblank
-	ld a, [rLCDC]        ;
+	ldh a, [rLCDC]       ;
 	and LCDC_OFF         ;
-	ld [rLCDC], a        ;
+	ldh [rLCDC], a       ;
 	ld a, [wLCDC]        ;
 	and LCDC_OFF         ;
 	ld [wLCDC], a        ; turn LCD off
 	xor a
-	ld [rBGP], a
-	ld [rOBP0], a
-	ld [rOBP1], a
+	ldh [rBGP], a
+	ldh [rOBP0], a
+	ldh [rOBP1], a
 	ld a, [wIE]
-	ld [rIE], a
+	ldh [rIE], a
 	ret
 
 ; set OBJ size: 8x8
@@ -293,50 +308,50 @@ Set_WD_off: ; 02d4 (0:02d4)
 
 ; enable timer interrupt
 EnableInt_Timer: ; 02dd (0:02dd)
-	ld a, [rIE]
+	ldh a, [rIE]
 	or 1 << INT_TIMER
-	ld [rIE], a
+	ldh [rIE], a
 	ret
 
 ; enable vblank interrupt
 EnableInt_VBlank: ; 02e4 (0:02e4)
-	ld a, [rIE]
+	ldh a, [rIE]
 	or 1 << INT_VBLANK
-	ld [rIE], a
+	ldh [rIE], a
 	ret
 
 ; enable lcdc interrupt on hblank mode
 EnableInt_HBlank: ; 02eb (0:02eb)
-	ld a, [rSTAT]
+	ldh a, [rSTAT]
 	or 1 << STAT_MODE_HBLANK
-	ld [rSTAT], a
+	ldh [rSTAT], a
 	xor a
-	ld [rIF], a
-	ld a, [rIE]
+	ldh [rIF], a
+	ldh a, [rIE]
 	or 1 << INT_LCD_STAT
-	ld [rIE], a
+	ldh [rIE], a
 	ret
 
 ; disable lcdc interrupt and the hblank mode trigger
 DisableInt_HBlank: ; 02fb (0:02fb)
-	ld a, [rSTAT]
+	ldh a, [rSTAT]
 	and ~(1 << STAT_MODE_HBLANK)
-	ld [rSTAT], a
+	ldh [rSTAT], a
 	xor a
-	ld [rIF], a
-	ld a, [rIE]
+	ldh [rIF], a
+	ldh a, [rIE]
 	and ~(1 << INT_LCD_STAT)
-	ld [rIE], a
+	ldh [rIE], a
 	ret
 
 ; initialize scroll, window, and lcdc registers, set trampoline functions
 ; for the lcdc and vblank interrupts, latch clock data, and enable SRAM/RTC
 SetupRegisters: ; 030b (0:030b)
 	xor a
-	ld [rSCY], a
-	ld [rSCX], a
-	ld [rWY], a
-	ld [rWX], a
+	ldh [rSCY], a
+	ldh [rSCX], a
+	ldh [rWY], a
+	ldh [rWX], a
 	ld [wcab0], a
 	ld [wcab1], a
 	ld [wcab2], a
@@ -378,7 +393,7 @@ DetectConsole: ; 0349 (0:0349)
 	cp CONSOLE_CGB
 	ret nz
 	ld a, $01
-	ld [rSVBK], a
+	ldh [rSVBK], a
 	call SwitchToCGBDoubleSpeed
 	ret
 
@@ -386,10 +401,10 @@ DetectConsole: ; 0349 (0:0349)
 SetupPalettes: ; 036a (0:036a)
 	ld hl, wBGP
 	ld a, %11100100
-	ld [rBGP], a
+	ldh [rBGP], a
 	ld [hli], a ; wBGP
-	ld [rOBP0], a
-	ld [rOBP1], a
+	ldh [rOBP0], a
+	ldh [rOBP1], a
 	ld [hli], a ; wOBP0
 	ld [hl], a ; wOBP1
 	xor a
@@ -414,10 +429,10 @@ SetupPalettes: ; 036a (0:036a)
 	ret
 
 InitialPalette: ; 0399 (0:0399)
-	rgb 28,28,24
-	rgb 21,21,16
-	rgb 10,10,08
-	rgb 00,00,00
+	rgb 28, 28, 24
+	rgb 21, 21, 16
+	rgb 10, 10, 08
+	rgb 00, 00, 00
 
 ; clear VRAM tile data ([wTileMapFill] should be an empty tile)
 SetupVRAM: ; 03a1 (0:03a1)
@@ -505,11 +520,11 @@ SetBGP: ; 040c (0:040c)
 ;	fallthrough
 
 ; Flush non-CGB palettes and the first CGB palette
-FlushPalette0:
+FlushPalette0: ; 040f (0:040f)
 	ld a, FLUSH_ONE_PAL
 ;	fallthrough
 
-FlushPalettes:
+FlushPalettes: ; 0411 (0:0411)
 	ld [wFlushPaletteFlags], a
 	ld a, [wLCDC]
 	rla
@@ -545,11 +560,11 @@ FlushPalettesIfRequested: ; 042d (0:042d)
 	; flush grayscale (non-CGB) palettes
 	ld hl, wBGP
 	ld a, [hli]
-	ld [rBGP], a
+	ldh [rBGP], a
 	ld a, [hli]
-	ld [rOBP0], a
+	ldh [rOBP0], a
 	ld a, [hl]
-	ld [rOBP1], a
+	ldh [rOBP1], a
 	ld a, [wConsole]
 	cp CONSOLE_CGB
 	jr z, .CGB
@@ -579,7 +594,7 @@ FlushAllCGBPalettes: ; 0458 (0:0458)
 	jr FlushPalettesIfRequested.done
 
 ; copy b bytes of CGB palette data starting at
-; (wBackgroundPalettesCGB + a palettes) into rBGPD or rOGPD.
+; (wBackgroundPalettesCGB + a palettes) into rBGPD or rOBPD.
 CopyCGBPalettes: ; 0467 (0:0467)
 	add a
 	add a
@@ -600,7 +615,7 @@ CopyCGBPalettes: ; 0467 (0:0467)
 	ld [$ff00+c], a
 	inc c
 .wait
-	ld a, [rSTAT]
+	ldh a, [rSTAT]
 	and 1 << STAT_BUSY ; wait until hblank or vblank
 	jr nz, .wait
 	ld a, [hl]
@@ -653,7 +668,7 @@ EmptyScreen: ; 04a2 (0:04a2)
 AttrBlkPacket_EmptyScreen: ; 04bf (0:04bf)
 	sgb ATTR_BLK, 1 ; sgb_command, length
 	db 1 ; number of data sets
-	; Control Code,  Color Palette Designation, X1, Y1, X2, Y2
+	; Control Code, Color Palette Designation, X1, Y1, X2, Y2
 	db ATTR_BLK_CTRL_INSIDE + ATTR_BLK_CTRL_LINE, 0 << 0 + 0 << 2, 0, 0, 19, 17 ; data set 1
 	ds 6 ; data set 2
 	ds 2 ; data set 3
@@ -679,21 +694,21 @@ BCCoordToBGMap0Address: ; 04cf (0:04cf)
 ; the A + B + Start + Select combination resets the game
 ReadJoypad: ; 04de (0:04de)
 	ld a, JOY_BTNS_SELECT
-	ld [rJOYP], a
-	ld a, [rJOYP]
-	ld a, [rJOYP]
+	ldh [rJOYP], a
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
 	cpl
 	and JOY_INPUT_MASK
 	swap a
 	ld b, a ; buttons data
 	ld a, JOY_DPAD_SELECT
-	ld [rJOYP], a
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
+	ldh [rJOYP], a
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
 	cpl
 	and JOY_INPUT_MASK
 	or b
@@ -722,11 +737,11 @@ Reset: ; 051b (0:051b)
 	di
 	jp Start
 
-SaveButtonsHeld:
+SaveButtonsHeld: ; 0522 (0:0522)
 	ld a, c
 	ldh [hKeysHeld], a
 	ld a, JOY_BTNS_SELECT | JOY_DPAD_SELECT
-	ld [rJOYP], a
+	ldh [rJOYP], a
 	ret
 
 ; clear joypad hmem data
@@ -824,7 +839,7 @@ CopyDMAFunction: ; 0593 (0:0593)
 ; CopyDMAFunction copies this function to hDMAFunction ($ff83)
 DMA: ; 05a1 (0:05a1)
 	ld a, HIGH(wOAM)
-	ld [rDMA], a
+	ldh [rDMA], a
 	ld a, $28
 .wait
 	dec a
@@ -861,7 +876,6 @@ CallIndirect: ; 05b6 (0:05b6)
 
 CallHL: ; 05c1 (0:05c1)
 	jp hl
-; 0x5c2
 
 ; converts the two-digit BCD number provided in a to text (ascii) format,
 ; writes them to [wStringBuffer] and [wStringBuffer + 1], and to the BGMap0 address at bc
@@ -882,7 +896,6 @@ WriteTwoDigitBCDNumber: ; 05c2 (0:05c2)
 	pop bc
 	pop hl
 	ret
-; 0x5db
 
 ; converts the one-digit BCD number provided in the lower nybble of a to text
 ; (ascii) format, and writes it to [wStringBuffer] and to the BGMap0 address at bc
@@ -903,7 +916,6 @@ WriteOneDigitBCDNumber: ; 05db (0:05db)
 	pop bc
 	pop hl
 	ret
-; 0x5f4
 
 ; converts the four-digit BCD number provided in h and l to text (ascii) format,
 ; writes them to [wStringBuffer] through [wStringBuffer + 3], and to the BGMap0 address at bc
@@ -929,7 +941,6 @@ WriteFourDigitBCDNumber: ; 05f4 (0:05f4)
 	pop bc
 	pop hl
 	ret
-; 0x614
 
 ; given two BCD digits in the two nybbles of register a,
 ; write them in text (ascii) format to hl (most significant nybble first).
@@ -943,7 +954,7 @@ WriteBCDNumberInTextFormat: ; 0614 (0:0614)
 
 ; given a BCD digit in the (lower nybble) of register a, write it in text (ascii)
 ;  format to hl. numbers above 9 end up converted to half-width font tiles.
-WriteBCDDigitInTextFormat:
+WriteBCDDigitInTextFormat: ; 061b (0:061b)
 	and $0f
 	add "0"
 	cp "9" + 1
@@ -952,7 +963,6 @@ WriteBCDDigitInTextFormat:
 .write_num
 	ld [hli], a
 	ret
-; 0x627
 
 ; converts the one-byte number at a to text (ascii) format,
 ; and writes it to [wStringBuffer] and the BGMap0 address at bc
@@ -978,7 +988,6 @@ WriteOneByteNumber: ; 0627 (0:0627)
 	pop hl
 	pop bc
 	ret
-; 0x650
 
 ; converts the two-byte number at hl to text (ascii) format,
 ; and writes it to [wStringBuffer] and the BGMap0 address at bc
@@ -993,7 +1002,6 @@ WriteTwoByteNumber: ; 0650 (0:0650)
 	call JPHblankCopyDataHLtoDE
 	pop bc
 	ret
-; 0x663
 
 ; convert the number at hl to text (ascii) format and write it to de
 TwoByteNumberToText: ; 0663 (0:0663)
@@ -1014,10 +1022,10 @@ TwoByteNumberToText: ; 0663 (0:0663)
 	ret
 .get_digit
 	ld a, "0" - 1
-.substract_loop
+.subtract_loop
 	inc a
 	add hl, bc
-	jr c, .substract_loop
+	jr c, .subtract_loop
 	ld [de], a
 	inc de
 	ld a, l
@@ -1027,7 +1035,6 @@ TwoByteNumberToText: ; 0663 (0:0663)
 	sbc b
 	ld h, a
 	ret
-; 0x695
 
 ; reads structs:
 ;   x (1 byte), y (1 byte), data (n bytes), $00
@@ -1040,7 +1047,6 @@ WriteDataBlocksToBGMap0: ; 0695 (0:0695)
 	bit 7, [hl] ; check for $ff
 	jr z, WriteDataBlocksToBGMap0
 	ret
-; 0x69d
 
 ; reads struct:
 ;   x (1 byte), y (1 byte), data (n bytes), $00
@@ -1079,7 +1085,6 @@ WriteDataBlockToBGMap0: ; 069d (0:069d)
 	ld b, 0
 	add hl, bc ; point to next structure
 	ret
-; 0x6c3
 
 ; writes a to [v*BGMap0 + BG_MAP_WIDTH * c + b]
 WriteByteToBGMap0: ; 06c3 (0:06c3)
@@ -1119,7 +1124,6 @@ HblankWriteByteToBGMap0: ; 06d9
 	pop de
 	pop hl
 	ret
-; 0x6ee
 
 ; copy a bytes of data from hl to vBGMap0 address pointed to by coord at bc
 CopyDataToBGMap0: ; 06ee (0:06ee)
@@ -1133,7 +1137,6 @@ CopyDataToBGMap0: ; 06ee (0:06ee)
 	call SafeCopyDataHLtoDE
 	pop bc
 	ret
-; 0x6fc
 
 ; copy b bytes of data from hl to de
 ; if LCD on, copy during h-blank only
@@ -1150,7 +1153,6 @@ SafeCopyDataHLtoDE: ; 6fc (0:6fc)
 	ret
 JPHblankCopyDataHLtoDE: ; 0709 (0:0709)
 	jp HblankCopyDataHLtoDE
-; 0x70c
 
 ; copy c bytes of data from hl to de, b times.
 ; used to copy gfx data with c = TILE_SIZE
@@ -1188,7 +1190,7 @@ CopyGfxData: ; 070c (0:070c)
 	jr nz, .next_tile
 	ret
 
-; copy bc bytes from hl to de. preserves all regsters except af
+; copy bc bytes from hl to de. preserves all registers except af
 CopyDataHLtoDE_SaveRegisters: ; 0732 (0:0732)
 	push hl
 	push de
@@ -1247,7 +1249,6 @@ BankpushROM: ; 0745 (0:0745)
 	call BankswitchROM
 	pop bc
 	ret
-; 0x76f
 
 ; switch to rombank a,
 ; return old rombank id on top-of-stack
@@ -1277,7 +1278,6 @@ BankpushROM2: ; 076f (0:076f)
 	call BankswitchROM
 	pop bc
 	ret
-; 0x78e
 
 ; restore rombank from top-of-stack
 BankpopROM: ; 078e (0:078e)
@@ -1337,7 +1337,7 @@ BankswitchVRAM0: ; 07c5 (0:07c5)
 	push af
 	xor a
 	ldh [hBankVRAM], a
-	ld [rVBK], a
+	ldh [rVBK], a
 	pop af
 	ret
 
@@ -1346,16 +1346,15 @@ BankswitchVRAM1: ; 07cd (0:07cd)
 	push af
 	ld a, $1
 	ldh [hBankVRAM], a
-	ld [rVBK], a
+	ldh [rVBK], a
 	pop af
 	ret
 
 ; set current dest VRAM bank to a
 BankswitchVRAM: ; 07d6 (0:07d6)
 	ldh [hBankVRAM], a
-	ld [rVBK], a
+	ldh [rVBK], a
 	ret
-; 0x7db
 
 ; switch to CGB Normal Speed Mode if playing on CGB and current mode is Double Speed Mode
 SwitchToCGBNormalSpeed: ; 7db (0:7db)
@@ -1377,20 +1376,20 @@ SwitchToCGBDoubleSpeed: ; 07e7 (0:07e7)
 
 ; switch between CGB Double Speed Mode and Normal Speed Mode
 CGBSpeedSwitch: ; 07f1 (0:07f1)
-	ld a, [rIE]
+	ldh a, [rIE]
 	push af
 	xor a
-	ld [rIE], a
+	ldh [rIE], a
 	set 0, [hl]
 	xor a
-	ld [rIF], a
-	ld [rIE], a
+	ldh [rIF], a
+	ldh [rIE], a
 	ld a, $30
-	ld [rJOYP], a
+	ldh [rJOYP], a
 	stop
 	call SetupTimer
 	pop af
-	ld [rIE], a
+	ldh [rIE], a
 	ret
 
 ; validate the saved data in SRAM
@@ -1488,7 +1487,6 @@ HtimesL: ; 0879 (0:0879)
 	jr nz, .asm_883
 	pop de
 	ret
-; 0x88f
 
 ; return a random number between 0 and a (exclusive) in a
 Random: ; 088f (0:088f)
@@ -1500,7 +1498,6 @@ Random: ; 088f (0:088f)
 	ld a, h
 	pop hl
 	ret
-; 0x89b
 
 ; get the next random numbers of the wRNG1 and wRNG2 sequences
 UpdateRNGSources: ; 089b (0:089b)
@@ -1537,127 +1534,165 @@ UpdateRNGSources: ; 089b (0:089b)
 	pop hl
 	ret
 
-Func_08bf: ; 08bf (0:08bf)
-	ld hl, wcad6
+; initilizes variables used to decompress data in DecompressData
+; de = source of compressed data
+; b = HIGH byte of secondary buffer ($100 bytes of buffer space)
+; also clears this $100 byte space
+InitDataDecompression: ; 08bf (0:08bf)
+	ld hl, wDecompSourcePosPtr
 	ld [hl], e
 	inc hl
 	ld [hl], d
-	ld hl, wcad8
-	ld [hl], $1
+	ld hl, wDecompNumCommandBitsLeft
+	ld [hl], 1
 	inc hl
 	xor a
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	ld [hli], a
-	ld [hl], b
+	ld [hli], a ; wDecompCommandByte
+	ld [hli], a ; wDecompRepeatModeToggle
+	ld [hli], a ; wDecompRepeatLengths
+	ld [hli], a ; wDecompNumBytesToRepeat
+	ld [hl], b  ; wDecompSecondaryBufferPtrHigh
 	inc hl
-	ld [hli], a
-	ld [hl], $ef
+	ld [hli], a ; wDecompRepeatSeqOffset
+	ld [hl], LOW(wDecompressionSecondaryBufferStart) ; wDecompSecondaryBufferPtrLow
+
+; clear buffer
 	ld h, b
-	ld l, $0
+	ld l, LOW(wDecompressionSecondaryBuffer)
 	xor a
-.asm_8d9
+.loop
 	ld [hl], a
 	inc l
-	jr nz, .asm_8d9
+	jr nz, .loop
 	ret
 
-Func_08de: ; 08de (0:08de)
+; decompresses data
+; uses values initialized by InitDataDecompression
+; wDecompSourcePosPtr holds the pointer for compressed source
+; input:
+; bc = row width
+; de = buffer to place decompressed data
+DecompressData: ; 08de (0:08de)
 	push hl
 	push de
-.asm_8e0
+.loop
 	push bc
-	call Func_08ef
+	call .Decompress
 	ld [de], a
 	inc de
 	pop bc
 	dec bc
 	ld a, c
 	or b
-	jr nz, .asm_8e0
+	jr nz, .loop
 	pop de
 	pop hl
 	ret
 
-Func_08ef: ; 08ef (0:08ef)
-	ld hl, wcadc
+; decompression works as follows:
+; first a command byte is read that will dictate how the
+; following bytes will be copied
+; the position will then move to the next byte (0xXY), and 
+; the command byte's bits are read from higher to lower bit
+; - if command bit is set, then copy 0xXY to buffer;
+; - if command bit is not set, then decompression enters "repeat mode,"
+; which means it stores 0xXY in memory as number of bytes to repeat
+; from a given offset. This offset is in the next byte in the data,
+; 0xZZ, which tells the offset to start repeating. A toggle is switched
+; each time the algorithm hits "repeat mode":
+;  - if off -> on it reads 0xXY and stores it,
+;  then repeats (0x0X + 2) bytes from the offset starting at 0xZZ;
+;  - if on -> off, then the data only provides the offset,
+;  and the previous byte read for number of bytes to repeat, 0xXY, is reused
+;  in which case (0x0Y + 2) bytes are repeated starting from the offset.
+.Decompress: ; 08ef (0:08ef)
+	ld hl, wDecompNumBytesToRepeat
 	ld a, [hl]
 	or a
-	jr z, .asm_902
+	jr z, .read_command
+
+; still repeating sequence
 	dec [hl]
 	inc hl
-.asm_8f8
-	ld b, [hl]
+.repeat_byte
+	ld b, [hl] ; wDecompSecondaryBufferPtrHigh
 	inc hl
-	ld c, [hl]
+	ld c, [hl] ; wDecompRepeatSeqOffset
 	inc [hl]
 	inc hl
 	ld a, [bc]
-	ld c, [hl]
+	ld c, [hl] ; wDecompSecondaryBufferPtrLow
 	inc [hl]
 	ld [bc], a
 	ret
-.asm_902
-	ld hl, wcad6
+
+.read_command
+	ld hl, wDecompSourcePosPtr
 	ld c, [hl]
 	inc hl
 	ld b, [hl]
-	inc hl
+	inc hl ; wDecompNumCommandBitsLeft
 	dec [hl]
-	inc hl
-	jr nz, .asm_914
-	dec hl
-	ld [hl], $8
-	inc hl
+	inc hl ; wDecompCommandByte
+	jr nz, .read_command_bit
+	dec hl ; wDecompNumCommandBitsLeft
+	ld [hl], 8 ; number of bits
+	inc hl ; wDecompCommandByte
 	ld a, [bc]
 	inc bc
 	ld [hl], a
-.asm_914
+.read_command_bit
 	rl [hl]
 	ld a, [bc]
 	inc bc
-	jr nc, .asm_92a
-	ld hl, wcad6
+	jr nc, .repeat_command
+
+; copy 1 byte literally
+	ld hl, wDecompSourcePosPtr
 	ld [hl], c
 	inc hl
 	ld [hl], b
-	ld hl, wcadd
+	ld hl, wDecompSecondaryBufferPtrHigh
 	ld b, [hl]
 	inc hl
 	inc hl
-	ld c, [hl]
+	ld c, [hl] ; wDecompSecondaryBufferPtrLow
 	inc [hl]
 	ld [bc], a
 	ret
-.asm_92a
-	ld [wcade], a
-	ld hl, wcada
+
+.repeat_command
+	ld [wDecompRepeatSeqOffset], a ; save the offset to repeat from
+	ld hl, wDecompRepeatModeToggle
 	bit 0, [hl]
-	jr nz, .asm_94a
+	jr nz, .repeat_mode_toggle_on
 	set 0, [hl]
 	inc hl
+; read byte for num of bytes to read
+; and use its higher nybble
 	ld a, [bc]
 	inc bc
-	ld [hli], a
+	ld [hli], a ; wDecompRepeatLengths
 	swap a
-.asm_93c
+.get_sequence_len
 	and $f
-	inc a
-	ld [hli], a
+	inc a ; number of times to repeat
+	ld [hli], a ; wDecompNumBytesToRepeat
 	push hl
-	ld hl, wcad6
+	ld hl, wDecompSourcePosPtr
 	ld [hl], c
 	inc hl
 	ld [hl], b
 	pop hl
-	jr .asm_8f8
-.asm_94a
+	jr .repeat_byte
+
+.repeat_mode_toggle_on
+; get the previous byte (num of bytes to repeat)
+; and use its lower nybble
 	res 0, [hl]
 	inc hl
-	ld a, [hli]
-	jr .asm_93c
-; 0x950
+	ld a, [hli] ; wDecompRepeatLengths
+	jr .get_sequence_len
 
 ; set attributes for [hl] sprites starting from wOAM + [wOAMOffset] / 4
 ; return carry if reached end of wOAM before finishing
@@ -1701,7 +1736,6 @@ SetManyObjectsAttributes: ; 950 (0:950)
 	pop hl
 	scf
 	jr .done
-; 0x97f
 
 ; for the sprite at wOAM + [wOAMOffset] / 4, set its attributes from registers e, d, c, b
 ; return carry if [wOAMOffset] > 40 * 4 (beyond the end of wOAM)
@@ -1729,7 +1763,6 @@ SetOneObjectAttributes: ; 097f (0:097f)
 	pop hl
 	scf
 	ret
-; 0x99c
 
 ; set the Y Position and X Position of all sprites in wOAM to $00
 ZeroObjectPositions: ; 099c (0:099c)
@@ -1791,7 +1824,6 @@ Bank1Call_FarCall_Common: ; 09ce (0:09ce)
 	pop de
 	pop hl
 	ret
-; 0x9dc
 
 ; switch to the ROM bank at sp+4
 SwitchToBankAtSP: ; 9dc (0:9dc)
@@ -1805,7 +1837,6 @@ SwitchToBankAtSP: ; 9dc (0:9dc)
 	inc sp
 	inc sp
 	ret
-; 0x9e9
 
 ; RST28
 ; this function affects the stack so that it returns
@@ -1951,7 +1982,7 @@ Pal23Packet_0b00: ; 0b00 (0:0b00)
 AttrBlkPacket_0b10: ; 0b10 (0:0b10)
 	sgb ATTR_BLK, 1 ; sgb_command, length
 	db 1 ; number of data sets
-	; Control Code,  Color Palette Designation, X1, Y1, X2, Y2
+	; Control Code, Color Palette Designation, X1, Y1, X2, Y2
 	db ATTR_BLK_CTRL_INSIDE + ATTR_BLK_CTRL_LINE, 1 << 0 + 2 << 2, 5, 5, 10, 10 ; data set 1
 	ds 6 ; data set 2
 	ds 2 ; data set 3
@@ -2006,30 +2037,30 @@ DetectSGB: ; 0b59 (0:0b59)
 	call Wait
 	ld hl, MltReq2Packet
 	call SendSGB
-	ld a, [rJOYP]
+	ldh a, [rJOYP]
 	and %11
 	cp SNES_JOYPAD1
 	jr nz, .sgb
 	ld a, P15
-	ld [rJOYP], a
-	ld a, [rJOYP]
-	ld a, [rJOYP]
+	ldh [rJOYP], a
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
 	ld a, P15 | P14
-	ld [rJOYP], a
+	ldh [rJOYP], a
 	ld a, P14
-	ld [rJOYP], a
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
+	ldh [rJOYP], a
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
 	ld a, P15 | P14
-	ld [rJOYP], a
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
-	ld a, [rJOYP]
+	ldh [rJOYP], a
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
+	ldh a, [rJOYP]
 	and %11
 	cp SNES_JOYPAD1
 	jr nz, .sgb
@@ -2059,14 +2090,14 @@ MltReq2Packet: ; 0bbb (0:0bbb)
 Func_0bcb: ; 0bcb (0:0bcb)
 	di
 	push de
-.wait_vbalnk
-	ld a, [rLY]
+.wait_vblank
+	ldh a, [rLY]
 	cp LY_VBLANK + 3
-	jr nz, .wait_vbalnk
+	jr nz, .wait_vblank
 	ld a, LCDC_BGON | LCDC_OBJON | LCDC_WIN9C00
-	ld [rLCDC], a
+	ldh [rLCDC], a
 	ld a, %11100100
-	ld [rBGP], a
+	ldh [rBGP], a
 	ld de, v0Tiles1
 	ld bc, v0BGMap0 - v0Tiles1
 .tiles_loop
@@ -2092,12 +2123,11 @@ Func_0bcb: ; 0bcb (0:0bcb)
 	dec c
 	jr nz, .bgmap_outer_loop
 	ld a, LCDC_BGON | LCDC_OBJON | LCDC_WIN9C00 | LCDC_ON
-	ld [rLCDC], a
+	ldh [rLCDC], a
 	pop hl
 	call SendSGB
 	ei
 	ret
-; 0xc08
 
 ; loops 63000 * bc cycles (~15 * bc ms)
 Wait: ; 0c08 (0:0c08)
@@ -2122,12 +2152,12 @@ HblankCopyDataHLtoDE: ; 0c19 (0:0c19)
 .loop
 	ei
 	di
-	ld a, [rSTAT]        ;
+	ldh a, [rSTAT]       ;
 	and STAT_LCDC_STATUS ;
 	jr nz, .loop         ; assert hblank
 	ld a, [hl]
 	ld [de], a
-	ld a, [rSTAT]        ;
+	ldh a, [rSTAT]       ;
 	and STAT_LCDC_STATUS ;
 	jr nz, .loop         ; assert still in hblank
 	ei
@@ -2144,12 +2174,12 @@ HblankCopyDataDEtoHL: ; 0c32 (0:0c32)
 .loop
 	ei
 	di
-	ld a, [rSTAT]        ;
+	ldh a, [rSTAT]       ;
 	and STAT_LCDC_STATUS ;
 	jr nz, .loop         ; assert hblank
 	ld a, [de]
 	ld [hl], a
-	ld a, [rSTAT]        ;
+	ldh a, [rSTAT]       ;
 	and STAT_LCDC_STATUS ;
 	jr nz, .loop         ; assert still in hblank
 	ei
@@ -2159,7 +2189,6 @@ HblankCopyDataDEtoHL: ; 0c32 (0:0c32)
 	jr nz, .loop
 	pop bc
 	ret
-; 0xc4b
 
 ; returns a *= 10
 ATimes10: ; 0c4b (0:0c4b)
@@ -2171,7 +2200,6 @@ ATimes10: ; 0c4b (0:0c4b)
 	add a
 	pop de
 	ret
-; 0xc53
 
 ; returns hl *= 10
 HLTimes10: ; 0c53 (0:0c53)
@@ -2186,7 +2214,6 @@ HLTimes10: ; 0c53 (0:0c53)
 	add hl, hl
 	pop de
 	ret
-; 0xc5f
 
 ; returns a /= 10
 ; returns carry if a % 10 >= 5
@@ -2201,7 +2228,6 @@ ADividedBy10: ; 0c5f (0:0c5f)
 	ld a, e
 	pop de
 	ret
-; 0xc6c
 
 ; Save a pointer to a list, given at de, to wListPointer
 SetListPointer: ; 0c6c (0:0c6c)
@@ -2212,7 +2238,6 @@ SetListPointer: ; 0c6c (0:0c6c)
 	ld [hl], d
 	pop hl
 	ret
-; 0xc75
 
 ; Return the current element of the list at wListPointer,
 ; and advance the list to the next element
@@ -2234,7 +2259,6 @@ SetListToNextPosition: ; 0c7f (0:0c7f)
 	pop de
 	pop hl
 	ret
-; 0xc85
 
 ; Set the current element of the list at wListPointer to a,
 ; and advance the list to the next element
@@ -2248,7 +2272,6 @@ SetNextElementOfList: ; 0c85 (0:0c85)
 	ld [de], a
 	inc de
 	jr SetListToNextPosition
-; 0xc91
 
 ; called at roughly 240Hz by TimerHandler
 SerialTimerHandler: ; 0c91 (0:0c91)
@@ -2259,13 +2282,13 @@ SerialTimerHandler: ; 0c91 (0:0c91)
 	jr z, .check_for_timeout
 	ret
 .begin_transfer
-	ld a, [rSC]          ;
+	ldh a, [rSC]         ;
 	add a                ; make sure that no serial transfer is active
 	ret c                ;
 	ld a, SC_INTERNAL
-	ld [rSC], a          ; use internal clock
+	ldh [rSC], a         ; use internal clock
 	ld a, SC_START | SC_INTERNAL
-	ld [rSC], a          ; use internal clock, set transfer start flag
+	ldh [rSC], a         ; use internal clock, set transfer start flag
 	ret
 .check_for_timeout
 	; sets bit7 of [wSerialFlags] if the serial interrupt hasn't triggered
@@ -2286,7 +2309,6 @@ SerialTimerHandler: ; 0c91 (0:0c91)
 .clear_timeout_counter
 	ld [hl], $0
 	ret
-; 0xcc5
 
 Func_0cc5: ; 0cc5 (0:0cc5)
 	ld hl, wSerialRecvCounter
@@ -2305,11 +2327,11 @@ Func_0cc5: ; 0cc5 (0:0cc5)
 	ret
 .asm_cdc
 	ld a, $29
-	ld [rSB], a
+	ldh [rSB], a
 	ld a, SC_INTERNAL
-	ld [rSC], a
+	ldh [rSC], a
 	ld a, SC_START | SC_INTERNAL
-	ld [rSC], a
+	ldh [rSC], a
 .asm_ce8
 	ld a, [hl]
 	or a
@@ -2346,7 +2368,6 @@ Func_0cc5: ; 0cc5 (0:0cc5)
 	ld [wSerialOp], a
 	scf
 	ret
-; 0xd26
 
 SerialHandler: ; 0d26 (0:0d26)
 	push af
@@ -2363,17 +2384,17 @@ SerialHandler: ; 0d26 (0:0d26)
 	or a                 ;
 	jr z, .asm_d55       ; skip ahead if [wSerialOp] zero
 	; send/receive a byte
-	ld a, [rSB]
+	ldh a, [rSB]
 	call SerialHandleRecv
 	call SerialHandleSend ; returns byte to actually send
 	push af
 .wait_for_completion
-	ld a, [rSC]
+	ldh a, [rSC]
 	add a
 	jr c, .wait_for_completion
 	pop af
 	; end send/receive
-	ld [rSB], a          ; prepare sending byte (from Func_0dc8?)
+	ldh [rSB], a         ; prepare sending byte (from Func_0dc8?)
 	ld a, [wSerialOp]
 	cp $29
 	jr z, .done          ; if [wSerialOp] != $29, use external clock
@@ -2381,16 +2402,16 @@ SerialHandler: ; 0d26 (0:0d26)
 .asm_d55
 	ld a, $1
 	ld [wSerialRecvCounter], a
-	ld a, [rSB]
+	ldh a, [rSB]
 	ld [wSerialRecvBuf], a
 	ld a, $ac
-	ld [rSB], a
+	ldh [rSB], a
 	ld a, [wSerialRecvBuf]
 	cp $12               ; if [wSerialRecvBuf] != $12, use external clock
 	jr z, .done          ; and prepare for next byte. either way, return
 .asm_d6a
 	ld a, SC_START | SC_EXTERNAL
-	ld [rSC], a          ; transfer start, use external clock
+	ldh [rSC], a         ; transfer start, use external clock
 .done
 	ld hl, wSerialCounter
 	inc [hl]
@@ -2625,25 +2646,25 @@ SerialExchangeBytes: ; 0e63 (0:0e63)
 Func_0e8e: ; 0e8e (0:0e8e)
 	call ClearSerialData
 	ld a, $12
-	ld [rSB], a          ; send $12
+	ldh [rSB], a         ; send $12
 	ld a, SC_START | SC_EXTERNAL
-	ld [rSC], a          ; use external clock, set transfer start flag
-	ld a, [rIF]
+	ldh [rSC], a         ; use external clock, set transfer start flag
+	ldh a, [rIF]
 	and ~(1 << INT_SERIAL)
-	ld [rIF], a          ; clear serial interrupt flag
-	ld a, [rIE]
+	ldh [rIF], a         ; clear serial interrupt flag
+	ldh a, [rIE]
 	or 1 << INT_SERIAL   ; enable serial interrupt
-	ld [rIE], a
+	ldh [rIE], a
 	ret
 
 ; disable serial interrupt, and clear rSB, rSC, and serial registers in WRAM
 ResetSerial: ; 0ea6 (0:0ea6)
-	ld a, [rIE]
+	ldh a, [rIE]
 	and ~(1 << INT_SERIAL)
-	ld [rIE], a
+	ldh [rIE], a
 	xor a
-	ld [rSB], a
-	ld [rSC], a
+	ldh [rSB], a
+	ldh [rSC], a
 ;	fallthrough
 
 ; zero serial registers in WRAM
@@ -2679,7 +2700,6 @@ SerialSendBytes: ; 0ebf (0:0ebf)
 	pop bc
 	scf
 	ret
-; 0xed5
 
 ; receive bc bytes in wSerialRecvBuf and save them to hl
 SerialRecvBytes: ; 0ed5 (0:0ed5)
@@ -2706,7 +2726,6 @@ SerialRecvBytes: ; 0ed5 (0:0ed5)
 	pop bc
 	scf
 	ret
-; 0xef1
 
 Func_0ef1: ; 0ef1 (0:0ef1)
 	ld de, wcb79
@@ -2726,7 +2745,6 @@ Func_0ef1: ; 0ef1 (0:0ef1)
 	ld [de], a
 	or a
 	ret
-; 0xf05
 
 Func_0f05: ; 0f05 (0:0f05)
 	push hl
@@ -2747,7 +2765,6 @@ Func_0f05: ; 0f05 (0:0f05)
 	push hl
 	scf
 	ret
-; 0xf1d
 
 Func_0f1d: ; 0f1d (0:0f1d)
 	ld a, [wSerialFlags]
@@ -2765,7 +2782,6 @@ Func_0f1d: ; 0f1d (0:0f1d)
 	ld sp, hl
 	scf
 	ret
-; 0xf35
 
 ; load the number at wSerialFlags (error code?) to TxRam3, print
 ; TransmissionErrorText, exit the duel, and reset serial registers.
@@ -2816,8 +2832,8 @@ ExchangeRNG: ; 0f58 (0:0f58)
 ; send 10 bytes of data to the other game from hOppActionTableIndex, hTempCardIndex_ff9f,
 ; hTemp_ffa0, and hTempPlayAreaLocation_ffa1, and hTempRetreatCostCards.
 ; finally exchange RNG data.
-; the receiving side will use this data to read the OPP_ACTION_* value in
-; [hOppActionTableIndex] and match it by calling the correspoding OppAction* function
+; the receiving side will use this data to read the OPPACTION_* value in
+; [hOppActionTableIndex] and match it by calling the corresponding OppAction* function
 SetOppAction_SerialSendDuelData: ; 0f7f (0:0f7f)
 	push hl
 	push bc
@@ -2834,7 +2850,6 @@ SetOppAction_SerialSendDuelData: ; 0f7f (0:0f7f)
 	pop bc
 	pop hl
 	ret
-; 0xf9b
 
 ; receive 10 bytes of data from wSerialRecvBuf and store them into hOppActionTableIndex,
 ; hTempCardIndex_ff9f, hTemp_ffa0, and hTempPlayAreaLocation_ffa1,
@@ -2849,7 +2864,6 @@ SerialRecvDuelData: ; 0f9b (0:0f9b)
 	pop bc
 	pop hl
 	ret
-; 0xfac
 
 ; serial send 8 bytes at f, a, l, h, e, d, c, b
 ; only during a duel against a link opponent
@@ -2902,7 +2916,6 @@ SerialSend8Bytes: ; 0fac (0:0fac)
 	pop hl
 	pop af
 	ret
-; 0xfe9
 
 ; serial recv 8 bytes to f, a, l, h, e, d, c, b
 SerialRecv8Bytes: ; 0fe9 (0:0fe9)
@@ -2932,7 +2945,6 @@ SerialRecv8Bytes: ; 0fe9 (0:0fe9)
 	pop hl
 	pop af
 	ret
-; 0x100b
 
 ; save duel state to SRAM
 ; called between each two-player turn, just after player draws card (ROM bank 1 loaded)
@@ -3035,10 +3047,9 @@ CopyDeckData: ; 1072 (0:1072)
 	ld a, [hl]
 	or a
 	ret nz
-	debug_ret
+	debug_nop
 	scf
 	ret
-; 0x10aa
 
 ; return, in register a, the amount of prizes that the turn holder has not yet drawn
 CountPrizes: ; 10aa (0:10aa)
@@ -3055,7 +3066,6 @@ CountPrizes: ; 10aa (0:10aa)
 	jr nz, .count_loop
 	pop hl
 	ret
-; 0x10bc
 
 ; shuffles the turn holder's deck
 ; if less than 60 cards remain in the deck, it makes sure that the rest are ignored
@@ -3075,7 +3085,7 @@ ShuffleDeck: ; 10bc (0:10bc)
 	ret
 
 ; draw a card from the turn holder's deck, saving its location as CARD_LOCATION_JUST_DRAWN.
-; returns carry if deck is empty, nc if a card was succesfully drawn.
+; returns carry if deck is empty, nc if a card was successfully drawn.
 ; AddCardToHand is meant to be called next (unless this function returned carry).
 DrawCardFromDeck: ; 10cf (0:10cf)
 	push hl
@@ -3097,7 +3107,6 @@ DrawCardFromDeck: ; 10cf (0:10cf)
 	pop hl
 	scf
 	ret
-; 0x10e8
 
 ; add a card to the top of the turn holder's deck
 ; the card is identified by register a, which contains the deck index (0-59) of the card
@@ -3117,7 +3126,6 @@ ReturnCardToDeck: ; 10e8 (0:10e8)
 	ld a, l
 	pop hl
 	ret
-; 0x10fc
 
 ; search a card in the turn holder's deck, extract it, and set its location to
 ; CARD_LOCATION_JUST_DRAWN. AddCardToHand is meant to be called next.
@@ -3155,7 +3163,6 @@ SearchCardInDeckAndAddToHand: ; 10fc (0:10fc)
 	pop hl
 	pop af
 	ret
-; 0x1123
 
 ; adds a card to the turn holder's hand and increments the number of cards in the hand
 ; the card is identified by register a, which contains the deck index (0-59) of the card
@@ -3181,7 +3188,6 @@ AddCardToHand: ; 1123 (0:1123)
 	pop hl
 	pop af
 	ret
-; 0x1139
 
 ; removes a card from the turn holder's hand and decrements the number of cards in the hand
 ; the card is identified by register a, which contains the deck index (0-59) of the card
@@ -3220,7 +3226,6 @@ RemoveCardFromHand: ; 1139 (0:1139)
 	pop hl
 	pop af
 	ret
-; 0x1160
 
 ; moves a card to the turn holder's discard pile, as long as it is in the hand
 ; the card is identified by register a, which contains the deck index (0-59) of the card
@@ -3252,7 +3257,6 @@ PutCardInDiscardPile: ; 116a (0:116a)
 	pop hl
 	pop af
 	ret
-; 0x1182
 
 ; search a card in the turn holder's discard pile, extract it, and set its location to
 ; CARD_LOCATION_JUST_DRAWN. AddCardToHand is meant to be called next.
@@ -3288,7 +3292,6 @@ MoveDiscardPileCardToHand: ; 1182 (0:1182)
 	pop de
 	pop hl
 	ret
-; 0x11a5
 
 ; return in the z flag whether turn holder's prize a (0-7) has been drawn or not
 ; z: drawn, nz: not drawn
@@ -3308,7 +3311,6 @@ CheckPrizeTaken: ; 11a5 (0:11a5)
 
 PowersOf2:
 	db $01, $02, $04, $08, $10, $20, $40, $80
-; 0x11bf
 
 ; fill wDuelTempList with the turn holder's discard pile cards (their 0-59 deck indexes)
 ; return carry if the turn holder has no cards in the discard pile
@@ -3338,7 +3340,6 @@ CreateDiscardPileCardList: ; 11bf (0:11bf)
 	ret nz
 	scf
 	ret
-; 0x11df
 
 ; fill wDuelTempList with the turn holder's remaining deck cards (their 0-59 deck indexes)
 ; return carry if the turn holder has no cards left in the deck
@@ -3374,7 +3375,6 @@ CreateDeckCardList: ; 11df (0:11df)
 	ld [wDuelTempList], a
 	scf
 	ret
-; 0x120a
 
 ; fill wDuelTempList with the turn holder's energy cards
 ; in the arena or in a bench slot (their 0-59 deck indexes).
@@ -3415,10 +3415,10 @@ CreateArenaOrBenchEnergyCardList: ; 120a (0:120a)
 .no_energies_found
 	scf
 	ret
-; 0x123b
 
 ; fill wDuelTempList with the turn holder's hand cards (their 0-59 deck indexes)
 ; return carry if the turn holder has no cards in hand
+; and outputs in a number of cards.
 CreateHandCardList: ; 123b (0:123b)
 	call FindLastCardInHand
 	inc b
@@ -3445,7 +3445,6 @@ CreateHandCardList: ; 123b (0:123b)
 	ret nz
 	scf
 	ret
-; 0x1258
 
 ; sort the turn holder's hand cards by ID (highest to lowest ID)
 ; makes use of wDuelTempList
@@ -3468,7 +3467,6 @@ SortHandCardsByID: ; 1258 (0:1258)
 	dec b
 	jr nz, .loop2
 	ret
-; 0x1271
 
 ; returns:
 ; b = turn holder's number of cards in hand (DUELVARS_NUMBER_OF_CARDS_IN_HAND)
@@ -3523,7 +3521,6 @@ ShuffleCards: ; 127f (0:127f)
 	pop de
 	pop hl
 	ret
-; 0x12a3
 
 ; sort a $ff-terminated list of deck index cards by ID (lowest to highest ID).
 ; the list is wDuelTempList.
@@ -3607,7 +3604,6 @@ SortCardsInListByID_CheckForListTerminator: ; 12ef (0:12ef)
 	bit 7, [hl] ; $ff is the list terminator
 	jr z, SortCardsInListByID
 	ret
-; 0x12fa
 
 ; returns, in register bc, the id of the card with the deck index specified in register a
 ; preserves hl
@@ -3618,7 +3614,6 @@ GetCardIDFromDeckIndex_bc: ; 12fa (0:12fa)
 	ld b, $0
 	pop hl
 	ret
-; 0x1303
 
 ; return [wDuelTempList + a] in a and in hTempCardIndex_ff98
 GetCardInDuelTempList_OnlyDeckIndex: ; 1303 (0:1303)
@@ -3633,7 +3628,6 @@ GetCardInDuelTempList_OnlyDeckIndex: ; 1303 (0:1303)
 	pop de
 	pop hl
 	ret
-; 0x1312
 
 ; given the deck index (0-59) of a card in [wDuelTempList + a], return:
 ;  - the id of the card with that deck index in register de
@@ -3650,7 +3644,6 @@ GetCardInDuelTempList: ; 1312 (0:1312)
 	pop hl
 	ldh a, [hTempCardIndex_ff98]
 	ret
-; 0x1324
 
 ; returns, in register de, the id of the card with the deck index (0-59) specified by register a
 ; preserves af and hl
@@ -3663,9 +3656,9 @@ GetCardIDFromDeckIndex: ; 1324 (0:1324)
 	pop hl
 	pop af
 	ret
-; 0x132f
 
 ; remove card c from wDuelTempList (it contains a $ff-terminated list of deck indexes)
+; returns carry if no matches were found.
 RemoveCardFromDuelTempList: ; 132f (0:132f)
 	push hl
 	push de
@@ -3697,7 +3690,6 @@ RemoveCardFromDuelTempList: ; 132f (0:132f)
 	pop de
 	pop hl
 	ret
-; 0x1351
 
 ; return the number of cards in wDuelTempList in a
 CountCardsInDuelTempList: ; 1351 (0:1351)
@@ -3714,7 +3706,6 @@ CountCardsInDuelTempList: ; 1351 (0:1351)
 	pop bc
 	pop hl
 	ret
-; 0x1362
 
 ; returns, in register a, the id of the card with the deck index (0-59) specified in register a
 _GetCardIDFromDeckIndex: ; 1362 (0:1362)
@@ -3765,12 +3756,11 @@ LoadCardDataToBuffer2_FromDeckIndex: ; 138c (0:138c)
 	pop de
 	pop hl
 	ret
-; 0x13a2
 
 ; evolve a turn holder's Pokemon card in the play area slot determined by hTempPlayAreaLocation_ff9d
-; into another turn holder's Pokemon card identifier by it's deck index (0-59) in hTempCardIndex_ff98.
-; return nc if evolution was succesful.
-EvolvePokemonCard: ; 13a2 (0:13a2)
+; into another turn holder's Pokemon card identifier by its deck index (0-59) in hTempCardIndex_ff98.
+; return nc if evolution was successful.
+EvolvePokemonCardIfPossible: ; 13a2 (0:13a2)
 	; first make sure the attempted evolution is viable
 	ldh a, [hTempCardIndex_ff98]
 	ld d, a
@@ -3778,7 +3768,12 @@ EvolvePokemonCard: ; 13a2 (0:13a2)
 	ld e, a
 	call CheckIfCanEvolveInto
 	ret c ; return if it's not capable of evolving into the selected Pokemon
-	; place the evolved Pokemon card in the play area location of the pre-evolved Pokemon card
+;	fallthrough
+
+; evolve a turn holder's Pokemon card in the play area slot determined by hTempPlayAreaLocation_ff9d
+; into another turn holder's Pokemon card identifier by its deck index (0-59) in hTempCardIndex_ff98.
+EvolvePokemonCard: ; 13ac (0:13ac)
+; place the evolved Pokemon card in the play area location of the pre-evolved Pokemon card
 	ldh a, [hTempPlayAreaLocation_ff9d]
 	ld e, a
 	add DUELVARS_ARENA_CARD
@@ -3803,7 +3798,7 @@ EvolvePokemonCard: ; 13a2 (0:13a2)
 	ld [hl], a
 	; reset status (if in arena) and set the flag that prevents it from evolving again this turn
 	ld a, e
-	add DUELVARS_ARENA_CARD_FLAGS_C2
+	add DUELVARS_ARENA_CARD_FLAGS
 	ld l, a
 	ld [hl], $00
 	ld a, e
@@ -3825,7 +3820,6 @@ EvolvePokemonCard: ; 13a2 (0:13a2)
 ; never executed
 	scf
 	ret
-; 0x13f7
 
 ; check if the turn holder's Pokemon card at e can evolve into the turn holder's Pokemon card d.
 ; e is the play area location offset (PLAY_AREA_*) of the Pokemon trying to evolve.
@@ -3851,7 +3845,7 @@ CheckIfCanEvolveInto: ; 13f7 (0:13f7)
 	jr nz, .cant_evolve ; jump if they are incompatible to evolve
 	pop de
 	ld a, e
-	add DUELVARS_ARENA_CARD_FLAGS_C2
+	add DUELVARS_ARENA_CARD_FLAGS
 	call GetTurnDuelistVariable
 	and CAN_EVOLVE_THIS_TURN
 	jr nz, .can_evolve
@@ -3868,7 +3862,6 @@ CheckIfCanEvolveInto: ; 13f7 (0:13f7)
 	xor a
 	scf
 	ret
-; 0x142b
 
 ; check if the turn holder's Pokemon card at e can evolve this turn, and is a basic
 ; Pokemon card that whose second stage evolution is the turn holder's Pokemon card d.
@@ -3877,7 +3870,7 @@ CheckIfCanEvolveInto: ; 13f7 (0:13f7)
 ; return carry if not basic to stage 2 evolution, or if evolution not possible this turn.
 CheckIfCanEvolveInto_BasicToStage2: ; 142b (0:142b)
 	ld a, e
-	add DUELVARS_ARENA_CARD_FLAGS_C2
+	add DUELVARS_ARENA_CARD_FLAGS
 	call GetTurnDuelistVariable
 	and CAN_EVOLVE_THIS_TURN
 	jr nz, .can_evolve
@@ -3911,7 +3904,6 @@ CheckIfCanEvolveInto_BasicToStage2: ; 142b (0:142b)
 	xor a
 	scf
 	ret
-; 0x1461
 
 ; clear the status, all substatuses, and temporary duelvars of the turn holder's
 ; arena Pokemon. called when sending a new Pokemon into the arena.
@@ -3933,7 +3925,7 @@ ClearAllStatusConditions: ; 1461 (0:1461)
 	ld [hl], a
 	ld l, DUELVARS_ARENA_CARD_SUBSTATUS3
 	res SUBSTATUS3_THIS_TURN_DOUBLE_DAMAGE, [hl]
-	ld l, DUELVARS_ARENA_CARD_DISABLED_MOVE_INDEX
+	ld l, DUELVARS_ARENA_CARD_DISABLED_ATTACK_INDEX
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
@@ -3944,7 +3936,6 @@ ClearAllStatusConditions: ; 1461 (0:1461)
 	ld [hl], a
 	pop hl
 	ret
-; 0x1485
 
 ; Removes a Pokemon card from the hand and places it in the arena or first available bench slot.
 ; If the Pokemon is placed in the arena, the status conditions of the player's arena card are zeroed.
@@ -3973,7 +3964,7 @@ PutHandPokemonCardInPlayArea: ; 1485 (0:1485)
 	ld l, a
 	ld a, [wLoadedCard2HP]
 	ld [hl], a ; set card's HP
-	ld a, DUELVARS_ARENA_CARD_FLAGS_C2
+	ld a, DUELVARS_ARENA_CARD_FLAGS
 	add e
 	ld l, a
 	ld [hl], $0
@@ -4005,7 +3996,6 @@ PutHandPokemonCardInPlayArea: ; 1485 (0:1485)
 	pop af
 	scf
 	ret
-; 0x14d2
 
 ; Removes a card from the hand and changes its location to arena or bench. Given that
 ; DUELVARS_ARENA_CARD or DUELVARS_BENCH aren't affected, this function is meant for energy and trainer cards.
@@ -4021,7 +4011,6 @@ PutHandCardInPlayArea: ; 14d2 (0:14d2)
 	or CARD_LOCATION_PLAY_AREA
 	ld [hl], a
 	ret
-; 0x14dd
 
 ; move the Pokemon card of the turn holder in the
 ; PLAY_AREA_* location given in e to the discard pile
@@ -4045,7 +4034,6 @@ MovePlayAreaCardToDiscardPile: ; 14dd (0:14dd)
 	cp DECK_SIZE
 	jr c, .next_card
 	ret
-; 0x14f8
 
 ; init a turn holder's play area slot to empty
 ; which slot (arena or benchx) is determined by the play area location offset (PLAY_AREA_*) in e
@@ -4070,7 +4058,6 @@ EmptyPlayAreaSlot: ; 14f8 (0:14f8)
 	ld l, a
 	ld [hl], d
 	ret
-; 0x151e
 
 ; shift play area Pokemon of both players to the first available play area (arena + benchx) slots
 ShiftAllPokemonToFirstPlayAreaSlots: ; 151e (0:151e)
@@ -4079,7 +4066,6 @@ ShiftAllPokemonToFirstPlayAreaSlots: ; 151e (0:151e)
 	call ShiftTurnPokemonToFirstPlayAreaSlots
 	call SwapTurn
 	ret
-; 0x152b
 
 ; shift play area Pokemon of the turn holder to the first available play area (arena + benchx) slots
 ShiftTurnPokemonToFirstPlayAreaSlots: ; 152b (0:152b)
@@ -4098,7 +4084,6 @@ ShiftTurnPokemonToFirstPlayAreaSlots: ; 152b (0:152b)
 	cp MAX_PLAY_AREA_POKEMON
 	jr nz, .next_play_area_slot
 	ret
-; 0x1543
 
 ; swap the data of the turn holder's arena Pokemon card with the
 ; data of the turn holder's Pokemon card in play area e.
@@ -4126,7 +4111,7 @@ SwapPlayAreaPokemon: ; 1548 (0:1548)
 	call .swap_duelvar
 	ld a, DUELVARS_ARENA_CARD_HP
 	call .swap_duelvar
-	ld a, DUELVARS_ARENA_CARD_FLAGS_C2
+	ld a, DUELVARS_ARENA_CARD_FLAGS
 	call .swap_duelvar
 	ld a, DUELVARS_ARENA_CARD_STAGE
 	call .swap_duelvar
@@ -4177,7 +4162,6 @@ SwapPlayAreaPokemon: ; 1548 (0:1548)
 	pop af
 	ld [hl], a
 	ret
-; 0x159f
 
 ; Find which and how many energy cards are attached to the turn holder's Pokemon card in the arena,
 ; or a Pokemon card in the bench, depending on the value of register e.
@@ -4247,7 +4231,6 @@ GetPlayAreaCardAttachedEnergies: ; 159f (0:159f)
 	pop de
 	pop hl
 	ret
-; 0x15ef
 
 ; returns in a how many times card e can be found in location b
 ; e = card id to search
@@ -4298,7 +4281,6 @@ GetNonTurnDuelistVariable: ; 1611 (0:1611)
 .ok
 	ld a, [hl]
 	ret
-; 0x161e
 
 ; when playing a Pokemon card, initializes some variables according to the
 ; card played, and checks if the played card has Pokemon Power to show it to
@@ -4309,14 +4291,14 @@ Func_161e: ; 161e (0:161e)
 	ldh a, [hTempCardIndex_ff98]
 	ld d, a
 	ld e, $00
-	call CopyMoveDataAndDamage_FromDeckIndex
+	call CopyAttackDataAndDamage_FromDeckIndex
 	call Func_16f6
 	ldh a, [hTempCardIndex_ff98]
 	ldh [hTempCardIndex_ff9f], a
 	call GetCardIDFromDeckIndex
 	ld a, e
 	ld [wTempTurnDuelistCardID], a
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	cp POKEMON_POWER
 	ret nz
 	call DisplayUsePokemonPowerScreen
@@ -4343,11 +4325,11 @@ Func_161e: ; 161e (0:161e)
 	ret
 
 .use_pokemon_power
-	ld hl, wLoadedMoveEffectCommands
+	ld hl, wLoadedAttackEffectCommands
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
-	ld a, $07
+	ld a, EFFECTCMDTYPE_PKMN_POWER_TRIGGER
 	call CheckMatchingCommand
 	ret c ; return if command not found
 	bank1call DrawDuelMainScene
@@ -4360,7 +4342,7 @@ Func_161e: ; 161e (0:161e)
 	ld [hli], a
 	ld a, [de]
 	ld [hli], a
-	ld de, wLoadedMoveName
+	ld de, wLoadedAttackName
 	ld a, [de]
 	inc de
 	ld [hli], a
@@ -4373,14 +4355,13 @@ Func_161e: ; 161e (0:161e)
 	ld a, EFFECTCMDTYPE_PKMN_POWER_TRIGGER
 	call TryExecuteEffectCommandFunction
 	ret
-; 0x16ad
 
 ; copies, given a card identified by register a (card ID):
 ; - e into wSelectedAttack and d into hTempCardIndex_ff9f
-; - Move1 (if e == 0) or Move2 (if e == 1) data into wLoadedMove
-; - Also from that move, its Damage field into wDamage
+; - Attack1 (if e == 0) or Attack2 (if e == 1) data into wLoadedAttack
+; - Also from that attack, its Damage field into wDamage
 ; finally, clears wNoDamageOrEffect and wDealtDamage
-CopyMoveDataAndDamage_FromCardID: ; 16ad (0:16ad)
+CopyAttackDataAndDamage_FromCardID: ; 16ad (0:16ad)
 	push de
 	push af
 	ld a, e
@@ -4392,14 +4373,14 @@ CopyMoveDataAndDamage_FromCardID: ; 16ad (0:16ad)
 	ld d, $00
 	call LoadCardDataToBuffer1_FromCardID
 	pop de
-	jr CopyMoveDataAndDamage
+	jr CopyAttackDataAndDamage
 
 ; copies, given a card identified by register d (0-59 deck index):
 ; - e into wSelectedAttack and d into hTempCardIndex_ff9f
-; - Move1 (if e == 0) or Move2 (if e == 1) data into wLoadedMove
-; - Also from that move, its Damage field into wDamage
+; - Attack1 (if e == 0) or Attack2 (if e == 1) data into wLoadedAttack
+; - Also from that attack, its Damage field into wDamage
 ; finally, clears wNoDamageOrEffect and wDealtDamage
-CopyMoveDataAndDamage_FromDeckIndex: ; 16c0 (0:16c0)
+CopyAttackDataAndDamage_FromDeckIndex: ; 16c0 (0:16c0)
 	ld a, e
 	ld [wSelectedAttack], a
 	ld a, d
@@ -4407,23 +4388,23 @@ CopyMoveDataAndDamage_FromDeckIndex: ; 16c0 (0:16c0)
 	call LoadCardDataToBuffer1_FromDeckIndex
 ;	fallthrough
 
-CopyMoveDataAndDamage:
+CopyAttackDataAndDamage: ; 16ca (0:16ca)
 	ld a, [wLoadedCard1ID]
 	ld [wTempCardID_ccc2], a
-	ld hl, wLoadedCard1Move1
+	ld hl, wLoadedCard1Atk1
 	dec e
-	jr nz, .got_move
-	ld hl, wLoadedCard1Move2
-.got_move
-	ld de, wLoadedMove
-	ld c, CARD_DATA_MOVE2 - CARD_DATA_MOVE1
+	jr nz, .got_atk
+	ld hl, wLoadedCard1Atk2
+.got_atk
+	ld de, wLoadedAttack
+	ld c, CARD_DATA_ATTACK2 - CARD_DATA_ATTACK1
 .copy_loop
 	ld a, [hli]
 	ld [de], a
 	inc de
 	dec c
 	jr nz, .copy_loop
-	ld a, [wLoadedMoveDamage]
+	ld a, [wLoadedAttackDamage]
 	ld hl, wDamage
 	ld [hli], a
 	xor a
@@ -4458,20 +4439,20 @@ Func_16f6: ; 16f6 (0:16f6)
 	ld [wEffectFailed], a
 	ld [wIsDamageToSelf], a
 	ld [wccef], a
-	ld [wccf0], a
-	ld [wNoEffectFromStatus], a
+	ld [wMetronomeEnergyCost], a
+	ld [wNoEffectFromWhichStatus], a
 	bank1call ClearNonTurnTemporaryDuelvars_CopyStatus
 	ret
 
 ; Use an attack (from DuelMenu_Attack) or a Pokemon Power (from DuelMenu_PkmnPower)
 UseAttackOrPokemonPower: ; 1730 (0:1730)
 	ld a, [wSelectedAttack]
-	ld [wPlayerAttackingMoveIndex], a
+	ld [wPlayerAttackingAttackIndex], a
 	ldh a, [hTempCardIndex_ff9f]
 	ld [wPlayerAttackingCardIndex], a
 	ld a, [wTempCardID_ccc2]
 	ld [wPlayerAttackingCardID], a
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	cp POKEMON_POWER
 	jp z, UsePokemonPower
 	call Func_16f6
@@ -4510,7 +4491,7 @@ UseAttackOrPokemonPower: ; 1730 (0:1730)
 
 PlayAttackAnimation_DealAttackDamage: ; 179a (0:179a)
 	call Func_7415
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	and RESIDUAL
 	jr nz, .deal_damage
 	call SwapTurn
@@ -4534,12 +4515,12 @@ PlayAttackAnimation_DealAttackDamage: ; 179a (0:179a)
 	call GetNonTurnDuelistVariable
 	push de
 	push hl
-	call PlayMoveAnimation
+	call PlayAttackAnimation
 	call Func_741a
-	call WaitMoveAnimation
+	call WaitAttackAnimation
 	pop hl
 	pop de
-	call SubstractHP
+	call SubtractHP
 	ld a, [wDuelDisplayedScreen]
 	cp DUEL_MAIN_SCENE
 	jr nz, .skip_draw_huds
@@ -4567,7 +4548,7 @@ Func_17fb: ; 17fb (0:17fb)
 	call TryExecuteEffectCommandFunction
 	pop af
 	ld [wTempNonTurnDuelistCardID], a
-	call HandleStrikesBack_AgainstResidualMove
+	call HandleStrikesBack_AgainstResidualAttack
 	bank1call Func_6df1
 	call Func_1bb4
 	bank1call Func_7195
@@ -4595,15 +4576,15 @@ ClearNonTurnTemporaryDuelvars_ResetCarry: ; 1823 (0:1823)
 	ret
 
 ; called when attacker deals damage to itself due to confusion
-; display the corresponding animation and deal damage to self
+; display the corresponding animation and deal 20 damage to self
 HandleConfusionDamageToSelf: ; 1828 (0:1828)
 	bank1call DrawDuelMainScene
 	ld a, 1
 	ld [wIsDamageToSelf], a
 	ldtx hl, DamageToSelfDueToConfusionText
 	call DrawWideTextBox_PrintText
-	ld a, $75
-	ld [wLoadedMoveAnimation], a
+	ld a, ATK_ANIM_CONFUSION_HIT
+	ld [wLoadedAttackAnimation], a
 	ld a, 20 ; damage
 	call DealConfusionDamageToSelf
 	call Func_1bb4
@@ -4647,7 +4628,7 @@ SendAttackDataToLinkOpponent: ; 1874 (0:1874)
 	ld [wccec], a
 	ld a, [wPlayerAttackingCardIndex]
 	ldh [hTempCardIndex_ff9f], a
-	ld a, [wPlayerAttackingMoveIndex]
+	ld a, [wPlayerAttackingAttackIndex]
 	ldh [hTemp_ffa0], a
 	ld a, OPPACTION_BEGIN_ATTACK
 	call SetOppAction_SerialSendDuelData
@@ -4659,7 +4640,7 @@ SendAttackDataToLinkOpponent: ; 1874 (0:1874)
 	ret
 
 Func_189d: ; 189d (0:189d)
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	bit RESIDUAL_F, a
 	ret nz
 	ld a, [wNoDamageOrEffect]
@@ -4713,10 +4694,9 @@ CheckSelfConfusionDamage: ; 18d7 (0:18d7)
 .no_confusion_damage
 	or a
 	ret
-; 0x18f9
 
 ; play the trainer card with deck index at hTempCardIndex_ff98.
-; a trainer card is like a move effect, with its own effect commands.
+; a trainer card is like an attack effect, with its own effect commands.
 ; return nc if the card was played, carry if it wasn't.
 PlayTrainerCard: ; 18f9 (0:18f9)
 	call CheckCantUseTrainerDueToHeadache
@@ -4755,30 +4735,32 @@ PlayTrainerCard: ; 18f9 (0:18f9)
 .done
 	or a
 	ret
-; 0x1944
 
 ; loads the effect commands of a (trainer or energy) card with deck index (0-59) at hTempCardIndex_ff9f
-; into wLoadedMoveEffectCommands. in practice, only used for trainer cards
+; into wLoadedAttackEffectCommands. in practice, only used for trainer cards
 LoadNonPokemonCardEffectCommands: ; 1944 (0:1944)
 	ldh a, [hTempCardIndex_ff9f]
 	call LoadCardDataToBuffer1_FromDeckIndex
 	ld hl, wLoadedCard1EffectCommands
-	ld de, wLoadedMoveEffectCommands
+	ld de, wLoadedAttackEffectCommands
 	ld a, [hli]
 	ld [de], a
 	inc de
 	ld a, [hl]
 	ld [de], a
 	ret
-; 0x1955
 
-Func_1955: ; 1955 (0:1955)
+; Make turn holder deal A damage to self due to recoil (e.g. Thrash, Selfdestruct)
+; display recoil animation
+DealRecoilDamageToSelf: ; 1955 (0:1955)
 	push af
-	ld a, $7a
-	ld [wLoadedMoveAnimation], a
+	ld a, ATK_ANIM_RECOIL_HIT
+	ld [wLoadedAttackAnimation], a
 	pop af
 ;	fallthrough
 
+; Make turn holder deal A damage to self due to confusion
+; display animation at wLoadedAttackAnimation
 DealConfusionDamageToSelf: ; 195c (0:195c)
 	ld hl, wDamage
 	ld [hli], a
@@ -4971,10 +4953,10 @@ ApplyAttachedDefender: ; 1a7e (0:1a7e)
 	ld d, a
 	ret
 
-; hl: address to substract HP from
-; de: how much HP to substract (damage to deal)
+; hl: address to subtract HP from
+; de: how much HP to subtract (damage to deal)
 ; returns carry if the HP does not become 0 as a result
-SubstractHP: ; 1a96 (0:1a96)
+SubtractHP: ; 1a96 (0:1a96)
 	push hl
 	push de
 	ld a, [hl]
@@ -5043,15 +5025,22 @@ PrintKnockedOut: ; 1ad3 (0:1ad3)
 	jr nz, .wait_frames
 	scf
 	ret
-; 0x1af3
 
 ; deal damage to turn holder's Pokemon card at play area location at b (PLAY_AREA_*).
 ; damage to deal is given in de.
 ; shows the defending player's play area screen when dealing the damage
-; instead of the main duel interface, and has a fixed move animation.
-DealDamageToPlayAreaPokemon: ; 1af3 (0:1af3)
-	ld a, $78
-	ld [wLoadedMoveAnimation], a
+; instead of the main duel interface with regular attack animation.
+DealDamageToPlayAreaPokemon_RegularAnim: ; 1af3 (0:1af3)
+	ld a, ATK_ANIM_BENCH_HIT
+	ld [wLoadedAttackAnimation], a
+;	fallthrough
+
+; deal damage to turn holder's Pokemon card at play area location at b (PLAY_AREA_*).
+; damage to deal is given in de.
+; shows the defending player's play area screen when dealing the damage
+; instead of the main duel interface.
+; plays animation that is loaded in wLoadedAttackAnimation.
+DealDamageToPlayAreaPokemon: ; 1af8 (0:1af8)
 	ld a, b
 	ld [wTempPlayAreaLocation_cceb], a
 	or a ; cp PLAY_AREA_ARENA
@@ -5088,7 +5077,7 @@ DealDamageToPlayAreaPokemon: ; 1af3 (0:1af3)
 	call ApplyAttachedPluspower
 	call SwapTurn
 .next
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	cp POKEMON_POWER
 	jr z, .skip_defender
 	ld a, [wTempPlayAreaLocation_cceb]
@@ -5134,23 +5123,22 @@ DealDamageToPlayAreaPokemon: ; 1af3 (0:1af3)
 	call PrintKnockedOutIfHLZero
 	pop de
 .skip_knocked_out
-	call HandleStrikesBack_AgainstDamagingMove
+	call HandleStrikesBack_AgainstDamagingAttack
 	pop bc
 	pop de
 	pop hl
 	ret
-; 0x1b8d
 
 ; draw duel main scene, then print the "<Pokemon Lvxx>'s <attack>" text
 ; The Pokemon's name is the turn holder's arena Pokemon, and the
-; attack's name is taken from wLoadedMoveName.
+; attack's name is taken from wLoadedAttackName.
 DrawDuelMainScene_PrintPokemonsAttackText: ; 1b8d (0:1b8d)
 	bank1call DrawDuelMainScene
 ;	fallthrough
 
 ; print the "<Pokemon Lvxx>'s <attack>" text
 ; The Pokemon's name is the turn holder's arena Pokemon, and the
-; attack's name is taken from wLoadedMoveName.
+; attack's name is taken from wLoadedAttackName.
 PrintPokemonsAttackText: ; 1b90 (0:1b90)
 	ld a, DUELVARS_ARENA_CARD
 	call GetTurnDuelistVariable
@@ -5163,9 +5151,9 @@ PrintPokemonsAttackText: ; 1b90 (0:1b90)
 	xor a
 	ld [hli], a
 	ld [hli], a
-	ld a, [wLoadedMoveName]
+	ld a, [wLoadedAttackName]
 	ld [hli], a ; wTxRam2_b
-	ld a, [wLoadedMoveName + 1]
+	ld a, [wLoadedAttackName + 1]
 	ld [hli], a
 	ldtx hl, PokemonsAttackText
 	call DrawWideTextBox_PrintText
@@ -5200,7 +5188,7 @@ Func_1bca: ; 1bca (0:1bca)
 	ld [hl], $0
 	ld hl, $0000
 	call LoadTxRam2
-	ld hl, wLoadedMoveName
+	ld hl, wLoadedAttackName
 	ld de, wTxRam2_b
 	ld a, [hli]
 	ld [de], a
@@ -5216,9 +5204,8 @@ Func_1bca: ; 1bca (0:1bca)
 	call DrawWideTextBox_PrintText
 	scf
 	ret
-; 0x1c05
 
-; return in a the retreat cost of the turn holder's arena or benchx Pokemon
+; return in a the retreat cost of the turn holder's arena or bench Pokemon
 ; given the PLAY_AREA_* value in hTempPlayAreaLocation_ff9d
 GetPlayAreaCardRetreatCost: ; 1c05 (0:1c05)
 	ldh a, [hTempPlayAreaLocation_ff9d]
@@ -5227,7 +5214,6 @@ GetPlayAreaCardRetreatCost: ; 1c05 (0:1c05)
 	call LoadCardDataToBuffer1_FromDeckIndex
 	call GetLoadedCard1RetreatCost
 	ret
-; 0x1c13
 
 ; move the turn holder's card with ID at de to the discard pile
 ; if it's currently in the arena.
@@ -5257,11 +5243,14 @@ MoveCardToDiscardPileIfInArena: ; 1c13 (0:1c13)
 	cp DECK_SIZE
 	jr c, .next_card
 	ret
-; 0x1c35
 
-; calculate damage of card at CARD_LOCATION_* in e
-; return the result in a
-GetCardDamage: ; 1c35 (0:1c35)
+; calculate damage and max HP of card at PLAY_AREA_* in e.
+; input:
+;	e = PLAY_AREA_* of card;
+; output:
+;	a = damage;
+;	c = max HP.
+GetCardDamageAndMaxHP: ; 1c35 (0:1c35)
 	push hl
 	push de
 	ld a, DUELVARS_ARENA_CARD
@@ -5279,15 +5268,14 @@ GetCardDamage: ; 1c35 (0:1c35)
 	pop de
 	pop hl
 	ret
-; 0x1c50
 
-; check if a flag of wLoadedMove is set
+; check if a flag of wLoadedAttack is set
 ; input:
    ; a = %fffffbbb, where
-      ; fffff = flag address counting from wLoadedMoveFlag1
+      ; fffff = flag address counting from wLoadedAttackFlag1
       ; bbb = flag bit
 ; return carry if the flag is set
-CheckLoadedMoveFlag: ; 1c50 (0:1c50)
+CheckLoadedAttackFlag: ; 1c50 (0:1c50)
 	push hl
 	push de
 	push bc
@@ -5304,18 +5292,17 @@ CheckLoadedMoveFlag: ; 1c50 (0:1c50)
 	rra
 	and $1f
 	ld e, a ; %000fffff
-	ld hl, wLoadedMoveFlag1
+	ld hl, wLoadedAttackFlag1
 	add hl, de
 	ld a, [hl]
 	and b
 	jr z, .done
-	scf ; set carry if the move has this flag set
+	scf ; set carry if the attack has this flag set
 .done
 	pop bc
 	pop de
 	pop hl
 	ret
-; 0x1c72
 
 ; returns [hWhoseTurn] <-- ([hWhoseTurn] ^ $1)
 ;   As a side effect, this also returns a duelist variable in a similar manner to
@@ -5369,7 +5356,7 @@ CopyOpponentName: ; 1c8e (0:1c8e)
 	jp CopyText
 
 ; return, in hl, the total amount of cards owned anywhere, including duplicates
-GetRawAmountOfCardsOwned: ; 1caa (0:1caa)
+GetAmountOfCardsOwned: ; 1caa (0:1caa)
 	push de
 	push bc
 	call EnableSRAM
@@ -5558,7 +5545,6 @@ RemoveCardFromCollection: ; 1d91 (0:1d91)
 	call DisableSRAM
 	pop hl
 	ret
-; 0x1da4
 
 ; return the amount of different cards that the player has collected in d
 ; return NUM_CARDS in e, minus 1 if VENUSAUR1 or MEW2 has not been collected (minus 2 if neither)
@@ -5589,7 +5575,6 @@ GetCardAlbumProgress: ; 1da4 (0:1da4)
 	call DisableSRAM
 	pop hl
 	ret
-; 0x1dca
 
 ; copy c bytes of data from de to hl
 ; if LCD on, copy during h-blank only
@@ -5760,7 +5745,7 @@ DrawRegularTextBoxDMG: ; 1e88 (0:1e88)
 
 ; continue drawing a labeled or regular textbox on DMG or SGB:
 ; body and bottom line of either type of textbox
-ContinueDrawingTextBoxDMGorSGB:
+ContinueDrawingTextBoxDMGorSGB: ; 1e93 (0:1e93)
 	dec c
 	dec c
 .draw_text_box_body_loop
@@ -5811,7 +5796,7 @@ CopyLine: ; 1ea5 (0:1ea5)
 	ret
 
 ; DrawRegularTextBox branches here on CGB console
-DrawRegularTextBoxCGB:
+DrawRegularTextBoxCGB: ; 1ec9 (0:1ec9)
 	call DECoordToBGMap0Address
 	; top line (border) of the text box
 	ld a, SYM_BOX_TOP
@@ -5821,7 +5806,7 @@ DrawRegularTextBoxCGB:
 
 ; continue drawing a labeled or regular textbox on CGB:
 ; body and bottom line of either type of textbox
-ContinueDrawingTextBoxCGB:
+ContinueDrawingTextBoxCGB: ; 1ed4 (0:1ed4)
 	dec c
 	dec c
 .draw_text_box_body_loop
@@ -5855,7 +5840,7 @@ CopyCurrentLineTilesAndAttrCGB: ; 1efb (0:1efb)
 	pop hl
 ;	fallthrough
 
-CopyCurrentLineAttrCGB:
+CopyCurrentLineAttrCGB: ; 1f00 (0:1f00)
 	call BankswitchVRAM1
 	ld a, [wTextBoxFrameType] ; on CGB, wTextBoxFrameType determines the palette and the other attributes
 	ld e, a
@@ -5876,7 +5861,7 @@ DrawRegularTextBoxSGB: ; 1f0f (0:1f0f)
 	ret z
 ;	fallthrough
 
-ColorizeTextBoxSGB:
+ColorizeTextBoxSGB: ; 1f1b (0:1f1b)
 	push bc
 	push de
 	ld hl, wTempSGBPacket
@@ -5921,7 +5906,7 @@ ColorizeTextBoxSGB:
 AttrBlkPacket_TextBox: ; 1f4f (0:1f4f)
 	sgb ATTR_BLK, 1 ; sgb_command, length
 	db 1 ; number of data sets
-	; Control Code,  Color Palette Designation, X1, Y1, X2, Y2
+	; Control Code, Color Palette Designation, X1, Y1, X2, Y2
 	db ATTR_BLK_CTRL_INSIDE + ATTR_BLK_CTRL_LINE, 0 << 0 + 1 << 2, 0, 0, 0, 0 ; data set 1
 	ds 6 ; data set 2
 	ds 2 ; data set 3
@@ -5973,7 +5958,6 @@ FillRectangle: ; 1f5f (0:1f5f)
 	add sp, $24
 	pop de
 	ret
-; 0x1f96
 
 Func_1f96: ; 1f96 (0:1f96)
 	add sp, -10
@@ -6107,7 +6091,6 @@ Func_1f96: ; 1f96 (0:1f96)
 	add sp, 10
 	scf
 	ret
-; 0x2046
 
 Func_2046: ; 2046 (0:2046)
 	ld hl, sp+3
@@ -6139,7 +6122,6 @@ Func_2057: ; 2057 (0:2057)
 	ld a, e
 	call HblankWriteByteToBGMap0
 	ret
-; 0x2066
 
 ; loads the four tiles of the card set 2 icon constant provided in register a
 ; returns carry if the specified set does not have an icon
@@ -6173,7 +6155,6 @@ LoadDuelDrawCardsScreenTiles: ; 208d (0:208d)
 	ld de, v0Tiles1 + $74 tiles
 	ld b, $08
 	jp CopyFontsOrDuelGraphicsTiles
-; 0x2098
 
 ; loads the 8 tiles that make up the border of the main duel menu as well as the border
 ; of a large card picture (displayed after drawing the card or placing it in the arena).
@@ -6182,7 +6163,6 @@ LoadCardOrDuelMenuBorderTiles: ; 2098 (0:2098)
 	ld de, v0Tiles1 + $50 tiles
 	ld b, $08
 	jr CopyFontsOrDuelGraphicsTiles
-; 0x20a2
 
 ; loads the graphics of a card type header, used to display a picture of a card after drawing it
 ; or placing it in the arena. register e determines which header (TRAINER, ENERGY, PoKéMoN)
@@ -6194,7 +6174,6 @@ LoadCardTypeHeaderTiles: ; 20a2 (0:20a2)
 	ld de, v0Tiles1 + $60 tiles
 	ld b, $10
 	jr CopyFontsOrDuelGraphicsTiles
-; 0x20b0
 
 ; loads the symbols that are displayed near the names of a list of cards in the hand or discard pile
 LoadDuelCardSymbolTiles: ; 20b0 (0:20b0)
@@ -6221,7 +6200,7 @@ LoadDuelCardSymbolTiles2: ; 20c4 (0:20c4)
 	ld b, $c
 	jr CopyFontsOrDuelGraphicsTiles
 
-; load the face down basic / stage1 / stage2 card images shown in the ckeck Pokemon screens
+; load the face down basic / stage1 / stage2 card images shown in the check Pokemon screens
 LoadDuelFaceDownCardTiles: ; 20d8 (0:20d8)
 	ld b, $10
 	jr LoadDuelCheckPokemonScreenTiles.got_num_tiles
@@ -6285,17 +6264,18 @@ CopyFontsOrDuelGraphicsTiles: ; 2121 (0:2121)
 	call CopyGfxData
 	call BankpopROM
 	ret
-; 0x212f
 
 ; this function copies gfx data into sram
 Func_212f: ; 212f (0:212f)
+; loads symbols fonts to sGfxBuffer1
 	ld hl, SymbolsDuel - $4000
-	ld de, $a400
+	ld de, sGfxBuffer1
 	ld b, $30
 	call CopyFontsOrDuelGraphicsTiles
-	ld hl, DuelOtherGraphics + $150
-	ld de, $a700
-	ld b, $08
+; text box frame tiles
+	ld hl, DuelOtherGraphics + $15 tiles
+	ld de, sGfxBuffer1 + $30 tiles
+	ld b, $8
 	call CopyFontsOrDuelGraphicsTiles
 	call GetCardSymbolData
 	sub $d0
@@ -6304,19 +6284,18 @@ Func_212f: ; 212f (0:212f)
 	add hl, hl
 	add hl, hl
 	add hl, hl
-	add hl, hl
+	add hl, hl ; *16
 	ld de, DuelDmgSgbSymbolGraphics - $4000
 	add hl, de
-	ld de, $a780
-	ld b, $04
+	ld de, sGfxBuffer1 + $38 tiles
+	ld b, $4
 	call CopyFontsOrDuelGraphicsTiles
 	ld hl, DuelDmgSgbSymbolGraphics - $4000
-	ld de, $b100
+	ld de, sGfxBuffer4 + $10 tiles
 	ld b, $30
 	jr CopyFontsOrDuelGraphicsTiles
-; 0x2167
 
-; load the graphics and draw the duel box message given a BOXMSC_* constant in a
+; load the graphics and draw the duel box message given a BOXMSG_* constant in a
 DrawDuelBoxMessage: ; 2167 (0:2167)
 	ld l, a
 	ld h, 40 tiles / 4 ; boxes are 10x4 tiles
@@ -6334,13 +6313,12 @@ DrawDuelBoxMessage: ; 2167 (0:2167)
 	lb bc, 10, 4
 	lb de, 5, 4
 	jp FillRectangle
-; 0x2189
 
 ; load the tiles for the latin, katakana, and hiragana fonts into VRAM
-; from gfx/fonts/full_width/3.1bpp and gfx/fonts/full_width/4.t3.1bpp
+; from gfx/fonts/full_width/3.1bpp and gfx/fonts/full_width/4.1bpp
 LoadFullWidthFontTiles: ; 2189 (0:2189)
 	ld hl, FullWidthFonts + $3cc tiles_1bpp - $4000
-	ld a, BANK(Fonts); BANK(DuelGraphics)
+	ld a, BANK(Fonts) ; BANK(DuelGraphics)
 	call BankpushROM
 	push hl
 	ld e, l
@@ -6354,7 +6332,6 @@ LoadFullWidthFontTiles: ; 2189 (0:2189)
 	call Copy1bppTiles
 	call BankpopROM
 	ret
-; 0x21ab
 
 ; copy 128 1bpp tiles from de to hl as 2bpp
 Copy1bppTiles: ; 21ab (0:21ab)
@@ -6371,7 +6348,6 @@ Copy1bppTiles: ; 21ab (0:21ab)
 	dec b
 	jr nz, .tile_loop
 	ret
-; 0x21ba
 
 ; similar to ProcessText except it calls InitTextPrinting first
 ; with the first two bytes of hl being used to set hTextBGMap0Address.
@@ -6842,7 +6818,6 @@ GetTextLengthInHalfTiles: ; 23d3 (0:23d3)
 	pop de
 	pop hl
 	ret
-; 0x23fd
 
 ; copy text of maximum length a (in tiles) from hl to de, then terminate
 ; the text with TX_END if it doesn't contain it already.
@@ -6925,7 +6900,6 @@ CopyTextData: ; 23fd (0:23fd)
 	pop bc
 	or a
 	ret
-; 0x245d
 
 ; convert the number at hl to TX_SYMBOL text format and write it to wStringBuffer
 ; replace leading zeros with SYM_SPACE
@@ -6970,10 +6944,10 @@ TwoByteNumberToTxSymbol_TrimLeadingZeros: ; 245d (0:245d)
 	ld [de], a
 	inc de
 	ld a, SYM_0 - 1
-.substract_loop
+.subtract_loop
 	inc a
 	add hl, bc
-	jr c, .substract_loop
+	jr c, .subtract_loop
 	ld [de], a
 	inc de
 	ld a, l
@@ -7103,7 +7077,7 @@ ConvertTileNumberToTileDataAddress: ; 2518 (0:2518)
 ; create, at wTextTileBuffer, a full-width font tile given its
 ; within the full-width font graphics (FullWidthFonts) in hl
 CreateFullWidthFontTile: ; 252e (0:252e)
-	ld a, BANK(Fonts); BANK(DuelGraphics)
+	ld a, BANK(Fonts) ; BANK(DuelGraphics)
 	call BankpushROM
 	ld de, wTextTileBuffer
 	push de
@@ -7184,7 +7158,6 @@ GetFullWidthFontTileOffset: ; 256d (0:256d)
 	add hl, hl
 	add hl, bc
 	ret
-; 0x2589
 
 ; pointers to VRAM?
 Unknown_2589: ; 2589 (0:2589)
@@ -7237,7 +7210,6 @@ Unknown_2589: ; 2589 (0:2589)
 	dw $98fc
 	dw $9940
 	dw $ffff
-; 0x25ea
 
 ; initializes parameters for a card list (e.g. list of hand cards in a duel, or booster pack cards)
 ; input:
@@ -7275,7 +7247,6 @@ InitializeCardListParameters: ; 25ea (0:25ea)
 	ld a, 1
 	ld [wYDisplacementBetweenMenuItems], a
 	ret
-; 0x2626
 
 ; similar to HandleMenuInput, but conveniently returns parameters related to the
 ; state of the list in a, d, and e if A or B were pressed. also returns carry
@@ -7291,7 +7262,6 @@ HandleCardListInput: ; 2626 (0:2626)
 	ldh a, [hCurMenuItem]
 	scf
 	ret
-; 0x2636
 
 ; initializes parameters for a menu, given the 8 bytes starting at hl,
 ; which are loaded to the following addresses:
@@ -7543,7 +7513,6 @@ HandleDuelMenuInput: ; 271a (0:271a)
 	ld e, a
 	or a
 	ret
-; 0x278d
 
 DuelMenuCursorCoords: ; 278d (0:278d)
 	db  1, 14 ; Hand
@@ -7574,7 +7543,7 @@ PrintCardListItems: ; 2799 (0:2799)
 
 ; like PrintCardListItems, except more parameters are already initialized
 ; called instead of PrintCardListItems to reload the list after moving up or down
-ReloadCardListItems:
+ReloadCardListItems: ; 27af (0:27af)
 	ld e, SYM_SPACE
 	ld a, [wListScrollOffset]
 	or a
@@ -7644,7 +7613,6 @@ ReloadCardListItems:
 	jr nz, .next_card
 .done
 	ret
-; 0x2827
 
 ; reload a list of cards, except don't print their names
 Func_2827: ; 2827 (0:2827)
@@ -7654,7 +7622,6 @@ Func_2827: ; 2827 (0:2827)
 	xor a
 	ldh [hffb0], a
 	ret
-; 0x2832
 
 ; convert the number at a to TX_SYMBOL text format and write it to wDefaultText
 ; if the first digit is a 0, delete it and shift the number one tile to the left
@@ -7669,7 +7636,6 @@ OneByteNumberToTxSymbol_TrimLeadingZerosAndAlign: ; 2832 (0:2832)
 	ld [hl], SYM_SPACE
 .not_zero
 	ret
-; 0x283f
 
 ; this function is always loaded to wMenuFunctionPointer by PrintCardListItems
 ; takes care of things like handling page scrolling and calling the function at wListFunctionPointer
@@ -7839,7 +7805,6 @@ CardListMenuFunction: ; 283f (0:283f)
 	ldh [hCurMenuItem], a
 	scf
 	ret
-; 0x296a
 
 ; convert the number at a to TX_SYMBOL text format and write it to wDefaultText
 ; replace leading zeros with SYM_SPACE
@@ -7850,7 +7815,6 @@ OneByteNumberToTxSymbol_TrimLeadingZeros: ; 296a (0:296a)
 	ret nz
 	ld [hl], SYM_SPACE
 	ret
-; 0x2974
 
 ; convert the number at a to TX_SYMBOL text format and write it to wDefaultText
 OneByteNumberToTxSymbol: ; 2974 (0:2974)
@@ -7868,7 +7832,6 @@ OneByteNumberToTxSymbol: ; 2974 (0:2974)
 	ld [hl], SYM_SPACE
 	pop hl
 	ret
-; 0x2988
 
 ; translate the TYPE_* constant in wLoadedCard1Type to an index for CardSymbolTable
 CardTypeToSymbolID: ; 2988 (0:2988)
@@ -7887,7 +7850,6 @@ CardTypeToSymbolID: ; 2988 (0:2988)
 	ld a, [wLoadedCard1Stage] ; different symbol for each evolution stage
 	add 8
 	ret
-; 0x299f
 
 ; return the entry in CardSymbolTable of the TYPE_* constant in wLoadedCard1Type
 ; also return the first byte of said entry (starting tile number) in a
@@ -7900,7 +7862,6 @@ GetCardSymbolData: ; 299f (0:299f)
 	add hl, bc
 	ld a, [hl]
 	ret
-; 0x29ac
 
 ; draw, at de, the 2x2 tile card symbol associated to the TYPE_* constant in wLoadedCard1Type
 DrawCardSymbol: ; 29ac (0:29ac)
@@ -7933,7 +7894,6 @@ DrawCardSymbol: ; 29ac (0:29ac)
 	pop de
 	pop hl
 	ret
-; 0x29dd
 
 CardSymbolTable:
 ; starting tile number, cgb palette (grey, yellow/red, green/blue, pink/orange)
@@ -7955,7 +7915,6 @@ CardSymbolTable:
 CopyCardNameAndLevel: ; 29f5 (0:29f5)
 	farcall _CopyCardNameAndLevel
 	ret
-; 0x29fa
 
 ; sets cursor parameters for navigating in a text box, but using
 ; default values for the cursor tile (SYM_CURSOR_R) and the tile behind it (SYM_SPACE).
@@ -8003,14 +7962,12 @@ SetCursorParametersForTextBox: ; 2a1a (0:2a1a)
 	ld [hl], c ; wTileBehindCursor
 	ld [wCursorBlinkCounter], a
 	ret
-; 0x2a30
 
 ; draw a 20x6 text box aligned to the bottom of the screen,
 ; print the text at hl without letter delay, and wait for A or B pressed
 DrawWideTextBox_PrintTextNoDelay_Wait: ; 2a30 (0:2a30)
 	call DrawWideTextBox_PrintTextNoDelay
 	jp WaitForWideTextBoxInput
-; 0x2a36
 
 ; draw a 20x6 text box aligned to the bottom of the screen
 ; and print the text at hl without letter delay
@@ -8077,12 +8034,12 @@ DrawNarrowTextBox_WaitForInput: ; 2a7c (0:2a7c)
 	ret
 
 NarrowTextBoxMenuParameters: ; 2a96 (0:2a96)
-	db 10, 17 ; corsor x, cursor y
+	db 10, 17 ; cursor x, cursor y
 	db 1 ; y displacement between items
 	db 1 ; number of items
 	db SYM_CURSOR_D ; cursor tile number
 	db SYM_BOX_BOTTOM ; tile behind cursor
-	dw $0000 ; function pointer if non-0
+	dw NULL ; function pointer if non-0
 
 ; draw a 20x6 text box aligned to the bottom of the screen
 DrawWideTextBox: ; 2a9e (0:2a9e)
@@ -8119,7 +8076,7 @@ WideTextBoxMenuParameters: ; 2ac8 (0:2ac8)
 	db 1 ; number of items
 	db SYM_CURSOR_D ; cursor tile number
 	db SYM_BOX_BOTTOM ; tile behind cursor
-	dw $0000 ; function pointer if non-0
+	dw NULL ; function pointer if non-0
 
 ; display a two-item horizontal menu with custom text provided in hl and handle input
 TwoItemHorizontalMenu: ; 2ad0 (0:2ad0)
@@ -8133,7 +8090,6 @@ TwoItemHorizontalMenu: ; 2ad0 (0:2ad0)
 	ld [wCurMenuItem], a
 	call EnableLCD
 	jp HandleYesOrNoMenu.refresh_menu
-; 0x2aeb
 
 YesOrNoMenuWithText_SetCursorToYes: ; 2aeb (0:2aeb)
 	ld a, $01
@@ -8164,7 +8120,7 @@ YesOrNoMenuWithText_LeftAligned: ; 2afe (0:2afe)
 	lb de, 2, 16 ; x, y
 ;	fallthrough
 
-HandleYesOrNoMenu:
+HandleYesOrNoMenu: ; 2b0a (0:2b0a)
 	ld a, d
 	ld [wLeftmostItemCursorX], a
 	lb bc, SYM_CURSOR_R, SYM_SPACE ; cursor tile, tile behind cursor
@@ -8224,13 +8180,11 @@ PrintYesOrNoItems: ; 2b66 (0:2b66)
 	ldtx hl, YesOrNoText
 	call InitTextPrinting_ProcessTextFromID
 	ret
-; 0x2b70
 
 ContinueDuel: ; 2b70 (0:2b70)
 	ld a, BANK(_ContinueDuel)
 	call BankswitchROM
 	jp _ContinueDuel
-; 0x2b78
 
 ; loads opponent deck at wOpponentDeckID to wOpponentDeck, and initializes wPlayerDuelistType.
 ; on a duel against Sam, also loads PRACTICE_PLAYER_DECK to wPlayerDeck.
@@ -8279,56 +8233,70 @@ LoadOpponentDeck: ; 2b78 (0:2b78)
 	ld [hl], a
 	ret
 
-Func_2bbf: ; 2bbf (0:2bbf)
-	ld a, $1
-	jr Func_2bdb
+AIDoAction_Turn: ; 2bbf (0:2bbf)
+	ld a, AIACTION_DO_TURN
+	jr AIDoAction
 
-Func_2bc3: ; 2bc3 (0:2bc3)
-	ld a, $2
-	jr Func_2bdb
+AIDoAction_StartDuel: ; 2bc3 (0:2bc3)
+	ld a, AIACTION_START_DUEL
+	jr AIDoAction
 
-Func_2bc7: ; 2bc7 (0:2bc7)
-	ld a, $3
-	call Func_2bdb
+AIDoAction_ForcedSwitch: ; 2bc7 (0:2bc7)
+	ld a, AIACTION_FORCED_SWITCH
+	call AIDoAction
 	ldh [hTempPlayAreaLocation_ff9d], a
 	ret
 
-Func_2bcf: ; 2bcf (0:2bcf)
-	ld a, $4
-	call Func_2bdb
+AIDoAction_KOSwitch: ; 2bcf (0:2bcf)
+	ld a, AIACTION_KO_SWITCH
+	call AIDoAction
 	ldh [hTemp_ffa0], a
 	ret
 
-Func_2bd7: ; 2bd7 (0:2bd7)
-	ld a, $5
-	jr Func_2bdb
+AIDoAction_TakePrize: ; 2bd7 (0:2bd7)
+	ld a, AIACTION_TAKE_PRIZE
+	jr AIDoAction ; this line is not needed
 
-Func_2bdb: ; 2bdb (0:2bdb)
+; calls the appropriate AI routine to handle action,
+; depending on the deck ID (see engine/ai/deck_ai.asm)
+; input:
+;	- a = AIACTION_* constant
+AIDoAction: ; 2bdb (0:2bdb)
 	ld c, a
+
+; load bank for Opponent Deck pointer table
 	ldh a, [hBankROM]
 	push af
-	ld a, BANK(PointerTable_14000)
+	ld a, BANK(DeckAIPointerTable)
 	call BankswitchROM
+
+; load hl with the corresponding pointer
 	ld a, [wOpponentDeckID]
 	ld l, a
 	ld h, $0
-	add hl, hl
-	ld de, PointerTable_14000
+	add hl, hl ; two bytes per deck
+	ld de, DeckAIPointerTable
 	add hl, de
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
+
 	ld a, c
 	or a
-	jr nz, .asm_2bfe
+	jr nz, .not_zero
+
+; if input was 0, copy deck data of turn player
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
 	call CopyDeckData
-	jr .asm_2c01
-.asm_2bfe
+	jr .done
+
+; jump to corresponding AI routine related to input
+.not_zero
 	call JumpToFunctionInTable
-.asm_2c01
+
+.done
 	ld c, a
 	pop af
 	call BankswitchROM
@@ -8385,7 +8353,6 @@ ProcessTextFromID: ; 2c29 (0:2c29)
 	pop af
 	call BankswitchROM
 	ret
-; 0x2c37
 
 ; return, in a, the number of lines of the text given in hl as an ID
 ; this is calculated by counting the amount of '\n' characters and adding 1 to the result
@@ -8421,7 +8388,6 @@ CountLinesOfTextFromID: ; 2c37 (0:2c37)
 	pop de
 	pop hl
 	ret
-; 0x2c62
 
 ; call PrintScrollableText with text box label, then wait for the
 ; player to press A or B to advance the printed text
@@ -8849,7 +8815,6 @@ CopyText: ; 2e89 (0:2e89)
 	cp OPPONENT_TURN
 	jp z, CopyOpponentName
 	jp CopyPlayerName
-; 0x2ea9
 
 ; copy text of maximum length a (in tiles) from its ID at hl to de,
 ; then terminate the text with TX_END if it doesn't contain it already.
@@ -8865,7 +8830,6 @@ CopyTextData_FromTextID: ; 2ea9 (0:2ea9)
 	pop af
 	call BankswitchROM
 	ret
-; 0x2ebb
 
 ; text id (usually of a card name) for TX_RAM2
 LoadTxRam2: ; 2ebb (0:2ebb)
@@ -8882,11 +8846,10 @@ LoadTxRam3: ; 2ec4 (0:2ec4)
 	ld a, h
 	ld [wTxRam3 + 1], a
 	ret
-; 0x2ecd
 
 ; load data of card with text id of name at de to wLoadedCard1
 LoadCardDataToBuffer1_FromName: ; 2ecd (0:2ecd)
-	ld hl, CardPointers + 2 ; skip first $0000 pointer
+	ld hl, CardPointers + 2 ; skip first NULL pointer
 	ld a, BANK(CardPointers)
 	call BankpushROM2
 .find_card_loop
@@ -8929,7 +8892,6 @@ LoadCardDataToBuffer1_FromName: ; 2ecd (0:2ecd)
 .done
 	call BankpopROM
 	ret
-; 0x2f0a
 
 ; load data of card with id at e to wLoadedCard2
 LoadCardDataToBuffer2_FromCardID: ; 2f0a (0:2f0a)
@@ -8982,7 +8944,7 @@ GetCardType: ; 2f32 (0:2f32)
 	pop hl
 	ret
 
-; return in a the 2-byte text id of the name of the card with id at e
+; return in de the 2-byte text id of the name of the card with id at e
 GetCardName: ; 2f45 (0:2f45)
 	push hl
 	call GetCardPointer
@@ -9093,22 +9055,22 @@ LoadCardGfx: ; 2fa0 (0:2fa0)
 
 ; identical to CopyFontsOrDuelGraphicsTiles
 CopyFontsOrDuelGraphicsTiles2: ; 2fcb (0:2fcb)
-	ld a, BANK(Fonts); BANK(DuelGraphics)
+	ld a, BANK(Fonts) ; BANK(DuelGraphics)
 	call BankpushROM
 	ld c, TILE_SIZE
 	call CopyGfxData
 	call BankpopROM
 	ret
 
-; Checks if the command type at a is one of the commands of the move or
+; Checks if the command type at a is one of the commands of the attack or
 ; card effect currently in use, and executes its associated function if so.
 ; input:
    ; a = command type to check
-   ; [wLoadedMoveEffectCommands] = pointer to list of commands of current move or trainer card
+   ; [wLoadedAttackEffectCommands] = pointer to list of commands of current attack or trainer card
 TryExecuteEffectCommandFunction: ; 2fd9 (0:2fd9)
 	push af
-	; grab pointer to command list from wLoadedMoveEffectCommands
-	ld hl, wLoadedMoveEffectCommands
+	; grab pointer to command list from wLoadedAttackEffectCommands
+	ld hl, wLoadedAttackEffectCommands
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
@@ -9138,14 +9100,14 @@ TryExecuteEffectCommandFunction: ; 2fd9 (0:2fd9)
 
 ; input:
    ; a = command type to check
-   ; hl = list of commands of current move or trainer card
+   ; hl = list of commands of current attack or trainer card
 ; return nc if command type matching a is found, carry otherwise
 CheckMatchingCommand: ; 2ffe (0:2ffe)
 	ld c, a
 	ld a, l
 	or h
 	jr nz, .not_null_pointer
-	; return carry if pointer is $0000
+	; return carry if pointer is NULL
 	scf
 	ret
 
@@ -9232,7 +9194,7 @@ AddToDamage: ; 3055 (0:3055)
 	ret
 
 ; [wDamage] -= a
-SubstractFromDamage: ; 3061 (0:3061)
+SubtractFromDamage: ; 3061 (0:3061)
 	push de
 	push hl
 	ld e, a
@@ -9341,58 +9303,62 @@ DrawPlayersPrizeAndBenchCards: ; 30d7 (0:30d7)
 	call BankswitchROM
 	ret
 
-Func_30e7: ; 30e7 (0:30e7)
+HandlePeekSelection: ; 30e7 (0:30e7)
 	ldh a, [hBankROM]
 	push af
-	ld a, BANK(Func_8764)
+	ld a, BANK(_HandlePeekSelection)
 	call BankswitchROM
-	call Func_8764
+	call _HandlePeekSelection
 	ld b, a
 	pop af
 	call BankswitchROM
 	ld a, b
 	ret
 
-Func_30f9: ; 30f9 (0:30f9)
+DrawAIPeekScreen: ; 30f9 (0:30f9)
 	ld b, a
 	ldh a, [hBankROM]
 	push af
-	ld a, BANK(Func_8932)
+	ld a, BANK(_DrawAIPeekScreen)
 	call BankswitchROM
-	call Func_8932
+	call _DrawAIPeekScreen
 	pop af
 	call BankswitchROM
 	ret
 
-Func_310a: ; 310a (0:310a)
-	ld [wce59], a
+; a = number of prize cards for player to select to take
+SelectPrizeCards: ; 310a (0:310a)
+	ld [wNumberOfPrizeCardsToSelect], a
 	ldh a, [hBankROM]
 	push af
-	ld a, BANK(Func_8aaa)
+	ld a, BANK(_SelectPrizeCards)
 	call BankswitchROM
-	call Func_8aaa
+	call _SelectPrizeCards
 	pop af
 	call BankswitchROM
 	ret
 
-Func_311d: ; 311d (0:311d)
+DrawPlayAreaToPlacePrizeCards: ; 311d (0:311d)
 	ldh a, [hBankROM]
 	push af
-	ld a, BANK(Func_8b85)
+	ld a, BANK(_DrawPlayAreaToPlacePrizeCards)
 	call BankswitchROM
-	call Func_8b85
+	call _DrawPlayAreaToPlacePrizeCards
 	pop af
 	call BankswitchROM
 	ret
 
 ; serial transfer-related
-Func_312d: ; 312d (0:312d)
+SendPrinterPacket: ; 312d (0:312d)
 	push hl
 	ld hl, wce64
+	; Preamble
 	ld a, $88
 	ld [hli], a          ; [wce64] ← $88
 	ld a, $33
 	ld [hli], a          ; [wce65] ← $33
+
+	; Header
 	ld [hl], d           ; [wce66] ← d
 	inc hl
 	ld [hl], e           ; [wce67] ← e
@@ -9401,8 +9367,9 @@ Func_312d: ; 312d (0:312d)
 	inc hl
 	ld [hl], b           ; [wce69] ← b
 	inc hl
+
 	pop de
-	ld [hl], e           ; [wce6a] ← l
+	ld [hl], e           ; [wPrinterPacketDataPtr] ← l
 	inc hl
 	ld [hl], d           ; [wce6b] ← h
 	inc hl
@@ -9410,10 +9377,10 @@ Func_312d: ; 312d (0:312d)
 	ld [hl], e           ; [wce6c] ← $45
 	inc hl
 	ld [hl], d           ; [wce6d] ← $ff
-	ld hl, wce70
-	ld [hl], $64         ; [wce70] ← $64
+	ld hl, wSerialDataPtr
+	ld [hl], LOW(wce64)  ; [wSerialDataPtr] ← $64
 	inc hl
-	ld [hl], $ce         ; [wce71] ← $ce
+	ld [hl], HIGH(wce64) ; [wSerialDataPtr] ← $ce
 	call Func_0e8e
 	ld a, $1
 	ld [wce63], a        ; [wce63] ← 1
@@ -9424,25 +9391,28 @@ Func_312d: ; 312d (0:312d)
 	or a
 	jr nz, .asm_315d
 	call ResetSerial
-	ld bc, $05dc
+
+	ld bc, 1500
 .asm_316c
 	dec bc
 	ld a, b
 	or c
 	jr nz, .asm_316c
+
 	ld a, [wce6e]
 	cp $81
 	jr nz, .asm_3182
-	ld a, [wce6f]
+	ld a, [wPrinterStatus]
 	ld l, a
 	and $f1
 	ld a, l
 	ret z
 	scf
 	ret
+
 .asm_3182
 	ld a, $ff
-	ld [wce6f], a
+	ld [wPrinterStatus], a
 	scf
 	ret
 
@@ -9477,17 +9447,19 @@ Func_31b0: ; 31b0 (0:31b0)
 	ld hl, wce68
 	ld a, [hli]
 	or [hl]
-	jr nz, .asm_31bf
+	jr nz, .set_data_ptr
 	call Func_31ab
 	jr Func_31dd
-.asm_31bf
-	ld hl, wce6a
-	ld de, wce70
+
+.set_data_ptr
+	ld hl, wPrinterPacketDataPtr
+	ld de, wSerialDataPtr
 	ld a, [hli]
 	ld [de], a
 	inc de
 	ld a, [hl]
 	ld [de], a
+;	fallthrough
 
 Func_31ca: ; 31ca (0:31ca)
 	call Func_31fc
@@ -9516,21 +9488,21 @@ Func_31e5: ; 31e5 (0:31e5)
 	jr Func_31e0
 
 Func_31ea: ; 31ea (0:31ea)
-	ld a, [rSB]
+	ldh a, [rSB]
 	ld [wce6e], a
 Func_31ef: ; 31ef (0:31ef)
 	xor a
 	jr Func_31e0
 
 Func_31f2: ; 31f2 (0:31f2)
-	ld a, [rSB]
-	ld [wce6f], a
+	ldh a, [rSB]
+	ld [wPrinterStatus], a
 	xor a
 	ld [wce63], a
 	ret
 
 Func_31fc: ; 31fc (0:31fc)
-	ld hl, wce70
+	ld hl, wSerialDataPtr
 	ld e, [hl]
 	inc hl
 	ld d, [hl]
@@ -9540,6 +9512,7 @@ Func_31fc: ; 31fc (0:31fc)
 	dec hl
 	ld [hl], e
 	ld e, a
+
 	ld hl, wce6c
 	add [hl]
 	ld [hli], a
@@ -9550,11 +9523,11 @@ Func_31fc: ; 31fc (0:31fc)
 ;	fallthrough
 
 Func_3212: ; 3212 (0:3212)
-	ld [rSB], a
+	ldh [rSB], a
 	ld a, SC_INTERNAL
-	ld [rSC], a
+	ldh [rSC], a
 	ld a, SC_START | SC_INTERNAL
-	ld [rSC], a
+	ldh [rSC], a
 	ret
 
 ; doubles the damage at de if swords dance or focus energy was used
@@ -9647,7 +9620,7 @@ HandleDamageReductionExceptSubstatus2: ; 3269 (0:3269)
 	call CheckCannotUseDueToStatus
 	ret c
 .pkmn_power
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	cp POKEMON_POWER
 	ret z
 	ld a, [wTempNonTurnDuelistCardID]
@@ -9688,7 +9661,7 @@ HandleDamageReductionExceptSubstatus2: ; 3269 (0:3269)
 	ld d, h
 	ret
 .prevent_less_than_30_damage
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	cp POKEMON_POWER
 	ret z
 	ld bc, 30
@@ -9706,12 +9679,11 @@ HandleDamageReductionExceptSubstatus2: ; 3269 (0:3269)
 	ld e, l
 	ld d, h
 	ret
-; 0x32f7
 
 ; check for Invisible Wall, Kabuto Armor, NShield, or Transparency, in order to
 ; possibly reduce or make zero the damage at de.
 HandleDamageReductionOrNoDamageFromPkmnPowerEffects: ; 32f7 (0:32f7)
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	cp POKEMON_POWER
 	ret z
 	ld a, MUK
@@ -9728,13 +9700,12 @@ HandleDamageReductionOrNoDamageFromPkmnPowerEffects: ; 32f7 (0:32f7)
 	; if carry was set due to NShield or Transparency, damage is 0
 	ld de, 0
 	ret
-; 0x3317
 
 ; when MACHAMP is damaged, if its Strikes Back is active, the
 ; attacking Pokemon (turn holder's arena Pokemon) takes 10 damage.
 ; ignore if damage taken at de is 0.
-; used to bounce back a damaging move.
-HandleStrikesBack_AgainstDamagingMove: ; 3317 (0:3317)
+; used to bounce back a damaging attack.
+HandleStrikesBack_AgainstDamagingAttack: ; 3317 (0:3317)
 	ld a, e
 	or d
 	ret z
@@ -9747,7 +9718,7 @@ HandleStrikesBack_AgainstDamagingMove: ; 3317 (0:3317)
 	ld a, MUK
 	call CountPokemonIDInBothPlayAreas
 	ret c
-	ld a, [wLoadedMoveCategory] ; category of attack used
+	ld a, [wLoadedAttackCategory] ; category of attack used
 	cp POKEMON_POWER
 	ret z
 	ld a, [wTempPlayAreaLocation_cceb] ; defending Pokemon's PLAY_AREA_*
@@ -9758,7 +9729,7 @@ HandleStrikesBack_AgainstDamagingMove: ; 3317 (0:3317)
 .in_bench
 	push hl
 	push de
-	; substract 10 HP from attacking Pokemon (turn holder's arena Pokemon)
+	; subtract 10 HP from attacking Pokemon (turn holder's arena Pokemon)
 	call SwapTurn
 	ld a, DUELVARS_ARENA_CARD
 	call GetTurnDuelistVariable
@@ -9768,7 +9739,7 @@ HandleStrikesBack_AgainstDamagingMove: ; 3317 (0:3317)
 	push af
 	push hl
 	ld de, 10
-	call SubstractHP
+	call SubtractHP
 	ld a, [wLoadedCard2ID]
 	ld [wTempNonTurnDuelistCardID], a
 	ld hl, 10
@@ -9791,7 +9762,6 @@ HandleStrikesBack_AgainstDamagingMove: ; 3317 (0:3317)
 	pop de
 	pop hl
 	ret
-; 0x337f
 
 ; return carry if NShield or Transparency activate (if MEW1 or HAUNTER1 is
 ; the turn holder's arena Pokemon), and print their corresponding text if so
@@ -9833,7 +9803,6 @@ HandleNShieldAndTransparency: ; 337f (0:337f)
 	ld [wNoDamageOrEffect], a
 	ldtx hl, NoDamageOrEffectDueToTransparencyText
 	jr .print_text
-; 0x33c1
 
 ; return carry if the turn holder's arena Pokemon is under a condition that makes
 ; it unable to attack. also return in hl the text id to be displayed
@@ -9858,7 +9827,7 @@ HandleCantAttackSubstatus: ; 33c1 (0:33c1)
 	ret
 
 ; return carry if the turn holder's arena Pokemon cannot use
-; selected move at wSelectedAttack due to amnesia
+; selected attack at wSelectedAttack due to amnesia
 HandleAmnesiaSubstatus: ; 33e1 (0:33e1)
 	ld a, DUELVARS_ARENA_CARD_SUBSTATUS2
 	call GetTurnDuelistVariable
@@ -9868,15 +9837,15 @@ HandleAmnesiaSubstatus: ; 33e1 (0:33e1)
 .check_amnesia
 	cp SUBSTATUS2_AMNESIA
 	jr z, .affected_by_amnesia
-.not_the_disabled_move
+.not_the_disabled_atk
 	or a
 	ret
 .affected_by_amnesia
-	ld a, DUELVARS_ARENA_CARD_DISABLED_MOVE_INDEX
+	ld a, DUELVARS_ARENA_CARD_DISABLED_ATTACK_INDEX
 	call GetTurnDuelistVariable
 	ld a, [wSelectedAttack]
 	cp [hl]
-	jr nz, .not_the_disabled_move
+	jr nz, .not_the_disabled_atk
 	ldtx hl, UnableToUseAttackDueToAmnesiaText
 	scf
 	ret
@@ -9921,7 +9890,7 @@ CheckSandAttackOrSmokescreenSubstatus: ; 3414 (0:3414)
 HandleNoDamageOrEffectSubstatus: ; 3432 (0:3432)
 	xor a
 	ld [wNoDamageOrEffect], a
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	cp POKEMON_POWER
 	ret z
 	ld a, DUELVARS_ARENA_CARD_SUBSTATUS1
@@ -9979,7 +9948,7 @@ HandleTransparency: ; 348a (0:348a)
 	or a
 	ret
 .transparency
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	cp POKEMON_POWER
 	jr z, .done ; Transparency has no effect against Pkmn Powers
 	ld a, [wTempPlayAreaLocation_cceb]
@@ -9995,7 +9964,6 @@ HandleTransparency: ; 348a (0:348a)
 	ldtx hl, NoDamageOrEffectDueToTransparencyText
 	scf
 	ret
-; 0x34b7
 
 ; return carry and return the appropriate text id in hl if the target has an
 ; special status or power that prevents any damage or effect done to it this turn
@@ -10024,7 +9992,6 @@ CheckNoDamageOrEffect: ; 34b7 (0:34b7)
 	ld hl, $0000
 	scf
 	ret
-; 0x34d8
 
 NoDamageOrEffectTextIDTable: ; 34d8 (0:34d8)
 	tx NoDamageOrEffectDueToAgilityText      ; NO_DAMAGE_OR_EFFECT_AGILITY
@@ -10032,7 +9999,6 @@ NoDamageOrEffectTextIDTable: ; 34d8 (0:34d8)
 	tx NoDamageOrEffectDueToFlyText          ; NO_DAMAGE_OR_EFFECT_FLY
 	tx NoDamageOrEffectDueToTransparencyText ; NO_DAMAGE_OR_EFFECT_TRANSPARENCY
 	tx NoDamageOrEffectDueToNShieldText      ; NO_DAMAGE_OR_EFFECT_NSHIELD
-; 0x34e2
 
 ; return carry if turn holder has Omanyte and its Clairvoyance Pkmn Power is active
 IsClairvoyanceActive: ; 34e2 (0:34e2)
@@ -10045,7 +10011,7 @@ IsClairvoyanceActive: ; 34e2 (0:34e2)
 	ret
 
 ; returns carry if turn holder's arena card is paralyzed, asleep, confused,
-; and/or toxic gas in play, meaning that move and/or pkmn power cannot be used
+; and/or toxic gas in play, meaning that attack and/or pkmn power cannot be used
 CheckCannotUseDueToStatus: ; 34ef (0:34ef)
 	xor a
 
@@ -10137,7 +10103,6 @@ CountPokemonIDInPlayArea: ; 3525 (0:3525)
 	pop de
 	pop hl
 	ret
-; 0x356a
 
 ; return, in a, the retreat cost of the card in wLoadedCard1,
 ; adjusting for any Dodrio's Retreat Aid Pkmn Power that is active.
@@ -10172,7 +10137,6 @@ GetLoadedCard1RetreatCost: ; 356a (0:356a)
 	ret nc
 	xor a
 	ret
-; 0x3597
 
 ; return carry if the turn holder's arena Pokemon is affected by Acid and can't retreat
 CheckCantRetreatDueToAcid: ; 3597 (0:3597)
@@ -10188,7 +10152,6 @@ CheckCantRetreatDueToAcid: ; 3597 (0:3597)
 	ldtx hl, UnableToRetreatDueToAcidText
 	scf
 	ret
-; 0x35a9
 
 ; return carry if the turn holder is affected by Headache and trainer cards can't be used
 CheckCantUseTrainerDueToHeadache: ; 35a9 (0:35a9)
@@ -10200,7 +10163,6 @@ CheckCantUseTrainerDueToHeadache: ; 35a9 (0:35a9)
 	ldtx hl, UnableToUseTrainerDueToHeadacheText
 	scf
 	ret
-; 0x35b7
 
 ; return carry if any duelist has Aerodactyl and its Prehistoric Power Pkmn Power is active
 IsPrehistoricPowerActive: ; 35b7 (0:35b7)
@@ -10212,7 +10174,6 @@ IsPrehistoricPowerActive: ; 35b7 (0:35b7)
 	ldtx hl, UnableToEvolveDueToPrehistoricPowerText
 	ccf
 	ret
-; 0x35c7
 
 ; clears some SUBSTATUS2 conditions from the turn holder's active Pokemon.
 ; more specifically, those conditions that reduce the damage from an attack
@@ -10236,7 +10197,6 @@ ClearDamageReductionSubstatus2: ; 35c7 (0:35c7)
 .zero
 	ld [hl], 0
 	ret
-; 0x35e6
 
 ; clears the SUBSTATUS1 and updates the double damage condition of the player about to start his turn
 UpdateSubstatusConditions_StartOfTurn: ; 35e6 (0:35e6)
@@ -10269,7 +10229,6 @@ UpdateSubstatusConditions_EndOfTurn: ; 35fa (0:35fa)
 	ret z
 	res SUBSTATUS3_THIS_TURN_DOUBLE_DAMAGE, [hl]
 	ret
-; 0x3615
 
 ; return carry if turn holder has Blastoise and its Rain Dance Pkmn Power is active
 IsRainDanceActive: ; 3615 (0:3615)
@@ -10280,7 +10239,6 @@ IsRainDanceActive: ; 3615 (0:3615)
 	call CountPokemonIDInBothPlayAreas
 	ccf
 	ret
-; 0x3622
 
 ; return carry if card at [hTempCardIndex_ff98] is a water energy card AND
 ; if card at [hTempPlayAreaLocation_ff9d] is a water Pokemon card.
@@ -10299,7 +10257,6 @@ CheckRainDanceScenario: ; 3622 (0:3622)
 .done
 	or a
 	ret
-; 0x363b
 
 ; if the defending (non-turn) card's HP is 0 and the attacking (turn) card's HP
 ;  is not, the attacking card faints if it was affected by destiny bond
@@ -10339,18 +10296,17 @@ HandleDestinyBondSubstatus: ; 363b (0:363b)
 	ldtx hl, KnockedOutDueToDestinyBondText
 	call DrawWideTextBox_WaitForInput
 	ret
-; 0x367b
 
 ; when MACHAMP is damaged, if its Strikes Back is active, the
 ; attacking Pokemon (turn holder's arena Pokemon) takes 10 damage.
-; used to bounce back a move of the RESIDUAL category
-HandleStrikesBack_AgainstResidualMove: ; 367b (0:367b)
+; used to bounce back an attack of the RESIDUAL category
+HandleStrikesBack_AgainstResidualAttack: ; 367b (0:367b)
 	ld a, [wTempNonTurnDuelistCardID]
 	cp MACHAMP
 	jr z, .strikes_back
 	ret
 .strikes_back
-	ld a, [wLoadedMoveCategory]
+	ld a, [wLoadedAttackCategory]
 	and RESIDUAL
 	ret nz
 	ld a, [wDealtDamage]
@@ -10361,11 +10317,11 @@ HandleStrikesBack_AgainstResidualMove: ; 367b (0:367b)
 	call SwapTurn
 	ret c
 	ld hl, 10 ; damage to be dealt to attacker
-	call ApplyStrikesBack_AgainstResidualMove
+	call ApplyStrikesBack_AgainstResidualAttack
 	call nc, WaitForWideTextBoxInput
 	ret
 
-ApplyStrikesBack_AgainstResidualMove: ; 36a2 (0:36a2)
+ApplyStrikesBack_AgainstResidualAttack: ; 36a2 (0:36a2)
 	push hl
 	call LoadTxRam3
 	ld a, [wTempTurnDuelistCardID]
@@ -10382,7 +10338,7 @@ ApplyStrikesBack_AgainstResidualMove: ; 36a2 (0:36a2)
 	pop de
 	push af
 	push hl
-	call SubstractHP
+	call SubtractHP
 	ldtx hl, ReceivesDamageDueToStrikesBackText
 	call DrawWideTextBox_PrintText
 	pop hl
@@ -10395,7 +10351,6 @@ ApplyStrikesBack_AgainstResidualMove: ; 36a2 (0:36a2)
 	call DrawDuelHUDs
 	scf
 	ret
-; 0x36d9
 
 ; if the id of the card provided in register a as a deck index is MUK,
 ; clear the changed type of all arena and bench Pokemon
@@ -10417,7 +10372,6 @@ ClearChangedTypesIfMuk: ; 36d9 (0:36d9)
 	dec c
 	jr nz, .zero_changed_types_loop
 	ret
-; 0x36f6
 
 ; return the turn holder's arena card's color in a, accounting for Venomoth's Shift Pokemon Power if active
 GetArenaCardColor: ; 36f6 (0:36f6)
@@ -10432,7 +10386,7 @@ GetPlayAreaCardColor: ; 36f7 (0:36f7)
 	ld e, a
 	add DUELVARS_ARENA_CARD_CHANGED_TYPE
 	call GetTurnDuelistVariable
-	bit 7, a
+	bit HAS_CHANGED_COLOR_F, a
 	jr nz, .has_changed_color
 .regular_color
 	ld a, e
@@ -10458,7 +10412,6 @@ GetPlayAreaCardColor: ; 36f7 (0:36f7)
 	pop hl
 	and $f
 	ret
-; 0x3729
 
 ; return in a the weakness of the turn holder's arena or benchx Pokemon given the PLAY_AREA_* value in a
 ; if a == 0 and [DUELVARS_ARENA_CARD_CHANGED_WEAKNESS] != 0,
@@ -10479,12 +10432,11 @@ GetArenaCardWeakness: ; 3730 (0:3730)
 	ld a, DUELVARS_ARENA_CARD
 ;	fallthrough
 
-GetCardWeakness:
+GetCardWeakness: ; 3739 (0:3739)
 	call GetTurnDuelistVariable
 	call LoadCardDataToBuffer2_FromDeckIndex
 	ld a, [wLoadedCard2Weakness]
 	ret
-; 0x3743
 
 ; return in a the resistance of the turn holder's arena or benchx Pokemon given the PLAY_AREA_* value in a
 ; if a == 0 and [DUELVARS_ARENA_CARD_CHANGED_RESISTANCE] != 0,
@@ -10505,12 +10457,11 @@ GetArenaCardResistance: ; 374a (0:374a)
 	ld a, DUELVARS_ARENA_CARD
 ;	fallthrough
 
-GetCardResistance:
+GetCardResistance: ; 3753 (0:3753)
 	call GetTurnDuelistVariable
 	call LoadCardDataToBuffer2_FromDeckIndex
 	ld a, [wLoadedCard2Resistance]
 	ret
-; 0x375d
 
 ; this function checks if turn holder's CHARIZARD energy burn is active, and if so, turns
 ; all energies at wAttachedEnergies except double colorless energies into fire energies
@@ -10534,14 +10485,13 @@ HandleEnergyBurn: ; 375d (0:375d)
 	ld a, [wTotalAttachedEnergies]
 	ld [wAttachedEnergies], a
 	ret
-; 0x377f
 
 SetupSound: ; 377f (0:377f)
 	farcall _SetupSound
 	ret
 
-Func_3784: ; 3784 (0:3784)
-	xor a
+StopMusic: ; 3784 (0:3784)
+	xor a ; MUSIC_STOP
 PlaySong: ; 3785 (0:3785)
 	farcall _PlaySong
 	ret
@@ -10569,7 +10519,6 @@ PauseSong: ; 379b (0:379b)
 ResumeSong: ; 37a0 (0:37a0)
 	farcall _ResumeSong
 	ret
-; 0x37a5
 
 Func_37a5: ; 37a5 (0:37a5)
 	ldh a, [hBankROM]
@@ -10591,7 +10540,6 @@ Func_37a5: ; 37a5 (0:37a5)
 	pop af
 	call BankswitchROM
 	ret
-; 0x37c5
 
 Func_37c5: ; 37c5 (0:37c5)
 	ld c, $08
@@ -10651,9 +10599,8 @@ Func_37c5: ; 37c5 (0:37c5)
 	dec c
 	jr nz, .asm_37c7
 	ret
-; 0x380e
 
-Func_380e: ; 380e (0:380e)
+OverworldDoFrameFunction: ; 380e (0:380e)
 	ld a, [wd0c1]
 	bit 7, a
 	ret nz
@@ -10663,13 +10610,13 @@ Func_380e: ; 380e (0:380e)
 	call BankswitchROM
 	call SetScreenScrollWram
 	call Func_c554
-	ld a, BANK(Func_1c610)
+	ld a, BANK(HandleAllNPCMovement)
 	call BankswitchROM
-	call Func_1c610
-	call Func_3cb4
-	ld a, BANK(Func_804d8)
+	call HandleAllNPCMovement
+	call HandleAllSpriteAnimations
+	ld a, BANK(DoLoadedFramesetSubgroupsFrame)
 	call BankswitchROM
-	call Func_804d8
+	call DoLoadedFramesetSubgroupsFrame
 	call UpdateRNGSources
 	pop af
 	call BankswitchROM
@@ -10748,7 +10695,7 @@ GameEvent_BattleCenter: ; 38a3 (0:38a3)
 	ld [wDuelTheme], a
 	ld a, MUSIC_CARD_POP
 	call PlaySong
-	bank1call Func_758f
+	bank1call SetUpAndStartLinkDuel
 	scf
 	ret
 
@@ -10759,26 +10706,26 @@ GameEvent_Duel: ; 38c0 (0:38c0)
 	ld [wd112], a
 	call EnableSRAM
 	xor a
-	ld [$ba44], a
+	ld [sPlayerInChallengeMachine], a
 	call DisableSRAM
-	call Func_3a3b
-	bank1call StartDuel
+	call SaveGeneralSaveData
+	bank1call StartDuel_VSAIOpp
 	scf
 	ret
 
 GameEvent_ChallengeMachine: ; 38db (0:38db)
-	ld a, $6
-	ld [wd111], a
-	call Func_39fc
+	ld a, MUSIC_PC_MAIN_MENU
+	ld [wDefaultSong], a
+	call PlayDefaultSong
 	call EnableSRAM
 	xor a
-	ld [$ba44], a
+	ld [sPlayerInChallengeMachine], a
 	call DisableSRAM
 .asm_38ed
-	farcall Func_131d3
-	ld a, $9
-	ld [wd111], a
-	call Func_39fc
+	farcall ChallengeMachine_Start
+	ld a, MUSIC_OVERWORLD
+	ld [wDefaultSong], a
+	call PlayDefaultSong
 	scf
 	ret
 
@@ -10787,7 +10734,7 @@ GameEvent_ContinueDuel: ; 38fb (0:38fb)
 	ld [wd112], a
 	bank1call TryContinueDuel
 	call EnableSRAM
-	ld a, [$ba44]
+	ld a, [sPlayerInChallengeMachine]
 	call DisableSRAM
 	cp $ff
 	jr z, GameEvent_ChallengeMachine.asm_38ed
@@ -10799,11 +10746,11 @@ GameEvent_Credits: ; 3911 (0:3911)
 	or a
 	ret
 
-Func_3917: ; 3917 (0:3917)
-	ld a, $22
-	farcall CheckIfEventFlagSet
+GetReceivedLegendaryCards: ; 3917 (0:3917)
+	ld a, EVENT_RECEIVED_LEGENDARY_CARDS
+	farcall GetEventValue
 	call EnableSRAM
-	ld [s0a00a], a
+	ld [sReceivedLegendaryCards], a
 	call DisableSRAM
 	ret
 
@@ -10814,7 +10761,6 @@ GetPermissionOfMapPosition: ; 3927 (0:3927)
 	ld a, [hl]
 	pop hl
 	ret
-; 0x392e
 
 ; set to a the permission byte corresponding to the current map's x,y coordinates at bc
 SetPermissionOfMapPosition: ; 392e (0:392e)
@@ -10825,7 +10771,6 @@ SetPermissionOfMapPosition: ; 392e (0:392e)
 	ld [hl], a
 	pop hl
 	ret
-; 0x3937
 
 ; set the permission byte corresponding to the current map's x,y coordinates at bc
 ; to the value of register a anded by its current value
@@ -10843,7 +10788,6 @@ UpdatePermissionOfMapPosition: ; 3937 (0:3937)
 	pop bc
 	pop hl
 	ret
-; 0x3946
 
 ; returns in hl the address within wPermissionMap that corresponds to
 ; the current map's x,y coordinates at bc
@@ -10862,41 +10806,46 @@ GetPermissionByteOfMapPosition: ; 3946 (0:3946)
 	pop bc
 	ret
 
-Func_395a: ; 395a (0:395a)
+; copy c bytes of data from hl in bank wTempPointerBank to de, b times.
+CopyGfxDataFromTempBank: ; 395a (0:395a)
 	ldh a, [hBankROM]
 	push af
-	ld a, [wd4c6]
+	ld a, [wTempPointerBank]
 	call BankswitchROM
 	call CopyGfxData
 	pop af
 	call BankswitchROM
 	ret
 
-Unknown_396b: ; 396b (0:396b)
-	db $00, -$01, $01, $00, $00, $01, -$01, $00
+; Movement offsets for player movements
+PlayerMovementOffsetTable: ; 396b (0:396b)
+	db  0, -1 ; NORTH
+	db  1,  0 ; EAST
+	db  0,  1 ; SOUTH
+	db -1,  0 ; WEST
 
-; Movement offsets for scripted movements
-ScriptedMovementOffsetTable: ; 3973 (0:3973)
-	db  0, -2 ; move 2 tiles up
-	db  2,  0 ; move 2 tiles right
-	db  0,  2 ; move 2 tiles down
-	db -2,  0 ; move 2 tiles left
+; Movement offsets for player movements, in tiles
+PlayerMovementOffsetTable_Tiles: ; 3973 (0:3973)
+	db  0, -2 ; NORTH
+	db  2,  0 ; EAST
+	db  0,  2 ; SOUTH
+	db -2,  0 ; WEST
 
-Unknown_397b: ; 397b (0:397b)
-	dw $0323
-	dw $0323
-	dw $0324
-	dw $0325
-	dw $0326
-	dw $0327
-	dw $0328
-	dw $0329
-	dw $032a
-	dw $032b
-	dw $032c
-	dw $032d
-	dw $032e
-	dw $032f
+OverworldMapNames: ; 397b (0:397b)
+	tx OverworldMapMasonLaboratoryText
+	tx OverworldMapMasonLaboratoryText
+	tx OverworldMapIshiharasHouseText
+	tx OverworldMapFightingClubText
+	tx OverworldMapRockClubText
+	tx OverworldMapWaterClubText
+	tx OverworldMapLightningClubText
+	tx OverworldMapGrassClubText
+	tx OverworldMapPsychicClubText
+	tx OverworldMapScienceClubText
+	tx OverworldMapFireClubText
+	tx OverworldMapChallengeHallText
+	tx OverworldMapPokemonDomeText
+	tx OverworldMapMysteryHouseText
 
 Func_3997: ; 3997 (0:3997)
 	ldh a, [hBankROM]
@@ -10908,17 +10857,18 @@ Func_3997: ; 3997 (0:3997)
 	call BankswitchROM
 	ret
 
-Func_39a7: ; 39a7 (0:39a7)
-	ld l, $0
-	call Func_39ad
+; returns in hl a pointer to the first element for the a'th NPC
+GetLoadedNPCID: ; 39a7 (0:39a7)
+	ld l, LOADED_NPC_ID
+	call GetItemInLoadedNPCIndex
 	ret
 
-; return hl = wd34a + a * $c + l, with a < $8
-Func_39ad: ; 39ad (0:39ad)
+; return in hl a pointer to the a'th items element l
+GetItemInLoadedNPCIndex: ; 39ad (0:39ad)
 	push bc
-	cp $8
+	cp LOADED_NPC_MAX
 	jr c, .asm_39b4
-	debug_ret
+	debug_nop
 	xor a
 .asm_39b4
 	add a
@@ -10929,47 +10879,49 @@ Func_39ad: ; 39ad (0:39ad)
 	add l
 	ld l, a
 	ld h, $0
-	ld bc, wd34a
+	ld bc, wLoadedNPCs
 	add hl, bc
 	pop bc
 	ret
 
-Func_39c3: ; 39c3 (0:39c3)
+; Finds the index on wLoadedNPCs table of the npc in wTempNPC
+; returns it in a and puts it into wLoadedNPCTempIndex
+; c flag set if no npc found
+FindLoadedNPC: ; 39c3 (0:39c3)
 	push hl
 	push bc
 	push de
 	xor a
-	ld [wd3aa], a
+	ld [wLoadedNPCTempIndex], a
 	ld b, a
-	ld c, $8
-	ld de, $000c
-	ld hl, wd34a
-	ld a, [wd3ab]
-.asm_39d6
+	ld c, LOADED_NPC_MAX
+	ld de, LOADED_NPC_LENGTH
+	ld hl, wLoadedNPCs
+	ld a, [wTempNPC]
+.findNPCLoop
 	cp [hl]
-	jr z, .asm_39e1
+	jr z, .foundNPCMatch
 	add hl, de
 	inc b
 	dec c
-	jr nz, .asm_39d6
+	jr nz, .findNPCLoop
 	scf
-	jr z, .asm_39e6
-.asm_39e1
+	jr z, .exit
+.foundNPCMatch
 	ld a, b
-	ld [wd3aa], a
+	ld [wLoadedNPCTempIndex], a
 	or a
-.asm_39e6
+.exit
 	pop de
 	pop bc
 	pop hl
 	ret
-; 0x39ea
 
-Func_39ea: ; 39ea (0:39ea)
+GetNextNPCMovementByte: ; 39ea (0:39ea)
 	push bc
 	ldh a, [hBankROM]
 	push af
-	ld a, $03
+	ld a, BANK(ExecuteNPCMovement)
 	call BankswitchROM
 	ld a, [bc]
 	ld c, a
@@ -10978,15 +10930,14 @@ Func_39ea: ; 39ea (0:39ea)
 	ld a, c
 	pop bc
 	ret
-; 0x39fc
 
-Func_39fc: ; 39fc (0:39fc)
+PlayDefaultSong: ; 39fc (0:39fc)
 	push hl
 	push bc
 	call AssertSongFinished
 	or a
 	push af
-	call Func_3a1f
+	call GetDefaultSong
 	ld c, a
 	pop af
 	jr z, .asm_3a11
@@ -10996,7 +10947,7 @@ Func_39fc: ; 39fc (0:39fc)
 	jr z, .asm_3a1c
 .asm_3a11
 	ld a, c
-	cp $1f
+	cp NUM_SONGS
 	jr nc, .asm_3a1c
 	ld [wd112], a
 	call PlaySong
@@ -11005,115 +10956,119 @@ Func_39fc: ; 39fc (0:39fc)
 	pop hl
 	ret
 
-Func_3a1f: ; 3a1f (0:3a1f)
-	ld a, [wd3b8]
+; returns [wDefaultSong] or MUSIC_RONALD in a
+GetDefaultSong: ; 3a1f (0:3a1f)
+	ld a, [wRonaldIsInMap]
 	or a
-	jr z, .asm_3a37
-	ld a, [wd32e]
-	cp $2
-	jr z, .asm_3a37
-	cp $b
-	jr z, .asm_3a37
-	cp $c
-	jr z, .asm_3a37
+	jr z, .default_song
+	; only return Ronald's theme if it's
+	; not in one of the following maps
+	ld a, [wOverworldMapSelection]
+	cp OWMAP_ISHIHARAS_HOUSE
+	jr z, .default_song
+	cp OWMAP_CHALLENGE_HALL
+	jr z, .default_song
+	cp OWMAP_POKEMON_DOME
+	jr z, .default_song
 	ld a, MUSIC_RONALD
 	ret
-.asm_3a37
-	ld a, [wd111]
+.default_song
+	ld a, [wDefaultSong]
 	ret
 
-Func_3a3b: ; 3a3b (0:3a3b)
-	farcall Func_1124d
+SaveGeneralSaveData: ; 3a3b (0:3a3b)
+	farcall _SaveGeneralSaveData
 	ret
 
-Func_3a40: ; 3a40 (0:3a40)
-	farcall Func_11430
+LoadGeneralSaveData: ; 3a40 (0:3a40)
+	farcall _LoadGeneralSaveData
 	ret
-; 0x3a45
 
-Func_3a45: ; 3a45 (0:3a45)
-	farcall Func_11343
+ValidateGeneralSaveData: ; 3a45 (0:3a45)
+	farcall _ValidateGeneralSaveData
 	ret
-; 0x3a4a
 
-Func_3a4a: ; 3a4a (0:3a4a)
-	farcall Func_115a3
+; adds card with card ID in register a to collection
+; and updates album progress in RAM
+AddCardToCollectionAndUpdateAlbumProgress: ; 3a4a (0:3a4a)
+	farcall _AddCardToCollectionAndUpdateAlbumProgress
 	ret
-; 0x3a4f
 
-Func_3a4f: ; 3a4f (0:3a4f)
+SaveGame: ; 3a4f (0:3a4f)
 	push af
 	push bc
 	push de
 	push hl
 	ld c, $00
-	farcall Func_1157c
+	farcall _SaveGame
 	pop hl
 	pop de
 	pop bc
 	pop af
 	ret
-; 0x3a5e
 
-Func_3a5e: ; 3a5e (0:3a5e)
+HandleMoveModeAPress: ; 3a5e (0:3a5e)
 	ldh a, [hBankROM]
 	push af
-	ld l, $4
-	call Func_3abd
-	jr nc, .asm_3ab3
-	ld a, BANK(Func_c653)
+	ld l, MAP_SCRIPT_OBJECTS
+	call GetMapScriptPointer
+	jr nc, .handleSecondAPressScript
+	ld a, BANK(FindPlayerMovementFromDirection)
 	call BankswitchROM
-	call Func_c653
-	ld a, $4
+	call FindPlayerMovementFromDirection
+	ld a, BANK(MapScripts)
 	call BankswitchROM
-	ld a, [wd334]
+	ld a, [wPlayerDirection]
 	ld d, a
-.asm_3a79
+.findAPressMatchLoop
 	ld a, [hli]
 	bit 7, a
-	jr nz, .asm_3ab3
+	jr nz, .handleSecondAPressScript
 	push bc
 	push hl
 	cp d
-	jr nz, .asm_3aab
+	jr nz, .noMatch
 	ld a, [hli]
 	cp b
-	jr nz, .asm_3aab
+	jr nz, .noMatch
 	ld a, [hli]
 	cp c
-	jr nz, .asm_3aab
+	jr nz, .noMatch
 	ld a, [hli]
-	ld [wd0c6], a
+	ld [wNextScript], a
 	ld a, [hli]
-	ld [wd0c7], a
+	ld [wNextScript+1], a
 	ld a, [hli]
-	ld [wd0ca], a
+	ld [wDefaultObjectText], a
 	ld a, [hli]
-	ld [wd0cb], a
+	ld [wDefaultObjectText+1], a
 	ld a, [hli]
-	ld [wd0c8], a
+	ld [wCurrentNPCNameTx], a
 	ld a, [hli]
-	ld [wd0c9], a
+	ld [wCurrentNPCNameTx+1], a
 	pop hl
 	pop bc
 	pop af
 	call BankswitchROM
 	scf
 	ret
-.asm_3aab
+.noMatch
 	pop hl
-	ld bc, $0008
+	ld bc, MAP_OBJECT_SIZE - 1
 	add hl, bc
 	pop bc
-	jr .asm_3a79
-.asm_3ab3
+	jr .findAPressMatchLoop
+.handleSecondAPressScript
 	pop af
 	call BankswitchROM
-	ld l, $6
-	call $49c2
+	ld l, MAP_SCRIPT_PRESSED_A
+	call CallMapScriptPointerIfExists
 	ret
 
-Func_3abd: ; 3abd (0:3abd)
+; returns a map script pointer in hl given
+; current map in wCurMap and which sub-script in l
+; sets c if pointer is found
+GetMapScriptPointer: ; 3abd (0:3abd)
 	push bc
 	push hl
 	ld a, [wCurMap]
@@ -11145,16 +11100,22 @@ Func_3abd: ; 3abd (0:3abd)
 	ccf
 	pop bc
 	ret
-; 0x3ae8
 
-Func_3ae8: ; 3ae8 (0:3ae8)
-	farcall Func_11f4e
+; loads some configurations for the duel against
+; the NPC whose deck ID is stored in wNPCDuelDeckID
+; this includes NPC portrait, his/her name text ID,
+; and the number of prize cards
+; this was used in testing since these configurations
+; are stored in the script-related NPC data for normal gameplay
+; returns carry if a duel configuration was found
+; for the given NPC deck ID
+GetNPCDuelConfigurations: ; 3ae8 (0:3ae8)
+	farcall _GetNPCDuelConfigurations
 	ret
-; 0x3aed
 
-; finds an OWScript from the first byte and puts the next two bytes (usually arguments?) into cb
+; finds a Script from the first byte and puts the next two bytes (usually arguments?) into cb
 RunOverworldScript: ; 3aed (0:3aed)
-	ld hl, wOWScriptPointer
+	ld hl, wScriptPointer
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a
@@ -11179,25 +11140,23 @@ RunOverworldScript: ; 3aed (0:3aed)
 	call BankswitchROM
 	pop bc
 	jp hl
-; 0x3b11
 
 Func_3b11: ; 3b11 (0:3b11)
 	ldh a, [hBankROM]
 	push af
-	ld a, $04
+	ld a, BANK(_GameLoop)
 	call BankswitchROM
-	call $66d1
+	call _GameLoop
 	pop af
 	call BankswitchROM
 	ret
-; 0x3b21
 
 Func_3b21: ; 3b21 (0:3b21)
 	ldh a, [hBankROM]
 	push af
-	ld a, $07
+	ld a, BANK(Func_1c8bc)
 	call BankswitchROM
-	call $48bc
+	call Func_1c8bc
 	pop af
 	call BankswitchROM
 	ret
@@ -11240,67 +11199,74 @@ CheckAnyAnimationPlaying: ; 3b52 (0:3b52)
 	pop hl
 	ret
 
-Func_3b6a: ; 3b6a (0:3b6a)
+; plays duel animation
+; the animations are loaded to a buffer
+; and played in order, so they can be stacked
+; input:
+; - a = animation index
+PlayDuelAnimation: ; 3b6a (0:3b6a)
 	ld [wTempAnimation], a ; hold an animation temporarily
 	ldh a, [hBankROM]
 	push af
-	ld [wd4be], a
+	ld [wDuelAnimReturnBank], a
+
 	push hl
 	push bc
 	push de
-	ld a, $07
+	ld a, BANK(LoadDuelAnimationToBuffer)
 	call BankswitchROM
 	ld a, [wTempAnimation]
-	cp $61
-	jr nc, .asm_3b90
-	ld hl, wd4ad
-	ld a, [wd4ac]
+	cp DUEL_SPECIAL_ANIMS
+	jr nc, .load_buffer
+
+	ld hl, wDuelAnimBufferSize
+	ld a, [wDuelAnimBufferCurPos]
 	cp [hl]
-	jr nz, .asm_3b90
+	jr nz, .load_buffer
 	call CheckAnyAnimationPlaying
-	jr nc, .asm_3b95
-.asm_3b90
-	call $4a31
-	jr .asm_3b9a
-.asm_3b95
-	call $48ef
-	jr .asm_3b9a
-.asm_3b9a
+	jr nc, .play_anim
+
+.load_buffer
+	call LoadDuelAnimationToBuffer
+	jr .done
+
+.play_anim
+	call PlayLoadedDuelAnimation
+	jr .done
+
+.done
 	pop de
 	pop bc
 	pop hl
 	pop af
 	call BankswitchROM
 	ret
-; 0x3ba2
 
 Func_3ba2: ; 3ba2 (0:3ba2)
 	ldh a, [hBankROM]
 	push af
-	ld a, $07
+	ld a, BANK(Func_1cac5)
 	call BankswitchROM
-	call $4ac5
-	call Func_3cb4
+	call Func_1cac5
+	call HandleAllSpriteAnimations
 	pop af
 	call BankswitchROM
 	ret
-; 0x3bb5
 
 Func_3bb5: ; 3bb5 (0:3bb5)
 	xor a
 	ld [wd4c0], a
 	ldh a, [hBankROM]
 	push af
-	ld a, [wd4be]
+	ld a, [wDuelAnimReturnBank]
 	call BankswitchROM
-	call Func_3cb4
+	call HandleAllSpriteAnimations
 	call CallHL2
 	pop af
 	call BankswitchROM
 	ld a, $80
 	ld [wd4c0], a
 	ret
-; 0x3bd2
 
 ; writes from hl the pointer to the function to be called by DoFrame
 SetDoFrameFunction: ; 3bd2 (0:3bd2)
@@ -11312,39 +11278,42 @@ SetDoFrameFunction: ; 3bd2 (0:3bd2)
 
 ResetDoFrameFunction: ; 3bdb (0:3bdb)
 	push hl
-	ld hl, $0000
+	ld hl, NULL
 	call SetDoFrameFunction
 	pop hl
 	ret
-; 0x3be4
 
-Func_3be4: ; 3be4 (0:3be4)
+; decompresses data from a given bank
+; uses values initialized by InitDataDecompression
+; input:
+; bc = row width
+; de = buffer to place decompressed data
+DecompressDataFromBank: ; 3be4 (0:3be4)
 	ldh a, [hBankROM]
 	push af
-	ld a, [wd4c6]
+	ld a, [wTempPointerBank]
 	call BankswitchROM
-	call Func_08de
+	call DecompressData
 	pop af
 	call BankswitchROM
 	ret
-; 0x3bf5
 
-Func_3bf5: ; 3bf5 (0:3bf5)
+; Copies bc bytes from [wTempPointer] to de
+CopyBankedDataToDE: ; 3bf5 (0:3bf5)
 	ldh a, [hBankROM]
 	push af
 	push hl
-	ld a, [wd4c6]
+	ld a, [wTempPointerBank]
 	call BankswitchROM
-	ld a, [wd4c4]
+	ld a, [wTempPointer]
 	ld l, a
-	ld a, [wd4c5]
+	ld a, [wTempPointer + 1]
 	ld h, a
 	call CopyDataHLtoDE_SaveRegisters
 	pop hl
 	pop af
 	call BankswitchROM
 	ret
-; 0x3c10
 
 ; fill bc bytes of data at hl with a
 FillMemoryWithA: ; 3c10 (0:3c10)
@@ -11363,7 +11332,6 @@ FillMemoryWithA: ; 3c10 (0:3c10)
 	pop de
 	pop hl
 	ret
-; 0x3c1f
 
 ; fill 2*bc bytes of data at hl with d,e
 FillMemoryWithDE: ; 3c1f (0:3c1f)
@@ -11381,9 +11349,9 @@ FillMemoryWithDE: ; 3c1f (0:3c1f)
 	pop bc
 	pop hl
 	ret
-; 0x3c2d
 
-Func_3c2d: ; 3c2d (0:3c2d)
+; gets far byte a:hl, outputs value in a
+GetFarByte: ; 3c2d (0:3c2d)
 	push hl
 	push af
 	ldh a, [hBankROM]
@@ -11401,20 +11369,16 @@ Func_3c2d: ; 3c2d (0:3c2d)
 	pop af
 	pop hl
 	ret
-; 0x3c45
 
 CallHL2: ; 3c45 (0:3c45)
 	jp hl
-; 0x3c46
 
-PushBC_Ret: ; 3c46 (0:3c46)
-	push bc
-	ret
-; 0x3c48
+CallBC: ; 3c46 (0:3c46)
+	retbc
 
 DoFrameIfLCDEnabled: ; 3c48 (0:3c48)
 	push af
-	ld a, [rLCDC]
+	ldh a, [rLCDC]
 	bit LCDC_ENABLE_F, a
 	jr z, .done
 	push bc
@@ -11460,31 +11424,31 @@ DivideBCbyDE: ; 3c5a (0:3c5a)
 	jr nz, .asm_3c63
 	ret
 
-Func_3c83: ; 3c83 (0:3c83)
+ScriptPlaySong: ; 3c83 (0:3c83)
 	call PlaySong
 	ret
-; 0x3c87
 
 Func_3c87: ; 3c87 (0:3c87)
 	push af
 	call PauseSong
 	pop af
 	call PlaySong
-	call Func_3c96
+	call WaitForSongToFinish
 	call ResumeSong
 	ret
-; 0x3c96
 
-Func_3c96: ; 3c96 (0:3c96)
+WaitForSongToFinish: ; 3c96 (0:3c96)
 	call DoFrameIfLCDEnabled
 	call AssertSongFinished
 	or a
-	jr nz, Func_3c96
+	jr nz, WaitForSongToFinish
 	ret
 
+; clear [SOMETHING] - something relating to animations
 Func_3ca0: ; 3ca0 (0:3ca0)
 	xor a
 	ld [wd5d7], a
+	; fallthrough
 
 Func_3ca4: ; 3ca4 (0:3ca4)
 	ldh a, [hBankROM]
@@ -11496,151 +11460,155 @@ Func_3ca4: ; 3ca4 (0:3ca4)
 	call BankswitchROM
 	ret
 
-Func_3cb4: ; 3cb4 (0:3cb4)
+HandleAllSpriteAnimations: ; 3cb4 (0:3cb4)
 	ldh a, [hBankROM]
 	push af
-	ld a, BANK(Func_12a21)
+	ld a, BANK(_HandleAllSpriteAnimations)
 	call BankswitchROM
-	call Func_12a21
+	call _HandleAllSpriteAnimations
 	pop af
 	call BankswitchROM
 	ret
-; 0x3cc4
 
-; refresh sprites?
-Func_3cc4: ; 3cc4 (0:3cc4)
+; hl - pointer to animation frame
+; wd5d6 - bank of animation frame
+DrawSpriteAnimationFrame: ; 3cc4 (0:3cc4)
 	ldh a, [hBankROM]
 	push af
 	ld a, [wd5d6]
 	call BankswitchROM
-	ld a, [wd5d1]
+	ld a, [wCurrSpriteXPos]
 	cp $f0
-	ld a, $00
-	jr c, .asm_3cd7
+	ld a, 0
+	jr c, .notNearRight
 	dec a
-.asm_3cd7
-	ld [wd5d4], a
-	ld a, [wd5d2]
+.notNearRight
+	ld [wCurrSpriteRightEdgeCheck], a
+	ld a, [wCurrSpriteYPos]
 	cp $f0
-	ld a, $00
-	jr c, .asm_3ce4
+	ld a, 0
+	jr c, .setBottomEdgeCheck
 	dec a
-.asm_3ce4
-	ld [wd5d5], a
+.setBottomEdgeCheck
+	ld [wCurrSpriteBottomEdgeCheck], a
 	ld a, [hli]
 	or a
 	jp z, .done
 	ld c, a
-.asm_3ced
+.loop
 	push bc
 	push hl
-	ld b, $00
+	ld b, 0
 	bit 7, [hl]
-	jr z, .asm_3cf6
+	jr z, .beginY
 	dec b
-.asm_3cf6
-	ld a, [wd5d0]
-	bit 6, a
-	jr z, .asm_3d10
+.beginY
+	ld a, [wCurrSpriteAttributes]
+	bit OAM_Y_FLIP, a
+	jr z, .unflippedY
 	ld a, [hl]
-	add $08
+	add 8 ; size of a tile
 	ld c, a
-	ld a, $00
+	ld a, 0
 	adc b
 	ld b, a
-	ld a, [wd5d2]
+	ld a, [wCurrSpriteYPos]
 	sub c
 	ld e, a
-	ld a, [wd5d5]
+	ld a, [wCurrSpriteBottomEdgeCheck]
 	sbc b
-	jr .asm_3d19
-.asm_3d10
-	ld a, [wd5d2]
+	jr .finishYPosition
+.unflippedY
+	ld a, [wCurrSpriteYPos]
 	add [hl]
 	ld e, a
-	ld a, [wd5d5]
+	ld a, [wCurrSpriteBottomEdgeCheck]
 	adc b
-.asm_3d19
+.finishYPosition
 	or a
-	jr nz, .asm_3d64
+	jr nz, .endCurrentIteration
 	inc hl
-	ld b, $00
+	ld b, 0
 	bit 7, [hl]
-	jr z, .asm_3d24
+	jr z, .beginX
 	dec b
-.asm_3d24
-	ld a, [wd5d0]
-	bit 5, a
-	jr z, .asm_3d3e
+.beginX
+	ld a, [wCurrSpriteAttributes]
+	bit OAM_X_FLIP, a
+	jr z, .unflippedX
 	ld a, [hl]
-	add $08
+	add 8 ; size of a tile
 	ld c, a
-	ld a, $00
+	ld a, 0
 	adc b
 	ld b, a
-	ld a, [wd5d1]
+	ld a, [wCurrSpriteXPos]
 	sub c
 	ld d, a
-	ld a, [wd5d4]
+	ld a, [wCurrSpriteRightEdgeCheck]
 	sbc b
-	jr .asm_3d47
-.asm_3d3e
-	ld a, [wd5d1]
+	jr .finishXPosition
+.unflippedX
+	ld a, [wCurrSpriteXPos]
 	add [hl]
 	ld d, a
-	ld a, [wd5d4]
+	ld a, [wCurrSpriteRightEdgeCheck]
 	adc b
-.asm_3d47
+.finishXPosition
 	or a
-	jr nz, .asm_3d64
+	jr nz, .endCurrentIteration
 	inc hl
-	ld a, [wd5d3]
+	ld a, [wCurrSpriteTileID]
 	add [hl]
 	ld c, a
 	inc hl
-	ld a, [wd5d0]
+	ld a, [wCurrSpriteAttributes]
 	add [hl]
-	and $17
+	and OAM_PALETTE | (1 << OAM_OBP_NUM)
 	ld b, a
-	ld a, [wd5d0]
+	ld a, [wCurrSpriteAttributes]
 	xor [hl]
-	and $e0
+	and (1 << OAM_X_FLIP) | (1 << OAM_Y_FLIP) | (1 << OAM_PRIORITY)
 	or b
 	ld b, a
-	inc hl
+	inc hl ; unnecessary
 	call SetOneObjectAttributes
-.asm_3d64
+.endCurrentIteration
 	pop hl
-	ld bc, $4
+	ld bc, 4 ; size of info for one sub tile
 	add hl, bc
 	pop bc
 	dec c
-	jr nz, .asm_3ced
+	jr nz, .loop
 .done
 	pop af
 	call BankswitchROM
 	ret
-; 0x3d72
 
-Func_3d72: ; 3d72 (0:3d72)
+; Loads a pointer to the current animation frame into SPRITE_ANIM_FRAME_DATA_POINTER using
+; the current frame's offset
+; [wd4ca] - current frame offset
+; wTempPointer* - Pointer to current Animation
+GetAnimationFramePointer: ; 3d72 (0:3d72)
 	ldh a, [hBankROM]
 	push af
 	push hl
 	push hl
 	ld a, [wd4ca]
 	cp $ff
-	jr nz, .asm_3d84
-	ld de, Unknown_80e5a
+	jr nz, .useLoadedOffset
+	ld de, SpriteNullAnimationPointer
 	xor a
-	jr .asm_3da1
-.asm_3d84
-	ld a, [wd4c4]
+	jr .loadPointer
+.useLoadedOffset
+	ld a, [wTempPointer]
 	ld l, a
-	ld a, [wd4c5]
+	ld a, [wTempPointer + 1]
 	ld h, a
-	ld a, [wd4c6]
+	ld a, [wTempPointerBank]
 	call BankswitchROM
 	ld a, [hli]
+
 	push af
 	ld a, [wd4ca]
 	rlca
@@ -11649,13 +11617,14 @@ Func_3d72: ; 3d72 (0:3d72)
 	ld e, a
 	inc hl
 	ld a, [hl]
-	adc $0
+	adc 0
 	ld d, a
 	pop af
-.asm_3da1
-	add BANK(Unknown_80e5a)
+
+.loadPointer
+	add BANK(SpriteNullAnimationPointer)
 	pop hl
-	ld bc, $000b
+	ld bc, SPRITE_ANIM_FRAME_BANK
 	add hl, bc
 	ld [hli], a
 	call BankswitchROM
@@ -11669,9 +11638,11 @@ Func_3d72: ; 3d72 (0:3d72)
 	call BankswitchROM
 	ret
 
-Func_3db7: ; 3db7 (0:3db7)
+; return hl pointing to the start of a sprite in wSpriteAnimBuffer.
+; the sprite is identified by its index in wWhichSprite.
+GetFirstSpriteAnimBufferProperty: ; 3db7 (0:3db7)
 	push bc
-	ld c, SPRITE_ANIM_FIELD_00
+	ld c, SPRITE_ANIM_ENABLED
 	call GetSpriteAnimBufferProperty
 	pop bc
 	ret
@@ -11682,10 +11653,10 @@ GetSpriteAnimBufferProperty: ; 3dbf (0:3dbf)
 	ld a, [wWhichSprite]
 ;	fallthrough
 
-GetSpriteAnimBufferProperty_SpriteInA:
+GetSpriteAnimBufferProperty_SpriteInA: ; 3dc2 (0:3dc2)
 	cp SPRITE_ANIM_BUFFER_CAPACITY
 	jr c, .got_sprite
-	debug_ret
+	debug_nop
 	ld a, SPRITE_ANIM_BUFFER_CAPACITY - 1 ; default to last sprite
 .got_sprite
 	push bc
@@ -11701,63 +11672,59 @@ GetSpriteAnimBufferProperty_SpriteInA:
 	add hl, bc
 	pop bc
 	ret
-; 0x3ddb
 
 Func_3ddb: ; 3ddb (0:3ddb)
 	push hl
 	push bc
-	ld c, SPRITE_ANIM_FIELD_0F
+	ld c, SPRITE_ANIM_FLAGS
 	call GetSpriteAnimBufferProperty_SpriteInA
 	res 2, [hl]
 	pop bc
 	pop hl
 	ret
-; 0x3de7
 
 Func_3de7: ; 3de7 (0:3de7)
 	push hl
 	push bc
-	ld c, SPRITE_ANIM_FIELD_0F
+	ld c, SPRITE_ANIM_FLAGS
 	call GetSpriteAnimBufferProperty_SpriteInA
 	set 2, [hl]
 	pop bc
 	pop hl
 	ret
-; 0x3df3
 
-Func_3df3: ; 3df3 (0:3df3)
+LoadScene: ; 3df3 (0:3df3)
 	push af
 	ldh a, [hBankROM]
 	push af
 	push hl
-	ld a, BANK(Func_12c7f)
+	ld a, BANK(_LoadScene)
 	call BankswitchROM
 	ld hl, sp+$5
 	ld a, [hl]
-	call Func_12c7f
+	call _LoadScene
 	call FlushAllPalettes
 	pop hl
 	pop af
 	call BankswitchROM
 	pop af
-	ld a, [wd61b]
+	ld a, [wSceneSpriteIndex]
 	ret
-; 0x3e10
 
 ; draws player's portrait at b,c
-Func_3e10: ; 3e10 (0:3e10)
+DrawPlayerPortrait: ; 3e10 (0:3e10)
 	ld a, $1
 	ld [wd61e], a
-	ld a, $62
+	ld a, TILEMAP_PLAYER
 ;	fallthrough
 
 Func_3e17: ; 3e17 (0:3e17)
-	ld [wd131], a
+	ld [wCurTilemap], a
 	ldh a, [hBankROM]
 	push af
-	ld a, $4
+	ld a, BANK(Func_12fc6)
 	call BankswitchROM
-	call $6fc6
+	call Func_12fc6
 	pop af
 	call BankswitchROM
 	ret
@@ -11765,21 +11732,19 @@ Func_3e17: ; 3e17 (0:3e17)
 ; draws opponent's portrait given in a at b,c
 Func_3e2a: ; 3e2a (0:3e2a)
 	ld [wd61e], a
-	ld a, $63
+	ld a, TILEMAP_OPPONENT
 	jr Func_3e17
-; 0x3e31
 
 Func_3e31: ; 3e31 (0:3e31)
 	ldh a, [hBankROM]
 	push af
-	call Func_3cb4
-	ld a, $20
+	call HandleAllSpriteAnimations
+	ld a, BANK(DoLoadedFramesetSubgroupsFrame)
 	call BankswitchROM
-	call $44d8
+	call DoLoadedFramesetSubgroupsFrame
 	pop af
 	call BankswitchROM
 	ret
-; 0x3e44
 
 ; something window scroll
 Func_3e44: ; 3e44 (0:3e44)
@@ -11837,7 +11802,6 @@ Func_3e44: ; 3e44 (0:3e44)
 	pop hl
 	pop af
 	ret
-; 0x3ea6
 
 ; apply background scroll for lines 0 to 96 using the values at BGScrollData
 ; skip if wApplyBGScroll is non-0
@@ -11892,7 +11856,6 @@ ApplyBackgroundScroll: ; 3ea6 (0:3ea6)
 	pop hl
 	pop af
 	ret
-; 0x3ef8
 
 BGScrollData: ; 3ef8 (0:3ef8)
 	db  0,  0,  0,  1,  1,  1,  2,  2,  2,  3,  3,  3,  3,  3,  3,  3
@@ -11928,7 +11891,6 @@ GetNextBackgroundScroll: ; 3f38 (0:3f38)
 	sra a
 .done
 	ret
-; 0x3f5a
 
 ; enable lcdc interrupt on LYC=LC coincidence
 EnableInt_LYCoincidence: ; 3f5a (0:3f5a)
@@ -11940,7 +11902,6 @@ EnableInt_LYCoincidence: ; 3f5a (0:3f5a)
 	set INT_LCD_STAT, [hl]
 	pop hl
 	ret
-; 0x3f68
 
 ; disable lcdc interrupt and the LYC=LC coincidence trigger
 DisableInt_LYCoincidence: ; 3f68 (0:3f68)
@@ -11952,11 +11913,8 @@ DisableInt_LYCoincidence: ; 3f68 (0:3f68)
 	res INT_LCD_STAT, [hl]
 	pop hl
 	ret
-; 0x3f76
 
-rept $6a
-	db $ff
-endr
+SECTION "Bankswitch 3D To 3F", ROM0
 
 ; jumps to 3f:hl, then switches to bank 3d
 Bankswitch3dTo3f:: ; 3fe0 (0:3fe0)
@@ -11973,7 +11931,3 @@ Bankswitch3dTo3f:: ; 3fe0 (0:3fe0)
 	ldh [hBankROM], a
 	ld [MBC3RomBank], a
 	ret
-
-rept $a
-	db $ff
-endr

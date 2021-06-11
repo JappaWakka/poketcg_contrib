@@ -1,10 +1,10 @@
-Text07b1: ; 564db (15:64db)
+PokemonTradingCardGameStaffText: ; 564db (15:64db)
 	text ""
 	line "        Pokémon Trading Card Game "
 	line "                  Staff"
 	done
 
-Text07b2: ; 56518 (15:6518)
+ProducersText: ; 56518 (15:6518)
 	text ""
 	line "                Producers"
 	line ""
@@ -14,7 +14,7 @@ Text07b2: ; 56518 (15:6518)
 	line "             Takehiro Izushi"
 	done
 
-Text07b3: ; 5658f (15:658f)
+DirectorText: ; 5658f (15:658f)
 	text ""
 	line "                Director"
 	line ""
@@ -22,7 +22,7 @@ Text07b3: ; 5658f (15:658f)
 	line "                Koji Arai"
 	done
 
-Text07b4: ; 565c6 (15:65c6)
+ProgrammersText: ; 565c6 (15:65c6)
 	text ""
 	line "               Programmers"
 	line ""
@@ -32,7 +32,7 @@ Text07b4: ; 565c6 (15:65c6)
 	line "             Masaki Tsumori"
 	done
 
-Text07b5: ; 5663a (15:663a)
+GBGraphicDesigners1Text: ; 5663a (15:663a)
 	text ""
 	line "           GB Graphic Designers"
 	line ""
@@ -42,19 +42,19 @@ Text07b5: ; 5663a (15:663a)
 	line "           Tsuguyuki Yamamoto"
 	done
 
-Text07b6: ; 566b5 (15:66b5)
+GBGraphicDesigners2Text: ; 566b5 (15:66b5)
 	text "            Yasuhiro Ichizawa"
 	line "              Miwa Matsuda"
 	line "             Norihiro Kanie"
 	done
 
-Text07b7: ; 5670b (15:670b)
+GBGraphicDesigners3Text: ; 5670b (15:670b)
 	text "             Kazushi Kousaka"
 	line "              Hiromi Sugiue"
 	line "           Katsuhisa Nishikawa"
 	done
 
-Text07b8: ; 56764 (15:6764)
+MusicText: ; 56764 (15:6764)
 	text ""
 	line "                  Music"
 	line ""
@@ -62,7 +62,7 @@ Text07b8: ; 56764 (15:6764)
 	line "            Ichiro Shimakura"
 	done
 
-Text07b9: ; 5679d (15:679d)
+SoundEffectsText: ; 5679d (15:679d)
 	text ""
 	line "              Sound Effects"
 	line ""
@@ -70,7 +70,7 @@ Text07b9: ; 5679d (15:679d)
 	line "              Masato Aihara"
 	done
 
-Text07ba: ; 567d9 (15:67d9)
+SoundDirectorText: ; 567d9 (15:67d9)
 	text ""
 	line "             Sound Director"
 	line ""
@@ -78,7 +78,7 @@ Text07ba: ; 567d9 (15:67d9)
 	line "            Toshiaki Takimoto"
 	done
 
-Text07bb: ; 56817 (15:6817)
+SoundSystemSupportText: ; 56817 (15:6817)
 	text ""
 	line "          Sound System Support"
 	line ""
@@ -87,7 +87,7 @@ Text07bb: ; 56817 (15:6817)
 	line "               Hideki Oka"
 	done
 
-Text07bc: ; 56873 (15:6873)
+CardGameCreator1Text: ; 56873 (15:6873)
 	text ""
 	line "            Card Game Creator"
 	line ""
@@ -95,7 +95,7 @@ Text07bc: ; 56873 (15:6873)
 	line "             Takumi Akabane"
 	done
 
-Text07bd: ; 568b1 (15:68b1)
+CardGameCreator2Text: ; 568b1 (15:68b1)
 	text ""
 	line "            Card Game Creator"
 	line ""
@@ -103,7 +103,7 @@ Text07bd: ; 568b1 (15:68b1)
 	line "             Kouichi Oyama"
 	done
 
-Text07be: ; 568ee (15:68ee)
+CardGameCreator3Text: ; 568ee (15:68ee)
 	text ""
 	line "            Card Game Creator"
 	line ""
@@ -111,7 +111,7 @@ Text07be: ; 568ee (15:68ee)
 	line "              Akihiko Miura"
 	done
 
-Text07bf: ; 5692c (15:692c)
+CardIllustrators1Text: ; 5692c (15:692c)
 	text ""
 	line "            Card Illustrators"
 	line ""
@@ -122,14 +122,14 @@ Text07bf: ; 5692c (15:692c)
 	line "             Kagemaru Himeno"
 	done
 
-Text07c0: ; 569c0 (15:69c0)
+CardIllustrators2Text: ; 569c0 (15:69c0)
 	text "             Tomoaki Imakuni"
 	line "               Miki Tanaka"
 	line "              Toshinao Aoki"
 	line "              Benimaru Ito"
 	done
 
-Text07c1: ; 56a30 (15:6a30)
+SpecialAppearances1Text: ; 56a30 (15:6a30)
 	text ""
 	line "         Special Appearances by"
 	line ""
@@ -138,12 +138,12 @@ Text07c1: ; 56a30 (15:6a30)
 	line "             Masako Uchiyama"
 	done
 
-Text07c2: ; 56a8c (15:6a8c)
+SpecialAppearances2Text: ; 56a8c (15:6a8c)
 	text "             Kunimi Kawamura"
 	line "                Imakuni?"
 	done
 
-Text07c3: ; 56ac3 (15:6ac3)
+USCoordination1Text: ; 56ac3 (15:6ac3)
 	text ""
 	line "             US COORDINATION"
 	line "           NINTENDO OF AMERICA"
@@ -153,12 +153,12 @@ Text07c3: ; 56ac3 (15:6ac3)
 	line "              HIRO NAKAMURA"
 	done
 
-Text07c4: ; 56b3a (15:6b3a)
+USCoordination2Text: ; 56b3a (15:6b3a)
 	text "              KENJI OKUBO"
 	line "             WILLIAM TRINEN"
 	done
 
-Text07c5: ; 56b71 (15:6b71)
+USCoordination3Text: ; 56b71 (15:6b71)
 	text ""
 	line "             US COORDINATION"
 	line "           Wizards of the Coast"
@@ -169,13 +169,13 @@ Text07c5: ; 56b71 (15:6b71)
 	line "             Jessica Beaven"
 	done
 
-Text07c6: ; 56c0d (15:6c0d)
+USCoordination4Text: ; 56c0d (15:6c0d)
 	text "             Paul Peterson"
 	line "            Michael G. Ryan"
 	line "               Tom Wylie"
 	done
 
-Text07c7: ; 56c5e (15:6c5e)
+TranslationDraftText: ; 56c5e (15:6c5e)
 	text ""
 	line "            TRANSLATION/DRAFT"
 	line ""
@@ -183,7 +183,7 @@ Text07c7: ; 56c5e (15:6c5e)
 	line "               BILL RITCH"
 	done
 
-Text07c8: ; 56c9a (15:6c9a)
+MasteringText: ; 56c9a (15:6c9a)
 	text ""
 	line "                Mastering"
 	line ""
@@ -191,7 +191,7 @@ Text07c8: ; 56c9a (15:6c9a)
 	line "             Tetsuya Komatsu"
 	done
 
-Text07c9: ; 56cd5 (15:6cd5)
+ManualCreationText: ; 56cd5 (15:6cd5)
 	text ""
 	line "             Manual Creation"
 	line ""
@@ -199,7 +199,7 @@ Text07c9: ; 56cd5 (15:6cd5)
 	line "              Haruki Mitani"
 	done
 
-Text07ca: ; 56d12 (15:6d12)
+ManualIllustrationsText: ; 56d12 (15:6d12)
 	text ""
 	line "           Manual Illustrations"
 	line ""
@@ -207,7 +207,7 @@ Text07ca: ; 56d12 (15:6d12)
 	line "             Kagemaru Himeno"
 	done
 
-Text07cb: ; 56d53 (15:6d53)
+PokemonOriginalStoryText: ; 56d53 (15:6d53)
 	text ""
 	line "          Pokémon Original Story"
 	line ""
@@ -216,7 +216,7 @@ Text07cb: ; 56d53 (15:6d53)
 	line ""
 	done
 
-Text07cc: ; 56d95 (15:6d95)
+CreatedInCooperationWithText: ; 56d95 (15:6d95)
 	text ""
 	line "       Created In Cooperation With"
 	line ""
@@ -226,7 +226,7 @@ Text07cc: ; 56d95 (15:6d95)
 	line "             Takahiro Harada"
 	done
 
-Text07cd: ; 56e11 (15:6e11)
+WithCooperation1Text: ; 56e11 (15:6e11)
 	text ""
 	line "          With Cooperation from"
 	line ""
@@ -236,21 +236,21 @@ Text07cd: ; 56e11 (15:6e11)
 	line "              Keigo Yasuda"
 	done
 
-Text07ce: ; 56e8a (15:6e8a)
+WithCooperation2Text: ; 56e8a (15:6e8a)
 	text "            Yusuke Kurushima"
 	line "           Nobuchika Takahashi"
 	line "             Junko Igarashi"
 	line "              Yukiko Tomita"
 	done
 
-Text07cf: ; 56eff (15:6eff)
+WithCooperation3Text: ; 56eff (15:6eff)
 	text "              Mari Matsuda"
 	line "             Moto Yamaguchi"
 	line "              Shigeru Sato"
 	line "             Chiaki Nishiki"
 	done
 
-Text07d0: ; 56f6e (15:6f6e)
+ProjectManagerText: ; 56f6e (15:6f6e)
 	text ""
 	line "             Project Manager"
 	line ""
@@ -258,7 +258,7 @@ Text07d0: ; 56f6e (15:6f6e)
 	line "            Yasutaka Kakiseko"
 	done
 
-Text07d1: ; 56fad (15:6fad)
+SupervisorText: ; 56fad (15:6fad)
 	text ""
 	line "               Supervisor"
 	line ""
@@ -267,7 +267,7 @@ Text07d1: ; 56fad (15:6fad)
 	line "              Hiroshi Kudo"
 	done
 
-Text07d2: ; 56fe7 (15:6fe7)
+ExecutiveProducerText: ; 56fe7 (15:6fe7)
 	text ""
 	line "           Executive Producer"
 	line ""
@@ -276,7 +276,7 @@ Text07d2: ; 56fe7 (15:6fe7)
 	line "            Hiroshi Yamauchi"
 	done
 
-Text07d3: ; 57027 (15:7027)
+CreatedByText: ; 57027 (15:7027)
 	text ""
 	line "               Created by"
 	line ""
@@ -289,88 +289,88 @@ Text07d4: ; 5705e (15:705e)
 	text "  Uitdagingsmachine  "
 	done
 
-Text07d5: ; 57075 (15:7075)
+PlayersScoreText: ; 57075 (15:7075)
 	text "<RAMNAME>'s Score"
 	done
 
-Text07d6: ; 57080 (15:7080)
+Defeated5OpponentsXTimesText: ; 57080 (15:7080)
 	text "Defeated 5 opponents      time(s)."
 	done
 
-Text07d7: ; 570a4 (15:70a4)
+PresentConsecutiveWinsText: ; 570a4 (15:70a4)
 	text "Present Consecutive Wins"
 	done
 
-Text07d8: ; 570be (15:70be)
+MaximumConsecutiveWinsText: ; 570be (15:70be)
 	text "Maximum Consecutive Wins"
 	line "    [ <RAMTEXT>  ]"
 	done
 
-Text07d9: ; 570e3 (15:70e3)
+WinsText: ; 570e3 (15:70e3)
 	text "Wins"
 	done
 
-Text07da: ; 570e9 (15:70e9)
+XConsecutiveWinsNthOpponentIsText: ; 570e9 (15:70e9)
 	text "<RAMNAME> <RAMNUM> Consecutive Wins!"
 	line ""
 	text "<RAMNUM> opponent is <RAMTEXT>."
 	done
 
-Text07db: ; 57112 (15:7112)
+NthOpponentIsText: ; 57112 (15:7112)
 	text "<RAMNUM> opponent is <RAMTEXT>."
 	done
 
-Text07dc: ; 57124 (15:7124)
+WouldYouLikeToBeginTheDuelText: ; 57124 (15:7124)
 	text "Would you like to begin the Duel?"
 	done
 
-Text07dd: ; 57147 (15:7147)
+IfYouQuitTheDuelText: ; 57147 (15:7147)
 	text "If you quit the Duel,"
 	line "Your Consecutive Wins will end."
 	done
 
-Text07de: ; 5717e (15:717e)
+WouldYouLikeToQuitTheDuelText: ; 5717e (15:717e)
 	text "Would you like to quit the Duel?"
 	done
 
-Text07df: ; 571a0 (15:71a0)
+PlayTheChallengeMachineText: ; 571a0 (15:71a0)
 	text "Play the Challenge Machine?"
 	done
 
-Text07e0: ; 571bd (15:71bd)
+LetUsChooseYourOpponentText: ; 571bd (15:71bd)
 	text "OK,"
 	line "Let us choose your opponent."
 	done
 
-Text07e1: ; 571df (15:71df)
+LostToTheNthOpponentText: ; 571df (15:71df)
 	text "You lost to the <RAMNUM> opponent,"
 	line "<RAMTEXT>!"
 	done
 
-Text07e2: ; 571ff (15:71ff)
+ConsecutiveWinsEndedAtText: ; 571ff (15:71ff)
 	text "<RAMNAME>'s consecutive wins"
 	line "ended at <RAMNUM>."
 	done
 
-Text07e3: ; 57221 (15:7221)
+WeAwaitYourNextChallengeText: ; 57221 (15:7221)
 	text "We await your next challenge."
 	done
 
-Text07e4: ; 57240 (15:7240)
+YourOpponentsForThisGameText: ; 57240 (15:7240)
 	text "Your opponents for this game:"
 	done
 
-Text07e5: ; 5725f (15:725f)
+WonAgainstXOpponentsText: ; 5725f (15:725f)
 	text "Congratulations!"
 	line "You won against <RAMNUM> opponents!"
 	done
 
-DefeatedFiveOpponentsText: ; 5728e (15:728e)
+Defeated5OpponentsText: ; 5728e (15:728e)
 	text "Congratulations!"
 	line "You defeated 5 opponents!"
 	done
 
-Text07e7: ; 572ba (15:72ba)
+SuccessfullyDefeated5OpponentsText: ; 572ba (15:72ba)
 	text "<RAMNAME> successfully defeated "
 	line "5 opponents "
 	text "<RAMNUM> time(s)!!!"
@@ -380,80 +380,80 @@ ConsecutiveWinRecordIncreasedText: ; 572ee (15:72ee)
 	text "<RAMNAME>'s consecutive win"
 	line "record increased to <RAMNUM>!"
 	done
-
-Text07e9: ; 5731a (15:731a)
+	
+ClubMemberText: ; 5731a (15:731a)
 	text "Clublid"
 	done
 
-Text07ea: ; 57327 (15:7327)
+ClubMasterText: ; 57327 (15:7327)
 	text "Clubmeester"
 	done
 
-Text07eb: ; 57334 (15:7334)
+TechText: ; 57334 (15:7334)
 	text "Techneut"
 	done
 
-Text07ec: ; 5733a (15:733a)
+StrangeLifeformText: ; 5733a (15:733a)
 	text "Vreemde Levensvorm"
 	done
 
-Text07ed: ; 5734d (15:734d)
+GrandMasterText: ; 5734d (15:734d)
 	text "Grootmeester"
 	done
 
-Text07ee: ; 5735b (15:735b)
+ChallengeMachineOpponent1Text: ; 5735b (15:735b)
 	textfw0 "1"
 	done
 
-Text07ef: ; 5735d (15:735d)
+ChallengeMachineOpponent2Text: ; 5735d (15:735d)
 	textfw0 "2"
 	done
 
-Text07f0: ; 5735f (15:735f)
+ChallengeMachineOpponent3Text: ; 5735f (15:735f)
 	textfw0 "3"
 	done
 
-Text07f1: ; 57361 (15:7361)
+ChallengeMachineOpponent4Text: ; 57361 (15:7361)
 	textfw0 "4"
 	done
 
-Text07f2: ; 57363 (15:7363)
+ChallengeMachineOpponent5Text: ; 57363 (15:7363)
 	textfw0 "5"
 	done
 
-Text07f3: ; 57365 (15:7365)
+ChallengeMachineNotDuelledIconText: ; 57365 (15:7365)
 	textfw0 " "
 	done
 
-Text07f4: ; 57367 (15:7367)
+ChallengeMachineDuelWonIconText: ; 57367 (15:7367)
 	textfw3 "☆"
 	done
 
-Text07f5: ; 5736a (15:736a)
+ChallengeMachineDuelLostIconText: ; 5736a (15:736a)
 	textfw3 "★"
 	done
 
-Text07f6: ; 5736d (15:736d)
+ChallengeMachineFireIconText: ; 5736d (15:736d)
 	textfw3 "【", "<FIRE>", "】"
 	done
 
-Text07f7: ; 57374 (15:7374)
+ChallengeMachineLightningIconText: ; 57374 (15:7374)
 	textfw3 "【", "<LIGHTNING>", "】"
 	done
 
-Text07f8: ; 5737b (15:737b)
+ChallengeMachineWaterIconText: ; 5737b (15:737b)
 	textfw3 "【", "<WATER>", "】"
 	done
 
-Text07f9: ; 57382 (15:7382)
+ChallengeMachineFightingIconText: ; 57382 (15:7382)
 	textfw3 "【", "<FIGHTING>", "】"
 	done
 
-Text07fa: ; 57389 (15:7389)
+ChallengeMachinePsychicIconText: ; 57389 (15:7389)
 	textfw3 "【", "<PSYCHIC>", "】"
 	done
 
-Text07fb: ; 57390 (15:7390)
+ChallengeMachineGrassIconText: ; 57390 (15:7390)
 	textfw3 "【", "<GRASS>", "】"
 	done
 
@@ -1572,3 +1572,829 @@ PinsirDescription: ; 59d9f (16:5d9f)
 	line "slingert hij hem in het rond"
 	line "en gooit hij hem hard neer."
 	done
+	
+CharmanderName: ; 59e02 (16:5e02)
+	text "Charmander"
+	done
+
+EmberName: ; 59e0e (16:5e0e)
+	text "Ember"
+	done
+
+EmberDescription: ; 59e15 (16:5e15)
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Charmander in order to use this"
+	line "attack."
+	done
+
+LizardName: ; 59e63 (16:5e63)
+	text "Lizard"
+	done
+
+CharmanderDescription: ; 59e6b (16:5e6b)
+	text "Obviously prefers hot places. If it"
+	line "gets caught in the rain, steam is"
+	line "said to spout from the tip of its"
+	line "tail."
+	done
+
+CharmeleonName: ; 59eda (16:5eda)
+	text "Charmeleon"
+	done
+
+FlamethrowerName: ; 59ee6 (16:5ee6)
+	text "Flamethrower"
+	done
+
+CharmeleonsFlamethrowerDescription: ; 59ef4 (16:5ef4)
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Charmeleon in order to use this"
+	line "attack."
+	done
+
+FlameName: ; 59f42 (16:5f42)
+	text "Flame"
+	done
+
+CharmeleonDescription: ; 59f49 (16:5f49)
+	text "When it swings its burning tail, it"
+	line "raises the temperature to unbearably"
+	line "high levels."
+	done
+
+CharizardName: ; 59fa0 (16:5fa0)
+	text "Charizard"
+	done
+
+EnergyBurnName: ; 59fab (16:5fab)
+	text "Energy Burn"
+	done
+
+EnergyBurnDescription: ; 59fb8 (16:5fb8)
+	text "As often as you like during your"
+	line "turn (before your attack), you may"
+	line "turn all Energy attached to"
+	line "Charizard into <FIRE> Energy for the"
+	line "rest of the turn. This power can't"
+	line "be used if Charizard is Asleep,"
+	line "Confused, or Paralyzed."
+	done
+
+FireSpinName: ; 5a095 (16:6095)
+	text "Fire Spin"
+	done
+
+FireSpinDescription: ; 5a0a0 (16:60a0)
+	text "Discard 2 Energy cards attached to"
+	line "Charizard in order to use this"
+	line "attack."
+	done
+
+CharizardDescription: ; 5a0eb (16:60eb)
+	text "Spits fire that is hot enough to"
+	line "melt boulders. Known to"
+	line "unintentionally cause forest fires."
+	done
+
+VulpixName: ; 5a149 (16:6149)
+	text "Vulpix"
+	done
+
+ConfuseRayName: ; 5a151 (16:6151)
+	text "Confuse Ray"
+	done
+
+FoxName: ; 5a15e (16:615e)
+	text "Fox"
+	done
+
+VulpixDescription: ; 5a163 (16:6163)
+	text "At the time of birth, it has just"
+	line "one tail. Its tail splits from the"
+	line "tip as it grows older."
+	done
+
+NinetailsName: ; 5a1c0 (16:61c0)
+	text "Ninetails"
+	done
+
+NinetailsLureDescription: ; 5a1cb (16:61cb)
+	text "If your opponent has any Benched"
+	line "Pokémon, choose 1 of them and switch"
+	line "it with the Defending Pokémon."
+	done
+
+FireBlastName: ; 5a231 (16:6231)
+	text "Fire Blast"
+	done
+
+FireBlastDescription: ; 5a23d (16:623d)
+	text "Discard 1 <FIRE> Energy card attached"
+	line "to Ninetales in order to use this"
+	line "attack."
+	done
+
+Ninetails1Description: ; 5a28a (16:628a)
+	text "Very smart and very vengeful."
+	line "Grabbing one of its many tails could"
+	line "result in a 1,000-year curse."
+	done
+
+MixUpName: ; 5a2ec (16:62ec)
+	text "Mix-Up"
+	done
+
+MixUpDescription: ; 5a2f4 (16:62f4)
+	text "If your opponent has any Basic"
+	line "Pokémon or Evolution cards in his"
+	line "or her hand, your opponent shuffles"
+	line "them into his or her deck. Then,"
+	line "your opponent puts an equal number"
+	line "of Basic Pokémon or Evolution cards"
+	line "chosen at random from his or"
+	done
+
+MixUpDescriptionCont: ; 5a3df (16:63df)
+	text "her deck into his or her hand. Your"
+	line "opponent shuffles his or her deck"
+	line "afterward."
+	done
+
+DancingEmbersName: ; 5a431 (16:6431)
+	text "Dancing Embers"
+	done
+
+DancingEmbersDescription: ; 5a441 (16:6441)
+	text "Flip 8 coins. This attack does 10"
+	line "damage times the number of heads."
+	done
+
+Ninetails2Description: ; 5a486 (16:6486)
+	text "According to an enduring legend,"
+	line "9 noble heroes were united and"
+	line "reincarnated as this."
+	done
+
+GrowlitheName: ; 5a4dd (16:64dd)
+	text "Growlithe"
+	done
+
+FlareName: ; 5a4e8 (16:64e8)
+	text "Flare"
+	done
+
+PuppyName: ; 5a4ef (16:64ef)
+	text "Puppy"
+	done
+
+GrowlitheDescription: ; 5a4f6 (16:64f6)
+	text "Very protective of its territory."
+	line "It will bark and bite to repel"
+	line "intruders from its space."
+	done
+
+ArcanineName: ; 5a552 (16:6552)
+	text "Arcanine"
+	done
+
+QuickAttackName: ; 5a55c (16:655c)
+	text "Quick Attack"
+	done
+
+QuickAttackDescription: ; 5a56a (16:656a)
+	text "Flip a coin. If heads, this attack"
+	line "does 10 damage plus 20 more damage;"
+	line "if tails, this attack does 10"
+	line "damage."
+	done
+
+FlamesOfRageName: ; 5a5d8 (16:65d8)
+	text "Flames of Rage"
+	done
+
+FlamesOfRageDescription: ; 5a5e8 (16:65e8)
+	text "Discard 2 <FIRE> Energy cards attached"
+	line "to Arcanine in order to use this"
+	line "attack. This attack does 40 damage"
+	line "plus 10 more damage for each damage"
+	line "counter on Arcanine."
+	done
+
+LegendaryName: ; 5a689 (16:6689)
+	text "Legendary"
+	done
+
+Arcanine1Description: ; 5a694 (16:6694)
+	text "A legendary Pokémon famous for its"
+	line "beauty. It looks almost as if it"
+	line "flies when it runs."
+	done
+
+ArcaninesFlamethrowerDescription: ; 5a6ed (16:66ed)
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Arcanine in order to use this"
+	line "attack."
+	done
+
+TakeDownName: ; 5a739 (16:6739)
+	text "Take Down"
+	done
+
+TakeDownDescription: ; 5a744 (16:6744)
+	text "Arcanine does 30 damage to itself."
+	done
+
+Arcanine2Description: ; 5a768 (16:6768)
+	text "A Pokémon that has been long admired"
+	line "for its beauty. It runs gracefully,"
+	line "as if on wings."
+	done
+
+PonytaName: ; 5a7c2 (16:67c2)
+	text "Ponyta"
+	done
+
+SmashKickName: ; 5a7ca (16:67ca)
+	text "Smash Kick"
+	done
+
+FlameTailName: ; 5a7d6 (16:67d6)
+	text "Flame Tail"
+	done
+
+FireHorseName: ; 5a7e2 (16:67e2)
+	text "Fire Horse"
+	done
+
+PonytaDescription: ; 5a7ee (16:67ee)
+	text "Its hooves are 10 times harder than"
+	line "diamonds. It can trample anything"
+	line "flat in moments."
+	done
+
+RapidashName: ; 5a846 (16:6846)
+	text "Rapidash"
+	done
+
+StompName: ; 5a850 (16:6850)
+	text "Stomp"
+	done
+
+StompDescription: ; 5a857 (16:6857)
+	text "Flip a coin. If heads, this attack"
+	line "does 20 damage plus 10 more damage;"
+	line "if tails, this attack does 20"
+	line "damage."
+	done
+
+AgilityName: ; 5a8c5 (16:68c5)
+	text "Agility"
+	done
+
+RapidashsAgilityDescription: ; 5a8ce (16:68ce)
+	text "Flip a coin. If heads, during your"
+	line "opponent's next turn, prevent all"
+	line "effects of attacks, including"
+	line "damage, done to Rapidash."
+	done
+
+RapidashDescription: ; 5a94c (16:694c)
+	text "Very competitive, this Pokémon will"
+	line "chase anything that moves fast in"
+	line "the hopes of racing it."
+	done
+
+MagmarName: ; 5a9ab (16:69ab)
+	text "Magmar"
+	done
+
+FirePunchName: ; 5a9b3 (16:69b3)
+	text "Fire Punch"
+	done
+
+FirePunchDescription: ; 5a9bf (16:69bf)
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Magmar in order to use this attack."
+	done
+
+SpitfireName: ; 5aa09 (16:6a09)
+	text "Spitfire"
+	done
+
+Magmar1Description: ; 5aa13 (16:6a13)
+	text "Its body always burns with an orange"
+	line "glow that enables it to hide"
+	line "perfectly among flames."
+	done
+
+SmokescreenName: ; 5aa6e (16:6a6e)
+	text "Smokescreen"
+	done
+
+MagmarsSmokescreenDescription: ; 5aa7b (16:6a7b)
+	text "If the Defending Pokémon tries to"
+	line "attack during your opponent's next"
+	line "turn, your opponent flips a coin. If"
+	line "tails, that attack does nothing."
+	done
+
+Magmar2Description: ; 5ab07 (16:6b07)
+	text "Found at the mouths of volcanoes and"
+	line "extremely hard to spot. There are"
+	line "very few instances of capturing this"
+	line "Pokémon."
+	done
+
+FlareonName: ; 5ab7d (16:6b7d)
+	text "Flareon"
+	done
+
+EeveeName: ; 5ab86 (16:6b86)
+	text "Eevee"
+	done
+
+BiteName: ; 5ab8d (16:6b8d)
+	text "Bite"
+	done
+
+RageName: ; 5ab93 (16:6b93)
+	text "Rage"
+	done
+
+FlareonsRageDescription: ; 5ab99 (16:6b99)
+	text "Does 10 damage plus 10 more damage"
+	line "for each damage counter on Flareon."
+	done
+
+Flareon1Description: ; 5abe1 (16:6be1)
+	text "It has a flame chamber inside its"
+	line "body. It inhales, then blows out"
+	line "fire that is over 3,000 degrees."
+	done
+
+FlareonsFlamethrowerDescription: ; 5ac46 (16:6c46)
+	text "Discard 1 <FIRE> Energy card attached to"
+	line "Flareon in order to use this attack."
+	done
+
+Flareon2Description: ; 5ac91 (16:6c91)
+	text "When storing thermal energy in its"
+	line "body, its temperature could soar to"
+	line "over 1,600 degrees."
+	done
+
+MoltresName: ; 5aced (16:6ced)
+	text "Moltres"
+	done
+
+WildfireName: ; 5acf6 (16:6cf6)
+	text "Wildfire"
+	done
+
+WildfireDescription: ; 5ad00 (16:6d00)
+	text "You may discard any number of <FIRE>"
+	line "Energy cards attached to Moltres"
+	line "when you use this attack. If you do,"
+	line "discard that many cards from the top"
+	line "of your opponent's deck."
+	done
+
+DiveBombName: ; 5ada6 (16:6da6)
+	text "Dive Bomb"
+	done
+
+Moltres1Description: ; 5adb1 (16:6db1)
+	text "Known as the legendary bird of fire."
+	line "Every flap of its wings creates a"
+	line "dazzling flash of flames."
+	done
+
+FiregiverName: ; 5ae13 (16:6e13)
+	text "Firegiver"
+	done
+
+FiregiverDescription: ; 5ae1e (16:6e1e)
+	text "When you put Moltres into play"
+	line "during your turn (not during"
+	line "set-up), put from 1 to 4 (chosen at"
+	line "random) <FIRE> Energy cards from your"
+	line "deck into your hand. Shuffle your"
+	line "deck afterward."
+	done
+
+Moltres2Description: ; 5aed3 (16:6ed3)
+	text "A legendary bird Pokémon. As it"
+	line "flaps its flaming wings, even the"
+	line "night sky will turn red."
+	done
+
+SquirtleName: ; 5af2f (16:6f2f)
+	text "Squirtle"
+	done
+
+BubbleName: ; 5af39 (16:6f39)
+	text "Bubble"
+	done
+
+WithdrawName: ; 5af41 (16:6f41)
+	text "Withdraw"
+	done
+
+SquirtlesWithdrawDescription: ; 5af4b (16:6f4b)
+	text "Flip a coin. If heads, prevent all"
+	line "damage done to Squirtle during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen.)"
+	done
+
+TinyTurtleName: ; 5afd6 (16:6fd6)
+	text "Tiny Turtle"
+	done
+
+SquirtleDescription: ; 5afe3 (16:6fe3)
+	text "After birth, its back swells and"
+	line "hardens into a shell. It powerfully"
+	line "sprays foam from its mouth."
+	done
+
+WartortleName: ; 5b045 (16:7045)
+	text "Wartortle"
+	done
+
+WartortlesWithdrawDescription: ; 5b050 (16:7050)
+	text "Flip a coin. If heads, prevent all"
+	line "damage done to Wartortle during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen.)"
+	done
+
+TurtleName: ; 5b0dc (16:70dc)
+	text "Turtle"
+	done
+
+WartortleDescription: ; 5b0e4 (16:70e4)
+	text "Often hides in water to stalk unwary"
+	line "prey. When swimming quickly, it"
+	line "moves its ears to maintain balance."
+	done
+
+BlastoiseName: ; 5b14e (16:714e)
+	text "Blastoise"
+	done
+
+RainDanceName: ; 5b159 (16:7159)
+	text "Rain Dance"
+	done
+
+RainDanceDescription: ; 5b165 (16:7165)
+	text "As often as you like during your"
+	line "turn (before your attack), you may"
+	line "attach 1 <WATER> Energy card to 1 of"
+	line "your <WATER> Pokémon. (This doesn't use"
+	line "up your 1 Energy card attachment"
+	line "for the turn.)"
+	done
+
+RainDanceDescriptionCont: ; 5b21d (16:721d)
+	text "This power can't be used if"
+	line "Blastoise is Asleep, Confused, or"
+	line "Paralyzed."
+	done
+
+HydroPumpName: ; 5b267 (16:7267)
+	text "Hydro Pump"
+	done
+
+HydroPumpDescription: ; 5b273 (16:7273)
+	text "Does 40 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Blastoise but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
+	done
+
+ShellfishName: ; 5b322 (16:7322)
+	text "Shellfish"
+	done
+
+BlastoiseDescription: ; 5b32d (16:732d)
+	text "A brutal Pokémon with pressurized"
+	line "water jets on its shell. They are"
+	line "used for high-speed tackles."
+	done
+
+PsyduckName: ; 5b38f (16:738f)
+	text "Psyduck"
+	done
+
+HeadacheName: ; 5b398 (16:7398)
+	text "Headache"
+	done
+
+HeadacheDescription: ; 5b3a2 (16:73a2)
+	text "Your opponent can't play Trainer"
+	line "cards during his or her next turn."
+	done
+
+DuckName: ; 5b3e7 (16:73e7)
+	text "Duck"
+	done
+
+PsyduckDescription: ; 5b3ed (16:73ed)
+	text "While lulling its enemies with its"
+	line "vacant look, this wily Pokémon will"
+	line "use psychokinetic powers."
+	done
+
+GolduckName: ; 5b44f (16:744f)
+	text "Golduck"
+	done
+
+PsyshockName: ; 5b458 (16:7458)
+	text "Psyshock"
+	done
+
+HyperBeamName: ; 5b462 (16:7462)
+	text "Hyper Beam"
+	done
+
+Discard1EnergyFromTargetDescription: ; 5b46e (16:746e)
+	text "If the Defending Pokémon has any"
+	line "Energy cards attached to it, choose"
+	line "1 of them and discard it."
+	done
+
+GolduckDescription: ; 5b4ce (16:74ce)
+	text "Often seen swimming elegantly by"
+	line "lake shores. It is often mistaken"
+	line "for the Japanese monster, Kappa."
+	done
+
+PoliwagName: ; 5b533 (16:7533)
+	text "Poliwag"
+	done
+
+WaterGunName: ; 5b53c (16:753c)
+	text "Water Gun"
+	done
+
+PoliwagsWaterGunDescription: ; 5b547 (16:7547)
+	text "Does 10 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Poliwag but not used to pay for"
+	line "this attack's Energy cost. You can't"
+	line "add more than 20 damage in this way."
+	done
+
+TadpoleName: ; 5b5f4 (16:75f4)
+	text "Tadpole"
+	done
+
+PoliwagDescription: ; 5b5fd (16:75fd)
+	text "Its newly grown legs prevent it"
+	line "from running. It appears to prefer"
+	line "swimming over trying to stand."
+	done
+
+PoliwhirlName: ; 5b660 (16:7660)
+	text "Poliwhirl"
+	done
+
+AmnesiaName: ; 5b66b (16:766b)
+	text "Amnesia"
+	done
+
+PoliwhirlsAmnesiaDescription: ; 5b674 (16:7674)
+	text "Choose 1 of the Defending Pokémon's"
+	line "attacks. That Pokémon can't use that"
+	line "attack during your opponent's next"
+	line "turn."
+	done
+
+DoubleslapName: ; 5b6e7 (16:76e7)
+	text "Doubleslap"
+	done
+
+PoliwhirlsDescription: ; 5b6f3 (16:76f3)
+	text "Capable of living in or out of"
+	line "water. When out of water, it sweats"
+	line "to keep its body slimy."
+	done
+
+PoliwrathName: ; 5b74f (16:774f)
+	text "Poliwrath"
+	done
+
+PoliwrathsWaterGunDescription: ; 5b75a (16:775a)
+	text "Does 30 damage plus 10 more damage"
+	line "for each <WATER> Energy attached to"
+	line "Poliwrath but not used to pay for"
+	line "this attack's Energy cost. You"
+	line "can't add more than 20 damage in"
+	line "this way."
+	done
+
+WhirlpoolName: ; 5b809 (16:7809)
+	text "Whirlpool"
+	done
+
+PoliwrathDescription: ; 5b814 (16:7814)
+	text "An adept swimmer at both the front"
+	line "crawl and breaststroke. Easily"
+	line "overtakes the best human swimmers."
+	done
+
+TentacoolName: ; 5b87a (16:787a)
+	text "Tentacool"
+	done
+
+CowardiceName: ; 5b885 (16:7885)
+	text "Cowardice"
+	done
+
+CowardiceDescription: ; 5b890 (16:7890)
+	text "At any time during your turn"
+	line "(before your attack), you may return"
+	line "Tentacool to your hand. (Discard all"
+	line "cards attached to Tentacool.) This"
+	line "power can't be used the turn you put"
+	line "Tentacool into play or if Tentacool"
+	line "is Asleep, Confused, or Paralyzed."
+	done
+
+JellyfishName: ; 5b987 (16:7987)
+	text "Jellyfish"
+	done
+
+TentacoolDescription: ; 5b992 (16:7992)
+	text "Drifts in shallow seas. Anglers who"
+	line "hook them by accident are often"
+	line "punished by its stinging acid."
+	done
+
+TentacruelName: ; 5b9f6 (16:79f6)
+	text "Tentacruel"
+	done
+
+JellyfishStingName: ; 5ba02 (16:7a02)
+	text "Jellyfish Sting"
+	done
+
+TentacruelDescription: ; 5ba13 (16:7a13)
+	text "The tentacles are normally kept"
+	line "short. On hunts, they are extended"
+	line "to ensnare and immobilize prey."
+	done
+
+SeelName: ; 5ba77 (16:7a77)
+	text "Seel"
+	done
+
+HeadbuttName: ; 5ba7d (16:7a7d)
+	text "Headbutt"
+	done
+
+SeaLionName: ; 5ba87 (16:7a87)
+	text "Sea Lion"
+	done
+
+SeelDescription: ; 5ba91 (16:7a91)
+	text "The protruding horn on its head is"
+	line "very hard. This horn is used for"
+	line "bashing through thick ice."
+	done
+
+DewgongName: ; 5baf1 (16:7af1)
+	text "Dewgong"
+	done
+
+AuroraBeamName: ; 5bafa (16:7afa)
+	text "Aurora Beam"
+	done
+
+IceBeamName: ; 5bb07 (16:7b07)
+	text "Ice Beam"
+	done
+
+DewgongDescription: ; 5bb11 (16:7b11)
+	text "Stores thermal energy in its body."
+	line "Swims at a steady 8 knots even in"
+	line "intensely cold waters."
+	done
+
+ShellderName: ; 5bb6e (16:7b6e)
+	text "Shellder"
+	done
+
+HideInShellName: ; 5bb78 (16:7b78)
+	text "Hide in Shell"
+	done
+
+HideInShellDescription: ; 5bb87 (16:7b87)
+	text "Flip a coin. If heads, prevent all"
+	line "damage done to Shellder during your"
+	line "opponent's next turn. (Any other"
+	line "effects of attacks still happen.)"
+	done
+
+BivalveName: ; 5bc12 (16:7c12)
+	text "Bivalve"
+	done
+
+ShellderDescription: ; 5bc1b (16:7c1b)
+	text "Its hard shell repels any kind of"
+	line "attack. It is vulnerable only when"
+	line "its shell is open."
+	done
+
+CloysterName: ; 5bc74 (16:7c74)
+	text "Cloyster"
+	done
+
+ClampName: ; 5bc7e (16:7c7e)
+	text "Clamp"
+	done
+
+ClampDescription: ; 5bc85 (16:7c85)
+	text "Flip a coin. If heads, the Defending"
+	line "Pokémon is now Paralyzed. If tails,"
+	line "this attack does nothing (not even"
+	line "damage)."
+	done
+
+SpikeCannonName: ; 5bcfb (16:7cfb)
+	text "Spike Cannon"
+	done
+
+CloysterDescription: ; 5bd09 (16:7d09)
+	text "When attacked, it launches its horns"
+	line "in quick volleys. Its innards have"
+	line "never been seen."
+	done
+
+KrabbyName: ; 5bd63 (16:7d63)
+	text "Krabby"
+	done
+
+KrabbysCallForFamilyDescription: ; 5bd6b (16:7d6b)
+	text "Search your deck for a Basic Pokémon"
+	line "named Krabby and put it onto your"
+	line "Bench. Shuffle your deck afterward."
+	line "(You can't use this attack if your"
+	line "Bench is full.)"
+	done
+
+RiverCrabName: ; 5be0a (16:7e0a)
+	text "River Crab"
+	done
+
+KrabbyDescription: ; 5be16 (16:7e16)
+	text "Its pincers are not only powerful"
+	line "weapons, they are used for balance"
+	line "when walking sideways."
+	done
+
+KinglerName: ; 5be73 (16:7e73)
+	text "Kingler"
+	done
+
+FlailName: ; 5be7c (16:7e7c)
+	text "Flail"
+	done
+
+KinglersFlailDescription: ; 5be83 (16:7e83)
+	text "Does 10 damage times the number of"
+	line "damage counters on Kingler."
+	done
+
+CrabhammerName: ; 5bec3 (16:7ec3)
+	text "Crabhammer"
+	done
+
+PincerName: ; 5becf (16:7ecf)
+	text "Pincer"
+	done
+
+KinglerDescription: ; 5bed7 (16:7ed7)
+	text "The large pincer has 10,000"
+	line "horsepower of crushing power."
+	line "However, its huge size makes it"
+	line "unwieldy to use."
+	done
+
+HorseaName: ; 5bf43 (16:7f43)
+	text "Horsea"
+	done
+
+OpponentAttackMayDoNothingDescription: ; 5bf4b (16:7f4b)
+	text "If the Defending Pokémon tries to"
+	line "attack during your opponent's next"
+	line "turn, your opponent flips a coin."
+	line "If tails, that attack does nothing."
+	done
+
+DragonName: ; 5bfd7 (16:7fd7)
+	text "Dragon"
+	done
+
+	ds $21

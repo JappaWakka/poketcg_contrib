@@ -1,7 +1,3 @@
-INCROM: MACRO
-INCBIN "baserom.gbc", \1, \2 - \1
-ENDM
-
 dn: MACRO
 	db \1 << 4 | \2
 ENDM
@@ -20,7 +16,7 @@ dx: MACRO
 x = 8 * ((\1) - 1)
 	rept \1
 	db ((\2) >> x) & $ff
-x = x + -8
+x = x - 8
 	endr
 	ENDM
 
@@ -44,19 +40,13 @@ rgb: MACRO
 	dw (\3 << 10 | \2 << 5 | \1)
 ENDM
 
-emptybank: MACRO
-	rept $4000
-	db $ff
-	endr
-ENDM
-
 ; poketcg specific macros below
 
 textpointer: MACRO
 	dw ((\1 + ($4000 * (BANK(\1) - 1))) - (TextOffsets + ($4000 * (BANK(TextOffsets) - 1)))) & $ffff
 	db ((\1 + ($4000 * (BANK(\1) - 1))) - (TextOffsets + ($4000 * (BANK(TextOffsets) - 1)))) >> 16
 	const \1_
-GLOBAL \1_
+EXPORT \1_
 ENDM
 
 energy: MACRO
@@ -79,6 +69,18 @@ ENDM
 
 gfx: MACRO
 	dw ($4000 * (BANK(\1) - BANK(CardGraphics)) + (\1 - $4000)) / 8
+ENDM
+
+frame_table: MACRO
+	db BANK(\1) - BANK(AnimData1) ; maybe use better reference for Bank20?
+	dw \1
+ENDM
+
+frame_data: MACRO
+	db \1 ; frame index
+	db \2 ; anim count
+	db \3 ; x translation
+	db \4 ; y translation
 ENDM
 
 tx: MACRO

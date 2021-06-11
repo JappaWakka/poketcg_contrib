@@ -1,4 +1,4 @@
-Text05c9: ; 4b43e (12:743e)
+Tech5DiaryAndEmailExplanationText: ; 4b43e (12:743e)
 	text "Om je spel op te slaan, druk je op"
 	line "START en kies je Dagboek in het"
 	line "Menu. Je kunt trouwens allerlei"
@@ -7,7 +7,7 @@ Text05c9: ; 4b43e (12:743e)
 	line "Dr. Mason op lezen!"
 	done
 
-Text05ca: ; 4b4ea (12:74ea)
+Tech5ChallengeMachineExplanationText: ; 4b4ea (12:74ea)
 	text "This is the Challenge Machine"
 	line "created by Dr. Mason!"
 	line "The Challenge Machine is a "
@@ -1037,4 +1037,3 @@ Text065a: ; 4f0f7 (13:70f7)
 	text "I told you my Ghost Deck was "
 	line "strong! Please Duel me again "
 	line "sometime, OK?  Bye!"
-	done

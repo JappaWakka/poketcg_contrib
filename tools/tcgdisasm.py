@@ -266,7 +266,7 @@ z80_table = [
 	('db $fc', 2),                 # fc
 	('db $fd', 2),                 # fd
 	('cp ${:02x}', 1),             # fe
-	('debug_ret', 0),              # ff
+	('debug_nop', 0),              # ff
 ]
 
 bit_ops_table = [
@@ -304,12 +304,14 @@ bit_ops_table = [
 	"set 7, b",  "set 7, c",  "set 7, d",  "set 7, e",  "set 7, h",  "set 7, l",  "set 7, [hl]",  "set 7, a"     # $f8 - $ff
 ]
 
-unconditional_returns = [0xc9, 0xd9]
+unconditional_returns = [0xc9, 0xd9, 0xe7] # e7 begins a script, which is not handled by tcgdisasm
 absolute_jumps = [0xc3, 0xc2, 0xca, 0xd2, 0xda]
 call_commands = [0xcd, 0xc4, 0xcc, 0xd4, 0xdc, 0xdf, 0xef]
 relative_jumps = [0x18, 0x20, 0x28, 0x30, 0x38]
-unconditional_jumps = [0xc3, 0x18]
+unconditional_jumps = [0xc3, 0x18, 0xe9]
 
+# the event macros found in bank 3. They db a byte after calling so need to be treated specially
+event_macros = [(0xca8f,"set_event_value {}"),(0xcacd,"set_event_false {}"),(0xca84,"set_event_zero {}"), (0xcac2,"max_event_value {}"), (0xca69,"get_event_value {}")]
 
 def asm_label(address):
 	"""
@@ -740,11 +742,17 @@ class Disassembler(object):
 						opcode_output_str = bit_ops_table[opcode_arg_1]
 
 				elif opcode_nargs == 2:
+
+					# define opcode_output_str as None so we can substitute our own if a macro appears
+					opcode_output_str = None
+
 				# opcodes with a pointer as an argument
 					# format the two arguments into a little endian 16-bit pointer
 					local_target_offset = opcode_arg_2 << 8 | opcode_arg_1
+
 					# get the global offset of the pointer
 					target_offset = get_global_address(local_target_offset, bank_id)
+
 					# attempt to look for a matching label
 					if opcode_byte == 0xdf:
 					# bank1call
@@ -753,7 +761,23 @@ class Disassembler(object):
 					# regular call or jump instructions
 						target_label = self.find_label(local_target_offset, bank_id)
 
-					if opcode_byte in call_commands + absolute_jumps:
+					# handle the special event macros
+					found_event_macro = False
+					if opcode_byte == 0xcd:
+						for event_macro in event_macros:
+							if event_macro[0] == target_offset:
+								found_event_macro = True
+								current_event_macro = event_macro
+								event_var = "EVENT_FLAG_" + format(opcode_arg_3, "02X")
+								opcode_output_str = event_macro[1].format(event_var)
+
+								# we need to skip a byte since this macro takes one extra
+								opcode_nargs+=1
+								break
+
+
+					if not found_event_macro and opcode_byte in call_commands + absolute_jumps:
+
 						if target_label is None:
 						# if this is a call or jump opcode and the target label is not defined, create an undocumented label descriptor
 							target_label = "Func_%x" % target_offset
@@ -793,7 +817,8 @@ class Disassembler(object):
 								data_tables[local_target_offset]["definition"] = False
 
 					# format the label that was created into the opcode string
-					opcode_output_str = opcode_str.format(target_label)
+					if opcode_output_str is None:
+						opcode_output_str = opcode_str.format(target_label)
 
 				elif opcode_nargs == 3:
 				# macros with bank and pointer as an argument
@@ -910,7 +935,7 @@ if __name__ == "__main__":
 	ap = argparse.ArgumentParser()
 	ap.add_argument("-r", dest="rom", default="baserom.gbc")
 	ap.add_argument("-o", dest="filename", default="tcgdisasm_output.asm")
-	ap.add_argument("-s", dest="symfile", default="tcg.sym")
+	ap.add_argument("-s", dest="symfile", default="poketcg.sym")
 	ap.add_argument("-q", "--quiet", dest="quiet", action="store_true")
 	ap.add_argument("-a", "--append", dest="append", action="store_true")
 	ap.add_argument("-nw", "--no-write", dest="no_write", action="store_true")

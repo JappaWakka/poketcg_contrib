@@ -1108,12 +1108,12 @@ Text05bc: ; 4ab23 (12:6b23)
 	line "  A new journey has just begun...”"
 	done
 
-Text05bd: ; 4ad20 (12:6d20)
+ItsTheChallengeMachineText: ; 4ad20 (12:6d20)
 	text "It's the Challenge Machine,"
 	line "created by Dr. Mason!"
 	done
 
-Text05be: ; 4ad53 (12:6d53)
+Tech1MasterMedalExplanationText: ; 4ad53 (12:6d53)
 	text "De 8 Clubmeesters hebben elk een"
 	line "Meestermedaille in hun bezit."
 	line "Het geheim van de Decks van elke"
@@ -1125,7 +1125,7 @@ Text05be: ; 4ad53 (12:6d53)
 	line "andere Decks te bouwen!"
 	done
 
-Text05bf: ; 4ae4d (12:6e4d)
+Tech1AutoDeckMachineExplanationText: ; 4ae4d (12:6e4d)
 	text "You finally inherited the"
 	line "Legendary Pokémon Cards!"
 	line "Did you see the Legendary Auto"
@@ -1136,7 +1136,7 @@ Text05bf: ; 4ae4d (12:6e4d)
 	line "to a very powerful deck!"
 	done
 
-Text05c0: ; 4af26 (12:6f26)
+Tech1FewEnergyCardsText: ; 4af26 (12:6f26)
 	text "Sorry dat ik het zeg, maar volgens"
 	line "mij heb je niet veel Energiekaarten."
 	line "Een deck bouwen met zo weinig"
@@ -1144,17 +1144,17 @@ Text05c0: ; 4af26 (12:6f26)
 	line "Hier, neem deze!"
 	done
 
-Text05c1: ; 4afb0 (12:6fb0)
+Tech1ReceivedEnergyCardsText: ; 4afb0 (12:6fb0)
 	text "<RAMNAME> ontving wat"
 	line "Energiekaarten!"
 	done
 
-Text05c2: ; 4afd0 (12:6fd0)
+Tech1GoodbyeText: ; 4afd0 (12:6fd0)
 	text "Tot ziens!"
 	line "Veel succes!"
 	done
 
-Text05c3: ; 4afe5 (12:6fe5)
+Tech2LegendaryCardsExplanationText: ; 4afe5 (12:6fe5)
 	text "Are you also hoping to inherit"
 	line "the Legendary Pokémon Cards?"
 	line "If you want the Legendary Cards,"
@@ -1167,14 +1167,14 @@ Text05c3: ; 4afe5 (12:6fe5)
 	line "more about the Legendary Cards."
 	done
 
-Text05c4: ; 4b129 (12:7129)
+Tech2LegendaryCardsCongratsText: ; 4b129 (12:7129)
 	text "You finally inherited the"
 	line "Legendary Pokémon Cards!"
 	line "Amazing!"
 	line "Congratulations, <RAMNAME>!!!"
 	done
 
-Text05c5: ; 4b17c (12:717c)
+Tech3BoosterPackExplanationText: ; 4b17c (12:717c)
 	text "When you defeat a Club Member,"
 	line "you'll receive a Booster Pack."
 	line "Each Booster Pack has 10 cards."
@@ -1185,7 +1185,7 @@ Text05c5: ; 4b17c (12:717c)
 	line "so choose your opponents well."
 	done
 
-Text05c6: ; 4b274 (12:7274)
+Tech3LegendaryCardsCongratsText: ; 4b274 (12:7274)
 	text "Congratulations on inheriting "
 	line "the Legendary Pokémon Cards,"
 	line ""
@@ -1195,7 +1195,7 @@ Text05c6: ; 4b274 (12:7274)
 	line "you'll have a good time!"
 	done
 
-Text05c7: ; 4b323 (12:7323)
+Tech4ClubsExplanationText: ; 4b323 (12:7323)
 	text "Ik weet zeker dat je dit al weet,"
 	line "maar er zijn 8 Clubs: de Vecht-,"
 	line "Water-, Bliksem-, Gras-, Psychisch-,"
@@ -1204,7 +1204,7 @@ Text05c7: ; 4b323 (12:7323)
 	line "kaarten die bij hun Club horen."
 	done
 
-Text05c8: ; 4b3e2 (12:73e2)
+Tech4DefeatedTheGrandMastersText: ; 4b3e2 (12:73e2)
 	text "Amazing! You beat the 8 Club "
 	line "Masters!"
 	line "And you even defeated the"

@@ -26,6 +26,44 @@ else
 endc
 ENDM
 
+; runs SetEventValue with the next byte as the event, c as the new value
+set_event_value: MACRO
+	call SetStackEventValue
+	db \1
+ENDM
+
+; runs ZeroOutEventValue with the next byte as the event
+; functionally identical to set_event_zero but intended for single-bit events
+set_event_false: MACRO
+	call SetStackEventFalse
+	db \1
+ENDM
+
+; runs ZeroOutEventValue with the next byte as the event
+; functionally identical to set_event_false but intended for multi-bit events
+set_event_zero: MACRO
+	call SetStackEventZero
+	db \1
+ENDM
+
+; runs MaxOutEventValue with the next byte as the event
+max_event_value: MACRO
+	call MaxStackEventValue
+	db \1
+ENDM
+
+; runs GetEventValue with the next byte as the event. returns value in a
+get_event_value: MACRO
+	call GetStackEventValue
+	db \1
+ENDM
+
 ; the rst $38 handler is a single ret instruction
 ; probably used for testing purposes during development
-debug_ret EQUS "rst $38"
+debug_nop EQUS "rst $38"
+
+; Returns to the pointer in bc instead of where the stack was.
+retbc: MACRO
+	push bc
+	ret
+ENDM

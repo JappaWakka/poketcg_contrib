@@ -4,13 +4,13 @@ This is a fork of the disassembly of Pokémon TCG.
 
 It uses the following ROM as a base:
 
-* Pokémon Trading Card Game (U) [C][!].gbc  `md5: 219b2cc64e5a052003015d4bd4c622cd`
+- Pokémon Trading Card Game (U) [C][!].gbc `sha1: 0f8670a583255cff3e5b7ca71b5d7454d928fc48`
 
-To build, first download and install Cygwin (https://cygwin.com/install.html), then download RGBDS (https://github.com/bentley/rgbds/releases) and extract it to [CygwinInstallationDirectory]/usr/local/bin.
+To build, first download and install Cygwin (https://cygwin.com/install.html), then download RGBDS (https://github.com/gbdev/rgbds/releases) and extract it to [CygwinInstallationDirectory]/usr/local/bin.
 Copy the above ROM to [CygwinInstallationDirectory]/home/[YourUserName]/poketcg/ and rename it to "baserom.gbc".
 Open the Cygwin terminal, and type `cd poketcg` to change to the directory and then `make` to build the project.
 
-This will output a file named `tcg.gbc`.
+This will output a file named `poketcg.gbc`.
 
 Enter the `make` command everytime you make changes. Don't worry about an error from a function called `compare` when making modifications. It's there to show if the built tcg.gbc file differs from the baserom.gbc file and is mainly used when disassembling.
 
@@ -18,7 +18,7 @@ The `master` branch of this repo is for contributions to the official pret/poket
 The `english-mods` branch is for changes to the game (graphics, code, whatever).
 The `dutch-translation` branch contains the same changes as the english-mods branch but also contains my translations of the game into Dutch.
 
-# See Also
+## See also
 
 * Disassembly of [**Pokémon Red/Blue**][pokered]
 * Disassembly of [**Pokémon Yellow**][pokeyellow]
@@ -29,8 +29,9 @@ The `dutch-translation` branch contains the same changes as the english-mods bra
 * Disassembly of [**Pokémon Fire Red**][pokefirered]
 * Disassembly of [**Pokémon Emerald**][pokeemerald]
 * Disassembly of [**Pokémon Trading Card Game**][poketcg]
-* Discord: [**pret**][Discord]
-* irc: **irc.freenode.net** [**#pret**][irc]
+
+- **Discord:** [pret][discord]
+- **IRC:** [freenode#pret][irc]
 
 [pokered]: https://github.com/pret/pokered
 [pokeyellow]: https://github.com/pret/pokeyellow
