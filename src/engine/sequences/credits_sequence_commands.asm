@@ -86,7 +86,7 @@ CreditsSequenceCmd_LoadScene: ; 1d85a (7:585a)
 	xor a
 	ldh [hSCX], a
 	ldh [hSCY], a
-	farcall Func_1288c
+	farcall SetDefaultPalettes
 	pop de
 	pop bc
 	ld a, c
@@ -104,7 +104,7 @@ CreditsSequenceCmd_LoadBooster: ; 1d878 (7:5878)
 	xor a
 	ldh [hSCX], a
 	ldh [hSCY], a
-	farcall Func_1288c
+	farcall SetDefaultPalettes
 	pop de
 	pop bc
 	ld a, c
@@ -300,17 +300,17 @@ CreditsSequenceCmd_DisableLCD: ; 1d9db (7:59db)
 
 CreditsSequenceCmd_FadeIn: ; 1d9e1 (7:59e1)
 	call DisableLCD
-	call Set_WD_on
-	farcall Func_10af9
+	call SetWindowOn
+	farcall FadeScreenFromWhite
 	jp AdvanceCreditsSequenceCmdPtrBy2
 
 CreditsSequenceCmd_FadeOut: ; 1d9ee (7:59ee)
-	farcall Func_10ab4
+	farcall FadeScreenToWhite
 	call Func_3ca4
 	call EnableLCD
 	call DoFrameIfLCDEnabled
 	call DisableLCD
-	call Set_WD_off
+	call SetWindowOff
 	jp AdvanceCreditsSequenceCmdPtrBy2
 
 CreditsSequenceCmd_DrawRectangle: ; 1da04 (7:5a04)

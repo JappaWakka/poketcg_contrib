@@ -1509,11 +1509,11 @@ RetreatCostText: ; 3b76e (e:776e)
 	done
 
 Text0213: ; 3b77c (e:777c)
-	textfw3 "H", "O", "O", "F", "D", "L", "E", "T", "T", "E", "R", "S"
+	textfw3 "HOOFDLETTERS"
 	done
 
 Text0214: ; 3b799 (e:7799)
-	textfw3 "K", "L", "E", "I", "N", "E", " ", "L", "E", "T", "T", "E", "R", "S"
+	textfw3 "KLEINE LETTERS"
 	done
 
 FeetText: ; 3b7b6 (e:77b6)
@@ -1537,15 +1537,15 @@ DeckText: ; 3b7e8 (e:77e8)
 	done
 
 Text021a: ; 3b7ee (e:77ee)
-	hiragana "ひ", "ら", "が", "ナ"
+	hiragana "ひらがナ"
 	done
 
 Text021b: ; 3b7f4 (e:77f4)
-	textfw0 "カ", "タ", "カ", "ナ"
+	textfw0 "カタカナ"
 	done
 
 Text021c: ; 3b7f9 (e:77f9)
-	textfw3 "A", "B", "C"
+	textfw3 "ABC"
 	done
 
 EndText: ; 3b800 (e:7800)
@@ -1557,65 +1557,65 @@ WhatIsYourNameText: ; 3b805 (e:7805)
 	done
 
 Text021f: ; 3b819 (e:7819)
-	hiragana "あ", " ", "か", " ", "さ", " ", "た", " ", "な", " ", "は", " ", "ま", " ", "や", " ", "ら"
+	hiragana "あ か さ た な は ま や ら"
 	line ""
-	textfw0 "い", " ", "き", " ", "し", " ", "ち", " ", "に", " ", "ひ", " ", "み", " ", "ゆ", " ", "り"
+	textfw0 "い き し ち に ひ み ゆ り"
 	line ""
-	textfw0 "う", " ", "く", " ", "す", " ", "つ", " ", "ぬ", " ", "ふ", " ", "む", " ", "よ", " ", "る"
+	textfw0 "う く す つ ぬ ふ む よ る"
 	line ""
-	textfw0 "え", " ", "け", " ", "せ", " ", "て", " ", "ね", " ", "へ", " ", "め", " ", "わ", " ", "れ"
+	textfw0 "え け せ て ね へ め わ れ"
 	line ""
-	textfw0 "お", " ", "こ", " ", "そ", " ", "と", " ", "の", " ", "ほ", " ", "も", " ", "ん", " ", "ろ"
+	textfw0 "お こ そ と の ほ も ん ろ"
 	line ""
-	textfw0 "ゃ", " ", "ゅ", " ", "ょ", " ", "っ", " ", "を", " "
-	textfw3 "“", " ", "º(2)", " "
-	textfw0 "-(2)"
+	textfw0 "ゃ ゅ ょ っ を "
+	textfw3 "゛ ゜ "
+	textfw0 "—"
 	done
 
 Text0220: ; 3b886 (e:7886)
-	textfw0 "ア", " ", "カ", " ", "サ", " ", "タ", " ", "ナ", " ", "ハ", " ", "マ", " ", "ヤ", " ", "ラ"
+	textfw0 "ア カ サ タ ナ ハ マ ヤ ラ"
 	line ""
-	textfw0 "イ", " ", "キ", " ", "シ", " ", "チ", " ", "ニ", " ", "ヒ", " ", "ミ", " ", "ユ", " ", "リ"
+	textfw0 "イ キ シ チ ニ ヒ ミ ユ リ"
 	line ""
-	textfw0 "ウ", " ", "ク", " ", "ス", " ", "ツ", " ", "ヌ", " ", "フ", " ", "ム", " ", "ヨ", " ", "ル"
+	textfw0 "ウ ク ス ツ ヌ フ ム ヨ ル"
 	line ""
-	textfw0 "エ", " ", "ケ", " ", "セ", " ", "テ", " ", "ネ", " ", "ヘ", " ", "メ", " ", "ワ", " ", "レ"
+	textfw0 "エ ケ セ テ ネ ヘ メ ワ レ"
 	line ""
-	textfw0 "オ", " ", "コ", " ", "ソ", " ", "ト", " ", "ノ", " ", "ホ", " ", "モ", " ", "ン", " ", "ロ"
+	textfw0 "オ コ ソ ト ノ ホ モ ン ロ"
 	line ""
-	textfw0 "ャ", " ", "ュ", " ", "ョ", " ", "ッ", " ", "ヲ", " "
-	textfw3 "“", " ", "º(2)", " "
-	textfw0 "-(2)"
+	textfw0 "ャ ュ ョ ッ ヲ "
+	textfw3 "゛ ゜ "
+	textfw0 "—"
 	done
 
 PlayerNameKeyboardText: ; 3b8f2 (e:78f2)
-	textfw3 "A", " ", "B", " ", "C", " ", "D", " ", "E", " ", "F", " ", "G", " ", "H", " ", "I"
+	textfw3 "A B C D E F G H I"
 	line ""
-	textfw3 "J", " ", "K", " ", "L", " ", "M", " ", "N", " ", "O", " ", "P", " ", "Q", " ", "R"
+	textfw3 "J K L M N O P Q R"
 	line ""
-	textfw3 "S", " ", "T", " ", "U", " ", "V", " ", "W", " ", "X", " ", "Y", " ", "Z", " ", "!"
+	textfw3 "S T U V W X Y Z !"
 	line ""
-	textfw3 "a", " ", "b", " ", "c", " ", "d", " ", "e", " ", "f", " ", "g", " ", "h", " ", "i"
+	textfw3 "a b c d e f g h i"
 	line ""
-	textfw3 "j", " ", "k", " ", "l", " ", "m", " ", "n", " ", "o", " ", "p", " ", "q", " ", "r"
+	textfw3 "j k l m n o p q r"
 	line ""
-	textfw3 "s", " ", "t", " ", "u", " ", "v", " ", "w", " ", "x", " ", "y", " ", "z", " ", "-"
+	textfw3 "s t u v w x y z -"
 	done
 
 DeckNameKeyboardText: ; 3b97b (e:797b)
-	textfw3 "A", " ", "B", " ", "C", " ", "D", " ", "E", " ", "F", " ", "G", " ", "H", " ", "I"
+	textfw3 "A B C D E F G H I"
 	line ""
-	textfw3 "J", " ", "K", " ", "L", " ", "M", " ", "N", " ", "O", " ", "P", " ", "Q", " ", "R"
+	textfw3 "J K L M N O P Q R"
 	line ""
-	textfw3 "S", " ", "T", " ", "U", " ", "V", " ", "W", " ", "X", " ", "Y", " ", "Z", " ", " "
+	textfw3 "S T U V W X Y Z  "
 	line ""
-	textfw3 "a", " ", "b", " ", "c", " ", "d", " ", "e", " ", "f", " ", "g", " ", "h", " ", "i"
+	textfw3 "a b c d e f g h i"
 	line ""
-	textfw3 "j", " ", "k", " ", "l", " ", "m", " ", "n", " ", "o", " ", "p", " ", "q", " ", "r"
+	textfw3 "j k l m n o p q r"
 	line ""
-	textfw3 "s", " ", "t", " ", "u", " ", "v", " ", "w", " ", "x", " ", "y", " ", "z", " ", "!"
+	textfw3 "s t u v w x y z !"
 	line ""
-	textfw3 "-", " ", "+", " ", "'", " ", "”", " ", "?"
+	textfw3 "- + ' ” ?"
 	done
 	
 NewDeckText: ; 3ba03 (e:7a03)
@@ -1652,19 +1652,19 @@ ChosenAsDuelingDeckText: ; 3ba55 (e:7a55)
 	done
 
 Deck1Text: ; 3ba78 (e:7a78)
-	textfw0 "1", "·"
+	textfw0 "1・"
 	done
 
 Deck2Text: ; 3ba7b (e:7a7b)
-	textfw0 "2", "·"
+	textfw0 "2・"
 	done
 
 Deck3Text: ; 3ba7e (e:7a7e)
-	textfw0 "3", "·"
+	textfw0 "3・"
 	done
 
 Deck4Text: ; 3ba81 (e:7a81)
-	textfw0 "4", "·"
+	textfw0 "4・"
 	done
 
 ThereIsNoDeckHereText: ; 3ba84 (e:7a84)

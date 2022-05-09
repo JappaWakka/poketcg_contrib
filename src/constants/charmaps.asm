@@ -4,7 +4,7 @@
 	charmap "<RAMNUM>",  TX_RAM3
 
 ; ascii half-width font
-	charmap "é", "`"
+	charmap "”", "\""
 	charmap "♂", "$"
 	charmap "♀", "%"
 	charmap "”", "\""
@@ -23,6 +23,8 @@
 	charmap "í", $8c
 	charmap "ì", $8d
 	charmap "'", $8e
+	charmap "É", "@"
+	charmap "é", "`"
 
 fwcharmap: MACRO
 	charmap STRCAT("FW\1_", \2), \3
@@ -68,16 +70,17 @@ ENDM
 	fwcharmap 3, "★", $54
 	fwcharmap 3, "☆", $55
 	fwcharmap 3, "_", $56
-	fwcharmap 3, "■", $57
-	fwcharmap 3, "ºC", $58
-	fwcharmap 3, "“", $59
-	fwcharmap 3, "º", $5a
-	fwcharmap 3, "º(2)", $5b ; duplicate
-	fwcharmap 3, "̳ ", $5c
+	fwcharmap 3, "▪", $57
+	fwcharmap 3, "℃", $58
+	fwcharmap 3, "゛", $59
+	fwcharmap 3, "°", $5a
+	fwcharmap 3, "゜", $5b
+	fwcharmap 3, "ˍ", $5c
 	fwcharmap 3, "&", $5d
 	fwcharmap 3, ":", $5e
 	fwcharmap 3, "○", $5f
-	fwcharmap 3, "❄", $60
+	fwcharmap 3, "※", $60
+	fwcharmap 3, "о", $61
 	fwcharmap 3, "^", $62
 	fwcharmap 3, "♪", $63
 	fwcharmap 3, "a", $64
@@ -104,11 +107,13 @@ ENDM
 	fwcharmap 3, "z", $79
 	fwcharmap 3, "'", $7a
 	fwcharmap 3, "”", $7b
+	fwcharmap 3, "■", $7c
 	fwcharmap 3, "r", $8e
-	fwcharmap 3, "┌", $97
+	fwcharmap 3, "「", $97
 	fwcharmap 3, "＼", $98
-	fwcharmap 3, "┐", $99
+	fwcharmap 3, "」", $99
 	fwcharmap 3, "|", $9a
+	fwcharmap 3, "ˉ", $9b
 	fwcharmap 3, " ", $9c
 	fwcharmap 3, "!", $9d
 	fwcharmap 3, "#", $9f
@@ -118,7 +123,7 @@ ENDM
 	fwcharmap 3, ")", $a5
 	fwcharmap 3, "*", $a6
 	fwcharmap 3, "+", $a7
-	fwcharmap 3, "､", $a8
+	fwcharmap 3, "、", $a8
 	fwcharmap 3, "-", $a9
 	fwcharmap 3, "/", $ab
 	fwcharmap 3, "0", $ac
@@ -295,11 +300,11 @@ ENDM
 	fwcharmap 0, "ぷ", $54
 	fwcharmap 0, "ぺ", $55
 	fwcharmap 0, "ぽ", $56
-	fwcharmap 0, "あ(2)", $57
-	fwcharmap 0, "い(2)", $58
-	fwcharmap 0, "う(2)", $59
-	fwcharmap 0, "え(2)", $5a
-	fwcharmap 0, "お(2)", $5b
+	fwcharmap 0, "ぁ", $57
+	fwcharmap 0, "ぃ", $58
+	fwcharmap 0, "ぅ", $59
+	fwcharmap 0, "ぇ", $5a
+	fwcharmap 0, "ぉ", $5b
 	fwcharmap 0, "ゃ", $5c
 	fwcharmap 0, "ゅ", $5d
 	fwcharmap 0, "ょ", $5e
@@ -318,15 +323,20 @@ ENDM
 	fwcharmap 0, "9", $69
 	fwcharmap 0, "+", $6a
 	fwcharmap 0, "-", $6b
-	fwcharmap 0, "✕", $6c
+	fwcharmap 0, "×", $6c
 	fwcharmap 0, "/", $6d
 	fwcharmap 0, "!", $6e
 	fwcharmap 0, "?", $6f
 	fwcharmap 0, " ", $70
 	fwcharmap 0, "(", $71
 	fwcharmap 0, ")", $72
-	fwcharmap 0, "·", $77
-	fwcharmap 0, "-(2)", $78 ; duplicate
+	fwcharmap 0, "「", $73
+	fwcharmap 0, "」", $74
+	fwcharmap 0, "、", $75
+	fwcharmap 0, "。", $76
+	fwcharmap 0, "・", $77
+	fwcharmap 0, "—", $78
+	fwcharmap 0, "~", $79
 
 FW_SPACE EQU $70
 
