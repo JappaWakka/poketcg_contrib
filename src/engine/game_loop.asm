@@ -12,7 +12,7 @@ GameLoop:
 	ld a, [sSkipDelayAllowed]
 	ld [wSkipDelayAllowed], a
 	call DisableSRAM
-	ld a, 1
+	ld a, 0
 	ld [wUppercaseHalfWidthLetters], a
 	ei
 	farcall StubbedUnusedSaveDataValidation

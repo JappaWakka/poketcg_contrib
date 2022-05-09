@@ -2994,3 +2994,4 @@ TextOffsets:: ; 34000 (d:4000)
 	textpointer GrowlDescriptionCont                               ; Dutch description was too long
 	textpointer FlyDescriptionCont                                 ; Dutch description was too long
 	textpointer HypnosisAttackName                                 ; Made this because I don't want HypnosisName to be used as both a category and an attack name
+	

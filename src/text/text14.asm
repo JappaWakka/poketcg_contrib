@@ -39,4 +39,4 @@ RecycleDescription: ; 6495e (19:495e)
 	line "in your Weggooistapel on top of your"
 	line "deck."
 	done
-endr
+	
