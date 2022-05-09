@@ -460,7 +460,7 @@ NEXTU
 
 ; used in CheckIfCurrentDeckWasChanged to determine whether
 ; wCurDeckCards was changed from the original
-; deck it was based on 
+; deck it was based on
 wCurDeckCardChanges:: ; c590
 	ds DECK_SIZE + 1
 
@@ -1306,7 +1306,7 @@ wDefaultYesOrNo:: ; cd9a
 	ds $1
 
 ; used in _CopyCardNameAndLevel to keep track of the remaining space to copy the text
-wcd9b:: ; cd9b
+wCardNameLength:: ; cd9b
 	ds $1
 
 ; stores the total number of coins to flip
@@ -1327,7 +1327,10 @@ wCoinTossNumTossed:: ; cd9f
 
 	ds $5
 
-wcda5:: ; cda5
+wAIDuelVars::
+; saves the prizes that the AI already used Peek on
+; each bit corresponds to a Prize card
+wAIPeekedPrizes:: ; cda5
 	ds $1
 
 ; this is used by AI in order to determine whether
@@ -1391,8 +1394,12 @@ wAICardListRetreatBonus:: ; cdb0
 wAICardListEnergyBonus:: ; cdb2
 	ds $2
 
-wcdb4:: ; cdb4
+; used by the AI to track how viable
+; retreating the current Active card is
+wAIRetreatScore:: ; cdb4
 	ds $1
+
+wAIDuelVarsEnd::
 
 ; information about various properties of
 ; loaded attack for AI calculations
@@ -1489,7 +1496,7 @@ wAIExecuteProcessedAttack:: ; cdd9
 wcdda:: ; cdda
 	ds $1
 
-wcddb:: ; cddb
+wAITriedAttack:: ; cddb
 	ds $1
 
 wcddc:: ; cddc
@@ -1548,9 +1555,9 @@ wcdf9:: ; cdf9
 wcdfa:: ; cdfa
 	ds MAX_PLAY_AREA_POKEMON
 
-wce00:: ; ce00
+wAIFirstAttackDamage:: ; ce00
 	ds $1
-wce01:: ; ce01
+wAISecondAttackDamage:: ; ce01
 	ds $1
 
 ; whether AI's attack is damaging or not
@@ -1579,12 +1586,18 @@ wAINumberOfEnergyTransCards:: ; ce06
 ; used for storing weakness of Player's Arena card
 ; in AI routine dealing with Shift Pkmn Power.
 wAIDefendingPokemonWeakness:: ; ce06
+; number of Basic Pokemon cards when
+; setting up AI Boss deck
+wAISetupBasicPokemonCount:: ; ce06
 	ds $1
 
 wce07:: ; ce07
 	ds $1
 
 wce08:: ; ce08
+; number of Energy cards when
+; setting up AI Boss deck
+wAISetupEnergyCount:: ; ce08
 	ds $7
 
 wce0f:: ; ce0f
@@ -1598,7 +1611,7 @@ wAITrainerCardToPlay:: ; ce16
 wce17:: ; ce17
 	ds $1
 
-wce18:: ; ce18
+wAITrainerCardPhase:: ; ce18
 	ds $1
 
 ; parameters output by AI Trainer card logic routines
@@ -1635,7 +1648,7 @@ wCurrentAIFlags:: ; ce21
 ; $b is the bank where the functions associated to card or effect commands are.
 ; Its only purpose seems to be store this value to be read by TryExecuteEffectCommandFunction.
 ; possibly used in other contexts too
-wce22:: ; ce22
+wEffectFunctionsBank:: ; ce22
 	ds $1
 
 ; LoadCardGfx loads the card's palette here
@@ -2089,7 +2102,7 @@ wced6:: ; ced6
 wced7:: ; ced7
 	ds $1
 
-wced8:: ; ced8
+wCardListVisibleOffsetBackup:: ; ced8
 	ds $1
 
 ; stores how many different cards there are in a deck
@@ -2102,8 +2115,6 @@ wFilteredCardList:: ; ceda
 
 ; stores AI temporary hand card list
 wHandTempList:: ; ceda
-
-wceda:: ; ceda
 	ds DECK_SIZE
 
 ; terminator for wceda
@@ -2202,7 +2213,7 @@ wOwnedPhantomCardFlags:: ; cfe2
 wPlaysSfx:: ; cfe3
 	ds $1
 
-wcfe4:: ; cfe4
+wSelectedPrinterMenuItem:: ; cfe4
 	ds $1
 
 ; collection index of the first owned card
@@ -2232,7 +2243,7 @@ wNamingScreenQuestionPointer:: ; d002
 wNamingScreenBufferMaxLength:: ; d004
 	ds $1
 
-wd005:: ; d005
+wNamingScreenNumColumns:: ; d005
 	ds $1
 
 wNamingScreenCursorX:: ; d006
@@ -2342,13 +2353,18 @@ wTempPlayerDirection:: ; d0be
 wOverworldMode:: ; d0bf
 	ds $1
 
-wd0c0:: ; d0c0
+wOverworldModeBackup:: ; d0c0
 	ds $1
 
-wd0c1:: ; d0c1
+; overworld npc flag options
+; bit 0; auto-close textbox when finished talking to npc
+; bit 1; restore npc facing direction when finished talking to npc
+; bit 7; hide all npc sprites (for screens like pause menu, opening boosters, entering deck machine, etc.)
+wOverworldNPCFlags:: ; d0c1
 	ds $1
 
-wd0c2:: ; d0c2
+; only used with GAME_EVENT_DUEL, GAME_EVENT_BATTLE_CENTER, and GAME_EVENT_GIFT_CENTER
+wActiveGameEvent:: ; d0c2
 	ds $1
 
 ; stores the player's result in a duel (0: win, 1: loss, 2: ???, -1: transmission error?)
@@ -2372,28 +2388,25 @@ wCurrentNPCNameTx:: ; d0c8
 wDefaultObjectText:: ; d0ca
 	ds $2
 
-wd0cc:: ; d0cc
+wObjectPalettesCGBBackup:: ; d0cc
 	ds 8 palettes
 
-wd10c:: ; d10c
+wOBP0Backup:: ; d10c
 	ds $1
 
-wd10d:: ; d10d
+wOBP1Backup:: ; d10d
 	ds $1
 
 wd10e:: ; d10e
 	ds $1
 
-wd10f:: ; d10f
-	ds $1
-
-wd110:: ; d110
-	ds $1
+wReloadOverworldCallbackPtr:: ; d10f
+	ds $2
 
 wDefaultSong:: ; d111
 	ds $1
 
-wd112:: ; d112
+wSongOverride:: ; d112
 	ds $1
 
 wMatchStartTheme:: ; d113
@@ -2402,10 +2415,10 @@ wMatchStartTheme:: ; d113
 wMedalScreenYOffset:: ; d114
 	ds $1
 
-wd115:: ; d115
+wWhichMedal:: ; d115
 	ds $1
 
-wd116:: ; d116
+wMedalDisplayTimer:: ; d116
 	ds $1
 
 ; if FALSE, first booster being given
@@ -2454,7 +2467,7 @@ wBGMapHeight:: ; d130
 wCurTilemap:: ; d131
 	ds $1
 
-wd132:: ; d132
+wCurMapSGBPals:: ; d132
 	ds $1
 
 UNION
@@ -2526,13 +2539,13 @@ wDecompressionBuffer:: ; d23e
 
 ENDU
 
-wd28e:: ; d28e
+wDecompressionRowWidth:: ; d28e
 	ds $1
 
-wd28f:: ; d28f
+wCurMapInitialPalette:: ; d28f
 	ds $1
 
-wd290:: ; d290
+wCurMapPalette:: ; d290
 	ds $1
 
 wd291:: ; d291
@@ -2547,13 +2560,13 @@ wWriteBGMapToSRAM:: ; d292
 wd293:: ; d293
 	ds $1
 
-wd294:: ; d294
+wTempBGP:: ; d294
 	ds $1
 
-wd295:: ; d295
+wTempOBP0:: ; d295
 	ds $1
 
-wd296:: ; d296
+wTempOBP1:: ; d296
 	ds $1
 
 ; temporarily holds the palettes from
@@ -2628,7 +2641,7 @@ wPlayerCurrentlyMoving:: ; d335
 wPlayerSpriteIndex:: ; d336
 	ds $1
 
-wd337:: ; d337
+wPlayerSpriteBaseAnimation:: ; d337
 	ds $1
 
 wd338:: ; d338
@@ -2909,7 +2922,10 @@ wDuelAnimDamage:: ; d4b1
 wd4b3:: ; d4b3
 	ds $1
 
-wd4b4:: ; d4b4
+; stores the character symbols of some
+; value that was converted to decimal
+; through ConvertWordToNumericalDigits
+wDecimalChars:: ; d4b4
 	ds $3
 
 wd4b7:: ; d4b7
@@ -3108,7 +3124,7 @@ wTitleScreenSprites:: ; d629
 	ds $1
 
 ; pointer to commands used by opening and credits sequence
-; (see OpeningSequence and CreditsSequence)
+; (see IntroSequence and CreditsSequence)
 wSequenceCmdPtr:: ; d631
 	ds $2
 
@@ -3118,7 +3134,7 @@ wSequenceCmdPtr:: ; d631
 wSequenceDelay:: ; d633
 	ds $1
 
-wOpeningSequencePalsNeedUpdate:: ; d634
+wIntroSequencePalsNeedUpdate:: ; d634
 	ds $1
 
 wd635:: ; d635

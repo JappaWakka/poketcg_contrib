@@ -15,10 +15,11 @@ This will output a file named "poketcg.gbc".
 ## See also
 
 - **Discord:** [pret][discord]
-- **IRC:** [freenode#pret][irc]
+- **IRC:** [libera#pret][irc]
 
 Other disassembly projects:
 
+- [**Pokémon TCG 2**][poketcg2]
 - [**Pokémon Red/Blue**][pokered]
 - [**Pokémon Yellow**][pokeyellow]
 - [**Pokémon Gold/Silver**][pokegold]
@@ -28,6 +29,7 @@ Other disassembly projects:
 - [**Pokémon FireRed**][pokefirered]
 - [**Pokémon Emerald**][pokeemerald]
 
+[poketcg2]: https://github.com/pret/poketcg2
 [pokered]: https://github.com/pret/pokered
 [pokeyellow]: https://github.com/pret/pokeyellow
 [pokegold]: https://github.com/pret/pokegold
@@ -37,4 +39,4 @@ Other disassembly projects:
 [pokefirered]: https://github.com/pret/pokefirered
 [pokeemerald]: https://github.com/pret/pokeemerald
 [discord]: https://discord.gg/d5dubZ3
-[irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
+[irc]: https://web.libera.chat/?#pret
