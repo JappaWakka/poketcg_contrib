@@ -212,7 +212,7 @@ Text0034: ; 365c7 (d:65c7)
 	done
 
 PokemonsAttackText: ; 365d8 (d:65d8)
-	text "<RAMTEXT> deed"
+	text "<RAMTEXT> viel aan met"
 	line ""
 	text "<RAMTEXT>!"
 	done

@@ -1123,7 +1123,7 @@ Turn2DrMason2PracticeDuelText: ; 3ab08 (e:6b08)
 	line "om Waterval te gebruiken."
 	line "Je moet een Psychische Energiekaart"
 	line "aan Seaking hechten."
-	line "<COLORLESS> betekent welke Energiekaart."
+	line "<COLORLESS> betekent welke Energiekaart"
 	line "dan ook."
 	line "Nu kun je Waterval gebruiken."
 	line "Bewaar de Water Energiekaart"
@@ -1261,7 +1261,7 @@ SamTurn4DrMason2PracticeDuelText: ; 3b2ec (e:72ec)
 	text "Druk hier op SELECT om de"
 	line "gegevens van de Pokémon te bekijken."
 	line "Het is belangrijk om je kaarten te"
-	line "kennen en hoe je Pokémon"
+	line "kennen en te weten hoe je Pokémon"
 	line "eraan toe is."
 	done
 

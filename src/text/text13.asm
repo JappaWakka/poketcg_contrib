@@ -467,7 +467,8 @@ BalloonName: ; 61f38 (18:5f38)
 
 Jigglypuff1Description: ; 61f41 (18:5f41)
 	text "Wanneer zijn enorme ogen oplichten,"
-	line "mysterieus kalmerende melodie die"
+	line "zingt hij een mysterieus"
+	line "kalmerende melodie die"
 	line "zijn vijanden in slaap brengt."
 	done
 
@@ -1155,7 +1156,7 @@ PokeBallName: ; 63f2e (18:7f2e)
 
 PokeBallDescription: ; 63f39 (18:7f39)
 	text "Gooi een munt op. Als het kop is,"
-	line "mag je in je deck zoeken naar een"
+	line "zoek dan in je deck naar een"
 	line "Basis-Pokémon of een Evolutiekaart."
 	line "Laat die kaart aan je tegenstander"
 	line "zien en neem hem daarna in je Hand."
@@ -1215,13 +1216,13 @@ DefenderName: ; 64274 (19:4274)
 	done
 
 DefenderDescription: ; 6427e (19:427e)
-	text "Hecht Verdediger aan 1 van je Pokémon."
-	line "Gooi Verdediger aan het einde van je"
-	line "tegenstander's volgende beurt weg. De"
-	line "schade die door Aanvallen aan deze"
-	line "Pokémon wordt gedaan wordt verminderd"
-	line "met 20 (nadat Zwakte en Weerstand"
-	line "zijn toegepast)."
+	text "Hecht Verdediger aan 1 van je Poké"
+	line "mon. Gooi Verdediger aan het einde"
+	line "van je tegenstander's volgende beurt"
+	line "weg. De schade die door Aanvallen aan"
+	line "deze Pokémon wordt gedaan wordt ver-"
+	line "minderd met 20 (nadat Zwakte en"
+	line "Weerstand zijn toegepast)."
 	done
 
 ItemFinderName: ; 64342 (19:4342)

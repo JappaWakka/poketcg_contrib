@@ -404,8 +404,9 @@ FlareonsFlamethrowerDescription: ; 5ac46 (16:6c46)
 
 Flareon2Description: ; 5ac91 (16:6c91)
 	text "Als hij thermische energie in zijn"
-	line "lichaam opslaat, kan zijn temperatuur"
-	line "oplopen tot boven de 900 graden."
+	line "lichaam opslaat, kan zijn"
+	line "temperatuur oplopen tot"
+	line "boven de 900 graden."
 	done
 
 MoltresName: ; 5aced (16:6ced)
