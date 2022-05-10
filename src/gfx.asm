@@ -2,6 +2,10 @@ INCLUDE "macros.asm"
 INCLUDE "constants.asm"
 
 SECTION "Gfx Fonts", ROMX
+HalfWidthFont::
+INCBIN "gfx/fonts/half_width.1bpp"
+
+SECTION "Gfx 1", ROMX
 
 Fonts::
 
@@ -14,30 +18,21 @@ INCBIN "gfx/fonts/full_width/2_kanji3.1bpp"
 INCBIN "gfx/fonts/full_width/3.1bpp"
 INCBIN "gfx/fonts/full_width/4.1bpp"
 
-HalfWidthFont::
-INCBIN "gfx/fonts/half_width.1bpp"
-
 SymbolsFont::
 INCBIN "gfx/fonts/symbols.2bpp"
-.end::
-SymbolsFontEnd::
-
-SECTION "Gfx 1", ROMX
 
 DuelGraphics::
 
-DuelCardHeaderGraphics:: ; 76ce8 (1d:6ce8)
+DuelCardHeaderGraphics::
 INCBIN "gfx/duel/card_headers.2bpp"
 
 DuelDmgSgbSymbolGraphics::
 INCBIN "gfx/duel/dmg_sgb_symbols.2bpp"
 
 DuelCgbSymbolGraphics::
-INCBIN "gfx/duel/cgb_symbols.2bpp", $0, $808
+INCBIN "gfx/duel/cgb_symbols.2bpp"
 
 SECTION "Gfx 2", ROMX
-
-INCBIN "gfx/duel/cgb_symbols.2bpp", $808, $8
 
 DuelOtherGraphics::
 INCBIN "gfx/duel/other.2bpp"

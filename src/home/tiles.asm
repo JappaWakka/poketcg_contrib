@@ -337,7 +337,7 @@ LoadDuelCoinTossResultTiles:
 LoadSymbolsFont:
 	ld hl, SymbolsFont - $4000
 	ld de, v0Tiles2 ; destination
-	ld b, (SymbolsFont.end - SymbolsFont) / TILE_SIZE ; number of tiles
+	ld b, (DuelCardHeaderGraphics - SymbolsFont) / TILE_SIZE ; number of tiles
 ;	fallthrough
 
 ; if hl ≤ $3fff
