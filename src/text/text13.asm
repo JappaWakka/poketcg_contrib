@@ -1217,7 +1217,7 @@ DefenderName: ; 64274 (19:4274)
 	done
 
 DefenderDescription: ; 6427e (19:427e)
-	text "Hecht Verdediger aan 1 van je Poké"
+	text "Hecht Verdediger aan 1 van je Poké-"
 	line "mon. Gooi Verdediger aan het einde"
 	line "van je tegenstander's volgende beurt"
 	line "weg. De schade die door Aanvallen"
