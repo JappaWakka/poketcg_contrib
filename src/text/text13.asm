@@ -509,7 +509,8 @@ LullabyName: ; 6213c (18:613c)
 
 Jigglypuff3Description: ; 62145 (18:6145)
 	text "Wanneer zijn enorme ogen oplichten,"
-	line "mysterieus kalmerende melodie die"
+	line "zingt hij een mysterieus"
+	line "kalmerende melodie die"
 	line "zijn vijanden in slaap brengt."
 	done
 
@@ -1219,9 +1220,9 @@ DefenderDescription: ; 6427e (19:427e)
 	text "Hecht Verdediger aan 1 van je Poké"
 	line "mon. Gooi Verdediger aan het einde"
 	line "van je tegenstander's volgende beurt"
-	line "weg. De schade die door Aanvallen aan"
-	line "deze Pokémon wordt gedaan wordt ver-"
-	line "minderd met 20 (nadat Zwakte en"
+	line "weg. De schade die door Aanvallen"
+	line "aan deze Pokémon wordt gedaan wordt"
+	line "verminderd met 20 (nadat Zwakte en"
 	line "Weerstand zijn toegepast)."
 	done
 
