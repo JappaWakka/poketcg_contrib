@@ -19,15 +19,12 @@ INCBIN "gfx/fonts/half_width.1bpp"
 
 SymbolsFont::
 INCBIN "gfx/fonts/symbols.2bpp"
-
+.end::
 SymbolsFontEnd::
 
 SECTION "Gfx 1", ROMX
 
 DuelGraphics::
-
-SymbolsDuel:: ; 76968 (1d:6968)
-INCBIN "gfx/fonts/symbols.2bpp"
 
 DuelCardHeaderGraphics:: ; 76ce8 (1d:6ce8)
 INCBIN "gfx/duel/card_headers.2bpp"

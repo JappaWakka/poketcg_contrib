@@ -26,3 +26,5 @@
 *disasm_output.asm
 *.psd
 *.clip
+palfix.py
+png.py

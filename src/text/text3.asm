@@ -1613,7 +1613,7 @@ IsCrazyAboutPokemonAndPokemonCardCollectingText: ; 3efc3 (f:6fc3)
 	line " ”De Legendarische Pokémonkaarten,"
 	line "  de extreem zeldzame en krachtige"
 	line "  kaarten in het bezit van de beste"
-	line "  Pokémon Ruilkaarstspel spelers:"
+	line "  Pokémon Ruilkaartspel-spelers:"
 	line "  De Grootmeesters, zijn op zoek"
 	line "  naar iemand die het waard is"
 	line "  om de legende over te nemen!”"
