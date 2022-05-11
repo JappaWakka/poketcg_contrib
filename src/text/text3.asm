@@ -120,7 +120,7 @@ EmptyLineText: ; 3bd42 (e:7d42)
 	done
 
 BoosterPackTitleText: ; 3bd55 (e:7d55)
-	text "Booster Pakje"
+	text "Booster-pakje"
 	done
 
 Item1ColosseumText: ; 3bd63 (e:7d63)
@@ -164,34 +164,34 @@ DeckSaveMachineText: ; 3bdea (e:7dea)
 	done
 
 SaveADeckText: ; 3be02 (e:7e02)
-	text "Save a Deck"
+	text "Sla een Deck op"
 	done
 
 DeleteADeckText: ; 3be0f (e:7e0f)
-	text "Delete a Deck"
+	text "Verwijder een Deck"
 	done
 
 BuildADeckText: ; 3be1e (e:7e1e)
-	text "Build a Deck"
+	text "Bouw een Deck"
 	done
 
 ChooseADeckToSaveText: ; 3be2c (e:7e2c)
-	text "Choose a Deck to Save."
+	text "Kies een Deck om op te slaan."
 	done
 
 Text0261: ; 3be44 (e:7e44)
-	text "You may only Save 60 Decks."
-	line "Please Delete a Deck first."
+	text "Je mag maar 60 Decks opslaan."
+	line "Verwijder een ander Deck."
 	done
 
 Text0262: ; 3be7d (e:7e7d)
-	text "for"
+	text "voor"
 	done
 
 SavedTheConfigurationForText: ; 3be82 (e:7e82)
-	text "Saved the configuration for"
+	text "Deck-constructie opgeslagen"
 	line ""
-	text "<RAMTEXT>! "
+	text "voor <RAMTEXT>! "
 	done
 
 Text0264: ; 3bea4 (e:7ea4)
