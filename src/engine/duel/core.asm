@@ -7887,12 +7887,12 @@ _TossCoin:
 .asm_723c
 	call Func_3b21
 	ld d, DUEL_ANIM_COIN_TOSS2
-	ld e, $0 ; heads
+	ld e, $0 ; tails
 	call UpdateRNGSources
 	rra
 	jr c, .got_result
 	ld d, DUEL_ANIM_COIN_TOSS1
-	ld e, $1 ; tails
+	ld e, $1 ; heads
 
 .got_result
 ; already decided on coin toss result,
@@ -7918,12 +7918,12 @@ _TossCoin:
 
 .done_toss_anim
 	ld b, DUEL_ANIM_COIN_HEADS
-	ld c, $34 ; tile for circle
+	ld c, $34 ; tile for cross
 	ld a, e
 	or a
 	jr z, .show_result
 	ld b, DUEL_ANIM_COIN_TAILS
-	ld c, $30 ; tile for cross
+	ld c, $30 ; tile for circle
 	ld hl, wCoinTossNumHeads
 	inc [hl]
 
