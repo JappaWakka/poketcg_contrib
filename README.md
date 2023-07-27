@@ -2,7 +2,7 @@
 
 This is a fork of the disassembly of Pokémon TCG.
 
-It uses the following ROM as a base:
+It builds the following ROM:
 
 - Pokémon Trading Card Game (U) [C][!].gbc `sha1: 0f8670a583255cff3e5b7ca71b5d7454d928fc48`
 
@@ -20,16 +20,7 @@ The `dutch-translation` branch contains the same changes as the english-mods bra
 
 ## See also
 
-* Disassembly of [**Pokémon Red/Blue**][pokered]
-* Disassembly of [**Pokémon Yellow**][pokeyellow]
-* Disassembly of [**Pokémon Gold**][pokegold]
-* Disassembly of [**Pokémon Crystal**][pokecrystal]
-* Disassembly of [**Pokémon Pinball**][pokepinball]
-* Disassembly of [**Pokémon Ruby**][pokeruby]
-* Disassembly of [**Pokémon Fire Red**][pokefirered]
-* Disassembly of [**Pokémon Emerald**][pokeemerald]
-* Disassembly of [**Pokémon Trading Card Game**][poketcg]
-
+- [**Symbols**][symbols]
 - **Discord:** [pret][discord]
 - **IRC:** [freenode#pret][irc]
 
@@ -42,5 +33,6 @@ The `dutch-translation` branch contains the same changes as the english-mods bra
 [pokefirered]: https://github.com/pret/pokefirered
 [pokeemerald]: https://github.com/pret/pokeemerald
 [poketcg]: https://github.com/pret/poketcg
-[Discord]: https://discord.gg/d5dubZ3
-[irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
+[symbols]: https://github.com/pret/poketcg/tree/symbols
+[discord]: https://discord.gg/d5dubZ3
+[irc]: https://web.libera.chat/?#pret

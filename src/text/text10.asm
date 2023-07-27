@@ -611,7 +611,7 @@ VenusaursMegaDrainDescriptionCont: ; 578b7 (15:78b7)
 	line "allemaal."
 	done
 
-Venusaur1Description: ; 578fd (15:78fd)
+VenusaurLv64Description: ; 578fd (15:78fd)
 	text "De bloem op zijn rug vangt zonlicht"
 	line "op. Het zonlicht wordt dan"
 	line "geabsorbeerd en gebruikt voor"
@@ -640,7 +640,7 @@ SolarBeamName: ; 57a51 (15:7a51)
 	text "Zonnestraal"
 	done
 
-Venusaur2Description: ; 57a5c (15:7a5c)
+VenusaurLv67Description: ; 57a5c (15:7a5c)
 	text "De plant op zijn rug bloeit als het"
 	line "zonne-energie absorbeert. Hij blijft"
 	line "in beweging op zoek naar zonlicht."
@@ -1508,7 +1508,7 @@ VineName: ; 59bcd (16:5bcd)
 	text "Klimplant-"
 	done
 
-Tangela1Description: ; 59bd3 (16:5bd3)
+TangelaLv8Description: ; 59bd3 (16:5bd3)
 	text "Zijn hele lichaam is gewikkeld in"
 	line "brede strengen die veel op zeewier"
 	line "lijken. Als hij loopt, schudden"
@@ -1519,7 +1519,7 @@ PoisonWhipName: ; 59c3a (16:5c3a)
 	text "Gifzweepslag"
 	done
 
-Tangela2Description: ; 59c47 (16:5c47)
+TangelaLv12Description: ; 59c47 (16:5c47)
 	text "Zijn identiteit wordt verhuld door"
 	line "grote hoeveelheden dikke blauwe"
 	line "strengen. Er wordt gezegd dat de"
@@ -1572,5 +1572,3 @@ PinsirDescription: ; 59d9f (16:5d9f)
 	line "slingert hij hem in het rond"
 	line "en gooit hij hem hard neer."
 	done
-
-	ds $21

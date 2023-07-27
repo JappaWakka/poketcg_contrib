@@ -120,7 +120,7 @@ FireBlastDescription: ; 5a23d (16:623d)
 	line "attack."
 	done
 
-Ninetales1Description: ; 5a28a (16:628a)
+NinetalesLv32Description: ; 5a28a (16:628a)
 	text "Very smart and very vengeful."
 	line "Grabbing one of its many tails could"
 	line "result in a 1,000-year curse."
@@ -155,7 +155,7 @@ DancingEmbersDescription: ; 5a441 (16:6441)
 	line "damage times the number of heads."
 	done
 
-Ninetales2Description: ; 5a486 (16:6486)
+NinetalesLv35Description: ; 5a486 (16:6486)
 	text "According to an enduring legend,"
 	line "9 noble heroes were united and"
 	line "reincarnated as this."
@@ -213,7 +213,7 @@ LegendaryName: ; 5a689 (16:6689)
 	text "Legendarische"
 	done
 
-Arcanine1Description: ; 5a694 (16:6694)
+ArcanineLv34Description: ; 5a694 (16:6694)
 	text "Een Pokémon die al een lange tijd"
 	line "bewonderd wordt om zijn schoonheid."
 	line "Wanneer hij rent, lijkt het bijna"
@@ -235,7 +235,7 @@ TakeDownDescription: ; 5a744 (16:6744)
 	line "zichzelf."
 	done
 
-Arcanine2Description: ; 5a768 (16:6768)
+ArcanineLv45Description: ; 5a768 (16:6768)
 	text "Een Pokémon die al een lange tijd"
 	line "bewonderd wordt om zijn schoonheid."
 	line "Hij rent sierlijk, alsof hij"
@@ -316,7 +316,7 @@ SpitfireName: ; 5aa09 (16:6a09)
 	text "Vuurspuwende"
 	done
 
-Magmar1Description: ; 5aa13 (16:6a13)
+MagmarLv24Description: ; 5aa13 (16:6a13)
 	text "Zijn lijft gloeit altijd met een"
 	line "oranje gloed waardoor hij zich"
 	line "uitstekend tussen de vlammen"
@@ -335,7 +335,7 @@ MagmarsSmokescreenDescription: ; 5aa7b (16:6a7b)
 	line "munt is, doet die Aanval niets."
 	done
 
-Magmar2Description: ; 5ab07 (16:6b07)
+MagmarLv31Description: ; 5ab07 (16:6b07)
 	text "Te vinden bij de monden van vulkanen"
 	line "en erg moeilijk in het vizier te"
 	line "krijgen. Deze Pokémon is maar in"
@@ -389,7 +389,7 @@ FlareonsRageDescription: ; 5ab99 (16:6b99)
 	line "op Flareon."
 	done
 
-Flareon1Description: ; 5abe1 (16:6be1)
+FlareonLv22Description: ; 5abe1 (16:6be1)
 	text "Het heeft een stookruimte in zijn"
 	line "lichaam. Hij ademt in, waarna hij"
 	line "vuur uitademt met een temperatuur"
@@ -402,7 +402,7 @@ FlareonsFlamethrowerDescription: ; 5ac46 (16:6c46)
 	line "Energiekaart weggooien."
 	done
 
-Flareon2Description: ; 5ac91 (16:6c91)
+FlareonLv28Description: ; 5ac91 (16:6c91)
 	text "Als hij thermische energie in zijn"
 	line "lichaam opslaat, kan zijn"
 	line "temperatuur oplopen tot"
@@ -429,7 +429,7 @@ DiveBombName: ; 5ada6 (16:6da6)
 	text "Dive Bomb"
 	done
 
-Moltres1Description: ; 5adb1 (16:6db1)
+MoltresLv35Description: ; 5adb1 (16:6db1)
 	text "Known as the legendary bird of fire."
 	line "Every flap of its wings creates a"
 	line "dazzling flash of flames."
@@ -448,7 +448,7 @@ FiregiverDescription: ; 5ae1e (16:6e1e)
 	line "deck afterward."
 	done
 
-Moltres2Description: ; 5aed3 (16:6ed3)
+MoltresLv37Description: ; 5aed3 (16:6ed3)
 	text "A legendary bird Pokémon. As it"
 	line "flaps its flaming wings, even the"
 	line "night sky will turn red."
@@ -1085,7 +1085,7 @@ BubbleJetName: ; 5c70b (17:470b)
 	text "Bubbelstraal-"
 	done
 
-Vaporeon1Description: ; 5c717 (17:4717)
+VaporeonLv29Description: ; 5c717 (17:4717)
 	text "Zijn celstructuur is vergelijkbaar"
 	line "met watermoleculen. Hij smelt weg"
 	line "en wordt onzichtbaar in water."
@@ -1101,7 +1101,7 @@ VaporeonsWaterGunDescription: ; 5c77b (17:477b)
 	line "dan 20 schade toevoegen."
 	done
 
-Vaporeon2Description: ; 5c829 (17:4829)
+VaporeonLv42Description: ; 5c829 (17:4829)
 	text "Leeft dicht bij het water. Op zijn"
 	line "lange staart zit een vin die vaak"
 	line "verward wordt met die van een"
@@ -1191,7 +1191,7 @@ FreezeName: ; 5cc5b (17:4c5b)
 	text "Freeze"
 	done
 
-Articuno1Description: ; 5cc63 (17:4c63)
+ArticunoLv35Description: ; 5cc63 (17:4c63)
 	text "A legendary bird Pokémon that is"
 	line "said to appear to doomed people who"
 	line "are lost in icy mountains."
@@ -1222,7 +1222,7 @@ IceBreathDescription: ; 5cd63 (17:4d63)
 	line "happen.)"
 	done
 
-Articuno2Description: ; 5ce35 (17:4e35)
+ArticunoLv37Description: ; 5ce35 (17:4e35)
 	text "A legendary bird Pokémon. It freezes"
 	line "water that is contained in winter"
 	line "air and makes it snow."
@@ -1250,7 +1250,7 @@ MouseName: ; 5ceeb (17:4eeb)
 	text "Muis-"
 	done
 
-Pikachu1Description: ; 5cef2 (17:4ef2)
+PikachuLv12Description: ; 5cef2 (17:4ef2)
 	text "Als een aantal van deze Pokémon"
 	line "zich verzamelt, kan hun"
 	line "elektriciteit bliksemstormen"
@@ -1269,7 +1269,7 @@ SparkDescription: ; 5cf4e (17:4f4e)
 	line "toe op de Pokémon op de Bank.)"
 	done
 
-Pikachu2Description: ; 5cfeb (17:4feb)
+PikachuLv14Description: ; 5cfeb (17:4feb)
 	text "Als meerdere van deze Pokémon"
 	line "samenkomen, kan hun"
 	line "elektriciteit zich opstapelen"
@@ -1298,7 +1298,7 @@ ThundershockName: ; 5d12f (17:512f)
 	text "Donderschok"
 	done
 
-Pikachu3Description: ; 5d13d (17:513d)
+PikachuLv16Description: ; 5d13d (17:513d)
 	text "Als meerdere van deze Pokémon"
 	line "samenkomen, kan hun"
 	line "elektriciteit zich opstapelen"

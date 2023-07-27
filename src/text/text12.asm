@@ -20,7 +20,7 @@ RaichusThunderDescription: ; 5d3ae (17:53ae)
 	line "doet Raichu 30 schade aan zichzelf."
 	done
 
-Raichu1Description: ; 5d3e7 (17:53e7)
+RaichuLv40Description: ; 5d3e7 (17:53e7)
 	text "Zijn lange staart fungeert als een"
 	line "aarde om zichzelf te beschermen"
 	line "tegen zijn eigen"
@@ -41,7 +41,7 @@ GigashockDescription: ; 5d447 (17:5447)
 	line "doe dan aan elk van deze de schade."
 	done
 
-Raichu2Description: ; 5d531 (17:5531)
+RaichuLv45Description: ; 5d531 (17:5531)
 	text "Zijn lange staart fungeert als een"
 	line "aarde om zichzelf te beschermen"
 	line "tegen zijn eigen"
@@ -68,7 +68,7 @@ MagnetName: ; 5d636 (17:5636)
 	text "Magneet-"
 	done
 
-Magnemite1Description: ; 5d63e (17:563e)
+MagnemiteLv13Description: ; 5d63e (17:563e)
 	text "Gebruikt anti-zwaartekracht om"
 	line "in de lucht te blijven. Verschijnt"
 	line "zonder waarschuwing en gebruikt"
@@ -87,7 +87,7 @@ MagneticStormDescription: ; 5d6b0 (17:56b0)
 	line "wijze verdeeld."
 	done
 
-Magnemite2Description: ; 5d70f (17:570f)
+MagnemiteLv15Description: ; 5d70f (17:570f)
 	text "Hij is geboren met het vermogen om"
 	line "de zwaartekracht tegen te gaan. Hij"
 	line "zweeft in de lucht op krachtige"
@@ -106,7 +106,7 @@ Magneton1sSelfdestructDescription: ; 5d778 (17:5778)
 	line "doet 80 schade aan zichzelf."
 	done
 
-Magneton1Description: ; 5d80e (17:580e)
+MagnetonLv28Description: ; 5d80e (17:580e)
 	text "Wordt gevormd door verschillende"
 	line "met elkaar verbonden Magnemites."
 	line "Verschijnt vaak als de"
@@ -133,7 +133,7 @@ Magneton2sSelfdestructDescription: ; 5d907 (17:5907)
 	line "doet 100 schade aan zichzelf."
 	done
 
-Magneton2Description: ; 5d99e (17:599e)
+MagnetonLv35Description: ; 5d99e (17:599e)
 	text "Wordt gevormd door verschillende"
 	line "met elkaar verbonden Magnemites."
 	line "Verschijnt vaak als de"
@@ -169,7 +169,7 @@ EnergySpikeDescription: ; 5da80 (17:5a80)
 	line "afterward."
 	done
 
-Electrode1Description: ; 5daeb (17:5aeb)
+ElectrodeLv35Description: ; 5daeb (17:5aeb)
 	text "Stores electrical energy inside its"
 	line "body. Even the slightest shock could"
 	line "trigger a huge explosion."
@@ -187,7 +187,7 @@ ChainLightningDescription: ; 5db60 (17:5b60)
 	line "Pokémon (including your own)."
 	done
 
-Electrode2Description: ; 5dbfe (17:5bfe)
+ElectrodeLv42Description: ; 5dbfe (17:5bfe)
 	text "It stores electrical energy under"
 	line "very high pressure. It often"
 	line "explodes with little or no"
@@ -229,7 +229,7 @@ ElectricName: ; 5ddec (17:5dec)
 	text "Elektrische"
 	done
 
-Electabuzz1Description: ; 5ddf6 (17:5df6)
+ElectabuzzLv20Description: ; 5ddf6 (17:5df6)
 	text "Een wilde Pokémon met een kort"
 	line "lontje. Hij kan kleuren"
 	line "onderscheiden en hij vindt de"
@@ -249,7 +249,7 @@ ThunderpunchDescription: ; 5de63 (17:5e63)
 	line "zichzelf."
 	done
 
-Electabuzz2Description: ; 5def9 (17:5ef9)
+ElectabuzzLv35Description: ; 5def9 (17:5ef9)
 	text "Hoewel hij gewoonlijk te vinden is"
 	line "in de buurt van energiecentrales,"
 	line "kan hij afdwalen en enorme stroom-"
@@ -273,7 +273,7 @@ LightningName: ; 5dfaf (17:5faf)
 	text "Lightning"
 	done
 
-Jolteon1Description: ; 5dfba (17:5fba)
+JolteonLv24Description: ; 5dfba (17:5fba)
 	text "A sensitive Pokémon that easily"
 	line "becomes sad or angry. Every time"
 	line "its mood changes, it charges power."
@@ -288,7 +288,7 @@ QuadrupleAttackX20Description: ; 5e02d (17:602d)
 	line "20 schade maal het aantal keren kop."
 	done
 
-Jolteon2Description: ; 5e072 (17:6072)
+JolteonLv29Description: ; 5e072 (17:6072)
 	text "It accumulates negative ions from"
 	line "the atmosphere to blast out 10,000-"
 	line "volt lightning bolts."
@@ -312,7 +312,7 @@ ThunderstormDescription: ; 5e0e5 (17:60e5)
 	line "zichzelf maal het aantal keren munt."
 	done
 
-Zapdos1Description: ; 5e1d2 (17:61d2)
+ZapdosLv40Description: ; 5e1d2 (17:61d2)
 	text "Een legendarische dondervogel-Pokémon"
 	line "waarvan ze zeggen dat zijn woede stor-"
 	line "men veroorzaakt. Men zegt ook dat hij al"
@@ -334,7 +334,7 @@ ThunderboltDescription: ; 5e29d (17:629d)
 	line "<LIGHTNING> Energiekaarten weggooien."
 	done
 
-Zapdos2Description: ; 5e2e7 (17:62e7)
+ZapdosLv64Description: ; 5e2e7 (17:62e7)
 	text "Een legendarische Vogel-Pokémon waar-"
 	line "van wordt gezegd dat hij uit de wolken"
 	line "tevoorschijn komt en tegelijkertijd"
@@ -368,7 +368,7 @@ BigThunderDescription: ; 5e40d (17:640d)
 	line "blijven gewoon geldig.)"
 	done
 
-Zapdos3Description: ; 5e4f8 (17:64f8)
+ZapdosLv68Description: ; 5e4f8 (17:64f8)
 	text "Van deze legendarische vogel-Pokémon"
 	line "wordt beweerd dat hij verschijnt wanneer"
 	line "de lucht donker wordt en bliksem-"
@@ -745,7 +745,7 @@ BonekeeperName: ; 5f3e9 (17:73e9)
 	text "Botbewaarder-"
 	done
 
-Marowak1Description: ; 5f3f5 (17:73f5)
+MarowakLv26Description: ; 5f3f5 (17:73f5)
 	text "Het bot dat hij vasthoudt is zijn"
 	line "belangrijkste wapen. Hij gooit het bot"
 	line "met grote vaardigheid als een boemerang"
@@ -777,7 +777,7 @@ WailDescription: ; 5f4cb (17:74cb)
 	line "zijn of haar Deck."
 	done
 
-Marowak2Description: ; 5f5b6 (17:75b6)
+MarowakLv32Description: ; 5f5b6 (17:75b6)
 	text "Hij is klein en zwak, maar deze"
 	line "Pokémon weet goed om te gaan met zijn"
 	line "bottenknuppel. Hij is door de jaren"
@@ -1026,6 +1026,8 @@ DamageSwapName: ; 5ffc2 (17:7fc2)
 	text "Damage Swap"
 	done
 
+ds $31
+
 DamageSwapDescription: ; 60000 (18:4000)
 	text "As often as you like during your"
 	line "turn (before your attack), you may"
@@ -1057,7 +1059,7 @@ DopeyName: ; 601c8 (18:41c8)
 	text "Dopey"
 	done
 
-Slowpoke1Description: ; 601cf (18:41cf)
+SlowpokeLv9Description: ; 601cf (18:41cf)
 	text "Incredibly slow and dopey. It takes"
 	line "5 seconds for it to feel pain when"
 	line "under attack."
@@ -1144,7 +1146,7 @@ GasName: ; 605bf (18:45bf)
 	text "Gas-"
 	done
 
-Gastly1Description: ; 605c4 (18:45c4)
+GastlyLv8Description: ; 605c4 (18:45c4)
 	text "Deze gasachtige Pokémon die bijna"
 	line "onzichtbaar is, omhult zijn"
 	line "doelwit en brengt het ongemerkt"
@@ -1165,7 +1167,7 @@ EnergyConversionDescription: ; 6063c (18:463c)
 	line "Gastly doet 10 schade aan zichzelf."
 	done
 
-Gastly2Description: ; 6069e (18:469e)
+GastlyLv17Description: ; 6069e (18:469e)
 	text "Een mysterieuze Pokémon. Sommigen"
 	line "zeggen dat hij een levensvorm is uit"
 	line "een andere dimensie, terwijl anderen"
@@ -1272,3 +1274,4 @@ DrowzeeDescription: ; 60ad8 (18:4ad8)
 	line "wel eens ziek omdat hij slechte"
 	line "dromen eet."
 	done
+
