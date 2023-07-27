@@ -9,7 +9,7 @@ ProphecyName: ; 60b3e (18:4b3e)
 ProphecyDescription: ; 60b48 (18:4b48)
 	text "Bekijk tot 3 kaarten van de bovenkant"
 	line "van het deck van elke speler en leg"
-	line "ze in de volgorde die je wilt."
+	line "ze terug in de volgorde die je wilt."
 	done
 
 HypnoDescription: ; 60ba4 (18:4ba4)

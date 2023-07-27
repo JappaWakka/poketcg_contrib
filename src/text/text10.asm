@@ -1,12 +1,12 @@
 PokemonTradingCardGameStaffText: ; 564db (15:64db)
 	text ""
-	line "        Pokémon Trading Card Game "
-	line "                  Staff"
+	line "          Pokémon Ruilkaartspel"
+	line "                Personeel"
 	done
 
 ProducersText: ; 56518 (15:6518)
 	text ""
-	line "                Producers"
+	line "               Producenten"
 	line ""
 	line ""
 	line "           Tsunekazu Ishihara"
@@ -16,7 +16,7 @@ ProducersText: ; 56518 (15:6518)
 
 DirectorText: ; 5658f (15:658f)
 	text ""
-	line "                Director"
+	line "               Spelregiseur"
 	line ""
 	line ""
 	line "                Koji Arai"
@@ -24,7 +24,7 @@ DirectorText: ; 5658f (15:658f)
 
 ProgrammersText: ; 565c6 (15:65c6)
 	text ""
-	line "               Programmers"
+	line "              Programmeurs"
 	line ""
 	line ""
 	line "             Masahiro Tobita"
@@ -34,7 +34,7 @@ ProgrammersText: ; 565c6 (15:65c6)
 
 GBGraphicDesigners1Text: ; 5663a (15:663a)
 	text ""
-	line "           GB Graphic Designers"
+	line "         GB Grafisch Vormgevers"
 	line ""
 	line ""
 	line "             Kazuhiko Nonaka"
@@ -56,7 +56,7 @@ GBGraphicDesigners3Text: ; 5670b (15:670b)
 
 MusicText: ; 56764 (15:6764)
 	text ""
-	line "                  Music"
+	line "                  Muziek"
 	line ""
 	line ""
 	line "            Ichiro Shimakura"
@@ -64,7 +64,7 @@ MusicText: ; 56764 (15:6764)
 
 SoundEffectsText: ; 5679d (15:679d)
 	text ""
-	line "              Sound Effects"
+	line "              Geluidseffecten"
 	line ""
 	line ""
 	line "              Masato Aihara"
@@ -72,7 +72,7 @@ SoundEffectsText: ; 5679d (15:679d)
 
 SoundDirectorText: ; 567d9 (15:67d9)
 	text ""
-	line "             Sound Director"
+	line "             Geluidsregisseur"
 	line ""
 	line ""
 	line "            Toshiaki Takimoto"
@@ -80,7 +80,7 @@ SoundDirectorText: ; 567d9 (15:67d9)
 
 SoundSystemSupportText: ; 56817 (15:6817)
 	text ""
-	line "          Sound System Support"
+	line "       Geluidssysteem Ondersteuning"
 	line ""
 	line ""
 	line "           Katsunori Takahashi"
@@ -89,7 +89,7 @@ SoundSystemSupportText: ; 56817 (15:6817)
 
 CardGameCreator1Text: ; 56873 (15:6873)
 	text ""
-	line "            Card Game Creator"
+	line "             Kaartspelmaker"
 	line ""
 	line ""
 	line "             Takumi Akabane"
@@ -97,7 +97,7 @@ CardGameCreator1Text: ; 56873 (15:6873)
 
 CardGameCreator2Text: ; 568b1 (15:68b1)
 	text ""
-	line "            Card Game Creator"
+	line "             Kaartspelmaker"
 	line ""
 	line ""
 	line "             Kouichi Oyama"
@@ -105,7 +105,7 @@ CardGameCreator2Text: ; 568b1 (15:68b1)
 
 CardGameCreator3Text: ; 568ee (15:68ee)
 	text ""
-	line "            Card Game Creator"
+	line "             Kaartspelmaker"
 	line ""
 	line ""
 	line "              Akihiko Miura"
@@ -113,7 +113,7 @@ CardGameCreator3Text: ; 568ee (15:68ee)
 
 CardIllustrators1Text: ; 5692c (15:692c)
 	text ""
-	line "            Card Illustrators"
+	line "            Kaartillustrators"
 	line ""
 	line ""
 	line "              Ken Sugimori"
@@ -131,7 +131,7 @@ CardIllustrators2Text: ; 569c0 (15:69c0)
 
 SpecialAppearances1Text: ; 56a30 (15:6a30)
 	text ""
-	line "         Special Appearances by"
+	line "        Speciale verschijningen van"
 	line ""
 	line ""
 	line "             Hiroko Ohashi"
@@ -145,22 +145,22 @@ SpecialAppearances2Text: ; 56a8c (15:6a8c)
 
 USCoordination1Text: ; 56ac3 (15:6ac3)
 	text ""
-	line "             US COORDINATION"
-	line "           NINTENDO OF AMERICA"
+	line "             US Coordination"
+	line "           Nintendo of America"
 	line ""
 	line ""
-	line "               GAIL TILDEN"
-	line "              HIRO NAKAMURA"
+	line "               Gail Tilden"
+	line "              Hiro Nakamura"
 	done
 
 USCoordination2Text: ; 56b3a (15:6b3a)
-	text "              KENJI OKUBO"
-	line "             WILLIAM TRINEN"
+	text "              Kenji Okubo"
+	line "             William Trinen"
 	done
 
 USCoordination3Text: ; 56b71 (15:6b71)
 	text ""
-	line "             US COORDINATION"
+	line "             US Coordination"
 	line "           Wizards of the Coast"
 	line "          Pokémon Templating Team"
 	line ""
@@ -177,15 +177,15 @@ USCoordination4Text: ; 56c0d (15:6c0d)
 
 TranslationDraftText: ; 56c5e (15:6c5e)
 	text ""
-	line "            TRANSLATION/DRAFT"
+	line "          Eng. Vertaling/Concept"
 	line ""
 	line ""
-	line "               BILL RITCH"
+	line "               Bill Ritch"
 	done
 
 MasteringText: ; 56c9a (15:6c9a)
 	text ""
-	line "                Mastering"
+	line "                Masteren"
 	line ""
 	line ""
 	line "             Tetsuya Komatsu"
@@ -193,7 +193,7 @@ MasteringText: ; 56c9a (15:6c9a)
 
 ManualCreationText: ; 56cd5 (15:6cd5)
 	text ""
-	line "             Manual Creation"
+	line "             Handleidingmaker"
 	line ""
 	line ""
 	line "              Haruki Mitani"
@@ -201,7 +201,7 @@ ManualCreationText: ; 56cd5 (15:6cd5)
 
 ManualIllustrationsText: ; 56d12 (15:6d12)
 	text ""
-	line "           Manual Illustrations"
+	line "           Handleidingillustaties"
 	line ""
 	line ""
 	line "             Kagemaru Himeno"
@@ -209,7 +209,7 @@ ManualIllustrationsText: ; 56d12 (15:6d12)
 
 PokemonOriginalStoryText: ; 56d53 (15:6d53)
 	text ""
-	line "          Pokémon Original Story"
+	line "         Originele Verhaal Pokémon"
 	line ""
 	line ""
 	line "             Satoshi Tajiri"
@@ -218,7 +218,7 @@ PokemonOriginalStoryText: ; 56d53 (15:6d53)
 
 CreatedInCooperationWithText: ; 56d95 (15:6d95)
 	text ""
-	line "       Created In Cooperation With"
+	line "       Gemaakt in samenwerking met"
 	line ""
 	line ""
 	line "              Shinji Hatano"
@@ -228,7 +228,7 @@ CreatedInCooperationWithText: ; 56d95 (15:6d95)
 
 WithCooperation1Text: ; 56e11 (15:6e11)
 	text ""
-	line "          With Cooperation from"
+	line "           Met medewerking van"
 	line ""
 	line ""
 	line "             Yoshio Motosako"
@@ -252,7 +252,7 @@ WithCooperation3Text: ; 56eff (15:6eff)
 
 ProjectManagerText: ; 56f6e (15:6f6e)
 	text ""
-	line "             Project Manager"
+	line "             Project manager"
 	line ""
 	line ""
 	line "            Yasutaka Kakiseko"
@@ -269,7 +269,7 @@ SupervisorText: ; 56fad (15:6fad)
 
 ExecutiveProducerText: ; 56fe7 (15:6fe7)
 	text ""
-	line "           Executive Producer"
+	line "          Uitvoerend producent"
 	line ""
 	line ""
 	line ""
@@ -278,7 +278,7 @@ ExecutiveProducerText: ; 56fe7 (15:6fe7)
 
 CreatedByText: ; 57027 (15:7027)
 	text ""
-	line "               Created by"
+	line "               Gemaakt door"
 	line ""
 	line ""
 	line ""
@@ -294,15 +294,15 @@ PlayersScoreText: ; 57075 (15:7075)
 	done
 
 Defeated5OpponentsXTimesText: ; 57080 (15:7080)
-	text "Defeated 5 opponents      time(s)."
+	text "5 Duellen gewonnen        keer."
 	done
 
 PresentConsecutiveWinsText: ; 570a4 (15:70a4)
-	text "Present Consecutive Wins"
+	text "Huidig Aantal Overwinningen"
 	done
 
 MaximumConsecutiveWinsText: ; 570be (15:70be)
-	text "Maximum Consecutive Wins"
+	text "Max. Aantal Overwinningen"
 	line "    [ <RAMTEXT>  ]"
 	done
 
@@ -311,63 +311,64 @@ WinsText: ; 570e3 (15:70e3)
 	done
 
 XConsecutiveWinsNthOpponentIsText: ; 570e9 (15:70e9)
-	text "<RAMNAME> <RAMNUM> Consecutive Wins!"
+	text "<RAMNAME> <RAMNUM> Overwinningen!"
 	line ""
-	text "<RAMNUM> opponent is <RAMTEXT>."
+	text "<RAMNUM> tegenstander is <RAMTEXT>."
 	done
 
 NthOpponentIsText: ; 57112 (15:7112)
-	text "<RAMNUM> opponent is <RAMTEXT>."
+	text "<RAMNUM> tegenstander is <RAMTEXT>."
 	done
 
 WouldYouLikeToBeginTheDuelText: ; 57124 (15:7124)
-	text "Would you like to begin the Duel?"
+	text "Wil je het Duel beginnen?"
 	done
 
 IfYouQuitTheDuelText: ; 57147 (15:7147)
-	text "If you quit the Duel,"
-	line "Your Consecutive Wins will end."
+	text "Als je het Duel verlaat zal je"
+	line "overnieuw moeten beginnnen."
 	done
 
 WouldYouLikeToQuitTheDuelText: ; 5717e (15:717e)
-	text "Would you like to quit the Duel?"
+	text "Wil je het duel verlaten?"
 	done
 
 PlayTheChallengeMachineText: ; 571a0 (15:71a0)
-	text "Play the Challenge Machine?"
+	text "De Uitdagingsmachine gebruiken?"
 	done
 
 LetUsChooseYourOpponentText: ; 571bd (15:71bd)
-	text "OK,"
-	line "Let us choose your opponent."
+	text "Oké,"
+	line "Laat ons je tegenstander kiezen."
 	done
 
 LostToTheNthOpponentText: ; 571df (15:71df)
-	text "You lost to the <RAMNUM> opponent,"
-	line "<RAMTEXT>!"
+	text "Je hebt verloren van de <RAMNUM>"
+	line "tegenstander, <RAMTEXT>!"
 	done
 
 ConsecutiveWinsEndedAtText: ; 571ff (15:71ff)
-	text "<RAMNAME>'s consecutive wins"
-	line "ended at <RAMNUM>."
+	text "<RAMNAME>'s Overwinningsaantal"
+	line "eindigde op <RAMNUM>."
 	done
 
 WeAwaitYourNextChallengeText: ; 57221 (15:7221)
-	text "We await your next challenge."
+	text "We wachten tot je volgende"
+	line "uitdaging."
 	done
 
 YourOpponentsForThisGameText: ; 57240 (15:7240)
-	text "Your opponents for this game:"
+	text "Je tegenstanders voor dit spel:"
 	done
 
 WonAgainstXOpponentsText: ; 5725f (15:725f)
-	text "Congratulations!"
-	line "You won against <RAMNUM> opponents!"
+	text "Gefeliciteerd!"
+	line "Je won tegen <RAMNUM> tegenstanders!"
 	done
 
 Defeated5OpponentsText: ; 5728e (15:728e)
-	text "Congratulations!"
-	line "You defeated 5 opponents!"
+	text "Gefeliciteerd!"
+	line "Je versloeg 5 tegenstanders!"
 	done
 
 SuccessfullyDefeated5OpponentsText: ; 572ba (15:72ba)
@@ -1531,23 +1532,24 @@ ScytherName: ; 59cab (16:5cab)
 	done
 
 SwordsDanceName: ; 59cb4 (16:5cb4)
-	text "Swords Dance"
+	text "Zwaardendans"
 	done
 
 SwordsDanceDescription: ; 59cc2 (16:5cc2)
-	text "During your next turn, Scyther's"
-	line "Slash attack's base damage is"
-	line "doubled."
+	text "Tijdens je volgende beurt is de"
+	line "basisschade van Scyther's"
+	line "Hak-aanval 60 in plaats van 30."
 	done
 
 MantisName: ; 59d0b (16:5d0b)
-	text "Mantis"
+	text "Bidsprinkhaan"
 	done
 
 ScytherDescription: ; 59d13 (16:5d13)
-	text "With ninja-like agility and speed,"
-	line "it can create the illusion that"
-	line "there is more than one of it."
+	text "Met ninja-achtige behendigheid"
+	line "en snelheid kan hij de illusie"
+	line "creëren dat er meer dan één"
+	line "van hem is."
 	done
 
 PinsirName: ; 59d75 (16:5d75)

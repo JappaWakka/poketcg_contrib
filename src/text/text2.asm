@@ -342,24 +342,24 @@ ChooseAnEnergyCardText: ; 38d5a (e:4d5a)
 	done
 
 ProcedureForProphecyText: ; 38d72 (e:4d72)
-	text "Procedure for Prophecy:"
+	text "Hoe je Voorspelling gebruikt:"
 	line ""
-	line "1. Choose either your Deck"
-	line "   or your opponent's Deck"
+	line "1. Selecteer jouw Deck óf het"
+	line "   Deck van je tegenstander."
 	line ""
-	line "2. Choose the cards you wish to"
-	line "   place on top and press the"
-	line "   A Button."
+	line "2. Kies de kaarten die je"
+	line "   bovenop wilt leggen en"
+	line "   druk op de A-knop."
 	line ""
-	line "3. Select Yes after you choose"
-	line "   the 3 cards and their order."
+	line "3. Kies Ja nadat je de 3 kaarten"
+	line "   en hun volgorde hebt bepaald."
 	line ""
-	line "4. Press the B Button to cancel."
+	line "4. Annuleer met de B-knop."
 	done
 
 ChooseTheOrderOfTheCardsText: ; 38e70 (e:4e70)
-	text "Choose the order"
-	line "of the cards."
+	text "Kies de volgorde"
+	line "van de kaarten."
 	done
 
 ProcedureForDamageSwapText: ; 38e90 (e:4e90)

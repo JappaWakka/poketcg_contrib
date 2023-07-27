@@ -98,7 +98,7 @@ MagnetonName: ; 5d76e (17:576e)
 	text "Magneton"
 	done
 
-Magneton1sSelfdestructDescription: ; 5d778 (17:5778)
+MagnetonLv28sSelfdestructDescription: ; 5d778 (17:5778)
 	text "Doet 20 schade aan elke Pokémon op"
 	line "de Bank van elke speler. (Pas geen"
 	line "Zwakte en Weerstand toe op de"
@@ -125,7 +125,7 @@ SonicboomDescription: ; 5d876 (17:5876)
 	line "gebeuren blijven gewoon geldig.))"
 	done
 
-Magneton2sSelfdestructDescription: ; 5d907 (17:5907)
+MagnetonLv35sSelfdestructDescription: ; 5d907 (17:5907)
 	text "Doet 20 schade aan elke Pokémon op"
 	line "de Bank van elke speler. (Pas geen"
 	line "Zwakte en Weerstand toe op de"

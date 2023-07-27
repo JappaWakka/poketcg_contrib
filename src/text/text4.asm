@@ -15,7 +15,7 @@ PikachuTradeCardName: ; 3f851 (f:7851)
 	done
 
 SurfingPikachuTradeCardName: ; 3f85f (f:785f)
-	text "<Lv>13 SURFING PIKACHU"
+	text "<Lv>13 SURFENDE PIKACHU"
 	done
 
 ElectabuzzTradeCardName: ; 3f875 (f:7875)
@@ -47,28 +47,28 @@ DragoniteLegendaryCardName: ; 3f8cf (f:78cf)
 	done
 
 SuperEnergyRetrievalTradeCardName: ; 3f8df (f:78df)
-	text "Super Energy Retrieval"
+	text "Super Energie Ophalen"
 	done
 
 FlyingPikachuTradeCardName: ; 3f8f7 (f:78f7)
-	text "<Lv>12 FLYING PIKACHU"
+	text "<Lv>12 VLIEGENDE PIKACHU"
 	done
 
 LightningAndFireDeckChoiceText: ; 3f90c (f:790c)
-	text "Lightning & Fire Deck"
+	text "Bliksem & Vuur Deck"
 	done
 
 WaterAndFightingDeckChoiceText: ; 3f923 (f:7923)
-	text "Water & Fighting Deck"
+	text "Water & Vecht Deck"
 	done
 
 GrassAndPsychicDeckChoiceText: ; 3f93a (f:793a)
-	text "Grass & Psychic Deck"
+	text "Gras & Psychisch Deck"
 	done
 
 SelectDeckToDuelText: ; 3f950 (f:7950)
-	text "Please select the Deck"
-	line "you wish to Duel against."
+	text "Kies het Deck waar je"
+	line "tegen wilt Dueleren."
 	done
 
 CharmanderAndFriendsDeckChoiceText: ; 3f982 (f:7982)
@@ -116,25 +116,26 @@ Text0401: ; 3faaa (f:7aaa)
 	line "Krijg je het Pokémon ruilkaartspel"
 	line "al een beetje onder de knie?"
 	line "Ik heb wat informatie voor je"
-	line "over Booster-pakjes."
-	line "If you want to collect the same"
-	line "cards, Duel the same person many"
-	line "times to get a particular Booster"
-	line "Pack! By doing so, you will be able "
-	line "to collect the same cards, making it"
-	line "easier for you to build your Deck."
-	line "Another method for collecting "
-	line "cards is to use Kaart-Flits!"
-	line "When you and a friend use Kaart-Flits!,"
-	line "you will each receive a new card!"
-	line "Once you POP! with a certain"
-	line "friend, you won't be able to POP!"
-	line "with that friend again, so find "
-	line "many friends who own the Pokémon "
-	line "Trading Card Game for Game Boy,"
-	line "and Kaart-Flits! with them to"
-	line "get new cards!"
-	line "Oh, here's something for you..."
+	line "over Booster-pakjes: Als je"
+	line "dezelfde soorten kaarten wilt"
+	line "verzamelen, Dueleer dan vaak met"
+	line "dezelfde persoon om een specifiek"
+	line "Booster-Pakje te krijgen! Op deze"
+	line "manier krijg je sneller dezelfde"
+	line "kaarten, wat het makkelijker maakt"
+	line "om je Deck te bouwen. Een andere"
+	line "methode voor het verzamelen van"
+	line "kaarten is met een Kaart-Flits!"
+	line "Als jij en een vriend een Kaart-"
+	line "Flits! doen krijgen jullie elk"
+	line "een nieuwe kaart! Wanneer je dit"
+	line "doet met een vriend, kun je het"
+	line "niet opnieuw met die vriend doen."
+	line "Dus zoek veel vrienden die het"
+	line "Pokémon Ruilkaartspel voor de"
+	line "Game Boy hebben en doe een Kaart-"
+	line "Flits! met ze voor nieuwe kaarten!"
+	line "Oh, ik heb nog iets voor je..."
 	done
 
 Text0402: ; 3fd72 (f:7d72)
