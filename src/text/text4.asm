@@ -139,12 +139,12 @@ Text0401: ; 3faaa (f:7aaa)
 	done
 
 Text0402: ; 3fd72 (f:7d72)
-	text "I'll be sending you useful"
-	line "information by e-mail."
-	line "I'll also attach a Booster Pack"
-	line "for you, so check your mail"
-	line "often."
-	line "Mason Laboratory"
+	text "Ik zal je nuttige informatie"
+	line "opsturen per e-mail."
+	line "Ik zal er ook een Booster-Pakje"
+	line "aan hechten, dus bekijk"
+	line "regelmatig je mail."
+	line "Mason Laboratorium"
 	line "      Doctor Mason  ;)"
 	done
 
@@ -488,8 +488,8 @@ Text0418: ; 4174c (10:574c)
 	done
 
 Text0419: ; 41965 (10:5965)
-	text "You have already received the"
-	line "attached Booster Pack."
+	text "Je hebt het aangehechte"
+	line "Booster-Pakje al ontvangen."
 	done
 
 PokemonTradingCards101Text: ; 4199b (10:599b)

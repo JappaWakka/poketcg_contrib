@@ -796,34 +796,34 @@ BeginAPrizeDuelWithText: ; 39d1b (e:5d1b)
 	done
 
 AreYouBothReadyToCardPopText: ; 39d39 (e:5d39)
-	text "Are you both ready"
-	line "to Kaart-Flits! ?"
+	text "Staan jullie beiden klaar om"
+	line "een Kaart-Flits! te doen?"
 	done
 
 ThePopWasntSuccessfulText: ; 39d5c (e:5d5c)
-	text "The Pop! wasn't successful."
-	line "Please try again."
+	text "De Kaart Flits! is niet gelukt."
+	line "Probeer het opnieuw."
 	done
 
 
 CannotCardPopWithFriendPreviouslyPoppedWithText: ; 39d8b (e:5d8b)
-	text "You cannot Kaart-Flits! with a"
-	line "friend you previously Popped! with."
+	text "Je kunt geen Kaart-Flits! doen met"
+	line "dezelfde vriend als voorheen."
 	done
 
 PositionGameBoyColorsAndPressAButtonText: ; 39dcc (e:5dcc)
-	text "Position the Game Boy Colors"
-	line "and press the A Button."
+	text "Plaats de Game Boy Colors op deze"
+	line "manier en druk op de A-Knop."
 	done
 
 ReceivedThroughCardPopText: ; 39e02 (e:5e02)
-	text "Received <RAMTEXT>"
-	line "through Kaart-Flits!"
+	text "Ontving <RAMTEXT>"
+	line "door de Kaart-Flits!"
 	done
 
 ReceivedCardText: ; 39e20 (e:5e20)
-	text "<RAMNAME> received"
-	line "a <RAMTEXT>!"
+	text "<RAMNAME> ontving"
+	line "een <RAMTEXT>!"
 	done
 
 ReceivedPromotionalCardText: ; 39e31 (e:5e31)

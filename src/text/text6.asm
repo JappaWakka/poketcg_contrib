@@ -1109,8 +1109,8 @@ Text05bc: ; 4ab23 (12:6b23)
 	done
 
 ItsTheChallengeMachineText: ; 4ad20 (12:6d20)
-	text "It's the Challenge Machine,"
-	line "created by Dr. Mason!"
+	text "Het is de Uitdagingsmachine,"
+	line "gemaakt door Dr. Mason!"
 	done
 
 Tech1MasterMedalExplanationText: ; 4ad53 (12:6d53)
@@ -1119,7 +1119,8 @@ Tech1MasterMedalExplanationText: ; 4ad53 (12:6d53)
 	line "Het geheim van de Decks van elke"
 	line "Club staat gegraveerd in hun"
 	line "Meestermedaille. Wanneer je een"
-	line " Medaille wint, ga naar de computerkamer hiernaast."
+	line "Medaille wint, ga naar de"
+	line "computerkamer hiernaast."
 	line "Je kan de Meestermedailles in de"
 	line "Auto-Deck-Machines plaatsen om"
 	line "andere Decks te bouwen!"

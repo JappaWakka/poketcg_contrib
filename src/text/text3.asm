@@ -1356,15 +1356,14 @@ ConfigMenuTitleText: ; 3e91d (f:691d)
 	done
 
 ConfigMenuMessageSpeedText: ; 3e939 (f:6939)
-	text "Hoe snel moet de tekst in beeld komen?"
+	text "  Hoe snel komt de tekst in beeld?"
 	line ""
 	line "  Sloom   1   2   3   4   5   Snel"
 	done
 
 ConfigMenuDuelAnimationText: ; 3e96c (f:696c)
-	text "Hoeveel van de Duel-animaties afspelen?"
+	text "  Hoeveel Duel-animaties afspelen?"
 	line ""
-	line "  Show All    Skip Some       None"
 	line "  Alle        Sommige         Geen"
 	done
 

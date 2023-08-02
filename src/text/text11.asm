@@ -1008,18 +1008,19 @@ TackleName: ; 5c456 (17:4456)
 	done
 
 MagikarpsFlailDescription: ; 5c45e (17:445e)
-	text "Does 10 damage times the number of"
-	line "damage counters on Magikarp."
+	text "Doet 10 schade maal het aantal"
+	line "schadetellers op Magikarp."
 	done
 
 FishName: ; 5c49f (17:449f)
-	text "Fish"
+	text "Vis-"
 	done
 
 MagikarpDescription: ; 5c4a5 (17:44a5)
-	text "In the distant past, it was stronger"
-	line "than its horribly weak descendants"
-	line "that exist today."
+	text "In het verre verleden was hij sterker"
+	line "dan zijn verschrikkelijk zwakke"
+	line "afstammelingen die vandaag de dag"
+	line "in leven zijn."
 	done
 
 GyaradosName: ; 5c500 (17:4500)
@@ -1027,15 +1028,15 @@ GyaradosName: ; 5c500 (17:4500)
 	done
 
 DragonRageName: ; 5c50a (17:450a)
-	text "Dragon Rage"
+	text "Drakenfurie"
 	done
 
 BubblebeamName: ; 5c517 (17:4517)
-	text "Bubblebeam"
+	text "Bubbelstraal"
 	done
 
 AtrociousName: ; 5c523 (17:4523)
-	text "Atrocious"
+	text "Afgrijselijke"
 	done
 
 GyaradosDescription: ; 5c52e (17:452e)
