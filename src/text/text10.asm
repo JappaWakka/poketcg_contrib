@@ -298,11 +298,11 @@ Defeated5OpponentsXTimesText: ; 57080 (15:7080)
 	done
 
 PresentConsecutiveWinsText: ; 570a4 (15:70a4)
-	text "Huidig Aantal Overwinningen"
+	text "Huidige Overwinningsreeks"
 	done
 
 MaximumConsecutiveWinsText: ; 570be (15:70be)
-	text "Max. Aantal Overwinningen"
+	text "Max. Overwinningsreeks"
 	line "    [ <RAMTEXT>  ]"
 	done
 
@@ -348,7 +348,7 @@ LostToTheNthOpponentText: ; 571df (15:71df)
 	done
 
 ConsecutiveWinsEndedAtText: ; 571ff (15:71ff)
-	text "<RAMNAME>'s Overwinningsaantal"
+	text "<RAMNAME>'s Overwinningsreeks"
 	line "eindigde op <RAMNUM>."
 	done
 
@@ -372,14 +372,14 @@ Defeated5OpponentsText: ; 5728e (15:728e)
 	done
 
 SuccessfullyDefeated5OpponentsText: ; 572ba (15:72ba)
-	text "<RAMNAME> successfully defeated "
-	line "5 opponents "
-	text "<RAMNUM> time(s)!!!"
+	text "<RAMNAME> heeft met succes "
+	line "5 tegenstanders verslagen"
+	text "<RAMNUM> keer!!!"
 	done
 
 ConsecutiveWinRecordIncreasedText: ; 572ee (15:72ee)
-	text "<RAMNAME>'s consecutive win"
-	line "record increased to <RAMNUM>!"
+	text "<RAMNAME>'s overwinningsreeks"
+	line "record verhoogd naar <RAMNUM>!"
 	done
 	
 ClubMemberText: ; 5731a (15:731a)
@@ -818,7 +818,7 @@ EkansName: ; 5812a (16:412a)
 	done
 
 SpitPoisonName: ; 58131 (16:4131)
-	text "Spit Poison"
+	text "Spuw Gif"
 	done
 
 WrapName: ; 5813e (16:413e)
@@ -826,13 +826,13 @@ WrapName: ; 5813e (16:413e)
 	done
 
 SnakeName: ; 58144 (16:4144)
-	text "Snake"
+	text "Slang-"
 	done
 
 EkansDescription: ; 5814b (16:414b)
-	text "Moves silently and stealthily. Eats"
-	line "the eggs of birds, such as Pidgey"
-	line "and Spearow, whole."
+	text "Beweegt stilletjes en heimelijk. Eet"
+	line "de eieren van vogels als Pidgey en"
+	line "Spearow heel op."
 	done
 
 ArbokName: ; 581a6 (16:41a6)
@@ -840,31 +840,31 @@ ArbokName: ; 581a6 (16:41a6)
 	done
 
 TerrorStrikeName: ; 581ad (16:41ad)
-	text "Terror Strike"
+	text "Angstaanval"
 	done
 
 TerrorStrikeDescription: ; 581bc (16:41bc)
-	text "Gooi een munt op. If heads and if your"
-	line "opponent has any Benched Pokémon,"
-	line "he or she chooses 1 of them and"
-	line "switches it with the Defending"
-	line "Pokémon."
-	line "(Do the damage before switching"
-	line "the Pokémon.)"
+	text "Gooi een munt op. Als het kop is, en"
+	line "je tegenstander Pokémon op de Bank"
+	line "heeft, kiest hij of zij daar 1 van"
+	line "en verwisselt deze met de"
+	line "Verdedigende Pokémon."
+	line "(Doe de schade vóór het verwisselen"
+	line "van de Pokémon.)"
 	done
 
 PoisonFangName: ; 58277 (16:4277)
-	text "Poison Fang"
+	text "Giftand"
 	done
 
 CobraName: ; 58284 (16:4284)
-	text "Cobra"
+	text "Cobra-"
 	done
 
 ArbokDescription: ; 5828b (16:428b)
-	text "It is rumored that the ferocious"
-	line "warning markings on its belly differ"
-	line "from area to area."
+	text "Het gerucht gaat dat de woeste"
+	line "waarschuwingsmarkeringen op zijn buik"
+	line "van gebied tot gebied variëren."
 	done
 
 NidoranFName: ; 582e5 (16:42e5)
@@ -1084,25 +1084,26 @@ OddishName: ; 58b32 (16:4b32)
 	done
 
 SproutName: ; 58b3a (16:4b3a)
-	text "Sprout"
+	text "Spruiten"
 	done
 
 SproutDescription: ; 58b42 (16:4b42)
-	text "Search your deck for a Basic Pokémon"
-	line "named Oddish and put it onto your"
-	line "Bench. Shuffle your deck afterward."
-	line "(You can't use this attack if your"
-	line "Bench is full.)"
+	text "Zoek in je deck naar een Basis-"
+	line "Pokémon met Oddish in zijn naam en"
+	line "plaats hem op je Bank. Schud hierna"
+	line "je deck. (Je kunt deze aanval niet"
+	line "gebruiken als je Bank vol is.)"
 	done
 
 WeedName: ; 58be1 (16:4be1)
-	text "Weed"
+	text "Onkruid-"
 	done
 
 OddishDescription: ; 58be7 (16:4be7)
-	text "During the day, it keeps its face"
-	line "buried in the ground. At night, it"
-	line "wanders around sowing its seeds."
+	text "Overdag houdt hij zijn hoofd"
+	line "begraven in de grond. 's Nachts"
+	line "zwerft hij rond en zaait hij"
+	line "zijn zaad."
 	done
 
 GloomName: ; 58c4e (16:4c4e)
@@ -1110,19 +1111,20 @@ GloomName: ; 58c4e (16:4c4e)
 	done
 
 FoulOdorName: ; 58c55 (16:4c55)
-	text "Foul Odor"
+	text "Vieze geur"
 	done
 
 FoulOdorDescription: ; 58c60 (16:4c60)
-	text "Both the Defending Pokémon and"
-	line "Gloom are now Confused (after doing"
-	line "damage)."
+	text "De Verdedigende Pokémon en Gloom"
+	line "zijn nu allebei Verward (nadat de"
+	line "schade is gedaan)."
 	done
 
 GloomDescription: ; 58cad (16:4cad)
-	text "The fluid that oozes from its mouth"
-	line "isn't drool; it is a nectar that is"
-	line "used to attract prey."
+	text "De vloeistof die uit zijn bek druipt"
+	line "is geen kwijl; het is een nectar"
+	line "die gebruikt wordt om prooi aan"
+	line "te trekken."
 	done
 
 VileplumeName: ; 58d0c (16:4d0c)
@@ -1130,37 +1132,39 @@ VileplumeName: ; 58d0c (16:4d0c)
 	done
 
 HealName: ; 58d17 (16:4d17)
-	text "Heal"
+	text "Genezing"
 	done
 
 HealDescription: ; 58d1d (16:4d1d)
-	text "Once during your turn (before your"
-	line "attack), you may Gooi een munt op. If"
-	line "heads, remove 1 damage counter from"
-	line "1 of your Pokémon. This power can't"
-	line "be used if Vileplume is Asleep,"
-	line "Confused, or Paralyzed."
+	text "Eenmaal tijdens je beurt (vóór je"
+	line "aanval) mag je een munt op gooien."
+	line "Als het kop is, verwijder dan 1"
+	line "schadeteller van 1 van je Pokémon."
+	line "Deze kracht kan niet worden gebruikt"
+	line "als Vileplume In Slaap, Verward, of"
+	line "Verlamd is."
 	done
 
 PetalDanceName: ; 58de2 (16:4de2)
-	text "Petal Dance"
+	text "Bloemendans"
 	done
 
 PetalDanceDescription: ; 58def (16:4def)
-	text "Flip 3 coins. This attack does 40"
-	line "damage times the number of heads."
-	line "Vileplume is now Confused (after"
-	line "doing damage)."
+	text "Gooi 3 munten op. Deze aanval doet"
+	line "40 schade maal het aantal keren kop."
+	line "Vileplume is nu Verward (nadat de"
+	line "schade is gedaan)."
 	done
 
 FlowerName: ; 58e64 (16:4e64)
-	text "Flower"
+	text "Bloem-"
 	done
 
 VileplumeDescription: ; 58e6c (16:4e6c)
-	text "The larger its petals, the more"
-	line "toxic pollen it contains. Its big"
-	line "head is heavy and hard to hold up."
+	text "Hoe groter zijn bloemblaadjes zijn,"
+	line "hoe meer giftig stuifmeel hij bevat."
+	line "Zijn grote hoofd is zwaar en"
+	line "moeilijk overeind te houden."
 	done
 
 ParasName: ; 58ed2 (16:4ed2)
@@ -1172,7 +1176,7 @@ ScratchName: ; 58ed9 (16:4ed9)
 	done
 
 SporeName: ; 58ee2 (16:4ee2)
-	text "Spore"
+	text "Spoor"
 	done
 
 InflictSleepDescription: ; 58ee9 (16:4ee9)
@@ -1181,13 +1185,14 @@ InflictSleepDescription: ; 58ee9 (16:4ee9)
 	done
 
 MushroomName: ; 58f0f (16:4f0f)
-	text "Mushroom"
+	text "Paddestoel-"
 	done
 
 ParasDescription: ; 58f19 (16:4f19)
-	text "Burrows to suck tree roots."
-	line "The mushrooms on its back grow by"
-	line "drawing nutrients from the bug host."
+	text "Wroet om aan wortels van bomen te"
+	line "zuigen. De paddestoelen op zijn rug"
+	line "groeien door voedingsstoffen te"
+	line "onttrekken aan hun gastheer."
 	done
 
 ParasectName: ; 58f7d (16:4f7d)
@@ -1199,9 +1204,10 @@ SlashName: ; 58f87 (16:4f87)
 	done
 
 ParasectDescription: ; 58f8e (16:4f8e)
-	text "A host-parasite pair in which the"
-	line "parasite mushroom has taken over"
-	line "the host bug. Prefers damp places."
+	text "Een gastheer-parasiet-paar waarin"
+	line "de parasitaire paddestoel de gast-"
+	line "heer heeft overgenomen. Geeft de"
+	line "voorkeur aan vochtige plaatsen."
 	done
 
 VenonatName: ; 58ff5 (16:4ff5)
@@ -1281,9 +1287,10 @@ BellsproutsCallForFamilyDescription: ; 592f1 (16:52f1)
 	done
 
 BellsproutDescription: ; 59394 (16:5394)
-	text "A carnivorous Pokémon that traps and"
-	line "eats bugs. It uses its root feet to"
-	line "soak up needed moisture."
+	text "Een vleesetende Pokémon die insecten"
+	line "vangt en eet. Hij gebruikt zijn"
+	line "wortelvoeten om het benodigde vocht"
+	line "op te zuigen."
 	done
 
 WeepinbellName: ; 593f7 (16:53f7)
@@ -1291,18 +1298,17 @@ WeepinbellName: ; 593f7 (16:53f7)
 	done
 
 RazorLeafName: ; 59403 (16:5403)
-	text "Razor Leaf"
+	text "Mesblad"
 	done
 
 FlycatcherName: ; 5940f (16:540f)
-	text "Flycatcher"
+	text "Vliegenvanger-"
 	done
 
 WeepinbellDescription: ; 5941b (16:541b)
-	text "It spits out poisonpowder to"
-	line "immobilize the enemy, and then"
-	line "finishes the enemy with a spray of"
-	line "acid."
+	text "Hij spuugt gifpoeder om de vijand"
+	line "lam te leggen, en maakt de vijand"
+	line "dan af met een wolk zuur."
 	done
 
 VictreebelName: ; 59481 (16:5481)
@@ -1310,17 +1316,18 @@ VictreebelName: ; 59481 (16:5481)
 	done
 
 LureName: ; 5948d (16:548d)
-	text "Lure"
+	text "Lokaas"
 	done
 
 VictreebelsLureDescription: ; 59493 (16:5493)
-	text "If your opponent has any Benched"
-	line "Pokémon, choose 1 of them and switch"
-	line "it with his or her Active Pokémon."
+	text "Als je tegenstander Pokémon op de"
+	line "Bank heeft, kies er dan 1 van en"
+	line "verwissel deze met zijn of haar"
+	line "Actieve Pokémon."
 	done
 
 AcidName: ; 594fd (16:54fd)
-	text "Acid"
+	text "Zuur"
 	done
 
 VictreebelsAcidDescription: ; 59503 (16:5503)
@@ -1331,9 +1338,10 @@ VictreebelsAcidDescription: ; 59503 (16:5503)
 	done
 
 VictreebelDescription: ; 59561 (16:5561)
-	text "Said to live in huge colonies deep"
-	line "in jungles, although no one has ever"
-	line "returned from there."
+	text "Er wordt beweerd dat hij in enorme"
+	line "kolonies diep in de jungle leeft,"
+	line "alhoewel daar nog niemand uit is"
+	line "teruggekeerd."
 	done
 
 GrimerName: ; 595bf (16:55bf)
@@ -1341,28 +1349,30 @@ GrimerName: ; 595bf (16:55bf)
 	done
 
 NastyGooName: ; 595c7 (16:55c7)
-	text "Nasty Goo"
+	text "Vies goedje"
 	done
 
 MinimizeName: ; 595d2 (16:55d2)
-	text "Minimize"
+	text "Minimaliseer"
 	done
 
 GrimersMinimizeDescription: ; 595dc (16:55dc)
-	text "All damage done by attacks to Grimer"
-	line "during your opponent's next turn is"
-	line "reduced by 20 (after applying"
-	line "Weakness and Resistance)."
+	text "Alle schade die tijdens je"
+	line "tegenstander's beurt aan Grimer"
+	line "wordt gedaan wordt verminderd"
+	line "met 20 (na het toepassen van"
+	line "Zwakte en Weerstand)."
 	done
 
 SludgeName: ; 5965e (16:565e)
-	text "Sludge"
+	text "Blubber-"
 	done
 
 GrimerDescription: ; 59666 (16:5666)
-	text "Appears in filthy areas. Thrives by"
-	line "sucking up polluted sludge that is"
-	line "pumped out of factories."
+	text "Verschijnt in vervuilde gebieden."
+	line "Hij gedijt door het opzuigen van"
+	line "vervuilde blubber die uit fabrieken"
+	line "wordt gepompt."
 	done
 
 MukName: ; 596c7 (16:56c7)
@@ -1370,20 +1380,21 @@ MukName: ; 596c7 (16:56c7)
 	done
 
 ToxicGasName: ; 596cc (16:56cc)
-	text "Toxic Gas"
+	text "Gifgas"
 	done
 
 ToxicGasDescription: ; 596d7 (16:56d7)
-	text "Ignore all Pokémon Powers other"
-	line "than Toxic Gases. This power stops"
-	line "working while Muk is Asleep,"
-	line "Confused, or Paralyzed."
+	text "Negeer alle Pokémon-Krachten anders"
+	line "dan Gifgassen. Deze kracht stopt"
+	line "met werken als Muk In Slaap,"
+	line "Verward, of Verlamd is."
 	done
 
 MukDescription: ; 59750 (16:5750)
-	text "Thickly covered with a filthy, vile"
-	line "sludge. It is so toxic, even its"
-	line "footprints contain poison."
+	text "Bedekt met een dikke laag vieze,"
+	line "walgelijke blubber. Hij is zo"
+	line "giftig dat zelfs zijn voetafdrukken"
+	line "gif bevatten."
 	done
 
 ExeggcuteName: ; 597b1 (16:57b1)
@@ -1395,19 +1406,20 @@ HypnosisName: ; 597bc (16:57bc)
 	done
 
 ExeggcutesLeechSeedDescription: ; 597c6 (16:57c6)
-	text "Unless all damage from this attack"
-	line "is prevented, you may remove 1"
-	line "damage counter from Exeggcute."
+	text "Tenzij alle schade van deze"
+	line "aanval wordt voorkomen, mag je"
+	line "1 schadeteller van Exeggcute"
+	line "verwijderen."
 	done
 
 EggName: ; 59828 (16:5828)
-	text "Egg"
+	text "Ei-"
 	done
 
 ExeggcuteDescription: ; 5982d (16:582d)
-	text "Often mistaken for eggs."
-	line "When disturbed, they quickly gather"
-	line "and attack in swarms."
+	text "Vaak verward met eieren. Als ze"
+	line "worden gestoord, verzamelen ze zich"
+	line "nel en vallen ze in zwermen aan."
 	done
 
 ExeggutorName: ; 59881 (16:5881)
@@ -1415,12 +1427,12 @@ ExeggutorName: ; 59881 (16:5881)
 	done
 
 TeleportName: ; 5988c (16:588c)
-	text "Teleport"
+	text "Teleportatie"
 	done
 
 TeleportDescription: ; 59896 (16:5896)
-	text "Switch Exeggutor with 1 of your"
-	line "Benched Pokémon."
+	text "Verwissel Exeggutor met 1 van je"
+	line "Pokémon op de Bank."
 	done
 
 BigEggsplosionName: ; 598c8 (16:58c8)
@@ -1428,20 +1440,20 @@ BigEggsplosionName: ; 598c8 (16:58c8)
 	done
 
 BigEggsplosionDescription: ; 598d9 (16:58d9)
-	text "Flip a number of coins equal to the"
-	line "number of Energy attached to"
-	line "Exeggutor. This attack does 20"
-	line "damage times the number of heads."
+	text "Gooi een aantal munten op gelijk aan"
+	line "het aantal aan Exeggutor gehechte"
+	line "Energie. Deze aanval doet 20 schade"
+	line "maal het aantal keren kop."
 	done
 
 CoconutName: ; 5995c (16:595c)
-	text "Coconut"
+	text "Kokosnoot-"
 	done
 
 ExeggutorDescription: ; 59965 (16:5965)
-	text "Legend has it that on rare"
-	line "occasions, one of its heads will"
-	line "drop off and continue on as an"
+	text "Volgens de legende zal bij zeldzame"
+	line "gelegenheden een van zijn hoofden"
+	line "afvallen en verder gaan als"
 	line "Exeggcute."
 	done
 
@@ -1450,7 +1462,7 @@ KoffingName: ; 599cc (16:59cc)
 	done
 
 FoulGasName: ; 599d5 (16:59d5)
-	text "Foul Gas"
+	text "Stinkgas"
 	done
 
 FoulGasDescription: ; 599df (16:59df)
@@ -1462,13 +1474,14 @@ FoulGasDescription: ; 599df (16:59df)
 	done
 
 PoisonGasName: ; 59a3c (16:5a3c)
-	text "Poison Gas"
+	text "Gifgas-"
 	done
 
 KoffingDescription: ; 59a48 (16:5a48)
-	text "Because it stores several kinds of"
-	line "toxic gases in its body, it is prone"
-	line "to exploding without warning."
+	text "Omdat hij verschillende soorten gif-"
+	line "gas in zijn lijf heeft opgeslagen,"
+	line "kan hij makkelijk zonder"
+	line "waarschuwing exploderen."
 	done
 
 WeezingName: ; 59aaf (16:5aaf)
@@ -1484,17 +1497,17 @@ SelfdestructName: ; 59abe (16:5abe)
 	done
 
 WeezingsSelfdestructDescription: ; 59acc (16:5acc)
-	text "Does 10 damage to each Pokémon on"
-	line "each player's Bench. (Don't apply"
-	line "Weakness and Resistance for Benched"
-	line "Pokémon.) Weezing does 60 damage to"
-	line "itself."
+	text "Doet 10 damage schade aan elke Pokémon"
+	line "op de Bank van elke speler. (Pas geen"
+	line "Zwakte en Weerstand toe voor Pokémon"
+	line "op de Bank.) Weezing doet 60 aan"
+	line "zichzelf."
 	done
 
 WeezingDescription: ; 59b61 (16:5b61)
-	text "Where two kinds of poison gases"
-	line "meet, two Koffings can fuse into a"
-	line "Weezing over many years."
+	text "Waar twee soorten gifgas elkaar"
+	line "ontmoeten, kunnen twee Koffing over"
+	line "vele jaren tot een Weezing versmelten."
 	done
 
 TangelaName: ; 59bbe (16:5bbe)
