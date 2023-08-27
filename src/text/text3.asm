@@ -1075,7 +1075,7 @@ TrainerCardsDescriptionText: ; 3ddbe (f:5dbe)
 BasicPokemonDescriptionText: ; 3deb0 (f:5eb0)
 	text "Basic Pokémon are cards that "
 	line "can be played directly from your "
-	line "hand into the play area. Basic "
+	line "Hand into the play area. Basic "
 	line "Pokémon act as the base for "
 	line "Evolution Cards. Charmander, "
 	line "Squirtle and Bulbasaur are"
@@ -1195,11 +1195,11 @@ OverworldMapIshiharasHouseText: ; 3e676 (f:6676)
 	done
 
 OverworldMapFightingClubText: ; 3e68c (f:668c)
-	text "   Vecht-Club    "
+	text "     Vecht-Club    "
 	done
 
 OverworldMapRockClubText: ; 3e6a2 (f:66a2)
-	text "     Steen-Club      "
+	text "     Steen-Club     "
 	done
 
 OverworldMapWaterClubText: ; 3e6b8 (f:66b8)
@@ -1207,7 +1207,7 @@ OverworldMapWaterClubText: ; 3e6b8 (f:66b8)
 	done
 
 OverworldMapLightningClubText: ; 3e6ce (f:66ce)
-	text "   Bliksem-Club   "
+	text "     Bliksem-Club   "
 	done
 
 OverworldMapGrassClubText: ; 3e6e4 (f:66e4)
@@ -1215,19 +1215,19 @@ OverworldMapGrassClubText: ; 3e6e4 (f:66e4)
 	done
 
 OverworldMapPsychicClubText: ; 3e6fa (f:66fa)
-	text "    Psychische Club    "
+	text "   Psychische Club    "
 	done
 
 OverworldMapScienceClubText: ; 3e710 (f:6710)
-	text "    Wetenschaps-Club    "
+	text "   Wetenschaps-Club   "
 	done
 
 OverworldMapFireClubText: ; 3e726 (f:6726)
-	text "     Vuur-Club      "
+	text "     Vuur-Club       "
 	done
 
 OverworldMapChallengeHallText: ; 3e73c (f:673c)
-	text "   Toernooihal   "
+	text "     Toernooihal    "
 	done
 
 OverworldMapPokemonDomeText: ; 3e752 (f:6752)
@@ -1235,7 +1235,7 @@ OverworldMapPokemonDomeText: ; 3e752 (f:6752)
 	done
 
 OverworldMapMysteryHouseText: ; 3e768 (f:6768)
-	text "     ???'s Huis     "
+	text "      ???'s Huis     "
 	done
 
 MasonLaboratoryMapNameText: ; 3e77e (f:677e)

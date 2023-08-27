@@ -1123,7 +1123,7 @@ ClairvoyanceName: ; 5c8a7 (17:48a7)
 
 ClairvoyanceDescription: ; 5c8b5 (17:48b5)
 	text "Your opponent plays with his or her"
-	line "hand face up. This power stops"
+	line "Hand face up. This power stops"
 	line "working while Omanyte is Asleep,"
 	line "Confused, or Paralyzed."
 	done

@@ -363,75 +363,76 @@ ChooseTheOrderOfTheCardsText: ; 38e70 (e:4e70)
 	done
 
 ProcedureForDamageSwapText: ; 38e90 (e:4e90)
-	text "Procedure for Damage Swap:"
+	text "Hoe je Schadeverwisseling"
+	line "gebruikt:"
+	line "1. Kies een Pokémon waar je"
+	line "   een Schadeteller van wilt"
+	line "   verplaatsen en druk op de"
+	line "   A-knop."
+	line "2. Kies een Pokémon om de schade-"
+	line "   teller naartoe te verplaatsen"
+	line "   en druk op de A-knop."
 	line ""
-	line "1. Choose a Pokémon to move a"
-	line "   Damage counter from and press"
-	line "   the A Button."
+	line "3. Herhaal stap 1 en 2."
 	line ""
-	line "2. Choose a Pokémon to move the"
-	line "   Damage counter to and press"
-	line "   the A Button."
+	line "4. Druk op de B-knop om te stoppen."
 	line ""
-	line "3. Repeat steps 1 and 2."
-	line ""
-	line "4. Press the B Button to end."
-	line ""
-	line "5. You cannot move the counter if"
-	line "   it will Knock Out the Pokémon."
+	line "5. Je mag op deze manier geen"
+	line "   Pokémon Uitschakelen."
 	done
 
 ProcedureForDevolutionBeamText: ; 38fcc (e:4fcc)
-	text "Procedure for Devolution Beam."
+	text "Hoe je Devolutiestraal gebruikt:"
 	line ""
-	line "1. Choose either a Pokémon in your"
-	line "   Play Area or your opponent's"
-	line "   Play Area and press the A Button."
+	line "1. Selecteer een Pokémon in jouw"
+	line "   Spelgebied óf in je tegen-"
+	line "   standers Spelgebied en druk"
+	line "   op de A-knop."
 	line ""
-	line "2. Choose the Pokémon to Devolve"
-	line "   and press the A Button."
+	line "2. Kies de Pokémon om te Devolueren"
+	line "   en druk op de A-knop."
 	line ""
-	line "3. Press the B Button to cancel."
+	line "3. Druk op de B-knop om te annuleren."
 	done
 
 ProcedureForStrangeBehaviorText: ; 390b4 (e:50b4)
-	text "Procedure for Strange Behavior:"
+	text "Hoe je Vreemd gedrag gebruikt:"
 	line ""
-	line "1. Choose the Pokémon with the"
-	line "   Damage counters to move to"
-	line "   Slowbro and press the A Button."
+	line "1. Kies de Pokémon met de Schade-"
+	line "   tellers die je naar Slowbro"
+	line "   wilt verplaatsen en druk op"
+	line "   de A-knop."
+	line "2. Herhaal stap 1 zo vaak als je de"
+	line "   Schadetellers wilt verplaatsen."
 	line ""
-	line "2. Repeat step 1 as many times as"
-	line "   you wish to move the counters."
+	line "3. Druk op de B-knop om te stoppen."
 	line ""
-	line "3. Press the B Button to end."
-	line ""
-	line "4. You cannot move the damage if"
-	line "   Slowbro will be Knocked Out."
+	line "4. Je mag op deze manier Slowbro"
+	line "   niet Uitschakelen."
 	done
 
 ChooseOppAttackToBeUsedWithMetronomeText: ; 391dc (e:51dc)
-	text "Choose the opponent's Attack"
-	line "to be used with Metronome."
+	text "Kies de tegenstander's Aanval"
+	line "om met Metronoom te gebruiken."
 	done
 
 ThereIsNoInTheDeckText: ; 39215 (e:5215)
-	text "There is no <RAMTEXT>"
-	line "in the Deck."
+	text "Er zit geen <RAMTEXT>"
+	line "in het Deck."
 	done
 
 WouldYouLikeToCheckTheDeckText: ; 39231 (e:5231)
-	text "Would you like to check the Deck?"
+	text "Wil je het Deck bekijken?"
 	done
 
 PleaseSelectTheDeckText: ; 39254 (e:5254)
-	text "Please select the Deck:"
-	line "            Yours   Opponent's"
+	text "Kies het gewenste Deck:"
+	line "            Jouw    Tegenstander's"
 	done
 
 PleaseSelectThePlayAreaText: ; 3928c (e:528c)
-	text "Please select the Play Area:"
-	line "            Yours   Opponent's"
+	text "Kies het gewenste Spelgebied:"
+	line "            Jouw    Tegenstander's"
 	done
 
 NidoranMNidoranFText: ; 392c9 (e:52c9)
@@ -451,25 +452,26 @@ KrabbyText: ; 392f0 (e:52f0)
 	done
 
 FightingPokemonDeckText: ; 392f8 (e:52f8)
-	text "Fighting Pokémon"
+	text "Vecht-Pokémon"
 	done
 
 BasicEnergyText: ; 3930a (e:530a)
-	text "Basic Energy"
+	text "Basis-Energie"
 	done
 
 PeekWasUsedToLookInYourHandText: ; 39318 (e:5318)
-	text "Peek was used to look at the"
-	line "<RAMTEXT> in your Hand."
+	text "Kijkje is gebruikt om te kijken"
+	line "naar <RAMTEXT> in je Hand."
 	done
 
 CardPeekWasUsedOnText: ; 39346 (e:5346)
-	text "Card Peek was used on"
+	text "Kaart die Kijkje onthulde"
 	done
 
 PokemonAndAllAttachedCardsReturnedToHandText: ; 3935d (e:535d)
-	text "<RAMTEXT> and all attached"
-	line "cards were returned to the Hand."
+	text "<RAMTEXT> en alle eraan"
+	line "gehechte kaarten zijn terug in"
+	line "de Hand genomen."
 	done
 
 WasChosenForTheEffectOfAmnesiaText: ; 39392 (e:5392)
@@ -478,70 +480,71 @@ WasChosenForTheEffectOfAmnesiaText: ; 39392 (e:5392)
 	done
 
 BasicPokemonWasPlacedOnEachBenchText: ; 393bb (e:53bb)
-	text "A Basic Pokémon was placed"
-	line "on each Bench."
+	text "Op elke Bank is op een"
+	line "Basis-Pokémon geplaatst."
 	done
 
 WasUnsuccessfulText: ; 393e6 (e:53e6)
 	text "<RAMTEXT>'s"
-	line "<RAMTEXT> was unsuccessful."
+	line "<RAMTEXT> was onsuccesvol."
 	done
 
 ThereWasNoEffectFromTxRam2Text: ; 393ff (e:53ff)
-	text "There was no effect"
-	line "from <RAMTEXT>."
+	text "Er was geen effect"
+	line "van <RAMTEXT>."
 	done
 
 
 TheEnergyCardFromPlayAreaWasMovedText: ; 3941c (e:541c)
-	text "The Energiekaart from <RAMNAME>'s"
-	line "Play Area was moved."
+	text "De Energiekaart uit <RAMNAME>'s"
+	line "Spelgebied was verplaatst."
 	done
 
 DrewFireEnergyFromTheHandText: ; 3944b (e:544b)
-	text "<RAMNAME> drew"
-	line "<RAMNUM> Vuur Energie from the Hand."
+	text "<RAMNAME> nam"
+	line "<RAMNUM> Vuur Energie uit de Hand."
 	done
 
 ThePkmnCardsInHandAndDeckWereShuffledText: ; 39470 (e:5470)
-	text "The Pokémon cards in <RAMNAME>'s"
-	line "Hand and Deck were shuffled"
+	text "De Pokémonkaarten in <RAMNAME>'s"
+	line "Hand en Deck zijn door elkaar"
+	line "heen geschud."
 	done
 
 Text014f: ; 394a6 (e:54a6)
-	text "Remove Damage counter each time the"
-	line "A Button is pressed. B Button quits."
+	text "Verwijder Schadeteller telkens als de"
+	line "A-knop ingedrukt wordt. B-knop stopt."
 	done
 
 ChoosePokemonToRemoveDamageCounterFromText: ; 394f0 (e:54f0)
-	text "Choose a Pokémon to remove"
-	line "the Damage counter from."
+	text "Kies een Pokémon om de Schade-"
+	line "teller van te verwijderen."
 	done
 
 ChooseCardToDiscardFromHandText: ; 39525 (e:5525)
-	text "Choose the card to Discard"
-	line "from the Hand."
+	text "Kies de kaart om weg te gooien"
+	line "uit de Hand."
 	done
 
 ChoosePokemonToRemoveEnergyFromText: ; 39550 (e:5550)
-	text "Choose a Pokémon to remove"
-	line "Energy from and choose the Energy."
+	text "Kies een Pokémon om Energie van"
+	line "te verwijderen en kies de Energie."
 	done
 
 
 Choose2BasicEnergyCardsFromDiscardPileText: ; 3958f (e:558f)
-	text "Choose 2 Basic Energiekaarten"
-	line "from the Weggooistapel."
+	text "Kies 2 Basis-Energiekaarten"
+	line "uit de Weggooistapel."
 	done
 
 Text0154: ; 395c3 (e:55c3)
-	text "Choose a Pokémon and press the A"
-	line "Button to remove Damage counters."
+	text "Kies een Pokémon en druk op A"
+	line "om Schadetellers te verwijderen."
 	done
 
 Choose2CardsFromHandToDiscardText: ; 39607 (e:5607)
-	text "Choose 2 cards from the Hand"
-	line "to Discard."
+	text "Kies 2 kaarten uit de Hand"
+	line "om weg te gooien."
 	done
 
 Choose2HandCardsFromHandToReturnToDeckText: ; 39631 (e:5631)
@@ -813,7 +816,7 @@ CannotCardPopWithFriendPreviouslyPoppedWithText: ; 39d8b (e:5d8b)
 
 PositionGameBoyColorsAndPressAButtonText: ; 39dcc (e:5dcc)
 	text "Plaats de Game Boy Colors op deze"
-	line "manier en druk op de A-Knop."
+	line "manier en druk op de A-knop."
 	done
 
 ReceivedThroughCardPopText: ; 39e02 (e:5e02)
@@ -945,7 +948,7 @@ PutPokemonOnBenchPracticeDuelText: ; 3a230 (e:6230)
 	line "Pokémon."
 	line "Nogmaals, je kunt alleen Basis-"
 	line "Pokémon op de Bank plaatsen."
-	line "Kies Staryu uit je hand en"
+	line "Kies Staryu uit je Hand en"
 	line "leg hem daar neer."
 	done
 
@@ -1033,7 +1036,7 @@ Turn5Instr2PracticeDuelText: ; 3a65e (e:665e)
 
 Turn6Instr1PracticeDuelText: ; 3a697 (e:6697)
 	text "1. Kies de Trainerkaart Drankje"
-	line "   uit je hand om Staryu's IP"
+	line "   uit je Hand om Staryu's IP"
 	line "   te herstellen."
 	done
 

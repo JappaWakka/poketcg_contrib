@@ -747,8 +747,8 @@ BonekeeperName: ; 5f3e9 (17:73e9)
 
 MarowakLv26Description: ; 5f3f5 (17:73f5)
 	text "Het bot dat hij vasthoudt is zijn"
-	line "belangrijkste wapen. Hij gooit het bot"
-	line "met grote vaardigheid als een boemerang"
+	line "hoofdwapen. Hij gooit het bot met"
+	line "grote vaardigheid als een boemerang"
 	line "om zijn doelen uit te schakelen."
 	done
 

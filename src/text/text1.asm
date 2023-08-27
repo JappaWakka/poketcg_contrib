@@ -270,10 +270,10 @@ PokemonPowerSelectNotRequiredText: ; 3671f (d:671f)
 	done
 
 DiscardDescription: ; 36757 (d:6757)
-	text "Je mag deze kaart Weggooien tijdens"
+	text "Je mag deze kaart weggooien tijdens"
 	line "je beurt."
 	line "Het zal tellen als een Uitschakeling."
-	line "(Dit Weggooien is geen"
+	line "(Dit weggooien is geen"
 	line "Pokémon-Kracht.)"
 	done
 

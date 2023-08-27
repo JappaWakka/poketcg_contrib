@@ -4,7 +4,7 @@ MaintenanceName: ; 647da (19:47da)
 
 MaintenanceDescription: ; 647e7 (19:47e7)
 	text "Shuffle 2 of the other cards from"
-	line "your hand into your deck in order"
+	line "your Hand into your deck in order"
 	line "to draw a card."
 	done
 
@@ -25,7 +25,7 @@ GamblerName: ; 648ed (19:48ed)
 	done
 
 GamblerDescription: ; 648f6 (19:48f6)
-	text "Shuffle your hand into your deck."
+	text "Shuffle your Hand into your deck."
 	line "Gooi een munt op. Als het kop is, draw 8 cards."
 	line "If tails, draw 1 card."
 	done

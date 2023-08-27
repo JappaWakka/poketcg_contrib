@@ -953,7 +953,7 @@ ProfessorOakName: ; 6342d (18:742d)
 	done
 
 ProfessorOakDescription: ; 6343c (18:743c)
-	text "Gooi je hand weg en pak dan"
+	text "Gooi je Hand weg en pak dan"
 	line "7 kaarten."
 	done
 
@@ -1015,7 +1015,7 @@ PokemonTraderName: ; 6369f (18:769f)
 
 PokemonTraderDescription: ; 636af (18:76af)
 	text "Trade 1 of the Basic Pokémon or"
-	line "Evolution cards in your hand for 1"
+	line "Evolution cards in your Hand for 1"
 	line "of the Basic Pokémon or Evolution"
 	line "cards from your deck. Show both"
 	line "cards to your opponent."
@@ -1028,7 +1028,7 @@ PokemonBreederName: ; 6376a (18:776a)
 
 PokemonBreederDescription: ; 6377b (18:777b)
 	text "Put a Stage 2 Evolution card from"
-	line "your hand on the matching Basic"
+	line "your Hand on the matching Basic"
 	line "Pokémon. You can only play this card"
 	line "when you would be allowed to evolve"
 	line "that Pokémon anyway."
@@ -1084,7 +1084,7 @@ EnergyRetrievalName: ; 63bcc (18:7bcc)
 
 EnergyRetrievalDescription: ; 63bde (18:7bde)
 	text "Trade 1 of the other cards in your"
-	line "hand for up to 2 basic Energiekaarten"
+	line "Hand for up to 2 basic Energiekaarten"
 	line "from your Weggooistapel."
 	done
 
@@ -1094,7 +1094,7 @@ SuperEnergyRetrievalName: ; 63c3e (18:7c3e)
 
 SuperEnergyRetrievalDescription: ; 63c56 (18:7c56)
 	text "Trade 2 of the other cards in your"
-	line "hand for up to 4 basic Energiekaarten"
+	line "Hand for up to 4 basic Energiekaarten"
 	line "from your Weggooistapel."
 	done
 

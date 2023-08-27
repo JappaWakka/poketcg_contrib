@@ -335,7 +335,7 @@ Text04a8: ; 447e2 (11:47e2)
 	line "Elke keer als je 1 van je"
 	line "tegenstander's Pokémon Uitschakelt,"
 	line "mag je 1 van je Prijskaarten pakken"
-	line "en hem in je hand nemen."
+	line "en hem in je Hand nemen."
 	line "Als je alle Prijskaarten hebt"
 	line "gepakt, win je het spel."
 	done
@@ -612,7 +612,7 @@ Text04d0: ; 459c1 (11:59c1)
 	line "Pokémon Trading Card Game!"
 	line "Basic Pokémon are the only Pokémon"
 	line "you can put directly from your"
-	line "hand into the play area. Stage 1"
+	line "Hand into the play area. Stage 1"
 	line "and Stage 2 Evolution cards can"
 	line "only be used on Basic Pokémon."
 	line "Make sure you have enough"

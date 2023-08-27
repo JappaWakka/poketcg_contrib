@@ -136,7 +136,7 @@ Text05d9: ; 4bc58 (12:7c58)
 	line "kunt brengen. Een Basis-Pokémon"
 	line "in het spel kan Evolueren in een"
 	line "Fase-1-Pokémon. Een Fase-1-Pokémon"
-	line "in het spelgebied kan dan Evolueren"
+	line "in het Spelgebied kan dan Evolueren"
 	line "in een Fase-2-Pokémon. Dus daarom"
 	line "is Squirtle nodig om een Wartortle"
 	line "te spelen, en is Wartortle nodig"
