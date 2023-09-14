@@ -632,9 +632,9 @@ PoliwagsWaterGunDescription: ; 5b547 (16:7547)
 	text "Doet 10 schade plus nog eens 10"
 	line "schade voor elke aan Poliwag gehechte"
 	line "<WATER> Energie die niet wordt gebruikt"
-	line "om de Energiekosten van deze Aanval te"
-	line "betalen. Je kunt op deze manier niet"
-	line "meer dan 20 schade toevoegen."
+	line "om de Energiekosten van deze Aanval"
+	line "te betalen. Je kunt op deze manier"
+	line "niet meer dan 20 schade toevoegen."
 	done
 
 TadpoleName: ; 5b5f4 (16:75f4)
@@ -895,7 +895,7 @@ HorseaName: ; 5bf43 (16:7f43)
 
 OpponentAttackMayDoNothingDescription: ; 5bf4b (16:7f4b)
 	text "Als de Verdedigende Pokémon probeert"
-	line "aan te vallen tijdens je tegen-"
+	line "Aan te Vallen tijdens je tegen-"
 	line "stander's volgende beurt, gooit"
 	line "je tegenstander een munt op. Als"
 	line "het munt is, doet die aanval niets."
@@ -1078,9 +1078,9 @@ LaprasWaterGunDescription: ; 5c597 (17:4597)
 	text "Doet 10 schade plus nog eens 10"
 	line "schade voor elke aan Lapras gehechte"
 	line "<WATER> Energie die niet wordt gebruikt"
-	line "om de Energiekosten van deze Aanval te"
-	line "betalen. Je kunt op deze manier niet"
-	line "meer dan 20 schade toevoegen."
+	line "om de Energiekosten van deze Aanval"
+	line "te betalen. Je kunt op deze manier"
+	line "niet meer dan 20 schade toevoegen."
 	done
 
 TransportName: ; 5c643 (17:4643)
@@ -1149,6 +1149,7 @@ ClairvoyanceName: ; 5c8a7 (17:48a7)
 ClairvoyanceDescription: ; 5c8b5 (17:48b5)
 	text "Je tegenstander speelt met de"
 	line "afbeeldingen van de kaarten in"
+	line "zijn of haar hand zichtbaar."
 	line "Deze kracht stopt met werken als"
 	line "Omanyte In Slaap, Verward, of"
 	line "Verlamd is."
@@ -1156,10 +1157,11 @@ ClairvoyanceDescription: ; 5c8b5 (17:48b5)
 
 OmanytesWaterGunDescription: ; 5c932 (17:4932)
 	text "Doet 10 schade plus nog eens 10"
-	line "schade voor elke aan Omanyte gehechte"
-	line "<WATER> Energie die niet wordt gebruikt"
-	line "om de Energiekosten van deze Aanval te"
-	line "betalen. Je kunt op deze manier niet"
+	line "schade voor elke aan Omanyte"
+	line "gehechte <WATER> Energie die niet"
+	line "wordt gebruikt om de Energiekosten"
+	line "van deze Aanval te betalen."
+	line "Je kunt op deze manier niet"
 	line "meer dan 20 schade toevoegen."
 	done
 
@@ -1335,45 +1337,4 @@ PikachuLv16Description: ; 5d13d (17:513d)
 	line "samenkomen, kan hun"
 	line "elektriciteit zich opstapelen"
 	line "en bliksemstormen veroorzaken."
-	done
-
-FlyingPikachuName: ; 5d19e (17:519e)
-	text "Vliegende Pikachu"
-	done
-
-FlyName: ; 5d1ae (17:51ae)
-	text "Vliegen"
-	done
-
-FlyDescription: ; 5d1b3 (17:51b3)
-	text "Gooi een munt op. Als het kop is,"
-	line "voorkom dan tijdens je tegenstander's"
-	line "volgende beurt alle gevolgen van"
-	line "Aanvallen, inclusief schade,"
-	line "toegebracht aan Vliegende Pikachu;"
-	done
-
-FlyDescriptionCont: ; Translated text didn't fit so I made this
-	text "als het munt is, doet deze Aanval"
-	line "niets (zelfs geen schade)."
-	done
-
-FlyingPikachuDescription: ; 5d26f (17:526f)
-	text "Door te leren hoe hij moest vliegen,"
-	line "overkwam Pikachu zijn zwakte tegen"
-	line "Vecht Pokémon."
-	done
-
-SurfingPikachuName: ; 5d2bb (17:52bb)
-	text "Surfende Pikachu"
-	done
-
-SurfName: ; 5d2cc (17:52cc)
-	text "Surfen"
-	done
-
-SurfingPikachuDescription: ; 5d2d2 (17:52d2)
-	text "Tijdens een zomer werd er een"
-	line "groep Pikachu gespot die de golven"
-	line "bereden bij het lokale strand."
 	done

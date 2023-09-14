@@ -1,3 +1,81 @@
+HaunterDescription: ; 6080c (18:480c)
+	text "Omdat hij in staat is door zware"
+	line "muren heen te glippen, wordt"
+	line "beweerd dat hij uit een andere"
+	line "dimensie komt."
+	done
+
+HypnosisAttackName: ; 597bc (16:57bc)
+	text "Hypnose"
+	done
+
+DreamEaterName: ; 6086a (18:486a)
+	text "Droometer"
+	done
+
+DreamEaterDescription: ; 60877 (18:4877)
+	text "Deze Aanval kun je alleen"
+	line "gebruiken als de Verdedigende"
+	line "Pokémon In Slaap is."
+	done
+
+GengarName: ; 608ba (18:48ba)
+	text "Gengar"
+	done
+
+CurseName: ; 608c2 (18:48c2)
+	text "Vervloeken"
+	done
+
+CurseDescription: ; 608c9 (18:48c9)
+	text "Eenmaal tijdens je beurt (voor je"
+	line "Aanval), mag je 1 Schadeteller"
+	line "van 1 van je tegenstander's Pokémon"
+	line "naar een andere verplaatsen (zelfs"
+	line "als het de andere Pokémon zou"
+	line "Uitschakelen). Deze kracht kan niet"
+	line "worden gebruikt als Gengar"
+	line "In Slaap, Verward, of Verlamd is."
+	done
+
+DarkMindName: ; 609b7 (18:49b7)
+	text "Duistere geest"
+	done
+
+DarkMindDescription: ; 609c2 (18:49c2)
+	text "ls je tegenstander Pokémon op de"
+	line "Bank heeft, kies er dan 1 van en"
+	line "deze Aanval doet hem 10 schade."
+	line "(Pas geen Zwakte en Weerstand"
+	line "toe op de Pokémon op de Bank.)"
+	done
+
+ShadowName: ; 60a5f (18:4a5f)
+	text "Schaduw-"
+	done
+
+GengarDescription: ; 60a67 (18:4a67)
+	text "Onder een volle maan houdt deze"
+	line "Pokémon ervan om de schaduwen van"
+	line "mensen na te doen en om hun angst"
+	line "te lachen."
+	done
+
+DrowzeeName: ; 60ac8 (18:4ac8)
+	text "Drowzee"
+	done
+
+PoundName: ; 60ad1 (18:4ad1)
+	text "Stamp"
+	done
+
+DrowzeeDescription: ; 60ad8 (18:4ad8)
+	text "Brengt zijn vijanden in slaap en eet"
+	line "vervolgens hun dromen op. Wordt soms"
+	line "wel eens ziek omdat hij slechte"
+	line "dromen eet."
+	done
+
 HypnoName: ; 60b37 (18:4b37)
 	text "Hypno"
 	done
@@ -1267,51 +1345,3 @@ DevolutionSprayDescriptionCont: ; 644cb (19:44cb)
 	line "had evolved it)."
 	done
 
-PotionName: ; 64565 (19:4565)
-	text "Drankje"
-	done
-
-PotionDescription: ; 6456d (19:456d)
-	text "Verwijder ten hoogste 2"
-	line "Schadetellers van 1 van je Pokémon."
-	line "als die Pokémon minder Schadetellers"
-	line "heeft dan dat, verwijder ze dan"
-	line "allemaal."
-	done
-
-SuperPotionName: ; 645e8 (19:45e8)
-	text "Super Potion"
-	done
-
-SuperPotionDescription: ; 645f6 (19:45f6)
-	text "Discard 1 Energiekaart attached to 1"
-	line "of your own Pokémon in order to"
-	line "remove 4 damage counters from that"
-	line "Pokémon. If the Pokémon has fewer"
-	line "damage counters than that, remove"
-	line "all of them."
-	done
-
-FullHealName: ; 646af (19:46af)
-	text "Volledige Genezing"
-	done
-
-FullHealDescription: ; 646ba (19:46ba)
-	text "Je Actieve Pokémon is niet langer"
-	line "In Slaap, Verward, Verlamd of"
-	line "Vergiftigd."
-	done
-
-ReviveName: ; 64706 (19:4706)
-	text "Opwekking"
-	done
-
-ReviveDescription: ; 6470e (19:470e)
-	text "Leg 1 Basis-Pokémonkaart uit je"
-	line "weggooistapel op je Bank. Leg op die"
-	line "Pokémon schadetellers ter waarde"
-	line "van de helft van zijn IP (naar"
-	line "beneden afgerond naar de dichtst-"
-	line "bijzijnde 10). (Je kunt Opwekking"
-	line "niet spelen als je Bank vol is.)"
-	done

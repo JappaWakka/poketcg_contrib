@@ -512,11 +512,12 @@ DoubleColorlessEnergyName: ; 5747d (15:747d)
 
 DoubleColorlessEnergyDescription: ; 57496 (15:7496)
 	text "Levert <COLORLESS><COLORLESS> Energie."
-	line "(Telt niet als een Basis-Energiekaart.)"
-	line "Kleurloze Energie kan niet worden gebruikt"
-	line "als om gekleurde Energiekosten te betalen."
-	line "(Elk type Energie kan worden gebruikt"
-	line "als om Kleurloze Energiekosten te betalen.)"
+	line "(Telt niet als een Basis-Energie-"
+	line "kaart.) Kleurloze Energie kan niet"
+	line "worden gebruikt om gekleurde"
+	line "Energiekosten te betalen. (Elk"
+	line "type Energie kan worden gebruikt om"
+	line "Kleurloze Energiekosten te betalen.)"
 	done
 
 BulbasaurName: ; 57552 (15:7552)

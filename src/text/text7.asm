@@ -100,16 +100,17 @@ Text05d6: ; 4b8c8 (12:78c8)
 
 Text05d7: ; 4ba32 (12:7a32)
 	text "Pokémon doen schade aan"
-	line "Verdedigende Pokémon door aan"
-	line "te vallen. Pokémon hebben daarvoor"
+	line "Verdedigende Pokémon door Aan"
+	line "te Vallen. Pokémon hebben daarvoor"
 	line "Energie-kaarten nodig."
 	line "Bijvoorbeeld, de Energie die nodig"
 	line "is voor Seaking's Waterval is <WATER><COLORLESS>."
-	line "<WATER><COLORLESS> staat voor"
-	line "1 Water Energie-kaart en nog een"
-	line "andere Energiekaart van welk"
-	line "type dan ook. De benodigde Energie"
-	line "verschilt per Aanval."
+	line "<WATER><COLORLESS> staat voor 1 Water"
+	line "Energiekaart en nog een andere"
+	line "Energiekaart van welk type dan ook."
+	line ""
+	line "De benodigde Energie verschilt"
+	line "per Aanval."
 	done
 
 Text05d8: ; 4bb56 (12:7b56)

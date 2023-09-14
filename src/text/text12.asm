@@ -1,3 +1,44 @@
+FlyingPikachuName: ; 5d19e (17:519e)
+	text "Vliegende Pikachu"
+	done
+
+FlyName: ; 5d1ae (17:51ae)
+	text "Vliegen"
+	done
+
+FlyDescription: ; 5d1b3 (17:51b3)
+	text "Gooi een munt op. Als het kop is,"
+	line "voorkom dan tijdens je tegenstander's"
+	line "volgende beurt alle gevolgen van"
+	line "Aanvallen, inclusief schade,"
+	line "toegebracht aan Vliegende Pikachu;"
+	done
+
+FlyDescriptionCont: ; Translated text didn't fit so I made this
+	text "als het munt is, doet deze Aanval"
+	line "niets (zelfs geen schade)."
+	done
+
+FlyingPikachuDescription: ; 5d26f (17:526f)
+	text "Door te leren hoe hij moest vliegen,"
+	line "overkwam Pikachu zijn zwakte tegen"
+	line "Vecht Pokémon."
+	done
+
+SurfingPikachuName: ; 5d2bb (17:52bb)
+	text "Surfende Pikachu"
+	done
+
+SurfName: ; 5d2cc (17:52cc)
+	text "Surfen"
+	done
+
+SurfingPikachuDescription: ; 5d2d2 (17:52d2)
+	text "Tijdens een zomer werd er een"
+	line "groep Pikachu gespot die de golven"
+	line "bereden bij het lokale strand."
+	done
+
 RaichuName: ; 5d321 (17:5321)
 	text "Raichu"
 	done
@@ -1196,82 +1237,3 @@ TransparencyDescription: ; 6072b (18:472b)
 NightmareName: ; 60801 (18:4801)
 	text "Nachtmerrie"
 	done
-
-HaunterDescription: ; 6080c (18:480c)
-	text "Omdat hij in staat is door zware"
-	line "muren heen te glippen, wordt"
-	line "beweerd dat hij uit een andere"
-	line "dimensie komt."
-	done
-
-HypnosisAttackName: ; 597bc (16:57bc)
-	text "Hypnose"
-	done
-
-DreamEaterName: ; 6086a (18:486a)
-	text "Droometer"
-	done
-
-DreamEaterDescription: ; 60877 (18:4877)
-	text "Deze Aanval kun je alleen"
-	line "gebruiken als de Verdedigende"
-	line "Pokémon In Slaap is."
-	done
-
-GengarName: ; 608ba (18:48ba)
-	text "Gengar"
-	done
-
-CurseName: ; 608c2 (18:48c2)
-	text "Vervloeken"
-	done
-
-CurseDescription: ; 608c9 (18:48c9)
-	text "Eenmaal tijdens je beurt (voor je"
-	line "Aanval), mag je 1 Schadeteller"
-	line "van 1 van je tegenstander's Pokémon"
-	line "naar een andere verplaatsen (zelfs"
-	line "als het de andere Pokémon zou"
-	line "Uitschakelen). Deze kracht kan niet"
-	line "worden gebruikt als Gengar"
-	line "In Slaap, Verward, of Verlamd is."
-	done
-
-DarkMindName: ; 609b7 (18:49b7)
-	text "Duistere geest"
-	done
-
-DarkMindDescription: ; 609c2 (18:49c2)
-	text "ls je tegenstander Pokémon op de"
-	line "Bank heeft, kies er dan 1 van en"
-	line "deze Aanval doet hem 10 schade."
-	line "(Pas geen Zwakte en Weerstand"
-	line "toe op de Pokémon op de Bank.)"
-	done
-
-ShadowName: ; 60a5f (18:4a5f)
-	text "Schaduw-"
-	done
-
-GengarDescription: ; 60a67 (18:4a67)
-	text "Onder een volle maan houdt deze"
-	line "Pokémon ervan om de schaduwen van"
-	line "mensen na te doen en om hun angst"
-	line "te lachen."
-	done
-
-DrowzeeName: ; 60ac8 (18:4ac8)
-	text "Drowzee"
-	done
-
-PoundName: ; 60ad1 (18:4ad1)
-	text "Stamp"
-	done
-
-DrowzeeDescription: ; 60ad8 (18:4ad8)
-	text "Brengt zijn vijanden in slaap en eet"
-	line "vervolgens hun dromen op. Wordt soms"
-	line "wel eens ziek omdat hij slechte"
-	line "dromen eet."
-	done
-

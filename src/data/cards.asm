@@ -3563,7 +3563,7 @@ TentacoolCard: ; 31ea9 (c:5ea9)
 	energy 0 ; energies
 	tx CowardiceName ; name
 	tx CowardiceDescription ; description
-	dw CowardiceDescriptionCont ; description (cont)
+	tx CowardiceDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw TentacoolCowardiceEffectCommands ; effect commands
