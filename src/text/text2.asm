@@ -531,7 +531,6 @@ ChoosePokemonToRemoveEnergyFromText: ; 39550 (e:5550)
 	line "te verwijderen en kies de Energie."
 	done
 
-
 Choose2BasicEnergyCardsFromDiscardPileText: ; 3958f (e:558f)
 	text "Kies 2 Basis-Energiekaarten"
 	line "uit de Weggooistapel."
@@ -548,173 +547,173 @@ Choose2CardsFromHandToDiscardText: ; 39607 (e:5607)
 	done
 
 Choose2HandCardsFromHandToReturnToDeckText: ; 39631 (e:5631)
-	text "Choose 2 cards from the Hand"
-	line "to return to the Deck."
+	text "Kies 2 kaarten uit de Hand om"
+	line "terug in het deck te stoppen."
 	done
 
 ChooseCardToPlaceInHandText: ; 39666 (e:5666)
-	text "Choose a card to"
-	line "place in the Hand."
+	text "Kies een kaart om"
+	line "in de Hand te nemen."
 	done
 
 ChoosePokemonToAttachDefenderToText: ; 3968b (e:568b)
-	text "Choose a Pokémon to"
-	line "attach Defender to."
+	text "Kies een Pokémon om"
+	line "Verdediger aan te hechten."
 	done
 
 Text0159: ; 396b4 (e:56b4)
-	text "You can draw up to <RAMNUM> cards."
-	line "A to Draw, B to End."
+	text "Je kan ten hoogste <RAMNUM> kaarten"
+	line "pakken. A = Pak, B = Stop."
 	done
 
 ChoosePokemonToReturnToTheDeckText: ; 396e6 (e:56e6)
-	text "Choose a Pokémon to"
-	line "return to the Deck."
+	text "Kies een Pokémon om terug"
+	line "in het Deck te stoppen."
 	done
 
 ChoosePokemonToPlaceInPlayText: ; 3970f (e:570f)
-	text "Choose a Pokémon to"
-	line "place in play."
+	text "Kies een Pokémon om in"
+	line "het spel te brengen."
 	done
 
 ChooseBasicPokemonToEvolveText: ; 39733 (e:5733)
-	text "Choose a Basic Pokémon"
-	line "to Evolve."
+	text "Kies een Basis-Pokémon"
+	line "om te Evolueren."
 	done
 
 ChoosePokemonToScoopUpText: ; 39756 (e:5756)
-	text "Choose a Pokémon to"
-	line "Scoop Up."
+	text "Kies een Pokémon om"
+	line "Binnen te Halen."
 	done
 
 ChooseCardFromYourHandToSwitchText: ; 39775 (e:5775)
-	text "Choose a card from your"
-	line "Hand to Switch."
+	text "Kies een kaart uit je"
+	line "Hand om te Ruilen."
 	done
 
 ChooseCardToSwitchText: ; 3979e (e:579e)
-	text "Choose a card to"
-	line "Switch."
+	text "Kies een kaart om"
+	line "te Ruilen."
 	done
 
 ChooseBasicOrEvolutionPokemonCardFromDeckText: ; 397b8 (e:57b8)
-	text "Choose a Basic or Evolution"
-	line "Pokémon card from the Deck."
+	text "Kies een Basis- of Evolutie-"
+	line "Pokémonkaart uit het Deck."
 	done
 
 ChoosePokemonCardText: ; 397f1 (e:57f1)
-	text "Choose"
-	line "a Pokémon card."
+	text "Kies"
+	line "een Pokémonkaart."
 	done
 
 RearrangeThe5CardsAtTopOfDeckText: ; 39809 (e:5809)
-	text "Rearrange the 5 cards at"
-	line "the top of the Deck."
+	text "Herschik de 5 kaarten"
+	line "bovenop het Deck."
 	done
 
 PleaseCheckTheOpponentsHandText: ; 39838 (e:5838)
-	text "Please check the opponent's"
+	text "Bekijk de tegenstander's"
 	line "Hand."
 	done
 
 EvolutionCardText: ; 3985b (e:585b)
-	text "Evolution card"
+	text "Evolutiekaart"
 	done
 
 CardWasChosenText: ; 3986b (e:586b)
-	text "<RAMTEXT> was chosen."
+	text "<RAMTEXT> is gekozen."
 	done
 
 ChooseBasicPokemonToPlaceOnBenchText: ; 3987a (e:587a)
-	text "Choose a Basic Pokémon"
-	line "to place on the Bench."
+	text "Kies een Basis-Pokémon om"
+	line "op de Bank te plaatsen."
 	done
 
 ChooseEvolutionCardAndPressAButtonToDevolveText: ; 398a9 (e:58a9)
-	text "Choose an Evolution card and"
-	line "press the A Button to Devolve 1."
+	text "Kies een Evolutiekaart en druk"
+	line "op de A-knop om 1 te Devolueren."
 	done
 
 ChoosePokemonInYourAreaThenPokemonInYourOppText: ; 398e8 (e:58e8)
-	text "Choose a Pokémon in your Area, then"
-	line "a Pokémon in your opponent's."
+	text "Kies een Pokémon in jouw spelgebied,"
+	line "daarna een in die van je tegenstander."
 	done
 
 ChooseUpTo4FromDiscardPileText: ; 3992b (e:592b)
-	text "Choose up to 4"
-	line "from the Weggooistapel."
+	text "Kies ten hoogste 4"
+	line "van de Weggooistapel."
 	done
 
 ChooseAPokemonToSwitchWithActivePokemonText: ; 39952 (e:5952)
-	text "Choose a Pokémon to switch"
-	line "with the Active Pokémon."
+	text "Kies een Pokémon om te verwisselen"
+	line "met de Actieve Pokémon."
 	done
 
 PokemonAndAllAttachedCardsWereReturnedToDeckText: ; 39987 (e:5987)
-	text "<RAMTEXT> and all attached"
-	line "cards were returned to the Deck."
+	text "<RAMTEXT> en alle eraan gehechte"
+	line "kaarten zijn in het Deck gestopt."
 	done
 
 PokemonWasReturnedFromArenaToHandText: ; 399bc (e:59bc)
-	text "<RAMTEXT> was returned"
-	line "from the Arena to the Hand."
+	text "<RAMTEXT> is uit de Arena"
+	line "terug in de Hand genomen."
 	done
 
 PokemonWasReturnedFromBenchToHandText: ; 399e8 (e:59e8)
-	text "<RAMTEXT> was returned"
-	line "from the Bench to the Hand."
+	text "<RAMTEXT> is vanaf de Bank"
+	line "terug in de Hand genomen."
 	done
 
 PokemonWasReturnedToDeckText: ; 39a14 (e:5a14)
-	text "<RAMTEXT> was returned"
-	line "to the Deck."
+	text "<RAMTEXT> is terug in het"
+	line "Deck gestopt."
 	done
 
 WasPlacedInTheHandText: ; 39a31 (e:5a31)
-	text "<RAMTEXT> was placed"
-	line "in the Hand."
+	text "<RAMTEXT> is in de Hand"
+	line "geplaatst."
 	done
 
 TheCardYouReceivedText: ; 39a4c (e:5a4c)
-	text "The card you received"
+	text "De kaart die je ontving"
 	done
 
 YouReceivedTheseCardsText: ; 39a63 (e:5a63)
-	text "You received these cards:"
+	text "Je ontving deze kaarten:"
 	done
 
 ChooseTheCardToPutBackText: ; 39a7e (e:5a7e)
-	text "Choose the card"
-	line "to put back."
+	text "Kies een kaart om"
+	line "terug te stoppen."
 	done
 
 ChooseTheCardToDiscardText: ; 39a9c (e:5a9c)
-	text "Choose the card"
-	line "to Discard."
+	text "Kies de kaart om"
+	line "weg te gooien."
 	done
 
 DiscardedCardsFromDeckText: ; 39ab9 (e:5ab9)
-	text "Discarded <RAMNUM> cards"
-	line "from <RAMNAME>'s Deck."
+	text "<RAMNUM> kaarten weggegooid"
+	line "van <RAMNAME>'s Deck."
 	done
 
 Text0175: ; 39adb (e:5adb)
-	text "Discarded <RAMTEXT>"
-	line "from the Hand."
+	text "Gooide <RAMTEXT>"
+	line "weg uit de Hand."
 	done
 
 NoneCameText: ; 39af7 (e:5af7)
-	text "None came!"
+	text "Niemand kwam!"
 	done
 
 CameToTheBenchText: ; 39b03 (e:5b03)
 	text "<RAMTEXT>"
-	line "came to the Bench!"
+	line "kwam naar de Bank!"
 	done
 
 DuelistHasNoCardsInHandText: ; 39b19 (e:5b19)
-	text "<RAMNAME> has"
-	line "no cards in Hand!"
+	text "<RAMNAME> heeft"
+	line "geen kaarten in Hand!"
 	done
 
 PokemonHealedDamageText: ; 39b32 (e:5b32)
@@ -723,79 +722,79 @@ PokemonHealedDamageText: ; 39b32 (e:5b32)
 	done
 
 PokemonDevolvedToText: ; 39b46 (e:5b46)
-	text "<RAMTEXT> devolved"
-	line "to <RAMTEXT>!"
+	text "<RAMTEXT> Devolueerde"
+	line "naar <RAMTEXT>!"
 	done
 
 ThereWasNoFireEnergyText: ; 39b58 (e:5b58)
-	text "There was no Vuur Energie."
+	text "Er was geen Vuur Energie."
 	done
 
 YouCanSelectMoreCardsQuitText: ; 39b73 (e:5b73)
-	text "You can select <RAMNUM> more cards. Quit?"
+	text "Je kunt nog <RAMNUM> kaarten kiezen. Stoppen?"
 	done
 
 ThereWasNoEffectText: ; 39b97 (e:5b97)
-	text "There was no effect!"
+	text "Er gebeurde niks!"
 	done
 
 ThereWasNoEffectFromToxicText: ; 39bad (e:5bad)
-	text "There was no effect"
-	line "from Toxic"
+	text "Vergif had geen"
+	line "effect."
 	done
 
 ThereWasNoEffectFromPoisonText: ; 39bcd (e:5bcd)
-	text "There was no effect"
-	line "from Poison."
+	text "Vergiftiging had"
+	line "geen effect."
 	done
 
 ThereWasNoEffectFromSleepText: ; 39bef (e:5bef)
-	text "There was no effect"
-	line "from Sleep."
+	text "Slaap had geen"
+	line "effect."
 	done
 
 ThereWasNoEffectFromParalysisText: ; 39c10 (e:5c10)
-	text "There was no effect"
-	line "from Paralysis."
+	text "Verlamming had"
+	line "geen effect."
 	done
 
 ThereWasNoEffectFromConfusionText: ; 39c35 (e:5c35)
-	text "There was no effect"
-	line "from Confusion."
+	text "Verwarring had"
+	line "geen effect."
 	done
 
 ThereWasNoEffectFromPoisonConfusionText: ; 39c5a (e:5c5a)
-	text "There was no effet"
-	line "from Poison, Confusion."
+	text "Verlamming, Verwarring"
+	line "hadden geen effect."
 	done
 
 ExchangedCardsInDuelistsHandText: ; 39c86 (e:5c86)
-	text "Exchanged the cards"
+	text "De kaarten uitgewisseld"
 	line "in <RAMNAME>'s Hand."
 	done
 
 Text0185: ; 39ca8 (e:5ca8)
-	text "Battle Center"
+	text "Gevechtscentrum"
 	done
 
 PrizesCardsText: ; 39cb7 (e:5cb7)
-	text "Prizes"
-	line "       cards"
+	text "Prijzen"
+	line "       kaarten"
 	done
 
 ChooseTheNumberOfPrizesText: ; 39ccc (e:5ccc)
-	text "Choose the number"
-	line "of Prizes."
+	text "Kies het aantal"
+	line "Prijzen."
 	done
 
 PleaseWaitDecidingNumberOfPrizesText: ; 39cea (e:5cea)
-	text "Please wait..."
-	line "Deciding the number of Prizes..."
+	text "Even geduld..."
+	line "Het aantal prijzen bepalen..."
 	done
 
 BeginAPrizeDuelWithText: ; 39d1b (e:5d1b)
-	text "Begin a <RAMNUM>-Prize Duel"
-	line "with <RAMNAME>."
+	text "Begin een <RAMNUM>-Prijs Duel"
+	line "met <RAMNAME>."
 	done
 
 AreYouBothReadyToCardPopText: ; 39d39 (e:5d39)
@@ -807,7 +806,6 @@ ThePopWasntSuccessfulText: ; 39d5c (e:5d5c)
 	text "De Kaart Flits! is niet gelukt."
 	line "Probeer het opnieuw."
 	done
-
 
 CannotCardPopWithFriendPreviouslyPoppedWithText: ; 39d8b (e:5d8b)
 	text "Je kunt geen Kaart-Flits! doen met"
@@ -830,50 +828,49 @@ ReceivedCardText: ; 39e20 (e:5e20)
 	done
 
 ReceivedPromotionalCardText: ; 39e31 (e:5e31)
-	text "<RAMNAME> received a Promotional"
-	line "card <RAMTEXT>!"
+	text "<RAMNAME> ontving een Promokaart"
+	line "<RAMTEXT>!"
 	done
 
 ReceivedLegendaryCardText: ; 39e53 (e:5e53)
-	text "<RAMNAME> received the Legendary"
-	line "card <RAMTEXT>!"
+	text "<RAMNAME> ontving de Legendarische"
+	line "kaart <RAMTEXT>!"
 	done
 
 ReceivedPromotionalFlyingPikachuText: ; 39e75 (e:5e75)
-	text "<RAMNAME> received a Promotinal"
-	line "card Flyin' Pikachu!"
+	text "<RAMNAME> ontving een Promokaart"
+	line "Vliegende Pikachu!"
 	done
 
 ReceivedPromotionalSurfingPikachuText: ; 39ea3 (e:5ea3)
-	text "<RAMNAME> received a Promotional"
-	line "card Surfin' Pikachu!"
+	text "<RAMNAME> ontving een Promokaart"
+	line "Surfende Pikachu!"
 	done
 
 Text0194: ; 39ed3 (e:5ed3)
-	text "Received a Flareon!!!"
-	line "Looked at the card list!"
+	text "Ontving een Flareon!!!"
+	line "De kaartenlijst bekeken!"
 	done
 
 NowPrintingPleaseWaitText: ; 39f03 (e:5f03)
-	text "Now printing."
-	line "Please wait..."
+	text "Aan het printen."
+	line "Even geduld..."
 	done
-
 
 BoosterPackText: ; 39f21 (e:5f21)
 	text "Booster Pakjes"
 	done
 
 WouldYouLikeToTryAgainText: ; 39f2f (e:5f2f)
-	text "Would you like to try again?"
+	text "Wil je opnieuw proberen?"
 	done
 
 Text0198: ; 39f4d (e:5f4d)
-	text "Sent to <RAMNAME>."
+	text "Naar <RAMNAME> gestuurd."
 	done
 
 Text0199: ; 39f59 (e:5f59)
-	text "Received from <RAMNAME>."
+	text "Van <RAMNAME> ontvangen."
 	done
 
 SendingACardText: ; 39f6b (e:5f6b)

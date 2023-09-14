@@ -140,7 +140,7 @@ MixUpName: ; 5a2ec (16:62ec)
 MixUpDescription: ; 5a2f4 (16:62f4)
 	text "Als je tegenstander Basis-Pokémon"
 	line "of Evolutiekaarten in zijn of haar"
-	line "hand heeft, schudt je tegenstander"
+	line "Hand heeft, schudt je tegenstander"
 	line "die kaarten door zijn of haar deck"
 	line "heen. Daarna neemt je tegenstander"
 	line "een gelijk aantal Basis-Pokémon"
@@ -148,7 +148,7 @@ MixUpDescription: ; 5a2f4 (16:62f4)
 	done
 
 MixUpDescriptionCont: ; 5a3df (16:63df)
-	line "of haar deck in zijn of haar hand,"
+	line "of haar deck in zijn of haar Hand,"
 	line "op willekeurige wijze gekozen."
 	line "Hierna schudt je tegenstander"
 	line "opnieuw zijn of haar deck."
@@ -455,7 +455,7 @@ FiregiverDescription: ; 5ae1e (16:6e1e)
 	line "tijdens het opzetten van het spel),"
 	line "neem je 1 tot 4 (op willekeurige"
 	line "wijze gekozen) <FIRE> Energiekaarten"
-	line "uit je deck in je hand. Schud hierna"
+	line "uit je deck in je Hand. Schud hierna"
 	line "je deck."
 	done
 
@@ -707,7 +707,7 @@ CowardiceName: ; 5b885 (16:7885)
 CowardiceDescription: ; 5b890 (16:7890)
 	text "Op welk moment dan ook tijdens je"
 	line "beurt (vóór je aanval) mag je Tentacool"
-	line "weer in je hand nemen. (Gooi alle aan"
+	line "weer in je Hand nemen. (Gooi alle aan"
 	line "Tentacool gehechte kaarten weg.) Deze"
 	line "kracht kan niet worden gebruikt tijdens"
 	line "de beurt waarin je Tentacool in het"
@@ -1149,7 +1149,7 @@ ClairvoyanceName: ; 5c8a7 (17:48a7)
 ClairvoyanceDescription: ; 5c8b5 (17:48b5)
 	text "Je tegenstander speelt met de"
 	line "afbeeldingen van de kaarten in"
-	line "zijn of haar hand zichtbaar."
+	line "zijn of haar Hand zichtbaar."
 	line "Deze kracht stopt met werken als"
 	line "Omanyte In Slaap, Verward, of"
 	line "Verlamd is."
