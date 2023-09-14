@@ -2490,7 +2490,7 @@ NinetalesLv32Card: ; 31954 (c:5954)
 
 	; attack 1
 	energy COLORLESS, 2 ; energies
-	tx LureName ; name
+	tx NinetalesLureName ; name
 	tx NinetalesLureDescription ; description
 	dw NONE ; description (cont)
 	db 0 ; damage
@@ -3563,7 +3563,7 @@ TentacoolCard: ; 31ea9 (c:5ea9)
 	energy 0 ; energies
 	tx CowardiceName ; name
 	tx CowardiceDescription ; description
-	dw NONE ; description (cont)
+	dw CowardiceDescriptionCont ; description (cont)
 	db 0 ; damage
 	db POKEMON_POWER ; category
 	dw TentacoolCowardiceEffectCommands ; effect commands

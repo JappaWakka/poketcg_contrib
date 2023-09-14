@@ -91,74 +91,82 @@ ConfuseRayName: ; 5a151 (16:6151)
 	done
 
 FoxName: ; 5a15e (16:615e)
-	text "Fox"
+	text "Vos-"
 	done
 
 VulpixDescription: ; 5a163 (16:6163)
-	text "At the time of birth, it has just"
-	line "one tail. Its tail splits from the"
-	line "tip as it grows older."
+	text "Bij zijn geboorte heeft hij maar"
+	line "één staart. Als hij ouder wordt,"
+	line "begint zijn staart vanaf het"
+	line "puntje te splitsen."
 	done
 
 NinetalesName: ; 5a1c0 (16:61c0)
 	text "Ninetales"
 	done
 
+NinetalesLureName: ; Ninetales' Lure is different in Dutch
+	text "Verleiding"
+	done
+
 NinetalesLureDescription: ; 5a1cb (16:61cb)
-	text "If your opponent has any Benched"
-	line "Pokémon, choose 1 of them and switch"
-	line "it with the Defending Pokémon."
+	text "Als je tegenstander Pokémon op de"
+	line "Bank heeft, kies er dan 1 van en"
+	line "verwissel deze met zijn of haar"
+	line "Actieve Pokémon."
 	done
 
 FireBlastName: ; 5a231 (16:6231)
-	text "Fire Blast"
+	text "Vuurschot"
 	done
 
 FireBlastDescription: ; 5a23d (16:623d)
-	text "Discard 1 <FIRE> Energiekaart attached"
-	line "to Ninetales in order to use this"
-	line "attack."
+	text "Om deze Aanval te kunnen gebruiken"
+	line "moet je 1 aan Ninetales gehechte"
+	line "<FIRE> Energiekaart weggooien."
 	done
 
 NinetalesLv32Description: ; 5a28a (16:628a)
-	text "Very smart and very vengeful."
-	line "Grabbing one of its many tails could"
-	line "result in a 1,000-year curse."
+	text "Bijzonder slim en erg wraakzuchtig."
+	line "Het vastpakken van één van zijn vele"
+	line "staarten kan een 1000 jaar lang"
+	line "durende vloek tot gevolg hebben."
 	done
 
 MixUpName: ; 5a2ec (16:62ec)
-	text "Mix-Up"
+	text "Rommelen"
 	done
 
 MixUpDescription: ; 5a2f4 (16:62f4)
-	text "If your opponent has any Basic"
-	line "Pokémon or Evolution cards in his"
-	line "or her hand, your opponent shuffles"
-	line "them into his or her deck. Then,"
-	line "your opponent puts an equal number"
-	line "of Basic Pokémon or Evolution cards"
-	line "chosen at random from his or"
+	text "Als je tegenstander Basis-Pokémon"
+	line "of Evolutiekaarten in zijn of haar"
+	line "hand heeft, schudt je tegenstander"
+	line "die kaarten door zijn of haar deck"
+	line "heen. Daarna neemt je tegenstander"
+	line "een gelijk aantal Basis-Pokémon"
+	line "en/of Evolutiekaarten uit zijn"
 	done
 
 MixUpDescriptionCont: ; 5a3df (16:63df)
-	text "her deck into his or her hand. Your"
-	line "opponent shuffles his or her deck"
-	line "afterward."
+	line "of haar deck in zijn of haar hand,"
+	line "op willekeurige wijze gekozen."
+	line "Hierna schudt je tegenstander"
+	line "opnieuw zijn of haar deck."
 	done
 
 DancingEmbersName: ; 5a431 (16:6431)
-	text "Dancing Embers"
+	text "Dansende vonken"
 	done
 
 DancingEmbersDescription: ; 5a441 (16:6441)
-	text "Flip 8 coins. This attack does 10"
-	line "damage times the number of heads."
+	text "Gooi 8 munten op. Deze Aanval doet"
+	line "10 schade maal het aantal keren kop."
 	done
 
 NinetalesLv35Description: ; 5a486 (16:6486)
-	text "According to an enduring legend,"
-	line "9 noble heroes were united and"
-	line "reincarnated as this."
+	text "Volgens een eeuwenoude legende"
+	line "werden 9 nobele helden verenigd"
+	line "en als hem gereïncarneerd."
 	done
 
 GrowlitheName: ; 5a4dd (16:64dd)
@@ -353,7 +361,7 @@ TailWagName: ; 62d8a (18:6d8a)
 TailWagDescription: ; 62d94 (18:6d94)
 	text "Gooi een munt op. Als het kop is,"
 	line "kan de Verdedigende Pokémon Eevee"
-	line "niet aanvallen tijdens je"
+	line "niet Aanvallen tijdens je"
 	line "tegenstander's volgende beurt. (Het"
 	line "op de Bank plaatsen of evolueren van"
 	line "een van beide Pokémon beëindigt"
@@ -414,44 +422,48 @@ MoltresName: ; 5aced (16:6ced)
 	done
 
 WildfireName: ; 5acf6 (16:6cf6)
-	text "Wildfire"
+	text "Lopend vuurtje"
 	done
 
 WildfireDescription: ; 5ad00 (16:6d00)
-	text "You may discard any number of <FIRE>"
-	line "Energiekaarten attached to Moltres"
-	line "when you use this attack. If you do,"
-	line "discard that many cards from the top"
-	line "of your opponent's deck."
+	text "Als je deze aanval gebruikt mag je"
+	line "zoveel aan Moltres gehechte <FIRE>"
+	line "Energiekaarten weggooien als je"
+	line "wilt. Als je dit doet, gooi dan net"
+	line "zoveel kaarten weg van de bovenkant"
+	line "van je tegenstander's deck."
 	done
 
 DiveBombName: ; 5ada6 (16:6da6)
-	text "Dive Bomb"
+	text "Duikbom"
 	done
 
 MoltresLv35Description: ; 5adb1 (16:6db1)
-	text "Known as the legendary bird of fire."
-	line "Every flap of its wings creates a"
-	line "dazzling flash of flames."
+	text "Staat bekend als de legendarische"
+	line "vuurvogel. Elke slag van zijn"
+	line "vleugels veroorzaakt een duizeling-"
+	line "wekkende flikkering van vlammen."
 	done
 
 FiregiverName: ; 5ae13 (16:6e13)
-	text "Firegiver"
+	text "Aansteker"
 	done
 
 FiregiverDescription: ; 5ae1e (16:6e1e)
-	text "When you put Moltres into play"
-	line "during your turn (not during"
-	line "set-up), put from 1 to 4 (chosen at"
-	line "random) <FIRE> Energiekaarten from your"
-	line "deck into your hand. Shuffle your"
-	line "deck afterward."
+	text "Wanneer je Moltres in het spel"
+	line "brengt tijdens je beurt (niet"
+	line "tijdens het opzetten van het spel),"
+	line "neem je 1 tot 4 (op willekeurige"
+	line "wijze gekozen) <FIRE> Energiekaarten"
+	line "uit je deck in je hand. Schud hierna"
+	line "je deck."
 	done
 
 MoltresLv37Description: ; 5aed3 (16:6ed3)
-	text "A legendary bird Pokémon. As it"
-	line "flaps its flaming wings, even the"
-	line "night sky will turn red."
+	text "Een legendarische vogel-Pokémon."
+	line "Wanneer hij fladdert met zijn"
+	line "vlammende vleugels, kleurt zelfs"
+	line "de nachtlucht rood."
 	done
 
 SquirtleName: ; 5af2f (16:6f2f)
@@ -689,27 +701,32 @@ TentacoolName: ; 5b87a (16:787a)
 	done
 
 CowardiceName: ; 5b885 (16:7885)
-	text "Cowardice"
+	text "Wegglippen"
 	done
 
 CowardiceDescription: ; 5b890 (16:7890)
-	text "At any time during your turn"
-	line "(before your attack), you may return"
-	line "Tentacool to your hand. (Discard all"
-	line "cards attached to Tentacool.) This"
-	line "power can't be used the turn you put"
-	line "Tentacool into play or if Tentacool"
-	line "In Slaap, Verward, of Verlamd is."
+	text "Op welk moment dan ook tijdens je"
+	line "beurt (vóór je aanval) mag je Tentacool"
+	line "weer in je hand nemen. (Gooi alle aan"
+	line "Tentacool gehechte kaarten weg.) Deze"
+	line "kracht kan niet worden gebruikt tijdens"
+	line "de beurt waarin je Tentacool in het"
+	line "spel brengt of als Tentacool"
 	done
-
+	
+CowardiceDescriptionCont:
+	text "In Slaap, Verward, of Verlamd is."
+	done
+	
 JellyfishName: ; 5b987 (16:7987)
-	text "Jellyfish"
+	text "Kwal-"
 	done
 
 TentacoolDescription: ; 5b992 (16:7992)
-	text "Drifts in shallow seas. Anglers who"
-	line "hook them by accident are often"
-	line "punished by its stinging acid."
+	text "Zwerft in ondiepe zeeën. Vissers"
+	line "die ze per ongeluk aan de haak"
+	line "slaan, worden vaak gestraft door"
+	line "zijn bijtende zuur."
 	done
 
 TentacruelName: ; 5b9f6 (16:79f6)
@@ -717,13 +734,14 @@ TentacruelName: ; 5b9f6 (16:79f6)
 	done
 
 JellyfishStingName: ; 5ba02 (16:7a02)
-	text "Jellyfish Sting"
+	text "Kwallenbeet"
 	done
 
 TentacruelDescription: ; 5ba13 (16:7a13)
-	text "The tentacles are normally kept"
-	line "short. On hunts, they are extended"
-	line "to ensnare and immobilize prey."
+	text "De tentakels worden gewoonlijk kort"
+	line "gehouden. Als hij op voedsel jaagt"
+	line "worden ze langer om de prooi te"
+	line "pakken en te immobiliseren."
 	done
 
 SeelName: ; 5ba77 (16:7a77)
@@ -769,24 +787,27 @@ ShellderName: ; 5bb6e (16:7b6e)
 	done
 
 HideInShellName: ; 5bb78 (16:7b78)
-	text "Hide in Shell"
+	text "In zijn schulp kruipen"
 	done
 
 HideInShellDescription: ; 5bb87 (16:7b87)
-	text "Gooi een munt op. Als het kop is, prevent all"
-	line "damage done to Shellder during your"
-	line "opponent's next turn. (Any other"
-	line "effects of attacks still happen.)"
+	text "Gooi een munt op. Als het kop is,"
+	line "voorkomt deze aanval alle schade"
+	line "die aan Shellder wordt gedaan"
+	line "tijdens je tegenstander's volgende"
+	line "beurt. (Alle andere gevolgen van"
+	line "Aanvallen blijven gewoon geldig.)"
 	done
 
 BivalveName: ; 5bc12 (16:7c12)
-	text "Bivalve"
+	text "Tweekleppige"
 	done
 
 ShellderDescription: ; 5bc1b (16:7c1b)
-	text "Its hard shell repels any kind of"
-	line "attack. It is vulnerable only when"
-	line "its shell is open."
+	text "Zijn harde schaal vormt een"
+	line "afwering tegen elk soort aanval."
+	line "Hij is alleen kwetsbaar als zijn"
+	line "schaal open is."
 	done
 
 CloysterName: ; 5bc74 (16:7c74)
@@ -873,20 +894,22 @@ HorseaName: ; 5bf43 (16:7f43)
 	done
 
 OpponentAttackMayDoNothingDescription: ; 5bf4b (16:7f4b)
-	text "If the Defending Pokémon tries to"
-	line "attack during your opponent's next"
-	line "turn, your opponent flips a coin."
-	line "If tails, that attack does nothing."
+	text "Als de Verdedigende Pokémon probeert"
+	line "aan te vallen tijdens je tegen-"
+	line "stander's volgende beurt, gooit"
+	line "je tegenstander een munt op. Als"
+	line "het munt is, doet die aanval niets."
 	done
 
 DragonName: ; 5bfd7 (16:7fd7)
-	text "Dragon"
+	text "Draak-"
 	done
 
 HorseaDescription: ; 5c000 (17:4000)
-	text "Known to shoot down flying bugs with"
-	line "precision blasts of ink from the"
-	line "surface of the water."
+	text "Staat erom bekend dat hij met uiterst"
+	line "nauwkeurige stralen inkt vliegende"
+	line "insecten vanaf de oppervlakte van het"
+	line "water neerschiet."
 	done
 
 SeadraName: ; 5c05d (17:405d)
@@ -910,9 +933,10 @@ SeadrasAgilityDescription: ; 5c111 (17:4111)
 	done
 
 SeadraDescription: ; 5c18e (17:418e)
-	text "Capable of swimming backward by"
-	line "rapidly flapping its wing-like"
-	line "pectoral fins and stout tail."
+	text "Kan achteruit zwemmen door zijn"
+	line "op vleugels lijkende borstvinnen"
+	line "en stevige staart snel heen en"
+	line "weer te zwiepen."
 	done
 
 GoldeenName: ; 5c1ec (17:41ec)
@@ -1040,9 +1064,10 @@ AtrociousName: ; 5c523 (17:4523)
 	done
 
 GyaradosDescription: ; 5c52e (17:452e)
-	text "Rarely seen in the wild. Huge and"
-	line "vicious, it is capable of destroying"
-	line "entire cities in a rage."
+	text "Wordt zelden in het wild gezien."
+	line "Omdat hij zo enorm en kwaadaardig"
+	line "is, kan hij tijdens een woede-aanval"
+	line "hele steden vernietigen."
 	done
 
 LaprasName: ; 5c58f (17:458f)
@@ -1065,7 +1090,7 @@ TransportName: ; 5c643 (17:4643)
 LaprasDescription: ; 5c64e (17:464e)
 	text "Een Pokémon die door overbejaging"
 	line "bijna uitgeroeid is. Hij kan mensen"
-	line "het water overzetten"
+	line "het water overzetten."
 	done
 
 VaporeonName: ; 5c6aa (17:46aa)
@@ -1114,18 +1139,19 @@ OmanyteName: ; 5c88b (17:488b)
 	done
 
 MysteriousFossilName: ; 5c894 (17:4894)
-	text "Mysterious Fossil"
+	text "Mysterieus Fossiel"
 	done
 
 ClairvoyanceName: ; 5c8a7 (17:48a7)
-	text "Clairvoyance"
+	text "Toekomst voorspellen"
 	done
 
 ClairvoyanceDescription: ; 5c8b5 (17:48b5)
-	text "Your opponent plays with his or her"
-	line "Hand face up. This power stops"
-	line "working while Omanyte is Asleep,"
-	line "Confused, or Paralyzed."
+	text "Je tegenstander speelt met de"
+	line "afbeeldingen van de kaarten in"
+	line "Deze kracht stopt met werken als"
+	line "Omanyte In Slaap, Verward, of"
+	line "Verlamd is."
 	done
 
 OmanytesWaterGunDescription: ; 5c932 (17:4932)
@@ -1138,13 +1164,14 @@ OmanytesWaterGunDescription: ; 5c932 (17:4932)
 	done
 
 SpiralName: ; 5c9df (17:49df)
-	text "Spiral"
+	text "Spiraal-"
 	done
 
 OmanyteDescription: ; 5c9e7 (17:49e7)
-	text "Although long extinct, in rare"
-	line "cases, it can be genetically"
-	line "resurrected from fossils."
+	text "Hoewel hij al lang is uitgestorven,"
+	line "kan hij in zeldzame gevallen"
+	line "genetisch opnieuw tot leven worden"
+	line "gewekt uit fossielen."
 	done
 
 OmastarName: ; 5ca3e (17:4a3e)
@@ -1161,9 +1188,10 @@ OmastarsWaterGunDescription: ; 5ca47 (17:4a47)
 	done
 
 OmastarDescription: ; 5caf4 (17:4af4)
-	text "A prehistoric Pokémon that died out"
-	line "when its heavy shell made it"
-	line "impossible for it to catch prey."
+	text "Een prehistorische Pokémon die is"
+	line "uitgestorven toen zijn zware schaal"
+	line "het hem onmogelijk maakte om prooi"
+	line "te vangen."
 	done
 
 ArticunoName: ; 5cb57 (17:4b57)
@@ -1171,62 +1199,65 @@ ArticunoName: ; 5cb57 (17:4b57)
 	done
 
 FreezeDryName: ; 5cb61 (17:4b61)
-	text "Freeze Dry"
+	text "Vriesdrogen"
 	done
 
 BlizzardName: ; 5cb6d (17:4b6d)
-	text "Blizzard"
+	text "Sneeuwstorm"
 	done
 
 BlizzardDescription: ; 5cb77 (17:4b77)
-	text "Gooi een munt op. Als het kop is, this attack"
-	line "does 10 damage to each of your"
-	line "opponent's Benched Pokémon."
-	line "If tails, this attack does 10 damage"
-	line "to each of your own Benched Pokémon."
-	line "(Don't apply Weakness and Resistance"
-	line "for Benched Pokémon.)"
+	text "Gooi een munt op. Als het kop is, doet"
+	line "deze Aanval 10 schade aan elk van je"
+	line "tegenstander's Pokémon op de Bank; als"
+	line "het munt is, doet deze Aanval 10"
+	line "schade aan elk van je Pokémon op de"
+	line "Bank. (Pas geen Zwakte en Weerstand"
+	line "toe voor Pokémon op de Bank.)"
 	done
 
 FreezeName: ; 5cc5b (17:4c5b)
-	text "Freeze"
+	text "Bevriezing-"
 	done
 
 ArticunoLv35Description: ; 5cc63 (17:4c63)
-	text "A legendary bird Pokémon that is"
-	line "said to appear to doomed people who"
-	line "are lost in icy mountains."
+	text "Een legendarische vogel-Pokémon"
+	line "waarvan wordt beweerd dat hij"
+	line "verschijnt aan gedoemde mensen die"
+	line "in ijzige bergen zijn verdwaald."
 	done
 
 QuickfreezeName: ; 5ccc4 (17:4cc4)
-	text "Quickfreeze"
+	text "Snelvriezen"
 	done
 
 QuickfreezeDescription: ; 5ccd1 (17:4cd1)
-	text "When you put Articuno into play"
-	line "during your turn (not during"
-	line "set-up), Gooi een munt op. Als het kop is, the"
-	line "Defending Pokémon is now Paralyzed."
+	text "Wanneer je Articuno in het spel"
+	line "brengt tijdens je beurt (niet tijdens"
+	line "het opzetten van het spel), gooi je"
+	line "een munt op. Als het kop is, is de"
+	line "Verdedigende Pokémon nu Verlamd."
 	done
 
 IceBreathName: ; 5cd57 (17:4d57)
-	text "Ice Breath"
+	text "IJsadem"
 	done
 
 IceBreathDescription: ; 5cd63 (17:4d63)
-	text "Does 40 damage to 1 of your"
-	line "opponent's Pokémon chosen at random."
-	line "Don't apply Weakness and Resistance"
-	line "for this attack. (Any other effects"
-	line "that would happen after applying"
-	line "Weakness and Resistance still"
-	line "happen.)"
+	text "Doet 40 schade aan 1 van je tegen-"
+	line "stander's Pokémon, op willekeurige"
+	line "wijze gekozen. Pas geen Zwakte of"
+	line "Weerstand toe voor deze aanval. (Alle"
+	line "andere gevolgen die na het toepassen"
+	line "van Zwakte en Weerstand zouden"
+	line "gebeuren blijven gewoon geldig.)"
 	done
 
 ArticunoLv37Description: ; 5ce35 (17:4e35)
-	text "A legendary bird Pokémon. It freezes"
-	line "water that is contained in winter"
-	line "air and makes it snow."
+	text "Een legendarische vogel-Pokémon."
+	line "Hij bevriest water dat in de"
+	line "winterlucht zit en laat het"
+	line "sneeuwen."
 	done
 
 PikachuName: ; 5ce94 (17:4e94)
