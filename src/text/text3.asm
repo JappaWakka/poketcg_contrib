@@ -189,251 +189,251 @@ Text0262: ; 3be7d (e:7e7d)
 	done
 
 SavedTheConfigurationForText: ; 3be82 (e:7e82)
-	text "Deck-constructie opgeslagen"
+	text "Deckconstructie opgeslagen"
 	line ""
 	text "voor <RAMTEXT>! "
 	done
 
 Text0264: ; 3bea4 (e:7ea4)
-	text "No Deck is saved."
+	text "Geen Deck opgeslagen."
 	done
 
 Text0265: ; 3beb7 (e:7eb7)
-	text "Please choose a Deck "
-	line "configuration to delete."
+	text "Kies een Deckconstructie"
+	line "om te verwijderen."
 	done
 
 DoYouReallyWishToDeleteText: ; 3bee7 (e:7ee7)
-	text "Do you really wish to delete?"
+	text "Zeker weten verwijderen?"
 	done
 
 DeletedTheConfigurationForText: ; 3bf06 (e:7f06)
-	text "Deleted the configuration for"
+	text "Constructie verwijderd voor"
 	line ""
 	text "<RAMTEXT>."
 	done
 
 YouMayOnlyCarry4DecksText: ; 3bf29 (e:7f29)
-	text "You may only carry 4 Decks!"
+	text "Je mag maar 4 Decks hebben!"
 	done
 
 ChooseADeckToDismantleText: ; 3bf46 (e:7f46)
-	text "Choose a deck to dismantle."
+	text "Kies Deck om te ontmantelen."
 	done
 
 DismantledDeckText: ; 3bf63 (e:7f63)
-	text "Dismantled"
+	text "<RAMTEXT>"
 	line ""
-	text "<RAMTEXT>."
+	text "ontmanteld."
 	done
 
 Text026b: ; 3bf73 (e:7f73)
-	text "Please choose the Deck"
-	line "you wish to Build."
+	text "Kies het Deck dat"
+	line "je wilt bouwen."
 	done
 	
 ThisDeckCanOnlyBeBuiltIfYouDismantleText: ; 3bf9e (e:7f9e)
-	text "This Deck can only be built if"
-	line "you dismantle another Deck."
+	text "Je kunt dit Deck alleen bouwen"
+	line "als je een ander Deck ontmantelt."
 	done
 
 YouDoNotOwnAllCardsNeededToBuildThisDeckText: ; 3c000 (f:4000)
-	text "You do not own all cards needed"
-	line "to build this Deck."
+	text "Je hebt niet alle kaarten die"
+	line "je nodig hebt voor dit Deck."
 	done
 
 BuiltDeckText: ; 3c035 (f:4035)
-	text "Built"
-	line "<RAMTEXT>"
+	text "<RAMTEXT>"
+	line "gebouwd"
 	done
 
 TheseCardsAreNeededToBuildThisDeckText: ; 3c03e (f:403e)
-	text "These cards are needed"
-	line "to build this Deck:"
+	text "Deze kaarten zijn nodig"
+	line "voor dit Deck:"
 	done
 
 DismantleTheseDecksText: ; 3c06a (f:406a)
-	text "Dismantle these Decks?"
+	text "Deze Decks ontmantelen?"
 	done
 
 DismantledTheDeckText: ; 3c082 (f:4082)
-	text "Dismantled the Deck."
+	text "Het Deck ontmanteld."
 	done
 
 OKIfFileDeletedText: ; 3c098 (f:4098)
-	text "OK if this file is deleted?"
+	text "Oké om dit bestand te verwijderen?"
 	done
 
 ReadTheInstructionsText: ; 3c0b5 (f:40b5)
-	text "Read the Instructions"
+	text "Lees de Instructies"
 	done
 
 PrintThisCardYesNoText: ; 3c0cc (f:40cc)
-	text "Print this card?"
-	line "      Yes     No"
+	text "Deze kaart printen?"
+	line "      Ja      Nee"
 	done
 
 PleaseChooseDeckConfigurationToPrintText: ; 3c0ef (f:40ef)
-	text "Please choose a Deck configuration"
-	line "to print."
+	text "Kies een Deckconstructie om te"
+	line "printen."
 	done
 
 PrintThisDeckText: ; 3c11d (f:411d)
-	text "Print this Deck?"
+	text "Dit Deck printen?"
 	done
 
 Text0277: ; 3c12f (f:412f)
-	text "Print the card list?"
-	line "      Yes     No"
+	text "De kaartlijst printen?"
+	line "      Ja      Nee"
 	done
 
 PrintMenuItemsText: ; 3c156 (f:4156)
-	text "Pokémon Cards"
-	line "Deck Configuration"
-	line "Card List"
-	line "Print Quality"
-	line "Quit Print"
+	text "Pokémonkaarten"
+	line "Deckconstructie"
+	line "Kaartlijst"
+	line "Printkwaliteit"
+	line "Stop Printen"
 	done
 
 WhatWouldYouLikeToPrintText: ; 3c19b (f:419b)
-	text "What would you like to print?"
+	text "Wat zou je willen printen?"
 	done
 
 PleaseSetTheContrastText: ; 3c1ba (f:41ba)
-	text "Please set the contrast:"
-	line "  Light   1   2   3   4   5   Dark"
+	text "Stel het Contrast in:"
+	line "  Licht   1   2   3   4   5   Donker"
 	done
 
 PleaseMakeSureToTurnGameBoyPrinterOffText: ; 3c1f7 (f:41f7)
-	text "Please make sure to turn"
-	line "the Game Boy Printer OFF."
+	text "Vergeet niet de Game Boy"
+	line "Printer uit te zetten."
 	done
 
 ProceduresForSendingCardsText: ; 3c22b (f:422b)
-	text "Procedures for sending cards:"
+	text "Hoe je kaarten verstuurt:"
 	done
 
 CardSendingProceduresText: ; 3c24a (f:424a)
-	text "1. Choose the card you wish to send."
-	line "   Press left/right to choose more."
+	text "1. Kies de kaart die je wilt sturen."
+	line "   Druk links/rechts om er meer"
+	line "   te kiezen."
+	line "2. Kies al de kaarten. Druk dan op"
+	line "   de B-knop om het menu te openen."
 	line ""
-	line "2. Choose all the cards. Then press"
-	line "   the B Button to open the menu."
-	line ""
-	line "3. Choose Send to finish"
-	line "   the process."
+	line "3. Druk op Stuur om het proces"
+	line "   af te maken."
 	done
 
 PleaseReadTheProceduresForSendingCardsText: ; 3c305 (f:4305)
-	text "Please read the procedures"
-	line "for sending cards."
+	text "Lees de instructies voor het"
+	line "sturen van kaarten."
 	done
 
 SendText: ; 3c334 (f:4334)
-	text "Send"
+	text "Stuur"
 	done
 
 CardReceivedText: ; 3c33a (f:433a)
-	text "Card received"
+	text "Kaart ontvangen"
 	done
 
 CardToSendText: ; 3c349 (f:4349)
-	text "Card to send"
+	text "Kaart te versturen"
 	done
 
 SendTheseCardsText: ; 3c357 (f:4357)
-	text "Send these cards?"
+	text "Deze kaarten sturen?"
 	done
 
 ReceivedTheseCardsFromText: ; 3c36a (f:436a)
-	text "Received these cards"
-	line "from  <RAMTEXT>!"
+	text "Deze kaarten ontvangen"
+	line "van  <RAMTEXT>!"
 	done
 
 PleaseChooseADeckConfigurationToSendText: ; 3c389 (f:4389)
-	text "Please choose a Deck "
-	line "configuration to send."
+	text "Kies een Deckconstructie"
+	line "om te versturen."
 	done
 
 PleaseChooseASaveSlotText: ; 3c3b7 (f:43b7)
-	text "Please choose a Save Slot."
+	text "Kies een opslagplek."
 	done
 
 Text0286: ; 3c3d3 (f:43d3)
-	text "Receive configuration."
+	text "Constructie ontvangen."
 	done
 
 ReceivedADeckConfigurationFromText: ; 3c3eb (f:43eb)
-	text "Received a deck configuration"
-	line "from  <RAMTEXT>!"
+	text "Een Deckconstructie ontvangen"
+	line "van  <RAMTEXT>!"
 	done
 
 FightingMachineText: ; 3c413 (f:4413)
-	text "  Fighting Machine  "
+	text "  Vecht-Machine  "
 	done
 
 RockMachineText: ; 3c429 (f:4429)
-	text "  Rock Machine  "
+	text "  Steen-Machine  "
 	done
 
 WaterMachineText: ; 3c43b (f:443b)
-	text "  Water Machine   "
+	text "  Water-Machine   "
 	done
 
 LightningMachineText: ; 3c44f (f:444f)
-	text "  Lightning Machine   "
+	text "  Bliksem-Machine   "
 	done
 
 GrassMachineText: ; 3c467 (f:4467)
-	text "  Grass Machine   "
+	text "  Gras-Machine   "
 	done
 
 PsychicMachineText: ; 3c47b (f:447b)
-	text "  Psychic Machine   "
+	text "  Psychisch-Machine   "
 	done
 
 ScienceMachineText: ; 3c491 (f:4491)
-	text "  Science Machine   "
+	text "  Wetenschap-Machine   "
 	done
 
 FireMachineText: ; 3c4a7 (f:44a7)
-	text "  Fire Machine  "
+	text "  Vuur-Machine  "
 	done
 
 AutoMachineText: ; 3c4b9 (f:44b9)
-	text "  Auto Machine  "
+	text "  Auto-Machine  "
 	done
 
 LegendaryMachineText: ; 3c4cb (f:44cb)
-	text "  Legendary Machine   "
+	text "  Legendarisch-Machine   "
 	done
 
 AllFightingPokemonText: ; 3c4e3 (f:44e3)
-	text "All Fighting Pokémon"
+	text "Alle Vecht-Pokémon"
 	done
 
 BenchAttackText: ; 3c4f9 (f:44f9)
-	text "Bench Attack"
+	text "Bankaanval"
 	done
 
 BattleContestText: ; 3c507 (f:4507)
-	text "Battle Contest"
+	text "Gevechtswedstrijd"
 	done
 
 HeatedBattleText: ; 3c517 (f:4517)
-	text "Heated Battle"
+	text "Verhit Gevecht"
 	done
 
 FirstStrikeText: ; 3c526 (f:4526)
-	text "First-Strike"
+	text "Eerste Slag"
 	done
 
 SqueakingMouseText: ; 3c534 (f:4534)
-	text "Squeaking Mouse"
+	text "Piepende Muis"
 	done
 
 GreatQuakeText: ; 3c545 (f:4545)
-	text "Great Quake"
+	text "Grote Beving"
 	done
 
 BoneAttackText: ; 3c552 (f:4552)
@@ -441,115 +441,115 @@ BoneAttackText: ; 3c552 (f:4552)
 	done
 
 ExcavationText: ; 3c55f (f:455f)
-	text "Excavation"
+	text "Opgraving"
 	done
 
 RockCrusherText: ; 3c56b (f:456b)
-	text "Rock Crusher"
+	text "Steenverpulveraar"
 	done
 
 BlueWaterText: ; 3c579 (f:4579)
-	text "Blue Water"
+	text "Blauw Water"
 	done
 
 OnTheBeachText: ; 3c585 (f:4585)
-	text "On the Beach"
+	text "Op het Strand"
 	done
 
 ParalyzeText: ; 3c593 (f:4593)
-	text "Paralyze!"
+	text "Verlam!"
 	done
 
 EnergyRemovalText: ; 3c59e (f:459e)
-	text "Energy Removal"
+	text "Verwijder Energie"
 	done
 
 RainDancerText: ; 3c5ae (f:45ae)
-	text "Rain Dancer"
+	text "Regendanser"
 	done
 
 CutePokemonText: ; 3c5bb (f:45bb)
-	text "Cute Pokémon"
+	text "Schattige Pokémon"
 	done
 
 PokemonFluteText: ; 3c5c9 (f:45c9)
-	text "Pokémon Flute"
+	text "Pokémon-Fluit"
 	done
 
 YellowFlashText: ; 3c5d8 (f:45d8)
-	text "Yellow Flash"
+	text "Gele Flits"
 	done
 
 ElectricShockText: ; 3c5e6 (f:45e6)
-	text "Electric Shock"
+	text "Electrische Schok"
 	done
 
 ZappingSelfdestructText: ; 3c5f6 (f:45f6)
-	text "Zapping Selfdestruct"
+	text "Flitsende Zelfvernietiging"
 	done
 
 InsectCollectionText: ; 3c60c (f:460c)
-	text "Insect Collection"
+	text "Insectenverzameling"
 	done
 
 JungleText: ; 3c61f (f:461f)
-	text "Jungle"
+	text "Oerwoud"
 	done
 
 FlowerGardenText: ; 3c627 (f:4627)
-	text "Flower Garden"
+	text "Plantentuin"
 	done
 
 KaleidoscopeText: ; 3c636 (f:4636)
-	text "Kaleidoscope"
+	text "Caleidoscoop"
 	done
 
 FlowerPowerText: ; 3c644 (f:4644)
-	text "Flower Power"
+	text "Bloemenkracht"
 	done
 
 PsychicPowerText: ; 3c652 (f:4652)
-	text "Psychic Power"
+	text "Psychische Kracht"
 	done
 
 DreamEaterHaunterText: ; 3c661 (f:4661)
-	text "Dream Eater Haunter"
+	text "Droometer Haunter"
 	done
 
 ScavengingSlowbroText: ; 3c676 (f:4676)
-	text "Scavenging Slowbro"
+	text "Doorzoekende Slowbro"
 	done
 
 StrangePowerText: ; 3c68a (f:468a)
-	text "Strange Power"
+	text "Vreemde Kracht"
 	done
 
 StrangePsyshockText: ; 3c699 (f:4699)
-	text "Strange Psyshock"
+	text "Vreemde Psychische Schok"
 	done
 
 LovelyNidoranText: ; 3c6ab (f:46ab)
-	text "Lovely Nidoran"
+	text "Lieve Nidoran"
 	done
 
 ScienceCorpsText: ; 3c6bb (f:46bb)
-	text "Science Corps"
+	text "Wetenschapskorps"
 	done
 
 FlyinPokemonText: ; 3c6ca (f:46ca)
-	text "Flyin' Pokémon"
+	text "Vliegende Pokémon"
 	done
 
 PoisonText: ; 3c6da (f:46da)
-	text "Poison"
+	text "Vergif"
 	done
 
 WondersOfScienceText: ; 3c6e2 (f:46e2)
-	text "Wonders of Science"
+	text "Wonderen van Wetenschap"
 	done
 
 ReplaceEmAllText: ; 3c6f6 (f:46f6)
-	text "Replace 'Em All"
+	text "Vervang ze allemaal"
 	done
 
 ChariSaurText: ; 3c707 (f:4707)
@@ -557,15 +557,15 @@ ChariSaurText: ; 3c707 (f:4707)
 	done
 
 TrafficLightText: ; 3c713 (f:4713)
-	text "Traffic Light"
+	text "Stoplicht"
 	done
 
 FirePokemonDeckText: ; 3c722 (f:4722)
-	text "Fire Pokémon"
+	text "Vuur-Pokémon"
 	done
 
 FireChargeText: ; 3c730 (f:4730)
-	text "Fire Charge"
+	text "Vuurstorm"
 	done
 
 CharmanderAndFriendsText: ; 3c73d (f:473d)
@@ -581,281 +581,281 @@ BulbasaurAndFriendsText: ; 3c767 (f:4767)
 	done
 
 PsychicMachampText: ; 3c77c (f:477c)
-	text "Psychic Machamp"
+	text "Psychische Machamp"
 	done
 
 WaterBeetleText: ; 3c78d (f:478d)
-	text "Water Beetle"
+	text "Waterkever"
 	done
 
 LegendaryMoltresText: ; 3c79b (f:479b)
-	text "Legendary Moltres"
+	text "Legendarische Moltres"
 	done
 
 LegendaryZapdosText: ; 3c7ae (f:47ae)
-	text "Legendary Zapdos"
+	text "Legendarische Zapdos"
 	done
 
 LegendaryArticunoText: ; 3c7c0 (f:47c0)
-	text "Legendary Articuno"
+	text "Legendarische Articuno"
 	done
 
 LegendaryDragoniteText: ; 3c7d4 (f:47d4)
-	text "Legendary Dragonite"
+	text "Legendarische Dragonite"
 	done
 
 MysteriousPokemonText: ; 3c7e9 (f:47e9)
-	text "Mysterious Pokémon"
+	text "Mysterieuze Pokémon"
 	done
 
 AllFightingPokemonDescriptionText: ; 3c7fd (f:47fd)
-	text "A Deck of Fighting Pokémon:"
-	line "Feel their Fighting power!"
+	text "Een Deck met Vecht-Pokémon:"
+	line "Voel hun Vecht-kracht!"
 	done
 
 BenchAttackDescriptionText: ; 3c835 (f:4835)
-	text "A Deck of Pokémon that can"
-	line "attack the Bench."
+	text "Een Deck met Pokémon die de"
+	line "Bank Aan kunnen Vallen."
 	done
 
 BattleContestDescriptionText: ; 3c863 (f:4863)
-	text "A Deck which uses Fighting Attacks"
-	line "such as Slash and Punch."
+	text "Een Deck dat Vecht-technieken"
+	line "gebruikt zoals Hak en Slag."
 	done
 
 HeatedBattleDescriptionText: ; 3c8a0 (f:48a0)
-	text "A powerful Deck with both Fire"
-	line "and Fighting Pokémon."
+	text "Een sterk Deck met zowel"
+	line "Vuur- als Vecht-Pokémon."
 	done
 
 FirstStrikeDescriptionText: ; 3c8d6 (f:48d6)
-	text "A Deck for fast and furious "
-	line "attacks."
+	text "Een Deck voor snelle en"
+	line "furieuze Aanvallen."
 	done
 
 SqueakingMouseDescriptionText: ; 3c8fd (f:48fd)
-	text "A Deck made of Mouse Pokémon."
-	line "Uses PlusPower to Power up!"
+	text "Een Deck gebouwd met Muis-Pokémon."
+	line "Versterk ze met Pluskracht!"
 	done
 
 GreatQuakeDescriptionText: ; 3c938 (f:4938)
-	text "Use Dugtrio's Earthquake"
-	line "to cause great damage."
+	text "Gebruik Dugtrio's Aardbeving"
+	line "om veel schade te doen."
 	done
 
 BoneAttackDescriptionText: ; 3c969 (f:4969)
-	text "A Deck of Cubone and Marowak - "
-	line "A call for help."
+	text "Een Deck met Cubone en Marowak -"
+	line "Een roep om hulp."
 	done
 
 ExcavationDescriptionText: ; 3c99b (f:499b)
-	text "A Deck which creates Pokémon by"
-	line "evolving Mysterious Fossils."
+	text "Een Deck die Pokémon maakt door"
+	line "Mysterieuze Fossielen te Evolueren."
 	done
 
 RockCrusherDescriptionText: ; 3c9d9 (f:49d9)
-	text "A Deck of Rock Pokémon. It's"
-	line "Strong against Lightning Pokémon."
+	text "Een Deck met Steen-Pokémon. Het"
+	line "is sterk tegen Bliksem-Pokémon."
 	done
 
 BlueWaterDescriptionText: ; 3ca19 (f:4a19)
-	text "A Deck of Water Pokémon: Their"
-	line "Blue Horror washes over enemies."
+	text "Een Deck met Water-Pokémon: Hun"
+	line "Blauwe Gruwel overspoelt vijanden."
 	done
 
 OnTheBeachDescriptionText: ; 3ca5a (f:4a5a)
-	text "A well balanced Deck"
-	line "of Sandshrew and Water Pokémon!"
+	text "Een goed gebalanceerd Deck"
+	line "met Sandshrew en Water-Pokémon!"
 	done
 
 ParalyzeDescriptionText: ; 3ca90 (f:4a90)
-	text "Paralyze the opponent's Pokémon:"
-	line "Stop 'em and drop 'em!"
+	text "Verlam de tegenstander's Pokémon:"
+	line "Stop en ontwapen ze!"
 	done
 
 EnergyRemovalDescriptionText: ; 3cac9 (f:4ac9)
-	text "Uses Whirlpool and Hyper Beam to"
-	line "remove opponents' Energiekaarten."
+	text "Gebruikt Draaikolk en Hydrostraal om"
+	line "Energiekaarten te verwijderen."
 	done
 
 RainDancerDescriptionText: ; 3cb0b (f:4b0b)
-	text "Use Rain Dance to attach Water"
-	line "Energy for powerful Attacks!"
+	text "Gebruikt Regendans om Water-Energie"
+	line "te verzamelen voor sterke Aanvallen!"
 	done
 
 CutePokemonDescriptionText: ; 3cb48 (f:4b48)
-	text "A Deck of cute Pokémon such as"
-	line "Pikachu and Eevee."
+	text "Een Deck met schattige Pokémon zoals"
+	line "Pikachu en Eevee."
 	done
 
 PokemonFluteDescriptionText: ; 3cb7b (f:4b7b)
-	text "Use the Pokémon Flute to revive"
-	line "opponents' Pokémon and Attack!"
+	text "Gebruik de Pokémon-Fluit en wek"
+	line "Pokémon op om ze weer te verslaan!"
 	done
 
 YellowFlashDescriptionText: ; 3cbbb (f:4bbb)
-	text "A deck of Pokémon that use Lightning"
-	line "Energy to zap opponents."
+	text "Vol met Pokémon die Bliksem-Energie"
+	line "gebruiken om vijanden te schokken."
 	done
 
 ElectricShockDescriptionText: ; 3cbfa (f:4bfa)
-	text "A Deck which Shocks and Paralyzes"
-	line "opponents with its Attacks."
+	text "Een Deck dat vijanden Schokt en"
+	line "Verlamt met zijn Aanvallen."
 	done
 
 ZappingSelfdestructDescriptionText: ; 3cc39 (f:4c39)
-	text "Selfdestruct causes great damage "
-	line "- even to the opponent's Bench."
+	text "Zelfvernietiging doet veel schade -"
+	line "zelfs tegen de tegenstander's Bank."
 	done
 
 InsectCollectionDescriptionText: ; 3cc7c (f:4c7c)
-	text "A Deck made of Insect Pokémon"
-	line "Go Bug Power!"
+	text "Een Deck vol met Insect-Pokémon"
+	line "Doe je best, Insectenkracht!"
 	done
 
 JungleDescriptionText: ; 3cca9 (f:4ca9)
-	text "A Deck of Grass Pokémon: There "
-	line "are many dangers in the Jungle."
+	text "Een Deck met Gras-Pokémon: Er"
+	line "hult veel gevaar in het oerwoud."
 	done
 
 FlowerGardenDescriptionText: ; 3ccea (f:4cea)
-	text "A Deck of Flower Pokémon:"
-	line "Beautiful but Dangerous"
+	text "Een Deck met Bloem-Pokémon:"
+	line "Beeldschoon maar Gevaarlijk"
 	done
 
 KaleidoscopeDescriptionText: ; 3cd1d (f:4d1d)
-	text "Uses Venomoth's Pokémon Power to"
-	line "change the opponent's Weakness."
+	text "Gebruikt Venomoth's Pokémon-Kracht om"
+	line "de Zwakte van vijanden te veranderen."
 	done
 
 FlowerPowerDescriptionText: ; 3cd5f (f:4d5f)
-	text "A powerful Big Eggsplosion "
-	line "and Energy Transfer combo!"
+	text "Een krachtige Grote Eisplosie "
+	line "and Energietransfer combo!"
 	done
 
 PsychicPowerDescriptionText: ; 3cd97 (f:4d97)
-	text "Use the Psychic power of the"
-	line "Psychic Pokémon to Attack!"
+	text "Gebruik de Psychische kracht van"
+	line "Psychische Pokémon om Aan te Vallen!"
 	done
 
 DreamEaterHaunterDescriptionText: ; 3cdd0 (f:4dd0)
-	text "Uses Haunter's Dream Eater"
-	line "to cause great damage!"
+	text "Gebruikt Haunter's Droometer om"
+	line "veel schade te veroorzaken!"
 	done
 
 ScavengingSlowbroDescriptionText: ; 3ce03 (f:4e03)
-	text "Continually draw Trainer "
-	line "Cards from the Weggooistapel!"
+	text "Pak de hele tijd Trainerkaarten"
+	line "van de Weggooistapel!"
 	done
 
 StrangePowerDescriptionText: ; 3ce3b (f:4e3b)
-	text "Confuse opponents with"
-	line "mysterious power!"
+	text "Verward de tegenstander met"
+	line "mysterieuze kracht!"
 	done
 
 StrangePsyshockDescriptionText: ; 3ce65 (f:4e65)
-	text "Use Alakazam's Damage Swap"
-	line "to move damage counters!"
+	text "Met Alakazam's Schadeverwisseling"
+	line "verplaats je Schadetellers!"
 	done
 
 LovelyNidoranDescriptionText: ; 3ce9a (f:4e9a)
-	text "Uses Nidoqueen's Boyfriends to cause"
-	line "great damage to the opponent."
+	text "Gebruik Nidoqueen's Vriendjes om veel"
+	line "schade te doen aan de tegenstander."
 	done
 
 ScienceCorpsDescriptionText: ; 3cede (f:4ede)
-	text "The march of the Science Corps!"
-	line "Attack with the power of science!"
+	text "De mars van het Wetenschapskorps! Val"
+	line "Aan met de kracht van de Wetenschap!"
 	done
 
 FlyinPokemonDescriptionText: ; 3cf21 (f:4f21)
-	text "Pokémon with feathers flock "
-	line "together! Retreating is easy!"
+	text "Pokémon met veren komen verzamelen"
+	line "zich! Terugtrekken is makkelijk!"
 	done
 
 PoisonDescriptionText: ; 3cf5d (f:4f5d)
-	text "A Deck that uses Poison to "
-	line "slowly Knock Out the opponent."
+	text "Een Deck dat Vergif gebruikt om"
+	line "vijanden langzaam Uit te Schakelen."
 	done
 
 WondersOfScienceDescriptionText: ; 3cf99 (f:4f99)
-	text "Block Pokémon Powers with "
-	line "Muk and attack with Mewtwo!"
+	text "Blokkeer Pokémon-Krachten met"
+	line "Muk en Val Aan met Mewtwo!"
 	done
 
 ReplaceEmAllDescriptionText: ; 3cfd1 (f:4fd1)
-	text "A Deck that shuffles"
-	line "the opponent's cards"
+	text "Een Deck dat de tegenstander's"
+	line "kaarten door elkaar schudt."
 	done
 
 ChariSaurDescriptionText: ; 3cffc (f:4ffc)
-	text "Attack with Charizard - with "
-	line "just a few Fire Energiekaarten!"
+	text "Val Aan met Charizard - met maar"
+	line "een paar Vuur-Energiekaarten!"
 	done
 
 TrafficLightDescriptionText: ; 3d039 (f:5039)
-	text "Pokémon that can Attack with"
-	line "Fire, Water or Lightning Energy!"
+	text "Pokémon die kunnen Aanvallen met"
+	line "Vuur, Water of Bliksem-Energie!"
 	done
 
 FirePokemonDescriptionText: ; 3d078 (f:5078)
-	text "With Fire Pokémon like Charizard, "
-	line "Rapidash and Magmar, it's hot!"
+	text "Met Vuur-Pokémon zoals Charizard,"
+	line "Rapidash en Magmar wordt het heet!"
 	done
 
 FireChargeDescriptionText: ; 3d0bb (f:50bb)
-	text "Desperate attacks Damage your "
-	line "opponent and you!"
+	text "Wanhopige Aanvallen doen schade"
+	line "aan jou en je tegenstander!"
 	done
 
 CharmanderAndFriendsDescriptionText: ; 3d0ed (f:50ed)
-	text "A Fire, Grass and Water Deck:"
-	line "Charmander, Pinsir and Seel"
+	text "Een Vuur-, Gras- en Water-Deck:"
+	line "Charmander, Pinsir en Seel"
 	done
 
 SquirtleAndFriendsDescriptionText: ; 3d128 (f:5128)
-	text "A Water, Fire, and Lightning Deck:"
-	line "Squirtle, Charmander and Pikachu"
+	text "Een Water-, Vuur-, and Bliksem-Deck:"
+	line "Squirtle, Charmander en Pikachu"
 	done
 
 BulbasaurAndFriendsDescriptionText: ; 3d16d (f:516d)
-	text "A Grass, Lightning and Psychic Deck:"
-	line "Bulbasaur, Pikachu and Abra"
+	text "Een Gras-, Bliksem- en Psychisch-Deck:"
+	line "Bulbasaur, Pikachu en Abra"
 	done
 
 PsychicMachampDescriptionText: ; 3d1af (f:51af)
 	text "Machamp, Hitmonlee, Hitmonchan"
-	line "Gengar and Alakazam are furious!"
+	line "Gengar en Alakazam zijn woedend!"
 	done
 
 WaterBeetleDescriptionText: ; 3d1f0 (f:51f0)
-	text "An Evolution Deck with Weedle, "
-	line "Nidoran♂ and Bellsprout."
+	text "Een Evolutie-Deck met Weedle, "
+	line "Nidoran♂ en Bellsprout."
 	done
 
 LegendaryMoltresDescriptionText: ; 3d22a (f:522a)
-	text "Gather Vuur Energie with the"
-	line "Legendary Moltres!"
+	text "Verzamel Vuur-Energie met de"
+	line "Legendarische Moltres!"
 	done
 
 LegendaryZapdosDescriptionText: ; 3d25a (f:525a)
-	text "Zap opponents with the"
-	line "Legandary Zapdos!"
+	text "Schok tegenstanders met de"
+	line "Legandarische Zapdos!"
 	done
 
 LegendaryArticunoDescriptionText: ; 3d284 (f:5284)
-	text "Paralyze opponents with the"
-	line "Legendary Articuno!"
+	text "Verlam tegenstanders met de"
+	line "Legendarische Articuno!"
 	done
 
 LegendaryDragoniteDescriptionText: ; 3d2b5 (f:52b5)
-	text "Heal your Pokémon with the"
-	line "Legendary Dragonite!"
+	text "Genees je Pokémon met de"
+	line "Legendarische Dragonite!"
 	done
 
 MysteriousPokemonDescriptionText: ; 3d2e6 (f:52e6)
-	text "A very special Deck made of"
-	line "very rare Pokémon cards!"
+	text "Een erg speciaal Deck met zeer"
+	line "zeldzame Pokémonkaarten!"
 	done
 
 PokemonCardGlossaryText: ; 3d31c (f:531c)
@@ -1062,127 +1062,133 @@ EnergyCardsDescriptionText: ; 3dcb2 (f:5cb2)
 
 TrainerCardsDescriptionText: ; 3ddbe (f:5dbe)
 	text "Trainerkaarten bieden ondersteuning."
-	line "There are many Trainerkaarten"
-	line "with different effects."
-	line "Trainerkaarten are played during"
-	line "your turn by following the"
-	line "instructions on the card and then"
-	line "discarding it."
-	line "You may use as many Trainerkaarten"
-	line "as you like."
+	line "Er zijn veel Trainerkaarten"
+	line "met verschillende effecten."
+	line "Trainerkaarten worden gespeeld"
+	line "tijdens je beurt door de instructies"
+	line "op de kaart te volgen en hem daarna"
+	line "weg te gooien."
+	line "Je mag zoveel Trainerkaarten"
+	line "gebruiken als je wilt."
 	done
 
 BasicPokemonDescriptionText: ; 3deb0 (f:5eb0)
-	text "Basic Pokémon are cards that "
-	line "can be played directly from your "
-	line "Hand into the play area. Basic "
-	line "Pokémon act as the base for "
-	line "Evolution Cards. Charmander, "
-	line "Squirtle and Bulbasaur are"
-	line "examples of Basic Pokémon."
+	text "Basis-Pokémon zijn kaarten die je"
+	line "direct uit je Hand in het Spel-"
+	line "gebied kunt brengen. Basis-"
+	line "Pokémon werken als de basis voor"
+	line "Evolutiekaarten. Charmander,"
+	line "Squirtle en Bulbasaur zijn"
+	line "voorbeelden van Basis-Pokémon."
 	done
 
 EvolutionCardsDescriptionText: ; 3df82 (f:5f82)
-	text "Evolution Cards are cards you"
-	line "play on top of a Basic Pokémon card"
-	line "(or sometimes on top of another"
-	line "Evolution Card) to make it stronger."
-	line "There are Stage 1 and Stage 2"
-	line "Evolution Cards."
-	line "If you do not have a Basic Pokémon"
-	line "in the Play Area, you cannot place"
-	line "the Stage 1 Evolution Card, and if"
-	line "you do not have a Stage 1 Evolution"
-	line "Card in the Play Area, you cannot"
-	line "place the Stage 2 Evolution Card."
+	text "Evolutiekaarten zijn kaarten die je"
+	line "bovenop een Basis-Pokémonkaart"
+	line "speelt (of soms bovenop een andere"
+	line "Evolutiekaart) om hem sterker te"
+	line "maken. Er zijn Fase-1- en Fase-2-"
+	line "Evolutiekaarten."
+	line "Als je geen Basis-Pokémon in het"
+	line "Spelgebied, dan kun je geen Fase-1-"
+	line "Evolutiekaart plaatsen, en als je"
+	line "geen Fase-1-Evolutiekaart hebt"
+	line "in het Spelgebied, dan kun je geen"
+	line "Fase-2-Evolutiekaart plaatsen."
 	done
 
 AttackingDescriptionText: ; 3e10a (f:610a)
-	text "By choosing Attack, your Pokémon"
-	line "will fight your opponent's Pokémon."
-	line "Your Pokémon require Energy"
-	line "in order to Attack."
-	line "The amount of Energy required"
-	line "differs according to the Attack."
-	line "The Active Pokémon is the only"
-	line "Pokémon that can Attack."
+	text "Door Val Aan te kiezen, zullen je"
+	line "Pokémon gaan vechten met de"
+	line "Pokémon van de tegenstander."
+	line "Je Pokémon hebben Energie nodig"
+	line "om Aan te kunnen Vallen."
+	line "De hoeveelheid benodigde Energie"
+	line "verschilt per Aanval."
+	line "De Actieve Pokémon is de enige"
+	line "Pokémon die kan Aanvallen."
 	done
 
 PokemonPowerDescriptionText: ; 3e1f7 (f:61f7)
-	text "Unlike Attacks, Pokémon Power"
-	line "can be used by Active or Benched"
-	line "Pokémon. Some Pokémon Power are"
-	line "effective by just placing the"
-	line "Pokémon in the Play Area, but for"
-	line "some you must choose the"
-	line "command, PKMN Power."
+	text "Anders dan Aanvallen, kunnen"
+	line "Pokémon-Krachten gebruikt worden"
+	line "door Actieve Pokémon of Pokémon"
+	line "op de Bank. Sommige Pokémon-"
+	line "Krachten activeren automatisch"
+	line "wanneer je ze in het Spelgebied"
+	line "plaatst, maar voor sommige"
+	line "andere moet je het PKMN Kracht-"
+	line "commando kiezen."
 	done
 
 WeaknessDescriptionText: ; 3e2c5 (f:62c5)
-	text "Some Pokémon have a Weakness."
-	line "If a Pokémon has a Weakness, it"
-	line "takes double damage when attacked by"
-	line "Pokémon of a certain type."
+	text "Sommige Pokémon hebben een Zwakte."
+	line "Als een Pokémon een zwakte heeft,"
+	line "ontvangt hij dubbele schade als"
+	line "hij wordt aangevallen door een"
+	line "Pokémon van een bepaald type."
 	done
 
 ResistanceDescriptionText: ; 3e344 (f:6344)
-	text "Some Pokémon have Resistance."
-	line "If a Pokémon has Resistance, it"
-	line "takes 30 less damage whenever"
-	line "attacked by Pokémon of"
-	line "a certain type."
+	text "Sommige Pokémon hebben Weerstand."
+	line "Als een Pokémon Weerstand heeft,"
+	line "ontvangt hij 30 schade minder als"
+	line "hij wordt aangevallen door een"
+	line "Pokémon van een bepaald type."
 	done
 
 RetreatingDescriptionText: ; 3e3c8 (f:63c8)
-	text "By choosing Retreat, you can"
-	line "switch the Active Pokémon with"
-	line "a Pokémon on your Bench."
-	line "Energy is required to Retreat"
-	line "your Active Pokémon."
-	line "The amount of Energy required to"
-	line "Retreat differs for each Pokémon."
-	line "To Retreat, you must discard"
-	line "Energy equal to the Retreat Cost"
-	line "of the retreating Pokémon."
+	text "Door Trek Terug te kiezen, kun je"
+	line "de Actieve Pokémon verwisselden"
+	line "met een Pokémon op je Bank."
+	line "Er is Energie nodig om je Actieve"
+	line "Pokémon Terug te Trekken."
+	line "De hoeveelheid benodigde Energie"
+	line "om Terug te Trekken verschilt per"
+	line "Pokémon. Om Terug te Trekken moet"
+	line "je een aantal Energie weggooien"
+	line "gelijk aan de Terugtrekkings-"
+	line "kosten van de Pokémon die zich"
+	line "terugtrekt."
 	done
 
 Text031e: ; 3e4ed (f:64ed)
-	text "Modify Deck"
-	line "Card List"
-	line "Album List"
-	line "Deck Save Machine"
-	line "Printing Menu"
-	line "Auto Deck Machine"
-	line "Gift Center"
-	line "Name Input"
+	text "Pas Deck aan"
+	line "Kaartenlijst"
+	line "Albumlijst"
+	line "Deckopslag-Machine"
+	line "Printmenu"
+	line "Auto-Deck-Machine"
+	line "Cadeaucentrum"
+	line "Naaminvoer"
 	done
 
 Text031f: ; 3e558 (f:6558)
-	text "Fighting Machine"
-	line "Rock Machine"
-	line "Water Machine"
-	line "Lightning Machine"
-	line "Grass Machine"
-	line "Psychic Machine"
-	line "Science Machine"
-	line "Fire Machine"
-	line "Auto Machine"
-	line "Legendary Machine"
+	text "Vecht-Machine"
+	line "Steen-Machine"
+	line "Water-Machine"
+	line "Bliksem-Machine"
+	line "Gras-Machine"
+	line "Psychisch-Machine"
+	line "Wetenschap-Machine"
+	line "Vuur-Machine"
+	line "Auto-Machine"
+	line "Legendarisch-Machine"
 	done
 
 Text0320: ; 3e5f1 (f:65f1)
-	text "Send a Card"
-	line "Receive a Card"
-	line "Give Deck Instructions"
-	line "Receive Deck Instructions"
+	text "Stuur een kaart"
+	line "Ontvang een kaart"
+	line "Geef Deckconstructies"
+	line "Ontvang Deckconstructies"
 	done
 
 Text0321: ; 3e63e (f:663e)
-	text "Lecture Duel"
+	text "Les-Duel"
 	done
 
 Text0322: ; 3e64c (f:664c)
-	text "First Strike Deck"
+	text "Eerste Slag-Deck"
 	line ""
 	done
 
@@ -1373,26 +1379,26 @@ ConfigMenuExitText: ; 3e9a0 (f:69a0)
 
 Text034c: ; 3e9b2 (f:69b2)
 	text "Duel           [<RAMTEXT>]"
-	line "SELECT         [<RAMTEXT>]"
-	line "Receive many cards"
-	line "To Pokémon Dome 1"
-	line "To Pokémon Dome 2"
+	line "KIES           [<RAMTEXT>]"
+	line "Ontvang veel kaarten"
+	line "Naar Pokémon Stadion 1"
+	line "Naar Pokémon Stadion 2"
 	done
 
 Text034d: ; 3ea10 (f:6a10)
-	text "Normal Duel"
+	text "Normaal Duel"
 	done
 
 Text034e: ; 3ea1d (f:6a1d)
-	text "Skip"
+	text "Overslaan"
 	done
 
 Text034f: ; 3ea23 (f:6a23)
-	text "Normal"
+	text "Normaal"
 	done
 
 Text0350: ; 3ea2b (f:6a2b)
-	text "Freeze Screen"
+	text "Bevries Scherm"
 	done
 
 Text0351: ; 3ea3a (f:6a3a)

@@ -548,7 +548,7 @@ Choose2CardsFromHandToDiscardText: ; 39607 (e:5607)
 
 Choose2HandCardsFromHandToReturnToDeckText: ; 39631 (e:5631)
 	text "Kies 2 kaarten uit de Hand om"
-	line "terug in het deck te stoppen."
+	line "terug in het Deck te stoppen."
 	done
 
 ChooseCardToPlaceInHandText: ; 39666 (e:5666)
@@ -874,45 +874,45 @@ Text0199: ; 39f59 (e:5f59)
 	done
 
 SendingACardText: ; 39f6b (e:5f6b)
-	text "Sending a card...Move the Game"
-	line "Boys close and press the A Button."
+	text "Kaart sturen...Hou de Game Boys"
+	line "dicht bij elkaar en druk op A."
 	done
 
 ReceivingACardText: ; 39fae (e:5fae)
-	text "Receiving a card... Move"
-	line "the Game Boys close together."
+	text "Kaart ontvangen... Houd de"
+	line "Game Boys dicht bij elkaar."
 	done
 
 SendingADeckConfigurationText: ; 39fe5 (e:5fe5)
-	text "Sending a Deck Configuration..."
-	line "Position the Game Boys and press A."
+	text "Deckconstructie versturen..."
+	line "Plaats de Game Boys en druk op A."
 	done
 
 ReceivingDeckConfigurationText: ; 3a02a (e:602a)
-	text "Receiving Deck configuration..."
-	line "Position the Game Boys and press A."
+	text "Deckconstructie ontvangen..."
+	line "Plaats de Game Boys en druk op A."
 	done
 
 CardTransferWasntSuccessful1Text: ; 3a06f (e:606f)
-	text "Card transfer wasn't successful."
+	text "Kaartoverdracht niet gelukt."
 	done
 
 CardTransferWasntSuccessful2Text: ; 3a091 (e:6091)
-	text "Card transfer wasn't successful"
+	text "Kaartoverdracht niet gelukt"
 	done
 
 DeckConfigurationTransferWasntSuccessful1Text: ; 3a0b2 (e:60b2)
-	text "Deck configuration transfer"
-	line "wasn't successful"
+	text "Deckconstuctieoverdracht"
+	line "niet gelukt"
 	done
 
 DeckConfigurationTransferWasntSuccessful2Text: ; 3a0e1 (e:60e1)
-	text "Deck configuration transfer"
-	line "wasn't successful."
+	text "Deckconstuctieoverdracht"
+	line "niet gelukt."
 	done
 
 NowPrintingText: ; 3a111 (e:6111)
-	text "Now printing..."
+	text "Printen..."
 	done
 
 DrMasonText: ; 3a122 (e:6122)

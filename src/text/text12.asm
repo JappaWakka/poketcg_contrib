@@ -204,9 +204,9 @@ EnergySpikeName: ; 5da72 (17:5a72)
 	done
 
 EnergySpikeDescription: ; 5da80 (17:5a80)
-	text "Search your deck for a basic Energy"
+	text "Search your Deck for a basic Energy"
 	line "card and attach it to 1 of your"
-	line "Pokémon. Shuffle your deck"
+	line "Pokémon. Shuffle your Deck"
 	line "afterward."
 	done
 
@@ -503,7 +503,7 @@ PeekDescription: ; 5e7f4 (17:67f4)
 	text "Once during your turn (before your"
 	line "attack), you may look at one of the"
 	line "following: the top card of either"
-	line "player's deck, a random card from"
+	line "player's Deck, a random card from"
 	line "your opponent's hand, or one of"
 	line "either player's Prizes."
 	done
@@ -775,9 +775,9 @@ CallforFriendName: ; 5f33e (17:733e)
 	done
 
 CallforFriendDescription: ; 5f34f (17:734f)
-	text "Zoek in je deck naar een <FIGHTING> Basis-"
+	text "Zoek in je Deck naar een <FIGHTING> Basis-"
 	line "Pokémonkaart en plaats hem op je"
-	line "Bank. Schud hierna je deck. (Je kunt"
+	line "Bank. Schud hierna je Deck. (Je kunt"
 	line "deze Aanval niet gebruiken als je"
 	line "Bank vol is.)"
 	done

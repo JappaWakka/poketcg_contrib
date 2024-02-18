@@ -141,17 +141,17 @@ MixUpDescription: ; 5a2f4 (16:62f4)
 	text "Als je tegenstander Basis-Pokémon"
 	line "of Evolutiekaarten in zijn of haar"
 	line "Hand heeft, schudt je tegenstander"
-	line "die kaarten door zijn of haar deck"
+	line "die kaarten door zijn of haar Deck"
 	line "heen. Daarna neemt je tegenstander"
 	line "een gelijk aantal Basis-Pokémon"
 	line "en/of Evolutiekaarten uit zijn"
 	done
 
 MixUpDescriptionCont: ; 5a3df (16:63df)
-	line "of haar deck in zijn of haar Hand,"
+	line "of haar Deck in zijn of haar Hand,"
 	line "op willekeurige wijze gekozen."
 	line "Hierna schudt je tegenstander"
-	line "opnieuw zijn of haar deck."
+	line "opnieuw zijn of haar Deck."
 	done
 
 DancingEmbersName: ; 5a431 (16:6431)
@@ -431,7 +431,7 @@ WildfireDescription: ; 5ad00 (16:6d00)
 	line "Energiekaarten weggooien als je"
 	line "wilt. Als je dit doet, gooi dan net"
 	line "zoveel kaarten weg van de bovenkant"
-	line "van je tegenstander's deck."
+	line "van je tegenstander's Deck."
 	done
 
 DiveBombName: ; 5ada6 (16:6da6)
@@ -455,8 +455,8 @@ FiregiverDescription: ; 5ae1e (16:6e1e)
 	line "tijdens het opzetten van het spel),"
 	line "neem je 1 tot 4 (op willekeurige"
 	line "wijze gekozen) <FIRE> Energiekaarten"
-	line "uit je deck in je Hand. Schud hierna"
-	line "je deck."
+	line "uit je Deck in je Hand. Schud hierna"
+	line "je Deck."
 	done
 
 MoltresLv37Description: ; 5aed3 (16:6ed3)
@@ -842,10 +842,10 @@ KrabbyName: ; 5bd63 (16:7d63)
 	done
 
 KrabbysCallForFamilyDescription: ; 5bd6b (16:7d6b)
-	text "Zoek in je deck naar een Basis-"
+	text "Zoek in je Deck naar een Basis-"
 	line "Pokémon met de naam Krabby"
 	line "en plaats deze op je Bank. Schud"
-	line "hierna je deck. (Je kunt deze"
+	line "hierna je Deck. (Je kunt deze"
 	line "Aanval niet gebruiken als je"
 	line "Bank vol is.)"
 	done
